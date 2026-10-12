@@ -1,0 +1,12 @@
+test_allowed_filename_cannot_alias_locked_file (test_shen_evidence.EvidenceTests.test_allowed_filename_cannot_alias_locked_file) ... ok
+test_dropout_clears_copied_concat_for_both_embedders (test_shen_evidence.EvidenceTests.test_dropout_clears_copied_concat_for_both_embedders) ... ok
+test_final_data_access_denied (test_shen_evidence.EvidenceTests.test_final_data_access_denied) ... ok
+test_frequency_isolation_and_no_excluded_scale_leak (test_shen_evidence.EvidenceTests.test_frequency_isolation_and_no_excluded_scale_leak) ... ok
+test_legacy_fft_oob_really_excludes_ib (test_shen_evidence.EvidenceTests.test_legacy_fft_oob_really_excludes_ib) ... ok
+test_macro_f1_unbalanced_and_partition_invariance (test_shen_evidence.EvidenceTests.test_macro_f1_unbalanced_and_partition_invariance) ... ok
+test_worker_handles_are_private_readonly_and_pickle_safe (test_shen_evidence.EvidenceTests.test_worker_handles_are_private_readonly_and_pickle_safe) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 1.108s
+
+OK

@@ -1,0 +1,20 @@
+{
+  "packet_accuracy": 0.7229999899864197,
+  "macro_f1": 0.7300068140029907,
+  "loss": 0.5817048904254625,
+  "packets": 2000,
+  "validation_seconds": 0.7430437460006942,
+  "pipeline_packets_per_second": 2691.6315637735433,
+  "model_packets_per_second": 19045.952254683296,
+  "model_batch_amortized_ms_per_packet": 0.05250459450007838,
+  "receiver": "rtl_6",
+  "kind": "oob_only",
+  "seed": 20261014,
+  "lr": 0.001,
+  "parameters": 659370,
+  "best_epoch": 1,
+  "epochs_completed": 8,
+  "training_seconds": 56.832328362001135,
+  "total_seconds": 78.60572013000001,
+  "mean_train_packets_per_second": 1126.1196196704
+}

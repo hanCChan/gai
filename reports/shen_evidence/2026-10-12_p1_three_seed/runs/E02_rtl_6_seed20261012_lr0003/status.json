@@ -1,0 +1,23 @@
+{
+  "status": "completed",
+  "metrics": {
+    "packet_accuracy": 0.9340000152587891,
+    "macro_f1": 0.9339747428894043,
+    "loss": 0.16616037072986364,
+    "packets": 2000,
+    "validation_seconds": 0.765632554000149,
+    "pipeline_packets_per_second": 2612.219124631959,
+    "model_packets_per_second": 19238.618957326213,
+    "model_batch_amortized_ms_per_packet": 0.05197878299986769,
+    "receiver": "rtl_6",
+    "kind": "strict_ib",
+    "seed": 20261012,
+    "lr": 0.0003,
+    "parameters": 659370,
+    "best_epoch": 16,
+    "epochs_completed": 23,
+    "training_seconds": 112.95370855599776,
+    "total_seconds": 149.13662314300018,
+    "mean_train_packets_per_second": 1628.9859124791856
+  }
+}

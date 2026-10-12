@@ -2,8 +2,8 @@
 
 保留旧RF-HSTU/OOB实现，新增受开发协议保护的Shen P0/P1训练、审计与报告流程。
 
-- [当前结果与问题](docs/SHEN_RUN_RESULTS_AND_ISSUES.md)：2026-10-12北京时间快照，首筛16/16、复验6/16完成。
-- [结果CSV与每次运行记录](reports/shen_evidence/2026-10-12_p1_snapshot/)：Accuracy、全验证集Macro-F1、混淆矩阵、错误例、校准、训练曲线、参数量和吞吐。
+- [当前结果与问题](docs/SHEN_RUN_RESULTS_AND_ISSUES.md)：2026-10-12北京时间快照，首筛16/16、复验16/16完成，八组均完成三seed。
+- [结果CSV与每次运行记录](reports/shen_evidence/2026-10-12_p1_three_seed/)：Accuracy、全验证集Macro-F1、混淆矩阵、错误例、校准、训练曲线、参数量和吞吐。
 - [P0修复与四卡smoke](docs/SHEN_P0_AUDIT.md)、[运行说明](docs/SHEN_EVIDENCE_REPRODUCE.md)、[P2/P3待确认方案](docs/SHEN_P2_P3_PLAN.md)。
 
 ## 运行条件
