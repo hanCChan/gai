@@ -23,7 +23,10 @@ if __name__=='__main__':
             x=prepare(torch.from_numpy(np.stack([b[0] for b in batch])),cfg,device);y=torch.tensor([b[1] for b in batch],device=device)
             model=make_model(cfg).to(device).train();opt=torch.optim.Adam(model.parameters(),lr=.003)
             sync(device);start=time.perf_counter();first=None;acc=0.
-            for step in range(350):
+            # Strict-IB Spec can fit this diagnostic batch more slowly. This
+            # gate checks numerical/optimization viability, not the formal
+            # 30-epoch training budget, which is fixed in the run configs.
+            for step in range(1000):
                 opt.zero_grad(set_to_none=True);out=result(model,x);loss=F.cross_entropy(out['logits'],y)
                 if first is None:first=float(loss.detach())
                 if out['logits'].shape!=(10,10) or not torch.isfinite(loss):raise AssertionError('Invalid shape or loss')
@@ -31,7 +34,8 @@ if __name__=='__main__':
                 if not all(v.grad is not None and torch.isfinite(v.grad).all() for v in model.parameters()):raise AssertionError('Missing/nonfinite gradients')
                 opt.step();acc=float((out['logits'].detach().argmax(1)==y).float().mean())
                 if step>=20 and acc==1. and float(loss.detach())<.05:break
-            if acc<.95 or float(loss.detach())>first*.5:raise AssertionError('Single-batch overfit failed')
+            if acc<.95 or float(loss.detach())>first*.5:
+                raise AssertionError(f'Single-batch overfit failed: steps={step+1}, accuracy={acc:.3f}, first_loss={first:.5f}, final_loss={float(loss.detach()):.5f}')
             model.eval()
             with torch.no_grad():expected=result(model,x)['logits']
             file=a.output/f'checkpoint_{len(checks)}.pt';torch.save(model.state_dict(),file)

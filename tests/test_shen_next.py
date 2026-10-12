@@ -12,13 +12,17 @@ class PreparedTests(unittest.TestCase):
         for k,p in h.main_tokens.named_parameters():torch.testing.assert_close(p,dict(t.main_tokens.named_parameters())[k],rtol=0,atol=0)
         count=lambda m:sum(p.numel() for p in m.parameters())
         self.assertLess(abs(count(h)-count(t))/count(h),.01)
+        for e in ('hstu','transformer'):
+            cross=FairAttention(e,'cross_attention');control=FairAttention(e,main_capacity_hidden=723)
+            self.assertLess(abs(count(cross)-count(control))/count(cross),.001)
+            self.assertEqual(count(cross),count(FairAttention(e,'cross_attention',aux_band='ib_control')))
         x=torch.randn(2,2,8192);torch.testing.assert_close(h.tokenize(x),t.tokenize(x),rtol=0,atol=0)
         x=x.double();z=torch.fft.fftshift(torch.fft.fft(torch.complex(x[:,0],x[:,1])),dim=-1)
         f=torch.fft.fftshift(torch.fft.fftfreq(8192,d=1e-6));altered=z+100*torch.randn_like(z)*(f.abs()>75000.)
         q=torch.fft.ifft(torch.fft.ifftshift(altered,dim=-1));changed=torch.stack((q.real,q.imag),1)
         h=h.double();torch.testing.assert_close(h.tokenize(x),h.tokenize(changed),atol=1e-12,rtol=1e-12)
         h=h.float();x=x.float()
-        for m in (h,t,FairAttention('hstu','cross_attention'),FairAttention('transformer','cross_attention')):
+        for m in (h,t,FairAttention('hstu','cross_attention'),FairAttention('transformer','cross_attention'),FairAttention('hstu',main_capacity_hidden=723),FairAttention('transformer','cross_attention',aux_band='ib_control')):
             out=m(x);self.assertEqual(out.shape,(2,10));out.sum().backward();self.assertTrue(all(p.grad is not None and torch.isfinite(p.grad).all() for p in m.parameters()))
     def test_grl_gradient_and_multi_receiver_constraint(self):
         x=torch.randn(3,requires_grad=True);Reverse.apply(x,.4).sum().backward();torch.testing.assert_close(x.grad,torch.full_like(x,-.4))

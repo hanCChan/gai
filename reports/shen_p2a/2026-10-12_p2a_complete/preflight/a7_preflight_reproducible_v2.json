@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "receiver": "n210_1",
+      "role": "train",
+      "ten_class_labels_exact": true,
+      "ten_class_spec_and_cis_exact": true,
+      "max_excluded_fft_magnitude": 5.4229820713920237e-14,
+      "max_fft_magnitude": 257.38577611666636
+    },
+    {
+      "receiver": "n210_1",
+      "role": "validation",
+      "ten_class_labels_exact": true,
+      "ten_class_spec_and_cis_exact": true,
+      "max_excluded_fft_magnitude": 7.797282955239646e-14,
+      "max_fft_magnitude": 393.6800131593241
+    },
+    {
+      "receiver": "rtl_6",
+      "role": "train",
+      "ten_class_labels_exact": true,
+      "ten_class_spec_and_cis_exact": true,
+      "max_excluded_fft_magnitude": 1.1718571004216928e-13,
+      "max_fft_magnitude": 537.8865539836039
+    },
+    {
+      "receiver": "rtl_6",
+      "role": "validation",
+      "ten_class_labels_exact": true,
+      "ten_class_spec_and_cis_exact": true,
+      "max_excluded_fft_magnitude": 1.4888013907498296e-13,
+      "max_fft_magnitude": 712.7882277832514
+    }
+  ],
+  "strict_projection_before_STFT": true,
+  "final_signals_opened": 0
+}

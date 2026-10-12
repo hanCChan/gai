@@ -1,0 +1,10 @@
+seed,role,accuracy,device34_correct,device34_count,device34_to31,Day2_saved_predictions_exact
+20261012,train,1.0,800,800,0,False
+20261012,same_day_diagnostic,0.995,200,200,0,False
+20261012,validation,0.815,0,200,177,True
+20261013,train,0.981875,800,800,0,False
+20261013,same_day_diagnostic,0.9465,200,200,0,False
+20261013,validation,0.7535,0,200,121,True
+20261014,train,0.988875,800,800,0,False
+20261014,same_day_diagnostic,0.8925,200,200,0,False
+20261014,validation,0.8165,0,200,195,True

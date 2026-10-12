@@ -1,0 +1,85 @@
+{
+  "passed": true,
+  "files": [
+    {
+      "status": "completed",
+      "packets": 8000,
+      "shape": [
+        8000,
+        2,
+        8192
+      ],
+      "dtype": "float32",
+      "source_relative": "Train/n210_1_day1_wireless_train.h5",
+      "source_sha256": "3581599cd5727e780240f819e0b66dc738098ee54a67ccf341caa1ad54a4fd46",
+      "protocol_sha256": "e135c3980541dded7e6057ad41194229b8501dfc079e1d87508ff87bd4843f51",
+      "float32_payload_sha256": "cc974f75c12f4df6397fb1d5dc9ff5a986fad7c595bd4bea0ea2344941bac911",
+      "all_packets_bit_identical_to_development_adapter": true,
+      "normalization_applied": false,
+      "receiver": "n210_1",
+      "role": "train",
+      "independent_payload_sha_recheck": true,
+      "ten_class_actual_adapter_check": true
+    },
+    {
+      "status": "completed",
+      "packets": 2000,
+      "shape": [
+        2000,
+        2,
+        8192
+      ],
+      "dtype": "float32",
+      "source_relative": "Test/n210_1_day2_wireless_test.h5",
+      "source_sha256": "1122d54d1856ae2c847e0a85556fa78e264d1845b61feca7392702484df07229",
+      "protocol_sha256": "e135c3980541dded7e6057ad41194229b8501dfc079e1d87508ff87bd4843f51",
+      "float32_payload_sha256": "dc231dcf4a3174145dc9d27b7241bcb4c725e09911d02658c03cab9c185c0c67",
+      "all_packets_bit_identical_to_development_adapter": true,
+      "normalization_applied": false,
+      "receiver": "n210_1",
+      "role": "validation",
+      "independent_payload_sha_recheck": true,
+      "ten_class_actual_adapter_check": true
+    },
+    {
+      "status": "completed",
+      "packets": 8000,
+      "shape": [
+        8000,
+        2,
+        8192
+      ],
+      "dtype": "float32",
+      "source_relative": "Train/rtl_6_day1_wireless_train.h5",
+      "source_sha256": "adcc8c1f0a5dfeea433f9d1e943f4826840d5d3a5d09751fbf34ef16c937b9e1",
+      "protocol_sha256": "e135c3980541dded7e6057ad41194229b8501dfc079e1d87508ff87bd4843f51",
+      "float32_payload_sha256": "20a659256f1e37966ee8ab49b58b9301b92488dc3166c80738b6d668cc05e4ff",
+      "all_packets_bit_identical_to_development_adapter": true,
+      "normalization_applied": false,
+      "receiver": "rtl_6",
+      "role": "train",
+      "independent_payload_sha_recheck": true,
+      "ten_class_actual_adapter_check": true
+    },
+    {
+      "status": "completed",
+      "packets": 2000,
+      "shape": [
+        2000,
+        2,
+        8192
+      ],
+      "dtype": "float32",
+      "source_relative": "Test/rtl_6_day2_wireless_test.h5",
+      "source_sha256": "7f62af1c69832172b691d6ea76ca6eaba7af31e3ab016ce1a9259cfc1db22a81",
+      "protocol_sha256": "e135c3980541dded7e6057ad41194229b8501dfc079e1d87508ff87bd4843f51",
+      "float32_payload_sha256": "993b3d0dfc3995b1c343723365fe6d61f7d6fa209eedf95ea21a0ed22ec295a2",
+      "all_packets_bit_identical_to_development_adapter": true,
+      "normalization_applied": false,
+      "receiver": "rtl_6",
+      "role": "validation",
+      "independent_payload_sha_recheck": true,
+      "ten_class_actual_adapter_check": true
+    }
+  ]
+}

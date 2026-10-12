@@ -1,0 +1,34 @@
+[
+  [
+    {
+      "gpu": 0,
+      "returncode": 0,
+      "stage": "smoke",
+      "configs": 1
+    }
+  ],
+  [
+    {
+      "gpu": 1,
+      "returncode": 0,
+      "stage": "smoke",
+      "configs": 1
+    }
+  ],
+  [
+    {
+      "gpu": 2,
+      "returncode": 1,
+      "stage": "smoke",
+      "configs": 1
+    }
+  ],
+  [
+    {
+      "gpu": 3,
+      "returncode": 0,
+      "stage": "smoke",
+      "configs": 1
+    }
+  ]
+]

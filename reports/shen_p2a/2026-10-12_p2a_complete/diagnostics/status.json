@@ -1,0 +1,12 @@
+{
+  "status": "completed",
+  "final_signal_files_opened": 0,
+  "train_fitted_clusters_only": true,
+  "causality_established": false,
+  "unknown_CFO_SNR_units": true,
+  "denominator_threshold_column_mapping": {
+    "1e6": 1e-06,
+    "1e4": 0.0001,
+    "1e2": 0.01
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "status": "failed",
+  "updated_utc": "2026-10-12T08:02:34.622983+00:00",
+  "error": "CalledProcessError(1, ['/home/keyan/venvs/shen-stage1/bin/python', 'scripts/launch_shen_p2a.py', '--stage', 'smoke', '--matrix', 'configs/shen_p2a_a7/matrix.json', '--output', '/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_a7_followup_v1/smoke'])"
+}

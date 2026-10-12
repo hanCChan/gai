@@ -1,0 +1,82 @@
+[
+  {
+    "stage": "P2-A",
+    "run_id": "A7_n210_1_spec_strict_ib_lr0.001",
+    "gpu": 0,
+    "config": "/home/keyan/code-y-p2a/configs/shen_p2a_a7/A7_n210_1_spec_strict_ib_lr0.001.json",
+    "receiver": "n210_1",
+    "family": "representation",
+    "method": "spec_strict_ib",
+    "comparison_group": "A7_strict_IB_STFT_followup"
+  },
+  {
+    "stage": "P2-A",
+    "run_id": "A7_n210_1_spec_strict_ib_lr0.0003",
+    "gpu": 0,
+    "config": "/home/keyan/code-y-p2a/configs/shen_p2a_a7/A7_n210_1_spec_strict_ib_lr0.0003.json",
+    "receiver": "n210_1",
+    "family": "representation",
+    "method": "spec_strict_ib",
+    "comparison_group": "A7_strict_IB_STFT_followup"
+  },
+  {
+    "stage": "P2-A",
+    "run_id": "A7_n210_1_cis_strict_ib_lr0.001",
+    "gpu": 1,
+    "config": "/home/keyan/code-y-p2a/configs/shen_p2a_a7/A7_n210_1_cis_strict_ib_lr0.001.json",
+    "receiver": "n210_1",
+    "family": "representation",
+    "method": "cis_strict_ib",
+    "comparison_group": "A7_strict_IB_STFT_followup"
+  },
+  {
+    "stage": "P2-A",
+    "run_id": "A7_n210_1_cis_strict_ib_lr0.0003",
+    "gpu": 1,
+    "config": "/home/keyan/code-y-p2a/configs/shen_p2a_a7/A7_n210_1_cis_strict_ib_lr0.0003.json",
+    "receiver": "n210_1",
+    "family": "representation",
+    "method": "cis_strict_ib",
+    "comparison_group": "A7_strict_IB_STFT_followup"
+  },
+  {
+    "stage": "P2-A",
+    "run_id": "A7_rtl_6_spec_strict_ib_lr0.001",
+    "gpu": 2,
+    "config": "/home/keyan/code-y-p2a/configs/shen_p2a_a7/A7_rtl_6_spec_strict_ib_lr0.001.json",
+    "receiver": "rtl_6",
+    "family": "representation",
+    "method": "spec_strict_ib",
+    "comparison_group": "A7_strict_IB_STFT_followup"
+  },
+  {
+    "stage": "P2-A",
+    "run_id": "A7_rtl_6_spec_strict_ib_lr0.0003",
+    "gpu": 2,
+    "config": "/home/keyan/code-y-p2a/configs/shen_p2a_a7/A7_rtl_6_spec_strict_ib_lr0.0003.json",
+    "receiver": "rtl_6",
+    "family": "representation",
+    "method": "spec_strict_ib",
+    "comparison_group": "A7_strict_IB_STFT_followup"
+  },
+  {
+    "stage": "P2-A",
+    "run_id": "A7_rtl_6_cis_strict_ib_lr0.001",
+    "gpu": 3,
+    "config": "/home/keyan/code-y-p2a/configs/shen_p2a_a7/A7_rtl_6_cis_strict_ib_lr0.001.json",
+    "receiver": "rtl_6",
+    "family": "representation",
+    "method": "cis_strict_ib",
+    "comparison_group": "A7_strict_IB_STFT_followup"
+  },
+  {
+    "stage": "P2-A",
+    "run_id": "A7_rtl_6_cis_strict_ib_lr0.0003",
+    "gpu": 3,
+    "config": "/home/keyan/code-y-p2a/configs/shen_p2a_a7/A7_rtl_6_cis_strict_ib_lr0.0003.json",
+    "receiver": "rtl_6",
+    "family": "representation",
+    "method": "cis_strict_ib",
+    "comparison_group": "A7_strict_IB_STFT_followup"
+  }
+]

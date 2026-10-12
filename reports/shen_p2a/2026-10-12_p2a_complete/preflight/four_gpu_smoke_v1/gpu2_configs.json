@@ -1,0 +1,15 @@
+[
+  "/home/keyan/code-y-p2a/configs/shen_p2a/A5_n210_1_single_ib.json",
+  "/home/keyan/code-y-p2a/configs/shen_p2a/A5_n210_1_capacity_ib_ib_concat.json",
+  "/home/keyan/code-y-p2a/configs/shen_p2a/A5_n210_1_capacity_ib_ib_gate.json",
+  "/home/keyan/code-y-p2a/configs/shen_p2a/A5_n210_1_ib_oob_concat.json",
+  "/home/keyan/code-y-p2a/configs/shen_p2a/A5_n210_1_ib_oob_gate.json",
+  "/home/keyan/code-y-p2a/configs/shen_p2a/A5_rtl_6_single_ib.json",
+  "/home/keyan/code-y-p2a/configs/shen_p2a/A5_rtl_6_capacity_ib_ib_concat.json",
+  "/home/keyan/code-y-p2a/configs/shen_p2a/A5_rtl_6_capacity_ib_ib_gate.json",
+  "/home/keyan/code-y-p2a/configs/shen_p2a/A5_rtl_6_ib_oob_concat.json",
+  "/home/keyan/code-y-p2a/configs/shen_p2a/A5_rtl_6_ib_oob_gate.json",
+  "/home/keyan/code-y-p2a/configs/shen_p2a/A4_rtl_6_ib_near_gate.json",
+  "/home/keyan/code-y-p2a/configs/shen_p2a/A4_rtl_6_ib_mid_gate.json",
+  "/home/keyan/code-y-p2a/configs/shen_p2a/A4_rtl_6_ib_far_gate.json"
+]

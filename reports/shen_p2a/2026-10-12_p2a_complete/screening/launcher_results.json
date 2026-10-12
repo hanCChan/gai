@@ -1,0 +1,686 @@
+[
+  [
+    {
+      "gpu": 0,
+      "run_id": "A1_n210_1_spec_light_train_scalar_lr0.001",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A1_n210_1_spec_light_train_scalar_lr0.001.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A1_n210_1_spec_light_train_scalar_lr0.001"
+      ]
+    },
+    {
+      "gpu": 0,
+      "run_id": "A1_n210_1_spec_light_train_scalar_lr0.0003",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A1_n210_1_spec_light_train_scalar_lr0.0003.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A1_n210_1_spec_light_train_scalar_lr0.0003"
+      ]
+    },
+    {
+      "gpu": 0,
+      "run_id": "A1_n210_1_cis_light_train_scalar_lr0.001",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A1_n210_1_cis_light_train_scalar_lr0.001.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A1_n210_1_cis_light_train_scalar_lr0.001"
+      ]
+    },
+    {
+      "gpu": 0,
+      "run_id": "A1_n210_1_cis_light_train_scalar_lr0.0003",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A1_n210_1_cis_light_train_scalar_lr0.0003.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A1_n210_1_cis_light_train_scalar_lr0.0003"
+      ]
+    },
+    {
+      "gpu": 0,
+      "run_id": "A2_n210_1_cis_light_raw_lr0.001",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A2_n210_1_cis_light_raw_lr0.001.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A2_n210_1_cis_light_raw_lr0.001"
+      ]
+    },
+    {
+      "gpu": 0,
+      "run_id": "A2_n210_1_cis_light_raw_lr0.0003",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A2_n210_1_cis_light_raw_lr0.0003.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A2_n210_1_cis_light_raw_lr0.0003"
+      ]
+    },
+    {
+      "gpu": 0,
+      "run_id": "A1_rtl_6_spec_light_train_scalar_lr0.001",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A1_rtl_6_spec_light_train_scalar_lr0.001.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A1_rtl_6_spec_light_train_scalar_lr0.001"
+      ]
+    },
+    {
+      "gpu": 0,
+      "run_id": "A1_rtl_6_spec_light_train_scalar_lr0.0003",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A1_rtl_6_spec_light_train_scalar_lr0.0003.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A1_rtl_6_spec_light_train_scalar_lr0.0003"
+      ]
+    },
+    {
+      "gpu": 0,
+      "run_id": "A1_rtl_6_cis_light_train_scalar_lr0.001",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A1_rtl_6_cis_light_train_scalar_lr0.001.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A1_rtl_6_cis_light_train_scalar_lr0.001"
+      ]
+    },
+    {
+      "gpu": 0,
+      "run_id": "A1_rtl_6_cis_light_train_scalar_lr0.0003",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A1_rtl_6_cis_light_train_scalar_lr0.0003.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A1_rtl_6_cis_light_train_scalar_lr0.0003"
+      ]
+    },
+    {
+      "gpu": 0,
+      "run_id": "A2_rtl_6_cis_light_raw_lr0.001",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A2_rtl_6_cis_light_raw_lr0.001.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A2_rtl_6_cis_light_raw_lr0.001"
+      ]
+    },
+    {
+      "gpu": 0,
+      "run_id": "A2_rtl_6_cis_light_raw_lr0.0003",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A2_rtl_6_cis_light_raw_lr0.0003.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A2_rtl_6_cis_light_raw_lr0.0003"
+      ]
+    },
+    {
+      "gpu": 0,
+      "run_id": "A2_rtl_6_cis_factorized_wd1e4_lr0.001",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A2_rtl_6_cis_factorized_wd1e4_lr0.001.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A2_rtl_6_cis_factorized_wd1e4_lr0.001"
+      ]
+    },
+    {
+      "gpu": 0,
+      "run_id": "A2_rtl_6_cis_factorized_wd1e4_lr0.0003",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A2_rtl_6_cis_factorized_wd1e4_lr0.0003.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A2_rtl_6_cis_factorized_wd1e4_lr0.0003"
+      ]
+    },
+    {
+      "gpu": 0,
+      "run_id": "A2_rtl_6_cis_author_wd1e4_lr0.001",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A2_rtl_6_cis_author_wd1e4_lr0.001.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A2_rtl_6_cis_author_wd1e4_lr0.001"
+      ]
+    },
+    {
+      "gpu": 0,
+      "run_id": "A2_rtl_6_cis_author_wd1e4_lr0.0003",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A2_rtl_6_cis_author_wd1e4_lr0.0003.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A2_rtl_6_cis_author_wd1e4_lr0.0003"
+      ]
+    }
+  ],
+  [
+    {
+      "gpu": 1,
+      "run_id": "A4_n210_1_ib_freq_independent",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A4_n210_1_ib_freq_independent.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A4_n210_1_ib_freq_independent"
+      ]
+    },
+    {
+      "gpu": 1,
+      "run_id": "A4_n210_1_near_freq_independent",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A4_n210_1_near_freq_independent.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A4_n210_1_near_freq_independent"
+      ]
+    },
+    {
+      "gpu": 1,
+      "run_id": "A4_n210_1_mid_freq_independent",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A4_n210_1_mid_freq_independent.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A4_n210_1_mid_freq_independent"
+      ]
+    },
+    {
+      "gpu": 1,
+      "run_id": "A4_n210_1_far_freq_independent",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A4_n210_1_far_freq_independent.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A4_n210_1_far_freq_independent"
+      ]
+    },
+    {
+      "gpu": 1,
+      "run_id": "A4_n210_1_oob_freq_independent",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A4_n210_1_oob_freq_independent.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A4_n210_1_oob_freq_independent"
+      ]
+    },
+    {
+      "gpu": 1,
+      "run_id": "A4_rtl_6_ib_freq_independent",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A4_rtl_6_ib_freq_independent.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A4_rtl_6_ib_freq_independent"
+      ]
+    },
+    {
+      "gpu": 1,
+      "run_id": "A4_rtl_6_near_freq_independent",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A4_rtl_6_near_freq_independent.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A4_rtl_6_near_freq_independent"
+      ]
+    },
+    {
+      "gpu": 1,
+      "run_id": "A4_rtl_6_mid_freq_independent",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A4_rtl_6_mid_freq_independent.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A4_rtl_6_mid_freq_independent"
+      ]
+    },
+    {
+      "gpu": 1,
+      "run_id": "A4_rtl_6_far_freq_independent",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A4_rtl_6_far_freq_independent.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A4_rtl_6_far_freq_independent"
+      ]
+    },
+    {
+      "gpu": 1,
+      "run_id": "A4_rtl_6_oob_freq_independent",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A4_rtl_6_oob_freq_independent.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A4_rtl_6_oob_freq_independent"
+      ]
+    },
+    {
+      "gpu": 1,
+      "run_id": "A4_rtl_6_oob_guard0",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A4_rtl_6_oob_guard0.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A4_rtl_6_oob_guard0"
+      ]
+    },
+    {
+      "gpu": 1,
+      "run_id": "A4_rtl_6_oob_guard25000",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A4_rtl_6_oob_guard25000.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A4_rtl_6_oob_guard25000"
+      ]
+    },
+    {
+      "gpu": 1,
+      "run_id": "A4_rtl_6_oob_ib_relative_rect",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A4_rtl_6_oob_ib_relative_rect.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A4_rtl_6_oob_ib_relative_rect"
+      ]
+    },
+    {
+      "gpu": 1,
+      "run_id": "A4_rtl_6_oob_independent_projection_hann",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A4_rtl_6_oob_independent_projection_hann.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A4_rtl_6_oob_independent_projection_hann"
+      ]
+    },
+    {
+      "gpu": 1,
+      "run_id": "A4_rtl_6_oob_ib_relative_projection_hann",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A4_rtl_6_oob_ib_relative_projection_hann.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A4_rtl_6_oob_ib_relative_projection_hann"
+      ]
+    }
+  ],
+  [
+    {
+      "gpu": 2,
+      "run_id": "A5_n210_1_single_ib",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A5_n210_1_single_ib.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A5_n210_1_single_ib"
+      ]
+    },
+    {
+      "gpu": 2,
+      "run_id": "A5_n210_1_capacity_ib_ib_concat",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A5_n210_1_capacity_ib_ib_concat.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A5_n210_1_capacity_ib_ib_concat"
+      ]
+    },
+    {
+      "gpu": 2,
+      "run_id": "A5_n210_1_capacity_ib_ib_gate",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A5_n210_1_capacity_ib_ib_gate.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A5_n210_1_capacity_ib_ib_gate"
+      ]
+    },
+    {
+      "gpu": 2,
+      "run_id": "A5_n210_1_ib_oob_concat",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A5_n210_1_ib_oob_concat.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A5_n210_1_ib_oob_concat"
+      ]
+    },
+    {
+      "gpu": 2,
+      "run_id": "A5_n210_1_ib_oob_gate",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A5_n210_1_ib_oob_gate.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A5_n210_1_ib_oob_gate"
+      ]
+    },
+    {
+      "gpu": 2,
+      "run_id": "A5_rtl_6_single_ib",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A5_rtl_6_single_ib.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A5_rtl_6_single_ib"
+      ]
+    },
+    {
+      "gpu": 2,
+      "run_id": "A5_rtl_6_capacity_ib_ib_concat",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A5_rtl_6_capacity_ib_ib_concat.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A5_rtl_6_capacity_ib_ib_concat"
+      ]
+    },
+    {
+      "gpu": 2,
+      "run_id": "A5_rtl_6_capacity_ib_ib_gate",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A5_rtl_6_capacity_ib_ib_gate.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A5_rtl_6_capacity_ib_ib_gate"
+      ]
+    },
+    {
+      "gpu": 2,
+      "run_id": "A5_rtl_6_ib_oob_concat",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A5_rtl_6_ib_oob_concat.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A5_rtl_6_ib_oob_concat"
+      ]
+    },
+    {
+      "gpu": 2,
+      "run_id": "A5_rtl_6_ib_oob_gate",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A5_rtl_6_ib_oob_gate.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A5_rtl_6_ib_oob_gate"
+      ]
+    },
+    {
+      "gpu": 2,
+      "run_id": "A4_rtl_6_ib_near_gate",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A4_rtl_6_ib_near_gate.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A4_rtl_6_ib_near_gate"
+      ]
+    },
+    {
+      "gpu": 2,
+      "run_id": "A4_rtl_6_ib_mid_gate",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A4_rtl_6_ib_mid_gate.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A4_rtl_6_ib_mid_gate"
+      ]
+    },
+    {
+      "gpu": 2,
+      "run_id": "A4_rtl_6_ib_far_gate",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A4_rtl_6_ib_far_gate.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A4_rtl_6_ib_far_gate"
+      ]
+    }
+  ],
+  [
+    {
+      "gpu": 3,
+      "run_id": "A6_rtl_6_full_lr0.001_wd0",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A6_rtl_6_full_lr0.001_wd0.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A6_rtl_6_full_lr0.001_wd0"
+      ]
+    },
+    {
+      "gpu": 3,
+      "run_id": "A6_rtl_6_full_lr0.001_wd0.0001",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A6_rtl_6_full_lr0.001_wd0.0001.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A6_rtl_6_full_lr0.001_wd0.0001"
+      ]
+    },
+    {
+      "gpu": 3,
+      "run_id": "A6_rtl_6_full_lr0.0003_wd0",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A6_rtl_6_full_lr0.0003_wd0.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A6_rtl_6_full_lr0.0003_wd0"
+      ]
+    },
+    {
+      "gpu": 3,
+      "run_id": "A6_rtl_6_full_lr0.0003_wd0.0001",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A6_rtl_6_full_lr0.0003_wd0.0001.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A6_rtl_6_full_lr0.0003_wd0.0001"
+      ]
+    },
+    {
+      "gpu": 3,
+      "run_id": "A6_rtl_6_ib_lr0.001_wd0",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A6_rtl_6_ib_lr0.001_wd0.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A6_rtl_6_ib_lr0.001_wd0"
+      ]
+    },
+    {
+      "gpu": 3,
+      "run_id": "A6_rtl_6_ib_lr0.001_wd0.0001",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A6_rtl_6_ib_lr0.001_wd0.0001.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A6_rtl_6_ib_lr0.001_wd0.0001"
+      ]
+    },
+    {
+      "gpu": 3,
+      "run_id": "A6_rtl_6_ib_lr0.0003_wd0",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A6_rtl_6_ib_lr0.0003_wd0.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A6_rtl_6_ib_lr0.0003_wd0"
+      ]
+    },
+    {
+      "gpu": 3,
+      "run_id": "A6_rtl_6_ib_lr0.0003_wd0.0001",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/configs/shen_p2a/A6_rtl_6_ib_lr0.0003_wd0.0001.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/screening/A6_rtl_6_ib_lr0.0003_wd0.0001"
+      ]
+    }
+  ]
+]

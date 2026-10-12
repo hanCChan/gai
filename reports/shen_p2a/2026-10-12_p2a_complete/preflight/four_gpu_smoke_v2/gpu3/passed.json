@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "gpu_visible": "3",
+  "checks": [
+    {
+      "config": "/home/keyan/code-y-p2a/configs/shen_p2a/A6_rtl_6_full_lr0.001_wd0.json",
+      "method": "full_stability",
+      "receiver": "rtl_6",
+      "family": "stability",
+      "parameters": 659370,
+      "shape": [
+        10,
+        10
+      ],
+      "labels": [
+        0,
+        9
+      ],
+      "steps": 21,
+      "initial_loss": 2.3125014305114746,
+      "final_loss": 0.0069976807571947575,
+      "overfit_accuracy": 1.0,
+      "gradient_finite": true,
+      "checkpoint_exact_roundtrip": true,
+      "seconds": 4.284588999000334
+    },
+    {
+      "config": "/home/keyan/code-y-p2a/configs/shen_p2a/A6_rtl_6_ib_lr0.001_wd0.json",
+      "method": "ib_stability",
+      "receiver": "rtl_6",
+      "family": "stability",
+      "parameters": 659370,
+      "shape": [
+        10,
+        10
+      ],
+      "labels": [
+        0,
+        9
+      ],
+      "steps": 21,
+      "initial_loss": 2.3098912239074707,
+      "final_loss": 0.0011700390605255961,
+      "overfit_accuracy": 1.0,
+      "gradient_finite": true,
+      "checkpoint_exact_roundtrip": true,
+      "seconds": 0.6955408220001118
+    }
+  ]
+}

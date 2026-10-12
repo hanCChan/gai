@@ -1,0 +1,9 @@
+[
+  "/home/keyan/code-y-p2a/configs/shen_p2a/A1_n210_1_spec_light_train_scalar_lr0.001.json",
+  "/home/keyan/code-y-p2a/configs/shen_p2a/A1_n210_1_cis_light_train_scalar_lr0.001.json",
+  "/home/keyan/code-y-p2a/configs/shen_p2a/A2_n210_1_cis_light_raw_lr0.001.json",
+  "/home/keyan/code-y-p2a/configs/shen_p2a/A1_rtl_6_spec_light_train_scalar_lr0.001.json",
+  "/home/keyan/code-y-p2a/configs/shen_p2a/A1_rtl_6_cis_light_train_scalar_lr0.001.json",
+  "/home/keyan/code-y-p2a/configs/shen_p2a/A2_rtl_6_cis_light_raw_lr0.001.json",
+  "/home/keyan/code-y-p2a/configs/shen_p2a/A2_rtl_6_cis_author_wd1e4_lr0.001.json"
+]

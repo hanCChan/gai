@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Prepare P3 history from user paper and already cached headers, no HDF5 access."""
-import hashlib,json,re
+import hashlib,json,re,subprocess
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 if __name__=='__main__':
-    paper=Path('/home/keyan/code-y/oob-lunwen1/OOB_IOTJ.pdf');text=Path('/tmp/keyan_oob_paper.txt').read_text()
+    paper=Path('/home/keyan/code-y/oob-lunwen1/OOB_IOTJ.pdf')
+    text=subprocess.check_output(['pdftotext','-layout',str(paper),'-'],text=True)
     base=json.loads((ROOT/'configs/shen_evidence/p3_protocol.candidate.json').read_text())
     expected=['b200_2','b200_mini_2','b210_2','n210_2','n210_3','pluto_2'];assert base['final_locked_receivers']==expected
     # PDF layout has underscores converted to spaces. Pin this textual evidence explicitly.
@@ -28,7 +29,11 @@ if __name__=='__main__':
     base.update(status='revised_candidate_history_audited_not_frozen',historical_oob_overlap='all 20 receivers used in previous OOB study; six formerly-blind outcomes already reported in supplied manuscript',
                 independent_research_holdout_available_in_this_corpus=False,old_paper_sha256=hashlib.sha256(paper.read_bytes()).hexdigest(),
                 history_evidence='OOB_IOTJ.pdf Section V-A, Figure4, RQ6/TableVI; manuscript publication/submission status unverified',
-                new_signal_access_enabled=False,automatic_start=False,hardware_type_extrapolation_development_receivers=['n210_1'],
+                new_signal_access_enabled=False,automatic_start=False,
+                transmitter_label_map={str(c):c-31 for c in range(31,41)},
+                training_receiver_label_map={rx:i for i,rx in enumerate(base['train_receivers'])},
+                hardware_type_grouping='receiver-name model prefixes; physical identity/versions not independently verified',
+                hardware_type_extrapolation_development_receivers=[r['receiver'] for r in table if r['P3_role']=='development' and not r['hardware_family_seen_in_training']],
                 development_model_selection_reuses_historical_domains=True,
                 locked_receivers_interpretation='training-unseen and locked for this protocol; previously evaluated and outcomes seen, not independent of research history',
                 receiver_history=table,local_package_dates_sessions_cfo_units='unverified',

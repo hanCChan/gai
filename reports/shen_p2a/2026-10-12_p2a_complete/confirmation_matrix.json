@@ -1,0 +1,562 @@
+[
+  {
+    "run_id": "A1_n210_1_cis_light_train_scalar_lr0.0003_seed20261013",
+    "gpu": 0,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A1_n210_1_cis_light_train_scalar_lr0.0003_seed20261013.json",
+    "stage": "P2-A",
+    "family": "representation",
+    "receiver": "n210_1",
+    "method": "cis_light_train_scalar",
+    "comparison_group": "A1_matched_representation"
+  },
+  {
+    "run_id": "A1_n210_1_cis_light_train_scalar_lr0.0003_seed20261014",
+    "gpu": 0,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A1_n210_1_cis_light_train_scalar_lr0.0003_seed20261014.json",
+    "stage": "P2-A",
+    "family": "representation",
+    "receiver": "n210_1",
+    "method": "cis_light_train_scalar",
+    "comparison_group": "A1_matched_representation"
+  },
+  {
+    "run_id": "A1_n210_1_spec_light_train_scalar_lr0.0003_seed20261013",
+    "gpu": 0,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A1_n210_1_spec_light_train_scalar_lr0.0003_seed20261013.json",
+    "stage": "P2-A",
+    "family": "representation",
+    "receiver": "n210_1",
+    "method": "spec_light_train_scalar",
+    "comparison_group": "A1_matched_representation"
+  },
+  {
+    "run_id": "A1_n210_1_spec_light_train_scalar_lr0.0003_seed20261014",
+    "gpu": 0,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A1_n210_1_spec_light_train_scalar_lr0.0003_seed20261014.json",
+    "stage": "P2-A",
+    "family": "representation",
+    "receiver": "n210_1",
+    "method": "spec_light_train_scalar",
+    "comparison_group": "A1_matched_representation"
+  },
+  {
+    "run_id": "A2_n210_1_cis_light_raw_lr0.001_seed20261013",
+    "gpu": 0,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A2_n210_1_cis_light_raw_lr0.001_seed20261013.json",
+    "stage": "P2-A",
+    "family": "representation",
+    "receiver": "n210_1",
+    "method": "cis_light_raw",
+    "comparison_group": "A2_capacity_raw_cis"
+  },
+  {
+    "run_id": "A2_n210_1_cis_light_raw_lr0.001_seed20261014",
+    "gpu": 0,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A2_n210_1_cis_light_raw_lr0.001_seed20261014.json",
+    "stage": "P2-A",
+    "family": "representation",
+    "receiver": "n210_1",
+    "method": "cis_light_raw",
+    "comparison_group": "A2_capacity_raw_cis"
+  },
+  {
+    "run_id": "A4_n210_1_far_freq_independent_seed20261013",
+    "gpu": 1,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A4_n210_1_far_freq_independent_seed20261013.json",
+    "stage": "P2-A",
+    "family": "band",
+    "receiver": "n210_1",
+    "method": "far_freq_independent",
+    "comparison_group": "A4_frequency_rings"
+  },
+  {
+    "run_id": "A4_n210_1_far_freq_independent_seed20261014",
+    "gpu": 1,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A4_n210_1_far_freq_independent_seed20261014.json",
+    "stage": "P2-A",
+    "family": "band",
+    "receiver": "n210_1",
+    "method": "far_freq_independent",
+    "comparison_group": "A4_frequency_rings"
+  },
+  {
+    "run_id": "A4_n210_1_ib_freq_independent_seed20261013",
+    "gpu": 1,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A4_n210_1_ib_freq_independent_seed20261013.json",
+    "stage": "P2-A",
+    "family": "band",
+    "receiver": "n210_1",
+    "method": "ib_freq_independent",
+    "comparison_group": "A4_frequency_rings"
+  },
+  {
+    "run_id": "A4_n210_1_ib_freq_independent_seed20261014",
+    "gpu": 1,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A4_n210_1_ib_freq_independent_seed20261014.json",
+    "stage": "P2-A",
+    "family": "band",
+    "receiver": "n210_1",
+    "method": "ib_freq_independent",
+    "comparison_group": "A4_frequency_rings"
+  },
+  {
+    "run_id": "A4_n210_1_mid_freq_independent_seed20261013",
+    "gpu": 1,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A4_n210_1_mid_freq_independent_seed20261013.json",
+    "stage": "P2-A",
+    "family": "band",
+    "receiver": "n210_1",
+    "method": "mid_freq_independent",
+    "comparison_group": "A4_frequency_rings"
+  },
+  {
+    "run_id": "A4_n210_1_mid_freq_independent_seed20261014",
+    "gpu": 1,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A4_n210_1_mid_freq_independent_seed20261014.json",
+    "stage": "P2-A",
+    "family": "band",
+    "receiver": "n210_1",
+    "method": "mid_freq_independent",
+    "comparison_group": "A4_frequency_rings"
+  },
+  {
+    "run_id": "A4_n210_1_near_freq_independent_seed20261013",
+    "gpu": 1,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A4_n210_1_near_freq_independent_seed20261013.json",
+    "stage": "P2-A",
+    "family": "band",
+    "receiver": "n210_1",
+    "method": "near_freq_independent",
+    "comparison_group": "A4_frequency_rings"
+  },
+  {
+    "run_id": "A4_n210_1_near_freq_independent_seed20261014",
+    "gpu": 1,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A4_n210_1_near_freq_independent_seed20261014.json",
+    "stage": "P2-A",
+    "family": "band",
+    "receiver": "n210_1",
+    "method": "near_freq_independent",
+    "comparison_group": "A4_frequency_rings"
+  },
+  {
+    "run_id": "A4_n210_1_oob_freq_independent_seed20261013",
+    "gpu": 1,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A4_n210_1_oob_freq_independent_seed20261013.json",
+    "stage": "P2-A",
+    "family": "band",
+    "receiver": "n210_1",
+    "method": "oob_freq_independent",
+    "comparison_group": "A4_frequency_rings"
+  },
+  {
+    "run_id": "A4_n210_1_oob_freq_independent_seed20261014",
+    "gpu": 1,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A4_n210_1_oob_freq_independent_seed20261014.json",
+    "stage": "P2-A",
+    "family": "band",
+    "receiver": "n210_1",
+    "method": "oob_freq_independent",
+    "comparison_group": "A4_frequency_rings"
+  },
+  {
+    "run_id": "A5_n210_1_capacity_ib_ib_concat_seed20261013",
+    "gpu": 2,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A5_n210_1_capacity_ib_ib_concat_seed20261013.json",
+    "stage": "P2-A",
+    "family": "fusion",
+    "receiver": "n210_1",
+    "method": "capacity_ib_ib_concat",
+    "comparison_group": "A5_information_complementarity"
+  },
+  {
+    "run_id": "A5_n210_1_capacity_ib_ib_concat_seed20261014",
+    "gpu": 2,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A5_n210_1_capacity_ib_ib_concat_seed20261014.json",
+    "stage": "P2-A",
+    "family": "fusion",
+    "receiver": "n210_1",
+    "method": "capacity_ib_ib_concat",
+    "comparison_group": "A5_information_complementarity"
+  },
+  {
+    "run_id": "A5_n210_1_capacity_ib_ib_gate_seed20261013",
+    "gpu": 2,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A5_n210_1_capacity_ib_ib_gate_seed20261013.json",
+    "stage": "P2-A",
+    "family": "fusion",
+    "receiver": "n210_1",
+    "method": "capacity_ib_ib_gate",
+    "comparison_group": "A5_information_complementarity"
+  },
+  {
+    "run_id": "A5_n210_1_capacity_ib_ib_gate_seed20261014",
+    "gpu": 2,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A5_n210_1_capacity_ib_ib_gate_seed20261014.json",
+    "stage": "P2-A",
+    "family": "fusion",
+    "receiver": "n210_1",
+    "method": "capacity_ib_ib_gate",
+    "comparison_group": "A5_information_complementarity"
+  },
+  {
+    "run_id": "A5_n210_1_ib_oob_concat_seed20261013",
+    "gpu": 2,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A5_n210_1_ib_oob_concat_seed20261013.json",
+    "stage": "P2-A",
+    "family": "fusion",
+    "receiver": "n210_1",
+    "method": "ib_oob_concat",
+    "comparison_group": "A5_information_complementarity"
+  },
+  {
+    "run_id": "A5_n210_1_ib_oob_concat_seed20261014",
+    "gpu": 2,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A5_n210_1_ib_oob_concat_seed20261014.json",
+    "stage": "P2-A",
+    "family": "fusion",
+    "receiver": "n210_1",
+    "method": "ib_oob_concat",
+    "comparison_group": "A5_information_complementarity"
+  },
+  {
+    "run_id": "A5_n210_1_ib_oob_gate_seed20261013",
+    "gpu": 2,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A5_n210_1_ib_oob_gate_seed20261013.json",
+    "stage": "P2-A",
+    "family": "fusion",
+    "receiver": "n210_1",
+    "method": "ib_oob_gate",
+    "comparison_group": "A5_information_complementarity"
+  },
+  {
+    "run_id": "A5_n210_1_ib_oob_gate_seed20261014",
+    "gpu": 2,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A5_n210_1_ib_oob_gate_seed20261014.json",
+    "stage": "P2-A",
+    "family": "fusion",
+    "receiver": "n210_1",
+    "method": "ib_oob_gate",
+    "comparison_group": "A5_information_complementarity"
+  },
+  {
+    "run_id": "A5_n210_1_single_ib_seed20261013",
+    "gpu": 2,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A5_n210_1_single_ib_seed20261013.json",
+    "stage": "P2-A",
+    "family": "fusion",
+    "receiver": "n210_1",
+    "method": "single_ib",
+    "comparison_group": "A5_information_complementarity"
+  },
+  {
+    "run_id": "A5_n210_1_single_ib_seed20261014",
+    "gpu": 2,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A5_n210_1_single_ib_seed20261014.json",
+    "stage": "P2-A",
+    "family": "fusion",
+    "receiver": "n210_1",
+    "method": "single_ib",
+    "comparison_group": "A5_information_complementarity"
+  },
+  {
+    "run_id": "A1_rtl_6_cis_light_train_scalar_lr0.0003_seed20261013",
+    "gpu": 0,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A1_rtl_6_cis_light_train_scalar_lr0.0003_seed20261013.json",
+    "stage": "P2-A",
+    "family": "representation",
+    "receiver": "rtl_6",
+    "method": "cis_light_train_scalar",
+    "comparison_group": "A1_matched_representation"
+  },
+  {
+    "run_id": "A1_rtl_6_cis_light_train_scalar_lr0.0003_seed20261014",
+    "gpu": 0,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A1_rtl_6_cis_light_train_scalar_lr0.0003_seed20261014.json",
+    "stage": "P2-A",
+    "family": "representation",
+    "receiver": "rtl_6",
+    "method": "cis_light_train_scalar",
+    "comparison_group": "A1_matched_representation"
+  },
+  {
+    "run_id": "A1_rtl_6_spec_light_train_scalar_lr0.0003_seed20261013",
+    "gpu": 0,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A1_rtl_6_spec_light_train_scalar_lr0.0003_seed20261013.json",
+    "stage": "P2-A",
+    "family": "representation",
+    "receiver": "rtl_6",
+    "method": "spec_light_train_scalar",
+    "comparison_group": "A1_matched_representation"
+  },
+  {
+    "run_id": "A1_rtl_6_spec_light_train_scalar_lr0.0003_seed20261014",
+    "gpu": 0,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A1_rtl_6_spec_light_train_scalar_lr0.0003_seed20261014.json",
+    "stage": "P2-A",
+    "family": "representation",
+    "receiver": "rtl_6",
+    "method": "spec_light_train_scalar",
+    "comparison_group": "A1_matched_representation"
+  },
+  {
+    "run_id": "A2_rtl_6_cis_light_raw_lr0.001_seed20261013",
+    "gpu": 0,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A2_rtl_6_cis_light_raw_lr0.001_seed20261013.json",
+    "stage": "P2-A",
+    "family": "representation",
+    "receiver": "rtl_6",
+    "method": "cis_light_raw",
+    "comparison_group": "A2_capacity_raw_cis"
+  },
+  {
+    "run_id": "A2_rtl_6_cis_light_raw_lr0.001_seed20261014",
+    "gpu": 0,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A2_rtl_6_cis_light_raw_lr0.001_seed20261014.json",
+    "stage": "P2-A",
+    "family": "representation",
+    "receiver": "rtl_6",
+    "method": "cis_light_raw",
+    "comparison_group": "A2_capacity_raw_cis"
+  },
+  {
+    "run_id": "A4_rtl_6_far_freq_independent_seed20261013",
+    "gpu": 1,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A4_rtl_6_far_freq_independent_seed20261013.json",
+    "stage": "P2-A",
+    "family": "band",
+    "receiver": "rtl_6",
+    "method": "far_freq_independent",
+    "comparison_group": "A4_frequency_rings"
+  },
+  {
+    "run_id": "A4_rtl_6_far_freq_independent_seed20261014",
+    "gpu": 1,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A4_rtl_6_far_freq_independent_seed20261014.json",
+    "stage": "P2-A",
+    "family": "band",
+    "receiver": "rtl_6",
+    "method": "far_freq_independent",
+    "comparison_group": "A4_frequency_rings"
+  },
+  {
+    "run_id": "A4_rtl_6_ib_freq_independent_seed20261013",
+    "gpu": 1,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A4_rtl_6_ib_freq_independent_seed20261013.json",
+    "stage": "P2-A",
+    "family": "band",
+    "receiver": "rtl_6",
+    "method": "ib_freq_independent",
+    "comparison_group": "A4_frequency_rings"
+  },
+  {
+    "run_id": "A4_rtl_6_ib_freq_independent_seed20261014",
+    "gpu": 1,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A4_rtl_6_ib_freq_independent_seed20261014.json",
+    "stage": "P2-A",
+    "family": "band",
+    "receiver": "rtl_6",
+    "method": "ib_freq_independent",
+    "comparison_group": "A4_frequency_rings"
+  },
+  {
+    "run_id": "A4_rtl_6_mid_freq_independent_seed20261013",
+    "gpu": 1,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A4_rtl_6_mid_freq_independent_seed20261013.json",
+    "stage": "P2-A",
+    "family": "band",
+    "receiver": "rtl_6",
+    "method": "mid_freq_independent",
+    "comparison_group": "A4_frequency_rings"
+  },
+  {
+    "run_id": "A4_rtl_6_mid_freq_independent_seed20261014",
+    "gpu": 1,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A4_rtl_6_mid_freq_independent_seed20261014.json",
+    "stage": "P2-A",
+    "family": "band",
+    "receiver": "rtl_6",
+    "method": "mid_freq_independent",
+    "comparison_group": "A4_frequency_rings"
+  },
+  {
+    "run_id": "A4_rtl_6_near_freq_independent_seed20261013",
+    "gpu": 1,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A4_rtl_6_near_freq_independent_seed20261013.json",
+    "stage": "P2-A",
+    "family": "band",
+    "receiver": "rtl_6",
+    "method": "near_freq_independent",
+    "comparison_group": "A4_frequency_rings"
+  },
+  {
+    "run_id": "A4_rtl_6_near_freq_independent_seed20261014",
+    "gpu": 1,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A4_rtl_6_near_freq_independent_seed20261014.json",
+    "stage": "P2-A",
+    "family": "band",
+    "receiver": "rtl_6",
+    "method": "near_freq_independent",
+    "comparison_group": "A4_frequency_rings"
+  },
+  {
+    "run_id": "A4_rtl_6_oob_freq_independent_seed20261013",
+    "gpu": 1,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A4_rtl_6_oob_freq_independent_seed20261013.json",
+    "stage": "P2-A",
+    "family": "band",
+    "receiver": "rtl_6",
+    "method": "oob_freq_independent",
+    "comparison_group": "A4_frequency_rings"
+  },
+  {
+    "run_id": "A4_rtl_6_oob_freq_independent_seed20261014",
+    "gpu": 1,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A4_rtl_6_oob_freq_independent_seed20261014.json",
+    "stage": "P2-A",
+    "family": "band",
+    "receiver": "rtl_6",
+    "method": "oob_freq_independent",
+    "comparison_group": "A4_frequency_rings"
+  },
+  {
+    "run_id": "A5_rtl_6_capacity_ib_ib_concat_seed20261013",
+    "gpu": 2,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A5_rtl_6_capacity_ib_ib_concat_seed20261013.json",
+    "stage": "P2-A",
+    "family": "fusion",
+    "receiver": "rtl_6",
+    "method": "capacity_ib_ib_concat",
+    "comparison_group": "A5_information_complementarity"
+  },
+  {
+    "run_id": "A5_rtl_6_capacity_ib_ib_concat_seed20261014",
+    "gpu": 2,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A5_rtl_6_capacity_ib_ib_concat_seed20261014.json",
+    "stage": "P2-A",
+    "family": "fusion",
+    "receiver": "rtl_6",
+    "method": "capacity_ib_ib_concat",
+    "comparison_group": "A5_information_complementarity"
+  },
+  {
+    "run_id": "A5_rtl_6_capacity_ib_ib_gate_seed20261013",
+    "gpu": 2,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A5_rtl_6_capacity_ib_ib_gate_seed20261013.json",
+    "stage": "P2-A",
+    "family": "fusion",
+    "receiver": "rtl_6",
+    "method": "capacity_ib_ib_gate",
+    "comparison_group": "A5_information_complementarity"
+  },
+  {
+    "run_id": "A5_rtl_6_capacity_ib_ib_gate_seed20261014",
+    "gpu": 2,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A5_rtl_6_capacity_ib_ib_gate_seed20261014.json",
+    "stage": "P2-A",
+    "family": "fusion",
+    "receiver": "rtl_6",
+    "method": "capacity_ib_ib_gate",
+    "comparison_group": "A5_information_complementarity"
+  },
+  {
+    "run_id": "A5_rtl_6_ib_oob_concat_seed20261013",
+    "gpu": 2,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A5_rtl_6_ib_oob_concat_seed20261013.json",
+    "stage": "P2-A",
+    "family": "fusion",
+    "receiver": "rtl_6",
+    "method": "ib_oob_concat",
+    "comparison_group": "A5_information_complementarity"
+  },
+  {
+    "run_id": "A5_rtl_6_ib_oob_concat_seed20261014",
+    "gpu": 2,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A5_rtl_6_ib_oob_concat_seed20261014.json",
+    "stage": "P2-A",
+    "family": "fusion",
+    "receiver": "rtl_6",
+    "method": "ib_oob_concat",
+    "comparison_group": "A5_information_complementarity"
+  },
+  {
+    "run_id": "A5_rtl_6_ib_oob_gate_seed20261013",
+    "gpu": 2,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A5_rtl_6_ib_oob_gate_seed20261013.json",
+    "stage": "P2-A",
+    "family": "fusion",
+    "receiver": "rtl_6",
+    "method": "ib_oob_gate",
+    "comparison_group": "A5_information_complementarity"
+  },
+  {
+    "run_id": "A5_rtl_6_ib_oob_gate_seed20261014",
+    "gpu": 2,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A5_rtl_6_ib_oob_gate_seed20261014.json",
+    "stage": "P2-A",
+    "family": "fusion",
+    "receiver": "rtl_6",
+    "method": "ib_oob_gate",
+    "comparison_group": "A5_information_complementarity"
+  },
+  {
+    "run_id": "A5_rtl_6_single_ib_seed20261013",
+    "gpu": 2,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A5_rtl_6_single_ib_seed20261013.json",
+    "stage": "P2-A",
+    "family": "fusion",
+    "receiver": "rtl_6",
+    "method": "single_ib",
+    "comparison_group": "A5_information_complementarity"
+  },
+  {
+    "run_id": "A5_rtl_6_single_ib_seed20261014",
+    "gpu": 2,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A5_rtl_6_single_ib_seed20261014.json",
+    "stage": "P2-A",
+    "family": "fusion",
+    "receiver": "rtl_6",
+    "method": "single_ib",
+    "comparison_group": "A5_information_complementarity"
+  },
+  {
+    "run_id": "A6_rtl_6_full_lr0.0003_wd0.0001_seed20261013",
+    "gpu": 3,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A6_rtl_6_full_lr0.0003_wd0.0001_seed20261013.json",
+    "stage": "P2-A",
+    "family": "stability",
+    "receiver": "rtl_6",
+    "method": "full_stability",
+    "comparison_group": "A6_stability"
+  },
+  {
+    "run_id": "A6_rtl_6_full_lr0.0003_wd0.0001_seed20261014",
+    "gpu": 3,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A6_rtl_6_full_lr0.0003_wd0.0001_seed20261014.json",
+    "stage": "P2-A",
+    "family": "stability",
+    "receiver": "rtl_6",
+    "method": "full_stability",
+    "comparison_group": "A6_stability"
+  },
+  {
+    "run_id": "A6_rtl_6_ib_lr0.0003_wd0_seed20261013",
+    "gpu": 3,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A6_rtl_6_ib_lr0.0003_wd0_seed20261013.json",
+    "stage": "P2-A",
+    "family": "stability",
+    "receiver": "rtl_6",
+    "method": "ib_stability",
+    "comparison_group": "A6_stability"
+  },
+  {
+    "run_id": "A6_rtl_6_ib_lr0.0003_wd0_seed20261014",
+    "gpu": 3,
+    "config": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/configs/A6_rtl_6_ib_lr0.0003_wd0_seed20261014.json",
+    "stage": "P2-A",
+    "family": "stability",
+    "receiver": "rtl_6",
+    "method": "ib_stability",
+    "comparison_group": "A6_stability"
+  }
+]

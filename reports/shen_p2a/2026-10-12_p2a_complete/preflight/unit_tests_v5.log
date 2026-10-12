@@ -1,0 +1,24 @@
+test_allowed_filename_cannot_alias_locked_file (test_shen_evidence.EvidenceTests.test_allowed_filename_cannot_alias_locked_file) ... ok
+test_dropout_clears_copied_concat_for_both_embedders (test_shen_evidence.EvidenceTests.test_dropout_clears_copied_concat_for_both_embedders) ... ok
+test_final_data_access_denied (test_shen_evidence.EvidenceTests.test_final_data_access_denied) ... ok
+test_frequency_isolation_and_no_excluded_scale_leak (test_shen_evidence.EvidenceTests.test_frequency_isolation_and_no_excluded_scale_leak) ... ok
+test_legacy_fft_oob_really_excludes_ib (test_shen_evidence.EvidenceTests.test_legacy_fft_oob_really_excludes_ib) ... ok
+test_macro_f1_unbalanced_and_partition_invariance (test_shen_evidence.EvidenceTests.test_macro_f1_unbalanced_and_partition_invariance) ... ok
+test_worker_handles_are_private_readonly_and_pickle_safe (test_shen_evidence.EvidenceTests.test_worker_handles_are_private_readonly_and_pickle_safe) ... ok
+test_grl_gradient_and_multi_receiver_constraint (test_shen_next.PreparedTests.test_grl_gradient_and_multi_receiver_constraint) ... ok
+test_pairing_and_contrastive_positive_indices (test_shen_next.PreparedTests.test_pairing_and_contrastive_positive_indices) ... ok
+test_same_tokenizer_capacity_and_no_oob_main_leak (test_shen_next.PreparedTests.test_same_tokenizer_capacity_and_no_oob_main_leak) ... ok
+test_subsample_delay_survives_and_reproducible (test_shen_next.PreparedTests.test_subsample_delay_survives_and_reproducible) ... ok
+test_author_cis_unchanged_and_spec_geometry (test_shen_p2a.P2Tests.test_author_cis_unchanged_and_spec_geometry) ... ok
+test_excluded_bins_cannot_leak_through_window_or_independent_scale (test_shen_p2a.P2Tests.test_excluded_bins_cannot_leak_through_window_or_independent_scale) ... ok
+test_factorized_capacity_preserves_encoder_and_classifier (test_shen_p2a.P2Tests.test_factorized_capacity_preserves_encoder_and_classifier) ... ok
+test_fusion_main_invariant_to_auxiliary_and_parameter_controls (test_shen_p2a.P2Tests.test_fusion_main_invariant_to_auxiliary_and_parameter_controls) ... ok
+test_legacy_ib_and_oob_are_identical_in_canonical_case (test_shen_p2a.P2Tests.test_legacy_ib_and_oob_are_identical_in_canonical_case) ... ok
+test_relative_ib_scale_is_explicit_and_energy_ratio_preserved (test_shen_p2a.P2Tests.test_relative_ib_scale_is_explicit_and_energy_ratio_preserved) ... ok
+test_ring_masks_disjoint_and_cover_oob (test_shen_p2a.P2Tests.test_ring_masks_disjoint_and_cover_oob) ... ok
+test_recipe_freezes_before_new_seeds_and_only_p1_is_launched (test_shen_pipeline.PipelineTests.test_recipe_freezes_before_new_seeds_and_only_p1_is_launched) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 4.297s
+
+OK

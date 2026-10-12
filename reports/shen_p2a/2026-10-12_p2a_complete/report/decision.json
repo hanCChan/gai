@@ -1,0 +1,34 @@
+{
+  "P2_A_completed_runs": 108,
+  "P2_B_positive_development_gate": false,
+  "P2_B_or_P3_automatic_start": false,
+  "fusion_evidence": [
+    {
+      "receiver": "n210_1",
+      "method": "ib_oob_concat",
+      "pairs": 6,
+      "all_three_seeds_accuracy_and_f1_positive_vs_single_and_capacity": false
+    },
+    {
+      "receiver": "n210_1",
+      "method": "ib_oob_gate",
+      "pairs": 6,
+      "all_three_seeds_accuracy_and_f1_positive_vs_single_and_capacity": false
+    },
+    {
+      "receiver": "rtl_6",
+      "method": "ib_oob_concat",
+      "pairs": 6,
+      "all_three_seeds_accuracy_and_f1_positive_vs_single_and_capacity": false
+    },
+    {
+      "receiver": "rtl_6",
+      "method": "ib_oob_gate",
+      "pairs": 6,
+      "all_three_seeds_accuracy_and_f1_positive_vs_single_and_capacity": false
+    }
+  ],
+  "causal_hardware_or_label_error_established": false,
+  "independent_research_unseen_final_receivers_available": false,
+  "frequency_metadata_verified": false
+}

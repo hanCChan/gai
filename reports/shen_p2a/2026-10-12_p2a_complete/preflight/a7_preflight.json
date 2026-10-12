@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "receiver": "n210_1",
+      "role": "train",
+      "all10class_cis_equals_author_after_IB_projection": true,
+      "mapped_labels_exact": true,
+      "original_OOB_excluded_before_STFT": true
+    },
+    {
+      "receiver": "n210_1",
+      "role": "validation",
+      "all10class_cis_equals_author_after_IB_projection": true,
+      "mapped_labels_exact": true,
+      "original_OOB_excluded_before_STFT": true
+    },
+    {
+      "receiver": "rtl_6",
+      "role": "train",
+      "all10class_cis_equals_author_after_IB_projection": true,
+      "mapped_labels_exact": true,
+      "original_OOB_excluded_before_STFT": true
+    },
+    {
+      "receiver": "rtl_6",
+      "role": "validation",
+      "all10class_cis_equals_author_after_IB_projection": true,
+      "mapped_labels_exact": true,
+      "original_OOB_excluded_before_STFT": true
+    }
+  ]
+}

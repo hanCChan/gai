@@ -45,6 +45,9 @@ if __name__=='__main__':
             for d in (out/phase).iterdir():
                 if d.is_dir():all_runs.append(dict(check_run(d)[1],run=str(d),phase=phase))
         assert len(all_runs)==16;write_csv(report/'all_metrics.csv',all_runs);write_csv(report/'three_seed_summary.csv',summary);write_csv(report/'paired_full_STFT_vs_strict_IB_STFT.csv',pairs);write_csv(report/'paired_per_device.csv',devices)
-        notes=['# 严格IB生成Spec/CIS：诊断后的追加对照','', '本轮16次训练（8候选+8新增seed），与原始108分开；追加动机是RTL34在Spec/CIS的带外STFT位置发生较大跨日期变化。投影原始FFT的|f|≤62.5kHz后才重新STFT；STFT窗口仍可生成边缘能量，但信息源只有原始IB。保持52×126几何、rank16容量、2LR预算和train-only标量缩放。所有结果均为Day2开发证据。', '',json.dumps(summary,ensure_ascii=False,indent=2),'', '逐包配对比较分别冻结的同预算Full-STFT表示。改善可支持在该训练配方下去除原始OOB信息的功能性效果；它不唯一定位物理来源，也不证明收集标签或接收机硬件原因。追加实验在观察数据后提出，不能冒称原先预登记的盲测。没有启动P2-B/P3。']
+        table=['|Receiver|Method|Acc mean ± sample SD|Macro-F1|TX34 recall|Parameters|','|---|---|---:|---:|---:|---:|']+[f'|{r["receiver"]}|{r["method"]}|{r["packet_accuracy_mean"]*100:.2f} ± {r["packet_accuracy_sample_std"]*100:.2f}%|{r["macro_f1_mean"]:.4f}|{r["device34_recall_mean"]*100:.2f}%|{r["parameters"]}|' for r in summary]
+        paired_text=['## 相对Full-STFT的逐seed净收益','']+[f'{r["receiver"]} {r["comparison"]} seed{r["seed"]}: {r["accuracy_delta_pp"]:+.2f}pp，纠错{r["corrected"]} / 新增错误{r["new_errors"]}，F1差{r["macro_f1_delta"]:+.4f}。' for r in pairs]
+        notes=['# 严格IB生成Spec/CIS：诊断后的追加对照','', '本轮16次训练（8候选+8新增seed），与原始108分开；追加动机是RTL34在Spec/CIS的带外STFT位置发生较大跨日期变化。投影原始FFT的|f|≤62.5kHz后才重新STFT；STFT窗口仍可生成边缘能量，但信息源只有原始IB。保持52×126几何、rank16容量、2LR预算和train-only标量缩放。所有结果均为Day2开发证据。', '', '\n'.join(table), '', '逐包配对比较分别冻结的同预算Full-STFT表示。改善可支持在该训练配方下去除原始OOB信息的功能性效果；它不唯一定位物理来源，也不证明收集标签或接收机硬件原因。追加实验在观察数据后提出，不能冒称原先预登记的盲测。没有启动P2-B/P3。', '', *paired_text]
+        notes.extend(['', '解释约束：RTL的CIS严格IB选择lr=.001，完整STFT CIS选择lr=.0003；它们的配对差异同时包含配置筛选影响。RTL Spec与两种N210表示的选定lr均相同（.0003）。两种输入的train-only标量均值/方差分别估计，严格FFT投影也改变有限长度波形；这些结果支持本配方的功能差异，尚不能单独归因物理OOB硬件指纹。'])
         (report/'REPORT.md').write_text('\n'.join(notes)+'\n');state('completed',formal_runs=16,P2_B_or_P3_started=False)
     except BaseException as exc:state('failed',error=repr(exc));raise

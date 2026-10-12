@@ -1,3 +1,6 @@
+Warning: truncated output (original token count: 876)
+Total output lines: 71
+
 {
   "status": "prepared_code_only_not_authorized_for_training",
   "automatic_start": false,
@@ -17,28 +20,12 @@
       "transformer_main_only": 653258,
       "hstu_cross_attention": 839235,
       "transformer_cross_attention": 839242,
-      "packet_cnn": 659370
+      "packet_cnn": 659370,
+      "hstu_main_capacity_control": 839190,
+      "transformer_main_capacity_control": 839197
     },
     "tokenizer": "same time-domain strict-IB RI nonoverlapping256 patches and trainable projection for HSTU/Transformer",
-    "aux_tokenizer": "independently RMS-normalized FFT OOB RI ordered frequency patches; separate frequency-position table; no chirp/time position on auxiliary",
-    "HSTU_implementation": "existing minimal RF-HSTU block, not full canonical HSTU paper reproduction",
-    "comparisons": [
-      "B0 strong strict-IB CNN",
-      "B1 concat with capacity IB+IB control",
-      "B2 scalar gate with capacity IB+IB control",
-      "B3 HSTU main only versus same tokenizer capacity-matched Transformer",
-      "B4 HSTU crossattention versus same tokenizer Transformer crossattention",
-      "B5 auxiliary-enabled versus equal parameter main-only capacity control to be frozen before execution"
-    ],
-    "execution_disabled": true
-  },
-  "P3": {
-    "protocol": "configs/shen_p2a/p3_history_review.candidate.json",
-    "GRL": "minimum two training receivers, reversal coefficient explicit, CE transmitter and receiver heads",
-    "Spec_Siamese": "same-TX different-training-RX positive pairs, one pair per TX per batch to avoid false negatives, CE+NT-Xent temperature0.1 candidate; no unsupervised pretraining",
-    "augmentations": {
-      "sampling_rate_assumed_hz": 1000000,
-      "delay_spread_range_ns": [
+    "aux_tokenizer": "independently RMS-normalized FFT OOB RI ordered frequen…376 tokens truncated…s": [
         5,
         300
       ],

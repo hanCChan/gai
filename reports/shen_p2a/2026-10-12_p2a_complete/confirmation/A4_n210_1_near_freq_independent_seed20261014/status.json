@@ -1,0 +1,32 @@
+{
+  "status": "completed",
+  "metrics": {
+    "packet_accuracy": 0.8479999899864197,
+    "macro_f1": 0.8469074368476868,
+    "loss": 0.382004120528698,
+    "packets": 2000,
+    "pipeline_seconds": 0.4148618200015335,
+    "pipeline_packets_per_second": 4820.882287969057,
+    "model_packets_per_second": 10973.701349119163,
+    "model_ms_per_packet": 0.09112695600015286,
+    "device34_recall": 0.8100000023841858,
+    "receiver": "n210_1",
+    "family": "band",
+    "comparison_group": "A4_frequency_rings",
+    "method": "near_freq_independent",
+    "seed": 20261014,
+    "lr": 0.0003,
+    "weight_decay": 0.0,
+    "parameters": 659370,
+    "best_epoch": 12,
+    "epochs_completed": 19,
+    "training_seconds": 83.9332786870018,
+    "total_seconds": 102.3349272839987,
+    "shadow_early_stop_epoch": 19,
+    "shadow_early_stop_macro_f1": 0.8469074368476868,
+    "source_commit": "900a5fe2682b16c7c1e0723369562b7228edc8d3",
+    "gpu_peak_allocated_mib": 254.9716796875,
+    "gpu_peak_reserved_mib": 306.0,
+    "gpu_total_mib": 32501.125
+  }
+}

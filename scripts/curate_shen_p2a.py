@@ -10,9 +10,9 @@ from report_shen_p2a import read_csv,write_csv
 def copy(src,dst):
     dst.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(src,dst)
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--pipeline',type=Path,required=True);p.add_argument('--output',type=Path,required=True);a=p.parse_args();out=a.output
+    p=argparse.ArgumentParser();p.add_argument('--pipeline',type=Path,required=True);p.add_argument('--followup',type=Path);p.add_argument('--branch-diagnosis',type=Path);p.add_argument('--output',type=Path,required=True);a=p.parse_args();out=a.output
     out.mkdir(parents=True,exist_ok=False);manifest=[]
-    for name in ('preflight_v2.json','iq_cache_verified.json','unit_tests_v4.log','feature_construction_cost.json','P1_all32_preservation_check.json'):
+    for name in ('preflight_v2.json','iq_cache_verified.json','unit_tests_v5.log','feature_construction_cost.json','P1_all32_preservation_check.json','deterministic_P1_replay.json','a7_preflight.json','a7_preflight_reproducible_v2.json'):
         src=ROOT/'outputs/shen_p2a'/name
         if src.exists():copy(src,out/'preflight'/name)
     for name in ('four_gpu_smoke_v1','four_gpu_smoke_v2','integration_v1'):
@@ -22,6 +22,14 @@ if __name__=='__main__':
     old=ROOT/'outputs/shen_p2a/p2a_preregistered_v1'
     for f in old.rglob('*'):
         if f.is_file() and f.suffix in ('.json','.log'):copy(f,out/'failed_attempt_v1'/f.relative_to(old))
+    old_a7=ROOT/'outputs/shen_p2a/p2a_a7_followup_v1'
+    for f in old_a7.rglob('*'):
+        if f.is_file() and f.suffix in ('.json','.log'):copy(f,out/'failed_attempt_A7_smoke_v1'/f.relative_to(old_a7))
+    for version in ('v1','v2'):
+        old_a5=ROOT/f'outputs/shen_p2a/a5_branch_diagnosis_{version}'
+        for f in old_a5.rglob('*'):
+            if f.is_file() and f.suffix in ('.json','.log'):
+                copy(f,out/f'failed_A5_audit_{version}'/f.relative_to(old_a5))
     diagnostics=ROOT/'outputs/shen_p2a/diagnostics_v1'
     for name in ('status.json','P1_CIS_rechecked.csv','P1_RTL_optimization_recheck.csv','per_device_feature_quality.csv','per_device_waveform_quality.csv','centroid_shifts.csv','frequency_profiles.csv','ring_descriptive_separability.csv','synthetic_inband_tone_leakage.csv','train_fitted_error_clusters.csv'):
         copy(diagnostics/name,out/'diagnostics'/name)
@@ -51,8 +59,30 @@ if __name__=='__main__':
     if report.exists():
         for f in report.iterdir():
             if f.is_file():copy(f,out/'report'/f.name)
+    if a.followup is not None:
+        followup_state=json.loads((a.followup/'pipeline_status.json').read_text())
+        if followup_state['status']!='completed':p.error('A7 follow-up has not completed')
+        for name in ('pipeline_status.json','selection.frozen.json','confirmation_matrix.json'):
+            copy(a.followup/name,out/'A7_followup'/name)
+        for phase in ('screening','confirmation'):
+            for f in (a.followup/phase).glob('*.json'):copy(f,out/'A7_followup'/phase/f.name)
+            for run in (a.followup/phase).iterdir():
+                if not run.is_dir():continue
+                if json.loads((run/'status.json').read_text())['status']!='completed':p.error(f'Incomplete A7 run: {run}')
+                for name in ('config.json','metrics.json','status.json','history.csv','confusion_matrix.csv','per_device.csv'):
+                    copy(run/name,out/'A7_followup'/phase/run.name/name)
+        for f in (a.followup/'report').iterdir():
+            if f.is_file():copy(f,out/'A7_followup'/'report'/f.name)
+        smoke=a.followup/'smoke'
+        for f in smoke.rglob('*'):
+            if f.is_file() and f.suffix in ('.json','.log'):copy(f,out/'A7_followup'/'smoke'/f.relative_to(smoke))
+    if a.branch_diagnosis is not None:
+        branch_state=json.loads((a.branch_diagnosis/'status.json').read_text())
+        if branch_state['status']!='completed':p.error('Branch diagnosis has not completed')
+        for name in ('status.json','REPORT.md','per_device_branch_contributions.csv'):
+            copy(a.branch_diagnosis/name,out/'A5_branch_diagnosis'/name)
     for f in sorted(out.rglob('*')):
         if f.is_file():manifest.append({'path':str(f.relative_to(out)),'bytes':f.stat().st_size,'sha256':hashlib.sha256(f.read_bytes()).hexdigest()})
     state=json.loads((a.pipeline/'pipeline_status.json').read_text())
-    (out/'publication_manifest.json').write_text(json.dumps({'snapshot_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'pipeline_status':state,'files':manifest,'raw_IQ_weights_caches_published':False,'full_packet_predictions_remain_local':True,'final_signal_access':False},indent=2)+'\n')
+    (out/'publication_manifest.json').write_text(json.dumps({'snapshot_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'pipeline_status':state,'A7_followup_included':a.followup is not None,'A5_branch_diagnosis_included':a.branch_diagnosis is not None,'files':manifest,'raw_IQ_weights_caches_published':False,'full_packet_predictions_remain_local':True,'final_signal_access':False},indent=2)+'\n')
     print(json.dumps({'files':len(manifest),'bytes':sum(r['bytes'] for r in manifest),'status':state['status']}))

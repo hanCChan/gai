@@ -1,0 +1,17 @@
+[
+  "/home/keyan/code-y-p2a/configs/shen_p2a/A4_n210_1_ib_freq_independent.json",
+  "/home/keyan/code-y-p2a/configs/shen_p2a/A4_n210_1_near_freq_independent.json",
+  "/home/keyan/code-y-p2a/configs/shen_p2a/A4_n210_1_mid_freq_independent.json",
+  "/home/keyan/code-y-p2a/configs/shen_p2a/A4_n210_1_far_freq_independent.json",
+  "/home/keyan/code-y-p2a/configs/shen_p2a/A4_n210_1_oob_freq_independent.json",
+  "/home/keyan/code-y-p2a/configs/shen_p2a/A4_rtl_6_ib_freq_independent.json",
+  "/home/keyan/code-y-p2a/configs/shen_p2a/A4_rtl_6_near_freq_independent.json",
+  "/home/keyan/code-y-p2a/configs/shen_p2a/A4_rtl_6_mid_freq_independent.json",
+  "/home/keyan/code-y-p2a/configs/shen_p2a/A4_rtl_6_far_freq_independent.json",
+  "/home/keyan/code-y-p2a/configs/shen_p2a/A4_rtl_6_oob_freq_independent.json",
+  "/home/keyan/code-y-p2a/configs/shen_p2a/A4_rtl_6_oob_guard0.json",
+  "/home/keyan/code-y-p2a/configs/shen_p2a/A4_rtl_6_oob_guard25000.json",
+  "/home/keyan/code-y-p2a/configs/shen_p2a/A4_rtl_6_oob_ib_relative_rect.json",
+  "/home/keyan/code-y-p2a/configs/shen_p2a/A4_rtl_6_oob_independent_projection_hann.json",
+  "/home/keyan/code-y-p2a/configs/shen_p2a/A4_rtl_6_oob_ib_relative_projection_hann.json"
+]

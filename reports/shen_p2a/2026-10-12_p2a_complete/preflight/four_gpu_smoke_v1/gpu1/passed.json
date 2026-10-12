@@ -1,0 +1,336 @@
+{
+  "passed": true,
+  "gpu_visible": "1",
+  "checks": [
+    {
+      "config": "/home/keyan/code-y-p2a/configs/shen_p2a/A4_n210_1_ib_freq_independent.json",
+      "method": "ib_freq_independent",
+      "receiver": "n210_1",
+      "family": "band",
+      "parameters": 659370,
+      "shape": [
+        10,
+        10
+      ],
+      "labels": [
+        0,
+        9
+      ],
+      "steps": 23,
+      "initial_loss": 2.3452796936035156,
+      "final_loss": 0.035165317356586456,
+      "overfit_accuracy": 1.0,
+      "gradient_finite": true,
+      "checkpoint_exact_roundtrip": true,
+      "seconds": 3.763093661000312
+    },
+    {
+      "config": "/home/keyan/code-y-p2a/configs/shen_p2a/A4_n210_1_near_freq_independent.json",
+      "method": "near_freq_independent",
+      "receiver": "n210_1",
+      "family": "band",
+      "parameters": 659370,
+      "shape": [
+        10,
+        10
+      ],
+      "labels": [
+        0,
+        9
+      ],
+      "steps": 23,
+      "initial_loss": 2.331134796142578,
+      "final_loss": 0.045003972947597504,
+      "overfit_accuracy": 1.0,
+      "gradient_finite": true,
+      "checkpoint_exact_roundtrip": true,
+      "seconds": 0.43518555400078185
+    },
+    {
+      "config": "/home/keyan/code-y-p2a/configs/shen_p2a/A4_n210_1_mid_freq_independent.json",
+      "method": "mid_freq_independent",
+      "receiver": "n210_1",
+      "family": "band",
+      "parameters": 659370,
+      "shape": [
+        10,
+        10
+      ],
+      "labels": [
+        0,
+        9
+      ],
+      "steps": 21,
+      "initial_loss": 2.3253722190856934,
+      "final_loss": 0.0021075154654681683,
+      "overfit_accuracy": 1.0,
+      "gradient_finite": true,
+      "checkpoint_exact_roundtrip": true,
+      "seconds": 0.4926151519994164
+    },
+    {
+      "config": "/home/keyan/code-y-p2a/configs/shen_p2a/A4_n210_1_far_freq_independent.json",
+      "method": "far_freq_independent",
+      "receiver": "n210_1",
+      "family": "band",
+      "parameters": 659370,
+      "shape": [
+        10,
+        10
+      ],
+      "labels": [
+        0,
+        9
+      ],
+      "steps": 21,
+      "initial_loss": 2.2664103507995605,
+      "final_loss": 0.005775247234851122,
+      "overfit_accuracy": 1.0,
+      "gradient_finite": true,
+      "checkpoint_exact_roundtrip": true,
+      "seconds": 0.38770223500068823
+    },
+    {
+      "config": "/home/keyan/code-y-p2a/configs/shen_p2a/A4_n210_1_oob_freq_independent.json",
+      "method": "oob_freq_independent",
+      "receiver": "n210_1",
+      "family": "band",
+      "parameters": 659370,
+      "shape": [
+        10,
+        10
+      ],
+      "labels": [
+        0,
+        9
+      ],
+      "steps": 21,
+      "initial_loss": 2.316068410873413,
+      "final_loss": 0.0014512419002130628,
+      "overfit_accuracy": 1.0,
+      "gradient_finite": true,
+      "checkpoint_exact_roundtrip": true,
+      "seconds": 0.3722110979997524
+    },
+    {
+      "config": "/home/keyan/code-y-p2a/configs/shen_p2a/A4_rtl_6_ib_freq_independent.json",
+      "method": "ib_freq_independent",
+      "receiver": "rtl_6",
+      "family": "band",
+      "parameters": 659370,
+      "shape": [
+        10,
+        10
+      ],
+      "labels": [
+        0,
+        9
+      ],
+      "steps": 30,
+      "initial_loss": 2.332001209259033,
+      "final_loss": 0.03226608783006668,
+      "overfit_accuracy": 1.0,
+      "gradient_finite": true,
+      "checkpoint_exact_roundtrip": true,
+      "seconds": 0.529502113999115
+    },
+    {
+      "config": "/home/keyan/code-y-p2a/configs/shen_p2a/A4_rtl_6_near_freq_independent.json",
+      "method": "near_freq_independent",
+      "receiver": "rtl_6",
+      "family": "band",
+      "parameters": 659370,
+      "shape": [
+        10,
+        10
+      ],
+      "labels": [
+        0,
+        9
+      ],
+      "steps": 21,
+      "initial_loss": 2.341675281524658,
+      "final_loss": 0.005511113442480564,
+      "overfit_accuracy": 1.0,
+      "gradient_finite": true,
+      "checkpoint_exact_roundtrip": true,
+      "seconds": 0.3724915829989186
+    },
+    {
+      "config": "/home/keyan/code-y-p2a/configs/shen_p2a/A4_rtl_6_mid_freq_independent.json",
+      "method": "mid_freq_independent",
+      "receiver": "rtl_6",
+      "family": "band",
+      "parameters": 659370,
+      "shape": [
+        10,
+        10
+      ],
+      "labels": [
+        0,
+        9
+      ],
+      "steps": 21,
+      "initial_loss": 2.3323936462402344,
+      "final_loss": 0.0009017670527100563,
+      "overfit_accuracy": 1.0,
+      "gradient_finite": true,
+      "checkpoint_exact_roundtrip": true,
+      "seconds": 0.41049656700124615
+    },
+    {
+      "config": "/home/keyan/code-y-p2a/configs/shen_p2a/A4_rtl_6_far_freq_independent.json",
+      "method": "far_freq_independent",
+      "receiver": "rtl_6",
+      "family": "band",
+      "parameters": 659370,
+      "shape": [
+        10,
+        10
+      ],
+      "labels": [
+        0,
+        9
+      ],
+      "steps": 21,
+      "initial_loss": 2.3197805881500244,
+      "final_loss": 0.0003835619136225432,
+      "overfit_accuracy": 1.0,
+      "gradient_finite": true,
+      "checkpoint_exact_roundtrip": true,
+      "seconds": 0.3880765899994003
+    },
+    {
+      "config": "/home/keyan/code-y-p2a/configs/shen_p2a/A4_rtl_6_oob_freq_independent.json",
+      "method": "oob_freq_independent",
+      "receiver": "rtl_6",
+      "family": "band",
+      "parameters": 659370,
+      "shape": [
+        10,
+        10
+      ],
+      "labels": [
+        0,
+        9
+      ],
+      "steps": 21,
+      "initial_loss": 2.3307113647460938,
+      "final_loss": 0.0037792599759995937,
+      "overfit_accuracy": 1.0,
+      "gradient_finite": true,
+      "checkpoint_exact_roundtrip": true,
+      "seconds": 0.3845643979984743
+    },
+    {
+      "config": "/home/keyan/code-y-p2a/configs/shen_p2a/A4_rtl_6_oob_guard0.json",
+      "method": "oob_guard_0",
+      "receiver": "rtl_6",
+      "family": "band",
+      "parameters": 659370,
+      "shape": [
+        10,
+        10
+      ],
+      "labels": [
+        0,
+        9
+      ],
+      "steps": 21,
+      "initial_loss": 2.338970899581909,
+      "final_loss": 0.010164765641093254,
+      "overfit_accuracy": 1.0,
+      "gradient_finite": true,
+      "checkpoint_exact_roundtrip": true,
+      "seconds": 0.381272345999605
+    },
+    {
+      "config": "/home/keyan/code-y-p2a/configs/shen_p2a/A4_rtl_6_oob_guard25000.json",
+      "method": "oob_guard_25000",
+      "receiver": "rtl_6",
+      "family": "band",
+      "parameters": 659370,
+      "shape": [
+        10,
+        10
+      ],
+      "labels": [
+        0,
+        9
+      ],
+      "steps": 21,
+      "initial_loss": 2.3071320056915283,
+      "final_loss": 0.00023161405988503247,
+      "overfit_accuracy": 1.0,
+      "gradient_finite": true,
+      "checkpoint_exact_roundtrip": true,
+      "seconds": 0.3848993600004178
+    },
+    {
+      "config": "/home/keyan/code-y-p2a/configs/shen_p2a/A4_rtl_6_oob_ib_relative_rect.json",
+      "method": "oob_ib_relative_rect",
+      "receiver": "rtl_6",
+      "family": "band",
+      "parameters": 659370,
+      "shape": [
+        10,
+        10
+      ],
+      "labels": [
+        0,
+        9
+      ],
+      "steps": 21,
+      "initial_loss": 2.333918333053589,
+      "final_loss": 0.001155864098109305,
+      "overfit_accuracy": 1.0,
+      "gradient_finite": true,
+      "checkpoint_exact_roundtrip": true,
+      "seconds": 0.4775905669994245
+    },
+    {
+      "config": "/home/keyan/code-y-p2a/configs/shen_p2a/A4_rtl_6_oob_independent_projection_hann.json",
+      "method": "oob_independent_projection_hann",
+      "receiver": "rtl_6",
+      "family": "band",
+      "parameters": 659370,
+      "shape": [
+        10,
+        10
+      ],
+      "labels": [
+        0,
+        9
+      ],
+      "steps": 21,
+      "initial_loss": 2.337766408920288,
+      "final_loss": 0.0009054181864485145,
+      "overfit_accuracy": 1.0,
+      "gradient_finite": true,
+      "checkpoint_exact_roundtrip": true,
+      "seconds": 0.4009067679999134
+    },
+    {
+      "config": "/home/keyan/code-y-p2a/configs/shen_p2a/A4_rtl_6_oob_ib_relative_projection_hann.json",
+      "method": "oob_ib_relative_projection_hann",
+      "receiver": "rtl_6",
+      "family": "band",
+      "parameters": 659370,
+      "shape": [
+        10,
+        10
+      ],
+      "labels": [
+        0,
+        9
+      ],
+      "steps": 21,
+      "initial_loss": 2.3414931297302246,
+      "final_loss": 0.001013607019558549,
+      "overfit_accuracy": 1.0,
+      "gradient_finite": true,
+      "checkpoint_exact_roundtrip": true,
+      "seconds": 0.38573801900020044
+    }
+  ]
+}

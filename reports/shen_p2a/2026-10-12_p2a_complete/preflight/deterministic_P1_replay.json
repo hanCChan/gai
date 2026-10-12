@@ -1,0 +1,18 @@
+[
+  {
+    "original": "/home/keyan/code-y/outputs/shen_evidence/p1_lr0003/E01_rtl_6_seed20261012_lr0003",
+    "new": "outputs/shen_p2a/p2a_preregistered_v2/screening/A6_rtl_6_full_lr0.0003_wd0",
+    "shared_epochs": 14,
+    "trajectory_values_bit_identical": true,
+    "best_model_state_exact": true,
+    "new_input_storage": "CachedIQ"
+  },
+  {
+    "original": "/home/keyan/code-y/outputs/shen_evidence/p1_lr0003/E02_rtl_6_seed20261012_lr0003",
+    "new": "outputs/shen_p2a/p2a_preregistered_v2/screening/A6_rtl_6_ib_lr0.0003_wd0",
+    "shared_epochs": 23,
+    "trajectory_values_bit_identical": true,
+    "best_model_state_exact": false,
+    "new_input_storage": "CachedIQ"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "status": "completed",
+  "runs": 24,
+  "packets_per_run": 2000,
+  "saved_predictions_exact": true,
+  "new_training_runs": 0,
+  "final_signals_opened": 0
+}

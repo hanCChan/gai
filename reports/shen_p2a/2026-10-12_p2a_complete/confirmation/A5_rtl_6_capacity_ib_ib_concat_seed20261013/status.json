@@ -1,0 +1,32 @@
+{
+  "status": "completed",
+  "metrics": {
+    "packet_accuracy": 0.953000009059906,
+    "macro_f1": 0.9527873992919922,
+    "loss": 0.12483470810763538,
+    "packets": 2000,
+    "pipeline_seconds": 0.4726419110011193,
+    "pipeline_packets_per_second": 4231.533330939125,
+    "model_packets_per_second": 7721.398029586095,
+    "model_ms_per_packet": 0.12951022550169,
+    "device34_recall": 0.9950000047683716,
+    "receiver": "rtl_6",
+    "family": "fusion",
+    "comparison_group": "A5_information_complementarity",
+    "method": "capacity_ib_ib_concat",
+    "seed": 20261013,
+    "lr": 0.0003,
+    "weight_decay": 0.0,
+    "parameters": 1318730,
+    "best_epoch": 21,
+    "epochs_completed": 28,
+    "training_seconds": 213.57892934200208,
+    "total_seconds": 241.89772682999865,
+    "shadow_early_stop_epoch": 28,
+    "shadow_early_stop_macro_f1": 0.9527873992919922,
+    "source_commit": "fe47a18826c9ab6317a34e6b073766b1f1ba661e",
+    "gpu_peak_allocated_mib": 435.1552734375,
+    "gpu_peak_reserved_mib": 498.0,
+    "gpu_total_mib": 32501.125
+  }
+}

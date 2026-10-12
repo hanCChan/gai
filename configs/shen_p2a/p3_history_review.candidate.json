@@ -49,7 +49,33 @@
   "independent_research_holdout_available_in_this_corpus": false,
   "old_paper_sha256": "cdbdfbdaa1d40108ee58353ad346566e855c23d96da46fbcdcd356c7694ab442",
   "history_evidence": "OOB_IOTJ.pdf Section V-A, Figure4, RQ6/TableVI; manuscript publication/submission status unverified",
+  "transmitter_label_map": {
+    "31": 0,
+    "32": 1,
+    "33": 2,
+    "34": 3,
+    "35": 4,
+    "36": 5,
+    "37": 6,
+    "38": 7,
+    "39": 8,
+    "40": 9
+  },
+  "training_receiver_label_map": {
+    "b200_mini_1": 0,
+    "b210_1": 1,
+    "pluto_1": 2,
+    "rtl_1": 3,
+    "rtl_2": 4,
+    "rtl_3": 5,
+    "rtl_5": 6,
+    "rtl_6": 7,
+    "rtl_7": 8,
+    "rtl_9": 9
+  },
+  "hardware_type_grouping": "receiver-name model prefixes; physical identity/versions not independently verified",
   "hardware_type_extrapolation_development_receivers": [
+    "b200_1",
     "n210_1"
   ],
   "development_model_selection_reuses_historical_domains": true,

@@ -1,0 +1,8 @@
+{
+  "status": "completed",
+  "updated_utc": "2026-10-12T08:01:54.414097+00:00",
+  "screening_runs": 52,
+  "confirmation_runs": 56,
+  "report": "/home/keyan/code-y-p2a/outputs/shen_p2a/p2a_preregistered_v2/report",
+  "P2_B_or_P3_started": false
+}

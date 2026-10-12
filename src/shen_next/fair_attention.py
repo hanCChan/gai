@@ -14,14 +14,17 @@ class AxisTokenizer(nn.Module):
         return self.projection(patches)+self.position
 
 class FairAttention(nn.Module):
-    def __init__(self,encoder='hstu',fusion='none',dim=128,depth=7,ffn_dim=64,patch=256):
-        super().__init__();self.encoder=encoder;self.fusion=fusion
+    def __init__(self,encoder='hstu',fusion='none',dim=128,depth=7,ffn_dim=64,patch=256,aux_band='oob',main_capacity_hidden=0):
+        super().__init__();self.encoder=encoder;self.fusion=fusion;self.aux_band=aux_band
+        if aux_band not in ('oob','ib_control'):raise ValueError(aux_band)
+        if main_capacity_hidden and fusion!='none':raise ValueError('Capacity adapter is main-only control')
         self.main_tokens=AxisTokenizer(dim,patch,'time');n=8192//patch
         if encoder=='hstu':self.blocks=nn.ModuleList([RFHSTUBlock(dim,n,0.) for _ in range(depth)])
         elif encoder=='transformer':
             self.blocks=nn.ModuleList([nn.TransformerEncoderLayer(dim,4,ffn_dim,dropout=0.,activation='gelu',batch_first=True,norm_first=False) for _ in range(depth)])
         else:raise ValueError(encoder)
         self.norm=nn.LayerNorm(dim);self.classifier=nn.Linear(dim,10)
+        self.capacity_adapter=nn.Sequential(nn.Linear(dim,main_capacity_hidden),nn.GELU(),nn.Linear(main_capacity_hidden,dim)) if main_capacity_hidden else None
         if fusion=='cross_attention':
             self.aux_tokens=AxisTokenizer(dim,patch,'frequency');self.cross=OOBCrossAttentionFusion(dim,4,0.)
         elif fusion!='none':raise ValueError(fusion)
@@ -30,11 +33,13 @@ class FairAttention(nn.Module):
         main=selected_view(s,'ib',coordinate='time',normalization='independent')
         tokens=self.main_tokens(main)
         if self.fusion=='cross_attention':
-            aux=selected_view(s,'oob',coordinate='frequency',normalization='independent')
+            aux=selected_view(s,'ib' if self.aux_band=='ib_control' else 'oob',coordinate='frequency',normalization='independent')
             # No shared time/chirp embedding: these are ordered frequency bins.
             tokens=self.cross(tokens,self.aux_tokens(aux))
         return tokens
     def forward(self,iq):
         x=self.tokenize(iq)
         for block in self.blocks:x=block(x)
-        return self.classifier(self.norm(x).mean(1))
+        z=self.norm(x).mean(1)
+        if self.capacity_adapter is not None:z=z+self.capacity_adapter(z)
+        return self.classifier(z)

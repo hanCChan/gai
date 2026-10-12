@@ -1,0 +1,172 @@
+{
+  "passed": true,
+  "environment": {
+    "torch": "2.5.1+cu121",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "python": "/home/keyan/venvs/shen-stage1/bin/python"
+  },
+  "authorized_source_files": [
+    {
+      "path": "Test/n210_1_day1_wireless_test.h5",
+      "sha256": "e9c40d318b257038cd2f056b9a5734bbc4c3fa5b92717f4559adcc15ea98b2d3",
+      "packets": 2000,
+      "cache_author_cis_exact": true
+    },
+    {
+      "path": "Test/n210_1_day2_wireless_test.h5",
+      "sha256": "1122d54d1856ae2c847e0a85556fa78e264d1845b61feca7392702484df07229",
+      "packets": 2000,
+      "cache_author_cis_exact": true
+    },
+    {
+      "path": "Test/rtl_6_day1_wireless_test.h5",
+      "sha256": "c079b0752f4b98d23aeaab2b88f7c3ab4de92cf2a5a82d20b0df035d0164f870",
+      "packets": 2000,
+      "cache_author_cis_exact": true
+    },
+    {
+      "path": "Test/rtl_6_day2_wireless_test.h5",
+      "sha256": "7f62af1c69832172b691d6ea76ca6eaba7af31e3ab016ce1a9259cfc1db22a81",
+      "packets": 2000,
+      "cache_author_cis_exact": true
+    },
+    {
+      "path": "Train/n210_1_day1_wireless_train.h5",
+      "sha256": "3581599cd5727e780240f819e0b66dc738098ee54a67ccf341caa1ad54a4fd46",
+      "packets": 8000,
+      "cache_author_cis_exact": true
+    },
+    {
+      "path": "Train/rtl_6_day1_wireless_train.h5",
+      "sha256": "adcc8c1f0a5dfeea433f9d1e943f4826840d5d3a5d09751fbf34ef16c937b9e1",
+      "packets": 8000,
+      "cache_author_cis_exact": true
+    }
+  ],
+  "P1_selected_runs": [
+    {
+      "run": "/home/keyan/code-y/outputs/shen_evidence/p1_seed20261012/E01_n210_1_seed20261012",
+      "predictions_sha256": "452ef9fe4fd9c1f0a4dad3d14cd7d95ff0cc33cc65f8f92223fc2071ab4c1f48",
+      "metrics_sha256": "d8d983c416df79418f68df575d06d8739ad3a1a7228155b9527f2bccd44904a9"
+    },
+    {
+      "run": "/home/keyan/code-y/outputs/shen_evidence/p1_final_balanced/confirmation_runs/E01_n210_1_seed20261013",
+      "predictions_sha256": "e42b95be3245cd25dfce2b147e0c243bc53de8cb840e87bd3bfea33834568f3b",
+      "metrics_sha256": "6b589f40981a760bb014d7c526eac318f594f8935abf591e66746e04627e6988"
+    },
+    {
+      "run": "/home/keyan/code-y/outputs/shen_evidence/p1_final_balanced/confirmation_runs/E01_n210_1_seed20261014",
+      "predictions_sha256": "462c7c0e313f736afdfee895428a4eb37c13e74b330de162cd0bc7eee71e5d6c",
+      "metrics_sha256": "4b218c25b8097082b57dafa09db76d0b268a359c645cf2e1d08c307d86d7fbb2"
+    },
+    {
+      "run": "/home/keyan/code-y/outputs/shen_evidence/p1_lr0003/E01_rtl_6_seed20261012_lr0003",
+      "predictions_sha256": "24bf6b91f7b918d9a28de1b58fb93d3a3811e412f8b526fa19dbecb503126d08",
+      "metrics_sha256": "90bb83c46c5a81c3c04414397a08c85116a03562dc4ee4918d64549c2ca8f8a8"
+    },
+    {
+      "run": "/home/keyan/code-y/outputs/shen_evidence/p1_final_balanced/confirmation_runs/E01_rtl_6_seed20261013",
+      "predictions_sha256": "62ee9c2873f7c5ca06ac2a9c2692d8ad27dd3ce8c48b5cc29abf592ab0a5ff8f",
+      "metrics_sha256": "76f05a48df308f86a1e7de780a5f5b88a92a6e9227628df2c2537e063e70b7a1"
+    },
+    {
+      "run": "/home/keyan/code-y/outputs/shen_evidence/p1_final_balanced/confirmation_runs/E01_rtl_6_seed20261014",
+      "predictions_sha256": "31bedb64cc085032fb1283f384353a952a453f2e65584fbf2f30ab4bc19a1e5a",
+      "metrics_sha256": "80ed89a2aa2df97edd4dbc95516654fff16ed745f6e9939ad6b4061262525699"
+    },
+    {
+      "run": "/home/keyan/code-y/outputs/shen_evidence/p1_lr0003/E02_n210_1_seed20261012_lr0003",
+      "predictions_sha256": "ba5ff8227bf598dea082232edcbe43305ba1ee1aee17ec6da3c336f6b950f811",
+      "metrics_sha256": "1a7586da1d0373ce13d840f02b15e2d45298d8a98986514bf04528cb5f9a1fb4"
+    },
+    {
+      "run": "/home/keyan/code-y/outputs/shen_evidence/p1_final_balanced/confirmation_runs/E02_n210_1_seed20261013",
+      "predictions_sha256": "35ce41c93bee4bb7ebde10fbbe4e83fae5bd56c13e1e6983dcac988f0be06b4c",
+      "metrics_sha256": "0112e79a0d4d37667b7a02cdea48c39f35fbaf013eaa2cd85c4f9471807fc8f9"
+    },
+    {
+      "run": "/home/keyan/code-y/outputs/shen_evidence/p1_final_balanced/confirmation_runs/E02_n210_1_seed20261014",
+      "predictions_sha256": "4ce9421dc7bdcc7c2c3cec6fe45b17cc89fb62bfab36588e2cd7631495224d58",
+      "metrics_sha256": "5c18656edb76dc23704f859a5955445da2db61dc945e9130e00c10ecf10bbe15"
+    },
+    {
+      "run": "/home/keyan/code-y/outputs/shen_evidence/p1_lr0003/E02_rtl_6_seed20261012_lr0003",
+      "predictions_sha256": "8f39f3a3eb93257d919f7415ecb39196da9068092f400392ae6dad10c1f30997",
+      "metrics_sha256": "7251aa250abc4af0042a1a7b2cd307ce15aa5b75c981b7966607ad578ac9e8ff"
+    },
+    {
+      "run": "/home/keyan/code-y/outputs/shen_evidence/p1_final_balanced/confirmation_runs/E02_rtl_6_seed20261013",
+      "predictions_sha256": "3557c63c7e090dfc41849a383393ecbd9820d856c5cbde85944db63e6c215a92",
+      "metrics_sha256": "a3a8d4f2f6cf95607ee17e44a7638f4c50e8f6988eb01f0fe11cfae157926f9e"
+    },
+    {
+      "run": "/home/keyan/code-y/outputs/shen_evidence/p1_final_balanced/confirmation_runs/E02_rtl_6_seed20261014",
+      "predictions_sha256": "a0313cfb533ad182353052278306fa2440d916c1fc394038abd347d24f237d7b",
+      "metrics_sha256": "9103a7b6c7f78a5bb1fd9e8697a2f5ca18bb51a34aad2b655a7a3b148b066e7e"
+    },
+    {
+      "run": "/home/keyan/code-y/outputs/shen_evidence/p1_seed20261012/E03_n210_1_seed20261012",
+      "predictions_sha256": "8b32d99e3c8cfb636f6a80ff2cc8b484a4d9ae2227c0c2a9e54ff86372b66a01",
+      "metrics_sha256": "3a7331b949e10e69ba5ce54a67725ccfa3a64a2652ab4b765c2e7bb5480c834d"
+    },
+    {
+      "run": "/home/keyan/code-y/outputs/shen_evidence/p1_final_balanced/confirmation_runs/E03_n210_1_seed20261013",
+      "predictions_sha256": "f30698e04a313a5af517a82ecd26c688b5773c5d7b1deccfe211835df47da394",
+      "metrics_sha256": "278ac70de3a653473d841a1d97738e0da14bddfb9f34b037860ca770bafa466e"
+    },
+    {
+      "run": "/home/keyan/code-y/outputs/shen_evidence/p1_final_balanced/confirmation_runs/E03_n210_1_seed20261014",
+      "predictions_sha256": "2b972e1cf4898bcb838b727248204315a37bb1e452dedd3a02a4f027d4ca7ebf",
+      "metrics_sha256": "24d927365bde7a996648c0d26ffbf6c5442723cb24a5464be059dc6a8e2b423a"
+    },
+    {
+      "run": "/home/keyan/code-y/outputs/shen_evidence/p1_seed20261012/E03_rtl_6_seed20261012",
+      "predictions_sha256": "d2fb66ceabb9a0b86fa7b89eccfbf9278e54454800d0c94d24f473fcb7a8267b",
+      "metrics_sha256": "46fb4d0f5c5d5e70bbe67aae83e607c63c86cbe16da1d321c8c8d6d89d40e213"
+    },
+    {
+      "run": "/home/keyan/code-y/outputs/shen_evidence/p1_final_balanced/confirmation_runs/E03_rtl_6_seed20261013",
+      "predictions_sha256": "27bb974cd04ba561281758b8d2f5197a06be4c62e3a561eb6dd0375a3f7f0d00",
+      "metrics_sha256": "c36ccb57c4c6c597fc472c70ad66b532821ff7e1b1fc0043b2a1b5aca1cf4a13"
+    },
+    {
+      "run": "/home/keyan/code-y/outputs/shen_evidence/p1_final_balanced/confirmation_runs/E03_rtl_6_seed20261014",
+      "predictions_sha256": "ea40188c38165e384203d4e426134ae48e09416c77e7889c8c1169ce5ab8f4cc",
+      "metrics_sha256": "3dc90237d3652f1c1ff97be5dcfc764a89ea9dc1d0ef10376097540fe4b32a65"
+    },
+    {
+      "run": "/home/keyan/code-y/outputs/shen_evidence/p1_lr0003/E04_n210_1_seed20261012_lr0003",
+      "predictions_sha256": "10ed058a9930fa1ca7471b1a647d82edb5517f3595b29ba7d4c2d817adf9971d",
+      "metrics_sha256": "00d03eba3d1ec3bfc288ef1733089529ac49261fda2a3f091fc4557367816f7e"
+    },
+    {
+      "run": "/home/keyan/code-y/outputs/shen_evidence/p1_final_balanced/confirmation_runs/E04_n210_1_seed20261013",
+      "predictions_sha256": "626923938da1f16ffebf3591d2dcc1a715a1709438d7c9ae002ab810eb33c4ad",
+      "metrics_sha256": "0465913cdf8cadec0d229f254a35d441479b14a8e28c44a9062f9291d47cfc66"
+    },
+    {
+      "run": "/home/keyan/code-y/outputs/shen_evidence/p1_final_balanced/confirmation_runs/E04_n210_1_seed20261014",
+      "predictions_sha256": "c51883dac59e7f1d736fbba18832b12b23e5171be9fc1c5e55698c9d73376cf4",
+      "metrics_sha256": "943b3edc7aa0fd299fb0febf3254c213ed2c0c241e5b4a5ba59718f369541a4a"
+    },
+    {
+      "run": "/home/keyan/code-y/outputs/shen_evidence/p1_seed20261012/E04_rtl_6_seed20261012",
+      "predictions_sha256": "26e8263836bf343be9f75e47b4385483ec0ef3cb119004a8e27f6fffa249bd3d",
+      "metrics_sha256": "69342cdf5a7eb5515b7f7d1e27ce7eba735164ceccf0238026a032b8b95b3fd2"
+    },
+    {
+      "run": "/home/keyan/code-y/outputs/shen_evidence/p1_final_balanced/confirmation_runs/E04_rtl_6_seed20261013",
+      "predictions_sha256": "62f964a88765393e5f0f537839b4616c29d99cbaf54050e13bc6da05fbd10552",
+      "metrics_sha256": "2130ec7ee8ada9410b8b8f4e95997253b060eaa6d6056a27ae9c82e2587b9e84"
+    },
+    {
+      "run": "/home/keyan/code-y/outputs/shen_evidence/p1_final_balanced/confirmation_runs/E04_rtl_6_seed20261014",
+      "predictions_sha256": "9d042c47f99173149df196dbd9e1d042bf4ae838ef29848942d8b85de07ef7f9",
+      "metrics_sha256": "bfd7ca7c24971e10a6a565acc676b1d56ec821950925bea997da2c5b12fa729a"
+    }
+  ],
+  "protocol_sha256": "e135c3980541dded7e6057ad41194229b8501dfc079e1d87508ff87bd4843f51",
+  "final_files_opened": 0,
+  "gpu_snapshot": "name, memory.used [MiB], memory.total [MiB]\nTesla V100-SXM2-32GB, 4 MiB, 32768 MiB\nTesla V100-SXM2-32GB, 4 MiB, 32768 MiB\nTesla V100-SXM2-32GB, 4 MiB, 32768 MiB\nTesla V100-SXM2-32GB, 4 MiB, 32768 MiB\n"
+}
