@@ -4,22 +4,61 @@
   "real_data_loader_available": false,
   "P2_B": {
     "entry_condition": "P2-A predeclared all-three-seed positive accuracy and Macro-F1 versus SingleIB and architecture-matched IB+IB capacity control; then separate user authorization",
-    "encoder": {"dim":128,"depth":7,"patch":256,"dropout":0,"transformer_heads":4,"transformer_ffn_dim":64},
-    "parameter_counts": {"hstu_main_only":653251,"transformer_main_only":653258,"hstu_cross_attention":839235,"transformer_cross_attention":839242,"packet_cnn":659370},
+    "encoder": {
+      "dim": 128,
+      "depth": 7,
+      "patch": 256,
+      "dropout": 0,
+      "transformer_heads": 4,
+      "transformer_ffn_dim": 64
+    },
+    "parameter_counts": {
+      "hstu_main_only": 653251,
+      "transformer_main_only": 653258,
+      "hstu_cross_attention": 839235,
+      "transformer_cross_attention": 839242,
+      "packet_cnn": 659370
+    },
     "tokenizer": "same time-domain strict-IB RI nonoverlapping256 patches and trainable projection for HSTU/Transformer",
     "aux_tokenizer": "independently RMS-normalized FFT OOB RI ordered frequency patches; separate frequency-position table; no chirp/time position on auxiliary",
     "HSTU_implementation": "existing minimal RF-HSTU block, not full canonical HSTU paper reproduction",
-    "comparisons": ["B0 strong strict-IB CNN","B1 concat with capacity IB+IB control","B2 scalar gate with capacity IB+IB control","B3 HSTU main only versus same tokenizer capacity-matched Transformer","B4 HSTU crossattention versus same tokenizer Transformer crossattention","B5 auxiliary-enabled versus equal parameter main-only capacity control to be frozen before execution"],
+    "comparisons": [
+      "B0 strong strict-IB CNN",
+      "B1 concat with capacity IB+IB control",
+      "B2 scalar gate with capacity IB+IB control",
+      "B3 HSTU main only versus same tokenizer capacity-matched Transformer",
+      "B4 HSTU crossattention versus same tokenizer Transformer crossattention",
+      "B5 auxiliary-enabled versus equal parameter main-only capacity control to be frozen before execution"
+    ],
     "execution_disabled": true
   },
   "P3": {
     "protocol": "configs/shen_p2a/p3_history_review.candidate.json",
     "GRL": "minimum two training receivers, reversal coefficient explicit, CE transmitter and receiver heads",
     "Spec_Siamese": "same-TX different-training-RX positive pairs, one pair per TX per batch to avoid false negatives, CE+NT-Xent temperature0.1 candidate; no unsupervised pretraining",
-    "augmentations": {"sampling_rate_assumed_hz":1000000,"delay_spread_range_ns":[5,300],"snr_range_db":[10,40],"doppler_range_hz":[0,5],"fractional_delay":"finite support sinc interpolation, no rounding to zero","Doppler":"single sinusoid approximation, not full Jakes","normalization":"CIR energy, noise scaled to received packet RMS"},
+    "augmentations": {
+      "sampling_rate_assumed_hz": 1000000,
+      "delay_spread_range_ns": [
+        5,
+        300
+      ],
+      "snr_range_db": [
+        10,
+        40
+      ],
+      "doppler_range_hz": [
+        0,
+        5
+      ],
+      "fractional_delay": "finite support sinc interpolation, no rounding to zero",
+      "Doppler": "single sinusoid approximation, not full Jakes",
+      "normalization": "CIR energy, noise scaled to received packet RMS",
+      "online_sampling": "independent uniform RMS delay/SNR/Doppler per packet from seeded training-only RNG, explicit packet seed recorded"
+    },
     "augmentation_order": "augment training raw IQ first, then strictly project IB main/independent OOB auxiliary or paired STFT; never fit statistics on development",
     "representative_baseline_only_not_full_Ma_reproduction": true,
     "final_receivers_and_Day3_4_access": false,
-    "execution_disabled": true
+    "execution_disabled": true,
+    "GRL_input": "CIS primary, Spec only as explicitly labelled representation ablation; identical capacity/scaling fitted only pooled training receivers"
   }
 }

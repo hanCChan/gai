@@ -1,0 +1,12 @@
+{
+  "registered_utc": "2026-10-12T07:11:30.746070+00:00",
+  "primary52_matrix_unchanged": true,
+  "inference": "exploratory follow-up, motivated by observed RTL34 changes near -101.6kHz; not original preregistration",
+  "original_IB_before_STFT": true,
+  "map_crop_includes_generated_window_leakage_but_no_original_OOB_information": true,
+  "same_rank16_encoder_budget_and_two_LR_as_full_STFT_A1": true,
+  "screening_runs": 8,
+  "three_seed_additional_runs": 8,
+  "seed_choice": "select each receiver/representation on seed20261012 entire Day2 Macro-F1, tie .001; freeze and confirm seeds20261013/14",
+  "P2_B_or_P3_start": false
+}

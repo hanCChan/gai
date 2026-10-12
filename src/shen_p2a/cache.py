@@ -20,7 +20,8 @@ def write_json(path,obj):
     temp.write_text(json.dumps(obj,ensure_ascii=False,indent=2)+'\n');temp.replace(path)
 
 
-def cache_dir(root,receiver,role):return Path(root)/'outputs/shen_p2a/cache'/f'{receiver}_{role}'
+def cache_dir(root,receiver,role,strict_ib=False):
+    return Path(root)/('outputs/shen_p2a/cache_strict_ib' if strict_ib else 'outputs/shen_p2a/cache')/f'{receiver}_{role}'
 
 
 def metadata_array(file,name,n):
@@ -31,11 +32,12 @@ def metadata_array(file,name,n):
     return value
 
 
-def build_cache(root,protocol,receiver,role):
-    root=Path(root); protocol=Path(protocol); out=cache_dir(root,receiver,role)
+def build_cache(root,protocol,receiver,role,strict_ib=False):
+    root=Path(root); protocol=Path(protocol); out=cache_dir(root,receiver,role,strict_ib)
     if (np.__version__,scipy.__version__)!=('1.26.4','1.13.1'):
         raise RuntimeError('Use /home/keyan/venvs/shen-stage1/bin/python; P1 numerical environment is required')
-    fingerprint=hashlib.sha256((CACHE_VERSION+protocol.read_text()+receiver+role+json.dumps(STFT_CONFIG,sort_keys=True)).encode()).hexdigest()
+    variant='_original_FFT_strict_IB' if strict_ib else ''
+    fingerprint=hashlib.sha256((CACHE_VERSION+variant+protocol.read_text()+receiver+role+json.dumps(STFT_CONFIG,sort_keys=True)).encode()).hexdigest()
     if out.exists():
         info=json.loads((out/'manifest.json').read_text())
         if info['status']!='completed' or info['fingerprint']!=fingerprint:raise ValueError('Cache is immutable and incomplete/stale; use a new cache version')
@@ -52,6 +54,9 @@ def build_cache(root,protocol,receiver,role):
         for start in range(0,n,128):
             rows=[ds[i] for i in range(start,min(n,start+128))]
             x=np.stack([r[0][0]+1j*r[0][1] for r in rows])
+            if strict_ib:
+                allowed=np.abs(np.fft.fftfreq(8192,d=1e-6))<=62500.
+                x=np.fft.ifft(np.fft.fft(x,axis=-1)*allowed,axis=-1)
             spec,cis,denominator=paired_maps(x)
             maps={'spec':spec,'cis':cis}
             for k,a in maps.items():
@@ -88,6 +93,7 @@ def build_cache(root,protocol,receiver,role):
                                        'packets':n,'shape':[n,1,52,126],'source_sha256_from_frozen_audit':source_item['sha256'],
                                        'source_relative_path':source_item['dataset_relative_path'],'protocol_sha256':hashlib.sha256(protocol.read_bytes()).hexdigest(),
                                        'stft':STFT_CONFIG,'mean_std':mean_std,'numpy_version':np.__version__,'scipy_version':scipy.__version__,
+                                       'strict_original_ib_projection':strict_ib,'diagnostics_raw_rms_is_projected_ib_if_strict':strict_ib,
                                        'relative_denominator_thresholds':{'denominator_fraction_relative_lt_1e6':1e-6,'denominator_fraction_relative_lt_1e4':1e-4,'denominator_fraction_relative_lt_1e2':1e-2},'raw_signal_mutated':False,'metadata_units':'unknown',
                                        'phase_offset_alias_range_hz_under_assumptions':[-488.28125,488.28125]})
         ds.close();return out
@@ -97,18 +103,19 @@ def build_cache(root,protocol,receiver,role):
 
 
 class MapPackets(Dataset):
-    def __init__(self,root,protocol,receiver,role,representation,normalization='none'):
+    def __init__(self,root,protocol,receiver,role,representation,normalization='none',strict_ib=False):
         if role not in ROLES:raise PermissionError('Final role cannot be cached or loaded')
         # Revalidate fixed protocol, path and actual labels before using derivatives.
         checked=ShenDevelopmentPackets(root,protocol,receiver,role)
         self.labels=checked.labels.copy();checked.close()
-        folder=cache_dir(root,receiver,role); info=json.loads((folder/'manifest.json').read_text())
+        folder=cache_dir(root,receiver,role,strict_ib); info=json.loads((folder/'manifest.json').read_text())
+        if info.get('strict_original_ib_projection',False)!=strict_ib:raise ValueError('Cache information source mismatch')
         if info['status']!='completed' or info['protocol_sha256']!=hashlib.sha256(Path(protocol).read_bytes()).hexdigest():raise ValueError('Stale/incomplete cache')
         np.testing.assert_array_equal(np.load(folder/'labels.npy'),self.labels)
         self.path=folder/f'{representation}.npy';self._array=None
         self.mean=0.;self.std=1.
         if normalization=='train_scalar':
-            train=json.loads((cache_dir(root,receiver,'train')/'manifest.json').read_text())
+            train=json.loads((cache_dir(root,receiver,'train',strict_ib)/'manifest.json').read_text())
             self.mean=train['mean_std'][representation]['mean'];self.std=train['mean_std'][representation]['std']
         elif normalization!='none':raise ValueError('Only fixed train-only or no feature standardization is allowed')
     def __len__(self):return len(self.labels)

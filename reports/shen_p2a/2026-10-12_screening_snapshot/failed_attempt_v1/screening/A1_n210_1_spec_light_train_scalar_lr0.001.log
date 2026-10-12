@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py", line 10, in <module>
+    a=p.parse_args();print(json.dumps(train(json.loads(a.config.read_text()),ROOT,a.output),indent=2))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/keyan/code-y-p2a/src/shen_p2a/runner.py", line 99, in train
+    torch.cuda.reset_peak_memory_stats(device)
+  File "/home/keyan/venvs/shen-stage1/lib/python3.11/site-packages/torch/cuda/memory.py", line 344, in reset_peak_memory_stats
+    return torch._C._cuda_resetPeakMemoryStats(device)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Invalid device argument 

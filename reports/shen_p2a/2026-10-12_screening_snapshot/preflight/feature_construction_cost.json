@@ -1,0 +1,18 @@
+[
+  {
+    "receiver": "n210_1",
+    "packets": 2000,
+    "HDF5_read_plus_both_STFT_features_seconds": 14.216950996000378,
+    "packets_per_second": 140.6771396034674,
+    "both_Spec_and_CIS_constructed": true,
+    "CPU_execution": true
+  },
+  {
+    "receiver": "rtl_6",
+    "packets": 2000,
+    "HDF5_read_plus_both_STFT_features_seconds": 9.970164049000232,
+    "packets_per_second": 200.59850471573253,
+    "both_Spec_and_CIS_constructed": true,
+    "CPU_execution": true
+  }
+]

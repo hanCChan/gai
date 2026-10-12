@@ -1,0 +1,62 @@
+[
+  [
+    {
+      "gpu": 0,
+      "run_id": "gpu0_one_epoch",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/integration_configs_v1/gpu0.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/integration_v1/gpu0_one_epoch"
+      ]
+    }
+  ],
+  [
+    {
+      "gpu": 1,
+      "run_id": "gpu1_one_epoch",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/integration_configs_v1/gpu1.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/integration_v1/gpu1_one_epoch"
+      ]
+    }
+  ],
+  [
+    {
+      "gpu": 2,
+      "run_id": "gpu2_one_epoch",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/integration_configs_v1/gpu2.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/integration_v1/gpu2_one_epoch"
+      ]
+    }
+  ],
+  [
+    {
+      "gpu": 3,
+      "run_id": "gpu3_one_epoch",
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y-p2a/scripts/train_shen_p2a.py",
+        "--config",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/integration_configs_v1/gpu3.json",
+        "--output",
+        "/home/keyan/code-y-p2a/outputs/shen_p2a/integration_v1/gpu3_one_epoch"
+      ]
+    }
+  ]
+]

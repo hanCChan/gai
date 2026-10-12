@@ -40,6 +40,21 @@ def nt_xent(z,temperature=.1):
     score=z@z.T/temperature;score=score.masked_fill(torch.eye(2*n,dtype=torch.bool,device=z.device),-torch.inf)
     return F.cross_entropy(score,target)
 
+def grl_loss(output,transmitter_labels,training_receiver_labels):
+    # Domain coefficient belongs in Reverse.apply; multiplying twice would square it.
+    tx=F.cross_entropy(output['logits'],transmitter_labels)
+    rx=F.cross_entropy(output['receiver_logits'],training_receiver_labels)
+    return tx+rx,{'transmitter_ce':tx,'receiver_ce':rx}
+
+def siamese_loss(output,pair_labels,contrastive_weight=1.,temperature=.1):
+    if contrastive_weight<0:raise ValueError('Contrastive weight must be nonnegative')
+    if len(pair_labels)!=len(torch.unique(pair_labels)):
+        raise ValueError('One transmitter pair per batch is required to avoid false negatives')
+    if output['logits'].shape[0]!=2*len(pair_labels):raise ValueError('Paired views must be aligned')
+    ce=F.cross_entropy(output['logits'],torch.cat((pair_labels,pair_labels)))
+    contrastive=nt_xent(output['contrastive'],temperature)
+    return ce+contrastive_weight*contrastive,{'transmitter_ce':ce,'nt_xent':contrastive}
+
 def cross_receiver_pairs(labels,receivers,seed=20261012):
     """One device pair per batch prevents same-device false negatives; indices only."""
     labels=np.asarray(labels);receivers=np.asarray(receivers)
@@ -53,14 +68,16 @@ def cross_receiver_pairs(labels,receivers,seed=20261012):
         pairs.append((left,right,int(label)))
     return pairs
 
-def fractional_tdl_awgn(iq,fs=1e6,delay_spread_ns=100.,doppler_hz=0.,snr_db=25.,seed=0):
+def fractional_tdl_awgn(iq,fs=1e6,delay_spread_ns=100.,doppler_hz=0.,snr_db=25.,seed=None):
     """Finite-support sinc fractional delays, exponential PDP, static sinusoidal Doppler.
 
     This approximates a short TDL channel; it is NOT a full Jakes reproduction.
     Inputs are assumed sampled at Fs=1MHz. Normalize CIR energy then received
-    power defines AWGN. Preserve causal guard/crop; never fit on development.
+    power defines AWGN. Zero-pad and align interpolation latency; finite-record
+    filter transients remain at packet boundaries. Never fit on development.
     """
     if iq.ndim!=1 or not np.iscomplexobj(iq):raise ValueError('Complex packet vector required')
+    if seed is None:raise ValueError('An explicit per-packet seed is required for reproducible online augmentation')
     if not 5<=delay_spread_ns<=300 or not 0<=doppler_hz<=5 or not 10<=snr_db<=40:raise ValueError('Reference augmentation ranges exceeded')
     rng=np.random.default_rng(seed);spread=delay_spread_ns*1e-9
     factors=np.array([0.,.5,1.,2.,3.,5.])
@@ -74,4 +91,10 @@ def fractional_tdl_awgn(iq,fs=1e6,delay_spread_ns=100.,doppler_hz=0.,snr_db=25.,
     y=np.convolve(iq,h,mode='full')[32:32+len(iq)];t=np.arange(len(iq))/fs
     y=y*np.exp(2j*np.pi*doppler_hz*t);p=np.mean(np.abs(y)**2)
     noise=(rng.normal(size=len(iq))+1j*rng.normal(size=len(iq)))*np.sqrt(p/(2*10**(snr_db/10)))
-    return y+noise,{'delay_samples':delays.tolist(),'sampling_assumption_hz':fs,'rms_delay_target_ns':delay_spread_ns,'effective_discrete_kernel_energy':float(np.sum(np.abs(h)**2)),'doppler_model':'single sinusoid, not Jakes','paper_full_reproduction':False}
+    return y+noise,{'seed':int(seed),'delay_samples':delays.tolist(),'sampling_assumption_hz':fs,'rms_delay_target_ns':delay_spread_ns,'snr_db_target':snr_db,'doppler_hz_target':doppler_hz,'effective_discrete_kernel_energy':float(np.sum(np.abs(h)**2)),'doppler_model':'single sinusoid, not Jakes','paper_full_reproduction':False}
+
+def augment_training_packet(iq,rng,fs=1e6):
+    if not isinstance(rng,np.random.Generator):raise ValueError('Pass a seeded training-only generator')
+    return fractional_tdl_awgn(iq,fs=fs,delay_spread_ns=float(rng.uniform(5,300)),
+                              doppler_hz=float(rng.uniform(0,5)),snr_db=float(rng.uniform(10,40)),
+                              seed=int(rng.integers(0,2**32)))

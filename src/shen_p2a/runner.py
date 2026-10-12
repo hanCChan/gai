@@ -15,11 +15,14 @@ from shen_evidence.runner import seed_all,loader_for,sync
 from .cache import MapPackets,write_json,cache_dir
 from .bands import transform
 from .models import make_model
+from .iq_cache import CachedIQ,folder as iq_cache_folder
 
 
 def dataset(root,protocol,cfg,role):
     if cfg['family']=='representation':
-        return MapPackets(root,protocol,cfg['receiver'],role,cfg['representation'],cfg['map_normalization'])
+        return MapPackets(root,protocol,cfg['receiver'],role,cfg['representation'],cfg['map_normalization'],cfg.get('strict_ib_stft',False))
+    if (iq_cache_folder(root,cfg['receiver'],role)/'manifest.json').exists():
+        return CachedIQ(root,protocol,cfg['receiver'],role)
     return ShenDevelopmentPackets(root,protocol,cfg['receiver'],role,cache_handles=True)
 
 
@@ -81,17 +84,22 @@ def train(cfg,root,output):
         if torch.__version__!='2.5.1+cu121' or np.__version__!='1.26.4':
             raise RuntimeError('Formal P2-A runs require the frozen P1 shen-stage1 environment')
         if cfg.get('stage')!='P2-A':raise PermissionError('P2-B/P3 are not executable by this runner')
+        if cfg.get('strict_ib_stft',False) and (cfg['sample_rate_hz'],cfg['bandwidth_hz'])!=(1e6,125e3):
+            raise ValueError('Strict-IB STFT cache was constructed only under Fs=1MHz/BW=125kHz assumptions')
         seed_all(cfg['seed']);device=torch.device('cuda:0');protocol=root/cfg['protocol']
         if hashlib.sha256(protocol.read_bytes()).hexdigest()!=cfg['protocol_sha256_expected']:raise ValueError('Protocol SHA changed')
         cfg=dict(cfg,source_commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=root,text=True).strip(),
+                 source_worktree_dirty=bool(subprocess.check_output(['git','status','--porcelain'],cwd=root,text=True).strip()),
+                 source_file_sha256={str(p.relative_to(root)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted((root/'src/shen_p2a').glob('*.py'))},
                  frozen_p1_baseline='eb4ce2c0db783f9241777f8b94328500a1014113',cuda_visible_devices=os.environ.get('CUDA_VISIBLE_DEVICES'),
                  torch_version=torch.__version__,cuda_runtime=torch.version.cuda,additional_cfo_compensation=False,
                  selection='Day2 entire-set fixed-10-class Macro-F1',frequency_metadata='literature assumptions, not verified locally')
         train_ds=dataset(root,protocol,cfg,'train');val_ds=dataset(root,protocol,cfg,'validation')
+        cfg['input_storage']=type(train_ds).__name__
         for ds in (train_ds,val_ds):
             if set(ds.labels)!=set(range(10)):raise ValueError('Ten-class label set changed')
         if cfg['family']=='representation':
-            info=json.loads((cache_dir(root,cfg['receiver'],'train')/'manifest.json').read_text())
+            info=json.loads((cache_dir(root,cfg['receiver'],'train',cfg.get('strict_ib_stft',False))/'manifest.json').read_text())
             cfg['train_feature_scaler']=info['mean_std'][cfg['representation']] if cfg['map_normalization']=='train_scalar' else {'mean':0.,'std':1.}
             cfg['stft']=info['stft']
         write_json(output/'config.json',cfg)

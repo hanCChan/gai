@@ -1,0 +1,6 @@
+{
+  "status": "failed",
+  "error": "RuntimeError('Invalid device argument ')",
+  "elapsed_seconds": 0.16952180000043882,
+  "pid": 13010
+}

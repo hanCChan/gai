@@ -113,6 +113,7 @@ if __name__=='__main__':
           '5. Full/IB：A6同等2LR×2WD预算，30epoch和反事实patience7同时保存。早停后的救援收益属于训练政策改变；不同表示结果仍不足分离所有优化和信息影响。',
           '6. HSTU/CrossAttn：预登记工程门槛'+('满足，允许建议后续比较，但不能声称接收机泛化已证明。' if gate else '未满足，暂不支持开发复杂融合。')+' P2-B/P3均未启动。',
           '7. P3冻结：旧论文全部20台已研究使用，其中6台原盲测已公布结果，不能称研究从未使用。10/4/6仅区分本轮训练和选择角色；N210开发属于训练硬件类型外推，其余开发同类型新实例。协议配置仍是候选，需要单独确认执行。',
+          '', '## 成本解释','', 'Spec/CIS的pipeline吞吐基于预计算映射，不包含STFT构建。feature_construction_cost.json另行测量2000包HDF5读取与同时构建两种表示；P1在线STFT和本轮缓存输入的pipeline吞吐不能直接视作模型速度差。model_packets_per_second只测前向；训练吞吐含实际I/O和梯度记录。部分后续输入采用逐包bit一致的float32 IQ缓存，运行config记录input_storage；这不改变模型或批顺序。',
           '', '## 限制','', 'Fs/BW/SF与CFO/SNR单位未核实；P1未记录梯度；rank16容量控制改变线性头的秩约束；本轮未读Day3/4或六锁定接收机，未下载OSU。3seed不是接收机总体独立重复，也不是最终测试。P3 GRL/Ma代表性基线和P2-B代码只准备，未真实数据训练。']
         (out/'REPORT.md').write_text('\n\n'.join(notes)+'\n');write_json(out/'status.json',{'status':'completed','runs':108,'metrics_independently_checked':True})
         print(json.dumps(decision,ensure_ascii=False,indent=2))
