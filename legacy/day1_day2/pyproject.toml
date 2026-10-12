@@ -1,0 +1,14 @@
+[project]
+name = "gai"
+version = "0.1.0"
+description = "Utilities and evaluation tools."
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24",
+  "torch>=2.1",
+  "tqdm>=4.66",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+

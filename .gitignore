@@ -1,0 +1,44 @@
+# Local inputs and generated artifacts
+/data/
+/inventory/
+/outputs/
+/logs/
+/shuoming/
+**/data/
+**/outputs/
+**/logs/
+*.h5
+*.hdf5
+*.dat
+*.sigmf-meta
+*.sigmf-data
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.csv
+*.tsv
+*.zip
+*.7z
+*.tar
+*.gz
+*.aria2
+# Environments and bytecode
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+credentials*
+*token*.txt
