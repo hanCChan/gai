@@ -1,5 +1,6 @@
 # Local inputs and generated artifacts
 /data/
+/data
 /inventory/
 /outputs/
 /logs/

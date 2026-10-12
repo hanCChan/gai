@@ -1,0 +1,1292 @@
+{
+  "stage": "P3",
+  "status": "revised_candidate_history_audited_not_frozen",
+  "automatic_start": false,
+  "new_signal_access_enabled": false,
+  "train_receivers": [
+    "b200_mini_1",
+    "b210_1",
+    "pluto_1",
+    "rtl_1",
+    "rtl_2",
+    "rtl_3",
+    "rtl_5",
+    "rtl_6",
+    "rtl_7",
+    "rtl_9"
+  ],
+  "development_receivers": [
+    "b200_1",
+    "n210_1",
+    "rtl_4",
+    "rtl_8"
+  ],
+  "final_locked_receivers": [
+    "b200_2",
+    "b200_mini_2",
+    "b210_2",
+    "n210_2",
+    "n210_3",
+    "pluto_2"
+  ],
+  "metadata_source": "inventory/shen_label_audit_20261011.json",
+  "historical_oob_overlap": "all 20 receivers used in previous OOB study; six formerly-blind outcomes already reported in supplied manuscript",
+  "actual_dates_sessions": "unverified",
+  "diagnostics": [
+    "device_classification",
+    "receiver_probe",
+    "quality_matched_same_receiver_oob_shuffle",
+    "frequency_interventions"
+  ],
+  "baselines": [
+    "ib_only",
+    "scalar_gate",
+    "legacy_cross_attn",
+    "grl_multi_receiver_only",
+    "representative_contrastive_method"
+  ],
+  "reliability_model_gate": "only_after_real_development_negative_transfer_evidence",
+  "independent_research_holdout_available_in_this_corpus": false,
+  "old_paper_sha256": "cdbdfbdaa1d40108ee58353ad346566e855c23d96da46fbcdcd356c7694ab442",
+  "history_evidence": "OOB_IOTJ.pdf Section V-A, Figure4, RQ6/TableVI; manuscript publication/submission status unverified",
+  "hardware_type_extrapolation_development_receivers": [
+    "n210_1"
+  ],
+  "development_model_selection_reuses_historical_domains": true,
+  "locked_receivers_interpretation": "training-unseen and locked for this protocol; previously evaluated and outcomes seen, not independent of research history",
+  "receiver_history": [
+    {
+      "receiver": "b200_mini_1",
+      "P3_role": "train",
+      "hardware_family_inferred_from_name": "b200_mini",
+      "hardware_family_seen_in_training": true,
+      "training_unseen": false,
+      "method_development_seen": true,
+      "P1_P2_individual_signal_seen": false,
+      "old_OOB_role": "development",
+      "cached_development_headers": [
+        {
+          "path": "data/external/shen_receiver_agnostic/b200_mini_1_test.h5",
+          "bytes": 262194112,
+          "shape": [
+            2000,
+            16384
+          ],
+          "dtype": "float64",
+          "labels": [
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
+          "counts": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+          ],
+          "attrs": {}
+        },
+        {
+          "path": "data/external/shen_receiver_agnostic/b200_mini_1_train.h5",
+          "bytes": 1048770112,
+          "shape": [
+            8000,
+            16384
+          ],
+          "dtype": "float64",
+          "labels": [
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
+          "counts": [
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800
+          ],
+          "attrs": {}
+        }
+      ],
+      "new_signal_opened": false,
+      "independent_research_holdout": false
+    },
+    {
+      "receiver": "b210_1",
+      "P3_role": "train",
+      "hardware_family_inferred_from_name": "b210",
+      "hardware_family_seen_in_training": true,
+      "training_unseen": false,
+      "method_development_seen": true,
+      "P1_P2_individual_signal_seen": false,
+      "old_OOB_role": "development",
+      "cached_development_headers": [
+        {
+          "path": "data/external/shen_receiver_agnostic/b210_1_test.h5",
+          "bytes": 262194112,
+          "shape": [
+            2000,
+            16384
+          ],
+          "dtype": "float64",
+          "labels": [
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
+          "counts": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+          ],
+          "attrs": {}
+        },
+        {
+          "path": "data/external/shen_receiver_agnostic/b210_1_train.h5",
+          "bytes": 1048770112,
+          "shape": [
+            8000,
+            16384
+          ],
+          "dtype": "float64",
+          "labels": [
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
+          "counts": [
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800
+          ],
+          "attrs": {}
+        }
+      ],
+      "new_signal_opened": false,
+      "independent_research_holdout": false
+    },
+    {
+      "receiver": "pluto_1",
+      "P3_role": "train",
+      "hardware_family_inferred_from_name": "pluto",
+      "hardware_family_seen_in_training": true,
+      "training_unseen": false,
+      "method_development_seen": true,
+      "P1_P2_individual_signal_seen": false,
+      "old_OOB_role": "development",
+      "cached_development_headers": [
+        {
+          "path": "data/external/shen_receiver_agnostic/pluto_1_test.h5",
+          "bytes": 262194112,
+          "shape": [
+            2000,
+            16384
+          ],
+          "dtype": "float64",
+          "labels": [
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
+          "counts": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+          ],
+          "attrs": {}
+        },
+        {
+          "path": "data/external/shen_receiver_agnostic/pluto_1_train.h5",
+          "bytes": 1048770112,
+          "shape": [
+            8000,
+            16384
+          ],
+          "dtype": "float64",
+          "labels": [
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
+          "counts": [
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800
+          ],
+          "attrs": {}
+        }
+      ],
+      "new_signal_opened": false,
+      "independent_research_holdout": false
+    },
+    {
+      "receiver": "rtl_1",
+      "P3_role": "train",
+      "hardware_family_inferred_from_name": "rtl",
+      "hardware_family_seen_in_training": true,
+      "training_unseen": false,
+      "method_development_seen": true,
+      "P1_P2_individual_signal_seen": false,
+      "old_OOB_role": "development",
+      "cached_development_headers": [
+        {
+          "path": "data/external/shen_receiver_agnostic/rtl_1_test.h5",
+          "bytes": 262194112,
+          "shape": [
+            2000,
+            16384
+          ],
+          "dtype": "float64",
+          "labels": [
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
+          "counts": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+          ],
+          "attrs": {}
+        },
+        {
+          "path": "data/external/shen_receiver_agnostic/rtl_1_train.h5",
+          "bytes": 1048770112,
+          "shape": [
+            8000,
+            16384
+          ],
+          "dtype": "float64",
+          "labels": [
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
+          "counts": [
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800
+          ],
+          "attrs": {}
+        }
+      ],
+      "new_signal_opened": false,
+      "independent_research_holdout": false
+    },
+    {
+      "receiver": "rtl_2",
+      "P3_role": "train",
+      "hardware_family_inferred_from_name": "rtl",
+      "hardware_family_seen_in_training": true,
+      "training_unseen": false,
+      "method_development_seen": true,
+      "P1_P2_individual_signal_seen": false,
+      "old_OOB_role": "development",
+      "cached_development_headers": [
+        {
+          "path": "data/external/shen_receiver_agnostic/rtl_2_test.h5",
+          "bytes": 262194112,
+          "shape": [
+            2000,
+            16384
+          ],
+          "dtype": "float64",
+          "labels": [
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
+          "counts": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+          ],
+          "attrs": {}
+        },
+        {
+          "path": "data/external/shen_receiver_agnostic/rtl_2_train.h5",
+          "bytes": 1048770112,
+          "shape": [
+            8000,
+            16384
+          ],
+          "dtype": "float64",
+          "labels": [
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
+          "counts": [
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800
+          ],
+          "attrs": {}
+        }
+      ],
+      "new_signal_opened": false,
+      "independent_research_holdout": false
+    },
+    {
+      "receiver": "rtl_3",
+      "P3_role": "train",
+      "hardware_family_inferred_from_name": "rtl",
+      "hardware_family_seen_in_training": true,
+      "training_unseen": false,
+      "method_development_seen": true,
+      "P1_P2_individual_signal_seen": false,
+      "old_OOB_role": "development",
+      "cached_development_headers": [
+        {
+          "path": "data/external/shen_receiver_agnostic/rtl_3_test.h5",
+          "bytes": 262194112,
+          "shape": [
+            2000,
+            16384
+          ],
+          "dtype": "float64",
+          "labels": [
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
+          "counts": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+          ],
+          "attrs": {}
+        },
+        {
+          "path": "data/external/shen_receiver_agnostic/rtl_3_train.h5",
+          "bytes": 1048770112,
+          "shape": [
+            8000,
+            16384
+          ],
+          "dtype": "float64",
+          "labels": [
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
+          "counts": [
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800
+          ],
+          "attrs": {}
+        }
+      ],
+      "new_signal_opened": false,
+      "independent_research_holdout": false
+    },
+    {
+      "receiver": "rtl_5",
+      "P3_role": "train",
+      "hardware_family_inferred_from_name": "rtl",
+      "hardware_family_seen_in_training": true,
+      "training_unseen": false,
+      "method_development_seen": true,
+      "P1_P2_individual_signal_seen": false,
+      "old_OOB_role": "development",
+      "cached_development_headers": [
+        {
+          "path": "data/external/shen_receiver_agnostic/rtl_5_test.h5",
+          "bytes": 262194112,
+          "shape": [
+            2000,
+            16384
+          ],
+          "dtype": "float64",
+          "labels": [
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
+          "counts": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+          ],
+          "attrs": {}
+        },
+        {
+          "path": "data/external/shen_receiver_agnostic/rtl_5_train.h5",
+          "bytes": 1048770112,
+          "shape": [
+            8000,
+            16384
+          ],
+          "dtype": "float64",
+          "labels": [
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
+          "counts": [
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800
+          ],
+          "attrs": {}
+        }
+      ],
+      "new_signal_opened": false,
+      "independent_research_holdout": false
+    },
+    {
+      "receiver": "rtl_6",
+      "P3_role": "train",
+      "hardware_family_inferred_from_name": "rtl",
+      "hardware_family_seen_in_training": true,
+      "training_unseen": false,
+      "method_development_seen": true,
+      "P1_P2_individual_signal_seen": true,
+      "old_OOB_role": "development",
+      "cached_development_headers": [
+        {
+          "path": "data/external/shen_receiver_agnostic/rtl_6_test.h5",
+          "bytes": 262194112,
+          "shape": [
+            2000,
+            16384
+          ],
+          "dtype": "float64",
+          "labels": [
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
+          "counts": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+          ],
+          "attrs": {}
+        },
+        {
+          "path": "data/external/shen_receiver_agnostic/rtl_6_train.h5",
+          "bytes": 1048770112,
+          "shape": [
+            8000,
+            16384
+          ],
+          "dtype": "float64",
+          "labels": [
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
+          "counts": [
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800
+          ],
+          "attrs": {}
+        }
+      ],
+      "new_signal_opened": false,
+      "independent_research_holdout": false
+    },
+    {
+      "receiver": "rtl_7",
+      "P3_role": "train",
+      "hardware_family_inferred_from_name": "rtl",
+      "hardware_family_seen_in_training": true,
+      "training_unseen": false,
+      "method_development_seen": true,
+      "P1_P2_individual_signal_seen": false,
+      "old_OOB_role": "development",
+      "cached_development_headers": [
+        {
+          "path": "data/external/shen_receiver_agnostic/rtl_7_test.h5",
+          "bytes": 262194112,
+          "shape": [
+            2000,
+            16384
+          ],
+          "dtype": "float64",
+          "labels": [
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
+          "counts": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+          ],
+          "attrs": {}
+        },
+        {
+          "path": "data/external/shen_receiver_agnostic/rtl_7_train.h5",
+          "bytes": 1048770112,
+          "shape": [
+            8000,
+            16384
+          ],
+          "dtype": "float64",
+          "labels": [
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
+          "counts": [
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800
+          ],
+          "attrs": {}
+        }
+      ],
+      "new_signal_opened": false,
+      "independent_research_holdout": false
+    },
+    {
+      "receiver": "rtl_9",
+      "P3_role": "train",
+      "hardware_family_inferred_from_name": "rtl",
+      "hardware_family_seen_in_training": true,
+      "training_unseen": false,
+      "method_development_seen": true,
+      "P1_P2_individual_signal_seen": false,
+      "old_OOB_role": "development",
+      "cached_development_headers": [
+        {
+          "path": "data/external/shen_receiver_agnostic/rtl_9_test.h5",
+          "bytes": 262194112,
+          "shape": [
+            2000,
+            16384
+          ],
+          "dtype": "float64",
+          "labels": [
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
+          "counts": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+          ],
+          "attrs": {}
+        },
+        {
+          "path": "data/external/shen_receiver_agnostic/rtl_9_train.h5",
+          "bytes": 1048770112,
+          "shape": [
+            8000,
+            16384
+          ],
+          "dtype": "float64",
+          "labels": [
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
+          "counts": [
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800
+          ],
+          "attrs": {}
+        }
+      ],
+      "new_signal_opened": false,
+      "independent_research_holdout": false
+    },
+    {
+      "receiver": "b200_1",
+      "P3_role": "development",
+      "hardware_family_inferred_from_name": "b200",
+      "hardware_family_seen_in_training": false,
+      "training_unseen": true,
+      "method_development_seen": true,
+      "P1_P2_individual_signal_seen": false,
+      "old_OOB_role": "development",
+      "cached_development_headers": [
+        {
+          "path": "data/external/shen_receiver_agnostic/b200_1_test.h5",
+          "bytes": 262194112,
+          "shape": [
+            2000,
+            16384
+          ],
+          "dtype": "float64",
+          "labels": [
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
+          "counts": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+          ],
+          "attrs": {}
+        },
+        {
+          "path": "data/external/shen_receiver_agnostic/b200_1_train.h5",
+          "bytes": 1048770112,
+          "shape": [
+            8000,
+            16384
+          ],
+          "dtype": "float64",
+          "labels": [
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
+          "counts": [
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800
+          ],
+          "attrs": {}
+        }
+      ],
+      "new_signal_opened": false,
+      "independent_research_holdout": false
+    },
+    {
+      "receiver": "n210_1",
+      "P3_role": "development",
+      "hardware_family_inferred_from_name": "n210",
+      "hardware_family_seen_in_training": false,
+      "training_unseen": true,
+      "method_development_seen": true,
+      "P1_P2_individual_signal_seen": true,
+      "old_OOB_role": "development",
+      "cached_development_headers": [
+        {
+          "path": "data/external/shen_receiver_agnostic/n210_1_test.h5",
+          "bytes": 262194112,
+          "shape": [
+            2000,
+            16384
+          ],
+          "dtype": "float64",
+          "labels": [
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
+          "counts": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+          ],
+          "attrs": {}
+        },
+        {
+          "path": "data/external/shen_receiver_agnostic/n210_1_train.h5",
+          "bytes": 1048770112,
+          "shape": [
+            8000,
+            16384
+          ],
+          "dtype": "float64",
+          "labels": [
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
+          "counts": [
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800
+          ],
+          "attrs": {}
+        }
+      ],
+      "new_signal_opened": false,
+      "independent_research_holdout": false
+    },
+    {
+      "receiver": "rtl_4",
+      "P3_role": "development",
+      "hardware_family_inferred_from_name": "rtl",
+      "hardware_family_seen_in_training": true,
+      "training_unseen": true,
+      "method_development_seen": true,
+      "P1_P2_individual_signal_seen": false,
+      "old_OOB_role": "development",
+      "cached_development_headers": [
+        {
+          "path": "data/external/shen_receiver_agnostic/rtl_4_test.h5",
+          "bytes": 262194112,
+          "shape": [
+            2000,
+            16384
+          ],
+          "dtype": "float64",
+          "labels": [
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
+          "counts": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+          ],
+          "attrs": {}
+        },
+        {
+          "path": "data/external/shen_receiver_agnostic/rtl_4_train.h5",
+          "bytes": 1048770112,
+          "shape": [
+            8000,
+            16384
+          ],
+          "dtype": "float64",
+          "labels": [
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
+          "counts": [
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800
+          ],
+          "attrs": {}
+        }
+      ],
+      "new_signal_opened": false,
+      "independent_research_holdout": false
+    },
+    {
+      "receiver": "rtl_8",
+      "P3_role": "development",
+      "hardware_family_inferred_from_name": "rtl",
+      "hardware_family_seen_in_training": true,
+      "training_unseen": true,
+      "method_development_seen": true,
+      "P1_P2_individual_signal_seen": false,
+      "old_OOB_role": "development",
+      "cached_development_headers": [
+        {
+          "path": "data/external/shen_receiver_agnostic/rtl_8_test.h5",
+          "bytes": 262194112,
+          "shape": [
+            2000,
+            16384
+          ],
+          "dtype": "float64",
+          "labels": [
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
+          "counts": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+          ],
+          "attrs": {}
+        },
+        {
+          "path": "data/external/shen_receiver_agnostic/rtl_8_train.h5",
+          "bytes": 1048770112,
+          "shape": [
+            8000,
+            16384
+          ],
+          "dtype": "float64",
+          "labels": [
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
+          "counts": [
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800,
+            800
+          ],
+          "attrs": {}
+        }
+      ],
+      "new_signal_opened": false,
+      "independent_research_holdout": false
+    },
+    {
+      "receiver": "b200_2",
+      "P3_role": "locked",
+      "hardware_family_inferred_from_name": "b200",
+      "hardware_family_seen_in_training": false,
+      "training_unseen": true,
+      "method_development_seen": true,
+      "P1_P2_individual_signal_seen": false,
+      "old_OOB_role": "formerly_blind_confirmatory_evaluated",
+      "cached_development_headers": [],
+      "new_signal_opened": false,
+      "independent_research_holdout": false
+    },
+    {
+      "receiver": "b200_mini_2",
+      "P3_role": "locked",
+      "hardware_family_inferred_from_name": "b200_mini",
+      "hardware_family_seen_in_training": true,
+      "training_unseen": true,
+      "method_development_seen": true,
+      "P1_P2_individual_signal_seen": false,
+      "old_OOB_role": "formerly_blind_confirmatory_evaluated",
+      "cached_development_headers": [],
+      "new_signal_opened": false,
+      "independent_research_holdout": false
+    },
+    {
+      "receiver": "b210_2",
+      "P3_role": "locked",
+      "hardware_family_inferred_from_name": "b210",
+      "hardware_family_seen_in_training": true,
+      "training_unseen": true,
+      "method_development_seen": true,
+      "P1_P2_individual_signal_seen": false,
+      "old_OOB_role": "formerly_blind_confirmatory_evaluated",
+      "cached_development_headers": [],
+      "new_signal_opened": false,
+      "independent_research_holdout": false
+    },
+    {
+      "receiver": "n210_2",
+      "P3_role": "locked",
+      "hardware_family_inferred_from_name": "n210",
+      "hardware_family_seen_in_training": false,
+      "training_unseen": true,
+      "method_development_seen": true,
+      "P1_P2_individual_signal_seen": false,
+      "old_OOB_role": "formerly_blind_confirmatory_evaluated",
+      "cached_development_headers": [],
+      "new_signal_opened": false,
+      "independent_research_holdout": false
+    },
+    {
+      "receiver": "n210_3",
+      "P3_role": "locked",
+      "hardware_family_inferred_from_name": "n210",
+      "hardware_family_seen_in_training": false,
+      "training_unseen": true,
+      "method_development_seen": true,
+      "P1_P2_individual_signal_seen": false,
+      "old_OOB_role": "formerly_blind_confirmatory_evaluated",
+      "cached_development_headers": [],
+      "new_signal_opened": false,
+      "independent_research_holdout": false
+    },
+    {
+      "receiver": "pluto_2",
+      "P3_role": "locked",
+      "hardware_family_inferred_from_name": "pluto",
+      "hardware_family_seen_in_training": true,
+      "training_unseen": true,
+      "method_development_seen": true,
+      "P1_P2_individual_signal_seen": false,
+      "old_OOB_role": "formerly_blind_confirmatory_evaluated",
+      "cached_development_headers": [],
+      "new_signal_opened": false,
+      "independent_research_holdout": false
+    }
+  ],
+  "local_package_dates_sessions_cfo_units": "unverified",
+  "final_protocol_prerequisites": [
+    "Freeze preprocessing, configuration search budget, seeds, epoch/checkpoint selection and all 20 per-receiver roles before any new access",
+    "Use 10 receivers for fitting; 4 developer receivers for selection, report same-family and unseen-family separately",
+    "Do not claim six previously evaluated domains are never used in research decisions; genuinely fresh research confirmation requires new data under separately authorized access",
+    "Explicit authorization needed to execute P3; keep Day3/4 and six locked receivers inaccessible now"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "frozen_baseline": "eb4ce2c0db783f9241777f8b94328500a1014113",
+  "screening_seed": 20261012,
+  "confirmatory_seeds": [
+    20261013,
+    20261014
+  ],
+  "gpu_candidate_counts": {
+    "0": 16,
+    "1": 15,
+    "2": 13,
+    "3": 8
+  },
+  "A1": "Spec/CIS paired STFT geometry, same rank16 author encoder, train-only scalar normalization, equal LR budgets",
+  "A2": "Raw CIS capacity control reuses both P1 author LR candidates; light raw uses the same two; RTL WD candidates symmetric",
+  "A4": "IB/near/mid/far/allOOB frequency RI use same PacketCNN; original FFT projection precedes formal windowing",
+  "A5": "P1-exact strict-IB main, same fixed lr=.0003 and budget; exact IB+IB architecture/parameter controls",
+  "A6": "P1-exact Full/IB inputs and network; identical 2LR x 2WD budget; train all30, log counterfactual patience7 stopping",
+  "early_stopping_changes_are_training_policy_not_physical_information": true,
+  "P2_B_or_P3_automatic_start": false,
+  "final_signal_access": false
+}

@@ -1,0 +1,522 @@
+[
+  {
+    "run_id": "A1_n210_1_spec_light_train_scalar_lr0.001",
+    "gpu": 0,
+    "config": "configs/shen_p2a/A1_n210_1_spec_light_train_scalar_lr0.001.json",
+    "stage": "P2-A",
+    "family": "representation",
+    "receiver": "n210_1",
+    "method": "spec_light_train_scalar",
+    "comparison_group": "A1_matched_representation"
+  },
+  {
+    "run_id": "A1_n210_1_spec_light_train_scalar_lr0.0003",
+    "gpu": 0,
+    "config": "configs/shen_p2a/A1_n210_1_spec_light_train_scalar_lr0.0003.json",
+    "stage": "P2-A",
+    "family": "representation",
+    "receiver": "n210_1",
+    "method": "spec_light_train_scalar",
+    "comparison_group": "A1_matched_representation"
+  },
+  {
+    "run_id": "A1_n210_1_cis_light_train_scalar_lr0.001",
+    "gpu": 0,
+    "config": "configs/shen_p2a/A1_n210_1_cis_light_train_scalar_lr0.001.json",
+    "stage": "P2-A",
+    "family": "representation",
+    "receiver": "n210_1",
+    "method": "cis_light_train_scalar",
+    "comparison_group": "A1_matched_representation"
+  },
+  {
+    "run_id": "A1_n210_1_cis_light_train_scalar_lr0.0003",
+    "gpu": 0,
+    "config": "configs/shen_p2a/A1_n210_1_cis_light_train_scalar_lr0.0003.json",
+    "stage": "P2-A",
+    "family": "representation",
+    "receiver": "n210_1",
+    "method": "cis_light_train_scalar",
+    "comparison_group": "A1_matched_representation"
+  },
+  {
+    "run_id": "A2_n210_1_cis_light_raw_lr0.001",
+    "gpu": 0,
+    "config": "configs/shen_p2a/A2_n210_1_cis_light_raw_lr0.001.json",
+    "stage": "P2-A",
+    "family": "representation",
+    "receiver": "n210_1",
+    "method": "cis_light_raw",
+    "comparison_group": "A2_capacity_raw_cis"
+  },
+  {
+    "run_id": "A2_n210_1_cis_light_raw_lr0.0003",
+    "gpu": 0,
+    "config": "configs/shen_p2a/A2_n210_1_cis_light_raw_lr0.0003.json",
+    "stage": "P2-A",
+    "family": "representation",
+    "receiver": "n210_1",
+    "method": "cis_light_raw",
+    "comparison_group": "A2_capacity_raw_cis"
+  },
+  {
+    "run_id": "A1_rtl_6_spec_light_train_scalar_lr0.001",
+    "gpu": 0,
+    "config": "configs/shen_p2a/A1_rtl_6_spec_light_train_scalar_lr0.001.json",
+    "stage": "P2-A",
+    "family": "representation",
+    "receiver": "rtl_6",
+    "method": "spec_light_train_scalar",
+    "comparison_group": "A1_matched_representation"
+  },
+  {
+    "run_id": "A1_rtl_6_spec_light_train_scalar_lr0.0003",
+    "gpu": 0,
+    "config": "configs/shen_p2a/A1_rtl_6_spec_light_train_scalar_lr0.0003.json",
+    "stage": "P2-A",
+    "family": "representation",
+    "receiver": "rtl_6",
+    "method": "spec_light_train_scalar",
+    "comparison_group": "A1_matched_representation"
+  },
+  {
+    "run_id": "A1_rtl_6_cis_light_train_scalar_lr0.001",
+    "gpu": 0,
+    "config": "configs/shen_p2a/A1_rtl_6_cis_light_train_scalar_lr0.001.json",
+    "stage": "P2-A",
+    "family": "representation",
+    "receiver": "rtl_6",
+    "method": "cis_light_train_scalar",
+    "comparison_group": "A1_matched_representation"
+  },
+  {
+    "run_id": "A1_rtl_6_cis_light_train_scalar_lr0.0003",
+    "gpu": 0,
+    "config": "configs/shen_p2a/A1_rtl_6_cis_light_train_scalar_lr0.0003.json",
+    "stage": "P2-A",
+    "family": "representation",
+    "receiver": "rtl_6",
+    "method": "cis_light_train_scalar",
+    "comparison_group": "A1_matched_representation"
+  },
+  {
+    "run_id": "A2_rtl_6_cis_light_raw_lr0.001",
+    "gpu": 0,
+    "config": "configs/shen_p2a/A2_rtl_6_cis_light_raw_lr0.001.json",
+    "stage": "P2-A",
+    "family": "representation",
+    "receiver": "rtl_6",
+    "method": "cis_light_raw",
+    "comparison_group": "A2_capacity_raw_cis"
+  },
+  {
+    "run_id": "A2_rtl_6_cis_light_raw_lr0.0003",
+    "gpu": 0,
+    "config": "configs/shen_p2a/A2_rtl_6_cis_light_raw_lr0.0003.json",
+    "stage": "P2-A",
+    "family": "representation",
+    "receiver": "rtl_6",
+    "method": "cis_light_raw",
+    "comparison_group": "A2_capacity_raw_cis"
+  },
+  {
+    "run_id": "A2_rtl_6_cis_factorized_wd1e4_lr0.001",
+    "gpu": 0,
+    "config": "configs/shen_p2a/A2_rtl_6_cis_factorized_wd1e4_lr0.001.json",
+    "stage": "P2-A",
+    "family": "representation",
+    "receiver": "rtl_6",
+    "method": "cis_light_raw_wd1e4",
+    "comparison_group": "A2_regularization_raw_cis"
+  },
+  {
+    "run_id": "A2_rtl_6_cis_factorized_wd1e4_lr0.0003",
+    "gpu": 0,
+    "config": "configs/shen_p2a/A2_rtl_6_cis_factorized_wd1e4_lr0.0003.json",
+    "stage": "P2-A",
+    "family": "representation",
+    "receiver": "rtl_6",
+    "method": "cis_light_raw_wd1e4",
+    "comparison_group": "A2_regularization_raw_cis"
+  },
+  {
+    "run_id": "A2_rtl_6_cis_author_wd1e4_lr0.001",
+    "gpu": 0,
+    "config": "configs/shen_p2a/A2_rtl_6_cis_author_wd1e4_lr0.001.json",
+    "stage": "P2-A",
+    "family": "representation",
+    "receiver": "rtl_6",
+    "method": "cis_author_raw_wd1e4",
+    "comparison_group": "A2_regularization_raw_cis"
+  },
+  {
+    "run_id": "A2_rtl_6_cis_author_wd1e4_lr0.0003",
+    "gpu": 0,
+    "config": "configs/shen_p2a/A2_rtl_6_cis_author_wd1e4_lr0.0003.json",
+    "stage": "P2-A",
+    "family": "representation",
+    "receiver": "rtl_6",
+    "method": "cis_author_raw_wd1e4",
+    "comparison_group": "A2_regularization_raw_cis"
+  },
+  {
+    "run_id": "A4_n210_1_ib_freq_independent",
+    "gpu": 1,
+    "config": "configs/shen_p2a/A4_n210_1_ib_freq_independent.json",
+    "stage": "P2-A",
+    "family": "band",
+    "receiver": "n210_1",
+    "method": "ib_freq_independent",
+    "comparison_group": "A4_frequency_rings"
+  },
+  {
+    "run_id": "A4_n210_1_near_freq_independent",
+    "gpu": 1,
+    "config": "configs/shen_p2a/A4_n210_1_near_freq_independent.json",
+    "stage": "P2-A",
+    "family": "band",
+    "receiver": "n210_1",
+    "method": "near_freq_independent",
+    "comparison_group": "A4_frequency_rings"
+  },
+  {
+    "run_id": "A4_n210_1_mid_freq_independent",
+    "gpu": 1,
+    "config": "configs/shen_p2a/A4_n210_1_mid_freq_independent.json",
+    "stage": "P2-A",
+    "family": "band",
+    "receiver": "n210_1",
+    "method": "mid_freq_independent",
+    "comparison_group": "A4_frequency_rings"
+  },
+  {
+    "run_id": "A4_n210_1_far_freq_independent",
+    "gpu": 1,
+    "config": "configs/shen_p2a/A4_n210_1_far_freq_independent.json",
+    "stage": "P2-A",
+    "family": "band",
+    "receiver": "n210_1",
+    "method": "far_freq_independent",
+    "comparison_group": "A4_frequency_rings"
+  },
+  {
+    "run_id": "A4_n210_1_oob_freq_independent",
+    "gpu": 1,
+    "config": "configs/shen_p2a/A4_n210_1_oob_freq_independent.json",
+    "stage": "P2-A",
+    "family": "band",
+    "receiver": "n210_1",
+    "method": "oob_freq_independent",
+    "comparison_group": "A4_frequency_rings"
+  },
+  {
+    "run_id": "A4_rtl_6_ib_freq_independent",
+    "gpu": 1,
+    "config": "configs/shen_p2a/A4_rtl_6_ib_freq_independent.json",
+    "stage": "P2-A",
+    "family": "band",
+    "receiver": "rtl_6",
+    "method": "ib_freq_independent",
+    "comparison_group": "A4_frequency_rings"
+  },
+  {
+    "run_id": "A4_rtl_6_near_freq_independent",
+    "gpu": 1,
+    "config": "configs/shen_p2a/A4_rtl_6_near_freq_independent.json",
+    "stage": "P2-A",
+    "family": "band",
+    "receiver": "rtl_6",
+    "method": "near_freq_independent",
+    "comparison_group": "A4_frequency_rings"
+  },
+  {
+    "run_id": "A4_rtl_6_mid_freq_independent",
+    "gpu": 1,
+    "config": "configs/shen_p2a/A4_rtl_6_mid_freq_independent.json",
+    "stage": "P2-A",
+    "family": "band",
+    "receiver": "rtl_6",
+    "method": "mid_freq_independent",
+    "comparison_group": "A4_frequency_rings"
+  },
+  {
+    "run_id": "A4_rtl_6_far_freq_independent",
+    "gpu": 1,
+    "config": "configs/shen_p2a/A4_rtl_6_far_freq_independent.json",
+    "stage": "P2-A",
+    "family": "band",
+    "receiver": "rtl_6",
+    "method": "far_freq_independent",
+    "comparison_group": "A4_frequency_rings"
+  },
+  {
+    "run_id": "A4_rtl_6_oob_freq_independent",
+    "gpu": 1,
+    "config": "configs/shen_p2a/A4_rtl_6_oob_freq_independent.json",
+    "stage": "P2-A",
+    "family": "band",
+    "receiver": "rtl_6",
+    "method": "oob_freq_independent",
+    "comparison_group": "A4_frequency_rings"
+  },
+  {
+    "run_id": "A4_rtl_6_oob_guard0",
+    "gpu": 1,
+    "config": "configs/shen_p2a/A4_rtl_6_oob_guard0.json",
+    "stage": "P2-A",
+    "family": "band",
+    "receiver": "rtl_6",
+    "method": "oob_guard_0",
+    "comparison_group": "A4_guard_sensitivity"
+  },
+  {
+    "run_id": "A4_rtl_6_oob_guard25000",
+    "gpu": 1,
+    "config": "configs/shen_p2a/A4_rtl_6_oob_guard25000.json",
+    "stage": "P2-A",
+    "family": "band",
+    "receiver": "rtl_6",
+    "method": "oob_guard_25000",
+    "comparison_group": "A4_guard_sensitivity"
+  },
+  {
+    "run_id": "A4_rtl_6_oob_ib_relative_rect",
+    "gpu": 1,
+    "config": "configs/shen_p2a/A4_rtl_6_oob_ib_relative_rect.json",
+    "stage": "P2-A",
+    "family": "band",
+    "receiver": "rtl_6",
+    "method": "oob_ib_relative_rect",
+    "comparison_group": "A4_scale_window_sensitivity"
+  },
+  {
+    "run_id": "A4_rtl_6_oob_independent_projection_hann",
+    "gpu": 1,
+    "config": "configs/shen_p2a/A4_rtl_6_oob_independent_projection_hann.json",
+    "stage": "P2-A",
+    "family": "band",
+    "receiver": "rtl_6",
+    "method": "oob_independent_projection_hann",
+    "comparison_group": "A4_scale_window_sensitivity"
+  },
+  {
+    "run_id": "A4_rtl_6_oob_ib_relative_projection_hann",
+    "gpu": 1,
+    "config": "configs/shen_p2a/A4_rtl_6_oob_ib_relative_projection_hann.json",
+    "stage": "P2-A",
+    "family": "band",
+    "receiver": "rtl_6",
+    "method": "oob_ib_relative_projection_hann",
+    "comparison_group": "A4_scale_window_sensitivity"
+  },
+  {
+    "run_id": "A5_n210_1_single_ib",
+    "gpu": 2,
+    "config": "configs/shen_p2a/A5_n210_1_single_ib.json",
+    "stage": "P2-A",
+    "family": "fusion",
+    "receiver": "n210_1",
+    "method": "single_ib",
+    "comparison_group": "A5_information_complementarity"
+  },
+  {
+    "run_id": "A5_n210_1_capacity_ib_ib_concat",
+    "gpu": 2,
+    "config": "configs/shen_p2a/A5_n210_1_capacity_ib_ib_concat.json",
+    "stage": "P2-A",
+    "family": "fusion",
+    "receiver": "n210_1",
+    "method": "capacity_ib_ib_concat",
+    "comparison_group": "A5_information_complementarity"
+  },
+  {
+    "run_id": "A5_n210_1_capacity_ib_ib_gate",
+    "gpu": 2,
+    "config": "configs/shen_p2a/A5_n210_1_capacity_ib_ib_gate.json",
+    "stage": "P2-A",
+    "family": "fusion",
+    "receiver": "n210_1",
+    "method": "capacity_ib_ib_gate",
+    "comparison_group": "A5_information_complementarity"
+  },
+  {
+    "run_id": "A5_n210_1_ib_oob_concat",
+    "gpu": 2,
+    "config": "configs/shen_p2a/A5_n210_1_ib_oob_concat.json",
+    "stage": "P2-A",
+    "family": "fusion",
+    "receiver": "n210_1",
+    "method": "ib_oob_concat",
+    "comparison_group": "A5_information_complementarity"
+  },
+  {
+    "run_id": "A5_n210_1_ib_oob_gate",
+    "gpu": 2,
+    "config": "configs/shen_p2a/A5_n210_1_ib_oob_gate.json",
+    "stage": "P2-A",
+    "family": "fusion",
+    "receiver": "n210_1",
+    "method": "ib_oob_gate",
+    "comparison_group": "A5_information_complementarity"
+  },
+  {
+    "run_id": "A5_rtl_6_single_ib",
+    "gpu": 2,
+    "config": "configs/shen_p2a/A5_rtl_6_single_ib.json",
+    "stage": "P2-A",
+    "family": "fusion",
+    "receiver": "rtl_6",
+    "method": "single_ib",
+    "comparison_group": "A5_information_complementarity"
+  },
+  {
+    "run_id": "A5_rtl_6_capacity_ib_ib_concat",
+    "gpu": 2,
+    "config": "configs/shen_p2a/A5_rtl_6_capacity_ib_ib_concat.json",
+    "stage": "P2-A",
+    "family": "fusion",
+    "receiver": "rtl_6",
+    "method": "capacity_ib_ib_concat",
+    "comparison_group": "A5_information_complementarity"
+  },
+  {
+    "run_id": "A5_rtl_6_capacity_ib_ib_gate",
+    "gpu": 2,
+    "config": "configs/shen_p2a/A5_rtl_6_capacity_ib_ib_gate.json",
+    "stage": "P2-A",
+    "family": "fusion",
+    "receiver": "rtl_6",
+    "method": "capacity_ib_ib_gate",
+    "comparison_group": "A5_information_complementarity"
+  },
+  {
+    "run_id": "A5_rtl_6_ib_oob_concat",
+    "gpu": 2,
+    "config": "configs/shen_p2a/A5_rtl_6_ib_oob_concat.json",
+    "stage": "P2-A",
+    "family": "fusion",
+    "receiver": "rtl_6",
+    "method": "ib_oob_concat",
+    "comparison_group": "A5_information_complementarity"
+  },
+  {
+    "run_id": "A5_rtl_6_ib_oob_gate",
+    "gpu": 2,
+    "config": "configs/shen_p2a/A5_rtl_6_ib_oob_gate.json",
+    "stage": "P2-A",
+    "family": "fusion",
+    "receiver": "rtl_6",
+    "method": "ib_oob_gate",
+    "comparison_group": "A5_information_complementarity"
+  },
+  {
+    "run_id": "A4_rtl_6_ib_near_gate",
+    "gpu": 2,
+    "config": "configs/shen_p2a/A4_rtl_6_ib_near_gate.json",
+    "stage": "P2-A",
+    "family": "fusion",
+    "receiver": "rtl_6",
+    "method": "ib_near_gate",
+    "comparison_group": "A4_ring_complementarity"
+  },
+  {
+    "run_id": "A4_rtl_6_ib_mid_gate",
+    "gpu": 2,
+    "config": "configs/shen_p2a/A4_rtl_6_ib_mid_gate.json",
+    "stage": "P2-A",
+    "family": "fusion",
+    "receiver": "rtl_6",
+    "method": "ib_mid_gate",
+    "comparison_group": "A4_ring_complementarity"
+  },
+  {
+    "run_id": "A4_rtl_6_ib_far_gate",
+    "gpu": 2,
+    "config": "configs/shen_p2a/A4_rtl_6_ib_far_gate.json",
+    "stage": "P2-A",
+    "family": "fusion",
+    "receiver": "rtl_6",
+    "method": "ib_far_gate",
+    "comparison_group": "A4_ring_complementarity"
+  },
+  {
+    "run_id": "A6_rtl_6_full_lr0.001_wd0",
+    "gpu": 3,
+    "config": "configs/shen_p2a/A6_rtl_6_full_lr0.001_wd0.json",
+    "stage": "P2-A",
+    "family": "stability",
+    "receiver": "rtl_6",
+    "method": "full_stability",
+    "comparison_group": "A6_stability"
+  },
+  {
+    "run_id": "A6_rtl_6_full_lr0.001_wd0.0001",
+    "gpu": 3,
+    "config": "configs/shen_p2a/A6_rtl_6_full_lr0.001_wd0.0001.json",
+    "stage": "P2-A",
+    "family": "stability",
+    "receiver": "rtl_6",
+    "method": "full_stability",
+    "comparison_group": "A6_stability"
+  },
+  {
+    "run_id": "A6_rtl_6_full_lr0.0003_wd0",
+    "gpu": 3,
+    "config": "configs/shen_p2a/A6_rtl_6_full_lr0.0003_wd0.json",
+    "stage": "P2-A",
+    "family": "stability",
+    "receiver": "rtl_6",
+    "method": "full_stability",
+    "comparison_group": "A6_stability"
+  },
+  {
+    "run_id": "A6_rtl_6_full_lr0.0003_wd0.0001",
+    "gpu": 3,
+    "config": "configs/shen_p2a/A6_rtl_6_full_lr0.0003_wd0.0001.json",
+    "stage": "P2-A",
+    "family": "stability",
+    "receiver": "rtl_6",
+    "method": "full_stability",
+    "comparison_group": "A6_stability"
+  },
+  {
+    "run_id": "A6_rtl_6_ib_lr0.001_wd0",
+    "gpu": 3,
+    "config": "configs/shen_p2a/A6_rtl_6_ib_lr0.001_wd0.json",
+    "stage": "P2-A",
+    "family": "stability",
+    "receiver": "rtl_6",
+    "method": "ib_stability",
+    "comparison_group": "A6_stability"
+  },
+  {
+    "run_id": "A6_rtl_6_ib_lr0.001_wd0.0001",
+    "gpu": 3,
+    "config": "configs/shen_p2a/A6_rtl_6_ib_lr0.001_wd0.0001.json",
+    "stage": "P2-A",
+    "family": "stability",
+    "receiver": "rtl_6",
+    "method": "ib_stability",
+    "comparison_group": "A6_stability"
+  },
+  {
+    "run_id": "A6_rtl_6_ib_lr0.0003_wd0",
+    "gpu": 3,
+    "config": "configs/shen_p2a/A6_rtl_6_ib_lr0.0003_wd0.json",
+    "stage": "P2-A",
+    "family": "stability",
+    "receiver": "rtl_6",
+    "method": "ib_stability",
+    "comparison_group": "A6_stability"
+  },
+  {
+    "run_id": "A6_rtl_6_ib_lr0.0003_wd0.0001",
+    "gpu": 3,
+    "config": "configs/shen_p2a/A6_rtl_6_ib_lr0.0003_wd0.0001.json",
+    "stage": "P2-A",
+    "family": "stability",
+    "receiver": "rtl_6",
+    "method": "ib_stability",
+    "comparison_group": "A6_stability"
+  }
+]
