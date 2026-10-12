@@ -42,3 +42,7 @@ __pycache__/
 *.p12
 credentials*
 *token*.txt
+
+# Curated experiment summaries and development-only evidence
+!/reports/**/*.csv
+!/configs/shen_evidence/*.csv

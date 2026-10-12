@@ -1,0 +1,19 @@
+{
+  "protocol": "configs/shen_evidence/protocol.candidate.json",
+  "seed": 20261012,
+  "batch_size": 64,
+  "workers": 2,
+  "max_epochs": 30,
+  "patience": 7,
+  "min_delta": 0.0001,
+  "lr": 0.001,
+  "weight_decay": 0.0,
+  "sample_rate_hz": 1000000.0,
+  "bandwidth_hz": 125000.0,
+  "guard_hz": 12500.0,
+  "device": "cuda:0",
+  "kind": "full_iq",
+  "receiver": "rtl_6",
+  "experiment_id": "E01",
+  "protocol_sha256_expected": "e135c3980541dded7e6057ad41194229b8501dfc079e1d87508ff87bd4843f51"
+}

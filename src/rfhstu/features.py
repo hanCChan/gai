@@ -110,7 +110,10 @@ def build_patch_features(
     fft_norm: str = "log_zscore",
     oob_norm: str = "zscore",
 ) -> tuple[torch.Tensor, dict[str, torch.Tensor]]:
-    """Build fused RF patch features from IQ-derived views."""
+    """Legacy fused views: IQ/amp-phase indices are time patches, whereas
+    whole-packet FFT/OOB indices are frequency slices. Matching indices do
+    not imply physical time alignment. no_oob does not remove OOB from IQ.
+    """
     iq_view, fft_view, oob_view, amp_phase = torch_rf_views(
         iq, sample_rate, lora_bandwidth, fft_norm=fft_norm, oob_norm=oob_norm
     )

@@ -1,0 +1,62 @@
+[
+  [
+    {
+      "run_id": "gpu0",
+      "gpu": 0,
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y/scripts/smoke_shen_evidence.py",
+        "--config",
+        "/home/keyan/code-y/configs/shen_evidence/E01_n210_1_seed20261012.json",
+        "--output",
+        "outputs/shen_evidence/p0_20261012/four_gpu_smoke_v2/gpu0"
+      ]
+    }
+  ],
+  [
+    {
+      "run_id": "gpu1",
+      "gpu": 1,
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y/scripts/smoke_shen_evidence.py",
+        "--config",
+        "/home/keyan/code-y/configs/shen_evidence/E02_n210_1_seed20261012.json",
+        "--output",
+        "outputs/shen_evidence/p0_20261012/four_gpu_smoke_v2/gpu1"
+      ]
+    }
+  ],
+  [
+    {
+      "run_id": "gpu2",
+      "gpu": 2,
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y/scripts/smoke_shen_evidence.py",
+        "--config",
+        "/home/keyan/code-y/configs/shen_evidence/E03_n210_1_seed20261012.json",
+        "--output",
+        "outputs/shen_evidence/p0_20261012/four_gpu_smoke_v2/gpu2"
+      ]
+    }
+  ],
+  [
+    {
+      "run_id": "gpu3",
+      "gpu": 3,
+      "returncode": 0,
+      "command": [
+        "/home/keyan/venvs/shen-stage1/bin/python",
+        "/home/keyan/code-y/scripts/smoke_shen_evidence.py",
+        "--config",
+        "/home/keyan/code-y/configs/shen_evidence/E04_n210_1_seed20261012.json",
+        "--output",
+        "outputs/shen_evidence/p0_20261012/four_gpu_smoke_v2/gpu3"
+      ]
+    }
+  ]
+]

@@ -1,0 +1,6 @@
+test_recipe_freezes_before_new_seeds_and_only_p1_is_launched (test_shen_pipeline.PipelineTests.test_recipe_freezes_before_new_seeds_and_only_p1_is_launched) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.056s
+
+OK

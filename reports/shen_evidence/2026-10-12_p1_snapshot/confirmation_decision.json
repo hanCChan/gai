@@ -1,0 +1,6 @@
+{
+  "confirmation_go": true,
+  "reason": "selected OOB-only exceeds 10% in both Day2 receivers",
+  "reliability_fusion_supported": false,
+  "P2_P3_started": false
+}

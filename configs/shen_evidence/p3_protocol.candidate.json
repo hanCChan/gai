@@ -1,0 +1,49 @@
+{
+  "stage": "P3",
+  "status": "candidate_not_frozen",
+  "automatic_start": false,
+  "new_signal_access_enabled": false,
+  "train_receivers": [
+    "b200_mini_1",
+    "b210_1",
+    "pluto_1",
+    "rtl_1",
+    "rtl_2",
+    "rtl_3",
+    "rtl_5",
+    "rtl_6",
+    "rtl_7",
+    "rtl_9"
+  ],
+  "development_receivers": [
+    "b200_1",
+    "n210_1",
+    "rtl_4",
+    "rtl_8"
+  ],
+  "final_locked_receivers": [
+    "b200_2",
+    "b200_mini_2",
+    "b210_2",
+    "n210_2",
+    "n210_3",
+    "pluto_2"
+  ],
+  "metadata_source": "inventory/shen_label_audit_20261011.json",
+  "historical_oob_overlap": "unknown_requires_verification",
+  "actual_dates_sessions": "unverified",
+  "diagnostics": [
+    "device_classification",
+    "receiver_probe",
+    "quality_matched_same_receiver_oob_shuffle",
+    "frequency_interventions"
+  ],
+  "baselines": [
+    "ib_only",
+    "scalar_gate",
+    "legacy_cross_attn",
+    "grl_multi_receiver_only",
+    "representative_contrastive_method"
+  ],
+  "reliability_model_gate": "only_after_real_development_negative_transfer_evidence"
+}

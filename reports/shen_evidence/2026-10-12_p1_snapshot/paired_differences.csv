@@ -1,0 +1,15 @@
+receiver,seed,recipe_profile,left,right,packets,left_only_correct,right_only_correct,both_correct,both_wrong,right_minus_left_accuracy,independent_acquisition_unit
+n210_1,20261012,selected,cis,full_iq,2000,50,2,1947,1,-0.02400000000000002,unknown
+n210_1,20261012,selected,cis,oob_only,2000,485,0,1512,3,-0.24250000000000005,unknown
+n210_1,20261012,selected,cis,strict_ib,2000,185,1,1812,2,-0.09200000000000008,unknown
+n210_1,20261012,selected,full_iq,oob_only,2000,473,36,1476,15,-0.21850000000000003,unknown
+n210_1,20261012,selected,full_iq,strict_ib,2000,160,24,1789,27,-0.06800000000000006,unknown
+n210_1,20261012,selected,oob_only,strict_ib,2000,124,425,1388,63,0.15049999999999997,unknown
+n210_1,20261013,selected,full_iq,oob_only,2000,480,40,1465,15,-0.22000000000000008,unknown
+n210_1,20261014,selected,cis,full_iq,2000,121,3,1872,4,-0.05900000000000005,unknown
+rtl_6,20261012,selected,cis,full_iq,2000,112,339,1518,31,0.11350000000000005,unknown
+rtl_6,20261012,selected,cis,oob_only,2000,115,263,1515,107,0.07400000000000007,unknown
+rtl_6,20261012,selected,cis,strict_ib,2000,122,360,1508,10,0.1190000000000001,unknown
+rtl_6,20261012,selected,full_iq,oob_only,2000,203,124,1654,19,-0.03949999999999998,unknown
+rtl_6,20261012,selected,full_iq,strict_ib,2000,107,118,1750,25,0.00550000000000006,unknown
+rtl_6,20261012,selected,oob_only,strict_ib,2000,116,206,1662,16,0.04500000000000004,unknown

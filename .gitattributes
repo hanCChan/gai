@@ -1,0 +1,2 @@
+reports/**/*.csv text eol=lf
+configs/**/*.csv text eol=lf

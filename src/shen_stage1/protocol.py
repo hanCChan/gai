@@ -20,4 +20,6 @@ def development_path(root: Path, relative: str) -> Path:
     path = (base / relative).resolve()
     if not path.is_relative_to(base):
         raise PermissionError("Dataset path escapes the read-only data root")
+    if path != base / relative:
+        raise PermissionError("Development file cannot alias another file through a symlink")
     return path

@@ -234,6 +234,7 @@ def run_epoch(
     model.train(train)
     total = {"loss": 0.0, "acc": 0.0, "macro_f1": 0.0}
     count = 0
+    validation_logits, validation_labels = [], []
     field_to_col = {field: idx for idx, field in enumerate(DOMAIN_FIELDS)}
     supcon = SupConLoss(args.supcon_temperature)
     for batch in tqdm(loader, leave=False, desc="train" if train else "val"):
@@ -273,11 +274,14 @@ def run_epoch(
         total["loss"] += loss.item() * bsz
         total["acc"] += accuracy(logits.detach(), labels) * bsz
         if not train and num_classes > 0:
-            total["macro_f1"] += macro_f1_from_logits(logits.detach(), labels, num_classes) * bsz
+            validation_logits.append(logits.detach().cpu())
+            validation_labels.append(labels.detach().cpu())
         count += bsz
     metrics = {key: value / max(1, count) for key, value in total.items()}
     if train:
         metrics.pop("macro_f1", None)
+    elif validation_logits:
+        metrics["macro_f1"] = macro_f1_from_logits(torch.cat(validation_logits), torch.cat(validation_labels), num_classes)
     return metrics
 
 
@@ -298,6 +302,7 @@ def run_epoch_aligned(
     model.train(train)
     total = {"loss": 0.0, "acc": 0.0, "coral": 0.0, "im": 0.0, "macro_f1": 0.0}
     count = 0
+    validation_logits, validation_labels = [], []
     field_to_col = {field: idx for idx, field in enumerate(DOMAIN_FIELDS)}
     supcon = SupConLoss(args.supcon_temperature)
     target_iter = itertools.cycle(target_loader)
@@ -362,11 +367,14 @@ def run_epoch_aligned(
         total["coral"] += float(coral_val.item()) * bsz
         total["im"] += float(im_val.item()) * bsz
         if not train and num_classes > 0:
-            total["macro_f1"] += macro_f1_from_logits(logits.detach(), labels, num_classes) * bsz
+            validation_logits.append(logits.detach().cpu())
+            validation_labels.append(labels.detach().cpu())
         count += bsz
     metrics = {key: value / max(1, count) for key, value in total.items()}
     if train:
         metrics.pop("macro_f1", None)
+    elif validation_logits:
+        metrics["macro_f1"] = macro_f1_from_logits(torch.cat(validation_logits), torch.cat(validation_labels), num_classes)
     return metrics
 
 

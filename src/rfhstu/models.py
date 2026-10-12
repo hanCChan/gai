@@ -150,6 +150,11 @@ class RFHSTUTokenEncoder(nn.Module):
 
 
 class RFPatchEmbedder(nn.Module):
+    """Historical mixed-axis tokens; use externally strict IB IQ for isolation.
+
+    Whole-packet FFT/OOB slices are frequency tokens, not chirp/time patches.
+    Legacy structure embeddings are retained only for historical comparison.
+    """
     def __init__(
         self,
         window_size: int = 8192,
@@ -418,6 +423,10 @@ class DeviceClassifier(nn.Module):
             if torch.rand(1).item() < self.oob_dropout:
                 views = dict(views)
                 views["oob"] = torch.zeros_like(views["oob"])
+                if self.embedder.oob_fusion_type == "concat_oob":
+                    # The OOB slice was already copied by torch.cat.
+                    features = torch.cat([features[..., :-self.embedder.patch_size],
+                                          views["oob"]], dim=-1)
         if self.use_multiscale:
             if self.multiscale is None:
                 raise RuntimeError("Multi-scale is enabled but fusion module is missing.")

@@ -177,7 +177,6 @@ def macro_f1_from_logits(logits: torch.Tensor, labels: torch.Tensor, num_classes
         fp[c] = ((pred == c) & (labels != c)).sum()
         fn[c] = ((pred != c) & (labels == c)).sum()
     f1 = (2 * tp) / (2 * tp + fp + fn + 1e-8)
-    support = tp + fn
-    if support.sum() <= 0:
-        return 0.0
-    return float((f1 * support).sum() / support.sum().clamp_min(1.0))
+    # Fixed closed-set class universe; absent classes have zero F1.
+    # Call once on the entire evaluation set, never average batch F1s.
+    return float(f1.mean())

@@ -1,0 +1,20 @@
+{
+  "author_source_sha256": "8455d90b82b12a35fc9e5f224a7e6c129c4a5043af07f522cf99fb086dc15ce6",
+  "synthetic_packets": 4,
+  "real_research_packets_read": 0,
+  "CIS_shape": [
+    4,
+    1,
+    52,
+    126
+  ],
+  "max_absolute_difference_from_author": 0.0,
+  "comparison_rtol": 1e-10,
+  "comparison_atol": 1e-10,
+  "input_unchanged": true,
+  "per_packet_unit_RMS": "passed",
+  "positive_amplitude_scaling_invariance": "passed",
+  "zero_energy_rejected": true,
+  "additional_CFO_compensation": false,
+  "model_training_started": false
+}

@@ -12,12 +12,13 @@ def _unit_energy(x: torch.Tensor, eps: float = 1e-8) -> torch.Tensor:
     return x / power.clamp_min(eps).sqrt()
 
 
-def _fft_ri(iq: torch.Tensor, sample_rate: float, lora_bandwidth: float, inband_only: bool) -> torch.Tensor:
+def _fft_ri(iq: torch.Tensor, sample_rate: float, lora_bandwidth: float, inband_only: bool,
+            oob_only: bool = False, guard_hz: float = 0.0) -> torch.Tensor:
     z = torch.complex(iq[:, 0], iq[:, 1])
     spec = torch.fft.fftshift(torch.fft.fft(z, dim=-1, norm="ortho"), dim=-1)
-    if inband_only:
+    if inband_only or oob_only:
         freqs = torch.fft.fftshift(torch.fft.fftfreq(iq.shape[-1], d=1.0 / sample_rate)).to(iq.device)
-        mask = freqs.abs() <= (lora_bandwidth / 2.0)
+        mask = (freqs.abs() > lora_bandwidth / 2.0 + guard_hz) if oob_only else (freqs.abs() <= lora_bandwidth / 2.0)
         spec = spec * mask.unsqueeze(0)
     out = torch.stack([spec.real, spec.imag], dim=1)
     return _unit_energy(out)
@@ -28,6 +29,7 @@ def build_cnn_input(
     input_type: str,
     sample_rate: float = 1_000_000.0,
     lora_bandwidth: float = 125_000.0,
+    guard_hz: float = 0.0,
 ) -> torch.Tensor:
     """Build OSU CNN baseline inputs from normalized IQ windows."""
 
@@ -35,7 +37,9 @@ def build_cnn_input(
         raise ValueError(f"Unknown cnn_input_type={input_type!r}. Expected one of {CNN_INPUT_TYPES}.")
     if input_type == "iq":
         return iq
-    if input_type in {"fft", "fft_oob"}:
+    if input_type == "fft_oob":
+        return _fft_ri(iq, sample_rate, lora_bandwidth, False, oob_only=True, guard_hz=guard_hz)
+    if input_type == "fft":
         return _fft_ri(iq, sample_rate=sample_rate, lora_bandwidth=lora_bandwidth, inband_only=False)
     if input_type == "fft_inband":
         return _fft_ri(iq, sample_rate=sample_rate, lora_bandwidth=lora_bandwidth, inband_only=True)

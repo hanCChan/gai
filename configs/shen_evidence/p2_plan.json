@@ -1,0 +1,44 @@
+{
+  "stage": "P2",
+  "status": "planned_confirmation_required",
+  "automatic_start": false,
+  "input": "strict_ib_from_original_packet",
+  "aux_input": "independently_masked_oob_only",
+  "experiments": [
+    "E05_concat",
+    "E06_scalar_gate"
+  ],
+  "encoders": [
+    "capacity_matched_cnn",
+    "original_rfhstu",
+    "standard_transformer"
+  ],
+  "fusion": [
+    "no_oob",
+    "concat",
+    "scalar_gate",
+    "legacy_cross_attn_strict_main"
+  ],
+  "loss": "cross_entropy",
+  "lr_candidates": [
+    0.001,
+    0.0003
+  ],
+  "weight_decay_candidates": [
+    0,
+    0.0001
+  ],
+  "max_epochs": 30,
+  "selection": "whole_Day2_macro_f1",
+  "seeds_confirmatory": [
+    20261012,
+    20261013,
+    20261014
+  ],
+  "guard_hz_candidates": [
+    0,
+    6250,
+    12500,
+    25000
+  ]
+}
