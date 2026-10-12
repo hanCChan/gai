@@ -1,0 +1,62 @@
+{
+  "stage": "P2-A8/M1",
+  "registered_utc": "2026-10-12T09:23:36.190754+00:00",
+  "exploratory": true,
+  "physical_frequency_status": "assumed nominal passband; paper settings known, local provenance unverified",
+  "notch": {
+    "width_hz": 15625.0,
+    "bins": 128,
+    "negative_reference_hz": -101562.5,
+    "negative_low_hz": -109375.0,
+    "negative_high_hz": -93750.0,
+    "positive_rule": "exact reflected negative FFT-bin set",
+    "random_seed": 20261012,
+    "random_candidate_centres_hz": [
+      -187500.0,
+      -179687.5,
+      -171875.0,
+      -164062.5,
+      -156250.0,
+      -148437.5,
+      -140625.0,
+      -132812.5,
+      -125000.0,
+      -78125.0,
+      78125.0,
+      125000.0,
+      132812.5,
+      140625.0,
+      148437.5,
+      156250.0,
+      164062.5,
+      171875.0,
+      179687.5,
+      187500.0
+    ],
+    "random_centre_hz": -78125.0,
+    "random_low_hz": -85937.5,
+    "random_high_hz": -70312.5
+  },
+  "seeds": [
+    20261012,
+    20261013,
+    20261014
+  ],
+  "lr": 0.0003,
+  "weight_decay": 0.0,
+  "max_epochs": 30,
+  "patience": 7,
+  "common_scaler": "equal pooled Full and Strict Day1 Train maps per RX, mean and second moment",
+  "selection": "historical Day2 best Macro-F1 checkpoint and patience7, exploratory only",
+  "new_trainings": 30,
+  "reused_trainings": 12,
+  "P2_B_or_old_P3_started": false,
+  "M2_requires_mechanism_review": true,
+  "mask_sha256": {
+    "full": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47",
+    "strict_ib": "ecb05d44f441c467d87aa8943db50386a0cae67a3b1f6ee4cee392c4978487bf",
+    "notch_negative": "fc58efdb403bd2ec84c9320f2ee76b70bce9870da1d63b6f725f322b881e2690",
+    "notch_positive": "139fe9729771a3af605156ee3889771351ed044e9b900aa6d16139b35278adc1",
+    "notch_random": "fd3bb912fb8445ca561589aba620a5a6a4c03e54db563110b17f82e4ddac42df"
+  }
+}

@@ -1,0 +1,390 @@
+{
+  "files": [
+    {
+      "path": "G1_Joint/Full_Strict_CIS_direction_and_source_success.csv",
+      "bytes": 1260,
+      "sha256": "2fc50f2fd514de669871bc29c19c6fb2f4b7597665f1dd1f2925ecd7b3d5a2e4"
+    },
+    {
+      "path": "G1_Joint/OSU_actual_per_TX_windows.csv",
+      "bytes": 9814,
+      "sha256": "2ff4e3ed4740fd8baad2bd2afa18ea71679299194d2cbfecb3c0aab2feb5e2c2"
+    },
+    {
+      "path": "G1_Joint/REPORT.md",
+      "bytes": 2187,
+      "sha256": "4de84a2aad3d35ad4bb3f1476a292816514ebcac263c4692cecafebd1e404ee1"
+    },
+    {
+      "path": "G1_Joint/all_CIS_seed_pairs.csv",
+      "bytes": 1844,
+      "sha256": "e66eb8ba20c266d591a9b5ae2d7d6685b2f754fd332d38a451eb4a5fdb359dae"
+    },
+    {
+      "path": "G1_Joint/all_model_source_learning.csv",
+      "bytes": 11026,
+      "sha256": "f2f2899dd648a16786301c7f076145f241857376c135b258d8e57adc2e9b1383"
+    },
+    {
+      "path": "G1_Joint/decision.json",
+      "bytes": 556,
+      "sha256": "8225c798eddc26bbcbd57aab70ace8d1e7a4033ead8997e0793ae79f3312ab66"
+    },
+    {
+      "path": "G1_Joint/worst_TX_regressions.csv",
+      "bytes": 4674,
+      "sha256": "3b99a73677ca9c29976c4d688524dbf2c213b08bfa9d57792dbe88066857167e"
+    },
+    {
+      "path": "G1_OSU/REPORT.md",
+      "bytes": 1846,
+      "sha256": "458f0f897bda849f2bb67dd37c29daed4ded371a18854a06283f03ad4c74c79a"
+    },
+    {
+      "path": "G1_OSU/all_TX_metrics_and_margins.csv",
+      "bytes": 99073,
+      "sha256": "a506891504ca9408517113e510c2e6d3ad01ecf2d926687a36034819bac9e24d"
+    },
+    {
+      "path": "G1_OSU/all_domain_metrics.csv",
+      "bytes": 6041,
+      "sha256": "c72cd3ae33d0c00121d6abeafed4f1eebd1885b2b07465dd9df015f476194b6a"
+    },
+    {
+      "path": "G1_OSU/cost_and_budget.csv",
+      "bytes": 2952,
+      "sha256": "99555859fd824d4f1a9412b210b0b886a00412fe8d3c5f9150ab6f485369a3ea"
+    },
+    {
+      "path": "G1_OSU/cross_RX_baselines.png",
+      "bytes": 51855,
+      "sha256": "16338b565c509a1f16445d2be74af19299cc6fe5aad3b80f08cbb5eee905ccec"
+    },
+    {
+      "path": "G1_OSU/paired_corrections_and_regressions.csv",
+      "bytes": 42104,
+      "sha256": "2f632330b7694e94c5a196b823105c464e7f121f5a9c914b2d12ed05101f419e"
+    },
+    {
+      "path": "G1_OSU/three_seed_domain_summary.csv",
+      "bytes": 1566,
+      "sha256": "5f76ff41ef88d465fd2b4770d4263703ad7be411525dd1bc8ebb54778dfecb22"
+    },
+    {
+      "path": "G1_OSU/verification.json",
+      "bytes": 262,
+      "sha256": "266a5063d79256843f7300cd10f30910863ec0a7d76b27d80bb1eac77afb6e21"
+    },
+    {
+      "path": "G1_OSU_review/CIS_source_success_conditioned_pairs.csv",
+      "bytes": 612,
+      "sha256": "d9ab3b215d1c44ed7af95bd17a5f6a4b243afc4c3c9350610094c790b37647a8"
+    },
+    {
+      "path": "G1_OSU_review/REPORT.md",
+      "bytes": 1117,
+      "sha256": "728ef033627f93ddfa55e6f5b28d032658b483db3b09c239f8f93de4523c3c10"
+    },
+    {
+      "path": "G1_OSU_review/model_source_learning_and_collapse.csv",
+      "bytes": 7569,
+      "sha256": "76828c84f3bd30fb938d03203e37da6ba4856e612671db858d92fc3f83469f9a"
+    },
+    {
+      "path": "G1_OSU_review/new_error_destinations.csv",
+      "bytes": 31339,
+      "sha256": "4fa928d244a38dab410df3ab78949b6c1edc3658f34475a91c56522b7c15d68d"
+    },
+    {
+      "path": "G1_OSU_review/paired_per_TX_recall_margin_errors.csv",
+      "bytes": 40979,
+      "sha256": "faed0285faae1b0e4f400f539c16156eda6d77b70eceb2891128f397dc7ae321"
+    },
+    {
+      "path": "G1_OSU_review/per_seed_target_metrics.csv",
+      "bytes": 2272,
+      "sha256": "af3bc72617626ce83638c65385cc261b1beffadf91b250bf5469a4809dfeb98a"
+    },
+    {
+      "path": "G1_OSU_review/status.json",
+      "bytes": 256,
+      "sha256": "f144676e4a99011151d19226ee23fe8552e6d66b8abbdcb6ac5e737f5ac0120a"
+    },
+    {
+      "path": "G1_OSU_review/worst_CIS_TX_regressions.csv",
+      "bytes": 3143,
+      "sha256": "ae9b90d65fb5a81b0c5bf541cb00b5bff002e2fba7e3eb301239ca7e406e3a06"
+    },
+    {
+      "path": "G1_Shen_review/CIS_source_success_conditioned_pairs.csv",
+      "bytes": 1265,
+      "sha256": "f6f884b208e6cea232be2b7c19b7e38f5fc3f5a0be8e496d646a409effc27b15"
+    },
+    {
+      "path": "G1_Shen_review/REPORT.md",
+      "bytes": 1598,
+      "sha256": "2d47fd980fc89f1be6ddf3f3e28557e0570537f396d3d7a29846e62011cb0be2"
+    },
+    {
+      "path": "G1_Shen_review/model_source_learning_and_collapse.csv",
+      "bytes": 3830,
+      "sha256": "a7d70c124d756578d2e2244d9376ff58f2df3dd12df407681f3870a5a70c69ac"
+    },
+    {
+      "path": "G1_Shen_review/new_error_destinations.csv",
+      "bytes": 11040,
+      "sha256": "1968a0ab997077606ae3aafad8a5d7f991f40655e8429d2c8c1f795ba2f7c5d2"
+    },
+    {
+      "path": "G1_Shen_review/paired_per_TX_recall_margin_errors.csv",
+      "bytes": 32660,
+      "sha256": "3d948d19f3a780eaf165813ae14e2dd716d0c799b3331624d1ffdf26dedca0eb"
+    },
+    {
+      "path": "G1_Shen_review/per_seed_target_metrics.csv",
+      "bytes": 4474,
+      "sha256": "a2a7e8d625fc9d91617f5010fffcdb7b747db9b7b71c42e9f3430c19b006ae11"
+    },
+    {
+      "path": "G1_Shen_review/status.json",
+      "bytes": 258,
+      "sha256": "e7d3b45f178e26a5fc1e64a502a9166b44ab89f2d1c0335504d4085d660fc247"
+    },
+    {
+      "path": "G1_Shen_review/worst_CIS_TX_regressions.csv",
+      "bytes": 3054,
+      "sha256": "7cc17bcd54862d64ac55be42fde699810fba15d45f89a232d3b335febc85a141"
+    },
+    {
+      "path": "G1_registration_unchanged.json",
+      "bytes": 8161,
+      "sha256": "b0569754382422ac6cef1aea671322d1db3c06b3a95ea057def3fa10b34ca2ac"
+    },
+    {
+      "path": "G2_0/Full_Strict_CIS_whole_moment_baselines.csv",
+      "bytes": 987,
+      "sha256": "5759291c1794001611d75fdc89f34a91a7f77c75628450f45e104bcb309962b6"
+    },
+    {
+      "path": "G2_0/REPORT.md",
+      "bytes": 2495,
+      "sha256": "dabdf598f833a71ada34d6b6e9dd289f4268e35addda3c1ff61c554ebde64874"
+    },
+    {
+      "path": "G2_0/decision.json",
+      "bytes": 818,
+      "sha256": "046b5426f4b15f7ca020ae6a5793815f1adc269dd615e24dcae785e82a168b4f"
+    },
+    {
+      "path": "G2_0/heldout_candidate_metrics.csv",
+      "bytes": 9870,
+      "sha256": "f764d5e2472463701e5799dc8407036255a66a14500026ce7fad5115fe3d0072"
+    },
+    {
+      "path": "G2_0/heldout_per_TX_recall.csv",
+      "bytes": 28278,
+      "sha256": "01d0e8a80496b6eeaf64804c2d1d2b27d5f6b4bf1f7533d87cc76983c04809ff"
+    },
+    {
+      "path": "G2_0/independent_verification.json",
+      "bytes": 23259,
+      "sha256": "baf7851f68a74947c4954d3a8644dbd1e8587279f822cdd203f71d2f1ab76c94"
+    },
+    {
+      "path": "G2_0/registration.json",
+      "bytes": 2016,
+      "sha256": "63ffe600a75fb65aca0c34a7bc7cefb0cf706ca280cf99c1047bb9b9e2aee1d0"
+    },
+    {
+      "path": "G2_0/source_only_candidate_scores.csv",
+      "bytes": 17018,
+      "sha256": "8bdf3d67064086aeb5c27d91d6869a98d0db76e5ad3cfdda96c9ebefd93b2116"
+    },
+    {
+      "path": "G2_0/source_only_predictive_validity.png",
+      "bytes": 81859,
+      "sha256": "caa55c829b16dfd39178cd71ea5bef7176f8a0c85605955ede4d659d355f7e9e"
+    },
+    {
+      "path": "G2_0/source_only_selection_vs_actual_performance.csv",
+      "bytes": 1833,
+      "sha256": "7252a99cb7e8ae086ec58abc6458e9e40efbf64e72d6e0a1535582522ed71c34"
+    },
+    {
+      "path": "G2_0/source_predictor_rank_correlations.csv",
+      "bytes": 1219,
+      "sha256": "51d6217e35a339e4175b3afead4a53153279124c24a2840ae64d5680d4388fc2"
+    },
+    {
+      "path": "G2_0/status.json",
+      "bytes": 952,
+      "sha256": "07525a6d98c59654c7dfc64c7a3bb1caf7aa283cbde16ad77faafc93f94fe143"
+    },
+    {
+      "path": "LATEST_PROTOCOL.md",
+      "bytes": 2632,
+      "sha256": "9aab7e1a544febbe00bdbc40081e72ee4e7427f125006c9e6969d2fb46f21408"
+    },
+    {
+      "path": "OSU_download_independent_verification.json",
+      "bytes": 12788,
+      "sha256": "90cbaaa35f5bf839de965590127434359bbd0b1dded67e61fcb6a4e41e15f611"
+    },
+    {
+      "path": "OSU_download_status.json",
+      "bytes": 97,
+      "sha256": "ec6ade8762d9851210bff81e318dd83111e7533edd7c6516b698ee17eafe75a3"
+    },
+    {
+      "path": "OSU_source_only_majority_baseline.csv",
+      "bytes": 211,
+      "sha256": "4748f13b9195b1757be8fc5ec830f8ef684d94f3b854b4382d6c441e49811ee6"
+    },
+    {
+      "path": "OSU_training_curves/G1_osu_RX1_full_cis_seed20261012.csv",
+      "bytes": 1176,
+      "sha256": "c9d117f80663c46dae9c2acc78d1ca62d80c866a1b0f9c1a7ac5d7b651a2f9b4"
+    },
+    {
+      "path": "OSU_training_curves/G1_osu_RX1_full_cis_seed20261013.csv",
+      "bytes": 1194,
+      "sha256": "6d79525dceee9dc7dda79ded751919720ddfcfd17507e465f0292fc3578b0784"
+    },
+    {
+      "path": "OSU_training_curves/G1_osu_RX1_full_cis_seed20261014.csv",
+      "bytes": 1199,
+      "sha256": "159fba8346cc67c74e4a61fa19eb7d86fa3548309d07015878111a346d59d9f7"
+    },
+    {
+      "path": "OSU_training_curves/G1_osu_RX1_full_iq_seed20261012.csv",
+      "bytes": 1233,
+      "sha256": "75b5bc952d3cb5690da39107e636ab5646fb3338bfd2b4f7c8219fed593d04d2"
+    },
+    {
+      "path": "OSU_training_curves/G1_osu_RX1_full_iq_seed20261013.csv",
+      "bytes": 1237,
+      "sha256": "225bff6b1acb263adead46fc236978fb47c45c2b45e3989cf6ca551f69feb6d2"
+    },
+    {
+      "path": "OSU_training_curves/G1_osu_RX1_full_iq_seed20261014.csv",
+      "bytes": 1238,
+      "sha256": "b07e74a3463d7fc069ce565804b27ec760f8d0a78aaa70274cfea314ba779221"
+    },
+    {
+      "path": "OSU_training_curves/G1_osu_RX1_strict_cis_seed20261012.csv",
+      "bytes": 1210,
+      "sha256": "cf0fb5f0b71c4afc6caf3ffa081e6043e8147033230bd8b149601f0bd386afc1"
+    },
+    {
+      "path": "OSU_training_curves/G1_osu_RX1_strict_cis_seed20261013.csv",
+      "bytes": 1189,
+      "sha256": "6719616bfb21069e13dfeebd8a4beffc8e33ac176705b9da68db61ffea1bff78"
+    },
+    {
+      "path": "OSU_training_curves/G1_osu_RX1_strict_cis_seed20261014.csv",
+      "bytes": 1196,
+      "sha256": "ee49f69f8ea73c42e651d8051c20fe99d592673a5c752ca2ea045f2d410da832"
+    },
+    {
+      "path": "OSU_training_curves/G1_osu_RX1_strict_iq_seed20261012.csv",
+      "bytes": 1233,
+      "sha256": "c551dd79544e487226b1d873ee1059d9da249e43eff39da6d3885eaa3443f112"
+    },
+    {
+      "path": "OSU_training_curves/G1_osu_RX1_strict_iq_seed20261013.csv",
+      "bytes": 1235,
+      "sha256": "d74cb40a2447c69c1ea901f5d49654eecc417086f9406e6fb63e9761b424718c"
+    },
+    {
+      "path": "OSU_training_curves/G1_osu_RX1_strict_iq_seed20261014.csv",
+      "bytes": 1237,
+      "sha256": "2e870ec8fde2a092257466c92171353a25171408fa9065468086516d25c0bdc5"
+    },
+    {
+      "path": "OSU_training_curves/G1_osu_RX2_full_cis_seed20261012.csv",
+      "bytes": 1234,
+      "sha256": "3544e156e2dac2939b67964843df4be0c7f1c0667b60516d4457b85569a24bc3"
+    },
+    {
+      "path": "OSU_training_curves/G1_osu_RX2_full_cis_seed20261013.csv",
+      "bytes": 1192,
+      "sha256": "9311a35d761c97aa0328bab80346d8a360fff182bdfedadb957c7c33314e5c6b"
+    },
+    {
+      "path": "OSU_training_curves/G1_osu_RX2_full_cis_seed20261014.csv",
+      "bytes": 1183,
+      "sha256": "b9ed0aaa0fd2aeb94e44ba04a98a39378a6fb46ee9c4eaca5516ccc8ef6bf20d"
+    },
+    {
+      "path": "OSU_training_curves/G1_osu_RX2_full_iq_seed20261012.csv",
+      "bytes": 1238,
+      "sha256": "eff547635030d99b1271ced4761b3766b228b69601b577253295db1d5dd4387a"
+    },
+    {
+      "path": "OSU_training_curves/G1_osu_RX2_full_iq_seed20261013.csv",
+      "bytes": 1235,
+      "sha256": "1e9b8e6140634caa0e9e554f67c7c3b99bb4fc753e5eaab07dcc1f4b2a328c5a"
+    },
+    {
+      "path": "OSU_training_curves/G1_osu_RX2_full_iq_seed20261014.csv",
+      "bytes": 1236,
+      "sha256": "73f305275b566536ef25ea6b61aa21237b7b4f6a482912fd0998c3358ecc554b"
+    },
+    {
+      "path": "OSU_training_curves/G1_osu_RX2_strict_cis_seed20261012.csv",
+      "bytes": 1241,
+      "sha256": "30f33502a42a7dee1cd6f1969f6c006842bbbd2c103c2a26d4d94bb9a317ff26"
+    },
+    {
+      "path": "OSU_training_curves/G1_osu_RX2_strict_cis_seed20261013.csv",
+      "bytes": 1196,
+      "sha256": "4696911ab7681b1e7160533dc6c5f631db132e52c6f2bd3650197cd0e1a93f6c"
+    },
+    {
+      "path": "OSU_training_curves/G1_osu_RX2_strict_cis_seed20261014.csv",
+      "bytes": 1210,
+      "sha256": "aeeda2d25f7b0bcdf8017b53e845b99b4fa8b434cb04edc3c1e70d35f02c2bb9"
+    },
+    {
+      "path": "OSU_training_curves/G1_osu_RX2_strict_iq_seed20261012.csv",
+      "bytes": 1232,
+      "sha256": "68567ced6ddb260975c18c788b96ec73970041aa3046354eae0b4a20b1f8ec4d"
+    },
+    {
+      "path": "OSU_training_curves/G1_osu_RX2_strict_iq_seed20261013.csv",
+      "bytes": 1229,
+      "sha256": "ca7dd63a5407145eddc9647e801591415f21af8f41efe75b7ddb426016cdcbc4"
+    },
+    {
+      "path": "OSU_training_curves/G1_osu_RX2_strict_iq_seed20261014.csv",
+      "bytes": 1237,
+      "sha256": "4355f9d585ad82f834a8225c713575f1e17c800b2c975f48c55ea2c5277aa609"
+    },
+    {
+      "path": "OSU_windows/RX1_source_manifest.json",
+      "bytes": 46028,
+      "sha256": "3e63a7d906b24b5d7d624ac69debc26dfc26f9d673103cbc26dba6652a9576d6"
+    },
+    {
+      "path": "OSU_windows/RX2_source_manifest.json",
+      "bytes": 46026,
+      "sha256": "7d29889b86502661d8ad2c94aa9c59487591e4a5ae60559a4adf41339e1469b7"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 4288,
+      "sha256": "d83f993df0b4d55e42f191fd99607317ffcbac3e50526805386d403968b6cad8"
+    },
+    {
+      "path": "per_TX_CIS_benefit_and_harm.csv",
+      "bytes": 1221,
+      "sha256": "41c28ab18bf7fdd50cdbc1e6ed93ec78ee7487eae38e60d5edc85c3aa562e4d7"
+    }
+  ],
+  "OSU_formal_runs": 24,
+  "Shen_formal_runs": 20,
+  "G2_statistical_deep_training_runs": 0,
+  "G2_1_started": false,
+  "G3_started": false,
+  "raw_original_modified": false
+}

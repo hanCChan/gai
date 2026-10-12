@@ -1,0 +1,13 @@
+{
+  "numpy": "1.26.4",
+  "scipy": "1.13.1",
+  "h5py": "3.11.0",
+  "matplotlib": "3.9.2",
+  "torch": "2.5.1+cu121",
+  "python": "3.11.17",
+  "platform": "Linux-5.4.0-164-generic-x86_64-with-glibc2.31",
+  "git_head": "495120b7c0eca9eca25a12ee6b3b208191490d56",
+  "experiment_changes": "new uncommitted virp files; sealed by registration",
+  "timezone": "Asia/Shanghai",
+  "training_runs": 0
+}

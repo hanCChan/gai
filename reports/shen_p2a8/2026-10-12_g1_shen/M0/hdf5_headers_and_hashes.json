@@ -1,0 +1,248 @@
+[
+  {
+    "receiver": "rtl_6",
+    "role": "train",
+    "path": "Train/rtl_6_day1_wireless_train.h5",
+    "sha256": "adcc8c1f0a5dfeea433f9d1e943f4826840d5d3a5d09751fbf34ef16c937b9e1",
+    "attributes": {},
+    "datasets": {
+      "CFO": {
+        "shape": [
+          1,
+          8000
+        ],
+        "dtype": "float64",
+        "attributes": {}
+      },
+      "SNR": {
+        "shape": [
+          1,
+          8000
+        ],
+        "dtype": "float64",
+        "attributes": {}
+      },
+      "data": {
+        "shape": [
+          8000,
+          16384
+        ],
+        "dtype": "float64",
+        "attributes": {}
+      },
+      "label": {
+        "shape": [
+          1,
+          8000
+        ],
+        "dtype": "float64",
+        "attributes": {}
+      }
+    }
+  },
+  {
+    "receiver": "rtl_6",
+    "role": "same_day_diagnostic",
+    "path": "Test/rtl_6_day1_wireless_test.h5",
+    "sha256": "c079b0752f4b98d23aeaab2b88f7c3ab4de92cf2a5a82d20b0df035d0164f870",
+    "attributes": {},
+    "datasets": {
+      "CFO": {
+        "shape": [
+          1,
+          2000
+        ],
+        "dtype": "float64",
+        "attributes": {}
+      },
+      "SNR": {
+        "shape": [
+          1,
+          2000
+        ],
+        "dtype": "float64",
+        "attributes": {}
+      },
+      "data": {
+        "shape": [
+          2000,
+          16384
+        ],
+        "dtype": "float64",
+        "attributes": {}
+      },
+      "label": {
+        "shape": [
+          1,
+          2000
+        ],
+        "dtype": "float64",
+        "attributes": {}
+      }
+    }
+  },
+  {
+    "receiver": "rtl_6",
+    "role": "validation",
+    "path": "Test/rtl_6_day2_wireless_test.h5",
+    "sha256": "7f62af1c69832172b691d6ea76ca6eaba7af31e3ab016ce1a9259cfc1db22a81",
+    "attributes": {},
+    "datasets": {
+      "CFO": {
+        "shape": [
+          1,
+          2000
+        ],
+        "dtype": "float64",
+        "attributes": {}
+      },
+      "SNR": {
+        "shape": [
+          1,
+          2000
+        ],
+        "dtype": "float64",
+        "attributes": {}
+      },
+      "data": {
+        "shape": [
+          2000,
+          16384
+        ],
+        "dtype": "float64",
+        "attributes": {}
+      },
+      "label": {
+        "shape": [
+          1,
+          2000
+        ],
+        "dtype": "float64",
+        "attributes": {}
+      }
+    }
+  },
+  {
+    "receiver": "n210_1",
+    "role": "train",
+    "path": "Train/n210_1_day1_wireless_train.h5",
+    "sha256": "3581599cd5727e780240f819e0b66dc738098ee54a67ccf341caa1ad54a4fd46",
+    "attributes": {},
+    "datasets": {
+      "CFO": {
+        "shape": [
+          1,
+          8000
+        ],
+        "dtype": "float64",
+        "attributes": {}
+      },
+      "SNR": {
+        "shape": [
+          1,
+          8000
+        ],
+        "dtype": "float64",
+        "attributes": {}
+      },
+      "data": {
+        "shape": [
+          8000,
+          16384
+        ],
+        "dtype": "float64",
+        "attributes": {}
+      },
+      "label": {
+        "shape": [
+          1,
+          8000
+        ],
+        "dtype": "float64",
+        "attributes": {}
+      }
+    }
+  },
+  {
+    "receiver": "n210_1",
+    "role": "same_day_diagnostic",
+    "path": "Test/n210_1_day1_wireless_test.h5",
+    "sha256": "e9c40d318b257038cd2f056b9a5734bbc4c3fa5b92717f4559adcc15ea98b2d3",
+    "attributes": {},
+    "datasets": {
+      "CFO": {
+        "shape": [
+          1,
+          2000
+        ],
+        "dtype": "float64",
+        "attributes": {}
+      },
+      "SNR": {
+        "shape": [
+          1,
+          2000
+        ],
+        "dtype": "float64",
+        "attributes": {}
+      },
+      "data": {
+        "shape": [
+          2000,
+          16384
+        ],
+        "dtype": "float64",
+        "attributes": {}
+      },
+      "label": {
+        "shape": [
+          1,
+          2000
+        ],
+        "dtype": "float64",
+        "attributes": {}
+      }
+    }
+  },
+  {
+    "receiver": "n210_1",
+    "role": "validation",
+    "path": "Test/n210_1_day2_wireless_test.h5",
+    "sha256": "1122d54d1856ae2c847e0a85556fa78e264d1845b61feca7392702484df07229",
+    "attributes": {},
+    "datasets": {
+      "CFO": {
+        "shape": [
+          1,
+          2000
+        ],
+        "dtype": "float64",
+        "attributes": {}
+      },
+      "SNR": {
+        "shape": [
+          1,
+          2000
+        ],
+        "dtype": "float64",
+        "attributes": {}
+      },
+      "data": {
+        "shape": [
+          2000,
+          16384
+        ],
+        "dtype": "float64",
+        "attributes": {}
+      },
+      "label": {
+        "shape": [
+          1,
+          2000
+        ],
+        "dtype": "float64",
+        "attributes": {}
+      }
+    }
+  }
+]

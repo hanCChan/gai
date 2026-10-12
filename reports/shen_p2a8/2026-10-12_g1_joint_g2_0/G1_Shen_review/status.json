@@ -1,0 +1,12 @@
+{
+  "status": "completed",
+  "dataset": "shen",
+  "models_checked": 12,
+  "prediction_sets_checked": 48,
+  "training_changed": false,
+  "failed_seeds_removed": false,
+  "classes": 10,
+  "chance_accuracy": 0.1,
+  "CIS_positive_pairs": 11,
+  "CIS_pairs": 12
+}

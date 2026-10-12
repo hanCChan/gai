@@ -1,2 +1,9 @@
 reports/**/*.csv text eol=lf
 configs/**/*.csv text eol=lf
+
+# Preserve pasted preregistration rules byte-for-byte for sealed SHA256 checks.
+docs/eisr/USER_*.txt -text -whitespace
+docs/virp/USER_*.txt -text -whitespace
+
+# Generated SVG path whitespace is preserved as an original research artifact.
+reports/**/figures/*.svg -whitespace

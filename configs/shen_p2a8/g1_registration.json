@@ -1,0 +1,276 @@
+{
+  "train_receivers": [
+    "b200_mini_1",
+    "b210_1",
+    "pluto_1",
+    "rtl_1",
+    "rtl_2",
+    "rtl_3",
+    "rtl_5",
+    "rtl_6",
+    "rtl_7",
+    "rtl_9"
+  ],
+  "development_receivers": [
+    "b200_1",
+    "n210_1",
+    "rtl_4",
+    "rtl_8"
+  ],
+  "final_locked_receivers": [
+    "b200_2",
+    "b200_mini_2",
+    "b210_2",
+    "n210_2",
+    "n210_3",
+    "pluto_2"
+  ],
+  "stage": "G1_first_baselines",
+  "registered_utc": "2026-10-12T09:32:34.592130+00:00",
+  "source_samples_per_TX_RX": 200,
+  "sample_selection_seed": 20261012,
+  "methods": [
+    "full_iq",
+    "strict_iq",
+    "full_cis",
+    "strict_cis"
+  ],
+  "confirmation_seeds": [
+    20261012,
+    20261013,
+    20261014
+  ],
+  "cv_seed": 20261012,
+  "lr": 0.0003,
+  "weight_decay": 0.0,
+  "batch_size": 64,
+  "max_cv_epochs": 20,
+  "source_receiver_folds": [
+    [
+      "b200_mini_1",
+      "pluto_1",
+      "rtl_2",
+      "rtl_5",
+      "rtl_7"
+    ],
+    [
+      "b210_1",
+      "rtl_1",
+      "rtl_3",
+      "rtl_6",
+      "rtl_9"
+    ]
+  ],
+  "final_epoch_rule": "ceil(mean(best epoch across two source receiver folds)); same epoch for all final seeds",
+  "osu_receivers": [
+    "RX1",
+    "RX2"
+  ],
+  "osu_epochs": 20,
+  "osu_periodic_coherence_min": 0.8,
+  "osu_minimum_windows_per_class": 20,
+  "dates_sessions_status": "root multi-RX files unknown, drift dates are named day indices; OSU SigMF dates known",
+  "local_RF_status": "Shen Fs/BW/SF paper verified but local provenance unverified; OSU Fs verified/BW and SF assumed",
+  "research_unseen_external_holdout": false,
+  "locked_access_enabled": false,
+  "G2_G3_automatic_start": false,
+  "P2_B_P3_started": false,
+  "files": [
+    {
+      "receiver": "b200_mini_1",
+      "relative": "b200_mini_1_train.h5",
+      "role": "train",
+      "key": "shen_b200_mini_1_train",
+      "expected_sha256": "fe09c8be15e5e2c780b643e4e85610d9c4b8eb6e19715baad65a7fd838c0fc67"
+    },
+    {
+      "receiver": "b210_1",
+      "relative": "b210_1_train.h5",
+      "role": "train",
+      "key": "shen_b210_1_train",
+      "expected_sha256": "df6d2740ba495b52dcecefbc0bf4c532b66ad53333a37ee8c5a6ae715425d0ed"
+    },
+    {
+      "receiver": "pluto_1",
+      "relative": "pluto_1_train.h5",
+      "role": "train",
+      "key": "shen_pluto_1_train",
+      "expected_sha256": "95ed8b2b5c9328116468af9ba41e63c00efeccff446a5ec163ae4fba5b88fe45"
+    },
+    {
+      "receiver": "rtl_1",
+      "relative": "rtl_1_train.h5",
+      "role": "train",
+      "key": "shen_rtl_1_train",
+      "expected_sha256": "c43ae929d0ff6758365755820e65b6a0dd7978479b730177442ea5348913a23e"
+    },
+    {
+      "receiver": "rtl_2",
+      "relative": "rtl_2_train.h5",
+      "role": "train",
+      "key": "shen_rtl_2_train",
+      "expected_sha256": "ad80aacc88dd142773e9d58e6d0e57667f5a28873e3e68aeea34948a8b7d64b2"
+    },
+    {
+      "receiver": "rtl_3",
+      "relative": "rtl_3_train.h5",
+      "role": "train",
+      "key": "shen_rtl_3_train",
+      "expected_sha256": "326c5f366baae2924ff7fc114dbeb091051c898933eb93175c9742a8c1440c53"
+    },
+    {
+      "receiver": "rtl_5",
+      "relative": "rtl_5_train.h5",
+      "role": "train",
+      "key": "shen_rtl_5_train",
+      "expected_sha256": "bb4db309b1209df4ab46406565cd610c8344165db08686b97b4c2f9e3f8f9175"
+    },
+    {
+      "receiver": "rtl_6",
+      "relative": "rtl_6_train.h5",
+      "role": "train",
+      "key": "shen_rtl_6_train",
+      "expected_sha256": "87dbec5959cf4f553ef4fbe3b803c6dfd72b5aff23b2a0ba38e33125561f67d6"
+    },
+    {
+      "receiver": "rtl_7",
+      "relative": "rtl_7_train.h5",
+      "role": "train",
+      "key": "shen_rtl_7_train",
+      "expected_sha256": "4d3d2c7759431d56174ae987aabe76fe8eaf7a7fbe20143c2b9388b02ce63e33"
+    },
+    {
+      "receiver": "rtl_9",
+      "relative": "rtl_9_train.h5",
+      "role": "train",
+      "key": "shen_rtl_9_train",
+      "expected_sha256": "90beeda2fed9203016b038fdd452f3c1bc12bbf71409e124f6a71d088b127351"
+    },
+    {
+      "receiver": "b200_mini_1",
+      "relative": "b200_mini_1_test.h5",
+      "role": "evaluation",
+      "key": "shen_b200_mini_1_test",
+      "expected_sha256": "82bb0d3e404153b37316e3c8264f0150ae54009ee589f84fc17703760e6f16a0"
+    },
+    {
+      "receiver": "b210_1",
+      "relative": "b210_1_test.h5",
+      "role": "evaluation",
+      "key": "shen_b210_1_test",
+      "expected_sha256": "87692120052f4575640ffe1e0fc6f06a2da208616d9410d4aff91af6b22ae843"
+    },
+    {
+      "receiver": "pluto_1",
+      "relative": "pluto_1_test.h5",
+      "role": "evaluation",
+      "key": "shen_pluto_1_test",
+      "expected_sha256": "d916070688d0c65aa977cb4746632488845360c356a414229c9adacf0237cb16"
+    },
+    {
+      "receiver": "rtl_1",
+      "relative": "rtl_1_test.h5",
+      "role": "evaluation",
+      "key": "shen_rtl_1_test",
+      "expected_sha256": "592b51f6c639c97972d68d9ca1c886bf42b71d164f3510d9a330f8bb54262ad8"
+    },
+    {
+      "receiver": "rtl_2",
+      "relative": "rtl_2_test.h5",
+      "role": "evaluation",
+      "key": "shen_rtl_2_test",
+      "expected_sha256": "b2df9212d5417a5fc5334b84e5501b951f756c19e1fb3926c3f1877b2168504d"
+    },
+    {
+      "receiver": "rtl_3",
+      "relative": "rtl_3_test.h5",
+      "role": "evaluation",
+      "key": "shen_rtl_3_test",
+      "expected_sha256": "2ade77125c996eaf7dd2b3f1f25ecd773eaa0d395dcf38284697214896789ad1"
+    },
+    {
+      "receiver": "rtl_5",
+      "relative": "rtl_5_test.h5",
+      "role": "evaluation",
+      "key": "shen_rtl_5_test",
+      "expected_sha256": "6993c508243f94fd4779803238e36d4e283777aa1b6850c4e2f5857a4cae0a91"
+    },
+    {
+      "receiver": "rtl_6",
+      "relative": "rtl_6_test.h5",
+      "role": "evaluation",
+      "key": "shen_rtl_6_test",
+      "expected_sha256": "bedf18c5dbb7c3470673588e04d9dfcb4b827a66de19f4c45a73f56d21e7ff6c"
+    },
+    {
+      "receiver": "rtl_7",
+      "relative": "rtl_7_test.h5",
+      "role": "evaluation",
+      "key": "shen_rtl_7_test",
+      "expected_sha256": "4a99cc004e872ac403b6753fd2c5f418caa8cdda24da71a011563da65bc9be9f"
+    },
+    {
+      "receiver": "rtl_9",
+      "relative": "rtl_9_test.h5",
+      "role": "evaluation",
+      "key": "shen_rtl_9_test",
+      "expected_sha256": "25ad8dacd570c735ad6354e96d93db3c32587dbc0cc5d0f4070f279680bbe6df"
+    },
+    {
+      "receiver": "b200_1",
+      "relative": "b200_1_test.h5",
+      "role": "evaluation",
+      "key": "shen_b200_1_test",
+      "expected_sha256": "38d9ccbcf46a45019f48daf1ee57b21415a34a8635b5b474622b90ad9b5048fa"
+    },
+    {
+      "receiver": "n210_1",
+      "relative": "n210_1_test.h5",
+      "role": "evaluation",
+      "key": "shen_n210_1_test",
+      "expected_sha256": "dd308f9accc5bc2113ecbec2cf33483137e5646791162778acda3fabed625459"
+    },
+    {
+      "receiver": "rtl_4",
+      "relative": "rtl_4_test.h5",
+      "role": "evaluation",
+      "key": "shen_rtl_4_test",
+      "expected_sha256": "cbb57177938c1836bab950ef28d2196f50fa558dc3d0ada4327463f1fe88b4e9"
+    },
+    {
+      "receiver": "rtl_8",
+      "relative": "rtl_8_test.h5",
+      "role": "evaluation",
+      "key": "shen_rtl_8_test",
+      "expected_sha256": "a12cfdba5a6ec88a66863d82e2e015d8789874c86314a64d6734b6dc5b9978d7"
+    },
+    {
+      "receiver": "rtl_6",
+      "relative": "Test/rtl_6_day1_wireless_test.h5",
+      "role": "drift_evaluation",
+      "key": "shen_rtl_6_day1",
+      "expected_sha256": "c079b0752f4b98d23aeaab2b88f7c3ab4de92cf2a5a82d20b0df035d0164f870"
+    },
+    {
+      "receiver": "rtl_6",
+      "relative": "Test/rtl_6_day2_wireless_test.h5",
+      "role": "drift_evaluation",
+      "key": "shen_rtl_6_day2",
+      "expected_sha256": "7f62af1c69832172b691d6ea76ca6eaba7af31e3ab016ce1a9259cfc1db22a81"
+    },
+    {
+      "receiver": "n210_1",
+      "relative": "Test/n210_1_day1_wireless_test.h5",
+      "role": "drift_evaluation",
+      "key": "shen_n210_1_day1",
+      "expected_sha256": "e9c40d318b257038cd2f056b9a5734bbc4c3fa5b92717f4559adcc15ea98b2d3"
+    },
+    {
+      "receiver": "n210_1",
+      "relative": "Test/n210_1_day2_wireless_test.h5",
+      "role": "drift_evaluation",
+      "key": "shen_n210_1_day2",
+      "expected_sha256": "1122d54d1856ae2c847e0a85556fa78e264d1845b61feca7392702484df07229"
+    }
+  ]
+}

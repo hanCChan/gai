@@ -1,0 +1,14 @@
+{
+  "numpy": "1.26.4",
+  "scipy": "1.13.1",
+  "h5py": "3.11.0",
+  "torch": "2.5.1+cu121",
+  "scikit-learn": "1.5.2",
+  "matplotlib": "3.9.2",
+  "python": "3.11.17",
+  "platform": "Linux-5.4.0-164-generic-x86_64-with-glibc2.31",
+  "git_head": "495120b7c0eca9eca25a12ee6b3b208191490d56",
+  "device": "CPU",
+  "CUDA_VISIBLE_DEVICES": "",
+  "new_CNN_training_runs": 0
+}

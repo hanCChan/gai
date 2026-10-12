@@ -1,0 +1,88 @@
+diff --git a/scripts/launch_shen_p2a.py b/scripts/launch_shen_p2a.py
+index caaf5c6..dc58310 100644
+--- a/scripts/launch_shen_p2a.py
++++ b/scripts/launch_shen_p2a.py
+@@ -10,6 +10,12 @@ if __name__=='__main__':
+     p.add_argument('--output',type=Path,required=True);p.add_argument('--smoke-dir',type=Path)
+     a=p.parse_args();jobs=json.loads(a.matrix.read_text())
+     if not isinstance(jobs,list) or any(j.get('stage')!='P2-A' for j in jobs):p.error('Only P2-A is authorized here')
++    if any(json.loads((ROOT/j['config']).read_text()).get('mechanism_stage')=='M1' for j in jobs):
++        import hashlib
++        gate=ROOT/'outputs/shen_p2a8/m1_preflight.json'
++        if not gate.exists() or json.loads(gate.read_text()).get('passed') is not True:p.error('M1 counterfactual preflight required')
++        registration_sha=hashlib.sha256((ROOT/'configs/shen_p2a8/registration.json').read_bytes()).hexdigest()
++        if any(json.loads((ROOT/j['config']).read_text()).get('registration_sha256')!=registration_sha for j in jobs):p.error('M1 registration changed')
+     if any(json.loads((ROOT/j['config']).read_text()).get('strict_ib_stft',False) for j in jobs):
+         gate=ROOT/'outputs/shen_p2a/a7_preflight.json'
+         if not gate.exists() or json.loads(gate.read_text()).get('passed') is not True:p.error('Strict-IB STFT cache preflight is required')
+@@ -38,7 +44,7 @@ if __name__=='__main__':
+             signatures=set();configs=[]
+             for j in group:
+                 cfg=json.loads((ROOT/j['config']).read_text())
+-                keys=('receiver','family','representation','map_normalization','strict_ib_stft','model','band','coordinate','normalization','window','guard_hz','fusion','aux_band')
++                keys=('receiver','family','representation','map_normalization','strict_ib_stft','model','band','coordinate','normalization','window','guard_hz','fusion','aux_band','feature_variant','scaler_mode')
+                 signature=tuple(cfg.get(k) for k in keys)
+                 if signature not in signatures:configs.append(str((ROOT/j['config']).resolve()));signatures.add(signature)
+             config_list=a.output/f'gpu{gpu}_configs.json';config_list.write_text(json.dumps(configs,indent=2)+'\n')
+diff --git a/src/shen_p2a/runner.py b/src/shen_p2a/runner.py
+index 107ae84..052b337 100644
+--- a/src/shen_p2a/runner.py
++++ b/src/shen_p2a/runner.py
+@@ -19,6 +19,9 @@ from .iq_cache import CachedIQ,folder as iq_cache_folder
+ 
+ 
+ def dataset(root,protocol,cfg,role):
++    if cfg.get('mechanism_stage')=='M1':
++        from shen_p2a8.features import CounterfactualMaps
++        return CounterfactualMaps(root,protocol,cfg['receiver'],role,cfg['feature_variant'],cfg['scaler_mode'])
+     if cfg['family']=='representation':
+         return MapPackets(root,protocol,cfg['receiver'],role,cfg['representation'],cfg['map_normalization'],cfg.get('strict_ib_stft',False))
+     if (iq_cache_folder(root,cfg['receiver'],role)/'manifest.json').exists():
+@@ -67,6 +70,9 @@ def save_predictions(output,cfg,ev,prefix=''):
+         records.append({'sample_id':f'Test/{cfg["receiver"]}_day2_wireless_test.h5:{row}','receiver':cfg['receiver'],'row':row,
+                         'label':label,'raw_label':label+31,'prediction':int(pred[i]),'confidence':float(probabilities[i,pred[i]]),
+                         'gate':float(gate[i]) if gate is not None else '',**{f'p_{c}':float(probabilities[i,c]) for c in range(10)}})
++        if cfg.get('mechanism_stage')=='M1':
++            others=logits[i].clone();others[label]=-torch.inf
++            records[-1]['true_class_logit_margin']=float(logits[i,label]-others.max())
+     for filename,data in [('predictions.csv',records),('errors.csv',[r for r in records if r['label']!=r['prediction']])]:
+         with (output/(prefix+filename)).open('w',newline='') as f:
+             writer=csv.DictWriter(f,fieldnames=list(records[0]),lineterminator='\n');writer.writeheader();writer.writerows(data)
+@@ -84,6 +90,9 @@ def train(cfg,root,output):
+         if torch.__version__!='2.5.1+cu121' or np.__version__!='1.26.4':
+             raise RuntimeError('Formal P2-A runs require the frozen P1 shen-stage1 environment')
+         if cfg.get('stage')!='P2-A':raise PermissionError('P2-B/P3 are not executable by this runner')
++        if cfg.get('mechanism_stage')=='M1':
++            reg=root/'configs/shen_p2a8/registration.json'
++            if hashlib.sha256(reg.read_bytes()).hexdigest()!=cfg['registration_sha256']:raise ValueError('M1 registration changed')
+         if cfg.get('strict_ib_stft',False) and (cfg['sample_rate_hz'],cfg['bandwidth_hz'])!=(1e6,125e3):
+             raise ValueError('Strict-IB STFT cache was constructed only under Fs=1MHz/BW=125kHz assumptions')
+         seed_all(cfg['seed']);device=torch.device('cuda:0');protocol=root/cfg['protocol']
+@@ -99,8 +108,14 @@ def train(cfg,root,output):
+         for ds in (train_ds,val_ds):
+             if set(ds.labels)!=set(range(10)):raise ValueError('Ten-class label set changed')
+         if cfg['family']=='representation':
+-            info=json.loads((cache_dir(root,cfg['receiver'],'train',cfg.get('strict_ib_stft',False))/'manifest.json').read_text())
+-            cfg['train_feature_scaler']=info['mean_std'][cfg['representation']] if cfg['map_normalization']=='train_scalar' else {'mean':0.,'std':1.}
++            if cfg.get('mechanism_stage')=='M1':
++                from shen_p2a8.features import feature_folder,scaler
++                info=json.loads((feature_folder(root,cfg['receiver'],'train',cfg['feature_variant'])/'manifest.json').read_text())
++                cfg['train_feature_scaler']=scaler(root,cfg['receiver'],cfg['feature_variant'],cfg['scaler_mode'])
++                cfg['source_file_sha256'].update({str(p.relative_to(root)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted((root/'src/shen_p2a8').glob('*.py'))})
++            else:
++                info=json.loads((cache_dir(root,cfg['receiver'],'train',cfg.get('strict_ib_stft',False))/'manifest.json').read_text())
++                cfg['train_feature_scaler']=info['mean_std'][cfg['representation']] if cfg['map_normalization']=='train_scalar' else {'mean':0.,'std':1.}
+             cfg['stft']=info['stft']
+         write_json(output/'config.json',cfg)
+         train_loader=loader_for(train_ds,cfg,True);val_loader=loader_for(val_ds,cfg)
+@@ -148,6 +163,10 @@ def train(cfg,root,output):
+             write_json(output/'status.json',{'status':'running','epoch':epoch,'best_macro_f1':best,'pid':os.getpid()})
+             if cfg.get('early_stopping_enabled',True) and epoch>=cfg.get('min_epochs',0) and patience>=cfg['patience']:break
+         for h in handles:h.remove()
++        if cfg.get('mechanism_stage')=='M1':
++            torch.save({'model':model.state_dict(),'config':cfg,'epoch':len(history)},output/'final.pt')
++            final_ev=evaluate(model,val_loader,cfg,device);save_predictions(output,cfg,final_ev,prefix='final_')
++            write_json(output/'final_metrics.json',dict(final_ev[0],fixed_epoch=len(history),selection='last epoch under frozen patience7 policy'))
+         checkpoint=torch.load(output/'best.pt',map_location=device,weights_only=False);model.load_state_dict(checkpoint['model'])
+         ev=evaluate(model,val_loader,cfg,device);metrics=ev[0]
+         metrics.update(receiver=cfg['receiver'],family=cfg['family'],comparison_group=cfg['comparison_group'],method=cfg['method'],

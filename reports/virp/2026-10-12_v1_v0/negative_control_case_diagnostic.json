@@ -1,0 +1,16 @@
+{
+  "receiver": "b210_1",
+  "raw_row": 3061,
+  "TX": 34,
+  "control": "zero_fft_ifft",
+  "max_CIS_cell_absolute_difference": 6.17027175263685e-05,
+  "largest_difference_cell_index": [
+    0,
+    31,
+    125
+  ],
+  "denominator_power_at_largest_difference": 1e-24,
+  "median_denominator_power": 4.603447206642401e-05,
+  "residual_energy_share_in_lowest_1percent_denominators": 0.6832164333068018,
+  "interpretation": "localized floating-point sensitivity near spectral zero; no epsilon change or packet removal; frozen negative-control gate remains failed"
+}

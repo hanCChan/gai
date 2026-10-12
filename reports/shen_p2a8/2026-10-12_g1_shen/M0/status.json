@@ -1,0 +1,9 @@
+{
+  "status": "completed",
+  "raw_packets_audited": 24000,
+  "source_files": 6,
+  "source_hashes_match": true,
+  "locked_files_opened": false,
+  "physical_metadata_locally_verified": false,
+  "cross_receiver_packet_pairing": false
+}

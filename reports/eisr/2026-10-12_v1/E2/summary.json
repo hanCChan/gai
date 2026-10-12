@@ -1,0 +1,8 @@
+{
+  "baseline_mean_equal_RX_macro_f1": 0.8324562908374439,
+  "selector_mean_equal_RX_macro_f1": 0.8316731140341848,
+  "positive_RX": 5,
+  "negative_RX": 5,
+  "rescued_vs_baseline": 286,
+  "new_errors_vs_baseline": 278
+}

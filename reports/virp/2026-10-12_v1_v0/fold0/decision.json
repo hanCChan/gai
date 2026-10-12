@@ -1,0 +1,180 @@
+{
+  "fold": 0,
+  "fitting_receivers": [
+    "b210_1",
+    "rtl_1",
+    "rtl_3",
+    "rtl_6",
+    "rtl_9"
+  ],
+  "heldout_receivers": [
+    "b200_mini_1",
+    "pluto_1",
+    "rtl_2",
+    "rtl_5",
+    "rtl_7"
+  ],
+  "source_packets": 10000,
+  "perturbation_realizations": 40000,
+  "sigma": 0.6717374436317022,
+  "delta": {
+    "min": 0.013847629872254921,
+    "q05": 0.018027999609163885,
+    "median": 0.030620686763644475,
+    "q95": 0.11439344182113788,
+    "max": 1.9957954139479268
+  },
+  "delta_core": {
+    "min": 0.011994472827884703,
+    "q05": 0.015744471216414875,
+    "median": 0.02656187300855825,
+    "q95": 0.09724375633175392,
+    "max": 0.17887541481110572
+  },
+  "correlation": {
+    "min": 0.9994779184548392,
+    "q05": 0.9995802335975824,
+    "median": 0.9999534564724903,
+    "q95": 0.9999984241072548,
+    "max": 0.99999917847036
+  },
+  "natural_centroid_delta": {
+    "min": 0.027691198533056696,
+    "q05": 0.04925958562275551,
+    "median": 0.0800396169533366,
+    "q95": 0.1087584295857867,
+    "max": 0.12323804463722997
+  },
+  "synthetic_centroid_delta": {
+    "min": 0.007717616871332906,
+    "q05": 0.007916632434365453,
+    "median": 0.015641173514888276,
+    "q95": 0.047483940979475385,
+    "max": 0.050350981690711505
+  },
+  "negative_control_delta": {
+    "min": 3.1089734600479902e-15,
+    "q05": 8.753046049027437e-15,
+    "median": 1.0901895182963444e-14,
+    "q95": 1.6951638750692815e-14,
+    "max": 4.038332609852814e-06
+  },
+  "gates": {
+    "median_packet_delta_min": {
+      "value": 0.030620686763644475,
+      "relation": ">=",
+      "threshold": 0.1,
+      "passed": false
+    },
+    "packet_fraction_delta_ge_005_min": {
+      "value": 0.2283,
+      "relation": ">=",
+      "threshold": 0.8,
+      "passed": false
+    },
+    "all_realizations_delta_q95_max": {
+      "value": 0.12715546630800018,
+      "relation": "<=",
+      "threshold": 1.0,
+      "passed": true
+    },
+    "nonfinite_count_max": {
+      "value": 0.0,
+      "relation": "<=",
+      "threshold": 0,
+      "passed": true
+    },
+    "max_abs_response_db": {
+      "value": 1.569824236222171,
+      "relation": "<=",
+      "threshold": 3.0,
+      "passed": true
+    },
+    "all_realizations_iq_correlation_min": {
+      "value": 0.9994779184548392,
+      "relation": ">=",
+      "threshold": 0.98,
+      "passed": true
+    },
+    "negative_control_delta_max": {
+      "value": 4.038332609852814e-06,
+      "relation": "<=",
+      "threshold": 1e-06,
+      "passed": false
+    },
+    "median_packet_core_delta_min": {
+      "value": 0.02656187300855825,
+      "relation": ">=",
+      "threshold": 0.05,
+      "passed": false
+    },
+    "low_energy_residual_share_q95_max": {
+      "value": 0.34679960010555233,
+      "relation": "<=",
+      "threshold": 0.5,
+      "passed": true
+    },
+    "boundary_residual_share_q95_max": {
+      "value": 0.26545283120865204,
+      "relation": "<=",
+      "threshold": 0.5,
+      "passed": true
+    },
+    "extreme_cis_fraction_increase_max": {
+      "value": 7.936507936507937e-07,
+      "relation": "<=",
+      "threshold": 0.001,
+      "passed": true
+    },
+    "coherence_change_absolute_q95_max": {
+      "value": 0.00014219246723781164,
+      "relation": "<=",
+      "threshold": 0.05,
+      "passed": true
+    },
+    "profile_half_split_stable_pair_fraction_min": {
+      "value": 1.0,
+      "relation": ">=",
+      "threshold": 0.8,
+      "passed": true
+    },
+    "profile_loo_tx_relative_change_q95_max": {
+      "value": 0.15482687465314315,
+      "relation": "<=",
+      "threshold": 0.25,
+      "passed": true
+    },
+    "profile_smooth_explained_fraction_median_min": {
+      "value": 0.5642069442834687,
+      "relation": ">=",
+      "threshold": 0.5,
+      "passed": true
+    },
+    "heldout_spectral_improvement_fraction_min": {
+      "value": 0.0,
+      "relation": ">=",
+      "threshold": 0.4,
+      "passed": false
+    },
+    "natural_cis_scale_ratio_min": {
+      "value": 0.19541789566543202,
+      "relation": ">=",
+      "threshold": 0.1,
+      "passed": true
+    },
+    "natural_cis_scale_ratio_max": {
+      "value": 0.19541789566543202,
+      "relation": "<=",
+      "threshold": 10.0,
+      "passed": true
+    }
+  },
+  "failed_gates": [
+    "median_packet_delta_min",
+    "packet_fraction_delta_ge_005_min",
+    "negative_control_delta_max",
+    "median_packet_core_delta_min",
+    "heldout_spectral_improvement_fraction_min"
+  ],
+  "go": false
+}

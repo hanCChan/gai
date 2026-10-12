@@ -1,0 +1,87 @@
+{
+  "purpose": "posthoc descriptive ranking audit only; not a preregistered gate, no retuning or model selection",
+  "per_RX": [
+    {
+      "receiver": "b200_mini_1",
+      "informative_packets": 652,
+      "Full_rescue_cases": 210,
+      "Strict_protection_cases": 442,
+      "roc_auc": 0.8768368886015945,
+      "average_precision": 0.7659866999837768
+    },
+    {
+      "receiver": "b210_1",
+      "informative_packets": 594,
+      "Full_rescue_cases": 260,
+      "Strict_protection_cases": 334,
+      "roc_auc": 0.7799861814831874,
+      "average_precision": 0.7647247738227472
+    },
+    {
+      "receiver": "pluto_1",
+      "informative_packets": 531,
+      "Full_rescue_cases": 64,
+      "Strict_protection_cases": 467,
+      "roc_auc": 0.784997323340471,
+      "average_precision": 0.310665431628826
+    },
+    {
+      "receiver": "rtl_1",
+      "informative_packets": 676,
+      "Full_rescue_cases": 210,
+      "Strict_protection_cases": 466,
+      "roc_auc": 0.6892397302268548,
+      "average_precision": 0.4926053231539299
+    },
+    {
+      "receiver": "rtl_2",
+      "informative_packets": 720,
+      "Full_rescue_cases": 140,
+      "Strict_protection_cases": 580,
+      "roc_auc": 0.7347413793103449,
+      "average_precision": 0.38267805448349324
+    },
+    {
+      "receiver": "rtl_3",
+      "informative_packets": 626,
+      "Full_rescue_cases": 163,
+      "Strict_protection_cases": 463,
+      "roc_auc": 0.6797890524586253,
+      "average_precision": 0.42291137017639124
+    },
+    {
+      "receiver": "rtl_5",
+      "informative_packets": 801,
+      "Full_rescue_cases": 180,
+      "Strict_protection_cases": 621,
+      "roc_auc": 0.7552603327965646,
+      "average_precision": 0.5540912990575255
+    },
+    {
+      "receiver": "rtl_6",
+      "informative_packets": 629,
+      "Full_rescue_cases": 146,
+      "Strict_protection_cases": 483,
+      "roc_auc": 0.7909611730338353,
+      "average_precision": 0.658517151791576
+    },
+    {
+      "receiver": "rtl_7",
+      "informative_packets": 554,
+      "Full_rescue_cases": 137,
+      "Strict_protection_cases": 417,
+      "roc_auc": 0.7984386213656812,
+      "average_precision": 0.630432267940981
+    },
+    {
+      "receiver": "rtl_9",
+      "informative_packets": 505,
+      "Full_rescue_cases": 172,
+      "Strict_protection_cases": 333,
+      "roc_auc": 0.5607235142118864,
+      "average_precision": 0.4534409490644015
+    }
+  ],
+  "mean_equal_RX_AUROC": 0.7450974196829045,
+  "group_counts_crosschecked_against_E1": true
+}

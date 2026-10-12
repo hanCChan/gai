@@ -1,0 +1,21 @@
+{
+  "fit_receivers": [
+    "b200_mini_1",
+    "pluto_1",
+    "rtl_2",
+    "rtl_5",
+    "rtl_7"
+  ],
+  "heldout_receivers": [
+    "b210_1",
+    "rtl_1",
+    "rtl_3",
+    "rtl_6",
+    "rtl_9"
+  ],
+  "scalar_population_std": 0.6860898774250286,
+  "scalar_mean": -0.004510739822088211,
+  "sigma_fit_count": 65520000,
+  "response_file_sha256": "55c17a1009c7cb38aa34a3403202619c115dfe1d43c5e33e6f22ba2ddbf54762",
+  "frozen_utc": "2026-10-12T12:18:48.882599+00:00"
+}

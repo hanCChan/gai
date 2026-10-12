@@ -1,0 +1,102 @@
+{
+  "stage": "G2-0 exploratory statistical LORO",
+  "registered_utc": "2026-10-12T11:13:01.892330+00:00",
+  "G1_decision_sha256": "8225c798eddc26bbcbd57aab70ace8d1e7a4033ead8997e0793ae79f3312ab66",
+  "receivers": [
+    "b200_mini_1",
+    "b210_1",
+    "pluto_1",
+    "rtl_1",
+    "rtl_2",
+    "rtl_3",
+    "rtl_5",
+    "rtl_6",
+    "rtl_7",
+    "rtl_9"
+  ],
+  "representations": [
+    "full_cis",
+    "strict_cis"
+  ],
+  "feature": "fixed per-STFT-row temporal mean+population SD, 104D; no learned ten-RX CNN features",
+  "bands": 4,
+  "band_rows": [
+    [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    [
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38
+    ],
+    [
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ]
+  ],
+  "classifier": "source standardized ridge one-hot regression, alpha1, intercept unpenalized",
+  "reliability": "D_between/(V_RX_given_TX+1e-8)",
+  "primary_negative_control": "nine-source internal two receiver-group-fold mean per-RX classification ACCURACY",
+  "additional_negative_control": "same source-group CV Macro-F1; retained stronger performance-only comparator",
+  "outer_unit": "one of ten physical named source RX; fit all statistics and classifiers on the other nine",
+  "target_selection_forbidden": true,
+  "developer_receivers_accessed": false,
+  "locked_accessed": false,
+  "deep_training_runs": 0,
+  "positive_engineering_gate": {
+    "mean_rank_correlation_advantage_min": 0.05,
+    "top_choice_mean_macro_f1_gain_min": 0.03,
+    "minimum_positive_RX": 6,
+    "both_accuracy_and_F1_controls_must_be_exceeded": true
+  },
+  "gate_not_a_significance_test": true,
+  "G3_started": false
+}

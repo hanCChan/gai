@@ -1,0 +1,8 @@
+{
+  "status": "completed",
+  "frequency_bands_frozen": 8,
+  "target_used_for_weights": false,
+  "source_variance_available": true,
+  "G2_established": false,
+  "models_trained": 0
+}

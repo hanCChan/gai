@@ -1,0 +1,16 @@
+{
+  "experiment": "EISR-v1",
+  "state": "STOP_E2",
+  "E0_passed": true,
+  "E1_passed": true,
+  "E2_executed": true,
+  "E2_passed": false,
+  "new_CNN_training_runs": 0,
+  "device": "CPU",
+  "developer_RX_accessed": false,
+  "historical_locked_RX_accessed": false,
+  "OSU_accessed": false,
+  "registration_sha256": "02a256a777d99464a715834606efff78cbd033d420be9751e0e378cd120ba79c",
+  "E3_started": false,
+  "completed_utc": "2026-10-12T12:57:20.126906+00:00"
+}

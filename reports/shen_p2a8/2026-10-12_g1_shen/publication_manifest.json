@@ -1,0 +1,169 @@
+{
+  "files": [
+    {
+      "path": "G1/REPORT.md",
+      "bytes": 5787,
+      "sha256": "3b11ec624e95e53b53a6f5efada2545798a0b30c23cbc92dff53f878c2ac0365"
+    },
+    {
+      "path": "G1/all_TX_metrics_and_margins.csv",
+      "bytes": 207546,
+      "sha256": "a968c6163eb8803a7460540c54b654ee89d0768fc51c954a0142ba03735f42b9"
+    },
+    {
+      "path": "G1/all_domain_metrics.csv",
+      "bytes": 28879,
+      "sha256": "56de0879f9fe14c1419abc590703beeebb27f1fc71a9b2eacc23691f087df240"
+    },
+    {
+      "path": "G1/cost_and_budget.csv",
+      "bytes": 1589,
+      "sha256": "cb96533305b16bfc14f94d9e98a0ee2375021e951db283983342b5df23fb575d"
+    },
+    {
+      "path": "G1/cross_RX_baselines.png",
+      "bytes": 63743,
+      "sha256": "4119a3f492883590a440f782e6b7681c15734fb93eb2d41c27a41ecafe89c64a"
+    },
+    {
+      "path": "G1/development_aggregate.csv",
+      "bytes": 966,
+      "sha256": "4688793b72e1332b24abbe9d3528b03ead61049b2dfe40d2f6287619b509120a"
+    },
+    {
+      "path": "G1/paired_corrections_and_regressions.csv",
+      "bytes": 102245,
+      "sha256": "e31dd91b8a765809a9d38c2d9f0c4496518b6fe09dc2408e18c71b931bbfa5ea"
+    },
+    {
+      "path": "G1/three_seed_domain_summary.csv",
+      "bytes": 8496,
+      "sha256": "4402812e0e9b857527e53d7e97c1b6087758c35609225a2e4385919f5ff0a225"
+    },
+    {
+      "path": "G1/verification.json",
+      "bytes": 263,
+      "sha256": "cbdd73a6438dea25a8a40f7ed14daaff7052e4cb30161d3146d925c28ab34c9d"
+    },
+    {
+      "path": "M0/Full_vs_StrictIB_confusion_difference.png",
+      "bytes": 121676,
+      "sha256": "03cddc1bcf9e99e0ad670ade79251583eff8ce047c4dfc6c84ccafdaa29af3e5"
+    },
+    {
+      "path": "M0/TX32_33_34_error_destinations.csv",
+      "bytes": 15635,
+      "sha256": "dc3c83c95fc63517ef5b37ab966d9e65ee82cf7d38d8f43de7547aefcce0c190"
+    },
+    {
+      "path": "M0/TX32_33_34_spectrum_distributions.png",
+      "bytes": 314639,
+      "sha256": "5a998209d64e50b843ebff2003170a2dd7835311be5e6e259ba82279cb9836fe"
+    },
+    {
+      "path": "M0/all_TX_band_shift_and_separability.png",
+      "bytes": 221141,
+      "sha256": "1e7f7f5b9992fd4c8afda1f43403b30cf1f4e533ff5ab33e3022285ba1046b7e"
+    },
+    {
+      "path": "M0/band_class_separability.csv",
+      "bytes": 1586,
+      "sha256": "a9caf53336d7445fe88c498c1952f9c9f8394d1338027a5010fd9bc7371f3263"
+    },
+    {
+      "path": "M0/hdf5_headers_and_hashes.json",
+      "bytes": 4713,
+      "sha256": "709269a1b8de5849e8c51830aba6b1437caf73c7decca4b431c0c9c404f578bd"
+    },
+    {
+      "path": "M0/status.json",
+      "bytes": 233,
+      "sha256": "85081e8325c0c578babfdf2161616a020d8e886588585e36f729b593d9a2e746"
+    },
+    {
+      "path": "M0/train_to_day2_distribution_shift.csv",
+      "bytes": 26735,
+      "sha256": "7d8ea8ee642b939ec799c3872186802145f02b2bb891174174de35067994b4fe"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 3443,
+      "sha256": "f8680591751f675b9b0b2f8209e3f62fb289c20cd745a19a7281b2f2f73056c5"
+    },
+    {
+      "path": "bands/REPORT.md",
+      "bytes": 751,
+      "sha256": "7e8b68cb0f345420849b2fb8875c1c2cf2d9c6ab9dc72ba4131585e1ed20ee41"
+    },
+    {
+      "path": "bands/discriminability_and_source_RX_variation.png",
+      "bytes": 81642,
+      "sha256": "c143c4eddc769fc4812fb673f66e9baf466e6e707de92962d2a3f05a9d628651"
+    },
+    {
+      "path": "bands/per_RX_band_centroid_accuracy.csv",
+      "bytes": 11513,
+      "sha256": "ba0023ceb84f6442515839dd878068de2f630aa7e70d379034ed05dace750c94"
+    },
+    {
+      "path": "bands/per_TX_cross_RX_shift.csv",
+      "bytes": 135634,
+      "sha256": "f989d535aa1c00df6bf58468227aad69ffdf865e7184559d6604abd39762d49f"
+    },
+    {
+      "path": "bands/source_only_band_statistics.csv",
+      "bytes": 1240,
+      "sha256": "cd1da93bf9f023f85daecd2b34a0761d0ec3222f6ef56b67db76e6f77cd099a0"
+    },
+    {
+      "path": "bands/status.json",
+      "bytes": 182,
+      "sha256": "0e95818751605edd0e4e567fdf6fede48c415d45727c9f255c15103ef1b52bae"
+    },
+    {
+      "path": "execution_matrix_confirmation.json",
+      "bytes": 2187,
+      "sha256": "7e511018bee9087e44673976a1d2ddf075ce07eb9ab704dc61d35dba3ca1d0a4"
+    },
+    {
+      "path": "execution_matrix_cv.json",
+      "bytes": 1187,
+      "sha256": "cd5afceb57e7b6f42f8defc9b653e1b04f7afadb5e57e8c54a6cf9a020372e87"
+    },
+    {
+      "path": "g1_registration.json",
+      "bytes": 8161,
+      "sha256": "b0569754382422ac6cef1aea671322d1db3c06b3a95ea057def3fa10b34ca2ac"
+    },
+    {
+      "path": "optimization/REPORT.md",
+      "bytes": 530,
+      "sha256": "ca8e91b42c4df3025938d78fc35d822a068392de224bfdf16d2c4501cbc5d6b9"
+    },
+    {
+      "path": "optimization/source_checkpoint_optimization.csv",
+      "bytes": 2641,
+      "sha256": "32c5f786ee2fc2757c45b5a564718cc1d17eb524406da9f557f4f658f65992c5"
+    },
+    {
+      "path": "optimization/status.json",
+      "bytes": 140,
+      "sha256": "9e20c1c9b410dad347e6ddbf42528dbe3f71ea6407ad2041d415111524bac3ee"
+    },
+    {
+      "path": "pipeline_status.json",
+      "bytes": 177,
+      "sha256": "686e06c212aa4baa8b0b72d91103baffe74667b509a9bed29450b94f23688fb6"
+    },
+    {
+      "path": "source_epoch_selection.frozen.json",
+      "bytes": 541,
+      "sha256": "a5647afa33990e7585282b45fca0950bb6fcc7fd26323f4a8805c67e0bca88fa"
+    }
+  ],
+  "new_formal_training_runs": 20,
+  "verified_prediction_sets": 216,
+  "raw_original_files_modified": false,
+  "OSU_complete": false,
+  "G2_G3_started": false
+}

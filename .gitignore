@@ -47,3 +47,7 @@ credentials*
 # Curated experiment summaries and development-only evidence
 !/reports/**/*.csv
 !/configs/shen_evidence/*.csv
+
+# Curated, user-authorized evidence bundles (raw IQ and CNN weights excluded)
+!/reports/virp/2026-10-12_v1_v0/VIRP_v1_V0_evidence.zip
+!/reports/eisr/2026-10-12_v1/EISR_v1_E0_E1_E2_evidence.zip

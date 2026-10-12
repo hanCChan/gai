@@ -1,0 +1,58 @@
+{
+  "experiment": "VIRP-v1",
+  "stage": "V0",
+  "V0_passed": false,
+  "V1_allowed": false,
+  "deep_training_runs": 0,
+  "V1_started": false,
+  "V2_started": false,
+  "V3_started": false,
+  "developer_RX_accessed": false,
+  "historical_locked_RX_accessed": false,
+  "OSU_accessed": false,
+  "registration_sha256": "f1e60b34b1b8a3bb5e09a51487f49ebe7fd94f2b00c1dd00edc9fc093a41464a",
+  "failed_gates": [
+    {
+      "fold": 0,
+      "gate": "median_packet_delta_min"
+    },
+    {
+      "fold": 0,
+      "gate": "packet_fraction_delta_ge_005_min"
+    },
+    {
+      "fold": 0,
+      "gate": "negative_control_delta_max"
+    },
+    {
+      "fold": 0,
+      "gate": "median_packet_core_delta_min"
+    },
+    {
+      "fold": 0,
+      "gate": "heldout_spectral_improvement_fraction_min"
+    },
+    {
+      "fold": 1,
+      "gate": "median_packet_delta_min"
+    },
+    {
+      "fold": 1,
+      "gate": "packet_fraction_delta_ge_005_min"
+    },
+    {
+      "fold": 1,
+      "gate": "median_packet_core_delta_min"
+    },
+    {
+      "fold": 1,
+      "gate": "profile_loo_tx_relative_change_q95_max"
+    },
+    {
+      "fold": 1,
+      "gate": "heldout_spectral_improvement_fraction_min"
+    }
+  ],
+  "status": "STOP_VIRP_V1",
+  "completed_utc": "2026-10-12T12:20:30.848884+00:00"
+}

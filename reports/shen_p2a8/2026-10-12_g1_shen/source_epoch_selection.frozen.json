@@ -1,0 +1,34 @@
+{
+  "choices": {
+    "full_iq": {
+      "fold_best_epochs": [
+        13,
+        18
+      ],
+      "final_epoch": 16
+    },
+    "strict_iq": {
+      "fold_best_epochs": [
+        19,
+        14
+      ],
+      "final_epoch": 17
+    },
+    "full_cis": {
+      "fold_best_epochs": [
+        15,
+        17
+      ],
+      "final_epoch": 16
+    },
+    "strict_cis": {
+      "fold_best_epochs": [
+        18,
+        19
+      ],
+      "final_epoch": 19
+    }
+  },
+  "development_used": false,
+  "frozen_utc": "2026-10-12T09:47:13.263561+00:00"
+}

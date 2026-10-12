@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "mean_equal_RX_hard_gain": 0.0841,
+  "threshold": 0.03,
+  "mean_equal_RX_Full_accuracy": 0.6837,
+  "mean_equal_RX_Strict_accuracy": 0.8299,
+  "mean_equal_RX_Hard_oracle_accuracy": 0.914,
+  "mean_equal_RX_Convex_soft_oracle_accuracy": 0.9153,
+  "source_RX": 10,
+  "unique_source_packets": 20000,
+  "expert_pairs": 2,
+  "seed": 20261012,
+  "state_totals": {
+    "Full_rescue": 1682,
+    "Full_damage": 4606,
+    "Both_correct": 11992,
+    "Both_wrong": 1720,
+    "Both_wrong_soft_rescuable": 26
+  },
+  "soft_oracle_used_for_gate": false,
+  "oracle_macro_f1_claimed": false
+}

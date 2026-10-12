@@ -1,5 +1,11 @@
 # gai：LoRa RFFI 开发实验
 
+[研究报告与完整证据索引](reports/RESEARCH_REPORT_INDEX.md)：G1/G2-0、VIRP-v1 和 EISR-v1，包含冻结规则、独立复核与证据 ZIP。
+
+最新 [EISR-v1 CPU 筛选](reports/eisr/2026-10-12_v1/REPORT.md)：E0四个真实固定20轮权重核验通过，E1 Hard oracle平均可挽救空间8.41pp通过；E2十次四RX训练/一RX评价的线性选择器相对源内选定简单融合平均ΔMacro-F1为−0.0783pp、五RX下降、最差TX Recall下降2.05pp，按规则停止。没有新增CNN训练或开发/锁定/OSU RX评价。[冻结规则](docs/eisr/V1_PREREGISTRATION.md)及[文献核对](docs/eisr/E0_LITERATURE_AUDIT.md)保留。
+
+最新候选 [VIRP-v1 的 V0 审计](reports/virp/2026-10-12_v1_v0/REPORT.md) 已完成：两折 CIS 变化中位数 0.0306/0.0581，覆盖率 22.83%/57.93%，未达到预登记的 0.10/80% 门槛，按规则停止；没有启动 B0–B4 或目标 RX 新评价。[冻结规则](docs/virp/V1_PREREGISTRATION.md)和[文献核对](docs/virp/V0_LITERATURE_AUDIT.md)均保留。
+
 保留旧RF-HSTU/OOB实现，新增受开发协议保护的Shen P0/P1训练、审计与报告流程。
 
 - [当前结果与问题](docs/SHEN_RUN_RESULTS_AND_ISSUES.md)：2026-10-12北京时间快照，首筛16/16、复验16/16完成，八组均完成三seed。

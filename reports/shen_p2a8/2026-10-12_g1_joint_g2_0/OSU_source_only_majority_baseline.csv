@@ -1,0 +1,3 @@
+direction,source_selected_majority_TX,target_accuracy,target_macro_f1,uniform_guess_accuracy
+RX1→RX2,18,0.12224938875305623,0.008714596949891068,0.04
+RX2→RX1,16,0.12096774193548387,0.008633093525179856,0.04

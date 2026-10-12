@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "models_checked": 24,
+  "domain_prediction_sets_checked": 48,
+  "source_developer_roles_enforced": true,
+  "paired_ids_labels_exact": true,
+  "full_strict_initial_weights_exact": true,
+  "locked_accessed": false,
+  "G2_G3_started": false
+}

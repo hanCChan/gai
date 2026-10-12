@@ -1,0 +1,1246 @@
+{
+  "status": "completed",
+  "key": "osu_RX2",
+  "packets": 1636,
+  "source": [
+    {
+      "receiver": "RX2",
+      "raw_label": 1,
+      "path": "/home/keyan/code-y-p2a/data/raw/osu_lora/Diff_Receivers_Setup/Diff_Receivers_Setup_Indoor_SameTx/RX2/Device1_IQ.dat",
+      "metadata": {
+        "captures": [
+          {
+            "core:date": "2022-03-08",
+            "core:sample_start": 0,
+            "frequency": "915 MHz"
+          }
+        ],
+        "global": {
+          "core:author": "Jared Gaskin",
+          "core:sample_rate": "1 MS/s",
+          "core:description": "SigMF IQ samples recording of over-the-air LoRa transmissions collected by a fixed USRP B210 as a receiver. The data is collected in an indoor environment, with a transmitter-receiver separation distance of 5m. The transmitter emitted LoRa compliant frames generated via a Gnuradio. We used receiver 1 and 2 to capture the same signal. This is receiver 2 data.",
+          "core:datatype": "cf32"
+        },
+        "annotations": [
+          {
+            "core:sample_start": 0,
+            "wines:transmitter": {
+              "model": "LoPy4",
+              "ID": {
+                "Transmitter ID": "1",
+                "Transmission ID": 1
+              },
+              "antenna": {
+                "model": "LoRa Whip, Tilt RF",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "wines:reciever": {
+              "model": "Ettus USRP B210 with CBX ( 1200-6000  MH, 40 MHz BW) Daughterboard",
+              "antenna": {
+                "model": "Ettus VERT900",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "core:sample_count": 20000000
+          }
+        ]
+      },
+      "eligible_windows": 36,
+      "selected_windows": 36,
+      "sha256": "4a093e436b7977ca470a2afb8be95886ec2c31809cd19e6dd2bb392cd2a82cf4"
+    },
+    {
+      "receiver": "RX2",
+      "raw_label": 2,
+      "path": "/home/keyan/code-y-p2a/data/raw/osu_lora/Diff_Receivers_Setup/Diff_Receivers_Setup_Indoor_SameTx/RX2/Device2_IQ.dat",
+      "metadata": {
+        "captures": [
+          {
+            "core:date": "2022-03-08",
+            "core:sample_start": 0,
+            "frequency": "915 MHz"
+          }
+        ],
+        "global": {
+          "core:author": "Jared Gaskin",
+          "core:sample_rate": "1 MS/s",
+          "core:description": "SigMF IQ samples recording of over-the-air LoRa transmissions collected by a fixed USRP B210 as a receiver. The data is collected in an indoor environment, with a transmitter-receiver separation distance of 5m. The transmitter emitted LoRa compliant frames generated via a Gnuradio. We used receiver 1 and 2 to capture the same signal.",
+          "core:datatype": "cf32"
+        },
+        "annotations": [
+          {
+            "core:sample_start": 0,
+            "wines:transmitter": {
+              "model": "LoPy4",
+              "ID": {
+                "Transmitter ID": "2",
+                "Transmission ID": 1
+              },
+              "antenna": {
+                "model": "LoRa Whip, Tilt RF",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "wines:reciever": {
+              "model": "Ettus USRP B210 with CBX ( 1200-6000  MH, 40 MHz BW) Daughterboard",
+              "antenna": {
+                "model": "Ettus VERT900",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "core:sample_count": 20000000
+          }
+        ]
+      },
+      "eligible_windows": 38,
+      "selected_windows": 38,
+      "sha256": "8fce6e1c6aded7eda9a846d6f1b9e6f329c3fa142ccd8a947a00b3a20c4508f9"
+    },
+    {
+      "receiver": "RX2",
+      "raw_label": 3,
+      "path": "/home/keyan/code-y-p2a/data/raw/osu_lora/Diff_Receivers_Setup/Diff_Receivers_Setup_Indoor_SameTx/RX2/Device3_IQ.dat",
+      "metadata": {
+        "captures": [
+          {
+            "core:date": "2022-03-08",
+            "core:sample_start": 0,
+            "frequency": "915 MHz"
+          }
+        ],
+        "global": {
+          "core:author": "Jared Gaskin",
+          "core:sample_rate": "1 MS/s",
+          "core:description": "SigMF IQ samples recording of over-the-air LoRa transmissions collected by a fixed USRP B210 as a receiver. The data is collected in an indoor environment, with a transmitter-receiver separation distance of 5m. The transmitter emitted LoRa compliant frames generated via a Gnuradio. We used receiver 1 and 2 to capture the same signal.",
+          "core:datatype": "cf32"
+        },
+        "annotations": [
+          {
+            "core:sample_start": 0,
+            "wines:transmitter": {
+              "model": "LoPy4",
+              "ID": {
+                "Transmitter ID": "3",
+                "Transmission ID": 1
+              },
+              "antenna": {
+                "model": "LoRa Whip, Tilt RF",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "wines:reciever": {
+              "model": "Ettus USRP B210 with CBX ( 1200-6000  MH, 40 MHz BW) Daughterboard",
+              "antenna": {
+                "model": "Ettus VERT900",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "core:sample_count": 20000000
+          }
+        ]
+      },
+      "eligible_windows": 66,
+      "selected_windows": 66,
+      "sha256": "b9991b10ea31f2733525b8f0c26324bd1e5a6709cf44c107509957b0f1fd82a0"
+    },
+    {
+      "receiver": "RX2",
+      "raw_label": 4,
+      "path": "/home/keyan/code-y-p2a/data/raw/osu_lora/Diff_Receivers_Setup/Diff_Receivers_Setup_Indoor_SameTx/RX2/Device4_IQ.dat",
+      "metadata": {
+        "captures": [
+          {
+            "core:date": "2022-03-08",
+            "core:sample_start": 0,
+            "frequency": "915 MHz"
+          }
+        ],
+        "global": {
+          "core:author": "Jared Gaskin",
+          "core:sample_rate": "1 MS/s",
+          "core:description": "SigMF IQ samples recording of over-the-air LoRa transmissions collected by a fixed USRP B210 as a receiver. The data is collected in an indoor environment, with a transmitter-receiver separation distance of 5m. The transmitter emitted LoRa compliant frames generated via a Gnuradio. We used receiver 1 and 2 to capture the same signal.",
+          "core:datatype": "cf32"
+        },
+        "annotations": [
+          {
+            "core:sample_start": 0,
+            "wines:transmitter": {
+              "model": "LoPy4",
+              "ID": {
+                "Transmitter ID": "4",
+                "Transmission ID": 1
+              },
+              "antenna": {
+                "model": "LoRa Whip, Tilt RF",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "wines:reciever": {
+              "model": "Ettus USRP B210 with CBX ( 1200-6000  MH, 40 MHz BW) Daughterboard",
+              "antenna": {
+                "model": "Ettus VERT900",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "core:sample_count": 20000000
+          }
+        ]
+      },
+      "eligible_windows": 48,
+      "selected_windows": 48,
+      "sha256": "e4421df779f616f0ba2cd327b925adb59a6222a6a482eb89b90f2df9ea9aa7f6"
+    },
+    {
+      "receiver": "RX2",
+      "raw_label": 5,
+      "path": "/home/keyan/code-y-p2a/data/raw/osu_lora/Diff_Receivers_Setup/Diff_Receivers_Setup_Indoor_SameTx/RX2/Device5_IQ.dat",
+      "metadata": {
+        "captures": [
+          {
+            "core:date": "2022-03-08",
+            "core:sample_start": 0,
+            "frequency": "915 MHz"
+          }
+        ],
+        "global": {
+          "core:author": "Jared Gaskin",
+          "core:sample_rate": "1 MS/s",
+          "core:description": "SigMF IQ samples recording of over-the-air LoRa transmissions collected by a fixed USRP B210 as a receiver. The data is collected in an indoor environment, with a transmitter-receiver separation distance of 5m. The transmitter emitted LoRa compliant frames generated via a Gnuradio. We used receiver 1 and 2 to capture the same signal.",
+          "core:datatype": "cf32"
+        },
+        "annotations": [
+          {
+            "core:sample_start": 0,
+            "wines:transmitter": {
+              "model": "LoPy4",
+              "ID": {
+                "Transmitter ID": "5",
+                "Transmission ID": 1
+              },
+              "antenna": {
+                "model": "LoRa Whip, Tilt RF",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "wines:reciever": {
+              "model": "Ettus USRP B210 with CBX ( 1200-6000  MH, 40 MHz BW) Daughterboard",
+              "antenna": {
+                "model": "Ettus VERT900",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "core:sample_count": 20000000
+          }
+        ]
+      },
+      "eligible_windows": 58,
+      "selected_windows": 58,
+      "sha256": "0dd1a8d254afd93a497768364d3a2e686dde67f4c00534d7d46e98263398465c"
+    },
+    {
+      "receiver": "RX2",
+      "raw_label": 6,
+      "path": "/home/keyan/code-y-p2a/data/raw/osu_lora/Diff_Receivers_Setup/Diff_Receivers_Setup_Indoor_SameTx/RX2/Device6_IQ.dat",
+      "metadata": {
+        "captures": [
+          {
+            "core:date": "2022-03-08",
+            "core:sample_start": 0,
+            "frequency": "915 MHz"
+          }
+        ],
+        "global": {
+          "core:author": "Jared Gaskin",
+          "core:sample_rate": "1 MS/s",
+          "core:description": "SigMF IQ samples recording of over-the-air LoRa transmissions collected by a fixed USRP B210 as a receiver. The data is collected in an indoor environment, with a transmitter-receiver separation distance of 5m. The transmitter emitted LoRa compliant frames generated via a Gnuradio. We used receiver 1 and 2 to capture the same signal.",
+          "core:datatype": "cf32"
+        },
+        "annotations": [
+          {
+            "core:sample_start": 0,
+            "wines:transmitter": {
+              "model": "LoPy4",
+              "ID": {
+                "Transmitter ID": "6",
+                "Transmission ID": 1
+              },
+              "antenna": {
+                "model": "LoRa Whip, Tilt RF",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "wines:reciever": {
+              "model": "Ettus USRP B210 with CBX ( 1200-6000  MH, 40 MHz BW) Daughterboard",
+              "antenna": {
+                "model": "Ettus VERT900",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "core:sample_count": 20000000
+          }
+        ]
+      },
+      "eligible_windows": 50,
+      "selected_windows": 50,
+      "sha256": "8fb048759c6efe8cb69747db667ccf825af148e346ad0483324280f035e2110f"
+    },
+    {
+      "receiver": "RX2",
+      "raw_label": 7,
+      "path": "/home/keyan/code-y-p2a/data/raw/osu_lora/Diff_Receivers_Setup/Diff_Receivers_Setup_Indoor_SameTx/RX2/Device7_IQ.dat",
+      "metadata": {
+        "captures": [
+          {
+            "core:date": "2022-03-08",
+            "core:sample_start": 0,
+            "frequency": "915 MHz"
+          }
+        ],
+        "global": {
+          "core:author": "Jared Gaskin",
+          "core:sample_rate": "1 MS/s",
+          "core:description": "SigMF IQ samples recording of over-the-air LoRa transmissions collected by a fixed USRP B210 as a receiver. The data is collected in an indoor environment, with a transmitter-receiver separation distance of 5m. The transmitter emitted LoRa compliant frames generated via a Gnuradio. We used receiver 1 and 2 to capture the same signal.",
+          "core:datatype": "cf32"
+        },
+        "annotations": [
+          {
+            "core:sample_start": 0,
+            "wines:transmitter": {
+              "model": "LoPy4",
+              "ID": {
+                "Transmitter ID": "7",
+                "Transmission ID": 1
+              },
+              "antenna": {
+                "model": "LoRa Whip, Tilt RF",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "wines:reciever": {
+              "model": "Ettus USRP B210 with CBX ( 1200-6000  MH, 40 MHz BW) Daughterboard",
+              "antenna": {
+                "model": "Ettus VERT900",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "core:sample_count": 20000000
+          }
+        ]
+      },
+      "eligible_windows": 48,
+      "selected_windows": 48,
+      "sha256": "a5126217ee1c670a4d5a8e7ba7ef81ceb48f0fe47718a5152edf6b03ce1eeec9"
+    },
+    {
+      "receiver": "RX2",
+      "raw_label": 8,
+      "path": "/home/keyan/code-y-p2a/data/raw/osu_lora/Diff_Receivers_Setup/Diff_Receivers_Setup_Indoor_SameTx/RX2/Device8_IQ.dat",
+      "metadata": {
+        "captures": [
+          {
+            "core:date": "2022-03-08",
+            "core:sample_start": 0,
+            "frequency": "915 MHz"
+          }
+        ],
+        "global": {
+          "core:author": "Jared Gaskin",
+          "core:sample_rate": "1 MS/s",
+          "core:description": "SigMF IQ samples recording of over-the-air LoRa transmissions collected by a fixed USRP B210 as a receiver. The data is collected in an indoor environment, with a transmitter-receiver separation distance of 5m. The transmitter emitted LoRa compliant frames generated via a Gnuradio. We used receiver 1 and 2 to capture the same signal.",
+          "core:datatype": "cf32"
+        },
+        "annotations": [
+          {
+            "core:sample_start": 0,
+            "wines:transmitter": {
+              "model": "LoPy4",
+              "ID": {
+                "Transmitter ID": "8",
+                "Transmission ID": 1
+              },
+              "antenna": {
+                "model": "LoRa Whip, Tilt RF",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "wines:reciever": {
+              "model": "Ettus USRP B210 with CBX ( 1200-6000  MH, 40 MHz BW) Daughterboard",
+              "antenna": {
+                "model": "Ettus VERT900",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "core:sample_count": 20000000
+          }
+        ]
+      },
+      "eligible_windows": 45,
+      "selected_windows": 45,
+      "sha256": "d9c7996b093ce13f6dff115dfb3182e1ac6c295b37d32a46f4bb1a64b9b390e3"
+    },
+    {
+      "receiver": "RX2",
+      "raw_label": 9,
+      "path": "/home/keyan/code-y-p2a/data/raw/osu_lora/Diff_Receivers_Setup/Diff_Receivers_Setup_Indoor_SameTx/RX2/Device9_IQ.dat",
+      "metadata": {
+        "captures": [
+          {
+            "core:date": "2022-03-08",
+            "core:sample_start": 0,
+            "frequency": "915 MHz"
+          }
+        ],
+        "global": {
+          "core:author": "Jared Gaskin",
+          "core:sample_rate": "1 MS/s",
+          "core:description": "SigMF IQ samples recording of over-the-air LoRa transmissions collected by a fixed USRP B210 as a receiver. The data is collected in an indoor environment, with a transmitter-receiver separation distance of 5m. The transmitter emitted LoRa compliant frames generated via a Gnuradio. We used receiver 1 and 2 to capture the same signal.",
+          "core:datatype": "cf32"
+        },
+        "annotations": [
+          {
+            "core:sample_start": 0,
+            "wines:transmitter": {
+              "model": "LoPy4",
+              "ID": {
+                "Transmitter ID": "9",
+                "Transmission ID": 1
+              },
+              "antenna": {
+                "model": "LoRa Whip, Tilt RF",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "wines:reciever": {
+              "model": "Ettus USRP B210 with CBX ( 1200-6000  MH, 40 MHz BW) Daughterboard",
+              "antenna": {
+                "model": "Ettus VERT900",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "core:sample_count": 20000000
+          }
+        ]
+      },
+      "eligible_windows": 48,
+      "selected_windows": 48,
+      "sha256": "00706de43aac3eec04f416d5ef5c175268cc1f7d93121a0087cc851e3ce3e6de"
+    },
+    {
+      "receiver": "RX2",
+      "raw_label": 10,
+      "path": "/home/keyan/code-y-p2a/data/raw/osu_lora/Diff_Receivers_Setup/Diff_Receivers_Setup_Indoor_SameTx/RX2/Device10_IQ.dat",
+      "metadata": {
+        "captures": [
+          {
+            "core:date": "2022-03-08",
+            "core:sample_start": 0,
+            "frequency": "915 MHz"
+          }
+        ],
+        "global": {
+          "core:author": "Jared Gaskin",
+          "core:sample_rate": "1 MS/s",
+          "core:description": "SigMF IQ samples recording of over-the-air LoRa transmissions collected by a fixed USRP B210 as a receiver. The data is collected in an indoor environment, with a transmitter-receiver separation distance of 5m. The transmitter emitted LoRa compliant frames generated via a Gnuradio. We used receiver 1 and 2 to capture the same signal.",
+          "core:datatype": "cf32"
+        },
+        "annotations": [
+          {
+            "core:sample_start": 0,
+            "wines:transmitter": {
+              "model": "LoPy4",
+              "ID": {
+                "Transmitter ID": "10",
+                "Transmission ID": 1
+              },
+              "antenna": {
+                "model": "LoRa Whip, Tilt RF",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "wines:reciever": {
+              "model": "Ettus USRP B210 with CBX ( 1200-6000  MH, 40 MHz BW) Daughterboard",
+              "antenna": {
+                "model": "Ettus VERT900",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "core:sample_count": 20000000
+          }
+        ]
+      },
+      "eligible_windows": 44,
+      "selected_windows": 44,
+      "sha256": "bfe499d887907e01ac99948e4ee9168f0b9649f9544369b05ac8e37e548d697c"
+    },
+    {
+      "receiver": "RX2",
+      "raw_label": 11,
+      "path": "/home/keyan/code-y-p2a/data/raw/osu_lora/Diff_Receivers_Setup/Diff_Receivers_Setup_Indoor_SameTx/RX2/Device11_IQ.dat",
+      "metadata": {
+        "captures": [
+          {
+            "core:date": "2022-03-08",
+            "core:sample_start": 0,
+            "frequency": "915 MHz"
+          }
+        ],
+        "global": {
+          "core:author": "Jared Gaskin",
+          "core:sample_rate": "1 MS/s",
+          "core:description": "SigMF IQ samples recording of over-the-air LoRa transmissions collected by a fixed USRP B210 as a receiver. The data is collected in an indoor environment, with a transmitter-receiver separation distance of 5m. The transmitter emitted LoRa compliant frames generated via a Gnuradio. We used receiver 1 and 2 to capture the same signal.",
+          "core:datatype": "cf32"
+        },
+        "annotations": [
+          {
+            "core:sample_start": 0,
+            "wines:transmitter": {
+              "model": "LoPy4",
+              "ID": {
+                "Transmitter ID": "11",
+                "Transmission ID": 1
+              },
+              "antenna": {
+                "model": "LoRa Whip, Tilt RF",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "wines:reciever": {
+              "model": "Ettus USRP B210 with CBX ( 1200-6000  MH, 40 MHz BW) Daughterboard",
+              "antenna": {
+                "model": "Ettus VERT900",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "core:sample_count": 20000000
+          }
+        ]
+      },
+      "eligible_windows": 49,
+      "selected_windows": 49,
+      "sha256": "c4e388340950bd6daf19f610214737f5ea96956db47d8d65857d15d23b12b984"
+    },
+    {
+      "receiver": "RX2",
+      "raw_label": 12,
+      "path": "/home/keyan/code-y-p2a/data/raw/osu_lora/Diff_Receivers_Setup/Diff_Receivers_Setup_Indoor_SameTx/RX2/Device12_IQ.dat",
+      "metadata": {
+        "captures": [
+          {
+            "core:date": "2022-03-08",
+            "core:sample_start": 0,
+            "frequency": "915 MHz"
+          }
+        ],
+        "global": {
+          "core:author": "Jared Gaskin",
+          "core:sample_rate": "1 MS/s",
+          "core:description": "SigMF IQ samples recording of over-the-air LoRa transmissions collected by a fixed USRP B210 as a receiver. The data is collected in an indoor environment, with a transmitter-receiver separation distance of 5m. The transmitter emitted LoRa compliant frames generated via a Gnuradio. We used receiver 1 and 2 to capture the same signal.",
+          "core:datatype": "cf32"
+        },
+        "annotations": [
+          {
+            "core:sample_start": 0,
+            "wines:transmitter": {
+              "model": "LoPy4",
+              "ID": {
+                "Transmitter ID": "12",
+                "Transmission ID": 1
+              },
+              "antenna": {
+                "model": "LoRa Whip, Tilt RF",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "wines:reciever": {
+              "model": "Ettus USRP B210 with CBX ( 1200-6000  MH, 40 MHz BW) Daughterboard",
+              "antenna": {
+                "model": "Ettus VERT900",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "core:sample_count": 20000000
+          }
+        ]
+      },
+      "eligible_windows": 46,
+      "selected_windows": 46,
+      "sha256": "cea5b219872508ca5b37286dac9ad4a1fbc191a396ef6063484357da0245fd55"
+    },
+    {
+      "receiver": "RX2",
+      "raw_label": 13,
+      "path": "/home/keyan/code-y-p2a/data/raw/osu_lora/Diff_Receivers_Setup/Diff_Receivers_Setup_Indoor_SameTx/RX2/Device13_IQ.dat",
+      "metadata": {
+        "captures": [
+          {
+            "core:date": "2022-03-08",
+            "core:sample_start": 0,
+            "frequency": "915 MHz"
+          }
+        ],
+        "global": {
+          "core:author": "Jared Gaskin",
+          "core:sample_rate": "1 MS/s",
+          "core:description": "SigMF IQ samples recording of over-the-air LoRa transmissions collected by a fixed USRP B210 as a receiver. The data is collected in an indoor environment, with a transmitter-receiver separation distance of 5m. The transmitter emitted LoRa compliant frames generated via a Gnuradio. We used receiver 1 and 2 to capture the same signal.",
+          "core:datatype": "cf32"
+        },
+        "annotations": [
+          {
+            "core:sample_start": 0,
+            "wines:transmitter": {
+              "model": "LoPy4",
+              "ID": {
+                "Transmitter ID": "13",
+                "Transmission ID": 1
+              },
+              "antenna": {
+                "model": "LoRa Whip, Tilt RF",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "wines:reciever": {
+              "model": "Ettus USRP B210 with CBX ( 1200-6000  MH, 40 MHz BW) Daughterboard",
+              "antenna": {
+                "model": "Ettus VERT900",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "core:sample_count": 20000000
+          }
+        ]
+      },
+      "eligible_windows": 50,
+      "selected_windows": 50,
+      "sha256": "49757e71a1e76d942ef12c8ae23a12e221a68997fe2d0b37f04b8dccf04a54d3"
+    },
+    {
+      "receiver": "RX2",
+      "raw_label": 14,
+      "path": "/home/keyan/code-y-p2a/data/raw/osu_lora/Diff_Receivers_Setup/Diff_Receivers_Setup_Indoor_SameTx/RX2/Device14_IQ.dat",
+      "metadata": {
+        "captures": [
+          {
+            "core:date": "2022-03-08",
+            "core:sample_start": 0,
+            "frequency": "915 MHz"
+          }
+        ],
+        "global": {
+          "core:author": "Jared Gaskin",
+          "core:sample_rate": "1 MS/s",
+          "core:description": "SigMF IQ samples recording of over-the-air LoRa transmissions collected by a fixed USRP B210 as a receiver. The data is collected in an indoor environment, with a transmitter-receiver separation distance of 5m. The transmitter emitted LoRa compliant frames generated via a Gnuradio. We used receiver 1 and 2 to capture the same signal.",
+          "core:datatype": "cf32"
+        },
+        "annotations": [
+          {
+            "core:sample_start": 0,
+            "wines:transmitter": {
+              "model": "LoPy4",
+              "ID": {
+                "Transmitter ID": "14",
+                "Transmission ID": 1
+              },
+              "antenna": {
+                "model": "LoRa Whip, Tilt RF",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "wines:reciever": {
+              "model": "Ettus USRP B210 with CBX ( 1200-6000  MH, 40 MHz BW) Daughterboard",
+              "antenna": {
+                "model": "Ettus VERT900",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "core:sample_count": 20000000
+          }
+        ]
+      },
+      "eligible_windows": 47,
+      "selected_windows": 47,
+      "sha256": "2c76dda7d9c3bca6b5e782d648f35dfd0da34b5178f87050954010e90c8b1f32"
+    },
+    {
+      "receiver": "RX2",
+      "raw_label": 15,
+      "path": "/home/keyan/code-y-p2a/data/raw/osu_lora/Diff_Receivers_Setup/Diff_Receivers_Setup_Indoor_SameTx/RX2/Device15_IQ.dat",
+      "metadata": {
+        "captures": [
+          {
+            "core:date": "2022-03-08",
+            "core:sample_start": 0,
+            "frequency": "915 MHz"
+          }
+        ],
+        "global": {
+          "core:author": "Jared Gaskin",
+          "core:sample_rate": "1 MS/s",
+          "core:description": "SigMF IQ samples recording of over-the-air LoRa transmissions collected by a fixed USRP B210 as a receiver. The data is collected in an indoor environment, with a transmitter-receiver separation distance of 5m. The transmitter emitted LoRa compliant frames generated via a Gnuradio. We used receiver 1 and 2 to capture the same signal.",
+          "core:datatype": "cf32"
+        },
+        "annotations": [
+          {
+            "core:sample_start": 0,
+            "wines:transmitter": {
+              "model": "LoPy4",
+              "ID": {
+                "Transmitter ID": "15",
+                "Transmission ID": 1
+              },
+              "antenna": {
+                "model": "LoRa Whip, Tilt RF",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "wines:reciever": {
+              "model": "Ettus USRP B210 with CBX ( 1200-6000  MH, 40 MHz BW) Daughterboard",
+              "antenna": {
+                "model": "Ettus VERT900",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "core:sample_count": 20000000
+          }
+        ]
+      },
+      "eligible_windows": 50,
+      "selected_windows": 50,
+      "sha256": "5c1a6071d9409f4d5c0e707a0840635b2a84051b06cbe3f3623a976353f331f3"
+    },
+    {
+      "receiver": "RX2",
+      "raw_label": 16,
+      "path": "/home/keyan/code-y-p2a/data/raw/osu_lora/Diff_Receivers_Setup/Diff_Receivers_Setup_Indoor_SameTx/RX2/Device16_IQ.dat",
+      "metadata": {
+        "captures": [
+          {
+            "core:date": "2022-03-08",
+            "core:sample_start": 0,
+            "frequency": "915 MHz"
+          }
+        ],
+        "global": {
+          "core:author": "Jared Gaskin",
+          "core:sample_rate": "1 MS/s",
+          "core:description": "SigMF IQ samples recording of over-the-air LoRa transmissions collected by a fixed USRP B210 as a receiver. The data is collected in an indoor environment, with a transmitter-receiver separation distance of 5m. The transmitter emitted LoRa compliant frames generated via a Gnuradio. We used receiver 1 and 2 to capture the same signal.",
+          "core:datatype": "cf32"
+        },
+        "annotations": [
+          {
+            "core:sample_start": 0,
+            "wines:transmitter": {
+              "model": "LoPy4",
+              "ID": {
+                "Transmitter ID": "16",
+                "Transmission ID": 1
+              },
+              "antenna": {
+                "model": "LoRa Whip, Tilt RF",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "wines:reciever": {
+              "model": "Ettus USRP B210 with CBX ( 1200-6000  MH, 40 MHz BW) Daughterboard",
+              "antenna": {
+                "model": "Ettus VERT900",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "core:sample_count": 20000000
+          }
+        ]
+      },
+      "eligible_windows": 200,
+      "selected_windows": 200,
+      "sha256": "8d7e83df71b4da743b20d2a73e1933dba529103389f5a427fb57a30f641579c3"
+    },
+    {
+      "receiver": "RX2",
+      "raw_label": 17,
+      "path": "/home/keyan/code-y-p2a/data/raw/osu_lora/Diff_Receivers_Setup/Diff_Receivers_Setup_Indoor_SameTx/RX2/Device17_IQ.dat",
+      "metadata": {
+        "captures": [
+          {
+            "core:date": "2022-03-08",
+            "core:sample_start": 0,
+            "frequency": "915 MHz"
+          }
+        ],
+        "global": {
+          "core:author": "Jared Gaskin",
+          "core:sample_rate": "1 MS/s",
+          "core:description": "SigMF IQ samples recording of over-the-air LoRa transmissions collected by a fixed USRP B210 as a receiver. The data is collected in an indoor environment, with a transmitter-receiver separation distance of 5m. The transmitter emitted LoRa compliant frames generated via a Gnuradio. We used receiver 1 and 2 to capture the same signal.",
+          "core:datatype": "cf32"
+        },
+        "annotations": [
+          {
+            "core:sample_start": 0,
+            "wines:transmitter": {
+              "model": "LoPy4",
+              "ID": {
+                "Transmitter ID": "17",
+                "Transmission ID": 1
+              },
+              "antenna": {
+                "model": "LoRa Whip, Tilt RF",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "wines:reciever": {
+              "model": "Ettus USRP B210 with CBX ( 1200-6000  MH, 40 MHz BW) Daughterboard",
+              "antenna": {
+                "model": "Ettus VERT900",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "core:sample_count": 20000000
+          }
+        ]
+      },
+      "eligible_windows": 49,
+      "selected_windows": 49,
+      "sha256": "8d528fd1a7efe1e599dbc8714fc86ca60119bb896a4dd93dc24c9c3c05c96d52"
+    },
+    {
+      "receiver": "RX2",
+      "raw_label": 18,
+      "path": "/home/keyan/code-y-p2a/data/raw/osu_lora/Diff_Receivers_Setup/Diff_Receivers_Setup_Indoor_SameTx/RX2/Device18_IQ.dat",
+      "metadata": {
+        "captures": [
+          {
+            "core:date": "2022-03-08",
+            "core:sample_start": 0,
+            "frequency": "915 MHz"
+          }
+        ],
+        "global": {
+          "core:author": "Jared Gaskin",
+          "core:sample_rate": "1 MS/s",
+          "core:description": "SigMF IQ samples recording of over-the-air LoRa transmissions collected by a fixed USRP B210 as a receiver. The data is collected in an indoor environment, with a transmitter-receiver separation distance of 5m. The transmitter emitted LoRa compliant frames generated via a Gnuradio. We used receiver 1 and 2 to capture the same signal.",
+          "core:datatype": "cf32"
+        },
+        "annotations": [
+          {
+            "core:sample_start": 0,
+            "wines:transmitter": {
+              "model": "LoPy4",
+              "ID": {
+                "Transmitter ID": "18",
+                "Transmission ID": 1
+              },
+              "antenna": {
+                "model": "LoRa Whip, Tilt RF",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "wines:reciever": {
+              "model": "Ettus USRP B210 with CBX ( 1200-6000  MH, 40 MHz BW) Daughterboard",
+              "antenna": {
+                "model": "Ettus VERT900",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "core:sample_count": 20000000
+          }
+        ]
+      },
+      "eligible_windows": 200,
+      "selected_windows": 200,
+      "sha256": "f1c25fac75afad25a8852e28a9a6913a6369e1e98c9b00705e296ca3c11fc7d5"
+    },
+    {
+      "receiver": "RX2",
+      "raw_label": 19,
+      "path": "/home/keyan/code-y-p2a/data/raw/osu_lora/Diff_Receivers_Setup/Diff_Receivers_Setup_Indoor_SameTx/RX2/Device19_IQ.dat",
+      "metadata": {
+        "captures": [
+          {
+            "core:date": "2022-03-08",
+            "core:sample_start": 0,
+            "frequency": "915 MHz"
+          }
+        ],
+        "global": {
+          "core:author": "Jared Gaskin",
+          "core:sample_rate": "1 MS/s",
+          "core:description": "SigMF IQ samples recording of over-the-air LoRa transmissions collected by a fixed USRP B210 as a receiver. The data is collected in an indoor environment, with a transmitter-receiver separation distance of 5m. The transmitter emitted LoRa compliant frames generated via a Gnuradio. We used receiver 1 and 2 to capture the same signal.",
+          "core:datatype": "cf32"
+        },
+        "annotations": [
+          {
+            "core:sample_start": 0,
+            "wines:transmitter": {
+              "model": "LoPy4",
+              "ID": {
+                "Transmitter ID": "19",
+                "Transmission ID": 1
+              },
+              "antenna": {
+                "model": "LoRa Whip, Tilt RF",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "wines:reciever": {
+              "model": "Ettus USRP B210 with CBX ( 1200-6000  MH, 40 MHz BW) Daughterboard",
+              "antenna": {
+                "model": "Ettus VERT900",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "core:sample_count": 20000000
+          }
+        ]
+      },
+      "eligible_windows": 46,
+      "selected_windows": 46,
+      "sha256": "ed6f87cd63e0a5117d27da7ab17d29937a733f2c1c028e2fa5003ad32db19146"
+    },
+    {
+      "receiver": "RX2",
+      "raw_label": 20,
+      "path": "/home/keyan/code-y-p2a/data/raw/osu_lora/Diff_Receivers_Setup/Diff_Receivers_Setup_Indoor_SameTx/RX2/Device20_IQ.dat",
+      "metadata": {
+        "captures": [
+          {
+            "core:date": "2022-03-08",
+            "core:sample_start": 0,
+            "frequency": "915 MHz"
+          }
+        ],
+        "global": {
+          "core:author": "Jared Gaskin",
+          "core:sample_rate": "1 MS/s",
+          "core:description": "SigMF IQ samples recording of over-the-air LoRa transmissions collected by a fixed USRP B210 as a receiver. The data is collected in an indoor environment, with a transmitter-receiver separation distance of 5m. The transmitter emitted LoRa compliant frames generated via a Gnuradio. We used receiver 1 and 2 to capture the same signal.",
+          "core:datatype": "cf32"
+        },
+        "annotations": [
+          {
+            "core:sample_start": 0,
+            "wines:transmitter": {
+              "model": "LoPy4",
+              "ID": {
+                "Transmitter ID": "20",
+                "Transmission ID": 1
+              },
+              "antenna": {
+                "model": "LoRa Whip, Tilt RF",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "wines:reciever": {
+              "model": "Ettus USRP B210 with CBX ( 1200-6000  MH, 40 MHz BW) Daughterboard",
+              "antenna": {
+                "model": "Ettus VERT900",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "core:sample_count": 20000000
+          }
+        ]
+      },
+      "eligible_windows": 50,
+      "selected_windows": 50,
+      "sha256": "303fd6361aa89f939b7be9b5e0407ee6b59e0292554697f7e2e564771d21143c"
+    },
+    {
+      "receiver": "RX2",
+      "raw_label": 21,
+      "path": "/home/keyan/code-y-p2a/data/raw/osu_lora/Diff_Receivers_Setup/Diff_Receivers_Setup_Indoor_SameTx/RX2/Device21_IQ.dat",
+      "metadata": {
+        "captures": [
+          {
+            "core:date": "2022-03-08",
+            "core:sample_start": 0,
+            "frequency": "915 MHz"
+          }
+        ],
+        "global": {
+          "core:author": "Jared Gaskin",
+          "core:sample_rate": "1 MS/s",
+          "core:description": "SigMF IQ samples recording of over-the-air LoRa transmissions collected by a fixed USRP B210 as a receiver. The data is collected in an indoor environment, with a transmitter-receiver separation distance of 5m. The transmitter emitted LoRa compliant frames generated via a Gnuradio. We used receiver 1 and 2 to capture the same signal.",
+          "core:datatype": "cf32"
+        },
+        "annotations": [
+          {
+            "core:sample_start": 0,
+            "wines:transmitter": {
+              "model": "LoPy4",
+              "ID": {
+                "Transmitter ID": "21",
+                "Transmission ID": 1
+              },
+              "antenna": {
+                "model": "LoRa Whip, Tilt RF",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "wines:reciever": {
+              "model": "Ettus USRP B210 with CBX ( 1200-6000  MH, 40 MHz BW) Daughterboard",
+              "antenna": {
+                "model": "Ettus VERT900",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "core:sample_count": 20000000
+          }
+        ]
+      },
+      "eligible_windows": 180,
+      "selected_windows": 180,
+      "sha256": "1184a37367bb59a4417b78fbcca7f597a33fa08d5a7b5e9e0661459e1b7b8bd0"
+    },
+    {
+      "receiver": "RX2",
+      "raw_label": 22,
+      "path": "/home/keyan/code-y-p2a/data/raw/osu_lora/Diff_Receivers_Setup/Diff_Receivers_Setup_Indoor_SameTx/RX2/Device22_IQ.dat",
+      "metadata": {
+        "captures": [
+          {
+            "core:date": "2022-03-08",
+            "core:sample_start": 0,
+            "frequency": "915 MHz"
+          }
+        ],
+        "global": {
+          "core:author": "Jared Gaskin",
+          "core:sample_rate": "1 MS/s",
+          "core:description": "SigMF IQ samples recording of over-the-air LoRa transmissions collected by a fixed USRP B210 as a receiver. The data is collected in an indoor environment, with a transmitter-receiver separation distance of 5m. The transmitter emitted LoRa compliant frames generated via a Gnuradio. We used receiver 1 and 2 to capture the same signal.",
+          "core:datatype": "cf32"
+        },
+        "annotations": [
+          {
+            "core:sample_start": 0,
+            "wines:transmitter": {
+              "model": "LoPy4",
+              "ID": {
+                "Transmitter ID": "22",
+                "Transmission ID": 1
+              },
+              "antenna": {
+                "model": "LoRa Whip, Tilt RF",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "wines:reciever": {
+              "model": "Ettus USRP B210 with CBX ( 1200-6000  MH, 40 MHz BW) Daughterboard",
+              "antenna": {
+                "model": "Ettus VERT900",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "core:sample_count": 20000000
+          }
+        ]
+      },
+      "eligible_windows": 47,
+      "selected_windows": 47,
+      "sha256": "38c1912846989f42e49dfbbb3b730e00dca12ac38e5d2b5710ab0901e5b697be"
+    },
+    {
+      "receiver": "RX2",
+      "raw_label": 23,
+      "path": "/home/keyan/code-y-p2a/data/raw/osu_lora/Diff_Receivers_Setup/Diff_Receivers_Setup_Indoor_SameTx/RX2/Device23_IQ.dat",
+      "metadata": {
+        "captures": [
+          {
+            "core:date": "2022-03-08",
+            "core:sample_start": 0,
+            "frequency": "915 MHz"
+          }
+        ],
+        "global": {
+          "core:author": "Jared Gaskin",
+          "core:sample_rate": "1 MS/s",
+          "core:description": "SigMF IQ samples recording of over-the-air LoRa transmissions collected by a fixed USRP B210 as a receiver. The data is collected in an indoor environment, with a transmitter-receiver separation distance of 5m. The transmitter emitted LoRa compliant frames generated via a Gnuradio. We used receiver 1 and 2 to capture the same signal.",
+          "core:datatype": "cf32"
+        },
+        "annotations": [
+          {
+            "core:sample_start": 0,
+            "wines:transmitter": {
+              "model": "LoPy4",
+              "ID": {
+                "Transmitter ID": "23",
+                "Transmission ID": 1
+              },
+              "antenna": {
+                "model": "LoRa Whip, Tilt RF",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "wines:reciever": {
+              "model": "Ettus USRP B210 with CBX ( 1200-6000  MH, 40 MHz BW) Daughterboard",
+              "antenna": {
+                "model": "Ettus VERT900",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "core:sample_count": 20000000
+          }
+        ]
+      },
+      "eligible_windows": 47,
+      "selected_windows": 47,
+      "sha256": "03daba918b036809837e5366a31c361175b8d4d98e3df4a7d81d6efcbe355268"
+    },
+    {
+      "receiver": "RX2",
+      "raw_label": 24,
+      "path": "/home/keyan/code-y-p2a/data/raw/osu_lora/Diff_Receivers_Setup/Diff_Receivers_Setup_Indoor_SameTx/RX2/Device24_IQ.dat",
+      "metadata": {
+        "captures": [
+          {
+            "core:date": "2022-03-08",
+            "core:sample_start": 0,
+            "frequency": "915 MHz"
+          }
+        ],
+        "global": {
+          "core:author": "Jared Gaskin",
+          "core:sample_rate": "1 MS/s",
+          "core:description": "SigMF IQ samples recording of over-the-air LoRa transmissions collected by a fixed USRP B210 as a receiver. The data is collected in an indoor environment, with a transmitter-receiver separation distance of 5m. The transmitter emitted LoRa compliant frames generated via a Gnuradio. We used receiver 1 and 2 to capture the same signal.",
+          "core:datatype": "cf32"
+        },
+        "annotations": [
+          {
+            "core:sample_start": 0,
+            "wines:transmitter": {
+              "model": "LoPy4",
+              "ID": {
+                "Transmitter ID": "24",
+                "Transmission ID": 1
+              },
+              "antenna": {
+                "model": "LoRa Whip, Tilt RF",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "wines:reciever": {
+              "model": "Ettus USRP B210 with CBX ( 1200-6000  MH, 40 MHz BW) Daughterboard",
+              "antenna": {
+                "model": "Ettus VERT900",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "core:sample_count": 20000000
+          }
+        ]
+      },
+      "eligible_windows": 45,
+      "selected_windows": 45,
+      "sha256": "c324b054f754c1470b819c456faba4f147e044982815823c1ce8d85c820cf89b"
+    },
+    {
+      "receiver": "RX2",
+      "raw_label": 25,
+      "path": "/home/keyan/code-y-p2a/data/raw/osu_lora/Diff_Receivers_Setup/Diff_Receivers_Setup_Indoor_SameTx/RX2/Device25_IQ.dat",
+      "metadata": {
+        "captures": [
+          {
+            "core:date": "2022-03-08",
+            "core:sample_start": 0,
+            "frequency": "915 MHz"
+          }
+        ],
+        "global": {
+          "core:author": "Jared Gaskin",
+          "core:sample_rate": "1 MS/s",
+          "core:description": "SigMF IQ samples recording of over-the-air LoRa transmissions collected by a fixed USRP B210 as a receiver. The data is collected in an indoor environment, with a transmitter-receiver separation distance of 5m. The transmitter emitted LoRa compliant frames generated via a Gnuradio. We used receiver 1 and 2 to capture the same signal.",
+          "core:datatype": "cf32"
+        },
+        "annotations": [
+          {
+            "core:sample_start": 0,
+            "wines:transmitter": {
+              "model": "LoPy4",
+              "ID": {
+                "Transmitter ID": "25",
+                "Transmission ID": 1
+              },
+              "antenna": {
+                "model": "LoRa Whip, Tilt RF",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "wines:reciever": {
+              "model": "Ettus USRP B210 with CBX ( 1200-6000  MH, 40 MHz BW) Daughterboard",
+              "antenna": {
+                "model": "Ettus VERT900",
+                "type": "Vertical",
+                "gain": 1
+              }
+            },
+            "core:sample_count": 20000000
+          }
+        ]
+      },
+      "eligible_windows": 49,
+      "selected_windows": 49,
+      "sha256": "e5e951fea4a77ec20bacf9304addc55518ab645c0ea35ca04b62c1249b37ec65"
+    }
+  ],
+  "stats": {
+    "full_cis": {
+      "count": 10719072,
+      "sum": 248088.6089443715,
+      "sum_squares": 4694105.160450086
+    },
+    "strict_cis": {
+      "count": 10719072,
+      "sum": 50835.200952707826,
+      "sum_squares": 4091763.752787761
+    }
+  },
+  "num_classes": 25,
+  "row_semantics": "original HDF5 row or OSU continuous capture start sample"
+}

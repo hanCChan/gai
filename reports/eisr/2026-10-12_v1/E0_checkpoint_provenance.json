@@ -1,0 +1,432 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "run": "CV0_full_cis",
+      "epoch": 20,
+      "checkpoint_sha256": "2194dbc0b70c8abec636a6ddbdea757cd16338fe216482725fe18a6c0428d46a",
+      "state_payload_sha256": "a5a1633bf19cf24fb5c5547437ac2ec3dee0efec380c87fc0d55a3736fa24b0e",
+      "best_epoch_not_used": 15,
+      "train_keys": [
+        "shen_b210_1_train",
+        "shen_rtl_1_train",
+        "shen_rtl_3_train",
+        "shen_rtl_6_train",
+        "shen_rtl_9_train"
+      ],
+      "validation_keys": [
+        "shen_b200_mini_1_train",
+        "shen_pluto_1_train",
+        "shen_rtl_2_train",
+        "shen_rtl_5_train",
+        "shen_rtl_7_train"
+      ],
+      "original_scaler": {
+        "mean": -0.004622720516396472,
+        "std": 0.6717374436330074,
+        "fit_source_keys": [
+          "shen_b210_1_train",
+          "shen_rtl_1_train",
+          "shen_rtl_3_train",
+          "shen_rtl_6_train",
+          "shen_rtl_9_train"
+        ]
+      },
+      "history_epochs": 20,
+      "matching_log_epochs": 20,
+      "optimizer": "Adam",
+      "lr": 0.0003,
+      "weight_decay": 0.0,
+      "fixed_training_control_flow_verified": true,
+      "archived_execution_source_verified": true,
+      "archived_code_checks": [
+        {
+          "path": "src/shen_p2a8/__init__.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_p2a8/features.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_p2a8/g1_data.py",
+          "status": "exact_historical_hash_recovered_functions_unchanged",
+          "revision": "5661a32"
+        },
+        {
+          "path": "src/shen_evidence/dataset.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_evidence/inputs.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_evidence/models.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_evidence/__init__.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_evidence/runner.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_p2a/representations.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_p2a/models.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_p2a/__init__.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_p2a/bands.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_p2a/iq_cache.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_p2a/cache.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_p2a/runner.py",
+          "status": "unused_snapshot_hash_differs_not_G1_dependency",
+          "historical_hash": "95c8684d6eea5ca2d2832ce58ea23c9c13a9ab5ef4893c74eadbb7bf93c9b5ee",
+          "current_hash": "950796a161b2ed18ec15ec1519b1ab3a488c6b0bcb8de7f7d12a0ceaa62996b6"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "run": "CV0_strict_cis",
+      "epoch": 20,
+      "checkpoint_sha256": "391742b683250e902f2cd1a80778417db324ca590a3f7f8d4a2ccb2bc36de0d6",
+      "state_payload_sha256": "5e18870406eec07670dcaf188d314104f797015693afb3faf7ceaf9bd0ab2e6e",
+      "best_epoch_not_used": 18,
+      "train_keys": [
+        "shen_b210_1_train",
+        "shen_rtl_1_train",
+        "shen_rtl_3_train",
+        "shen_rtl_6_train",
+        "shen_rtl_9_train"
+      ],
+      "validation_keys": [
+        "shen_b200_mini_1_train",
+        "shen_pluto_1_train",
+        "shen_rtl_2_train",
+        "shen_rtl_5_train",
+        "shen_rtl_7_train"
+      ],
+      "original_scaler": {
+        "mean": -0.0043211307477714345,
+        "std": 0.5786525444358795,
+        "fit_source_keys": [
+          "shen_b210_1_train",
+          "shen_rtl_1_train",
+          "shen_rtl_3_train",
+          "shen_rtl_6_train",
+          "shen_rtl_9_train"
+        ]
+      },
+      "history_epochs": 20,
+      "matching_log_epochs": 20,
+      "optimizer": "Adam",
+      "lr": 0.0003,
+      "weight_decay": 0.0,
+      "fixed_training_control_flow_verified": true,
+      "archived_execution_source_verified": true,
+      "archived_code_checks": [
+        {
+          "path": "src/shen_p2a8/__init__.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_p2a8/features.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_p2a8/g1_data.py",
+          "status": "exact_historical_hash_recovered_functions_unchanged",
+          "revision": "5661a32"
+        },
+        {
+          "path": "src/shen_evidence/dataset.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_evidence/inputs.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_evidence/models.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_evidence/__init__.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_evidence/runner.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_p2a/representations.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_p2a/models.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_p2a/__init__.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_p2a/bands.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_p2a/iq_cache.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_p2a/cache.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_p2a/runner.py",
+          "status": "unused_snapshot_hash_differs_not_G1_dependency",
+          "historical_hash": "95c8684d6eea5ca2d2832ce58ea23c9c13a9ab5ef4893c74eadbb7bf93c9b5ee",
+          "current_hash": "950796a161b2ed18ec15ec1519b1ab3a488c6b0bcb8de7f7d12a0ceaa62996b6"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "run": "CV1_full_cis",
+      "epoch": 20,
+      "checkpoint_sha256": "d6891eda9d11ceb6b8a31294992350e516fcd1ad582392cb7ed8424902ae3642",
+      "state_payload_sha256": "8b921974f08ecbd0c03264f9f1361099087d4036712f002c1f9060550a2dec55",
+      "best_epoch_not_used": 17,
+      "train_keys": [
+        "shen_b200_mini_1_train",
+        "shen_pluto_1_train",
+        "shen_rtl_2_train",
+        "shen_rtl_5_train",
+        "shen_rtl_7_train"
+      ],
+      "validation_keys": [
+        "shen_b210_1_train",
+        "shen_rtl_1_train",
+        "shen_rtl_3_train",
+        "shen_rtl_6_train",
+        "shen_rtl_9_train"
+      ],
+      "original_scaler": {
+        "mean": -0.004510739829165409,
+        "std": 0.6860898774264873,
+        "fit_source_keys": [
+          "shen_b200_mini_1_train",
+          "shen_pluto_1_train",
+          "shen_rtl_2_train",
+          "shen_rtl_5_train",
+          "shen_rtl_7_train"
+        ]
+      },
+      "history_epochs": 20,
+      "matching_log_epochs": 20,
+      "optimizer": "Adam",
+      "lr": 0.0003,
+      "weight_decay": 0.0,
+      "fixed_training_control_flow_verified": true,
+      "archived_execution_source_verified": true,
+      "archived_code_checks": [
+        {
+          "path": "src/shen_p2a8/__init__.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_p2a8/features.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_p2a8/g1_data.py",
+          "status": "exact_historical_hash_recovered_functions_unchanged",
+          "revision": "5661a32"
+        },
+        {
+          "path": "src/shen_evidence/dataset.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_evidence/inputs.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_evidence/models.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_evidence/__init__.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_evidence/runner.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_p2a/representations.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_p2a/models.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_p2a/__init__.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_p2a/bands.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_p2a/iq_cache.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_p2a/cache.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_p2a/runner.py",
+          "status": "unused_snapshot_hash_differs_not_G1_dependency",
+          "historical_hash": "95c8684d6eea5ca2d2832ce58ea23c9c13a9ab5ef4893c74eadbb7bf93c9b5ee",
+          "current_hash": "950796a161b2ed18ec15ec1519b1ab3a488c6b0bcb8de7f7d12a0ceaa62996b6"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "run": "CV1_strict_cis",
+      "epoch": 20,
+      "checkpoint_sha256": "27373731c2ef8babcdf41ddc21fbab44477555deac4f7fa10ad09df6de96532d",
+      "state_payload_sha256": "96caa9d4efb0dac496e8964d7793258c1a140e52293cb501912072a6235ef0bc",
+      "best_epoch_not_used": 19,
+      "train_keys": [
+        "shen_b200_mini_1_train",
+        "shen_pluto_1_train",
+        "shen_rtl_2_train",
+        "shen_rtl_5_train",
+        "shen_rtl_7_train"
+      ],
+      "validation_keys": [
+        "shen_b210_1_train",
+        "shen_rtl_1_train",
+        "shen_rtl_3_train",
+        "shen_rtl_6_train",
+        "shen_rtl_9_train"
+      ],
+      "original_scaler": {
+        "mean": -0.004316565092352499,
+        "std": 0.579817229282655,
+        "fit_source_keys": [
+          "shen_b200_mini_1_train",
+          "shen_pluto_1_train",
+          "shen_rtl_2_train",
+          "shen_rtl_5_train",
+          "shen_rtl_7_train"
+        ]
+      },
+      "history_epochs": 20,
+      "matching_log_epochs": 20,
+      "optimizer": "Adam",
+      "lr": 0.0003,
+      "weight_decay": 0.0,
+      "fixed_training_control_flow_verified": true,
+      "archived_execution_source_verified": true,
+      "archived_code_checks": [
+        {
+          "path": "src/shen_p2a8/__init__.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_p2a8/features.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_p2a8/g1_data.py",
+          "status": "exact_historical_hash_recovered_functions_unchanged",
+          "revision": "5661a32"
+        },
+        {
+          "path": "src/shen_evidence/dataset.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_evidence/inputs.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_evidence/models.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_evidence/__init__.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_evidence/runner.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_p2a/representations.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_p2a/models.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_p2a/__init__.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_p2a/bands.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_p2a/iq_cache.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_p2a/cache.py",
+          "status": "exact_source_hash_match"
+        },
+        {
+          "path": "src/shen_p2a/runner.py",
+          "status": "unused_snapshot_hash_differs_not_G1_dependency",
+          "historical_hash": "95c8684d6eea5ca2d2832ce58ea23c9c13a9ab5ef4893c74eadbb7bf93c9b5ee",
+          "current_hash": "950796a161b2ed18ec15ec1519b1ab3a488c6b0bcb8de7f7d12a0ceaa62996b6"
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "training_entrypoint_versions": {
+    "5661a32": "2fb43bb067c95cc1c06327b0d90f812b058016893934a20ab00d1aca333899be",
+    "8b81fbb": "c7997aec1fe02df2999b342f5b1dbfef9849ddb32c5a00c5cbde99e34f0bea52",
+    "HEAD": "c7997aec1fe02df2999b342f5b1dbfef9849ddb32c5a00c5cbde99e34f0bea52"
+  },
+  "evidence_limit": "checkpoint stores no optimizer state or training-entrypoint hash; code/log/metadata corroboration, not cryptographic execution attestation",
+  "no_new_CNN_training": true
+}

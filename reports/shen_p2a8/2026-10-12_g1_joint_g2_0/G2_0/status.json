@@ -1,0 +1,24 @@
+{
+  "status": "completed",
+  "updated_utc": "2026-10-12T11:13:45.247409+00:00",
+  "decision": {
+    "status": "completed",
+    "outer_RX": 10,
+    "source_RX_per_fold": 9,
+    "usable_rank_correlations": 10,
+    "mean_rank_advantage_vs_source_accuracy_control": -0.519047619047619,
+    "mean_top_selection_F1_gain_vs_source_accuracy_control": -0.3583820624486648,
+    "positive_RX": 0,
+    "mean_rank_advantage_vs_source_F1_control": -0.530952380952381,
+    "mean_top_selection_F1_gain_vs_source_F1_control": -0.3583820624486648,
+    "positive_RX_vs_source_F1": 0,
+    "G2_0_positive_engineering_gate": false,
+    "G2_1_allowed": false,
+    "G3_started": false,
+    "old_P2_B_P3_started": false,
+    "developer_receivers_accessed": false,
+    "locked_accessed": false,
+    "deep_training_runs": 0,
+    "result_scope": "predictability for frozen linear classifiers of fixed CIS moments, not CNN failure prediction or proof of universal mechanism"
+  }
+}

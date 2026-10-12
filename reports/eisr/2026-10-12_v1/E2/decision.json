@@ -1,0 +1,44 @@
+{
+  "passed": false,
+  "gates": {
+    "mean_macro_f1": false,
+    "all_ten_RX_nonnegative": false,
+    "worst_TX_recall": false,
+    "no_severe_RX_TX_degradation": true
+  },
+  "mean_equal_RX_delta_macro_f1": -0.0007831768032591669,
+  "minimum_RX_delta_macro_f1": -0.00790005077272704,
+  "baseline_worst_TX_recall": 0.49450000000000005,
+  "selector_worst_TX_recall": 0.4739999999999999,
+  "worst_TX_recall_gain": -0.02050000000000013,
+  "baseline_equal_RX_recall_by_TX": [
+    0.874,
+    0.724,
+    0.7924999999999999,
+    0.7945,
+    0.49450000000000005,
+    0.9630000000000001,
+    0.9404999999999999,
+    0.8700000000000001,
+    0.952,
+    0.9944999999999998
+  ],
+  "selector_equal_RX_recall_by_TX": [
+    0.885,
+    0.7305,
+    0.8089999999999999,
+    0.7799999999999999,
+    0.4739999999999999,
+    0.9629999999999999,
+    0.9355,
+    0.8790000000000001,
+    0.9545,
+    0.993
+  ],
+  "severe_RX_TX": [],
+  "severe_fraction": 0.0,
+  "linear_fits": 10,
+  "expert_training_runs": 0,
+  "baseline_selection_used_test_labels": false,
+  "next_stage_not_authorized": true
+}

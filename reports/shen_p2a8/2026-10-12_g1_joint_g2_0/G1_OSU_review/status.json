@@ -1,0 +1,12 @@
+{
+  "status": "completed",
+  "dataset": "osu",
+  "models_checked": 24,
+  "prediction_sets_checked": 24,
+  "training_changed": false,
+  "failed_seeds_removed": false,
+  "classes": 25,
+  "chance_accuracy": 0.04,
+  "CIS_positive_pairs": 6,
+  "CIS_pairs": 6
+}

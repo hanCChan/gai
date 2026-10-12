@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "registration_and_code_seals_verified": true,
+  "packets_reaggregated": 20000,
+  "perturbation_trials_reaggregated": 80000,
+  "independent_raw_packets": 100,
+  "independent_raw_perturbations": 400,
+  "max_response_absolute_error": 7.216449660063518e-16,
+  "max_delta_absolute_error": 0.0,
+  "source_only_access_verified": true,
+  "checks": [
+    {
+      "fold": 0,
+      "recomputed_primary_gates": {
+        "median_packet_delta_min": 0.030620686763644475,
+        "packet_fraction_delta_ge_005_min": 0.2283,
+        "all_realizations_delta_q95_max": 0.12715546630800018,
+        "all_realizations_iq_correlation_min": 0.9994779184548392
+      },
+      "go": false
+    },
+    {
+      "fold": 1,
+      "recomputed_primary_gates": {
+        "median_packet_delta_min": 0.05808301770686406,
+        "packet_fraction_delta_ge_005_min": 0.5793,
+        "all_realizations_delta_q95_max": 0.16367995787282522,
+        "all_realizations_iq_correlation_min": 0.9993637941342293
+      },
+      "go": false
+    }
+  ]
+}

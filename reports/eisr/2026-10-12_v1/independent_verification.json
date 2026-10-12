@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "registration_seal_verified": true,
+  "E0_independent_CPU_model_predictions": 200,
+  "max_CPU_logit_difference": 2.86102294921875e-06,
+  "expert_probability_records_recomputed": 40000,
+  "E1_source_packets_recomputed": 20000,
+  "soft_feasible_witnesses_verified": 18306,
+  "independent_soft_oracle_LP_checks": 200,
+  "equal_RX_Hard_gain": 0.0841,
+  "E2": {
+    "selector_predictions_recomputed": 20000,
+    "source_baseline_choices_recomputed": 10,
+    "equal_RX_macro_f1_gain": -0.0007831768032591669,
+    "worst_TX_recall_gain": -0.020500000000000185,
+    "serious_degradation_groups": [],
+    "gates": {
+      "mean_macro_f1": false,
+      "all_ten_RX_nonnegative": false,
+      "worst_TX_recall": false,
+      "no_severe_RX_TX_degradation": true
+    }
+  },
+  "no_new_CNN_training": true
+}
