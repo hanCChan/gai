@@ -1,0 +1,40 @@
+{
+  "scope": "post-audit numeric sensitivity only, not a new primary definition or gate",
+  "round_decimals": 12,
+  "reason": "probability subtraction and averaging may create floating micro-differences among mathematically tied count differences",
+  "profiles_checked": 240,
+  "input_vector_sha256": "6b5ae1748704d475c37c9f0bc19f9c9a7a9d9af0712371701d5bf92bcdcc844e",
+  "max_individual_capture_change": 0.06451612903225809,
+  "max_individual_spearman_change": 0.025642568158358713,
+  "primary": [
+    {
+      "fold": 0,
+      "median_signed_spearman": 0.4157866202390894,
+      "median_capture": 0.33333333333333337,
+      "median_gain_over": {
+        "recall_drop_only": 0.1632213608957796,
+        "class_difficulty_full": 0.2148846960167715,
+        "factorized_delta": 0.032258064516129115,
+        "absolute_full_confusion": -0.3548387096774194,
+        "absolute_strict_confusion": -0.4801894918173987,
+        "uniform": 0.22222222222222227
+      }
+    },
+    {
+      "fold": 1,
+      "median_signed_spearman": 0.3429237007777286,
+      "median_capture": 0.937888198757764,
+      "median_gain_over": {
+        "recall_drop_only": 0.055210489993098855,
+        "class_difficulty_full": 0.23268398268398272,
+        "factorized_delta": 0.06211180124223614,
+        "absolute_full_confusion": 0.012422360248447228,
+        "absolute_strict_confusion": 0.006211180124223614,
+        "uniform": 0.8267770876466529
+      }
+    }
+  ],
+  "primary_capture_medians_and_paired_gain_directions_unchanged": true,
+  "frozen_outputs_modified": false,
+  "new_training_or_inference": 0
+}

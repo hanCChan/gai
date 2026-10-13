@@ -1,0 +1,64 @@
+{
+  "passed": true,
+  "model_rx_assets_checked": 60,
+  "individual_recalls_checked": 600,
+  "confusion_counts_checked": 6000,
+  "checkpoints_checked": [
+    {
+      "run": "B0_seed20261013_CV0_full_cis",
+      "checkpoint_sha256": "1cadf289970520f90facde0ba7937c439457151472c892e6d8cf596d8e415f10",
+      "optimizer_steps": 3140,
+      "parameters": 658314
+    },
+    {
+      "run": "B0_seed20261013_CV0_strict_cis",
+      "checkpoint_sha256": "19567a42fa2a968915921eece18f2b5baec5514fe91e88cf2ffa509ff08d169a",
+      "optimizer_steps": 3140,
+      "parameters": 658314
+    },
+    {
+      "run": "B0_seed20261013_CV1_full_cis",
+      "checkpoint_sha256": "d49c111d4e39ed47de77edf326482e0a88ad292367168ff32760af21fbbc2321",
+      "optimizer_steps": 3140,
+      "parameters": 658314
+    },
+    {
+      "run": "B0_seed20261013_CV1_strict_cis",
+      "checkpoint_sha256": "63bff4b359e2aade496818e582313df2f86136a51196b619f87699fffc2a60c8",
+      "optimizer_steps": 3140,
+      "parameters": 658314
+    },
+    {
+      "run": "B0_seed20261014_CV0_full_cis",
+      "checkpoint_sha256": "1dc9e75637a6ff6a269a9d84c3dd042a012adc1e866c6bc9e50b541387f8e799",
+      "optimizer_steps": 3140,
+      "parameters": 658314
+    },
+    {
+      "run": "B0_seed20261014_CV0_strict_cis",
+      "checkpoint_sha256": "bb0a784f2681bb9fd3a35a595f4e0a7bd05902888c71139635b96ce1f1bc9581",
+      "optimizer_steps": 3140,
+      "parameters": 658314
+    },
+    {
+      "run": "B0_seed20261014_CV1_full_cis",
+      "checkpoint_sha256": "e1c529f29d1a49d83e854959575b0afaa7a7ea48d7ff9aec6a8960b4a774cb6c",
+      "optimizer_steps": 3140,
+      "parameters": 658314
+    },
+    {
+      "run": "B0_seed20261014_CV1_strict_cis",
+      "checkpoint_sha256": "d19f8520af9a912364fb2e3d84db415cd3b92244e8353a02b61f89ba63267fe8",
+      "optimizer_steps": 3140,
+      "parameters": 658314
+    }
+  ],
+  "initial_payloads_paired_across_full_strict_and_folds": true,
+  "retained_pre_fit_failure_attempts": 8,
+  "actual_fitting_jobs": 8,
+  "training_retries": 0,
+  "seed_replacements": 0,
+  "source_seals_and_original_versions_verified": true,
+  "no_new_inference": true,
+  "reserved_gpu_hours": 0.22809600921972206
+}

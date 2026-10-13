@@ -1,6 +1,6 @@
 # gai：LoRa RFFI 开发实验
 
-[最新研究状态](RESEARCH_STATUS.md)：D0类别判别审计已完成，源池内有有限正证，强基线剩余缺口未知，完成D0即停止。[D0计划](docs/d0_class_pair/EXECUTION_PLAN.md)、[文献差异矩阵](docs/d0_class_pair/LITERATURE_MATRIX.md)、[报告与完整数值/代码证据](reports/d0_class_pair/2026-10-13_D0/REPORT.md)。本轮训练/推理/数据下载均为0；P0与C0保持停止。
+[最新研究状态](RESEARCH_STATUS.md)：D0.5+B0已完成，8次实际训练、三seed结果齐全；局部严重损害可重复，signed损害风险跨CNN检索失败。[本轮报告](reports/d05_b0/2026-10-13/REPORT.md)、[更新计划](docs/d05_b0/EXECUTION_PLAN.md)、[B1审核材料，未训练](docs/d05_b0/B1_REVIEW_PLAN.md)。完成授权工作后停止，保留全部历史负结果。
 
 [研究报告与完整证据索引](reports/RESEARCH_REPORT_INDEX.md)：G1/G2-0、VIRP-v1 和 EISR-v1，包含冻结规则、独立复核与证据 ZIP。
 

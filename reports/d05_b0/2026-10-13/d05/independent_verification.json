@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "profiles_independently_rebuilt": 240,
+  "ranking_vectors_checked": 21600,
+  "all_references_exclude_probe": true,
+  "signed_correlation_and_positive_mass_checked": true,
+  "metrics_modules_imported": false
+}

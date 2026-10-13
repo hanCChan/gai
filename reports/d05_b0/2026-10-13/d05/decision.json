@@ -1,0 +1,40 @@
+{
+  "status": "EXPLORATORY_INCREMENTAL_DAMAGE_SIGNAL",
+  "signed_damage_predictive_screen": true,
+  "incremental_primary_baseline_screen": true,
+  "primary_summaries": [
+    {
+      "fold": 0,
+      "control": "same_paired_cnn_loro",
+      "probe_receivers": 5,
+      "median_signed_spearman": 0.4158400182964323,
+      "median_positive_mass_capture": 0.33333333333333337,
+      "median_capture_gain_over_recall_drop_only": 0.16322136089577957,
+      "median_capture_gain_over_class_difficulty_full": 0.2148846960167715,
+      "median_capture_gain_over_absolute_full_confusion": -0.35483870967741926,
+      "median_capture_gain_over_absolute_strict_confusion": -0.4801894918173986,
+      "median_capture_gain_over_factorized_delta": 0.03225806451612906,
+      "median_capture_gain_over_positive_mass_factorized": 0.0779500430663222,
+      "median_capture_gain_over_uniform": 0.22222222222222227
+    },
+    {
+      "fold": 1,
+      "control": "same_paired_cnn_loro",
+      "probe_receivers": 5,
+      "median_signed_spearman": 0.3431471369400376,
+      "median_positive_mass_capture": 0.937888198757764,
+      "median_capture_gain_over_recall_drop_only": 0.055210489993098855,
+      "median_capture_gain_over_class_difficulty_full": 0.2326839826839826,
+      "median_capture_gain_over_absolute_full_confusion": 0.012422360248447228,
+      "median_capture_gain_over_absolute_strict_confusion": 0.006211180124223614,
+      "median_capture_gain_over_factorized_delta": 0.06211180124223614,
+      "median_capture_gain_over_positive_mass_factorized": 0.06211180124223614,
+      "median_capture_gain_over_uniform": 0.8267770876466529
+    }
+  ],
+  "seed": 20261012,
+  "independent_holdout": false,
+  "causal_over_alignment_evidence": false,
+  "b0_still_authorized": true,
+  "b1_training_authorized": false
+}

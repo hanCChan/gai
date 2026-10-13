@@ -14,17 +14,16 @@ The user's 2026-10-13 instructions apply to future work in this repository.
 - Keep unpublished manuscripts, rejection letters, raw IQ, model weights,
   credentials, and personally identifying correspondence out of publication.
   Publish provenance hashes and factual summaries instead.
-- P0 and C0 remain stopped. The current authorized task is D0 class-pair and
-  literature-gap auditing, using ten source RX archived Full/Strict scores only.
-  OSU, four development RX, six historical locked RX and raw IQ are excluded.
-  Preserve the historical chronological data-gate conclusions; do not relabel
-  HDF5 row order as time or restart G2/VIRP/EISR/P0/C0 stopped experiments.
-- D0 completes with LIMITED_SUPPORT_CONDITIONAL_BASELINE_POC_ONLY. One seed
-  and missing strong-method scores/full texts prevent algorithm novelty claims.
-  Stop after D0. The baseline budget document is a proposal, not authorization
-  for new loss/attention/gate/CNN development, inference, dataset downloads or
-  training. Follow any later explicit user authorization.
-- No new neural-network training is authorized. Report the concrete cost before
-  adding frozen-model inference; do not silently expand the experiment budget.
+- P0/C0/G2/VIRP/EISR remain stopped. The latest explicit user plan approves
+  D0.5 archived signed-damage analysis and B0 exactly eight new CE runs with
+  seeds 20261013/14, Full/Strict CIS, two source-only folds, fixed20 epochs.
+  This later authorization overrides the earlier D0 no-training restriction.
+- Use only ten source RX cached CIS/labels/rows/manifests and archived scores.
+  Exclude OSU, four development RX, six locked RX, Day3/4 and raw IQ.
+- Cap B0 at eight actual fitting jobs and one reserved V100 GPU-hour; preserve
+  the eight zero-step provenance-preflight failures and all fitted-run failures,
+  no seed replacement or validation-selected checkpoint/LR/augmentation.
+- Prepare a concrete B1 implementation/budget plan, but do not train B1/B2 or
+  develop new loss/network/gate/pairwise algorithm. Stop after authorized work.
 - If publication fails, keep local artifacts, state what remains unpublished,
   and report the actual error. Local commits alone do not mean GitHub upload.

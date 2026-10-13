@@ -33,3 +33,13 @@ src/d0_class_pair/** -text
 scripts/*d0_class_pair.py -text
 scripts/test_d0_metrics.py -text
 reports/d0_class_pair/** -text -whitespace
+
+# New D0.5/B0 source/seals/evidence bytes are preserved exactly.
+docs/d05_b0/** -text -whitespace
+configs/d05_b0/** -text -whitespace
+src/d05_b0/** -text
+scripts/*d05*.py -text
+scripts/*b0_replication.py -text
+scripts/report_d05_b0.py -text
+scripts/prepare_b1_review.py -text
+reports/d05_b0/** -text -whitespace

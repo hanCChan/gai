@@ -1,0 +1,526 @@
+{
+  "registered_utc": "2026-10-13T04:48:30.563147+00:00",
+  "schema": 1,
+  "source_remote_commit": "dba18e8f5cb6bc9af48414c3e65fe7a7e7fb82be",
+  "source_receivers": [
+    "b200_mini_1",
+    "b210_1",
+    "pluto_1",
+    "rtl_1",
+    "rtl_2",
+    "rtl_3",
+    "rtl_5",
+    "rtl_6",
+    "rtl_7",
+    "rtl_9"
+  ],
+  "folds": [
+    [
+      "b200_mini_1",
+      "pluto_1",
+      "rtl_2",
+      "rtl_5",
+      "rtl_7"
+    ],
+    [
+      "b210_1",
+      "rtl_1",
+      "rtl_3",
+      "rtl_6",
+      "rtl_9"
+    ]
+  ],
+  "hardware_families": {
+    "b200_mini_1": "USRP B200 mini",
+    "b210_1": "USRP B210",
+    "pluto_1": "ADALM-Pluto",
+    "rtl_1": "RTL-SDR",
+    "rtl_2": "RTL-SDR",
+    "rtl_3": "RTL-SDR",
+    "rtl_5": "RTL-SDR",
+    "rtl_6": "RTL-SDR",
+    "rtl_7": "RTL-SDR",
+    "rtl_9": "RTL-SDR"
+  },
+  "history_root": "/home/keyan/code-y-p2a",
+  "original_seed": 20261012,
+  "new_seeds": [
+    20261013,
+    20261014
+  ],
+  "b0_methods": [
+    "full_cis",
+    "strict_cis"
+  ],
+  "feature_assets": {
+    "outputs/shen_p2a8/g1_cache_v1/shen_b200_mini_1_train/full_cis.npy": {
+      "sha256": "089a57b1fd5033b275aa217d0896a77540a5e8d498ca5be8934c800a2e11f884",
+      "bytes": 52416128
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_b200_mini_1_train/strict_cis.npy": {
+      "sha256": "61c720cd21778f3c08fbd17f553112043c39b6e11c8045e432d56b6a8adb0fb2",
+      "bytes": 52416128
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_b200_mini_1_train/labels.npy": {
+      "sha256": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b",
+      "bytes": 16128
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_b200_mini_1_train/rows.npy": {
+      "sha256": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060",
+      "bytes": 16128
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_b200_mini_1_train/manifest.json": {
+      "sha256": "7365e6a970bf6fcdabb2f04a00e4a7c61a681d6c776a9bd5452b00cc6f9bf248",
+      "bytes": 847
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_b210_1_train/full_cis.npy": {
+      "sha256": "b427bbb3eff9dbaabac7d276c175ffdbd5232938e465d75b4b8deaf19252083a",
+      "bytes": 52416128
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_b210_1_train/strict_cis.npy": {
+      "sha256": "95c31d380111d987e259208ce4d7623f14fbc84d8e85e4e6229269a79ae33253",
+      "bytes": 52416128
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_b210_1_train/labels.npy": {
+      "sha256": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b",
+      "bytes": 16128
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_b210_1_train/rows.npy": {
+      "sha256": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060",
+      "bytes": 16128
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_b210_1_train/manifest.json": {
+      "sha256": "000b318589b318ba66e938efcaf9bb0f6724bb18f364c242cefc6f30fc50fc4f",
+      "bytes": 829
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_pluto_1_train/full_cis.npy": {
+      "sha256": "02a826067fc27bbfc5dfb41af31c53ea7e037212b3a031e33bda60bb9c75dee9",
+      "bytes": 52416128
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_pluto_1_train/strict_cis.npy": {
+      "sha256": "1fc554531a06af088568f0e0f31236c8f69e8d16d41a6b63c75467e7e220aeb0",
+      "bytes": 52416128
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_pluto_1_train/labels.npy": {
+      "sha256": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b",
+      "bytes": 16128
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_pluto_1_train/rows.npy": {
+      "sha256": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060",
+      "bytes": 16128
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_pluto_1_train/manifest.json": {
+      "sha256": "ec13608c25be9e27698a74e52c49779635122f529f2c636c178d2bfca37cc936",
+      "bytes": 832
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_1_train/full_cis.npy": {
+      "sha256": "6a1ab3a34795e52d0aa44603758ee8ee6b771cb5c37bfb6569f83253e55dc7da",
+      "bytes": 52416128
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_1_train/strict_cis.npy": {
+      "sha256": "145869235ea1ecad4601bfcfc796196a02d81091a7d3482978007306250e7cd0",
+      "bytes": 52416128
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_1_train/labels.npy": {
+      "sha256": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b",
+      "bytes": 16128
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_1_train/rows.npy": {
+      "sha256": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060",
+      "bytes": 16128
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_1_train/manifest.json": {
+      "sha256": "0e78a978c74d64093c92d2a70527262e5d2726ddf4f4387e03b51a4d52c14319",
+      "bytes": 824
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_2_train/full_cis.npy": {
+      "sha256": "4badd9b306949fe09a24a8b84da4bf0ecfe8f77ba724c370f633264f7663f197",
+      "bytes": 52416128
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_2_train/strict_cis.npy": {
+      "sha256": "4e2c2336b848e274e22d5a6017adfdb902529ca801c4d723856ded2e37825865",
+      "bytes": 52416128
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_2_train/labels.npy": {
+      "sha256": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b",
+      "bytes": 16128
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_2_train/rows.npy": {
+      "sha256": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060",
+      "bytes": 16128
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_2_train/manifest.json": {
+      "sha256": "aabcc57070575d14747d5064e8e75413fe6c454fd254686cf77a77783738c58a",
+      "bytes": 823
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_3_train/full_cis.npy": {
+      "sha256": "f54b8dd4deada187e146067023f4e7fb14c705a24a2def82632bc3338a32ce58",
+      "bytes": 52416128
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_3_train/strict_cis.npy": {
+      "sha256": "afcc21d89da0357baf4077ac6578fe72a47db266f7d8c1197ada2285c2844a31",
+      "bytes": 52416128
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_3_train/labels.npy": {
+      "sha256": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b",
+      "bytes": 16128
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_3_train/rows.npy": {
+      "sha256": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060",
+      "bytes": 16128
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_3_train/manifest.json": {
+      "sha256": "035d524396f521d2ad96649727add43475dd5d6cd166180807b265adc0b69724",
+      "bytes": 824
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_5_train/full_cis.npy": {
+      "sha256": "c96022d337f23f610a733cf1256b99643b6e0b7165e59e331545d4f1713d1830",
+      "bytes": 52416128
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_5_train/strict_cis.npy": {
+      "sha256": "bf95900bd9c144671615f6b605ab569b4b48172a33102ace00e110d26570edc4",
+      "bytes": 52416128
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_5_train/labels.npy": {
+      "sha256": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b",
+      "bytes": 16128
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_5_train/rows.npy": {
+      "sha256": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060",
+      "bytes": 16128
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_5_train/manifest.json": {
+      "sha256": "1280566e966ecb2b20902993c4699c48f70fa740fa17cec3a9bcdf5b41ccb9d0",
+      "bytes": 823
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_6_train/full_cis.npy": {
+      "sha256": "be8845222eff89b72d5d851b2c18e455024d877d285934dafabc0a6db3635909",
+      "bytes": 52416128
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_6_train/strict_cis.npy": {
+      "sha256": "05be3a98b1f8b7c58e98c2eed60120733516f485e4c8d79787b5469061c44fc7",
+      "bytes": 52416128
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_6_train/labels.npy": {
+      "sha256": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b",
+      "bytes": 16128
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_6_train/rows.npy": {
+      "sha256": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060",
+      "bytes": 16128
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_6_train/manifest.json": {
+      "sha256": "14463694916395e0c0711b827ad61a84580696619257e20fa589dfdeeb3ff25f",
+      "bytes": 824
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_7_train/full_cis.npy": {
+      "sha256": "98f380f6227e97e14ca36120e5cea0ed93c5ada913720f4e82aa03917c8b6807",
+      "bytes": 52416128
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_7_train/strict_cis.npy": {
+      "sha256": "3933a1ae9be67c1ebf293bbec7b77124c867ceccc322509c1712de38ec4bba06",
+      "bytes": 52416128
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_7_train/labels.npy": {
+      "sha256": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b",
+      "bytes": 16128
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_7_train/rows.npy": {
+      "sha256": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060",
+      "bytes": 16128
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_7_train/manifest.json": {
+      "sha256": "5014d39c12ba37385c4e79be4632748af40c3bbbb18e3f49365e7f87250222a5",
+      "bytes": 824
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_9_train/full_cis.npy": {
+      "sha256": "a9511d06ddc7c04a00ea6cf7cc09f0126401a033b83819257398b26aec360af0",
+      "bytes": 52416128
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_9_train/strict_cis.npy": {
+      "sha256": "f8cc631c0d6476e0a4408bc2ac5f893235170934001b5dd7611fa0e3d951855e",
+      "bytes": 52416128
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_9_train/labels.npy": {
+      "sha256": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b",
+      "bytes": 16128
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_9_train/rows.npy": {
+      "sha256": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060",
+      "bytes": 16128
+    },
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_9_train/manifest.json": {
+      "sha256": "5a14206e7c52491f6c3d82f85ab689b46aacd7d8b6938c235763ba693bda0ac9",
+      "bytes": 825
+    }
+  },
+  "d0_asset_registration": "configs/d0_class_pair/registration.json",
+  "d0_asset_registration_sha256": "fb760991ba78e39bed9a3a609438d52da61af93bd1bbe8d6cfe92b95a0794642",
+  "d05": {
+    "target": "90 off-diagonal signed Strict minus Full conditional confusion rates; positive target mass clip AFTER per-probe delta",
+    "references": "other four source-pool evaluation RX within same paired Full/Strict CNN fold; probe labels evaluation only",
+    "predictors": [
+      "signed_delta_mean",
+      "recall_drop_only",
+      "class_difficulty_full",
+      "absolute_full_confusion",
+      "absolute_strict_confusion",
+      "factorized_delta",
+      "positive_mass_factorized",
+      "uniform"
+    ],
+    "top_k": 10,
+    "tie": "fractional exact budget",
+    "spearman": "signed scores vs signed actual delta, average ranks; undefined constant -> null",
+    "capture": "sum(top10 fractional weight * max(probe signed delta,0))/sum(max(probe signed delta,0)); not new packet transition count; undefined if zero positive mass",
+    "net_and_gross_positive_reported_separately": true,
+    "additional_controls": [
+      "different_hardware_family_reference",
+      "cross_paired_cnn_fold_transfer_secondary"
+    ],
+    "support_screen": "both folds have positive median signed-delta Spearman and positive median capture gain over uniform",
+    "incremental_screen": "in both folds, signed-delta prediction has positive paired-probe median capture gain over recall_drop_only, class_difficulty_full, factorized_delta; absolute-confusion and positive-mass-factorized controls all reported separately",
+    "no_inferential_packet_p_values": true
+  },
+  "b0": {
+    "max_new_training_jobs": 8,
+    "epochs": 20,
+    "checkpoint": "final epoch20 only",
+    "batch_size": 64,
+    "workers": 2,
+    "lr": 0.0003,
+    "weight_decay": 0.0,
+    "optimizer": "Adam",
+    "gradient_clip_norm": 5.0,
+    "rank": 16,
+    "parameters": 658314,
+    "dtype": "float32",
+    "augmentation": "none; same frozen G1 CIS cache and source-only scalar normalization",
+    "evaluation": "same ten source-pool RX; five out-of-fitting-RX per CNN; fixed final logits saved separately by RX",
+    "outer_validation": "monitor history only, never influences checkpoint/epoch/LR/augmentation/run/seed selection",
+    "source_scaler": "fit five training RX manifest statistics only",
+    "serious_recall_drop": 0.1,
+    "collapse_flag": "nonfinite loss/history, missing20epochs, failed process OR final training accuracy<=0.20; flagged runs retained, no replacement seed",
+    "screen": [
+      "Strict positive RX-balanced mean accuracy gain in all three seeds",
+      "at least one exact RXxTX cell has >=10pp paired Recall drop in >=2 of3 seeds",
+      "such repeated severe cells span >=2 physical RX, with both folds/families reported separately",
+      "repeated severe cells persist without using flagged collapsed/failed paired models; incomplete fixed matrix -> no GO"
+    ],
+    "training_failure_no_retry": true,
+    "estimated_gpu_hours": [
+      0.3,
+      1.0
+    ],
+    "resource_cap_reserved_gpu_hours": 1.0,
+    "gpu_hour_cap_note": "conservative sum child lifetime*reserved GPU slots (includes data loading/eval), one V100 job per device, abort timed out job without retry; no time-based replacement",
+    "startup_failure_reserved_seconds": 51.18641619899972,
+    "per_job_timeout_seconds": 442,
+    "startup_failures": "8 provenance-preflight exits before optimizer creation, zero optimization steps; retained separately; not failed fitted models",
+    "resource_cap_note": "Eight actual fitting jobs, no fitting retry/seed replacement. Pre-fit provenance correction retained; all initial GPU reservations included in 1 GPU-hour total cap."
+  },
+  "b1_training_authorized": false,
+  "b2_training_authorized": false,
+  "new_algorithm_authorized": false,
+  "large_dataset_download_authorized": false,
+  "read_osu": false,
+  "read_development_locked_rx": false,
+  "read_day3_day4": false,
+  "read_raw_iq": false,
+  "stop_after_authorized_d05_b0_and_b1_plan": true,
+  "jobs": [
+    {
+      "run_id": "B0_seed20261013_CV0_full_cis",
+      "seed": 20261013,
+      "fold": 0,
+      "method": "full_cis",
+      "epochs": 20,
+      "batch_size": 64,
+      "workers": 2,
+      "classes": 10,
+      "train_keys": [
+        "shen_b210_1_train",
+        "shen_rtl_1_train",
+        "shen_rtl_3_train",
+        "shen_rtl_6_train",
+        "shen_rtl_9_train"
+      ],
+      "validation_keys": [
+        "shen_b200_mini_1_train",
+        "shen_pluto_1_train",
+        "shen_rtl_2_train",
+        "shen_rtl_5_train",
+        "shen_rtl_7_train"
+      ]
+    },
+    {
+      "run_id": "B0_seed20261013_CV0_strict_cis",
+      "seed": 20261013,
+      "fold": 0,
+      "method": "strict_cis",
+      "epochs": 20,
+      "batch_size": 64,
+      "workers": 2,
+      "classes": 10,
+      "train_keys": [
+        "shen_b210_1_train",
+        "shen_rtl_1_train",
+        "shen_rtl_3_train",
+        "shen_rtl_6_train",
+        "shen_rtl_9_train"
+      ],
+      "validation_keys": [
+        "shen_b200_mini_1_train",
+        "shen_pluto_1_train",
+        "shen_rtl_2_train",
+        "shen_rtl_5_train",
+        "shen_rtl_7_train"
+      ]
+    },
+    {
+      "run_id": "B0_seed20261013_CV1_full_cis",
+      "seed": 20261013,
+      "fold": 1,
+      "method": "full_cis",
+      "epochs": 20,
+      "batch_size": 64,
+      "workers": 2,
+      "classes": 10,
+      "train_keys": [
+        "shen_b200_mini_1_train",
+        "shen_pluto_1_train",
+        "shen_rtl_2_train",
+        "shen_rtl_5_train",
+        "shen_rtl_7_train"
+      ],
+      "validation_keys": [
+        "shen_b210_1_train",
+        "shen_rtl_1_train",
+        "shen_rtl_3_train",
+        "shen_rtl_6_train",
+        "shen_rtl_9_train"
+      ]
+    },
+    {
+      "run_id": "B0_seed20261013_CV1_strict_cis",
+      "seed": 20261013,
+      "fold": 1,
+      "method": "strict_cis",
+      "epochs": 20,
+      "batch_size": 64,
+      "workers": 2,
+      "classes": 10,
+      "train_keys": [
+        "shen_b200_mini_1_train",
+        "shen_pluto_1_train",
+        "shen_rtl_2_train",
+        "shen_rtl_5_train",
+        "shen_rtl_7_train"
+      ],
+      "validation_keys": [
+        "shen_b210_1_train",
+        "shen_rtl_1_train",
+        "shen_rtl_3_train",
+        "shen_rtl_6_train",
+        "shen_rtl_9_train"
+      ]
+    },
+    {
+      "run_id": "B0_seed20261014_CV0_full_cis",
+      "seed": 20261014,
+      "fold": 0,
+      "method": "full_cis",
+      "epochs": 20,
+      "batch_size": 64,
+      "workers": 2,
+      "classes": 10,
+      "train_keys": [
+        "shen_b210_1_train",
+        "shen_rtl_1_train",
+        "shen_rtl_3_train",
+        "shen_rtl_6_train",
+        "shen_rtl_9_train"
+      ],
+      "validation_keys": [
+        "shen_b200_mini_1_train",
+        "shen_pluto_1_train",
+        "shen_rtl_2_train",
+        "shen_rtl_5_train",
+        "shen_rtl_7_train"
+      ]
+    },
+    {
+      "run_id": "B0_seed20261014_CV0_strict_cis",
+      "seed": 20261014,
+      "fold": 0,
+      "method": "strict_cis",
+      "epochs": 20,
+      "batch_size": 64,
+      "workers": 2,
+      "classes": 10,
+      "train_keys": [
+        "shen_b210_1_train",
+        "shen_rtl_1_train",
+        "shen_rtl_3_train",
+        "shen_rtl_6_train",
+        "shen_rtl_9_train"
+      ],
+      "validation_keys": [
+        "shen_b200_mini_1_train",
+        "shen_pluto_1_train",
+        "shen_rtl_2_train",
+        "shen_rtl_5_train",
+        "shen_rtl_7_train"
+      ]
+    },
+    {
+      "run_id": "B0_seed20261014_CV1_full_cis",
+      "seed": 20261014,
+      "fold": 1,
+      "method": "full_cis",
+      "epochs": 20,
+      "batch_size": 64,
+      "workers": 2,
+      "classes": 10,
+      "train_keys": [
+        "shen_b200_mini_1_train",
+        "shen_pluto_1_train",
+        "shen_rtl_2_train",
+        "shen_rtl_5_train",
+        "shen_rtl_7_train"
+      ],
+      "validation_keys": [
+        "shen_b210_1_train",
+        "shen_rtl_1_train",
+        "shen_rtl_3_train",
+        "shen_rtl_6_train",
+        "shen_rtl_9_train"
+      ]
+    },
+    {
+      "run_id": "B0_seed20261014_CV1_strict_cis",
+      "seed": 20261014,
+      "fold": 1,
+      "method": "strict_cis",
+      "epochs": 20,
+      "batch_size": 64,
+      "workers": 2,
+      "classes": 10,
+      "train_keys": [
+        "shen_b200_mini_1_train",
+        "shen_pluto_1_train",
+        "shen_rtl_2_train",
+        "shen_rtl_5_train",
+        "shen_rtl_7_train"
+      ],
+      "validation_keys": [
+        "shen_b210_1_train",
+        "shen_rtl_1_train",
+        "shen_rtl_3_train",
+        "shen_rtl_6_train",
+        "shen_rtl_9_train"
+      ]
+    }
+  ],
+  "engineering_amendment_utc": "2026-10-13T04:55:08.832778+00:00"
+}

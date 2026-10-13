@@ -1,0 +1,32 @@
+{
+  "sealed_utc": "2026-10-13T04:52:02.037609+00:00",
+  "stage": "before D0.5 execution and new B0 model fitting",
+  "D0_prior_results_known": true,
+  "files_sha256": {
+    "configs/d05_b0/registration.json": "a98561270569581711665897ccceea763f5d2a40ac29ad2e3d136ab9221b0479",
+    "docs/d05_b0/USER_PLAN.md": "328b55b1a89bf1aea69896f93681654e8ca7d4e4a919ecf0354fe0bfa5e9f9b1",
+    "docs/d05_b0/PREREGISTRATION.md": "5dbcf2d6ca8c84e6222b85f413fdb05afbaecc21b2633dc84994c9b27e32bbcf",
+    "scripts/audit_d05_damage.py": "bc8b2be0255080d0c3f6d09b233bcfa645a652382d697453e2be5aa18c417bfa",
+    "scripts/train_b0_replication.py": "c444b48c808d7a00e0f1f1e75cdb2a93b3a2640f1453da8aed20b682d9a4d62d",
+    "scripts/launch_b0_replication.py": "8abfe6fed31b3cdfec825c48668e50c562955bc8426f4909d4c84ea133bdb041",
+    "scripts/test_d05_damage.py": "8c6f21267c9f293e7710c9806bb34752639a87172dc6855b754158814ed0f028",
+    "src/d05_b0/__init__.py": "80dfb6201b4f6a73213e42ead87a89f50907c80d248b1d9cddb988f3c2a649c4",
+    "src/d05_b0/damage.py": "b19ca827570786dccfa29d51890c87f6595261856966d48bf3fb21eddfd79965",
+    "src/d0_class_pair/metrics.py": "570c6a178ebcf58b353b7c54a2dbe39b2626f1809b5e82ef45e47fac39057f8a",
+    "src/shen_p2a8/__init__.py": "58ad9aace116f44aacd920e7364f021d32b58cc1d4cb292fe46ae617f8071971",
+    "src/shen_p2a8/features.py": "cb3bc0233764c1784d53da067f1862e06310fd187971854674f635044aa9e96d",
+    "src/shen_p2a8/g1_data.py": "cdbd9551ce2f7c5ba298f312adb888467817c25033b0b89e4909c967ac7a9f36",
+    "src/shen_evidence/dataset.py": "054d879af39039c1586d96c17ae79c0df5ae88896000ee74730a99f8f2306591",
+    "src/shen_evidence/inputs.py": "a743fc2f289c21f9ce7d0f3ce8f634da89d83e11919324c2ad89f048138ff9e2",
+    "src/shen_evidence/models.py": "80c505443aed58fa4a7676a66613f4de13453a5db6be3f0027fe7b1caa54fa67",
+    "src/shen_evidence/__init__.py": "3903c0dc1b7e78045b95e79cea450d536bde5a03c555b590350e344986047c1f",
+    "src/shen_evidence/runner.py": "e0e26c45b60281cb409056c9092d41d1061d7da7c550ae21d263bb7dbb738043",
+    "src/shen_p2a/representations.py": "ccc88f3a04a8c672ef37210ecb42eaf30cd7f37d50eb0a2c0f78692187770806",
+    "src/shen_p2a/models.py": "acb27d5b562fd03ef3993b121c9a953897726ff19650c2896ac490432cc5900d",
+    "src/shen_p2a/__init__.py": "f82b111a3835a4f4922a35de376d6d2cb1fe01aa213a195df0cf4eafa470d007",
+    "src/shen_p2a/bands.py": "0c30cb945cddb39cf3e63b755f5ae13cdfc4af2da7b29d512e81ce09c920006f",
+    "src/shen_p2a/iq_cache.py": "7bb1ba8069983e1ca087b1bc1b95bd4f8d1b53408b7e44111a9c3bbcc45777b7",
+    "src/shen_p2a/cache.py": "a4d04e48f4e0b426be83c04874302f6e5fd9a187ee541d058718564bc61a1b38",
+    "src/shen_p2a/runner.py": "950796a161b2ed18ec15ec1519b1ab3a488c6b0bcb8de7f7d12a0ceaa62996b6"
+  }
+}

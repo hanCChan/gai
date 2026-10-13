@@ -1,0 +1,12 @@
+{
+  "optimizer_steps_before_correction": 0,
+  "failed_preflight_attempts": 8,
+  "initial_failure_files_preserved": true,
+  "initial_gpu_reserved_seconds": 51.18641619899972,
+  "formal_fitting_jobs_authorized": 8,
+  "formal_job_timeout_seconds": 442,
+  "reference_for_known_exception": "scripts/run_eisr_v1.py provenance(); original 5661a32 g1_data AST vs current; unused shen_p2a.runner directory snapshot",
+  "initial_registration_sha256": "a98561270569581711665897ccceea763f5d2a40ac29ad2e3d136ab9221b0479",
+  "initial_seal_sha256": "c0dd605946737953ee8d4925892e02a0373bc122bc876500ce96827f9627d37c",
+  "scientific_metrics_or_seed_selection_changed": false
+}

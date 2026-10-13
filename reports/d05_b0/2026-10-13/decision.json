@@ -1,0 +1,19 @@
+{
+  "status": "B1_REVIEW_REQUEST_ONLY_KEEP_CLASS_CONDITIONAL_RISK",
+  "d05": "EXPLORATORY_INCREMENTAL_DAMAGE_SIGNAL",
+  "b0": "REPLICATED_LOCAL_DAMAGE_B1_REVIEW_ONLY",
+  "signed_delta_superiority_over_absolute_confusion": false,
+  "cross_paired_cnn_positive_damage_transfer_supported": false,
+  "replicated_local_damage_supported": true,
+  "new_algorithm_necessary_proven": false,
+  "actual_new_fitting_jobs": 8,
+  "retained_zero_step_startup_failures": 8,
+  "reserved_gpu_hours": 0.22809600921972206,
+  "b1_requested_training_jobs": 32,
+  "b1_requested_formal_models": 16,
+  "b1_requested_gpu_hour_cap": 2.0,
+  "b1_started": false,
+  "b2_started": false,
+  "new_loss_implemented": false,
+  "stopped_after_authorized_work": true
+}

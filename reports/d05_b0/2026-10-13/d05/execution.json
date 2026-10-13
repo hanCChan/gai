@@ -1,0 +1,9 @@
+{
+  "seconds": 0.7378807940003753,
+  "new_training": 0,
+  "new_inference": 0,
+  "packet_pairs": 20000,
+  "source_receivers": 10,
+  "all_d0_input_hashes_verified": true,
+  "seal_sha256": "c0dd605946737953ee8d4925892e02a0373bc122bc876500ce96827f9627d37c"
+}

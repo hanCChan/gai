@@ -1,0 +1,74 @@
+{
+  "jobs": [
+    {
+      "run_id": "B0_seed20261013_CV0_full_cis",
+      "gpu": 0,
+      "exit_code": 0,
+      "timed_out": false,
+      "seconds": 97.4790830460006,
+      "log_sha256": "599941b9dd1562c00798a76f3b61b00cb589234d36df409c1141ca67af97d24e"
+    },
+    {
+      "run_id": "B0_seed20261013_CV0_strict_cis",
+      "gpu": 1,
+      "exit_code": 0,
+      "timed_out": false,
+      "seconds": 97.37858468000013,
+      "log_sha256": "2fc7d69e926d385c83d15dc0782c6c42de3bdd3c5db747788082832b5354a1ca"
+    },
+    {
+      "run_id": "B0_seed20261013_CV1_full_cis",
+      "gpu": 2,
+      "exit_code": 0,
+      "timed_out": false,
+      "seconds": 97.37701576399922,
+      "log_sha256": "1bfe5ed4d7b6cc66de0ee96bffae074e893ed30694f23ad0195337bbefe7764b"
+    },
+    {
+      "run_id": "B0_seed20261013_CV1_strict_cis",
+      "gpu": 3,
+      "exit_code": 0,
+      "timed_out": false,
+      "seconds": 97.29397326799881,
+      "log_sha256": "665cf87bcb139e096c4c1124d857617ffc449f2942105e3475586653b4ad5d82"
+    },
+    {
+      "run_id": "B0_seed20261014_CV0_full_cis",
+      "gpu": 0,
+      "exit_code": 0,
+      "timed_out": false,
+      "seconds": 94.97565826299979,
+      "log_sha256": "c9b51b0c4d7af2c06a0b3a1b3afc2556ebb16fcfdf089a4487c0cb8fd7967b46"
+    },
+    {
+      "run_id": "B0_seed20261014_CV0_strict_cis",
+      "gpu": 1,
+      "exit_code": 0,
+      "timed_out": false,
+      "seconds": 95.27171770600035,
+      "log_sha256": "ff8ac0621fdba647afb24303064e6c412fbb905f7ef3a861017ed60e0b3eb85b"
+    },
+    {
+      "run_id": "B0_seed20261014_CV1_full_cis",
+      "gpu": 2,
+      "exit_code": 0,
+      "timed_out": false,
+      "seconds": 95.00431307100007,
+      "log_sha256": "6b78b01c1f28417d07d471cdc3d7da3767ed403c5c47166c1d0028a91e0d29ce"
+    },
+    {
+      "run_id": "B0_seed20261014_CV1_strict_cis",
+      "gpu": 3,
+      "exit_code": 0,
+      "timed_out": false,
+      "seconds": 95.17887119400075,
+      "log_sha256": "aee507d4088b7075ea59378416ca4edbd8d862b423defaabd417efbba52ed422"
+    }
+  ],
+  "fitting_jobs_launched": 8,
+  "startup_pre_fit_attempts_retained": 8,
+  "reserved_gpu_hours": 0.22809600921972206,
+  "fitting_retries": 0,
+  "seed_replacements": 0,
+  "b1_started": false
+}

@@ -59,3 +59,10 @@ reports/d0_class_pair/**/pair_confusion_changes.png
 reports/d0_class_pair/**/worst_pair_margins.png
 reports/d0_class_pair/**/directed_pairs.csv
 reports/d0_class_pair/**/risk_prediction_vectors.csv
+
+# Complete large D0.5/B0 derived tables and raw logs are in verified evidence.zip.
+reports/d05_b0/**/prediction_vectors.csv
+reports/d05_b0/**/directed_pairs.csv
+reports/d05_b0/**/confusion_counts.csv
+reports/d05_b0/**/*.svg
+reports/d05_b0/**/run_evidence/
