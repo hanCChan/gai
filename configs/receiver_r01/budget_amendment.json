@@ -1,0 +1,12 @@
+{
+  "approved_utc": "2026-10-13T09:57:45.951882+00:00",
+  "user_reply": "提高到 7 GPUh，完成原矩阵",
+  "user_reply_sha256": "2d5b5b647af24e5b98c9a601b99fb39170dd867474042e831c53a1453d0ff58f",
+  "prior_cap_reserved_V100_GPUh": 6,
+  "new_cap_reserved_V100_GPUh": 7,
+  "unchanged_search_jobs": 34,
+  "unchanged_formal_jobs": 51,
+  "completed_first_jobs": 12,
+  "remaining_original_jobs": 73,
+  "no_R2_or_final_testing_authorization": true
+}
