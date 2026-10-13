@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "fitting_jobs": 2,
+  "fitting_failures": 0,
+  "retries": 0,
+  "strict_TX_prediction_rows": 8736,
+  "identity_rows": 34944,
+  "final8_RX_allocation_unchanged": true,
+  "final_RX_numerical_read": false,
+  "final_date_numerical_read": false,
+  "equalized_numerical_read": false,
+  "strict_encoder_and_mapping_TX_exclusion": true,
+  "decision_recomputed_from_public_rows": true,
+  "orthogonal_component_energy_sum_one": true,
+  "prefit_coverage_abort_preserved": true,
+  "zero_fitting_jobs_at_coverage_revision": true,
+  "input_archive_sha256": "b0eca705816b03a47290286fd23ca1a10e02c6f9bd29b5461cfd92c13a86fbdd",
+  "reserved_gpu_hours": 0.0331146915541659,
+  "w2_jobs": 0
+}

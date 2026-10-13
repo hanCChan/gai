@@ -1,0 +1,439 @@
+{
+  "utc": "2026-10-13T08:19:36.648450+00:00",
+  "date_shanghai": "2026-10-13",
+  "archive": "/home/keyan/data/wisig-manyrx-kaggle/ManyRx.kaggle.v1.zip",
+  "archive_sha256": "b0eca705816b03a47290286fd23ca1a10e02c6f9bd29b5461cfd92c13a86fbdd",
+  "hardware_sha256": "ae8f770b524706416885118de8916fc4846b9e01a98ba66aa3b804e0d9d89f1e",
+  "official_model_source": "https://github.com/WiSig-dataset/wisig-examples/blob/master/py/d003_ManyRx_nrx.py",
+  "official_model_source_sha256": "1720da5cb713bc57b5281ee7177be24821122ccf74015ed7ccd7112ef0087d9d",
+  "rx_names": [
+    "1-1",
+    "1-19",
+    "1-20",
+    "13-14",
+    "13-7",
+    "14-7",
+    "18-19",
+    "18-2",
+    "19-1",
+    "19-19",
+    "19-2",
+    "19-20",
+    "2-1",
+    "2-19",
+    "20-1",
+    "20-19",
+    "20-20",
+    "23-1",
+    "23-3",
+    "23-5",
+    "23-6",
+    "23-7",
+    "24-13",
+    "24-16",
+    "24-5",
+    "24-6",
+    "3-19",
+    "7-14",
+    "7-7",
+    "8-14",
+    "8-7",
+    "8-8"
+  ],
+  "tx_names": [
+    "1-10",
+    "11-1",
+    "14-10",
+    "14-7",
+    "17-11",
+    "20-15",
+    "20-19",
+    "7-11",
+    "7-14",
+    "8-20"
+  ],
+  "tx_hardware": [
+    "Atheros_AR5212_AR5213",
+    "Atheros_AR5212_AR5213",
+    "Atheros_AR5212_AR5213",
+    "Atheros_AR5212_AR5213",
+    "Atheros_AR5212_AR5213",
+    "Atheros_AR5212_AR5213",
+    "Atheros_AR5212_AR5213",
+    "Atheros_AR5212_AR5213",
+    "Atheros_AR5212_AR5213",
+    "Atheros_AR5212_AR5213"
+  ],
+  "dates": [
+    "2021_03_01",
+    "2021_03_08",
+    "2021_03_15",
+    "2021_03_23"
+  ],
+  "roles": {
+    "source": [
+      6,
+      7,
+      26,
+      30,
+      1,
+      2,
+      5,
+      10,
+      12,
+      13,
+      16,
+      28,
+      31,
+      22
+    ],
+    "internal_rx": [
+      3,
+      4,
+      11,
+      9,
+      27,
+      18,
+      21,
+      20,
+      25,
+      19
+    ],
+    "final_rx": [
+      29,
+      0,
+      8,
+      14,
+      15,
+      17,
+      23,
+      24
+    ]
+  },
+  "hardware_and_coverage": [
+    {
+      "rx_index": 6,
+      "rx": "18-19",
+      "hardware": "B210",
+      "min_development_cell": 200,
+      "development_packets": 6000,
+      "role": "source"
+    },
+    {
+      "rx_index": 7,
+      "rx": "18-2",
+      "hardware": "B210",
+      "min_development_cell": 200,
+      "development_packets": 6000,
+      "role": "source"
+    },
+    {
+      "rx_index": 26,
+      "rx": "3-19",
+      "hardware": "B210",
+      "min_development_cell": 200,
+      "development_packets": 6000,
+      "role": "source"
+    },
+    {
+      "rx_index": 29,
+      "rx": "8-14",
+      "hardware": "B210",
+      "min_development_cell": 200,
+      "development_packets": 6000,
+      "role": "final_rx"
+    },
+    {
+      "rx_index": 30,
+      "rx": "8-7",
+      "hardware": "B210",
+      "min_development_cell": 200,
+      "development_packets": 6000,
+      "role": "source"
+    },
+    {
+      "rx_index": 3,
+      "rx": "13-14",
+      "hardware": "B210",
+      "min_development_cell": 156,
+      "development_packets": 5899,
+      "role": "internal_rx"
+    },
+    {
+      "rx_index": 4,
+      "rx": "13-7",
+      "hardware": "B210",
+      "min_development_cell": 0,
+      "development_packets": 5400,
+      "role": "internal_rx"
+    },
+    {
+      "rx_index": 0,
+      "rx": "1-1",
+      "hardware": "N210",
+      "min_development_cell": 200,
+      "development_packets": 6000,
+      "role": "final_rx"
+    },
+    {
+      "rx_index": 1,
+      "rx": "1-19",
+      "hardware": "N210",
+      "min_development_cell": 200,
+      "development_packets": 6000,
+      "role": "source"
+    },
+    {
+      "rx_index": 2,
+      "rx": "1-20",
+      "hardware": "N210",
+      "min_development_cell": 200,
+      "development_packets": 6000,
+      "role": "source"
+    },
+    {
+      "rx_index": 5,
+      "rx": "14-7",
+      "hardware": "N210",
+      "min_development_cell": 200,
+      "development_packets": 6000,
+      "role": "source"
+    },
+    {
+      "rx_index": 8,
+      "rx": "19-1",
+      "hardware": "N210",
+      "min_development_cell": 200,
+      "development_packets": 6000,
+      "role": "final_rx"
+    },
+    {
+      "rx_index": 10,
+      "rx": "19-2",
+      "hardware": "N210",
+      "min_development_cell": 200,
+      "development_packets": 6000,
+      "role": "source"
+    },
+    {
+      "rx_index": 12,
+      "rx": "2-1",
+      "hardware": "N210",
+      "min_development_cell": 200,
+      "development_packets": 6000,
+      "role": "source"
+    },
+    {
+      "rx_index": 13,
+      "rx": "2-19",
+      "hardware": "N210",
+      "min_development_cell": 200,
+      "development_packets": 6000,
+      "role": "source"
+    },
+    {
+      "rx_index": 14,
+      "rx": "20-1",
+      "hardware": "N210",
+      "min_development_cell": 200,
+      "development_packets": 6000,
+      "role": "final_rx"
+    },
+    {
+      "rx_index": 16,
+      "rx": "20-20",
+      "hardware": "N210",
+      "min_development_cell": 200,
+      "development_packets": 6000,
+      "role": "source"
+    },
+    {
+      "rx_index": 28,
+      "rx": "7-7",
+      "hardware": "N210",
+      "min_development_cell": 200,
+      "development_packets": 6000,
+      "role": "source"
+    },
+    {
+      "rx_index": 31,
+      "rx": "8-8",
+      "hardware": "N210",
+      "min_development_cell": 200,
+      "development_packets": 6000,
+      "role": "source"
+    },
+    {
+      "rx_index": 15,
+      "rx": "20-19",
+      "hardware": "N210",
+      "min_development_cell": 167,
+      "development_packets": 5967,
+      "role": "final_rx"
+    },
+    {
+      "rx_index": 11,
+      "rx": "19-20",
+      "hardware": "N210",
+      "min_development_cell": 0,
+      "development_packets": 5600,
+      "role": "internal_rx"
+    },
+    {
+      "rx_index": 9,
+      "rx": "19-19",
+      "hardware": "N210",
+      "min_development_cell": 0,
+      "development_packets": 5400,
+      "role": "internal_rx"
+    },
+    {
+      "rx_index": 27,
+      "rx": "7-14",
+      "hardware": "N210",
+      "min_development_cell": 0,
+      "development_packets": 5400,
+      "role": "internal_rx"
+    },
+    {
+      "rx_index": 17,
+      "rx": "23-1",
+      "hardware": "X310",
+      "min_development_cell": 200,
+      "development_packets": 6000,
+      "role": "final_rx"
+    },
+    {
+      "rx_index": 22,
+      "rx": "24-13",
+      "hardware": "X310",
+      "min_development_cell": 200,
+      "development_packets": 6000,
+      "role": "source"
+    },
+    {
+      "rx_index": 18,
+      "rx": "23-3",
+      "hardware": "X310",
+      "min_development_cell": 0,
+      "development_packets": 5800,
+      "role": "internal_rx"
+    },
+    {
+      "rx_index": 21,
+      "rx": "23-7",
+      "hardware": "X310",
+      "min_development_cell": 0,
+      "development_packets": 5800,
+      "role": "internal_rx"
+    },
+    {
+      "rx_index": 23,
+      "rx": "24-16",
+      "hardware": "X310",
+      "min_development_cell": 0,
+      "development_packets": 5800,
+      "role": "final_rx"
+    },
+    {
+      "rx_index": 20,
+      "rx": "23-6",
+      "hardware": "X310",
+      "min_development_cell": 0,
+      "development_packets": 5600,
+      "role": "internal_rx"
+    },
+    {
+      "rx_index": 25,
+      "rx": "24-6",
+      "hardware": "X310",
+      "min_development_cell": 0,
+      "development_packets": 5553,
+      "role": "internal_rx"
+    },
+    {
+      "rx_index": 19,
+      "rx": "23-5",
+      "hardware": "X310",
+      "min_development_cell": 0,
+      "development_packets": 5400,
+      "role": "internal_rx"
+    },
+    {
+      "rx_index": 24,
+      "rx": "24-5",
+      "hardware": "X310",
+      "min_development_cell": 0,
+      "development_packets": 5400,
+      "role": "final_rx"
+    }
+  ],
+  "split_rule": "Metadata pattern preserves final8; remaining24 with min development cell>=160 source14, other10 internal",
+  "train_dates": [
+    0,
+    1
+  ],
+  "w1_hold_date": 2,
+  "final_date": 3,
+  "encoder_tx": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "strict_held_tx": [
+    8,
+    9
+  ],
+  "prior_strict_tx_exclusion_preserved": true,
+  "encoder_positions": [
+    0,
+    120
+  ],
+  "validation_positions": [
+    120,
+    160
+  ],
+  "same_rx_test_positions": [
+    160,
+    200
+  ],
+  "w1_positions": [
+    120,
+    200
+  ],
+  "unequalized_only": true,
+  "numeric_final_rx_or_date_access": false,
+  "pilot_seeds": [
+    20261013,
+    20261014
+  ],
+  "maximum_fitting_jobs": 2,
+  "lr": 0.0005,
+  "max_epochs": 100,
+  "patience": 5,
+  "batch_groups": "source_RX x train_date x encoder_TX;two packets/group;each packet once/epoch",
+  "l2_dense": 0.0001,
+  "dropout": 0.5,
+  "adam_epsilon": 1e-07,
+  "pilot_timeout_seconds": 1800,
+  "encoder_quality_gate": {
+    "frozen_training_accuracy": 0.9,
+    "source_validation_accuracy": 0.85
+  },
+  "w1_prediction": "Identity/Translation/CORAL;fixed3-neighbor class-conditioned CORAL mean residual, diagnostic only, no rank model",
+  "w1_gate": {
+    "mean_distance_gain": 0.05,
+    "w2_distance_gain": 0.05,
+    "identity_noninferiority": 0.02,
+    "requires_both_seeds_and_both_held_TX_and_date_holdout": true
+  },
+  "w2_authorized_now": false,
+  "w2_plan_only": true,
+  "final_rx_and_date_reserved": true,
+  "coverage_revision_before_any_fitting": true
+}

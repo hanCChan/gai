@@ -1,0 +1,80 @@
+{
+  "status": "STOP_TRANSFORMATION_GENERATION_W1_UNSUPPORTED",
+  "encoder_quality_passed": [
+    true,
+    true
+  ],
+  "w1_gate_passed": false,
+  "prediction_criteria": [
+    {
+      "seed": 20261013,
+      "held_tx": 8,
+      "mean_squared_distance_gain": -0.7723115877830158,
+      "mean_squared_distance_best_control": "translation",
+      "gaussian_w2_squared_gain": -0.7392237405145223,
+      "gaussian_w2_squared_best_control": "translation",
+      "improvement_exceeds_sampling_floor": false,
+      "original_classifier_accuracy": 0.7628125,
+      "conditional_classifier_accuracy": 0.6047252747252747,
+      "identity_preserved": false,
+      "passed": false
+    },
+    {
+      "seed": 20261013,
+      "held_tx": 9,
+      "mean_squared_distance_gain": -1.4486738146070919,
+      "mean_squared_distance_best_control": "identity",
+      "gaussian_w2_squared_gain": -1.4462428668971614,
+      "gaussian_w2_squared_best_control": "identity",
+      "improvement_exceeds_sampling_floor": false,
+      "original_classifier_accuracy": 0.7628125,
+      "conditional_classifier_accuracy": 0.6047252747252747,
+      "identity_preserved": false,
+      "passed": false
+    },
+    {
+      "seed": 20261014,
+      "held_tx": 8,
+      "mean_squared_distance_gain": -1.0187337259345588,
+      "mean_squared_distance_best_control": "identity",
+      "gaussian_w2_squared_gain": -0.7947545964993306,
+      "gaussian_w2_squared_best_control": "identity",
+      "improvement_exceeds_sampling_floor": false,
+      "original_classifier_accuracy": 0.8303571428571429,
+      "conditional_classifier_accuracy": 0.761198489010989,
+      "identity_preserved": false,
+      "passed": false
+    },
+    {
+      "seed": 20261014,
+      "held_tx": 9,
+      "mean_squared_distance_gain": -1.04406864568529,
+      "mean_squared_distance_best_control": "identity",
+      "gaussian_w2_squared_gain": -0.9482640862667231,
+      "gaussian_w2_squared_best_control": "identity",
+      "improvement_exceeds_sampling_floor": false,
+      "original_classifier_accuracy": 0.8303571428571429,
+      "conditional_classifier_accuracy": 0.761198489010989,
+      "identity_preserved": false,
+      "passed": false
+    }
+  ],
+  "fitting_jobs": 2,
+  "w2_jobs": 0,
+  "formal_models": 0,
+  "reserved_gpu_hours": 0.0331146915541659,
+  "final_rx_numeric_read": false,
+  "final_date_numeric_read": false,
+  "strict_TX_exclusion": true,
+  "identity_retrieval_is_labeled_diagnostic": true,
+  "conditional_mapping_uses_source_class_distribution": true,
+  "shen_rank2_stop_preserved": true,
+  "causal_RX_hardware_identified": false,
+  "official_equivalence_proven": false,
+  "proposed_12_model_gpu_hours": 0.2700391123343288,
+  "limitation": "Only two strict held identities; two seeds with one fixed RX split. Final8 RX/final date and equalized numerical data remain unopened. W2 is not automatically authorized.",
+  "cross_date_repeatability_is_not_cross_TX_predictability": true,
+  "transformation_generation_stop_scope": "No evidence supporting the tested fixed class-neighbor conditional transfer mechanism; do not infer all shared/conditional structures are absent.",
+  "unsupported_metric_note": "Known-TX classifier retention covers eight encoder identities; strict-held-TX retrieval is labeled diagnostic, not deployed ten-class recognition.",
+  "sampling_uncertainty_note": "Odd/even split proxy within captures; serial correlation and session-level uncertainty are not fully captured. Descriptive evidence, not calibrated thermal-noise variance."
+}

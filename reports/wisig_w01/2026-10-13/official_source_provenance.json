@@ -1,0 +1,15 @@
+{
+  "official_hardware_url": "https://raw.githubusercontent.com/WiSig-dataset/wisig-examples/master/orbit_hardware.pkl",
+  "hardware_sha256": "ae8f770b524706416885118de8916fc4846b9e01a98ba66aa3b804e0d9d89f1e",
+  "official_cnn_url": "https://github.com/WiSig-dataset/wisig-examples/blob/master/py/d003_ManyRx_nrx.py",
+  "cnn_sha256": "1720da5cb713bc57b5281ee7177be24821122ccf74015ed7ccd7112ef0087d9d",
+  "input_archive_sha256": "b0eca705816b03a47290286fd23ca1a10e02c6f9bd29b5461cfd92c13a86fbdd",
+  "original_license": "CC BY-NC-SA 4.0",
+  "third_party_equivalence_proven": false,
+  "unknown_hardware_configurations": [
+    "gain",
+    "antenna",
+    "RF daughterboard configuration",
+    "calibration"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "user_instruction": "理解方案，然后执行",
+  "plan_sha256": "9de9b4ccb4f6afa80756df6f80a7e0a96eea543eb8940c5c55cdbc525f72b1e0",
+  "scope": "W0<=2 pilots and W1;submit W2 plan,do not execute W2",
+  "prior_strict_TX_exclusion_preserved": true,
+  "private_attachment_not_published": true
+}

@@ -1,0 +1,14 @@
+{
+  "before_fitting": true,
+  "files_sha256": {
+    "scripts/wisig_w01_common.py": "0a31ecb35510fdae0a85c197ff26ffd2860935f765e3170028d810d109f69036",
+    "scripts/prepare_wisig_w01.py": "4bb9617d6beab3870c0cb9c76e7f14e4862e2d2c8e90ca26fd3d160ad21b8b07",
+    "scripts/train_wisig_w0.py": "955961e0b2057732214e8048d0b4ae3b337de0a33ea180cff109ac83076b69eb",
+    "scripts/analyze_wisig_w1.py": "f9a1d42707606ecc2220dfc440e2684d99de23d848b60bca601a9dac58af87bc",
+    "scripts/launch_wisig_w0.py": "8e12427c079ba41b8841c26fc30fb875aa22ee4f7f206a9ac5c3f5bdbd8b5e4a",
+    "docs/wisig_w01/EXECUTION_PLAN.md": "9546a48f9149b537417640de47269d1a2d15fb3f7ce213d1fe12e0f83ceb5c39",
+    "configs/wisig_w01/registration.json": "9261f153262e1aec06bf6c380ec393b821fb6543a54f67cb88b1e77dc0c62020"
+  },
+  "preflight_sha256": "377c4ca07713d9bd28e4b5f59918e2aac5008778f71679f9351bee885a29fbbe",
+  "coverage_revision_before_model_outputs": true
+}

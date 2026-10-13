@@ -1,0 +1,17 @@
+{
+  "units": 800,
+  "posthoc_counts": {
+    "mean_lt_coral": 311,
+    "mean_lt_translation": 421,
+    "w2_lt_coral": 282,
+    "both_lt_all_controls": 78
+  },
+  "centered_prototype_rank_upper_bound": 7,
+  "feature_dimensions": 32,
+  "estimation_underdetermined": true,
+  "encoder_train_accuracy_min": 0.494375,
+  "rank2_covariance_not_fitted": true,
+  "coral_pooled_covariance_fitted": true,
+  "causal_failure_contribution_unidentified": true,
+  "no_shen_new_training": true
+}

@@ -73,3 +73,34 @@ equalized[0,1],2560 structures. Non-equalized249666 and equalized247684 packets;
 never assume packet-level pairing. Official byte equivalence remains unproven.
 See reports/wisig_acquisition/2026-10-13; no additional research jobs authorized
 by successful acquisition after the rank2 sharedness stop.
+
+## Latest user instruction: WiSig W0/W1 structure window (2026-10-13)
+
+The user supplied the next-stage review and said 理解方案，然后执行.
+This authorizes audited numerical reading of unequ­alized development WiSig,
+metadata/coverage-based split freezing, at most two official-architecture pilots,
+and CPU W1 analysis using the frozen encoders. Prior strict encoder+mapping TX
+exclusion is preserved. Shen rank2 and all historical stops remain immutable.
+
+Metadata-only initial final8 RX and last date stay reserved. The preliminary
+16-source split failed coverage before any model jobs; among the24 development
+RX the14 with complete>=160-cell coverage become source, the10 others internal.
+No classification outcome was used to change this split. The original failed
+coverage registration/audit is retained. Final8 RX and date3 opaque buffers may
+be parsed as file structure but must not become numeric arrays or feature data.
+
+W0: two fixed seeds, official CNN port, max100 epochs/source-only patience5,
+no LR search, retry, replacement seed or extra fitting jobs. W1 does not revive
+rank2 and does not infer causal receiver hardware. Finish W0/W1, publish remote
+verified report/decision and an inactive W2 plan. Do NOT execute W2/W3 or broaden
+the matrix without a later user instruction. No extra datasets/downloads.
+
+W0/W1 finished:2 pilots,0 fitting failures/retries,0.0331146915541659 reserved
+GPUh. Both official-CNN source encoders pass the frozen quality gate.
+Observed TXxRX interactions repeat across date, but the fixed conditional
+transfer diagnostic fails all4 strict TX/date conditions and harms known-TX
+identity classification. Decision STOP_TRANSFORMATION_GENERATION_W1_UNSUPPORTED;
+W2/W3 jobs0. Do not treat repeatability as cross-identity predictability or revive
+rank2. Final8 RX,last date,equalized numerical values remain reserved. Publish
+and remotely verify this completed window,then stop. Later instructions needed
+for any additional fitting or new mechanism. See reports/wisig_w01/2026-10-13.

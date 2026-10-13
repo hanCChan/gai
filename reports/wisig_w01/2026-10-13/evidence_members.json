@@ -1,0 +1,262 @@
+[
+  {
+    "member": "public/REPORT.md",
+    "bytes": 9737,
+    "sha256": "0fab3730735226ea4c4a1b1d9732298e76dbd4fb4019261fdf99d548662b6dae"
+  },
+  {
+    "member": "public/cell_feature_summaries.csv",
+    "bytes": 62848,
+    "sha256": "b3372f236cf528ce0eec0f9c2e78f1ccdcb576e77c9da57010a1752c58a31cb9"
+  },
+  {
+    "member": "public/data_audit.csv",
+    "bytes": 36177,
+    "sha256": "7ecbd82d0897c827570e91258b243999c8a1f588e7c0c22125cd86fd5b4fad94"
+  },
+  {
+    "member": "public/decision.json",
+    "bytes": 3507,
+    "sha256": "cbe23b9f217748b0320f1117b36474e67999f674d217f6bc6df3a2f95d067e20"
+  },
+  {
+    "member": "public/factorial_components.csv",
+    "bytes": 1760,
+    "sha256": "96ed38dac32a027bb835d63494dd2db9fd2200bdd2cb8ab45d71e87ad1cb6518"
+  },
+  {
+    "member": "public/interaction_cross_date_repeatability.csv",
+    "bytes": 875,
+    "sha256": "33b7f37c8264a0001e80f03d79bed244a5c47e6fa769f6e7755d5ebab55260e5"
+  },
+  {
+    "member": "public/internal_RX_class_coverage.csv",
+    "bytes": 3071,
+    "sha256": "04c3ee6877676aca3a10ce4226bb45278c0cd3a844abaccf18a2d206e264a812"
+  },
+  {
+    "member": "public/invalid_samples.csv",
+    "bytes": 45,
+    "sha256": "401289091ed35c1051528db2af1bea64036fab4afe3187293ff1cb7938ba3f5c"
+  },
+  {
+    "member": "public/official_source_provenance.json",
+    "bytes": 707,
+    "sha256": "57003e6c5790ed463ffe0f85a640d42e9d43c7aa915944277f798d91b7d8aac8"
+  },
+  {
+    "member": "public/pre_execution_seal.json",
+    "bytes": 925,
+    "sha256": "c2257546041a02613de00b95306be3978a7fa9e774258ac9412897fdb7189aca"
+  },
+  {
+    "member": "public/prediction_summary.csv",
+    "bytes": 5281,
+    "sha256": "c1f4a5fc1b84bf349b3d1dfe14fc3f99010630a5dfd09a20d4cc8dd31e5ce922"
+  },
+  {
+    "member": "public/preflight.json",
+    "bytes": 16177,
+    "sha256": "377c4ca07713d9bd28e4b5f59918e2aac5008778f71679f9351bee885a29fbbe"
+  },
+  {
+    "member": "public/rx_hardware_and_split.csv",
+    "bytes": 1032,
+    "sha256": "fdba78482bcaef21a8bdddb27828c2bb6863a548899da5140b6bcb7a9c50c4a2"
+  },
+  {
+    "member": "public/sampling_uncertainty.csv",
+    "bytes": 365,
+    "sha256": "dbea598f583e3cd14b22450a8c8ea33fd4f83218c3e77da3949e65c96c46dd41"
+  },
+  {
+    "member": "public/shen_failure_review.json",
+    "bytes": 476,
+    "sha256": "bebad5985f1df718923aee828e3a4f21b19c42ace8e284a9aa001f97060118d3"
+  },
+  {
+    "member": "public/strict_TX_date_predictions.csv",
+    "bytes": 841389,
+    "sha256": "5663289d367c8bacf2581b74745023399fe4bf0da752491903eaab731db698a2"
+  },
+  {
+    "member": "public/transformed_known_TX_identity.csv",
+    "bytes": 1852703,
+    "sha256": "60782af56324c964a44f1da0d109a6a4e05db58751d01681d8781fd19b76636a"
+  },
+  {
+    "member": "public/user_authorization.json",
+    "bytes": 299,
+    "sha256": "be5e5d68fc2db25f76a64edee8be18d7d72e38382ba08d860a71957859b3a59c"
+  },
+  {
+    "member": "public/verification.json",
+    "bytes": 692,
+    "sha256": "1f20653623a713d019d6a2a77680f82c9625742d4cef31d2d76b9cd2604131d9"
+  },
+  {
+    "member": "public/w0_execution.json",
+    "bytes": 373,
+    "sha256": "db41c409a540f0f780b59374732120ad6f201aa787075d666caad0f73d63ace7"
+  },
+  {
+    "member": "public/w0_learning_curves.csv",
+    "bytes": 17071,
+    "sha256": "49d92579106cd70c18db001ac4331527f27a371616bd4556c1edc0495de0ce81"
+  },
+  {
+    "member": "public/w0_pilot_summary.csv",
+    "bytes": 428,
+    "sha256": "ae9c27eeca651837f94dd2e947e9afb5b9aef51780b8cd5664b14ead4f9f3870"
+  },
+  {
+    "member": "public/w0_receiver_date_metrics.csv",
+    "bytes": 9932,
+    "sha256": "c3fe27d09b0f16fd40f682ab006888c0e476c5b8732bd9b8b878d2803bd7813a"
+  },
+  {
+    "member": "public/w0_w1_results.pdf",
+    "bytes": 22133,
+    "sha256": "bb12339dba4c049afea7ccd8c54a9df11e35c6e1aa5a0b8898c5cce416d63003"
+  },
+  {
+    "member": "public/w0_w1_results.png",
+    "bytes": 132061,
+    "sha256": "a605b3baa4a45ecd32f2dade57f113bf6985f29d717d7b9738251f20d3c6e390"
+  },
+  {
+    "member": "jobs/pilot_seed20261013/config.json",
+    "bytes": 662,
+    "sha256": "c77ceb842b0261eb3ec4f57dcffb1a8432afc8098917d222061d40bfa598939d"
+  },
+  {
+    "member": "jobs/pilot_seed20261013/evaluation.csv",
+    "bytes": 4421,
+    "sha256": "679c67e0e1e320eaae81b5a85fd99c3edc2adf7bd1fd279bf7df12e2a025fc52"
+  },
+  {
+    "member": "jobs/pilot_seed20261013/history.csv",
+    "bytes": 8455,
+    "sha256": "9c7b3d5e236d5db85e80ae758b0e09ef5c6cef8ee12844ea4cb3a89c29337d1a"
+  },
+  {
+    "member": "jobs/pilot_seed20261013/metrics.json",
+    "bytes": 18169,
+    "sha256": "9c4796b2122e8bb59afb94416abd27df2d273a34833b0d3e19e988b5c5e35e50"
+  },
+  {
+    "member": "jobs/pilot_seed20261013/status.json",
+    "bytes": 10085,
+    "sha256": "cbda81310d6adc05fce557c6175b76d453623dfd08e29717c067f2819c05208f"
+  },
+  {
+    "member": "jobs/pilot_seed20261014/config.json",
+    "bytes": 662,
+    "sha256": "dad5ae16f469c19743484a1c2d3febaffc19ac11077c1597c14f25d0ae9d1045"
+  },
+  {
+    "member": "jobs/pilot_seed20261014/evaluation.csv",
+    "bytes": 4279,
+    "sha256": "bddb7cab55dd31b619efbe6e43991104cbb935b5dadf682302aa202f3c8493d8"
+  },
+  {
+    "member": "jobs/pilot_seed20261014/history.csv",
+    "bytes": 7308,
+    "sha256": "3cefc1bb26ae8c3006eae780dabcd5c442ae6e46cf3ec1be87b4c5d3cc76e6b1"
+  },
+  {
+    "member": "jobs/pilot_seed20261014/metrics.json",
+    "bytes": 17998,
+    "sha256": "41ca223ced542ae51e208e8f50fde6081888c28bee7a1444f521096a733212cc"
+  },
+  {
+    "member": "jobs/pilot_seed20261014/status.json",
+    "bytes": 10086,
+    "sha256": "e1e6897acd7fffe04923b5938c67d7be0a37eecd1b1012c79c3d11520b153828"
+  },
+  {
+    "member": "logs/pilot0.log",
+    "bytes": 18406,
+    "sha256": "5f53f3336aa65f7720a769740c0ccc805d43613441ec2f90ce65ebd31855d86c"
+  },
+  {
+    "member": "logs/pilot1.log",
+    "bytes": 15928,
+    "sha256": "1087b080fc0b560c0610559d18b89b3c94103eb78f8f79af418a827f4b5f4037"
+  },
+  {
+    "member": "coverage_abort_before_fitting/EXECUTION_PLAN.md",
+    "bytes": 6138,
+    "sha256": "7475ca51e1d5c0aee4bb2109976bd8871f3edf4a552de4a2cdd2566874415c8d"
+  },
+  {
+    "member": "coverage_abort_before_fitting/data_audit.csv",
+    "bytes": 35877,
+    "sha256": "6fdaa3767cbd9b2f2abf66c9ab2a8a6a3c180a70ac3f6c2883f64558e3db7b68"
+  },
+  {
+    "member": "coverage_abort_before_fitting/registration.json",
+    "bytes": 9034,
+    "sha256": "f643631ac9e3d1078227d3307c9541df26e18a4721314d14985fae876f3c89d6"
+  },
+  {
+    "member": "coverage_abort_before_fitting/rx_hardware_and_split.csv",
+    "bytes": 1022,
+    "sha256": "b7cd26c9695279c927e11d0414e81fdda7d2c3b923bb12cb2bd27a9705d74cf3"
+  },
+  {
+    "member": "source/scripts/analyze_wisig_w1.py",
+    "bytes": 9827,
+    "sha256": "f9a1d42707606ecc2220dfc440e2684d99de23d848b60bca601a9dac58af87bc"
+  },
+  {
+    "member": "source/scripts/launch_wisig_w0.py",
+    "bytes": 1327,
+    "sha256": "8e12427c079ba41b8841c26fc30fb875aa22ee4f7f206a9ac5c3f5bdbd8b5e4a"
+  },
+  {
+    "member": "source/scripts/plot_wisig_w01.py",
+    "bytes": 2724,
+    "sha256": "c6cb066cee2c94e26cb7e2f30a24d13be4442bee1dd291415a252c3938b549ea"
+  },
+  {
+    "member": "source/scripts/prepare_wisig_w01.py",
+    "bytes": 6374,
+    "sha256": "4bb9617d6beab3870c0cb9c76e7f14e4862e2d2c8e90ca26fd3d160ad21b8b07"
+  },
+  {
+    "member": "source/scripts/summarize_wisig_w01.py",
+    "bytes": 4456,
+    "sha256": "d64937e1e138b8f06560e634142ef40e8f61353d066982acf1f001b0139403d2"
+  },
+  {
+    "member": "source/scripts/train_wisig_w0.py",
+    "bytes": 7104,
+    "sha256": "955961e0b2057732214e8048d0b4ae3b337de0a33ea180cff109ac83076b69eb"
+  },
+  {
+    "member": "source/scripts/verify_wisig_w01.py",
+    "bytes": 3827,
+    "sha256": "0f89b65847db8fc1fc3a539ddab333f426663a3475930e41367e1ff6c44cbd47"
+  },
+  {
+    "member": "source/scripts/wisig_w01_common.py",
+    "bytes": 2983,
+    "sha256": "0a31ecb35510fdae0a85c197ff26ffd2860935f765e3170028d810d109f69036"
+  },
+  {
+    "member": "source/configs/wisig_w01/registration.json",
+    "bytes": 9063,
+    "sha256": "9261f153262e1aec06bf6c380ec393b821fb6543a54f67cb88b1e77dc0c62020"
+  },
+  {
+    "member": "source/docs/wisig_w01/EXECUTION_PLAN.md",
+    "bytes": 6433,
+    "sha256": "9546a48f9149b537417640de47269d1a2d15fb3f7ce213d1fe12e0f83ceb5c39"
+  },
+  {
+    "member": "source/docs/wisig_w01/W2_FROZEN_PLAN.md",
+    "bytes": 1683,
+    "sha256": "6c3497c902a92affd05bb429fd256112565c7ffe7cf2fb5cde487f70c7ff993b"
+  }
+]
