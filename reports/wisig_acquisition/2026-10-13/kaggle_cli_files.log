@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/home/keyan/.venvs/wisig-download/bin/kaggle", line 8, in <module>
+    sys.exit(main())
+  File "/home/keyan/.venvs/wisig-download/lib/python3.9/site-packages/kaggle/cli.py", line 68, in main
+    out = args.func(**command_args)
+  File "/home/keyan/.venvs/wisig-download/lib/python3.9/site-packages/kaggle/api/kaggle_api_extended.py", line 1519, in dataset_list_files_cli
+    result = self.dataset_list_files(dataset, page_token, page_size)
+  File "/home/keyan/.venvs/wisig-download/lib/python3.9/site-packages/kaggle/api/kaggle_api_extended.py", line 1490, in dataset_list_files
+    with self.build_kaggle_client() as kaggle:
+  File "/home/keyan/.venvs/wisig-download/lib/python3.9/site-packages/kaggle/api/kaggle_api_extended.py", line 688, in build_kaggle_client
+    username=self.config_values['username'],
+KeyError: 'username'

@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-13T07:19:37.273531+00:00",
+  "files_sha256": {
+    "configs/receiver_transform/registration.json": "89606fb3577fc62afbf7624c42b42374898437f0fd1c47c71f21cba3d2c6a60d",
+    "docs/receiver_transform/EXECUTION_PLAN.md": "0414e1fa72ded089a6342d55d9fca2cf6b6f862c4f5e752280a55a419c176f3e",
+    "scripts/receiver_transform_common.py": "04bd17fa3e5316b23519502fcfda05f36226172acef49e84d9b1c11990b12b30",
+    "scripts/prepare_receiver_transform.py": "085ed37809f265d3fc45a70cd4939062a528cf08e2717fd156a34a8c122e66e8",
+    "scripts/train_receiver_transform_gate.py": "1befbaa2d2004092978a066396e2782bd3c2320d2ae8240ddc3311ff02332790",
+    "scripts/analyze_receiver_transform_gate.py": "87fa5fe8f10b2f78d87046bb12f65663ee6dc41acd3848a9c2a6afa31e00048f",
+    "scripts/launch_receiver_transform_gate.py": "4b09a040633ede10197078f0a5213eb67bc96df911d7c46cfaa4c4b4872d4fcb"
+  },
+  "preflight_sha256": "8969002b3c8757205d26697a577853e803fe2efdb248009f9c976596f26e9472",
+  "before_fitting": true,
+  "zero_step_failure_preserved": "/home/keyan/code-y-wisig/outputs/receiver_transform/zero_step_launch_failure",
+  "implementation_repair": "Length32 adaptive pooling replaced by equivalent fixed bin2 pooling; deterministic GPU backward validated; zero real optimizer steps before reseal"
+}

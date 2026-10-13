@@ -1,0 +1,16 @@
+{
+  "official_download_page": "https://cores.ee.ucla.edu/wisig/downloads/",
+  "official_overview": "https://cores.ee.ucla.edu/wisig/overview/",
+  "official_license_page": "https://cores.ee.ucla.edu/downloads/datasets/wisig/",
+  "official_utilities": "https://github.com/WiSig-dataset/wisig-examples/blob/master/data_utilities.py",
+  "source_sha256": {
+    "kaggle_files": "6d548c5cb290bbff042ba94739260c2e602c957a5b2a9be6771e32b6a0d0d67a",
+    "kaggle_metadata": "2a62c0a94bb57d860508d8bd6d69a6cce2e303a16c988128de26d1538cac5d11",
+    "official_utilities": "03c6c2806bac2d5258cbaf0c8e12a2fde9e17495ae31c9d2938eeaba6b17768e",
+    "official_download_page": "c289c39a6fd01944c4439e09b74a9ab78a6362ee750f92cd0ba1ee8f024c2e41"
+  },
+  "kaggle_version": 1,
+  "license_original": "CC BY-NC-SA 4.0",
+  "license_kaggle": "Unknown",
+  "official_byte_equivalence_proven": false
+}

@@ -1,0 +1,217 @@
+{
+  "stage": "receiver_transform_sharedness_gate",
+  "date_shanghai": "2026-10-13",
+  "source_parent": "4df18a2",
+  "user_authorization": "Download ManyRx; strictly exclude held TX from encoder and mapping; execute PoC only after sharedness passes.",
+  "history_root": "/home/keyan/code-y-p2a",
+  "raw_root": "/home/keyan/code-y/data/external/shen_receiver_agnostic",
+  "source_receivers": [
+    "b200_mini_1",
+    "b210_1",
+    "pluto_1",
+    "rtl_1",
+    "rtl_2",
+    "rtl_3",
+    "rtl_5",
+    "rtl_6",
+    "rtl_7",
+    "rtl_9"
+  ],
+  "source_files": [
+    {
+      "receiver": "b200_mini_1",
+      "relative": "b200_mini_1_train.h5",
+      "role": "train",
+      "key": "shen_b200_mini_1_train",
+      "expected_sha256": "fe09c8be15e5e2c780b643e4e85610d9c4b8eb6e19715baad65a7fd838c0fc67"
+    },
+    {
+      "receiver": "b210_1",
+      "relative": "b210_1_train.h5",
+      "role": "train",
+      "key": "shen_b210_1_train",
+      "expected_sha256": "df6d2740ba495b52dcecefbc0bf4c532b66ad53333a37ee8c5a6ae715425d0ed"
+    },
+    {
+      "receiver": "pluto_1",
+      "relative": "pluto_1_train.h5",
+      "role": "train",
+      "key": "shen_pluto_1_train",
+      "expected_sha256": "95ed8b2b5c9328116468af9ba41e63c00efeccff446a5ec163ae4fba5b88fe45"
+    },
+    {
+      "receiver": "rtl_1",
+      "relative": "rtl_1_train.h5",
+      "role": "train",
+      "key": "shen_rtl_1_train",
+      "expected_sha256": "c43ae929d0ff6758365755820e65b6a0dd7978479b730177442ea5348913a23e"
+    },
+    {
+      "receiver": "rtl_2",
+      "relative": "rtl_2_train.h5",
+      "role": "train",
+      "key": "shen_rtl_2_train",
+      "expected_sha256": "ad80aacc88dd142773e9d58e6d0e57667f5a28873e3e68aeea34948a8b7d64b2"
+    },
+    {
+      "receiver": "rtl_3",
+      "relative": "rtl_3_train.h5",
+      "role": "train",
+      "key": "shen_rtl_3_train",
+      "expected_sha256": "326c5f366baae2924ff7fc114dbeb091051c898933eb93175c9742a8c1440c53"
+    },
+    {
+      "receiver": "rtl_5",
+      "relative": "rtl_5_train.h5",
+      "role": "train",
+      "key": "shen_rtl_5_train",
+      "expected_sha256": "bb4db309b1209df4ab46406565cd610c8344165db08686b97b4c2f9e3f8f9175"
+    },
+    {
+      "receiver": "rtl_6",
+      "relative": "rtl_6_train.h5",
+      "role": "train",
+      "key": "shen_rtl_6_train",
+      "expected_sha256": "87dbec5959cf4f553ef4fbe3b803c6dfd72b5aff23b2a0ba38e33125561f67d6"
+    },
+    {
+      "receiver": "rtl_7",
+      "relative": "rtl_7_train.h5",
+      "role": "train",
+      "key": "shen_rtl_7_train",
+      "expected_sha256": "4d3d2c7759431d56174ae987aabe76fe8eaf7a7fbe20143c2b9388b02ce63e33"
+    },
+    {
+      "receiver": "rtl_9",
+      "relative": "rtl_9_train.h5",
+      "role": "train",
+      "key": "shen_rtl_9_train",
+      "expected_sha256": "90beeda2fed9203016b038fdd452f3c1bc12bbf71409e124f6a71d088b127351"
+    }
+  ],
+  "folds": [
+    {
+      "fold": 0,
+      "fitting_rx": [
+        "b210_1",
+        "rtl_1",
+        "rtl_3",
+        "rtl_6",
+        "rtl_9"
+      ],
+      "outer_rx": [
+        "b200_mini_1",
+        "pluto_1",
+        "rtl_2",
+        "rtl_5",
+        "rtl_7"
+      ]
+    },
+    {
+      "fold": 1,
+      "fitting_rx": [
+        "b200_mini_1",
+        "pluto_1",
+        "rtl_2",
+        "rtl_5",
+        "rtl_7"
+      ],
+      "outer_rx": [
+        "b210_1",
+        "rtl_1",
+        "rtl_3",
+        "rtl_6",
+        "rtl_9"
+      ]
+    }
+  ],
+  "tx_ids": [
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+  ],
+  "held_tx_partitions": [
+    [
+      31,
+      32
+    ],
+    [
+      33,
+      34
+    ],
+    [
+      35,
+      36
+    ],
+    [
+      37,
+      38
+    ],
+    [
+      39,
+      40
+    ]
+  ],
+  "seeds": [
+    20261013,
+    20261014
+  ],
+  "epochs": 20,
+  "lr": 0.001,
+  "optimizer": "Adam",
+  "clip_norm": 5.0,
+  "feature_dim": 32,
+  "rank": 2,
+  "ridge_relative": 0.1,
+  "covariance_shrinkage": 0.1,
+  "packet_split": {
+    "encoder": [
+      0,
+      120
+    ],
+    "mapping": [
+      120,
+      160
+    ],
+    "gate": [
+      160,
+      200
+    ]
+  },
+  "normalization": "per-packet RMS only; no equalization/CIS/cropping",
+  "transform_normalization": "scalar RMS of centered fitting RX/TX mapping features only",
+  "gate": {
+    "relative_distance_reduction": 0.05,
+    "minimum_partitions_improving": 3,
+    "all_four_fold_seed_strata_required": true,
+    "mean_and_gaussian_w2_required": true,
+    "identity_retrieval_noninferiority": 0.05,
+    "encoder_train_accuracy_min": 0.5,
+    "no_threshold_search": true
+  },
+  "planned_gate_jobs": 20,
+  "conditional_poc": {
+    "formal_jobs": 16,
+    "matrix": "2 folds x 2 paired seeds x (CE, MixStyle, RXxTX Group DRO, fixed learned transformation)",
+    "epochs": 20,
+    "only_if_gate_passes": true
+  },
+  "no_fitting_retries": true,
+  "no_seed_replacement": true,
+  "prohibited": [
+    "development/locked RX",
+    "Shen Day3/4",
+    "OSU",
+    "WiSig numerical loading before Shen freeze",
+    "B1 reruns",
+    "coefficient search",
+    "post-failure architecture substitution"
+  ]
+}

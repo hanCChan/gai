@@ -1,0 +1,23 @@
+{
+  "configs/receiver_transform/registration.json": "89606fb3577fc62afbf7624c42b42374898437f0fd1c47c71f21cba3d2c6a60d",
+  "docs/receiver_transform/EXECUTION_PLAN.md": "0414e1fa72ded089a6342d55d9fca2cf6b6f862c4f5e752280a55a419c176f3e",
+  "reports/receiver_transform/2026-10-13/EVIDENCE_INDEX.md": "6fbabebc2d77042483579c5f91bd9ff8b9410de4d3a76708025f615f0c32de94",
+  "reports/receiver_transform/2026-10-13/REPORT.md": "fbbe183a4008df594c3b688eb26b9f30bb1c2bad41bb41f5eb0a2395278eb673",
+  "reports/receiver_transform/2026-10-13/decision.json": "fcd0c65f93be91d1f171104724f2fa2528c49c538b7d2abb46d9dccc6eb6ceeb",
+  "reports/receiver_transform/2026-10-13/evidence.zip": "3a3b5402fa1ecc0880ca0c8b99066987ede68234c27156bb132e1ab6df7f965f",
+  "reports/receiver_transform/2026-10-13/evidence_members.json": "3685d8c9394bfb298d2e92b1e5b170a08b90940fd012225b944b165a3efb4189",
+  "reports/receiver_transform/2026-10-13/execution.json": "4954a39b9828054e85d00f6ade316aaad6843b24b9018212cd0b05c4b77afbe8",
+  "reports/receiver_transform/2026-10-13/held_TX_RX_pair_distances.csv": "aa2a846dba102d1fde838f58e9887b8cd7141b5235071056de44d1edfe0aeb6b",
+  "reports/receiver_transform/2026-10-13/implementation_repair.json": "2d64dcfd6b2678378afd1b768261316e102e81f226fb4ead2eaf2e3409892741",
+  "reports/receiver_transform/2026-10-13/input_provenance.csv": "93c29669430392aa782029772fba9d7096d9409d2aeafbbacaaa0643af3dc243",
+  "reports/receiver_transform/2026-10-13/pre_execution_seal.json": "0486c8c56eb4c4f2a02f83660ee51a751b9381f1ba49054829b78691e0f451c8",
+  "reports/receiver_transform/2026-10-13/stratum_summary.csv": "7d4e74d6da63f934a898542ef93d7d95b242722bde916ecbee31343f61ddba55",
+  "reports/receiver_transform/2026-10-13/training_jobs.csv": "342016a6a2658c00ff495419d6b0940af0f4a61d548dbc5fd68be6e65f50ac31",
+  "reports/receiver_transform/2026-10-13/verification.json": "d546f5749b63b1eb949c8eb64a8f87d19eee1557d457fb9046d3d778037006f7",
+  "scripts/analyze_receiver_transform_gate.py": "87fa5fe8f10b2f78d87046bb12f65663ee6dc41acd3848a9c2a6afa31e00048f",
+  "scripts/launch_receiver_transform_gate.py": "4b09a040633ede10197078f0a5213eb67bc96df911d7c46cfaa4c4b4872d4fcb",
+  "scripts/prepare_receiver_transform.py": "085ed37809f265d3fc45a70cd4939062a528cf08e2717fd156a34a8c122e66e8",
+  "scripts/receiver_transform_common.py": "04bd17fa3e5316b23519502fcfda05f36226172acef49e84d9b1c11990b12b30",
+  "scripts/train_receiver_transform_gate.py": "1befbaa2d2004092978a066396e2782bd3c2320d2ae8240ddc3311ff02332790",
+  "scripts/verify_receiver_transform.py": "6b63c20d22198adca0a2e3d21afa71ad01dba0d1f21df5722b0c3dbac6559da0"
+}

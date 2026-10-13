@@ -1,0 +1,130 @@
+{
+  "state": "completed",
+  "jobs": [
+    {
+      "index": 0,
+      "gpu": 0,
+      "exit_code": 0,
+      "reserved_seconds": 18.474955249999766
+    },
+    {
+      "index": 1,
+      "gpu": 1,
+      "exit_code": 0,
+      "reserved_seconds": 18.859994950998953
+    },
+    {
+      "index": 2,
+      "gpu": 2,
+      "exit_code": 0,
+      "reserved_seconds": 18.373606134999136
+    },
+    {
+      "index": 3,
+      "gpu": 3,
+      "exit_code": 0,
+      "reserved_seconds": 18.430636803001107
+    },
+    {
+      "index": 4,
+      "gpu": 0,
+      "exit_code": 0,
+      "reserved_seconds": 18.434767781996925
+    },
+    {
+      "index": 5,
+      "gpu": 1,
+      "exit_code": 0,
+      "reserved_seconds": 17.88026812300086
+    },
+    {
+      "index": 6,
+      "gpu": 2,
+      "exit_code": 0,
+      "reserved_seconds": 18.570193829000345
+    },
+    {
+      "index": 7,
+      "gpu": 3,
+      "exit_code": 0,
+      "reserved_seconds": 18.56915207899874
+    },
+    {
+      "index": 8,
+      "gpu": 0,
+      "exit_code": 0,
+      "reserved_seconds": 17.024483954999596
+    },
+    {
+      "index": 9,
+      "gpu": 1,
+      "exit_code": 0,
+      "reserved_seconds": 17.071540176999406
+    },
+    {
+      "index": 10,
+      "gpu": 2,
+      "exit_code": 0,
+      "reserved_seconds": 17.506469169999036
+    },
+    {
+      "index": 11,
+      "gpu": 3,
+      "exit_code": 0,
+      "reserved_seconds": 17.520798355999432
+    },
+    {
+      "index": 12,
+      "gpu": 0,
+      "exit_code": 0,
+      "reserved_seconds": 18.635814062999998
+    },
+    {
+      "index": 13,
+      "gpu": 1,
+      "exit_code": 0,
+      "reserved_seconds": 18.781667412997194
+    },
+    {
+      "index": 14,
+      "gpu": 2,
+      "exit_code": 0,
+      "reserved_seconds": 18.076788944999862
+    },
+    {
+      "index": 15,
+      "gpu": 3,
+      "exit_code": 0,
+      "reserved_seconds": 18.398940283997945
+    },
+    {
+      "index": 16,
+      "gpu": 0,
+      "exit_code": 0,
+      "reserved_seconds": 18.73184432400012
+    },
+    {
+      "index": 17,
+      "gpu": 1,
+      "exit_code": 0,
+      "reserved_seconds": 18.72981697400246
+    },
+    {
+      "index": 18,
+      "gpu": 2,
+      "exit_code": 0,
+      "reserved_seconds": 18.837787884996942
+    },
+    {
+      "index": 19,
+      "gpu": 3,
+      "exit_code": 0,
+      "reserved_seconds": 18.345334572997672
+    }
+  ],
+  "completed_jobs": 20,
+  "planned_jobs": 20,
+  "reserved_gpu_hours": 0.1014596836308293,
+  "retries": 0,
+  "formal_poc_jobs": 0
+}

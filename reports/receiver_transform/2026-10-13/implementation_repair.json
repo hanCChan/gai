@@ -1,0 +1,9 @@
+{
+  "initial_launch_failures": 4,
+  "missing_reseal_launch_failures": 4,
+  "optimizer_steps_before_repair": 0,
+  "synthetic_gpu_forward_backward_passed": true,
+  "equivalent_pooling_exactly_equal": true,
+  "failed_pre_execution_seal_sha256": "13e4e1313bc54b52a68fa8ea5743aed767a8b53a50ea7f4968590b8d2790d007",
+  "original_logs_preserved": true
+}

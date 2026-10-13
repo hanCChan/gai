@@ -1,0 +1,111 @@
+{
+  "status": "STOP_SHAREDNESS_FAILED_NO_CLASSIFICATION_POC",
+  "sharedness_passed": false,
+  "strict_held_TX_exclusion": true,
+  "strata": [
+    {
+      "fold": 0,
+      "seed": 20261013,
+      "criteria": {
+        "mean_squared_distance": {
+          "best_control": "coral",
+          "relative_improvement": -0.1959640911593603,
+          "improving_TX_partitions": 1,
+          "passed": false
+        },
+        "gaussian_w2_squared": {
+          "best_control": "coral",
+          "relative_improvement": -0.3426028955359324,
+          "improving_TX_partitions": 1,
+          "passed": false
+        }
+      },
+      "lowrank_identity_retrieval": 0.6,
+      "strongest_control_identity_retrieval": 0.67,
+      "identity_gate": false,
+      "encoder_gate": true,
+      "passed": false
+    },
+    {
+      "fold": 0,
+      "seed": 20261014,
+      "criteria": {
+        "mean_squared_distance": {
+          "best_control": "coral",
+          "relative_improvement": -0.09817716706906188,
+          "improving_TX_partitions": 1,
+          "passed": false
+        },
+        "gaussian_w2_squared": {
+          "best_control": "coral",
+          "relative_improvement": -0.116177222784978,
+          "improving_TX_partitions": 1,
+          "passed": false
+        }
+      },
+      "lowrank_identity_retrieval": 0.645,
+      "strongest_control_identity_retrieval": 0.665,
+      "identity_gate": true,
+      "encoder_gate": true,
+      "passed": false
+    },
+    {
+      "fold": 1,
+      "seed": 20261013,
+      "criteria": {
+        "mean_squared_distance": {
+          "best_control": "translation",
+          "relative_improvement": -0.0498924178047242,
+          "improving_TX_partitions": 0,
+          "passed": false
+        },
+        "gaussian_w2_squared": {
+          "best_control": "translation",
+          "relative_improvement": -0.05821440418704449,
+          "improving_TX_partitions": 0,
+          "passed": false
+        }
+      },
+      "lowrank_identity_retrieval": 0.385,
+      "strongest_control_identity_retrieval": 0.405,
+      "identity_gate": true,
+      "encoder_gate": true,
+      "passed": false
+    },
+    {
+      "fold": 1,
+      "seed": 20261014,
+      "criteria": {
+        "mean_squared_distance": {
+          "best_control": "coral",
+          "relative_improvement": -0.18122462764633118,
+          "improving_TX_partitions": 0,
+          "passed": false
+        },
+        "gaussian_w2_squared": {
+          "best_control": "coral",
+          "relative_improvement": -0.16326021394498524,
+          "improving_TX_partitions": 0,
+          "passed": false
+        }
+      },
+      "lowrank_identity_retrieval": 0.57,
+      "strongest_control_identity_retrieval": 0.575,
+      "identity_gate": true,
+      "encoder_gate": false,
+      "passed": false
+    }
+  ],
+  "fitting_jobs": 20,
+  "optimizer_steps": 24000,
+  "classification_poc_jobs": 0,
+  "reserved_gpu_hours": 0.1014596836308293,
+  "fitting_retries": 0,
+  "outer_receiver_evaluation_performed": false,
+  "wisig_used_for_research": false,
+  "scope": "Fixed rank2 linear residual mappings in one preregistered IQ encoder family; no causal hardware attribution, no general rejection of nonlinear mapping hypotheses",
+  "uncertainty": "Directed RX pairs share receivers; TX partitions share fitted identities. Engineering gate, not independent significance test.",
+  "zero_step_launch_aborts": 8,
+  "reserved_gpu_hours_including_aborts": 0.11499796053388309,
+  "launch_failure_disclosure": "Four deterministic pooling backward failures and four missing-reseal launch failures; all aborted before any optimizer step; logs preserved; original seeds and partitions unchanged."
+}

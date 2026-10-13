@@ -43,3 +43,24 @@ Shen method freeze. M3 has no resource cap, but all mechanism/identity/novelty
 gates and one finite preregistered matrix still apply. Do not mistake budget
 approval for scientific evidence. Follow docs/m0_signal/EXECUTION_PLAN.md.
 Preserve historical evidence and publish completed execution with remote readback.
+
+## Latest user instruction: receiver transformation sharedness and conditional PoC
+
+On 2026-10-13 the user authorized WiSig acquisition using the proposed alternate
+routes and a new receiver-transformation PoC only if sharedness passes. They
+explicitly required held-out TX to be excluded from BOTH encoder optimization
+and mapping estimation. This new experiment supersedes the prior M3 correction
+hypothesis; it does not reopen B1 or any stopped experiment.
+
+The preregistered 20 strict eight-TX/five-RX IQ encoders completed 24000 optimizer
+steps. Fixed rank2 mappings failed sharedness in all four fold/seed strata.
+Conditional classification PoC: zero jobs. Stop this concrete mechanism;
+no rank/coefficient search or failure-driven algorithm replacement is authorized.
+Eight zero-step launch aborts are preserved and disclosed. Total reserved GPUh
+including them: 0.11499796053388309. See reports/receiver_transform/2026-10-13.
+
+WiSig acquisition is a separate data task. Keep the signal values sealed;
+metadata-only inert inspection may verify structure and payload lengths.
+Kaggle is a third-party source with Unknown listed license; record original
+CC BY-NC-SA 4.0 requirements and do not claim byte-equivalence without an
+official checksum. Never publish the dataset, numeric features or weights.

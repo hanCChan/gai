@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "completed_encoder_jobs": 20,
+  "distance_rows": 3200,
+  "strict_TX_exclusion": true,
+  "common_initialization_within_seed": true,
+  "common_batch_schedule_within_seed": true,
+  "decision_recomputed_from_public_csv": true,
+  "zero_step_launch_aborts": 8,
+  "zero_step_launch_gpu_hours": 0.013538276903053783,
+  "reserved_gpu_hours_including_aborts": 0.11499796053388309,
+  "outer_receiver_evaluation": false,
+  "classification_poc_jobs": 0
+}
