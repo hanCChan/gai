@@ -1,0 +1,13 @@
+{
+  "sealed_utc": "2026-10-13T04:13:06.074855+00:00",
+  "stage": "before first D0 archived score-value read",
+  "files_sha256": {
+    "configs/d0_class_pair/registration.json": "fb760991ba78e39bed9a3a609438d52da61af93bd1bbe8d6cfe92b95a0794642",
+    "docs/d0_class_pair/USER_PLAN.md": "f4c20eb2573e3bf03a8adec115bb8f6ce8cb7ae05ca4248aa8b015522578a000",
+    "docs/d0_class_pair/PREREGISTRATION.md": "342dd9ba448e6dcb6f3cd745f4adffed01327fe14fda67e4002537380f053915",
+    "src/d0_class_pair/__init__.py": "7edb3d48ac18f38b74adcf8a9012f85671c4bf96ed5995986020ce7b7e604087",
+    "src/d0_class_pair/metrics.py": "ec50d9cd64a63c4b8f8baac5b7ac4bf0328b603ebad5c165d3d94193a86877f8",
+    "scripts/audit_d0_class_pair.py": "e04c2a31c600a6a8db52b36b504d738701357b84bad36aa9a8e51a16af674c12",
+    "scripts/test_d0_metrics.py": "2d25e4426cba30aa8bcc8bb56c9124a2e7dba5df29ee906c63ca130310d99b49"
+  }
+}

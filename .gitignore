@@ -51,3 +51,11 @@ credentials*
 # Curated, user-authorized evidence bundles (raw IQ and CNN weights excluded)
 !/reports/virp/2026-10-12_v1_v0/VIRP_v1_V0_evidence.zip
 !/reports/eisr/2026-10-12_v1/EISR_v1_E0_E1_E2_evidence.zip
+
+# D0 full numeric/vector and export figures are preserved in evidence.zip.
+reports/d0_class_pair/**/*.svg
+reports/d0_class_pair/**/confusions_*.png
+reports/d0_class_pair/**/pair_confusion_changes.png
+reports/d0_class_pair/**/worst_pair_margins.png
+reports/d0_class_pair/**/directed_pairs.csv
+reports/d0_class_pair/**/risk_prediction_vectors.csv

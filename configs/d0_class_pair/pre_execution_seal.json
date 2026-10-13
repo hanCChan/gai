@@ -1,0 +1,15 @@
+{
+  "sealed_utc": "2026-10-13T04:13:06.074855+00:00",
+  "stage": "before first D0 archived score-value read",
+  "files_sha256": {
+    "configs/d0_class_pair/registration.json": "fb760991ba78e39bed9a3a609438d52da61af93bd1bbe8d6cfe92b95a0794642",
+    "docs/d0_class_pair/USER_PLAN.md": "f4c20eb2573e3bf03a8adec115bb8f6ce8cb7ae05ca4248aa8b015522578a000",
+    "docs/d0_class_pair/PREREGISTRATION.md": "342dd9ba448e6dcb6f3cd745f4adffed01327fe14fda67e4002537380f053915",
+    "src/d0_class_pair/__init__.py": "7edb3d48ac18f38b74adcf8a9012f85671c4bf96ed5995986020ce7b7e604087",
+    "src/d0_class_pair/metrics.py": "570c6a178ebcf58b353b7c54a2dbe39b2626f1809b5e82ef45e47fac39057f8a",
+    "scripts/audit_d0_class_pair.py": "e04c2a31c600a6a8db52b36b504d738701357b84bad36aa9a8e51a16af674c12",
+    "scripts/test_d0_metrics.py": "523ddb5e34c054d1e67f7e6f1bee53c66a8411e8af2b97a9f54d0c29c0b68220"
+  },
+  "compatibility_correction_utc": "2026-10-13T04:13:40.881951+00:00",
+  "compatibility_correction": "First run failed before writing results: installed SciPy SpearmanrResult exposes correlation/index 0, not statistic. Corrected API access and added nonconstant synthetic check. No metric, thresholds, dataset or analysis changes; original seal retained."
+}

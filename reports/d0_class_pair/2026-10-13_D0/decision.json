@@ -1,0 +1,57 @@
+{
+  "status": "LIMITED_SUPPORT_CONDITIONAL_BASELINE_POC_ONLY",
+  "repeated_structure_support": true,
+  "predictive_support": true,
+  "mechanism_specific_support": true,
+  "mean_accuracy": {
+    "full_cis": 0.6837,
+    "strict_cis": 0.8299
+  },
+  "mean_accuracy_delta": 0.1462,
+  "harmful_edges_both_folds": 8,
+  "predictability_cells": [
+    {
+      "method": "full_cis",
+      "fold": 0,
+      "receivers": 5,
+      "defined_receivers": 5,
+      "median_spearman": 0.6570961093198497,
+      "median_gain_over_uniform": 0.5520688052068805,
+      "median_gain_over_factorized": 0.40836408364083665
+    },
+    {
+      "method": "full_cis",
+      "fold": 1,
+      "receivers": 5,
+      "defined_receivers": 5,
+      "median_spearman": 0.5922063094589521,
+      "median_gain_over_uniform": 0.615130023640662,
+      "median_gain_over_factorized": 0.34085213032581435
+    },
+    {
+      "method": "strict_cis",
+      "fold": 0,
+      "receivers": 5,
+      "defined_receivers": 5,
+      "median_spearman": 0.6744840668749075,
+      "median_gain_over_uniform": 0.7403740374037404,
+      "median_gain_over_factorized": 0.5678233438485805
+    },
+    {
+      "method": "strict_cis",
+      "fold": 1,
+      "receivers": 5,
+      "defined_receivers": 5,
+      "median_spearman": 0.7809282791217236,
+      "median_gain_over_uniform": 0.7564213564213564,
+      "median_gain_over_factorized": 0.21558441558441555
+    }
+  ],
+  "strong_method_sufficiency": "UNKNOWN: no archived strong-method scores; literature coverage is not empirical sufficiency",
+  "seed_replication": "UNAVAILABLE: one seed",
+  "new_training_runs": 0,
+  "new_inference_runs": 0,
+  "downloaded_dataset_bytes": 0,
+  "os_u_or_development_or_locked_data_reads": 0,
+  "next_training_authorized": false
+}

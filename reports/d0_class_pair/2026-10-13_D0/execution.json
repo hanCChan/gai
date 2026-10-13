@@ -1,0 +1,12 @@
+{
+  "elapsed_seconds": 1.7846486079997703,
+  "python": "3.9.7 (default, Sep 16 2021, 13:09:58) \n[GCC 7.5.0]",
+  "numpy": "1.20.3",
+  "prediction_assets": 20,
+  "expert_predictions": 40000,
+  "distinct_rx_packets": 20000,
+  "full_strict_exact_rows_labels_pairing_verified": true,
+  "source_fit_eval_rx_disjoint_verified": true,
+  "all_frozen_input_hashes_verified": true,
+  "pre_execution_seal_sha256": "561a6d7e5fed207e7d865dc349c1e6220f6347d58d06700f0ed161f95f9cd663"
+}

@@ -1,6 +1,6 @@
 # gai：LoRa RFFI 开发实验
 
-[最新研究状态、C0计划与结果入口](RESEARCH_STATUS.md)：P0已补传GitHub；C0按真实时间分组不可核验停止，没有启动C1/C2或新推理/训练。
+[最新研究状态](RESEARCH_STATUS.md)：D0类别判别审计已完成，源池内有有限正证，强基线剩余缺口未知，完成D0即停止。[D0计划](docs/d0_class_pair/EXECUTION_PLAN.md)、[文献差异矩阵](docs/d0_class_pair/LITERATURE_MATRIX.md)、[报告与完整数值/代码证据](reports/d0_class_pair/2026-10-13_D0/REPORT.md)。本轮训练/推理/数据下载均为0；P0与C0保持停止。
 
 [研究报告与完整证据索引](reports/RESEARCH_REPORT_INDEX.md)：G1/G2-0、VIRP-v1 和 EISR-v1，包含冻结规则、独立复核与证据 ZIP。
 

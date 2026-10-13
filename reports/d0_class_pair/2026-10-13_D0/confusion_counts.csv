@@ -1,0 +1,2001 @@
+receiver,fold,hardware_family,method,tx_i,tx_j,count,conditional_probability
+b200_mini_1,0,USRP B200 mini,full_cis,31,31,177,0.885
+b200_mini_1,0,USRP B200 mini,full_cis,31,32,6,0.03
+b200_mini_1,0,USRP B200 mini,full_cis,31,33,11,0.055
+b200_mini_1,0,USRP B200 mini,full_cis,31,34,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,31,35,6,0.03
+b200_mini_1,0,USRP B200 mini,full_cis,31,36,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,31,37,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,31,38,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,31,39,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,31,40,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,32,31,70,0.35
+b200_mini_1,0,USRP B200 mini,full_cis,32,32,38,0.19
+b200_mini_1,0,USRP B200 mini,full_cis,32,33,19,0.095
+b200_mini_1,0,USRP B200 mini,full_cis,32,34,2,0.01
+b200_mini_1,0,USRP B200 mini,full_cis,32,35,71,0.355
+b200_mini_1,0,USRP B200 mini,full_cis,32,36,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,32,37,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,32,38,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,32,39,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,32,40,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,33,31,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,33,32,1,0.005
+b200_mini_1,0,USRP B200 mini,full_cis,33,33,158,0.79
+b200_mini_1,0,USRP B200 mini,full_cis,33,34,40,0.2
+b200_mini_1,0,USRP B200 mini,full_cis,33,35,1,0.005
+b200_mini_1,0,USRP B200 mini,full_cis,33,36,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,33,37,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,33,38,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,33,39,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,33,40,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,34,31,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,34,32,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,34,33,101,0.505
+b200_mini_1,0,USRP B200 mini,full_cis,34,34,93,0.465
+b200_mini_1,0,USRP B200 mini,full_cis,34,35,6,0.03
+b200_mini_1,0,USRP B200 mini,full_cis,34,36,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,34,37,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,34,38,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,34,39,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,34,40,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,35,31,4,0.02
+b200_mini_1,0,USRP B200 mini,full_cis,35,32,22,0.11
+b200_mini_1,0,USRP B200 mini,full_cis,35,33,3,0.015
+b200_mini_1,0,USRP B200 mini,full_cis,35,34,22,0.11
+b200_mini_1,0,USRP B200 mini,full_cis,35,35,149,0.745
+b200_mini_1,0,USRP B200 mini,full_cis,35,36,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,35,37,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,35,38,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,35,39,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,35,40,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,36,31,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,36,32,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,36,33,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,36,34,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,36,35,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,36,36,131,0.655
+b200_mini_1,0,USRP B200 mini,full_cis,36,37,25,0.125
+b200_mini_1,0,USRP B200 mini,full_cis,36,38,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,36,39,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,36,40,44,0.22
+b200_mini_1,0,USRP B200 mini,full_cis,37,31,1,0.005
+b200_mini_1,0,USRP B200 mini,full_cis,37,32,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,37,33,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,37,34,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,37,35,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,37,36,19,0.095
+b200_mini_1,0,USRP B200 mini,full_cis,37,37,174,0.87
+b200_mini_1,0,USRP B200 mini,full_cis,37,38,6,0.03
+b200_mini_1,0,USRP B200 mini,full_cis,37,39,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,37,40,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,38,31,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,38,32,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,38,33,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,38,34,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,38,35,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,38,36,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,38,37,3,0.015
+b200_mini_1,0,USRP B200 mini,full_cis,38,38,181,0.905
+b200_mini_1,0,USRP B200 mini,full_cis,38,39,16,0.08
+b200_mini_1,0,USRP B200 mini,full_cis,38,40,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,39,31,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,39,32,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,39,33,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,39,34,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,39,35,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,39,36,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,39,37,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,39,38,36,0.18
+b200_mini_1,0,USRP B200 mini,full_cis,39,39,164,0.82
+b200_mini_1,0,USRP B200 mini,full_cis,39,40,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,40,31,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,40,32,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,40,33,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,40,34,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,40,35,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,40,36,3,0.015
+b200_mini_1,0,USRP B200 mini,full_cis,40,37,9,0.045
+b200_mini_1,0,USRP B200 mini,full_cis,40,38,0,0.0
+b200_mini_1,0,USRP B200 mini,full_cis,40,39,2,0.01
+b200_mini_1,0,USRP B200 mini,full_cis,40,40,186,0.93
+pluto_1,0,ADALM-Pluto,full_cis,31,31,198,0.99
+pluto_1,0,ADALM-Pluto,full_cis,31,32,1,0.005
+pluto_1,0,ADALM-Pluto,full_cis,31,33,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,31,34,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,31,35,1,0.005
+pluto_1,0,ADALM-Pluto,full_cis,31,36,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,31,37,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,31,38,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,31,39,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,31,40,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,32,31,118,0.59
+pluto_1,0,ADALM-Pluto,full_cis,32,32,68,0.34
+pluto_1,0,ADALM-Pluto,full_cis,32,33,5,0.025
+pluto_1,0,ADALM-Pluto,full_cis,32,34,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,32,35,5,0.025
+pluto_1,0,ADALM-Pluto,full_cis,32,36,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,32,37,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,32,38,4,0.02
+pluto_1,0,ADALM-Pluto,full_cis,32,39,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,32,40,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,33,31,1,0.005
+pluto_1,0,ADALM-Pluto,full_cis,33,32,1,0.005
+pluto_1,0,ADALM-Pluto,full_cis,33,33,160,0.8
+pluto_1,0,ADALM-Pluto,full_cis,33,34,38,0.19
+pluto_1,0,ADALM-Pluto,full_cis,33,35,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,33,36,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,33,37,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,33,38,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,33,39,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,33,40,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,34,31,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,34,32,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,34,33,88,0.44
+pluto_1,0,ADALM-Pluto,full_cis,34,34,111,0.555
+pluto_1,0,ADALM-Pluto,full_cis,34,35,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,34,36,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,34,37,1,0.005
+pluto_1,0,ADALM-Pluto,full_cis,34,38,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,34,39,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,34,40,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,35,31,53,0.265
+pluto_1,0,ADALM-Pluto,full_cis,35,32,78,0.39
+pluto_1,0,ADALM-Pluto,full_cis,35,33,5,0.025
+pluto_1,0,ADALM-Pluto,full_cis,35,34,8,0.04
+pluto_1,0,ADALM-Pluto,full_cis,35,35,54,0.27
+pluto_1,0,ADALM-Pluto,full_cis,35,36,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,35,37,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,35,38,2,0.01
+pluto_1,0,ADALM-Pluto,full_cis,35,39,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,35,40,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,36,31,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,36,32,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,36,33,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,36,34,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,36,35,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,36,36,200,1.0
+pluto_1,0,ADALM-Pluto,full_cis,36,37,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,36,38,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,36,39,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,36,40,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,37,31,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,37,32,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,37,33,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,37,34,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,37,35,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,37,36,1,0.005
+pluto_1,0,ADALM-Pluto,full_cis,37,37,181,0.905
+pluto_1,0,ADALM-Pluto,full_cis,37,38,18,0.09
+pluto_1,0,ADALM-Pluto,full_cis,37,39,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,37,40,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,38,31,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,38,32,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,38,33,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,38,34,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,38,35,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,38,36,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,38,37,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,38,38,200,1.0
+pluto_1,0,ADALM-Pluto,full_cis,38,39,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,38,40,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,39,31,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,39,32,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,39,33,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,39,34,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,39,35,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,39,36,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,39,37,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,39,38,145,0.725
+pluto_1,0,ADALM-Pluto,full_cis,39,39,55,0.275
+pluto_1,0,ADALM-Pluto,full_cis,39,40,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,40,31,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,40,32,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,40,33,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,40,34,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,40,35,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,40,36,1,0.005
+pluto_1,0,ADALM-Pluto,full_cis,40,37,25,0.125
+pluto_1,0,ADALM-Pluto,full_cis,40,38,0,0.0
+pluto_1,0,ADALM-Pluto,full_cis,40,39,2,0.01
+pluto_1,0,ADALM-Pluto,full_cis,40,40,172,0.86
+rtl_2,0,RTL-SDR,full_cis,31,31,113,0.565
+rtl_2,0,RTL-SDR,full_cis,31,32,61,0.305
+rtl_2,0,RTL-SDR,full_cis,31,33,2,0.01
+rtl_2,0,RTL-SDR,full_cis,31,34,3,0.015
+rtl_2,0,RTL-SDR,full_cis,31,35,19,0.095
+rtl_2,0,RTL-SDR,full_cis,31,36,0,0.0
+rtl_2,0,RTL-SDR,full_cis,31,37,0,0.0
+rtl_2,0,RTL-SDR,full_cis,31,38,2,0.01
+rtl_2,0,RTL-SDR,full_cis,31,39,0,0.0
+rtl_2,0,RTL-SDR,full_cis,31,40,0,0.0
+rtl_2,0,RTL-SDR,full_cis,32,31,48,0.24
+rtl_2,0,RTL-SDR,full_cis,32,32,95,0.475
+rtl_2,0,RTL-SDR,full_cis,32,33,4,0.02
+rtl_2,0,RTL-SDR,full_cis,32,34,10,0.05
+rtl_2,0,RTL-SDR,full_cis,32,35,39,0.195
+rtl_2,0,RTL-SDR,full_cis,32,36,0,0.0
+rtl_2,0,RTL-SDR,full_cis,32,37,0,0.0
+rtl_2,0,RTL-SDR,full_cis,32,38,4,0.02
+rtl_2,0,RTL-SDR,full_cis,32,39,0,0.0
+rtl_2,0,RTL-SDR,full_cis,32,40,0,0.0
+rtl_2,0,RTL-SDR,full_cis,33,31,5,0.025
+rtl_2,0,RTL-SDR,full_cis,33,32,19,0.095
+rtl_2,0,RTL-SDR,full_cis,33,33,71,0.355
+rtl_2,0,RTL-SDR,full_cis,33,34,88,0.44
+rtl_2,0,RTL-SDR,full_cis,33,35,17,0.085
+rtl_2,0,RTL-SDR,full_cis,33,36,0,0.0
+rtl_2,0,RTL-SDR,full_cis,33,37,0,0.0
+rtl_2,0,RTL-SDR,full_cis,33,38,0,0.0
+rtl_2,0,RTL-SDR,full_cis,33,39,0,0.0
+rtl_2,0,RTL-SDR,full_cis,33,40,0,0.0
+rtl_2,0,RTL-SDR,full_cis,34,31,4,0.02
+rtl_2,0,RTL-SDR,full_cis,34,32,27,0.135
+rtl_2,0,RTL-SDR,full_cis,34,33,46,0.23
+rtl_2,0,RTL-SDR,full_cis,34,34,94,0.47
+rtl_2,0,RTL-SDR,full_cis,34,35,29,0.145
+rtl_2,0,RTL-SDR,full_cis,34,36,0,0.0
+rtl_2,0,RTL-SDR,full_cis,34,37,0,0.0
+rtl_2,0,RTL-SDR,full_cis,34,38,0,0.0
+rtl_2,0,RTL-SDR,full_cis,34,39,0,0.0
+rtl_2,0,RTL-SDR,full_cis,34,40,0,0.0
+rtl_2,0,RTL-SDR,full_cis,35,31,26,0.13
+rtl_2,0,RTL-SDR,full_cis,35,32,96,0.48
+rtl_2,0,RTL-SDR,full_cis,35,33,3,0.015
+rtl_2,0,RTL-SDR,full_cis,35,34,12,0.06
+rtl_2,0,RTL-SDR,full_cis,35,35,60,0.3
+rtl_2,0,RTL-SDR,full_cis,35,36,0,0.0
+rtl_2,0,RTL-SDR,full_cis,35,37,0,0.0
+rtl_2,0,RTL-SDR,full_cis,35,38,1,0.005
+rtl_2,0,RTL-SDR,full_cis,35,39,2,0.01
+rtl_2,0,RTL-SDR,full_cis,35,40,0,0.0
+rtl_2,0,RTL-SDR,full_cis,36,31,0,0.0
+rtl_2,0,RTL-SDR,full_cis,36,32,0,0.0
+rtl_2,0,RTL-SDR,full_cis,36,33,0,0.0
+rtl_2,0,RTL-SDR,full_cis,36,34,0,0.0
+rtl_2,0,RTL-SDR,full_cis,36,35,0,0.0
+rtl_2,0,RTL-SDR,full_cis,36,36,200,1.0
+rtl_2,0,RTL-SDR,full_cis,36,37,0,0.0
+rtl_2,0,RTL-SDR,full_cis,36,38,0,0.0
+rtl_2,0,RTL-SDR,full_cis,36,39,0,0.0
+rtl_2,0,RTL-SDR,full_cis,36,40,0,0.0
+rtl_2,0,RTL-SDR,full_cis,37,31,1,0.005
+rtl_2,0,RTL-SDR,full_cis,37,32,1,0.005
+rtl_2,0,RTL-SDR,full_cis,37,33,0,0.0
+rtl_2,0,RTL-SDR,full_cis,37,34,0,0.0
+rtl_2,0,RTL-SDR,full_cis,37,35,0,0.0
+rtl_2,0,RTL-SDR,full_cis,37,36,11,0.055
+rtl_2,0,RTL-SDR,full_cis,37,37,171,0.855
+rtl_2,0,RTL-SDR,full_cis,37,38,3,0.015
+rtl_2,0,RTL-SDR,full_cis,37,39,5,0.025
+rtl_2,0,RTL-SDR,full_cis,37,40,8,0.04
+rtl_2,0,RTL-SDR,full_cis,38,31,2,0.01
+rtl_2,0,RTL-SDR,full_cis,38,32,9,0.045
+rtl_2,0,RTL-SDR,full_cis,38,33,0,0.0
+rtl_2,0,RTL-SDR,full_cis,38,34,6,0.03
+rtl_2,0,RTL-SDR,full_cis,38,35,0,0.0
+rtl_2,0,RTL-SDR,full_cis,38,36,1,0.005
+rtl_2,0,RTL-SDR,full_cis,38,37,26,0.13
+rtl_2,0,RTL-SDR,full_cis,38,38,84,0.42
+rtl_2,0,RTL-SDR,full_cis,38,39,72,0.36
+rtl_2,0,RTL-SDR,full_cis,38,40,0,0.0
+rtl_2,0,RTL-SDR,full_cis,39,31,2,0.01
+rtl_2,0,RTL-SDR,full_cis,39,32,11,0.055
+rtl_2,0,RTL-SDR,full_cis,39,33,1,0.005
+rtl_2,0,RTL-SDR,full_cis,39,34,6,0.03
+rtl_2,0,RTL-SDR,full_cis,39,35,3,0.015
+rtl_2,0,RTL-SDR,full_cis,39,36,0,0.0
+rtl_2,0,RTL-SDR,full_cis,39,37,15,0.075
+rtl_2,0,RTL-SDR,full_cis,39,38,24,0.12
+rtl_2,0,RTL-SDR,full_cis,39,39,131,0.655
+rtl_2,0,RTL-SDR,full_cis,39,40,7,0.035
+rtl_2,0,RTL-SDR,full_cis,40,31,0,0.0
+rtl_2,0,RTL-SDR,full_cis,40,32,0,0.0
+rtl_2,0,RTL-SDR,full_cis,40,33,0,0.0
+rtl_2,0,RTL-SDR,full_cis,40,34,0,0.0
+rtl_2,0,RTL-SDR,full_cis,40,35,0,0.0
+rtl_2,0,RTL-SDR,full_cis,40,36,17,0.085
+rtl_2,0,RTL-SDR,full_cis,40,37,12,0.06
+rtl_2,0,RTL-SDR,full_cis,40,38,0,0.0
+rtl_2,0,RTL-SDR,full_cis,40,39,3,0.015
+rtl_2,0,RTL-SDR,full_cis,40,40,168,0.84
+rtl_5,0,RTL-SDR,full_cis,31,31,117,0.585
+rtl_5,0,RTL-SDR,full_cis,31,32,45,0.225
+rtl_5,0,RTL-SDR,full_cis,31,33,1,0.005
+rtl_5,0,RTL-SDR,full_cis,31,34,10,0.05
+rtl_5,0,RTL-SDR,full_cis,31,35,17,0.085
+rtl_5,0,RTL-SDR,full_cis,31,36,0,0.0
+rtl_5,0,RTL-SDR,full_cis,31,37,0,0.0
+rtl_5,0,RTL-SDR,full_cis,31,38,9,0.045
+rtl_5,0,RTL-SDR,full_cis,31,39,1,0.005
+rtl_5,0,RTL-SDR,full_cis,31,40,0,0.0
+rtl_5,0,RTL-SDR,full_cis,32,31,76,0.38
+rtl_5,0,RTL-SDR,full_cis,32,32,74,0.37
+rtl_5,0,RTL-SDR,full_cis,32,33,4,0.02
+rtl_5,0,RTL-SDR,full_cis,32,34,16,0.08
+rtl_5,0,RTL-SDR,full_cis,32,35,21,0.105
+rtl_5,0,RTL-SDR,full_cis,32,36,0,0.0
+rtl_5,0,RTL-SDR,full_cis,32,37,0,0.0
+rtl_5,0,RTL-SDR,full_cis,32,38,9,0.045
+rtl_5,0,RTL-SDR,full_cis,32,39,0,0.0
+rtl_5,0,RTL-SDR,full_cis,32,40,0,0.0
+rtl_5,0,RTL-SDR,full_cis,33,31,36,0.18
+rtl_5,0,RTL-SDR,full_cis,33,32,20,0.1
+rtl_5,0,RTL-SDR,full_cis,33,33,44,0.22
+rtl_5,0,RTL-SDR,full_cis,33,34,84,0.42
+rtl_5,0,RTL-SDR,full_cis,33,35,15,0.075
+rtl_5,0,RTL-SDR,full_cis,33,36,0,0.0
+rtl_5,0,RTL-SDR,full_cis,33,37,0,0.0
+rtl_5,0,RTL-SDR,full_cis,33,38,1,0.005
+rtl_5,0,RTL-SDR,full_cis,33,39,0,0.0
+rtl_5,0,RTL-SDR,full_cis,33,40,0,0.0
+rtl_5,0,RTL-SDR,full_cis,34,31,14,0.07
+rtl_5,0,RTL-SDR,full_cis,34,32,32,0.16
+rtl_5,0,RTL-SDR,full_cis,34,33,27,0.135
+rtl_5,0,RTL-SDR,full_cis,34,34,93,0.465
+rtl_5,0,RTL-SDR,full_cis,34,35,26,0.13
+rtl_5,0,RTL-SDR,full_cis,34,36,0,0.0
+rtl_5,0,RTL-SDR,full_cis,34,37,0,0.0
+rtl_5,0,RTL-SDR,full_cis,34,38,6,0.03
+rtl_5,0,RTL-SDR,full_cis,34,39,2,0.01
+rtl_5,0,RTL-SDR,full_cis,34,40,0,0.0
+rtl_5,0,RTL-SDR,full_cis,35,31,55,0.275
+rtl_5,0,RTL-SDR,full_cis,35,32,53,0.265
+rtl_5,0,RTL-SDR,full_cis,35,33,6,0.03
+rtl_5,0,RTL-SDR,full_cis,35,34,14,0.07
+rtl_5,0,RTL-SDR,full_cis,35,35,65,0.325
+rtl_5,0,RTL-SDR,full_cis,35,36,0,0.0
+rtl_5,0,RTL-SDR,full_cis,35,37,0,0.0
+rtl_5,0,RTL-SDR,full_cis,35,38,5,0.025
+rtl_5,0,RTL-SDR,full_cis,35,39,2,0.01
+rtl_5,0,RTL-SDR,full_cis,35,40,0,0.0
+rtl_5,0,RTL-SDR,full_cis,36,31,0,0.0
+rtl_5,0,RTL-SDR,full_cis,36,32,0,0.0
+rtl_5,0,RTL-SDR,full_cis,36,33,0,0.0
+rtl_5,0,RTL-SDR,full_cis,36,34,0,0.0
+rtl_5,0,RTL-SDR,full_cis,36,35,0,0.0
+rtl_5,0,RTL-SDR,full_cis,36,36,198,0.99
+rtl_5,0,RTL-SDR,full_cis,36,37,2,0.01
+rtl_5,0,RTL-SDR,full_cis,36,38,0,0.0
+rtl_5,0,RTL-SDR,full_cis,36,39,0,0.0
+rtl_5,0,RTL-SDR,full_cis,36,40,0,0.0
+rtl_5,0,RTL-SDR,full_cis,37,31,0,0.0
+rtl_5,0,RTL-SDR,full_cis,37,32,0,0.0
+rtl_5,0,RTL-SDR,full_cis,37,33,0,0.0
+rtl_5,0,RTL-SDR,full_cis,37,34,0,0.0
+rtl_5,0,RTL-SDR,full_cis,37,35,0,0.0
+rtl_5,0,RTL-SDR,full_cis,37,36,1,0.005
+rtl_5,0,RTL-SDR,full_cis,37,37,178,0.89
+rtl_5,0,RTL-SDR,full_cis,37,38,11,0.055
+rtl_5,0,RTL-SDR,full_cis,37,39,3,0.015
+rtl_5,0,RTL-SDR,full_cis,37,40,7,0.035
+rtl_5,0,RTL-SDR,full_cis,38,31,3,0.015
+rtl_5,0,RTL-SDR,full_cis,38,32,5,0.025
+rtl_5,0,RTL-SDR,full_cis,38,33,0,0.0
+rtl_5,0,RTL-SDR,full_cis,38,34,3,0.015
+rtl_5,0,RTL-SDR,full_cis,38,35,0,0.0
+rtl_5,0,RTL-SDR,full_cis,38,36,0,0.0
+rtl_5,0,RTL-SDR,full_cis,38,37,11,0.055
+rtl_5,0,RTL-SDR,full_cis,38,38,156,0.78
+rtl_5,0,RTL-SDR,full_cis,38,39,22,0.11
+rtl_5,0,RTL-SDR,full_cis,38,40,0,0.0
+rtl_5,0,RTL-SDR,full_cis,39,31,1,0.005
+rtl_5,0,RTL-SDR,full_cis,39,32,8,0.04
+rtl_5,0,RTL-SDR,full_cis,39,33,0,0.0
+rtl_5,0,RTL-SDR,full_cis,39,34,1,0.005
+rtl_5,0,RTL-SDR,full_cis,39,35,0,0.0
+rtl_5,0,RTL-SDR,full_cis,39,36,1,0.005
+rtl_5,0,RTL-SDR,full_cis,39,37,16,0.08
+rtl_5,0,RTL-SDR,full_cis,39,38,83,0.415
+rtl_5,0,RTL-SDR,full_cis,39,39,86,0.43
+rtl_5,0,RTL-SDR,full_cis,39,40,4,0.02
+rtl_5,0,RTL-SDR,full_cis,40,31,0,0.0
+rtl_5,0,RTL-SDR,full_cis,40,32,0,0.0
+rtl_5,0,RTL-SDR,full_cis,40,33,0,0.0
+rtl_5,0,RTL-SDR,full_cis,40,34,0,0.0
+rtl_5,0,RTL-SDR,full_cis,40,35,0,0.0
+rtl_5,0,RTL-SDR,full_cis,40,36,27,0.135
+rtl_5,0,RTL-SDR,full_cis,40,37,28,0.14
+rtl_5,0,RTL-SDR,full_cis,40,38,0,0.0
+rtl_5,0,RTL-SDR,full_cis,40,39,1,0.005
+rtl_5,0,RTL-SDR,full_cis,40,40,144,0.72
+rtl_7,0,RTL-SDR,full_cis,31,31,150,0.75
+rtl_7,0,RTL-SDR,full_cis,31,32,0,0.0
+rtl_7,0,RTL-SDR,full_cis,31,33,2,0.01
+rtl_7,0,RTL-SDR,full_cis,31,34,0,0.0
+rtl_7,0,RTL-SDR,full_cis,31,35,48,0.24
+rtl_7,0,RTL-SDR,full_cis,31,36,0,0.0
+rtl_7,0,RTL-SDR,full_cis,31,37,0,0.0
+rtl_7,0,RTL-SDR,full_cis,31,38,0,0.0
+rtl_7,0,RTL-SDR,full_cis,31,39,0,0.0
+rtl_7,0,RTL-SDR,full_cis,31,40,0,0.0
+rtl_7,0,RTL-SDR,full_cis,32,31,85,0.425
+rtl_7,0,RTL-SDR,full_cis,32,32,89,0.445
+rtl_7,0,RTL-SDR,full_cis,32,33,0,0.0
+rtl_7,0,RTL-SDR,full_cis,32,34,6,0.03
+rtl_7,0,RTL-SDR,full_cis,32,35,16,0.08
+rtl_7,0,RTL-SDR,full_cis,32,36,1,0.005
+rtl_7,0,RTL-SDR,full_cis,32,37,0,0.0
+rtl_7,0,RTL-SDR,full_cis,32,38,3,0.015
+rtl_7,0,RTL-SDR,full_cis,32,39,0,0.0
+rtl_7,0,RTL-SDR,full_cis,32,40,0,0.0
+rtl_7,0,RTL-SDR,full_cis,33,31,0,0.0
+rtl_7,0,RTL-SDR,full_cis,33,32,0,0.0
+rtl_7,0,RTL-SDR,full_cis,33,33,199,0.995
+rtl_7,0,RTL-SDR,full_cis,33,34,0,0.0
+rtl_7,0,RTL-SDR,full_cis,33,35,1,0.005
+rtl_7,0,RTL-SDR,full_cis,33,36,0,0.0
+rtl_7,0,RTL-SDR,full_cis,33,37,0,0.0
+rtl_7,0,RTL-SDR,full_cis,33,38,0,0.0
+rtl_7,0,RTL-SDR,full_cis,33,39,0,0.0
+rtl_7,0,RTL-SDR,full_cis,33,40,0,0.0
+rtl_7,0,RTL-SDR,full_cis,34,31,0,0.0
+rtl_7,0,RTL-SDR,full_cis,34,32,1,0.005
+rtl_7,0,RTL-SDR,full_cis,34,33,157,0.785
+rtl_7,0,RTL-SDR,full_cis,34,34,29,0.145
+rtl_7,0,RTL-SDR,full_cis,34,35,13,0.065
+rtl_7,0,RTL-SDR,full_cis,34,36,0,0.0
+rtl_7,0,RTL-SDR,full_cis,34,37,0,0.0
+rtl_7,0,RTL-SDR,full_cis,34,38,0,0.0
+rtl_7,0,RTL-SDR,full_cis,34,39,0,0.0
+rtl_7,0,RTL-SDR,full_cis,34,40,0,0.0
+rtl_7,0,RTL-SDR,full_cis,35,31,0,0.0
+rtl_7,0,RTL-SDR,full_cis,35,32,0,0.0
+rtl_7,0,RTL-SDR,full_cis,35,33,23,0.115
+rtl_7,0,RTL-SDR,full_cis,35,34,0,0.0
+rtl_7,0,RTL-SDR,full_cis,35,35,177,0.885
+rtl_7,0,RTL-SDR,full_cis,35,36,0,0.0
+rtl_7,0,RTL-SDR,full_cis,35,37,0,0.0
+rtl_7,0,RTL-SDR,full_cis,35,38,0,0.0
+rtl_7,0,RTL-SDR,full_cis,35,39,0,0.0
+rtl_7,0,RTL-SDR,full_cis,35,40,0,0.0
+rtl_7,0,RTL-SDR,full_cis,36,31,0,0.0
+rtl_7,0,RTL-SDR,full_cis,36,32,0,0.0
+rtl_7,0,RTL-SDR,full_cis,36,33,0,0.0
+rtl_7,0,RTL-SDR,full_cis,36,34,0,0.0
+rtl_7,0,RTL-SDR,full_cis,36,35,0,0.0
+rtl_7,0,RTL-SDR,full_cis,36,36,200,1.0
+rtl_7,0,RTL-SDR,full_cis,36,37,0,0.0
+rtl_7,0,RTL-SDR,full_cis,36,38,0,0.0
+rtl_7,0,RTL-SDR,full_cis,36,39,0,0.0
+rtl_7,0,RTL-SDR,full_cis,36,40,0,0.0
+rtl_7,0,RTL-SDR,full_cis,37,31,0,0.0
+rtl_7,0,RTL-SDR,full_cis,37,32,0,0.0
+rtl_7,0,RTL-SDR,full_cis,37,33,0,0.0
+rtl_7,0,RTL-SDR,full_cis,37,34,0,0.0
+rtl_7,0,RTL-SDR,full_cis,37,35,0,0.0
+rtl_7,0,RTL-SDR,full_cis,37,36,2,0.01
+rtl_7,0,RTL-SDR,full_cis,37,37,188,0.94
+rtl_7,0,RTL-SDR,full_cis,37,38,2,0.01
+rtl_7,0,RTL-SDR,full_cis,37,39,0,0.0
+rtl_7,0,RTL-SDR,full_cis,37,40,8,0.04
+rtl_7,0,RTL-SDR,full_cis,38,31,0,0.0
+rtl_7,0,RTL-SDR,full_cis,38,32,0,0.0
+rtl_7,0,RTL-SDR,full_cis,38,33,0,0.0
+rtl_7,0,RTL-SDR,full_cis,38,34,0,0.0
+rtl_7,0,RTL-SDR,full_cis,38,35,0,0.0
+rtl_7,0,RTL-SDR,full_cis,38,36,0,0.0
+rtl_7,0,RTL-SDR,full_cis,38,37,16,0.08
+rtl_7,0,RTL-SDR,full_cis,38,38,147,0.735
+rtl_7,0,RTL-SDR,full_cis,38,39,37,0.185
+rtl_7,0,RTL-SDR,full_cis,38,40,0,0.0
+rtl_7,0,RTL-SDR,full_cis,39,31,0,0.0
+rtl_7,0,RTL-SDR,full_cis,39,32,0,0.0
+rtl_7,0,RTL-SDR,full_cis,39,33,0,0.0
+rtl_7,0,RTL-SDR,full_cis,39,34,0,0.0
+rtl_7,0,RTL-SDR,full_cis,39,35,0,0.0
+rtl_7,0,RTL-SDR,full_cis,39,36,0,0.0
+rtl_7,0,RTL-SDR,full_cis,39,37,7,0.035
+rtl_7,0,RTL-SDR,full_cis,39,38,22,0.11
+rtl_7,0,RTL-SDR,full_cis,39,39,143,0.715
+rtl_7,0,RTL-SDR,full_cis,39,40,28,0.14
+rtl_7,0,RTL-SDR,full_cis,40,31,0,0.0
+rtl_7,0,RTL-SDR,full_cis,40,32,0,0.0
+rtl_7,0,RTL-SDR,full_cis,40,33,0,0.0
+rtl_7,0,RTL-SDR,full_cis,40,34,0,0.0
+rtl_7,0,RTL-SDR,full_cis,40,35,0,0.0
+rtl_7,0,RTL-SDR,full_cis,40,36,0,0.0
+rtl_7,0,RTL-SDR,full_cis,40,37,0,0.0
+rtl_7,0,RTL-SDR,full_cis,40,38,0,0.0
+rtl_7,0,RTL-SDR,full_cis,40,39,0,0.0
+rtl_7,0,RTL-SDR,full_cis,40,40,200,1.0
+b200_mini_1,0,USRP B200 mini,strict_cis,31,31,145,0.725
+b200_mini_1,0,USRP B200 mini,strict_cis,31,32,55,0.275
+b200_mini_1,0,USRP B200 mini,strict_cis,31,33,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,31,34,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,31,35,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,31,36,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,31,37,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,31,38,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,31,39,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,31,40,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,32,31,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,32,32,169,0.845
+b200_mini_1,0,USRP B200 mini,strict_cis,32,33,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,32,34,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,32,35,31,0.155
+b200_mini_1,0,USRP B200 mini,strict_cis,32,36,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,32,37,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,32,38,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,32,39,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,32,40,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,33,31,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,33,32,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,33,33,110,0.55
+b200_mini_1,0,USRP B200 mini,strict_cis,33,34,88,0.44
+b200_mini_1,0,USRP B200 mini,strict_cis,33,35,1,0.005
+b200_mini_1,0,USRP B200 mini,strict_cis,33,36,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,33,37,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,33,38,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,33,39,1,0.005
+b200_mini_1,0,USRP B200 mini,strict_cis,33,40,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,34,31,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,34,32,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,34,33,5,0.025
+b200_mini_1,0,USRP B200 mini,strict_cis,34,34,193,0.965
+b200_mini_1,0,USRP B200 mini,strict_cis,34,35,2,0.01
+b200_mini_1,0,USRP B200 mini,strict_cis,34,36,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,34,37,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,34,38,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,34,39,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,34,40,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,35,31,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,35,32,2,0.01
+b200_mini_1,0,USRP B200 mini,strict_cis,35,33,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,35,34,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,35,35,198,0.99
+b200_mini_1,0,USRP B200 mini,strict_cis,35,36,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,35,37,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,35,38,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,35,39,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,35,40,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,36,31,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,36,32,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,36,33,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,36,34,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,36,35,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,36,36,165,0.825
+b200_mini_1,0,USRP B200 mini,strict_cis,36,37,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,36,38,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,36,39,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,36,40,35,0.175
+b200_mini_1,0,USRP B200 mini,strict_cis,37,31,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,37,32,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,37,33,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,37,34,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,37,35,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,37,36,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,37,37,193,0.965
+b200_mini_1,0,USRP B200 mini,strict_cis,37,38,6,0.03
+b200_mini_1,0,USRP B200 mini,strict_cis,37,39,1,0.005
+b200_mini_1,0,USRP B200 mini,strict_cis,37,40,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,38,31,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,38,32,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,38,33,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,38,34,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,38,35,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,38,36,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,38,37,5,0.025
+b200_mini_1,0,USRP B200 mini,strict_cis,38,38,113,0.565
+b200_mini_1,0,USRP B200 mini,strict_cis,38,39,81,0.405
+b200_mini_1,0,USRP B200 mini,strict_cis,38,40,1,0.005
+b200_mini_1,0,USRP B200 mini,strict_cis,39,31,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,39,32,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,39,33,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,39,34,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,39,35,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,39,36,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,39,37,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,39,38,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,39,39,200,1.0
+b200_mini_1,0,USRP B200 mini,strict_cis,39,40,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,40,31,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,40,32,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,40,33,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,40,34,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,40,35,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,40,36,3,0.015
+b200_mini_1,0,USRP B200 mini,strict_cis,40,37,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,40,38,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,40,39,0,0.0
+b200_mini_1,0,USRP B200 mini,strict_cis,40,40,197,0.985
+pluto_1,0,ADALM-Pluto,strict_cis,31,31,199,0.995
+pluto_1,0,ADALM-Pluto,strict_cis,31,32,1,0.005
+pluto_1,0,ADALM-Pluto,strict_cis,31,33,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,31,34,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,31,35,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,31,36,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,31,37,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,31,38,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,31,39,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,31,40,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,32,31,54,0.27
+pluto_1,0,ADALM-Pluto,strict_cis,32,32,141,0.705
+pluto_1,0,ADALM-Pluto,strict_cis,32,33,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,32,34,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,32,35,5,0.025
+pluto_1,0,ADALM-Pluto,strict_cis,32,36,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,32,37,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,32,38,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,32,39,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,32,40,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,33,31,1,0.005
+pluto_1,0,ADALM-Pluto,strict_cis,33,32,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,33,33,192,0.96
+pluto_1,0,ADALM-Pluto,strict_cis,33,34,7,0.035
+pluto_1,0,ADALM-Pluto,strict_cis,33,35,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,33,36,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,33,37,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,33,38,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,33,39,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,33,40,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,34,31,1,0.005
+pluto_1,0,ADALM-Pluto,strict_cis,34,32,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,34,33,42,0.21
+pluto_1,0,ADALM-Pluto,strict_cis,34,34,157,0.785
+pluto_1,0,ADALM-Pluto,strict_cis,34,35,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,34,36,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,34,37,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,34,38,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,34,39,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,34,40,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,35,31,2,0.01
+pluto_1,0,ADALM-Pluto,strict_cis,35,32,77,0.385
+pluto_1,0,ADALM-Pluto,strict_cis,35,33,1,0.005
+pluto_1,0,ADALM-Pluto,strict_cis,35,34,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,35,35,120,0.6
+pluto_1,0,ADALM-Pluto,strict_cis,35,36,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,35,37,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,35,38,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,35,39,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,35,40,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,36,31,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,36,32,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,36,33,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,36,34,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,36,35,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,36,36,199,0.995
+pluto_1,0,ADALM-Pluto,strict_cis,36,37,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,36,38,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,36,39,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,36,40,1,0.005
+pluto_1,0,ADALM-Pluto,strict_cis,37,31,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,37,32,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,37,33,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,37,34,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,37,35,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,37,36,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,37,37,200,1.0
+pluto_1,0,ADALM-Pluto,strict_cis,37,38,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,37,39,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,37,40,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,38,31,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,38,32,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,38,33,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,38,34,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,38,35,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,38,36,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,38,37,1,0.005
+pluto_1,0,ADALM-Pluto,strict_cis,38,38,197,0.985
+pluto_1,0,ADALM-Pluto,strict_cis,38,39,2,0.01
+pluto_1,0,ADALM-Pluto,strict_cis,38,40,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,39,31,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,39,32,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,39,33,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,39,34,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,39,35,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,39,36,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,39,37,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,39,38,2,0.01
+pluto_1,0,ADALM-Pluto,strict_cis,39,39,197,0.985
+pluto_1,0,ADALM-Pluto,strict_cis,39,40,1,0.005
+pluto_1,0,ADALM-Pluto,strict_cis,40,31,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,40,32,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,40,33,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,40,34,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,40,35,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,40,36,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,40,37,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,40,38,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,40,39,0,0.0
+pluto_1,0,ADALM-Pluto,strict_cis,40,40,200,1.0
+rtl_2,0,RTL-SDR,strict_cis,31,31,133,0.665
+rtl_2,0,RTL-SDR,strict_cis,31,32,64,0.32
+rtl_2,0,RTL-SDR,strict_cis,31,33,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,31,34,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,31,35,3,0.015
+rtl_2,0,RTL-SDR,strict_cis,31,36,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,31,37,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,31,38,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,31,39,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,31,40,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,32,31,28,0.14
+rtl_2,0,RTL-SDR,strict_cis,32,32,119,0.595
+rtl_2,0,RTL-SDR,strict_cis,32,33,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,32,34,1,0.005
+rtl_2,0,RTL-SDR,strict_cis,32,35,50,0.25
+rtl_2,0,RTL-SDR,strict_cis,32,36,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,32,37,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,32,38,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,32,39,2,0.01
+rtl_2,0,RTL-SDR,strict_cis,32,40,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,33,31,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,33,32,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,33,33,151,0.755
+rtl_2,0,RTL-SDR,strict_cis,33,34,48,0.24
+rtl_2,0,RTL-SDR,strict_cis,33,35,1,0.005
+rtl_2,0,RTL-SDR,strict_cis,33,36,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,33,37,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,33,38,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,33,39,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,33,40,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,34,31,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,34,32,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,34,33,56,0.28
+rtl_2,0,RTL-SDR,strict_cis,34,34,138,0.69
+rtl_2,0,RTL-SDR,strict_cis,34,35,6,0.03
+rtl_2,0,RTL-SDR,strict_cis,34,36,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,34,37,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,34,38,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,34,39,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,34,40,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,35,31,3,0.015
+rtl_2,0,RTL-SDR,strict_cis,35,32,32,0.16
+rtl_2,0,RTL-SDR,strict_cis,35,33,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,35,34,1,0.005
+rtl_2,0,RTL-SDR,strict_cis,35,35,164,0.82
+rtl_2,0,RTL-SDR,strict_cis,35,36,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,35,37,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,35,38,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,35,39,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,35,40,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,36,31,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,36,32,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,36,33,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,36,34,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,36,35,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,36,36,200,1.0
+rtl_2,0,RTL-SDR,strict_cis,36,37,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,36,38,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,36,39,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,36,40,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,37,31,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,37,32,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,37,33,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,37,34,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,37,35,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,37,36,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,37,37,190,0.95
+rtl_2,0,RTL-SDR,strict_cis,37,38,4,0.02
+rtl_2,0,RTL-SDR,strict_cis,37,39,2,0.01
+rtl_2,0,RTL-SDR,strict_cis,37,40,4,0.02
+rtl_2,0,RTL-SDR,strict_cis,38,31,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,38,32,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,38,33,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,38,34,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,38,35,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,38,36,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,38,37,1,0.005
+rtl_2,0,RTL-SDR,strict_cis,38,38,145,0.725
+rtl_2,0,RTL-SDR,strict_cis,38,39,50,0.25
+rtl_2,0,RTL-SDR,strict_cis,38,40,4,0.02
+rtl_2,0,RTL-SDR,strict_cis,39,31,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,39,32,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,39,33,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,39,34,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,39,35,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,39,36,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,39,37,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,39,38,6,0.03
+rtl_2,0,RTL-SDR,strict_cis,39,39,188,0.94
+rtl_2,0,RTL-SDR,strict_cis,39,40,6,0.03
+rtl_2,0,RTL-SDR,strict_cis,40,31,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,40,32,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,40,33,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,40,34,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,40,35,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,40,36,1,0.005
+rtl_2,0,RTL-SDR,strict_cis,40,37,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,40,38,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,40,39,0,0.0
+rtl_2,0,RTL-SDR,strict_cis,40,40,199,0.995
+rtl_5,0,RTL-SDR,strict_cis,31,31,129,0.645
+rtl_5,0,RTL-SDR,strict_cis,31,32,65,0.325
+rtl_5,0,RTL-SDR,strict_cis,31,33,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,31,34,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,31,35,5,0.025
+rtl_5,0,RTL-SDR,strict_cis,31,36,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,31,37,1,0.005
+rtl_5,0,RTL-SDR,strict_cis,31,38,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,31,39,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,31,40,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,32,31,28,0.14
+rtl_5,0,RTL-SDR,strict_cis,32,32,116,0.58
+rtl_5,0,RTL-SDR,strict_cis,32,33,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,32,34,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,32,35,55,0.275
+rtl_5,0,RTL-SDR,strict_cis,32,36,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,32,37,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,32,38,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,32,39,1,0.005
+rtl_5,0,RTL-SDR,strict_cis,32,40,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,33,31,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,33,32,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,33,33,155,0.775
+rtl_5,0,RTL-SDR,strict_cis,33,34,45,0.225
+rtl_5,0,RTL-SDR,strict_cis,33,35,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,33,36,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,33,37,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,33,38,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,33,39,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,33,40,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,34,31,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,34,32,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,34,33,64,0.32
+rtl_5,0,RTL-SDR,strict_cis,34,34,128,0.64
+rtl_5,0,RTL-SDR,strict_cis,34,35,7,0.035
+rtl_5,0,RTL-SDR,strict_cis,34,36,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,34,37,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,34,38,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,34,39,1,0.005
+rtl_5,0,RTL-SDR,strict_cis,34,40,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,35,31,8,0.04
+rtl_5,0,RTL-SDR,strict_cis,35,32,33,0.165
+rtl_5,0,RTL-SDR,strict_cis,35,33,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,35,34,2,0.01
+rtl_5,0,RTL-SDR,strict_cis,35,35,156,0.78
+rtl_5,0,RTL-SDR,strict_cis,35,36,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,35,37,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,35,38,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,35,39,1,0.005
+rtl_5,0,RTL-SDR,strict_cis,35,40,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,36,31,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,36,32,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,36,33,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,36,34,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,36,35,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,36,36,200,1.0
+rtl_5,0,RTL-SDR,strict_cis,36,37,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,36,38,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,36,39,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,36,40,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,37,31,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,37,32,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,37,33,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,37,34,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,37,35,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,37,36,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,37,37,181,0.905
+rtl_5,0,RTL-SDR,strict_cis,37,38,6,0.03
+rtl_5,0,RTL-SDR,strict_cis,37,39,1,0.005
+rtl_5,0,RTL-SDR,strict_cis,37,40,12,0.06
+rtl_5,0,RTL-SDR,strict_cis,38,31,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,38,32,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,38,33,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,38,34,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,38,35,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,38,36,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,38,37,3,0.015
+rtl_5,0,RTL-SDR,strict_cis,38,38,145,0.725
+rtl_5,0,RTL-SDR,strict_cis,38,39,43,0.215
+rtl_5,0,RTL-SDR,strict_cis,38,40,9,0.045
+rtl_5,0,RTL-SDR,strict_cis,39,31,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,39,32,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,39,33,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,39,34,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,39,35,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,39,36,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,39,37,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,39,38,8,0.04
+rtl_5,0,RTL-SDR,strict_cis,39,39,187,0.935
+rtl_5,0,RTL-SDR,strict_cis,39,40,5,0.025
+rtl_5,0,RTL-SDR,strict_cis,40,31,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,40,32,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,40,33,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,40,34,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,40,35,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,40,36,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,40,37,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,40,38,0,0.0
+rtl_5,0,RTL-SDR,strict_cis,40,39,1,0.005
+rtl_5,0,RTL-SDR,strict_cis,40,40,199,0.995
+rtl_7,0,RTL-SDR,strict_cis,31,31,184,0.92
+rtl_7,0,RTL-SDR,strict_cis,31,32,15,0.075
+rtl_7,0,RTL-SDR,strict_cis,31,33,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,31,34,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,31,35,1,0.005
+rtl_7,0,RTL-SDR,strict_cis,31,36,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,31,37,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,31,38,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,31,39,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,31,40,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,32,31,5,0.025
+rtl_7,0,RTL-SDR,strict_cis,32,32,175,0.875
+rtl_7,0,RTL-SDR,strict_cis,32,33,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,32,34,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,32,35,19,0.095
+rtl_7,0,RTL-SDR,strict_cis,32,36,1,0.005
+rtl_7,0,RTL-SDR,strict_cis,32,37,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,32,38,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,32,39,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,32,40,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,33,31,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,33,32,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,33,33,155,0.775
+rtl_7,0,RTL-SDR,strict_cis,33,34,45,0.225
+rtl_7,0,RTL-SDR,strict_cis,33,35,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,33,36,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,33,37,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,33,38,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,33,39,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,33,40,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,34,31,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,34,32,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,34,33,9,0.045
+rtl_7,0,RTL-SDR,strict_cis,34,34,190,0.95
+rtl_7,0,RTL-SDR,strict_cis,34,35,1,0.005
+rtl_7,0,RTL-SDR,strict_cis,34,36,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,34,37,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,34,38,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,34,39,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,34,40,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,35,31,1,0.005
+rtl_7,0,RTL-SDR,strict_cis,35,32,1,0.005
+rtl_7,0,RTL-SDR,strict_cis,35,33,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,35,34,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,35,35,198,0.99
+rtl_7,0,RTL-SDR,strict_cis,35,36,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,35,37,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,35,38,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,35,39,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,35,40,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,36,31,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,36,32,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,36,33,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,36,34,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,36,35,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,36,36,199,0.995
+rtl_7,0,RTL-SDR,strict_cis,36,37,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,36,38,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,36,39,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,36,40,1,0.005
+rtl_7,0,RTL-SDR,strict_cis,37,31,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,37,32,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,37,33,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,37,34,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,37,35,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,37,36,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,37,37,171,0.855
+rtl_7,0,RTL-SDR,strict_cis,37,38,29,0.145
+rtl_7,0,RTL-SDR,strict_cis,37,39,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,37,40,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,38,31,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,38,32,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,38,33,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,38,34,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,38,35,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,38,36,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,38,37,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,38,38,155,0.775
+rtl_7,0,RTL-SDR,strict_cis,38,39,44,0.22
+rtl_7,0,RTL-SDR,strict_cis,38,40,1,0.005
+rtl_7,0,RTL-SDR,strict_cis,39,31,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,39,32,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,39,33,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,39,34,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,39,35,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,39,36,4,0.02
+rtl_7,0,RTL-SDR,strict_cis,39,37,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,39,38,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,39,39,176,0.88
+rtl_7,0,RTL-SDR,strict_cis,39,40,20,0.1
+rtl_7,0,RTL-SDR,strict_cis,40,31,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,40,32,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,40,33,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,40,34,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,40,35,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,40,36,1,0.005
+rtl_7,0,RTL-SDR,strict_cis,40,37,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,40,38,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,40,39,0,0.0
+rtl_7,0,RTL-SDR,strict_cis,40,40,199,0.995
+b210_1,1,USRP B210,full_cis,31,31,194,0.97
+b210_1,1,USRP B210,full_cis,31,32,5,0.025
+b210_1,1,USRP B210,full_cis,31,33,1,0.005
+b210_1,1,USRP B210,full_cis,31,34,0,0.0
+b210_1,1,USRP B210,full_cis,31,35,0,0.0
+b210_1,1,USRP B210,full_cis,31,36,0,0.0
+b210_1,1,USRP B210,full_cis,31,37,0,0.0
+b210_1,1,USRP B210,full_cis,31,38,0,0.0
+b210_1,1,USRP B210,full_cis,31,39,0,0.0
+b210_1,1,USRP B210,full_cis,31,40,0,0.0
+b210_1,1,USRP B210,full_cis,32,31,85,0.425
+b210_1,1,USRP B210,full_cis,32,32,68,0.34
+b210_1,1,USRP B210,full_cis,32,33,0,0.0
+b210_1,1,USRP B210,full_cis,32,34,0,0.0
+b210_1,1,USRP B210,full_cis,32,35,46,0.23
+b210_1,1,USRP B210,full_cis,32,36,0,0.0
+b210_1,1,USRP B210,full_cis,32,37,0,0.0
+b210_1,1,USRP B210,full_cis,32,38,0,0.0
+b210_1,1,USRP B210,full_cis,32,39,1,0.005
+b210_1,1,USRP B210,full_cis,32,40,0,0.0
+b210_1,1,USRP B210,full_cis,33,31,0,0.0
+b210_1,1,USRP B210,full_cis,33,32,20,0.1
+b210_1,1,USRP B210,full_cis,33,33,118,0.59
+b210_1,1,USRP B210,full_cis,33,34,61,0.305
+b210_1,1,USRP B210,full_cis,33,35,1,0.005
+b210_1,1,USRP B210,full_cis,33,36,0,0.0
+b210_1,1,USRP B210,full_cis,33,37,0,0.0
+b210_1,1,USRP B210,full_cis,33,38,0,0.0
+b210_1,1,USRP B210,full_cis,33,39,0,0.0
+b210_1,1,USRP B210,full_cis,33,40,0,0.0
+b210_1,1,USRP B210,full_cis,34,31,0,0.0
+b210_1,1,USRP B210,full_cis,34,32,5,0.025
+b210_1,1,USRP B210,full_cis,34,33,95,0.475
+b210_1,1,USRP B210,full_cis,34,34,95,0.475
+b210_1,1,USRP B210,full_cis,34,35,4,0.02
+b210_1,1,USRP B210,full_cis,34,36,0,0.0
+b210_1,1,USRP B210,full_cis,34,37,0,0.0
+b210_1,1,USRP B210,full_cis,34,38,0,0.0
+b210_1,1,USRP B210,full_cis,34,39,1,0.005
+b210_1,1,USRP B210,full_cis,34,40,0,0.0
+b210_1,1,USRP B210,full_cis,35,31,1,0.005
+b210_1,1,USRP B210,full_cis,35,32,15,0.075
+b210_1,1,USRP B210,full_cis,35,33,0,0.0
+b210_1,1,USRP B210,full_cis,35,34,3,0.015
+b210_1,1,USRP B210,full_cis,35,35,181,0.905
+b210_1,1,USRP B210,full_cis,35,36,0,0.0
+b210_1,1,USRP B210,full_cis,35,37,0,0.0
+b210_1,1,USRP B210,full_cis,35,38,0,0.0
+b210_1,1,USRP B210,full_cis,35,39,0,0.0
+b210_1,1,USRP B210,full_cis,35,40,0,0.0
+b210_1,1,USRP B210,full_cis,36,31,0,0.0
+b210_1,1,USRP B210,full_cis,36,32,0,0.0
+b210_1,1,USRP B210,full_cis,36,33,0,0.0
+b210_1,1,USRP B210,full_cis,36,34,0,0.0
+b210_1,1,USRP B210,full_cis,36,35,0,0.0
+b210_1,1,USRP B210,full_cis,36,36,194,0.97
+b210_1,1,USRP B210,full_cis,36,37,3,0.015
+b210_1,1,USRP B210,full_cis,36,38,0,0.0
+b210_1,1,USRP B210,full_cis,36,39,0,0.0
+b210_1,1,USRP B210,full_cis,36,40,3,0.015
+b210_1,1,USRP B210,full_cis,37,31,0,0.0
+b210_1,1,USRP B210,full_cis,37,32,0,0.0
+b210_1,1,USRP B210,full_cis,37,33,0,0.0
+b210_1,1,USRP B210,full_cis,37,34,0,0.0
+b210_1,1,USRP B210,full_cis,37,35,0,0.0
+b210_1,1,USRP B210,full_cis,37,36,1,0.005
+b210_1,1,USRP B210,full_cis,37,37,195,0.975
+b210_1,1,USRP B210,full_cis,37,38,4,0.02
+b210_1,1,USRP B210,full_cis,37,39,0,0.0
+b210_1,1,USRP B210,full_cis,37,40,0,0.0
+b210_1,1,USRP B210,full_cis,38,31,0,0.0
+b210_1,1,USRP B210,full_cis,38,32,0,0.0
+b210_1,1,USRP B210,full_cis,38,33,0,0.0
+b210_1,1,USRP B210,full_cis,38,34,0,0.0
+b210_1,1,USRP B210,full_cis,38,35,0,0.0
+b210_1,1,USRP B210,full_cis,38,36,0,0.0
+b210_1,1,USRP B210,full_cis,38,37,5,0.025
+b210_1,1,USRP B210,full_cis,38,38,180,0.9
+b210_1,1,USRP B210,full_cis,38,39,14,0.07
+b210_1,1,USRP B210,full_cis,38,40,1,0.005
+b210_1,1,USRP B210,full_cis,39,31,0,0.0
+b210_1,1,USRP B210,full_cis,39,32,0,0.0
+b210_1,1,USRP B210,full_cis,39,33,0,0.0
+b210_1,1,USRP B210,full_cis,39,34,1,0.005
+b210_1,1,USRP B210,full_cis,39,35,0,0.0
+b210_1,1,USRP B210,full_cis,39,36,0,0.0
+b210_1,1,USRP B210,full_cis,39,37,0,0.0
+b210_1,1,USRP B210,full_cis,39,38,23,0.115
+b210_1,1,USRP B210,full_cis,39,39,176,0.88
+b210_1,1,USRP B210,full_cis,39,40,0,0.0
+b210_1,1,USRP B210,full_cis,40,31,0,0.0
+b210_1,1,USRP B210,full_cis,40,32,0,0.0
+b210_1,1,USRP B210,full_cis,40,33,0,0.0
+b210_1,1,USRP B210,full_cis,40,34,0,0.0
+b210_1,1,USRP B210,full_cis,40,35,0,0.0
+b210_1,1,USRP B210,full_cis,40,36,0,0.0
+b210_1,1,USRP B210,full_cis,40,37,0,0.0
+b210_1,1,USRP B210,full_cis,40,38,0,0.0
+b210_1,1,USRP B210,full_cis,40,39,0,0.0
+b210_1,1,USRP B210,full_cis,40,40,200,1.0
+rtl_1,1,RTL-SDR,full_cis,31,31,141,0.705
+rtl_1,1,RTL-SDR,full_cis,31,32,52,0.26
+rtl_1,1,RTL-SDR,full_cis,31,33,0,0.0
+rtl_1,1,RTL-SDR,full_cis,31,34,0,0.0
+rtl_1,1,RTL-SDR,full_cis,31,35,6,0.03
+rtl_1,1,RTL-SDR,full_cis,31,36,0,0.0
+rtl_1,1,RTL-SDR,full_cis,31,37,0,0.0
+rtl_1,1,RTL-SDR,full_cis,31,38,0,0.0
+rtl_1,1,RTL-SDR,full_cis,31,39,1,0.005
+rtl_1,1,RTL-SDR,full_cis,31,40,0,0.0
+rtl_1,1,RTL-SDR,full_cis,32,31,50,0.25
+rtl_1,1,RTL-SDR,full_cis,32,32,118,0.59
+rtl_1,1,RTL-SDR,full_cis,32,33,2,0.01
+rtl_1,1,RTL-SDR,full_cis,32,34,4,0.02
+rtl_1,1,RTL-SDR,full_cis,32,35,26,0.13
+rtl_1,1,RTL-SDR,full_cis,32,36,0,0.0
+rtl_1,1,RTL-SDR,full_cis,32,37,0,0.0
+rtl_1,1,RTL-SDR,full_cis,32,38,0,0.0
+rtl_1,1,RTL-SDR,full_cis,32,39,0,0.0
+rtl_1,1,RTL-SDR,full_cis,32,40,0,0.0
+rtl_1,1,RTL-SDR,full_cis,33,31,2,0.01
+rtl_1,1,RTL-SDR,full_cis,33,32,9,0.045
+rtl_1,1,RTL-SDR,full_cis,33,33,104,0.52
+rtl_1,1,RTL-SDR,full_cis,33,34,72,0.36
+rtl_1,1,RTL-SDR,full_cis,33,35,13,0.065
+rtl_1,1,RTL-SDR,full_cis,33,36,0,0.0
+rtl_1,1,RTL-SDR,full_cis,33,37,0,0.0
+rtl_1,1,RTL-SDR,full_cis,33,38,0,0.0
+rtl_1,1,RTL-SDR,full_cis,33,39,0,0.0
+rtl_1,1,RTL-SDR,full_cis,33,40,0,0.0
+rtl_1,1,RTL-SDR,full_cis,34,31,3,0.015
+rtl_1,1,RTL-SDR,full_cis,34,32,24,0.12
+rtl_1,1,RTL-SDR,full_cis,34,33,26,0.13
+rtl_1,1,RTL-SDR,full_cis,34,34,131,0.655
+rtl_1,1,RTL-SDR,full_cis,34,35,15,0.075
+rtl_1,1,RTL-SDR,full_cis,34,36,0,0.0
+rtl_1,1,RTL-SDR,full_cis,34,37,0,0.0
+rtl_1,1,RTL-SDR,full_cis,34,38,0,0.0
+rtl_1,1,RTL-SDR,full_cis,34,39,1,0.005
+rtl_1,1,RTL-SDR,full_cis,34,40,0,0.0
+rtl_1,1,RTL-SDR,full_cis,35,31,27,0.135
+rtl_1,1,RTL-SDR,full_cis,35,32,68,0.34
+rtl_1,1,RTL-SDR,full_cis,35,33,0,0.0
+rtl_1,1,RTL-SDR,full_cis,35,34,5,0.025
+rtl_1,1,RTL-SDR,full_cis,35,35,100,0.5
+rtl_1,1,RTL-SDR,full_cis,35,36,0,0.0
+rtl_1,1,RTL-SDR,full_cis,35,37,0,0.0
+rtl_1,1,RTL-SDR,full_cis,35,38,0,0.0
+rtl_1,1,RTL-SDR,full_cis,35,39,0,0.0
+rtl_1,1,RTL-SDR,full_cis,35,40,0,0.0
+rtl_1,1,RTL-SDR,full_cis,36,31,0,0.0
+rtl_1,1,RTL-SDR,full_cis,36,32,0,0.0
+rtl_1,1,RTL-SDR,full_cis,36,33,0,0.0
+rtl_1,1,RTL-SDR,full_cis,36,34,0,0.0
+rtl_1,1,RTL-SDR,full_cis,36,35,0,0.0
+rtl_1,1,RTL-SDR,full_cis,36,36,197,0.985
+rtl_1,1,RTL-SDR,full_cis,36,37,0,0.0
+rtl_1,1,RTL-SDR,full_cis,36,38,0,0.0
+rtl_1,1,RTL-SDR,full_cis,36,39,0,0.0
+rtl_1,1,RTL-SDR,full_cis,36,40,3,0.015
+rtl_1,1,RTL-SDR,full_cis,37,31,2,0.01
+rtl_1,1,RTL-SDR,full_cis,37,32,0,0.0
+rtl_1,1,RTL-SDR,full_cis,37,33,0,0.0
+rtl_1,1,RTL-SDR,full_cis,37,34,0,0.0
+rtl_1,1,RTL-SDR,full_cis,37,35,0,0.0
+rtl_1,1,RTL-SDR,full_cis,37,36,13,0.065
+rtl_1,1,RTL-SDR,full_cis,37,37,172,0.86
+rtl_1,1,RTL-SDR,full_cis,37,38,3,0.015
+rtl_1,1,RTL-SDR,full_cis,37,39,0,0.0
+rtl_1,1,RTL-SDR,full_cis,37,40,10,0.05
+rtl_1,1,RTL-SDR,full_cis,38,31,11,0.055
+rtl_1,1,RTL-SDR,full_cis,38,32,40,0.2
+rtl_1,1,RTL-SDR,full_cis,38,33,0,0.0
+rtl_1,1,RTL-SDR,full_cis,38,34,2,0.01
+rtl_1,1,RTL-SDR,full_cis,38,35,1,0.005
+rtl_1,1,RTL-SDR,full_cis,38,36,0,0.0
+rtl_1,1,RTL-SDR,full_cis,38,37,0,0.0
+rtl_1,1,RTL-SDR,full_cis,38,38,90,0.45
+rtl_1,1,RTL-SDR,full_cis,38,39,55,0.275
+rtl_1,1,RTL-SDR,full_cis,38,40,1,0.005
+rtl_1,1,RTL-SDR,full_cis,39,31,5,0.025
+rtl_1,1,RTL-SDR,full_cis,39,32,40,0.2
+rtl_1,1,RTL-SDR,full_cis,39,33,0,0.0
+rtl_1,1,RTL-SDR,full_cis,39,34,0,0.0
+rtl_1,1,RTL-SDR,full_cis,39,35,2,0.01
+rtl_1,1,RTL-SDR,full_cis,39,36,0,0.0
+rtl_1,1,RTL-SDR,full_cis,39,37,0,0.0
+rtl_1,1,RTL-SDR,full_cis,39,38,21,0.105
+rtl_1,1,RTL-SDR,full_cis,39,39,131,0.655
+rtl_1,1,RTL-SDR,full_cis,39,40,1,0.005
+rtl_1,1,RTL-SDR,full_cis,40,31,0,0.0
+rtl_1,1,RTL-SDR,full_cis,40,32,0,0.0
+rtl_1,1,RTL-SDR,full_cis,40,33,0,0.0
+rtl_1,1,RTL-SDR,full_cis,40,34,0,0.0
+rtl_1,1,RTL-SDR,full_cis,40,35,0,0.0
+rtl_1,1,RTL-SDR,full_cis,40,36,12,0.06
+rtl_1,1,RTL-SDR,full_cis,40,37,9,0.045
+rtl_1,1,RTL-SDR,full_cis,40,38,0,0.0
+rtl_1,1,RTL-SDR,full_cis,40,39,4,0.02
+rtl_1,1,RTL-SDR,full_cis,40,40,175,0.875
+rtl_3,1,RTL-SDR,full_cis,31,31,111,0.555
+rtl_3,1,RTL-SDR,full_cis,31,32,38,0.19
+rtl_3,1,RTL-SDR,full_cis,31,33,11,0.055
+rtl_3,1,RTL-SDR,full_cis,31,34,11,0.055
+rtl_3,1,RTL-SDR,full_cis,31,35,16,0.08
+rtl_3,1,RTL-SDR,full_cis,31,36,0,0.0
+rtl_3,1,RTL-SDR,full_cis,31,37,4,0.02
+rtl_3,1,RTL-SDR,full_cis,31,38,8,0.04
+rtl_3,1,RTL-SDR,full_cis,31,39,1,0.005
+rtl_3,1,RTL-SDR,full_cis,31,40,0,0.0
+rtl_3,1,RTL-SDR,full_cis,32,31,52,0.26
+rtl_3,1,RTL-SDR,full_cis,32,32,71,0.355
+rtl_3,1,RTL-SDR,full_cis,32,33,7,0.035
+rtl_3,1,RTL-SDR,full_cis,32,34,22,0.11
+rtl_3,1,RTL-SDR,full_cis,32,35,41,0.205
+rtl_3,1,RTL-SDR,full_cis,32,36,0,0.0
+rtl_3,1,RTL-SDR,full_cis,32,37,1,0.005
+rtl_3,1,RTL-SDR,full_cis,32,38,5,0.025
+rtl_3,1,RTL-SDR,full_cis,32,39,1,0.005
+rtl_3,1,RTL-SDR,full_cis,32,40,0,0.0
+rtl_3,1,RTL-SDR,full_cis,33,31,1,0.005
+rtl_3,1,RTL-SDR,full_cis,33,32,2,0.01
+rtl_3,1,RTL-SDR,full_cis,33,33,85,0.425
+rtl_3,1,RTL-SDR,full_cis,33,34,107,0.535
+rtl_3,1,RTL-SDR,full_cis,33,35,3,0.015
+rtl_3,1,RTL-SDR,full_cis,33,36,0,0.0
+rtl_3,1,RTL-SDR,full_cis,33,37,2,0.01
+rtl_3,1,RTL-SDR,full_cis,33,38,0,0.0
+rtl_3,1,RTL-SDR,full_cis,33,39,0,0.0
+rtl_3,1,RTL-SDR,full_cis,33,40,0,0.0
+rtl_3,1,RTL-SDR,full_cis,34,31,1,0.005
+rtl_3,1,RTL-SDR,full_cis,34,32,0,0.0
+rtl_3,1,RTL-SDR,full_cis,34,33,46,0.23
+rtl_3,1,RTL-SDR,full_cis,34,34,144,0.72
+rtl_3,1,RTL-SDR,full_cis,34,35,3,0.015
+rtl_3,1,RTL-SDR,full_cis,34,36,0,0.0
+rtl_3,1,RTL-SDR,full_cis,34,37,5,0.025
+rtl_3,1,RTL-SDR,full_cis,34,38,1,0.005
+rtl_3,1,RTL-SDR,full_cis,34,39,0,0.0
+rtl_3,1,RTL-SDR,full_cis,34,40,0,0.0
+rtl_3,1,RTL-SDR,full_cis,35,31,25,0.125
+rtl_3,1,RTL-SDR,full_cis,35,32,49,0.245
+rtl_3,1,RTL-SDR,full_cis,35,33,20,0.1
+rtl_3,1,RTL-SDR,full_cis,35,34,54,0.27
+rtl_3,1,RTL-SDR,full_cis,35,35,46,0.23
+rtl_3,1,RTL-SDR,full_cis,35,36,0,0.0
+rtl_3,1,RTL-SDR,full_cis,35,37,0,0.0
+rtl_3,1,RTL-SDR,full_cis,35,38,3,0.015
+rtl_3,1,RTL-SDR,full_cis,35,39,3,0.015
+rtl_3,1,RTL-SDR,full_cis,35,40,0,0.0
+rtl_3,1,RTL-SDR,full_cis,36,31,0,0.0
+rtl_3,1,RTL-SDR,full_cis,36,32,0,0.0
+rtl_3,1,RTL-SDR,full_cis,36,33,0,0.0
+rtl_3,1,RTL-SDR,full_cis,36,34,0,0.0
+rtl_3,1,RTL-SDR,full_cis,36,35,0,0.0
+rtl_3,1,RTL-SDR,full_cis,36,36,200,1.0
+rtl_3,1,RTL-SDR,full_cis,36,37,0,0.0
+rtl_3,1,RTL-SDR,full_cis,36,38,0,0.0
+rtl_3,1,RTL-SDR,full_cis,36,39,0,0.0
+rtl_3,1,RTL-SDR,full_cis,36,40,0,0.0
+rtl_3,1,RTL-SDR,full_cis,37,31,1,0.005
+rtl_3,1,RTL-SDR,full_cis,37,32,2,0.01
+rtl_3,1,RTL-SDR,full_cis,37,33,0,0.0
+rtl_3,1,RTL-SDR,full_cis,37,34,0,0.0
+rtl_3,1,RTL-SDR,full_cis,37,35,0,0.0
+rtl_3,1,RTL-SDR,full_cis,37,36,1,0.005
+rtl_3,1,RTL-SDR,full_cis,37,37,134,0.67
+rtl_3,1,RTL-SDR,full_cis,37,38,45,0.225
+rtl_3,1,RTL-SDR,full_cis,37,39,8,0.04
+rtl_3,1,RTL-SDR,full_cis,37,40,9,0.045
+rtl_3,1,RTL-SDR,full_cis,38,31,0,0.0
+rtl_3,1,RTL-SDR,full_cis,38,32,1,0.005
+rtl_3,1,RTL-SDR,full_cis,38,33,0,0.0
+rtl_3,1,RTL-SDR,full_cis,38,34,1,0.005
+rtl_3,1,RTL-SDR,full_cis,38,35,0,0.0
+rtl_3,1,RTL-SDR,full_cis,38,36,0,0.0
+rtl_3,1,RTL-SDR,full_cis,38,37,6,0.03
+rtl_3,1,RTL-SDR,full_cis,38,38,126,0.63
+rtl_3,1,RTL-SDR,full_cis,38,39,66,0.33
+rtl_3,1,RTL-SDR,full_cis,38,40,0,0.0
+rtl_3,1,RTL-SDR,full_cis,39,31,0,0.0
+rtl_3,1,RTL-SDR,full_cis,39,32,1,0.005
+rtl_3,1,RTL-SDR,full_cis,39,33,0,0.0
+rtl_3,1,RTL-SDR,full_cis,39,34,0,0.0
+rtl_3,1,RTL-SDR,full_cis,39,35,0,0.0
+rtl_3,1,RTL-SDR,full_cis,39,36,2,0.01
+rtl_3,1,RTL-SDR,full_cis,39,37,2,0.01
+rtl_3,1,RTL-SDR,full_cis,39,38,28,0.14
+rtl_3,1,RTL-SDR,full_cis,39,39,149,0.745
+rtl_3,1,RTL-SDR,full_cis,39,40,18,0.09
+rtl_3,1,RTL-SDR,full_cis,40,31,0,0.0
+rtl_3,1,RTL-SDR,full_cis,40,32,0,0.0
+rtl_3,1,RTL-SDR,full_cis,40,33,0,0.0
+rtl_3,1,RTL-SDR,full_cis,40,34,0,0.0
+rtl_3,1,RTL-SDR,full_cis,40,35,0,0.0
+rtl_3,1,RTL-SDR,full_cis,40,36,1,0.005
+rtl_3,1,RTL-SDR,full_cis,40,37,13,0.065
+rtl_3,1,RTL-SDR,full_cis,40,38,0,0.0
+rtl_3,1,RTL-SDR,full_cis,40,39,3,0.015
+rtl_3,1,RTL-SDR,full_cis,40,40,183,0.915
+rtl_6,1,RTL-SDR,full_cis,31,31,54,0.27
+rtl_6,1,RTL-SDR,full_cis,31,32,145,0.725
+rtl_6,1,RTL-SDR,full_cis,31,33,0,0.0
+rtl_6,1,RTL-SDR,full_cis,31,34,0,0.0
+rtl_6,1,RTL-SDR,full_cis,31,35,0,0.0
+rtl_6,1,RTL-SDR,full_cis,31,36,0,0.0
+rtl_6,1,RTL-SDR,full_cis,31,37,0,0.0
+rtl_6,1,RTL-SDR,full_cis,31,38,0,0.0
+rtl_6,1,RTL-SDR,full_cis,31,39,1,0.005
+rtl_6,1,RTL-SDR,full_cis,31,40,0,0.0
+rtl_6,1,RTL-SDR,full_cis,32,31,0,0.0
+rtl_6,1,RTL-SDR,full_cis,32,32,200,1.0
+rtl_6,1,RTL-SDR,full_cis,32,33,0,0.0
+rtl_6,1,RTL-SDR,full_cis,32,34,0,0.0
+rtl_6,1,RTL-SDR,full_cis,32,35,0,0.0
+rtl_6,1,RTL-SDR,full_cis,32,36,0,0.0
+rtl_6,1,RTL-SDR,full_cis,32,37,0,0.0
+rtl_6,1,RTL-SDR,full_cis,32,38,0,0.0
+rtl_6,1,RTL-SDR,full_cis,32,39,0,0.0
+rtl_6,1,RTL-SDR,full_cis,32,40,0,0.0
+rtl_6,1,RTL-SDR,full_cis,33,31,1,0.005
+rtl_6,1,RTL-SDR,full_cis,33,32,4,0.02
+rtl_6,1,RTL-SDR,full_cis,33,33,38,0.19
+rtl_6,1,RTL-SDR,full_cis,33,34,156,0.78
+rtl_6,1,RTL-SDR,full_cis,33,35,1,0.005
+rtl_6,1,RTL-SDR,full_cis,33,36,0,0.0
+rtl_6,1,RTL-SDR,full_cis,33,37,0,0.0
+rtl_6,1,RTL-SDR,full_cis,33,38,0,0.0
+rtl_6,1,RTL-SDR,full_cis,33,39,0,0.0
+rtl_6,1,RTL-SDR,full_cis,33,40,0,0.0
+rtl_6,1,RTL-SDR,full_cis,34,31,0,0.0
+rtl_6,1,RTL-SDR,full_cis,34,32,99,0.495
+rtl_6,1,RTL-SDR,full_cis,34,33,0,0.0
+rtl_6,1,RTL-SDR,full_cis,34,34,101,0.505
+rtl_6,1,RTL-SDR,full_cis,34,35,0,0.0
+rtl_6,1,RTL-SDR,full_cis,34,36,0,0.0
+rtl_6,1,RTL-SDR,full_cis,34,37,0,0.0
+rtl_6,1,RTL-SDR,full_cis,34,38,0,0.0
+rtl_6,1,RTL-SDR,full_cis,34,39,0,0.0
+rtl_6,1,RTL-SDR,full_cis,34,40,0,0.0
+rtl_6,1,RTL-SDR,full_cis,35,31,12,0.06
+rtl_6,1,RTL-SDR,full_cis,35,32,166,0.83
+rtl_6,1,RTL-SDR,full_cis,35,33,0,0.0
+rtl_6,1,RTL-SDR,full_cis,35,34,0,0.0
+rtl_6,1,RTL-SDR,full_cis,35,35,22,0.11
+rtl_6,1,RTL-SDR,full_cis,35,36,0,0.0
+rtl_6,1,RTL-SDR,full_cis,35,37,0,0.0
+rtl_6,1,RTL-SDR,full_cis,35,38,0,0.0
+rtl_6,1,RTL-SDR,full_cis,35,39,0,0.0
+rtl_6,1,RTL-SDR,full_cis,35,40,0,0.0
+rtl_6,1,RTL-SDR,full_cis,36,31,0,0.0
+rtl_6,1,RTL-SDR,full_cis,36,32,0,0.0
+rtl_6,1,RTL-SDR,full_cis,36,33,0,0.0
+rtl_6,1,RTL-SDR,full_cis,36,34,0,0.0
+rtl_6,1,RTL-SDR,full_cis,36,35,0,0.0
+rtl_6,1,RTL-SDR,full_cis,36,36,199,0.995
+rtl_6,1,RTL-SDR,full_cis,36,37,0,0.0
+rtl_6,1,RTL-SDR,full_cis,36,38,0,0.0
+rtl_6,1,RTL-SDR,full_cis,36,39,0,0.0
+rtl_6,1,RTL-SDR,full_cis,36,40,1,0.005
+rtl_6,1,RTL-SDR,full_cis,37,31,0,0.0
+rtl_6,1,RTL-SDR,full_cis,37,32,0,0.0
+rtl_6,1,RTL-SDR,full_cis,37,33,0,0.0
+rtl_6,1,RTL-SDR,full_cis,37,34,0,0.0
+rtl_6,1,RTL-SDR,full_cis,37,35,0,0.0
+rtl_6,1,RTL-SDR,full_cis,37,36,0,0.0
+rtl_6,1,RTL-SDR,full_cis,37,37,172,0.86
+rtl_6,1,RTL-SDR,full_cis,37,38,28,0.14
+rtl_6,1,RTL-SDR,full_cis,37,39,0,0.0
+rtl_6,1,RTL-SDR,full_cis,37,40,0,0.0
+rtl_6,1,RTL-SDR,full_cis,38,31,0,0.0
+rtl_6,1,RTL-SDR,full_cis,38,32,0,0.0
+rtl_6,1,RTL-SDR,full_cis,38,33,0,0.0
+rtl_6,1,RTL-SDR,full_cis,38,34,0,0.0
+rtl_6,1,RTL-SDR,full_cis,38,35,0,0.0
+rtl_6,1,RTL-SDR,full_cis,38,36,0,0.0
+rtl_6,1,RTL-SDR,full_cis,38,37,5,0.025
+rtl_6,1,RTL-SDR,full_cis,38,38,169,0.845
+rtl_6,1,RTL-SDR,full_cis,38,39,23,0.115
+rtl_6,1,RTL-SDR,full_cis,38,40,3,0.015
+rtl_6,1,RTL-SDR,full_cis,39,31,0,0.0
+rtl_6,1,RTL-SDR,full_cis,39,32,0,0.0
+rtl_6,1,RTL-SDR,full_cis,39,33,0,0.0
+rtl_6,1,RTL-SDR,full_cis,39,34,0,0.0
+rtl_6,1,RTL-SDR,full_cis,39,35,0,0.0
+rtl_6,1,RTL-SDR,full_cis,39,36,0,0.0
+rtl_6,1,RTL-SDR,full_cis,39,37,4,0.02
+rtl_6,1,RTL-SDR,full_cis,39,38,10,0.05
+rtl_6,1,RTL-SDR,full_cis,39,39,141,0.705
+rtl_6,1,RTL-SDR,full_cis,39,40,45,0.225
+rtl_6,1,RTL-SDR,full_cis,40,31,0,0.0
+rtl_6,1,RTL-SDR,full_cis,40,32,0,0.0
+rtl_6,1,RTL-SDR,full_cis,40,33,0,0.0
+rtl_6,1,RTL-SDR,full_cis,40,34,0,0.0
+rtl_6,1,RTL-SDR,full_cis,40,35,0,0.0
+rtl_6,1,RTL-SDR,full_cis,40,36,0,0.0
+rtl_6,1,RTL-SDR,full_cis,40,37,1,0.005
+rtl_6,1,RTL-SDR,full_cis,40,38,0,0.0
+rtl_6,1,RTL-SDR,full_cis,40,39,0,0.0
+rtl_6,1,RTL-SDR,full_cis,40,40,199,0.995
+rtl_9,1,RTL-SDR,full_cis,31,31,188,0.94
+rtl_9,1,RTL-SDR,full_cis,31,32,10,0.05
+rtl_9,1,RTL-SDR,full_cis,31,33,0,0.0
+rtl_9,1,RTL-SDR,full_cis,31,34,0,0.0
+rtl_9,1,RTL-SDR,full_cis,31,35,2,0.01
+rtl_9,1,RTL-SDR,full_cis,31,36,0,0.0
+rtl_9,1,RTL-SDR,full_cis,31,37,0,0.0
+rtl_9,1,RTL-SDR,full_cis,31,38,0,0.0
+rtl_9,1,RTL-SDR,full_cis,31,39,0,0.0
+rtl_9,1,RTL-SDR,full_cis,31,40,0,0.0
+rtl_9,1,RTL-SDR,full_cis,32,31,127,0.635
+rtl_9,1,RTL-SDR,full_cis,32,32,37,0.185
+rtl_9,1,RTL-SDR,full_cis,32,33,0,0.0
+rtl_9,1,RTL-SDR,full_cis,32,34,0,0.0
+rtl_9,1,RTL-SDR,full_cis,32,35,36,0.18
+rtl_9,1,RTL-SDR,full_cis,32,36,0,0.0
+rtl_9,1,RTL-SDR,full_cis,32,37,0,0.0
+rtl_9,1,RTL-SDR,full_cis,32,38,0,0.0
+rtl_9,1,RTL-SDR,full_cis,32,39,0,0.0
+rtl_9,1,RTL-SDR,full_cis,32,40,0,0.0
+rtl_9,1,RTL-SDR,full_cis,33,31,5,0.025
+rtl_9,1,RTL-SDR,full_cis,33,32,2,0.01
+rtl_9,1,RTL-SDR,full_cis,33,33,151,0.755
+rtl_9,1,RTL-SDR,full_cis,33,34,40,0.2
+rtl_9,1,RTL-SDR,full_cis,33,35,2,0.01
+rtl_9,1,RTL-SDR,full_cis,33,36,0,0.0
+rtl_9,1,RTL-SDR,full_cis,33,37,0,0.0
+rtl_9,1,RTL-SDR,full_cis,33,38,0,0.0
+rtl_9,1,RTL-SDR,full_cis,33,39,0,0.0
+rtl_9,1,RTL-SDR,full_cis,33,40,0,0.0
+rtl_9,1,RTL-SDR,full_cis,34,31,0,0.0
+rtl_9,1,RTL-SDR,full_cis,34,32,6,0.03
+rtl_9,1,RTL-SDR,full_cis,34,33,81,0.405
+rtl_9,1,RTL-SDR,full_cis,34,34,95,0.475
+rtl_9,1,RTL-SDR,full_cis,34,35,18,0.09
+rtl_9,1,RTL-SDR,full_cis,34,36,0,0.0
+rtl_9,1,RTL-SDR,full_cis,34,37,0,0.0
+rtl_9,1,RTL-SDR,full_cis,34,38,0,0.0
+rtl_9,1,RTL-SDR,full_cis,34,39,0,0.0
+rtl_9,1,RTL-SDR,full_cis,34,40,0,0.0
+rtl_9,1,RTL-SDR,full_cis,35,31,36,0.18
+rtl_9,1,RTL-SDR,full_cis,35,32,54,0.27
+rtl_9,1,RTL-SDR,full_cis,35,33,0,0.0
+rtl_9,1,RTL-SDR,full_cis,35,34,0,0.0
+rtl_9,1,RTL-SDR,full_cis,35,35,110,0.55
+rtl_9,1,RTL-SDR,full_cis,35,36,0,0.0
+rtl_9,1,RTL-SDR,full_cis,35,37,0,0.0
+rtl_9,1,RTL-SDR,full_cis,35,38,0,0.0
+rtl_9,1,RTL-SDR,full_cis,35,39,0,0.0
+rtl_9,1,RTL-SDR,full_cis,35,40,0,0.0
+rtl_9,1,RTL-SDR,full_cis,36,31,0,0.0
+rtl_9,1,RTL-SDR,full_cis,36,32,0,0.0
+rtl_9,1,RTL-SDR,full_cis,36,33,0,0.0
+rtl_9,1,RTL-SDR,full_cis,36,34,0,0.0
+rtl_9,1,RTL-SDR,full_cis,36,35,0,0.0
+rtl_9,1,RTL-SDR,full_cis,36,36,200,1.0
+rtl_9,1,RTL-SDR,full_cis,36,37,0,0.0
+rtl_9,1,RTL-SDR,full_cis,36,38,0,0.0
+rtl_9,1,RTL-SDR,full_cis,36,39,0,0.0
+rtl_9,1,RTL-SDR,full_cis,36,40,0,0.0
+rtl_9,1,RTL-SDR,full_cis,37,31,0,0.0
+rtl_9,1,RTL-SDR,full_cis,37,32,0,0.0
+rtl_9,1,RTL-SDR,full_cis,37,33,0,0.0
+rtl_9,1,RTL-SDR,full_cis,37,34,0,0.0
+rtl_9,1,RTL-SDR,full_cis,37,35,0,0.0
+rtl_9,1,RTL-SDR,full_cis,37,36,3,0.015
+rtl_9,1,RTL-SDR,full_cis,37,37,178,0.89
+rtl_9,1,RTL-SDR,full_cis,37,38,5,0.025
+rtl_9,1,RTL-SDR,full_cis,37,39,1,0.005
+rtl_9,1,RTL-SDR,full_cis,37,40,13,0.065
+rtl_9,1,RTL-SDR,full_cis,38,31,0,0.0
+rtl_9,1,RTL-SDR,full_cis,38,32,1,0.005
+rtl_9,1,RTL-SDR,full_cis,38,33,0,0.0
+rtl_9,1,RTL-SDR,full_cis,38,34,0,0.0
+rtl_9,1,RTL-SDR,full_cis,38,35,0,0.0
+rtl_9,1,RTL-SDR,full_cis,38,36,0,0.0
+rtl_9,1,RTL-SDR,full_cis,38,37,1,0.005
+rtl_9,1,RTL-SDR,full_cis,38,38,109,0.545
+rtl_9,1,RTL-SDR,full_cis,38,39,89,0.445
+rtl_9,1,RTL-SDR,full_cis,38,40,0,0.0
+rtl_9,1,RTL-SDR,full_cis,39,31,0,0.0
+rtl_9,1,RTL-SDR,full_cis,39,32,0,0.0
+rtl_9,1,RTL-SDR,full_cis,39,33,0,0.0
+rtl_9,1,RTL-SDR,full_cis,39,34,0,0.0
+rtl_9,1,RTL-SDR,full_cis,39,35,0,0.0
+rtl_9,1,RTL-SDR,full_cis,39,36,0,0.0
+rtl_9,1,RTL-SDR,full_cis,39,37,0,0.0
+rtl_9,1,RTL-SDR,full_cis,39,38,8,0.04
+rtl_9,1,RTL-SDR,full_cis,39,39,189,0.945
+rtl_9,1,RTL-SDR,full_cis,39,40,3,0.015
+rtl_9,1,RTL-SDR,full_cis,40,31,0,0.0
+rtl_9,1,RTL-SDR,full_cis,40,32,0,0.0
+rtl_9,1,RTL-SDR,full_cis,40,33,0,0.0
+rtl_9,1,RTL-SDR,full_cis,40,34,0,0.0
+rtl_9,1,RTL-SDR,full_cis,40,35,0,0.0
+rtl_9,1,RTL-SDR,full_cis,40,36,1,0.005
+rtl_9,1,RTL-SDR,full_cis,40,37,0,0.0
+rtl_9,1,RTL-SDR,full_cis,40,38,0,0.0
+rtl_9,1,RTL-SDR,full_cis,40,39,0,0.0
+rtl_9,1,RTL-SDR,full_cis,40,40,199,0.995
+b210_1,1,USRP B210,strict_cis,31,31,195,0.975
+b210_1,1,USRP B210,strict_cis,31,32,5,0.025
+b210_1,1,USRP B210,strict_cis,31,33,0,0.0
+b210_1,1,USRP B210,strict_cis,31,34,0,0.0
+b210_1,1,USRP B210,strict_cis,31,35,0,0.0
+b210_1,1,USRP B210,strict_cis,31,36,0,0.0
+b210_1,1,USRP B210,strict_cis,31,37,0,0.0
+b210_1,1,USRP B210,strict_cis,31,38,0,0.0
+b210_1,1,USRP B210,strict_cis,31,39,0,0.0
+b210_1,1,USRP B210,strict_cis,31,40,0,0.0
+b210_1,1,USRP B210,strict_cis,32,31,15,0.075
+b210_1,1,USRP B210,strict_cis,32,32,185,0.925
+b210_1,1,USRP B210,strict_cis,32,33,0,0.0
+b210_1,1,USRP B210,strict_cis,32,34,0,0.0
+b210_1,1,USRP B210,strict_cis,32,35,0,0.0
+b210_1,1,USRP B210,strict_cis,32,36,0,0.0
+b210_1,1,USRP B210,strict_cis,32,37,0,0.0
+b210_1,1,USRP B210,strict_cis,32,38,0,0.0
+b210_1,1,USRP B210,strict_cis,32,39,0,0.0
+b210_1,1,USRP B210,strict_cis,32,40,0,0.0
+b210_1,1,USRP B210,strict_cis,33,31,0,0.0
+b210_1,1,USRP B210,strict_cis,33,32,0,0.0
+b210_1,1,USRP B210,strict_cis,33,33,165,0.825
+b210_1,1,USRP B210,strict_cis,33,34,35,0.175
+b210_1,1,USRP B210,strict_cis,33,35,0,0.0
+b210_1,1,USRP B210,strict_cis,33,36,0,0.0
+b210_1,1,USRP B210,strict_cis,33,37,0,0.0
+b210_1,1,USRP B210,strict_cis,33,38,0,0.0
+b210_1,1,USRP B210,strict_cis,33,39,0,0.0
+b210_1,1,USRP B210,strict_cis,33,40,0,0.0
+b210_1,1,USRP B210,strict_cis,34,31,0,0.0
+b210_1,1,USRP B210,strict_cis,34,32,2,0.01
+b210_1,1,USRP B210,strict_cis,34,33,7,0.035
+b210_1,1,USRP B210,strict_cis,34,34,188,0.94
+b210_1,1,USRP B210,strict_cis,34,35,2,0.01
+b210_1,1,USRP B210,strict_cis,34,36,0,0.0
+b210_1,1,USRP B210,strict_cis,34,37,0,0.0
+b210_1,1,USRP B210,strict_cis,34,38,1,0.005
+b210_1,1,USRP B210,strict_cis,34,39,0,0.0
+b210_1,1,USRP B210,strict_cis,34,40,0,0.0
+b210_1,1,USRP B210,strict_cis,35,31,0,0.0
+b210_1,1,USRP B210,strict_cis,35,32,183,0.915
+b210_1,1,USRP B210,strict_cis,35,33,0,0.0
+b210_1,1,USRP B210,strict_cis,35,34,0,0.0
+b210_1,1,USRP B210,strict_cis,35,35,17,0.085
+b210_1,1,USRP B210,strict_cis,35,36,0,0.0
+b210_1,1,USRP B210,strict_cis,35,37,0,0.0
+b210_1,1,USRP B210,strict_cis,35,38,0,0.0
+b210_1,1,USRP B210,strict_cis,35,39,0,0.0
+b210_1,1,USRP B210,strict_cis,35,40,0,0.0
+b210_1,1,USRP B210,strict_cis,36,31,0,0.0
+b210_1,1,USRP B210,strict_cis,36,32,0,0.0
+b210_1,1,USRP B210,strict_cis,36,33,0,0.0
+b210_1,1,USRP B210,strict_cis,36,34,0,0.0
+b210_1,1,USRP B210,strict_cis,36,35,0,0.0
+b210_1,1,USRP B210,strict_cis,36,36,143,0.715
+b210_1,1,USRP B210,strict_cis,36,37,0,0.0
+b210_1,1,USRP B210,strict_cis,36,38,0,0.0
+b210_1,1,USRP B210,strict_cis,36,39,2,0.01
+b210_1,1,USRP B210,strict_cis,36,40,55,0.275
+b210_1,1,USRP B210,strict_cis,37,31,0,0.0
+b210_1,1,USRP B210,strict_cis,37,32,0,0.0
+b210_1,1,USRP B210,strict_cis,37,33,0,0.0
+b210_1,1,USRP B210,strict_cis,37,34,0,0.0
+b210_1,1,USRP B210,strict_cis,37,35,0,0.0
+b210_1,1,USRP B210,strict_cis,37,36,0,0.0
+b210_1,1,USRP B210,strict_cis,37,37,196,0.98
+b210_1,1,USRP B210,strict_cis,37,38,4,0.02
+b210_1,1,USRP B210,strict_cis,37,39,0,0.0
+b210_1,1,USRP B210,strict_cis,37,40,0,0.0
+b210_1,1,USRP B210,strict_cis,38,31,0,0.0
+b210_1,1,USRP B210,strict_cis,38,32,0,0.0
+b210_1,1,USRP B210,strict_cis,38,33,0,0.0
+b210_1,1,USRP B210,strict_cis,38,34,0,0.0
+b210_1,1,USRP B210,strict_cis,38,35,0,0.0
+b210_1,1,USRP B210,strict_cis,38,36,0,0.0
+b210_1,1,USRP B210,strict_cis,38,37,0,0.0
+b210_1,1,USRP B210,strict_cis,38,38,193,0.965
+b210_1,1,USRP B210,strict_cis,38,39,7,0.035
+b210_1,1,USRP B210,strict_cis,38,40,0,0.0
+b210_1,1,USRP B210,strict_cis,39,31,0,0.0
+b210_1,1,USRP B210,strict_cis,39,32,0,0.0
+b210_1,1,USRP B210,strict_cis,39,33,0,0.0
+b210_1,1,USRP B210,strict_cis,39,34,1,0.005
+b210_1,1,USRP B210,strict_cis,39,35,0,0.0
+b210_1,1,USRP B210,strict_cis,39,36,1,0.005
+b210_1,1,USRP B210,strict_cis,39,37,0,0.0
+b210_1,1,USRP B210,strict_cis,39,38,5,0.025
+b210_1,1,USRP B210,strict_cis,39,39,193,0.965
+b210_1,1,USRP B210,strict_cis,39,40,0,0.0
+b210_1,1,USRP B210,strict_cis,40,31,0,0.0
+b210_1,1,USRP B210,strict_cis,40,32,0,0.0
+b210_1,1,USRP B210,strict_cis,40,33,0,0.0
+b210_1,1,USRP B210,strict_cis,40,34,0,0.0
+b210_1,1,USRP B210,strict_cis,40,35,0,0.0
+b210_1,1,USRP B210,strict_cis,40,36,0,0.0
+b210_1,1,USRP B210,strict_cis,40,37,0,0.0
+b210_1,1,USRP B210,strict_cis,40,38,0,0.0
+b210_1,1,USRP B210,strict_cis,40,39,0,0.0
+b210_1,1,USRP B210,strict_cis,40,40,200,1.0
+rtl_1,1,RTL-SDR,strict_cis,31,31,185,0.925
+rtl_1,1,RTL-SDR,strict_cis,31,32,13,0.065
+rtl_1,1,RTL-SDR,strict_cis,31,33,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,31,34,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,31,35,2,0.01
+rtl_1,1,RTL-SDR,strict_cis,31,36,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,31,37,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,31,38,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,31,39,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,31,40,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,32,31,42,0.21
+rtl_1,1,RTL-SDR,strict_cis,32,32,158,0.79
+rtl_1,1,RTL-SDR,strict_cis,32,33,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,32,34,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,32,35,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,32,36,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,32,37,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,32,38,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,32,39,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,32,40,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,33,31,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,33,32,10,0.05
+rtl_1,1,RTL-SDR,strict_cis,33,33,148,0.74
+rtl_1,1,RTL-SDR,strict_cis,33,34,41,0.205
+rtl_1,1,RTL-SDR,strict_cis,33,35,1,0.005
+rtl_1,1,RTL-SDR,strict_cis,33,36,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,33,37,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,33,38,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,33,39,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,33,40,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,34,31,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,34,32,22,0.11
+rtl_1,1,RTL-SDR,strict_cis,34,33,21,0.105
+rtl_1,1,RTL-SDR,strict_cis,34,34,138,0.69
+rtl_1,1,RTL-SDR,strict_cis,34,35,19,0.095
+rtl_1,1,RTL-SDR,strict_cis,34,36,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,34,37,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,34,38,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,34,39,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,34,40,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,35,31,1,0.005
+rtl_1,1,RTL-SDR,strict_cis,35,32,176,0.88
+rtl_1,1,RTL-SDR,strict_cis,35,33,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,35,34,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,35,35,23,0.115
+rtl_1,1,RTL-SDR,strict_cis,35,36,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,35,37,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,35,38,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,35,39,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,35,40,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,36,31,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,36,32,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,36,33,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,36,34,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,36,35,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,36,36,195,0.975
+rtl_1,1,RTL-SDR,strict_cis,36,37,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,36,38,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,36,39,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,36,40,5,0.025
+rtl_1,1,RTL-SDR,strict_cis,37,31,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,37,32,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,37,33,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,37,34,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,37,35,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,37,36,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,37,37,197,0.985
+rtl_1,1,RTL-SDR,strict_cis,37,38,3,0.015
+rtl_1,1,RTL-SDR,strict_cis,37,39,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,37,40,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,38,31,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,38,32,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,38,33,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,38,34,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,38,35,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,38,36,1,0.005
+rtl_1,1,RTL-SDR,strict_cis,38,37,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,38,38,193,0.965
+rtl_1,1,RTL-SDR,strict_cis,38,39,6,0.03
+rtl_1,1,RTL-SDR,strict_cis,38,40,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,39,31,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,39,32,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,39,33,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,39,34,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,39,35,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,39,36,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,39,37,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,39,38,16,0.08
+rtl_1,1,RTL-SDR,strict_cis,39,39,184,0.92
+rtl_1,1,RTL-SDR,strict_cis,39,40,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,40,31,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,40,32,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,40,33,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,40,34,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,40,35,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,40,36,1,0.005
+rtl_1,1,RTL-SDR,strict_cis,40,37,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,40,38,0,0.0
+rtl_1,1,RTL-SDR,strict_cis,40,39,5,0.025
+rtl_1,1,RTL-SDR,strict_cis,40,40,194,0.97
+rtl_3,1,RTL-SDR,strict_cis,31,31,175,0.875
+rtl_3,1,RTL-SDR,strict_cis,31,32,24,0.12
+rtl_3,1,RTL-SDR,strict_cis,31,33,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,31,34,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,31,35,1,0.005
+rtl_3,1,RTL-SDR,strict_cis,31,36,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,31,37,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,31,38,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,31,39,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,31,40,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,32,31,65,0.325
+rtl_3,1,RTL-SDR,strict_cis,32,32,132,0.66
+rtl_3,1,RTL-SDR,strict_cis,32,33,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,32,34,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,32,35,3,0.015
+rtl_3,1,RTL-SDR,strict_cis,32,36,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,32,37,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,32,38,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,32,39,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,32,40,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,33,31,1,0.005
+rtl_3,1,RTL-SDR,strict_cis,33,32,15,0.075
+rtl_3,1,RTL-SDR,strict_cis,33,33,134,0.67
+rtl_3,1,RTL-SDR,strict_cis,33,34,46,0.23
+rtl_3,1,RTL-SDR,strict_cis,33,35,4,0.02
+rtl_3,1,RTL-SDR,strict_cis,33,36,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,33,37,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,33,38,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,33,39,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,33,40,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,34,31,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,34,32,26,0.13
+rtl_3,1,RTL-SDR,strict_cis,34,33,36,0.18
+rtl_3,1,RTL-SDR,strict_cis,34,34,126,0.63
+rtl_3,1,RTL-SDR,strict_cis,34,35,12,0.06
+rtl_3,1,RTL-SDR,strict_cis,34,36,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,34,37,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,34,38,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,34,39,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,34,40,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,35,31,7,0.035
+rtl_3,1,RTL-SDR,strict_cis,35,32,151,0.755
+rtl_3,1,RTL-SDR,strict_cis,35,33,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,35,34,1,0.005
+rtl_3,1,RTL-SDR,strict_cis,35,35,41,0.205
+rtl_3,1,RTL-SDR,strict_cis,35,36,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,35,37,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,35,38,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,35,39,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,35,40,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,36,31,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,36,32,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,36,33,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,36,34,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,36,35,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,36,36,194,0.97
+rtl_3,1,RTL-SDR,strict_cis,36,37,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,36,38,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,36,39,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,36,40,6,0.03
+rtl_3,1,RTL-SDR,strict_cis,37,31,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,37,32,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,37,33,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,37,34,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,37,35,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,37,36,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,37,37,174,0.87
+rtl_3,1,RTL-SDR,strict_cis,37,38,26,0.13
+rtl_3,1,RTL-SDR,strict_cis,37,39,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,37,40,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,38,31,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,38,32,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,38,33,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,38,34,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,38,35,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,38,36,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,38,37,1,0.005
+rtl_3,1,RTL-SDR,strict_cis,38,38,188,0.94
+rtl_3,1,RTL-SDR,strict_cis,38,39,10,0.05
+rtl_3,1,RTL-SDR,strict_cis,38,40,1,0.005
+rtl_3,1,RTL-SDR,strict_cis,39,31,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,39,32,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,39,33,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,39,34,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,39,35,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,39,36,1,0.005
+rtl_3,1,RTL-SDR,strict_cis,39,37,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,39,38,7,0.035
+rtl_3,1,RTL-SDR,strict_cis,39,39,191,0.955
+rtl_3,1,RTL-SDR,strict_cis,39,40,1,0.005
+rtl_3,1,RTL-SDR,strict_cis,40,31,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,40,32,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,40,33,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,40,34,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,40,35,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,40,36,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,40,37,1,0.005
+rtl_3,1,RTL-SDR,strict_cis,40,38,0,0.0
+rtl_3,1,RTL-SDR,strict_cis,40,39,5,0.025
+rtl_3,1,RTL-SDR,strict_cis,40,40,194,0.97
+rtl_6,1,RTL-SDR,strict_cis,31,31,195,0.975
+rtl_6,1,RTL-SDR,strict_cis,31,32,3,0.015
+rtl_6,1,RTL-SDR,strict_cis,31,33,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,31,34,1,0.005
+rtl_6,1,RTL-SDR,strict_cis,31,35,1,0.005
+rtl_6,1,RTL-SDR,strict_cis,31,36,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,31,37,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,31,38,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,31,39,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,31,40,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,32,31,60,0.3
+rtl_6,1,RTL-SDR,strict_cis,32,32,140,0.7
+rtl_6,1,RTL-SDR,strict_cis,32,33,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,32,34,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,32,35,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,32,36,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,32,37,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,32,38,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,32,39,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,32,40,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,33,31,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,33,32,2,0.01
+rtl_6,1,RTL-SDR,strict_cis,33,33,186,0.93
+rtl_6,1,RTL-SDR,strict_cis,33,34,12,0.06
+rtl_6,1,RTL-SDR,strict_cis,33,35,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,33,36,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,33,37,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,33,38,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,33,39,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,33,40,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,34,31,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,34,32,4,0.02
+rtl_6,1,RTL-SDR,strict_cis,34,33,33,0.165
+rtl_6,1,RTL-SDR,strict_cis,34,34,163,0.815
+rtl_6,1,RTL-SDR,strict_cis,34,35,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,34,36,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,34,37,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,34,38,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,34,39,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,34,40,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,35,31,1,0.005
+rtl_6,1,RTL-SDR,strict_cis,35,32,187,0.935
+rtl_6,1,RTL-SDR,strict_cis,35,33,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,35,34,1,0.005
+rtl_6,1,RTL-SDR,strict_cis,35,35,11,0.055
+rtl_6,1,RTL-SDR,strict_cis,35,36,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,35,37,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,35,38,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,35,39,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,35,40,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,36,31,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,36,32,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,36,33,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,36,34,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,36,35,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,36,36,199,0.995
+rtl_6,1,RTL-SDR,strict_cis,36,37,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,36,38,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,36,39,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,36,40,1,0.005
+rtl_6,1,RTL-SDR,strict_cis,37,31,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,37,32,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,37,33,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,37,34,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,37,35,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,37,36,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,37,37,155,0.775
+rtl_6,1,RTL-SDR,strict_cis,37,38,44,0.22
+rtl_6,1,RTL-SDR,strict_cis,37,39,1,0.005
+rtl_6,1,RTL-SDR,strict_cis,37,40,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,38,31,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,38,32,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,38,33,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,38,34,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,38,35,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,38,36,1,0.005
+rtl_6,1,RTL-SDR,strict_cis,38,37,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,38,38,196,0.98
+rtl_6,1,RTL-SDR,strict_cis,38,39,3,0.015
+rtl_6,1,RTL-SDR,strict_cis,38,40,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,39,31,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,39,32,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,39,33,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,39,34,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,39,35,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,39,36,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,39,37,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,39,38,1,0.005
+rtl_6,1,RTL-SDR,strict_cis,39,39,198,0.99
+rtl_6,1,RTL-SDR,strict_cis,39,40,1,0.005
+rtl_6,1,RTL-SDR,strict_cis,40,31,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,40,32,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,40,33,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,40,34,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,40,35,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,40,36,1,0.005
+rtl_6,1,RTL-SDR,strict_cis,40,37,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,40,38,0,0.0
+rtl_6,1,RTL-SDR,strict_cis,40,39,10,0.05
+rtl_6,1,RTL-SDR,strict_cis,40,40,189,0.945
+rtl_9,1,RTL-SDR,strict_cis,31,31,198,0.99
+rtl_9,1,RTL-SDR,strict_cis,31,32,2,0.01
+rtl_9,1,RTL-SDR,strict_cis,31,33,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,31,34,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,31,35,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,31,36,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,31,37,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,31,38,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,31,39,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,31,40,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,32,31,90,0.45
+rtl_9,1,RTL-SDR,strict_cis,32,32,110,0.55
+rtl_9,1,RTL-SDR,strict_cis,32,33,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,32,34,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,32,35,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,32,36,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,32,37,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,32,38,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,32,39,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,32,40,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,33,31,1,0.005
+rtl_9,1,RTL-SDR,strict_cis,33,32,3,0.015
+rtl_9,1,RTL-SDR,strict_cis,33,33,182,0.91
+rtl_9,1,RTL-SDR,strict_cis,33,34,14,0.07
+rtl_9,1,RTL-SDR,strict_cis,33,35,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,33,36,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,33,37,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,33,38,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,33,39,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,33,40,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,34,31,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,34,32,5,0.025
+rtl_9,1,RTL-SDR,strict_cis,34,33,30,0.15
+rtl_9,1,RTL-SDR,strict_cis,34,34,158,0.79
+rtl_9,1,RTL-SDR,strict_cis,34,35,7,0.035
+rtl_9,1,RTL-SDR,strict_cis,34,36,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,34,37,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,34,38,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,34,39,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,34,40,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,35,31,3,0.015
+rtl_9,1,RTL-SDR,strict_cis,35,32,195,0.975
+rtl_9,1,RTL-SDR,strict_cis,35,33,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,35,34,1,0.005
+rtl_9,1,RTL-SDR,strict_cis,35,35,1,0.005
+rtl_9,1,RTL-SDR,strict_cis,35,36,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,35,37,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,35,38,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,35,39,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,35,40,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,36,31,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,36,32,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,36,33,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,36,34,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,36,35,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,36,36,199,0.995
+rtl_9,1,RTL-SDR,strict_cis,36,37,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,36,38,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,36,39,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,36,40,1,0.005
+rtl_9,1,RTL-SDR,strict_cis,37,31,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,37,32,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,37,33,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,37,34,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,37,35,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,37,36,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,37,37,187,0.935
+rtl_9,1,RTL-SDR,strict_cis,37,38,13,0.065
+rtl_9,1,RTL-SDR,strict_cis,37,39,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,37,40,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,38,31,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,38,32,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,38,33,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,38,34,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,38,35,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,38,36,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,38,37,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,38,38,194,0.97
+rtl_9,1,RTL-SDR,strict_cis,38,39,6,0.03
+rtl_9,1,RTL-SDR,strict_cis,38,40,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,39,31,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,39,32,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,39,33,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,39,34,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,39,35,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,39,36,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,39,37,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,39,38,2,0.01
+rtl_9,1,RTL-SDR,strict_cis,39,39,198,0.99
+rtl_9,1,RTL-SDR,strict_cis,39,40,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,40,31,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,40,32,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,40,33,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,40,34,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,40,35,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,40,36,1,0.005
+rtl_9,1,RTL-SDR,strict_cis,40,37,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,40,38,0,0.0
+rtl_9,1,RTL-SDR,strict_cis,40,39,9,0.045
+rtl_9,1,RTL-SDR,strict_cis,40,40,190,0.95

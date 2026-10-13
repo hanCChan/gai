@@ -1,0 +1,142 @@
+{
+  "archive_sha256": "e79ca028b27f031afa4b79ad1e51dd2a3e6a261adf20c0b031f1662b616beb7a",
+  "members": [
+    {
+      "name": "accuracy_and_worst_class.png",
+      "bytes": 96289,
+      "sha256": "5ac547c16c2942453153ca7c49a4a97a47c602cd0d5b4a64a852155d27a350bd"
+    },
+    {
+      "name": "accuracy_and_worst_class.svg",
+      "bytes": 57488,
+      "sha256": "c5e54db38f8cb7a764140e7dde0d75662367605c31ad53fec113902ce205c67f"
+    },
+    {
+      "name": "confusion_counts.csv",
+      "bytes": 82129,
+      "sha256": "13745eefc976aee210c2490174ce21b08863ce13cb13859dfbccc922c1330ad9"
+    },
+    {
+      "name": "confusions_full_cis.png",
+      "bytes": 82118,
+      "sha256": "42343ddc03a15cee3c65fdd04e6a971646683ca9c8a2af59fd943c176945609b"
+    },
+    {
+      "name": "confusions_full_cis.svg",
+      "bytes": 135308,
+      "sha256": "80146abcb681e1760d6db2bfb1aaa6ddf4430ac2fe308ba1ecaf9e1da62edfdc"
+    },
+    {
+      "name": "confusions_strict_cis.png",
+      "bytes": 80534,
+      "sha256": "d2dad9fa1fb98b694bcdb8e6d2e359dcf140945f6f5bbbaa63253d13665261da"
+    },
+    {
+      "name": "confusions_strict_cis.svg",
+      "bytes": 134505,
+      "sha256": "e29ce1fe84de77b35d2ec858217dd24922e28690b9c4c76dde47affe81ea097f"
+    },
+    {
+      "name": "decision.json",
+      "bytes": 1754,
+      "sha256": "3a51d9951fd09a14e19914ce0530d0ec452138e28a8b56492e8ed76adaac3cdb"
+    },
+    {
+      "name": "directed_pairs.csv",
+      "bytes": 290550,
+      "sha256": "5826bfc0053753caba775a8d39278b98957af1d5bc3e77bf1b597f2936a27c35"
+    },
+    {
+      "name": "execution.json",
+      "bytes": 472,
+      "sha256": "f1974f7c7a687367835dc0fa1e75c373aec14eb8df3f5fb98d22c4f4dec97632"
+    },
+    {
+      "name": "independent_verification.json",
+      "bytes": 316,
+      "sha256": "12481fb4031b3e112fcaf479d35835bd3a3268e16ba64f441fe9d4e5ca1ef726"
+    },
+    {
+      "name": "input_provenance.csv",
+      "bytes": 9206,
+      "sha256": "4d2891044c1aeb4f1e03d9396afbd718e9c1b2ca89ca30e03f83c4db3bb64de4"
+    },
+    {
+      "name": "pair_confusion_changes.png",
+      "bytes": 39499,
+      "sha256": "4e13a53e78802995b819f2819cc3ff79d2818685cd9fa50c98314c83ec262e5d"
+    },
+    {
+      "name": "pair_confusion_changes.svg",
+      "bytes": 49092,
+      "sha256": "ad03b4f11adb17176b8bf8bea72d1819ff91b3c0fe6de57f190392c2310d6f04"
+    },
+    {
+      "name": "per_RX.csv",
+      "bytes": 1170,
+      "sha256": "7b27ea90ce7fe6d7b03ad3a072736c895543394ed65dd2c523579438789885ac"
+    },
+    {
+      "name": "per_RX_TX.csv",
+      "bytes": 8948,
+      "sha256": "8c65ca329c7895cbe105e62681b08c6175311c6b4fbbbc33fc2f3c0dd51dbfc2"
+    },
+    {
+      "name": "predictability_cells.csv",
+      "bytes": 403,
+      "sha256": "65d8a7a63a15e3d49e009dfbc04d609a3c6345b8da907ccc02c9a5ca71cc1e24"
+    },
+    {
+      "name": "replicated_harmful_edges.csv",
+      "bytes": 2792,
+      "sha256": "49ca5b25bf758a1fd7304137a6cc5b0bc50d05955538d5198871996951aa780f"
+    },
+    {
+      "name": "risk_predictability.png",
+      "bytes": 104314,
+      "sha256": "a7e19077db32208cfb2816626700df3dbeb6a3822815561721ab089ff2c4b9e9"
+    },
+    {
+      "name": "risk_predictability.svg",
+      "bytes": 57064,
+      "sha256": "83ede75bb8915ac14440e9cb2f0e896546f276619e06d59f4747e02640e2608c"
+    },
+    {
+      "name": "risk_prediction_evaluation.csv",
+      "bytes": 41016,
+      "sha256": "76b7a5d567a26d3c7327db1b0e26d3e9a0befd7c77e827e769f5bf9db64211d9"
+    },
+    {
+      "name": "risk_prediction_vectors.csv",
+      "bytes": 2580017,
+      "sha256": "eb2f4a7baed928bd1747b3f92b56936a025bc5679b3b01c228a56bdd4f13d079"
+    },
+    {
+      "name": "strict_full_pair_changes.csv",
+      "bytes": 89630,
+      "sha256": "c54762f9d4d0dce52d02495c99c12e81a3663990487fd97a5948729d0646fe81"
+    },
+    {
+      "name": "unordered_pairs.csv",
+      "bytes": 52633,
+      "sha256": "7251207b7170b2e84b61173ba893acd9812b33da2409f7b8397bb6bac2d5d3f7"
+    },
+    {
+      "name": "worst_RX_pairs.csv",
+      "bytes": 95085,
+      "sha256": "e245943327fd0decd8ad08be3f83940dfc378377293a4910a2dc69276d18490f"
+    },
+    {
+      "name": "worst_pair_margins.png",
+      "bytes": 47371,
+      "sha256": "bfa740961427048371d6e40c6bab9f2b0b0e815441d635c38f9ad8ae9cd78a02"
+    },
+    {
+      "name": "worst_pair_margins.svg",
+      "bytes": 51767,
+      "sha256": "53c0b2751890504b63eda425b9ae09f22fa3dd595b14046f96f629054230b6d8"
+    }
+  ],
+  "raw_predictions_included": false,
+  "manuscripts_or_weights_included": false
+}

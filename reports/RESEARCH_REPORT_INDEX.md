@@ -1,9 +1,10 @@
 # 第二篇 LoRa 研究：报告与证据索引
 
-本索引对应 `experiment/shen-p2a8` 分支。下列报告、预登记、复核代码、CSV 和图表均保留；两份 ZIP 包包含完整逐包诊断证据。原始 IQ 和 CNN 权重留在原服务器，复现需要协议记录的输入及 SHA256。
+当前 D0 发布分支为 `experiment/d0-class-pair-audit`，历史报告来自 `experiment/shen-p2a8` 等独立分支。下列报告、预登记、复核代码、CSV 和图表均保留；两份 ZIP 包包含完整逐包诊断证据。原始 IQ 和 CNN 权重留在原服务器，复现需要协议记录的输入及 SHA256。
 
 |阶段|报告|结果|预登记与代码|
 |---|---|---|---|
+|D0 类别判别审计|[报告](d0_class_pair/2026-10-13_D0/REPORT.md)|有限正证；强基线/跨seed未知；完成后停止，训练与推理0|[文献矩阵](../docs/d0_class_pair/LITERATURE_MATRIX.md)、[冻结规则](../docs/d0_class_pair/PREREGISTRATION.md)、[审计代码](../scripts/audit_d0_class_pair.py)、[全部证据ZIP](d0_class_pair/2026-10-13_D0/evidence.zip)|
 |G1 / G2-0|[联合报告](shen_p2a8/2026-10-12_g1_joint_g2_0/REPORT.md)|G2-0 频带可靠性路线停止；Shen/OSU 历史结果及证据边界保留|[G1 注册](../configs/shen_p2a8/g1_registration.json)、[G2-0 实现](../scripts/run_shen_p2a8_g2_0.py)|
 |VIRP-v1 / V0|[完整报告](virp/2026-10-12_v1_v0/REPORT.md)|CIS 变化/覆盖率未达登记要求，停止；零新分类器训练|[规则](../docs/virp/V1_PREREGISTRATION.md)、[注册](../configs/virp/v1_registration.json)、[审计程序](../scripts/audit_virp_v0.py)|
 |EISR-v1 / E0–E2|[完整报告](eisr/2026-10-12_v1/REPORT.md)|E0/E1 通过；E2 线性选择器未通过，停止；零新 CNN 训练|[规则](../docs/eisr/V1_PREREGISTRATION.md)、[注册](../configs/eisr/v1_registration.json)、[CPU 流程](../scripts/run_eisr_v1.py)|

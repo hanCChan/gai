@@ -25,3 +25,11 @@ reports/c_evidence/** -text -whitespace
 scripts/audit_c_evidence_assets.py -text
 scripts/prepare_research_publication.py -text
 AGENTS.md -text
+
+# D0 seals and derived results preserve exact bytes, including generated SVG.
+docs/d0_class_pair/** -text -whitespace
+configs/d0_class_pair/** -text
+src/d0_class_pair/** -text
+scripts/*d0_class_pair.py -text
+scripts/test_d0_metrics.py -text
+reports/d0_class_pair/** -text -whitespace

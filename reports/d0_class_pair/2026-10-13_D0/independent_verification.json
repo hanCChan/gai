@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "independent_scalar_metric_checks": 14400,
+  "independent_profile_checks": 240,
+  "all_ranking_reference_sets_exclude_probe": true,
+  "raw_confusion_reconstruction": true,
+  "frozen_source_hashes_verified": true,
+  "no_metric_module_import": true,
+  "no_new_model_or_raw_signal_access": true
+}

@@ -1,0 +1,1030 @@
+{
+  "schema_version": 1,
+  "registered_utc": "2026-10-13T04:06:32.540702+00:00",
+  "task": "D0 class-pair discriminability and literature gap audit",
+  "source_receivers": [
+    "b200_mini_1",
+    "b210_1",
+    "pluto_1",
+    "rtl_1",
+    "rtl_2",
+    "rtl_3",
+    "rtl_5",
+    "rtl_6",
+    "rtl_7",
+    "rtl_9"
+  ],
+  "source_receiver_folds": [
+    [
+      "b200_mini_1",
+      "pluto_1",
+      "rtl_2",
+      "rtl_5",
+      "rtl_7"
+    ],
+    [
+      "b210_1",
+      "rtl_1",
+      "rtl_3",
+      "rtl_6",
+      "rtl_9"
+    ]
+  ],
+  "methods": [
+    "full_cis",
+    "strict_cis"
+  ],
+  "classes": 10,
+  "raw_label_offset": 31,
+  "packets_per_rx_tx": 200,
+  "distinct_source_packets": 20000,
+  "expert_predictions": 40000,
+  "seed": 20261012,
+  "independent_cnn_training_folds": 2,
+  "read_only_history_root": "/home/keyan/code-y-p2a",
+  "prediction_assets": [
+    {
+      "receiver": "b200_mini_1",
+      "fold": 0,
+      "method": "full_cis",
+      "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV0_full_cis/b200_mini_1.npz",
+      "sha256": "6003c883e8043bc1e31be5681ad79f8287b4792a812774e1cc5e373dd3243a1f",
+      "headers": {
+        "logits": {
+          "shape": [
+            2000,
+            10
+          ],
+          "dtype": "float64",
+          "fortran": false
+        },
+        "probabilities": {
+          "shape": [
+            2000,
+            10
+          ],
+          "dtype": "float64",
+          "fortran": false
+        },
+        "labels": {
+          "shape": [
+            2000
+          ],
+          "dtype": "int64",
+          "fortran": false
+        },
+        "rows": {
+          "shape": [
+            2000
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      },
+      "expected_packets_per_tx": 200,
+      "chrono_verified": false,
+      "checkpoint_sha256": "2194dbc0b70c8abec636a6ddbdea757cd16338fe216482725fe18a6c0428d46a",
+      "epoch": 20,
+      "cached_scores_evaluated_this_round": false
+    },
+    {
+      "receiver": "pluto_1",
+      "fold": 0,
+      "method": "full_cis",
+      "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV0_full_cis/pluto_1.npz",
+      "sha256": "dae306d542930ab6fb3c21c97bb7aa4315507152cd2494985ea989ce04c3cc38",
+      "headers": {
+        "logits": {
+          "shape": [
+            2000,
+            10
+          ],
+          "dtype": "float64",
+          "fortran": false
+        },
+        "probabilities": {
+          "shape": [
+            2000,
+            10
+          ],
+          "dtype": "float64",
+          "fortran": false
+        },
+        "labels": {
+          "shape": [
+            2000
+          ],
+          "dtype": "int64",
+          "fortran": false
+        },
+        "rows": {
+          "shape": [
+            2000
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      },
+      "expected_packets_per_tx": 200,
+      "chrono_verified": false,
+      "checkpoint_sha256": "2194dbc0b70c8abec636a6ddbdea757cd16338fe216482725fe18a6c0428d46a",
+      "epoch": 20,
+      "cached_scores_evaluated_this_round": false
+    },
+    {
+      "receiver": "rtl_2",
+      "fold": 0,
+      "method": "full_cis",
+      "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV0_full_cis/rtl_2.npz",
+      "sha256": "d974197dabd0e113bd925e33c3b45c5d8ce24c6279b9ab2a29e45029de2ce91b",
+      "headers": {
+        "logits": {
+          "shape": [
+            2000,
+            10
+          ],
+          "dtype": "float64",
+          "fortran": false
+        },
+        "probabilities": {
+          "shape": [
+            2000,
+            10
+          ],
+          "dtype": "float64",
+          "fortran": false
+        },
+        "labels": {
+          "shape": [
+            2000
+          ],
+          "dtype": "int64",
+          "fortran": false
+        },
+        "rows": {
+          "shape": [
+            2000
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      },
+      "expected_packets_per_tx": 200,
+      "chrono_verified": false,
+      "checkpoint_sha256": "2194dbc0b70c8abec636a6ddbdea757cd16338fe216482725fe18a6c0428d46a",
+      "epoch": 20,
+      "cached_scores_evaluated_this_round": false
+    },
+    {
+      "receiver": "rtl_5",
+      "fold": 0,
+      "method": "full_cis",
+      "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV0_full_cis/rtl_5.npz",
+      "sha256": "e3d89787110b7ece749af097c6a96aef1c632dcf67147749578083906e7378ef",
+      "headers": {
+        "logits": {
+          "shape": [
+            2000,
+            10
+          ],
+          "dtype": "float64",
+          "fortran": false
+        },
+        "probabilities": {
+          "shape": [
+            2000,
+            10
+          ],
+          "dtype": "float64",
+          "fortran": false
+        },
+        "labels": {
+          "shape": [
+            2000
+          ],
+          "dtype": "int64",
+          "fortran": false
+        },
+        "rows": {
+          "shape": [
+            2000
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      },
+      "expected_packets_per_tx": 200,
+      "chrono_verified": false,
+      "checkpoint_sha256": "2194dbc0b70c8abec636a6ddbdea757cd16338fe216482725fe18a6c0428d46a",
+      "epoch": 20,
+      "cached_scores_evaluated_this_round": false
+    },
+    {
+      "receiver": "rtl_7",
+      "fold": 0,
+      "method": "full_cis",
+      "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV0_full_cis/rtl_7.npz",
+      "sha256": "3e17fae9405d761cc2923144f2f9bd58cc6c0042fdfbe2c6b26a8690423c7981",
+      "headers": {
+        "logits": {
+          "shape": [
+            2000,
+            10
+          ],
+          "dtype": "float64",
+          "fortran": false
+        },
+        "probabilities": {
+          "shape": [
+            2000,
+            10
+          ],
+          "dtype": "float64",
+          "fortran": false
+        },
+        "labels": {
+          "shape": [
+            2000
+          ],
+          "dtype": "int64",
+          "fortran": false
+        },
+        "rows": {
+          "shape": [
+            2000
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      },
+      "expected_packets_per_tx": 200,
+      "chrono_verified": false,
+      "checkpoint_sha256": "2194dbc0b70c8abec636a6ddbdea757cd16338fe216482725fe18a6c0428d46a",
+      "epoch": 20,
+      "cached_scores_evaluated_this_round": false
+    },
+    {
+      "receiver": "b200_mini_1",
+      "fold": 0,
+      "method": "strict_cis",
+      "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV0_strict_cis/b200_mini_1.npz",
+      "sha256": "46093b59003d0e8f803fe6280942925acf5c20302cdec9fb0ca49796ff20d8df",
+      "headers": {
+        "logits": {
+          "shape": [
+            2000,
+            10
+          ],
+          "dtype": "float64",
+          "fortran": false
+        },
+        "probabilities": {
+          "shape": [
+            2000,
+            10
+          ],
+          "dtype": "float64",
+          "fortran": false
+        },
+        "labels": {
+          "shape": [
+            2000
+          ],
+          "dtype": "int64",
+          "fortran": false
+        },
+        "rows": {
+          "shape": [
+            2000
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      },
+      "expected_packets_per_tx": 200,
+      "chrono_verified": false,
+      "checkpoint_sha256": "391742b683250e902f2cd1a80778417db324ca590a3f7f8d4a2ccb2bc36de0d6",
+      "epoch": 20,
+      "cached_scores_evaluated_this_round": false
+    },
+    {
+      "receiver": "pluto_1",
+      "fold": 0,
+      "method": "strict_cis",
+      "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV0_strict_cis/pluto_1.npz",
+      "sha256": "298733c9f4c047085562230943adb5df2af3e85af4a3ffaae44effe5e7c78df4",
+      "headers": {
+        "logits": {
+          "shape": [
+            2000,
+            10
+          ],
+          "dtype": "float64",
+          "fortran": false
+        },
+        "probabilities": {
+          "shape": [
+            2000,
+            10
+          ],
+          "dtype": "float64",
+          "fortran": false
+        },
+        "labels": {
+          "shape": [
+            2000
+          ],
+          "dtype": "int64",
+          "fortran": false
+        },
+        "rows": {
+          "shape": [
+            2000
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      },
+      "expected_packets_per_tx": 200,
+      "chrono_verified": false,
+      "checkpoint_sha256": "391742b683250e902f2cd1a80778417db324ca590a3f7f8d4a2ccb2bc36de0d6",
+      "epoch": 20,
+      "cached_scores_evaluated_this_round": false
+    },
+    {
+      "receiver": "rtl_2",
+      "fold": 0,
+      "method": "strict_cis",
+      "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV0_strict_cis/rtl_2.npz",
+      "sha256": "2dc4f7ff45e0ec2f5544aacf56ab3fabfa16f9694098a03c489a403c2316ae73",
+      "headers": {
+        "logits": {
+          "shape": [
+            2000,
+            10
+          ],
+          "dtype": "float64",
+          "fortran": false
+        },
+        "probabilities": {
+          "shape": [
+            2000,
+            10
+          ],
+          "dtype": "float64",
+          "fortran": false
+        },
+        "labels": {
+          "shape": [
+            2000
+          ],
+          "dtype": "int64",
+          "fortran": false
+        },
+        "rows": {
+          "shape": [
+            2000
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      },
+      "expected_packets_per_tx": 200,
+      "chrono_verified": false,
+      "checkpoint_sha256": "391742b683250e902f2cd1a80778417db324ca590a3f7f8d4a2ccb2bc36de0d6",
+      "epoch": 20,
+      "cached_scores_evaluated_this_round": false
+    },
+    {
+      "receiver": "rtl_5",
+      "fold": 0,
+      "method": "strict_cis",
+      "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV0_strict_cis/rtl_5.npz",
+      "sha256": "2ea728aab596ed14911160625a1da3b767039d5f724614fe1d0f2d9a43bc4f3b",
+      "headers": {
+        "logits": {
+          "shape": [
+            2000,
+            10
+          ],
+          "dtype": "float64",
+          "fortran": false
+        },
+        "probabilities": {
+          "shape": [
+            2000,
+            10
+          ],
+          "dtype": "float64",
+          "fortran": false
+        },
+        "labels": {
+          "shape": [
+            2000
+          ],
+          "dtype": "int64",
+          "fortran": false
+        },
+        "rows": {
+          "shape": [
+            2000
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      },
+      "expected_packets_per_tx": 200,
+      "chrono_verified": false,
+      "checkpoint_sha256": "391742b683250e902f2cd1a80778417db324ca590a3f7f8d4a2ccb2bc36de0d6",
+      "epoch": 20,
+      "cached_scores_evaluated_this_round": false
+    },
+    {
+      "receiver": "rtl_7",
+      "fold": 0,
+      "method": "strict_cis",
+      "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV0_strict_cis/rtl_7.npz",
+      "sha256": "e9ef51c19f0b49573095a071f5119b34b93665a6c68aed89aafcc2523037ed8c",
+      "headers": {
+        "logits": {
+          "shape": [
+            2000,
+            10
+          ],
+          "dtype": "float64",
+          "fortran": false
+        },
+        "probabilities": {
+          "shape": [
+            2000,
+            10
+          ],
+          "dtype": "float64",
+          "fortran": false
+        },
+        "labels": {
+          "shape": [
+            2000
+          ],
+          "dtype": "int64",
+          "fortran": false
+        },
+        "rows": {
+          "shape": [
+            2000
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      },
+      "expected_packets_per_tx": 200,
+      "chrono_verified": false,
+      "checkpoint_sha256": "391742b683250e902f2cd1a80778417db324ca590a3f7f8d4a2ccb2bc36de0d6",
+      "epoch": 20,
+      "cached_scores_evaluated_this_round": false
+    },
+    {
+      "receiver": "b210_1",
+      "fold": 1,
+      "method": "full_cis",
+      "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV1_full_cis/b210_1.npz",
+      "sha256": "99489edcdb9acc52b33a5a22e10e75bd04a11026645460093cbecb2509c63a09",
+      "headers": {
+        "logits": {
+          "shape": [
+            2000,
+            10
+          ],
+          "dtype": "float64",
+          "fortran": false
+        },
+        "probabilities": {
+          "shape": [
+            2000,
+            10
+          ],
+          "dtype": "float64",
+          "fortran": false
+        },
+        "labels": {
+          "shape": [
+            2000
+          ],
+          "dtype": "int64",
+          "fortran": false
+        },
+        "rows": {
+          "shape": [
+            2000
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      },
+      "expected_packets_per_tx": 200,
+      "chrono_verified": false,
+      "checkpoint_sha256": "d6891eda9d11ceb6b8a31294992350e516fcd1ad582392cb7ed8424902ae3642",
+      "epoch": 20,
+      "cached_scores_evaluated_this_round": false
+    },
+    {
+      "receiver": "rtl_1",
+      "fold": 1,
+      "method": "full_cis",
+      "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV1_full_cis/rtl_1.npz",
+      "sha256": "29f437e8daa0e857be485d808208abae92b98d580b998525e27fd14ba7eb3be0",
+      "headers": {
+        "logits": {
+          "shape": [
+            2000,
+            10
+          ],
+          "dtype": "float64",
+          "fortran": false
+        },
+        "probabilities": {
+          "shape": [
+            2000,
+            10
+          ],
+          "dtype": "float64",
+          "fortran": false
+        },
+        "labels": {
+          "shape": [
+            2000
+          ],
+          "dtype": "int64",
+          "fortran": false
+        },
+        "rows": {
+          "shape": [
+            2000
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      },
+      "expected_packets_per_tx": 200,
+      "chrono_verified": false,
+      "checkpoint_sha256": "d6891eda9d11ceb6b8a31294992350e516fcd1ad582392cb7ed8424902ae3642",
+      "epoch": 20,
+      "cached_scores_evaluated_this_round": false
+    },
+    {
+      "receiver": "rtl_3",
+      "fold": 1,
+      "method": "full_cis",
+      "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV1_full_cis/rtl_3.npz",
+      "sha256": "490f7ddf5ec6253f47971c62d43b514e529b5993ffc3756d4f1ffb662d664f3e",
+      "headers": {
+        "logits": {
+          "shape": [
+            2000,
+            10
+          ],
+          "dtype": "float64",
+          "fortran": false
+        },
+        "probabilities": {
+          "shape": [
+            2000,
+            10
+          ],
+          "dtype": "float64",
+          "fortran": false
+        },
+        "labels": {
+          "shape": [
+            2000
+          ],
+          "dtype": "int64",
+          "fortran": false
+        },
+        "rows": {
+          "shape": [
+            2000
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      },
+      "expected_packets_per_tx": 200,
+      "chrono_verified": false,
+      "checkpoint_sha256": "d6891eda9d11ceb6b8a31294992350e516fcd1ad582392cb7ed8424902ae3642",
+      "epoch": 20,
+      "cached_scores_evaluated_this_round": false
+    },
+    {
+      "receiver": "rtl_6",
+      "fold": 1,
+      "method": "full_cis",
+      "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV1_full_cis/rtl_6.npz",
+      "sha256": "966fa8e99bf91d35c0591d4feefaa15c384fca8d8bd4eac35ee52a2439b0d774",
+      "headers": {
+        "logits": {
+          "shape": [
+            2000,
+            10
+          ],
+          "dtype": "float64",
+          "fortran": false
+        },
+        "probabilities": {
+          "shape": [
+            2000,
+            10
+          ],
+          "dtype": "float64",
+          "fortran": false
+        },
+        "labels": {
+          "shape": [
+            2000
+          ],
+          "dtype": "int64",
+          "fortran": false
+        },
+        "rows": {
+          "shape": [
+            2000
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      },
+      "expected_packets_per_tx": 200,
+      "chrono_verified": false,
+      "checkpoint_sha256": "d6891eda9d11ceb6b8a31294992350e516fcd1ad582392cb7ed8424902ae3642",
+      "epoch": 20,
+      "cached_scores_evaluated_this_round": false
+    },
+    {
+      "receiver": "rtl_9",
+      "fold": 1,
+      "method": "full_cis",
+      "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV1_full_cis/rtl_9.npz",
+      "sha256": "7be52ef27ae5c5fb8d0d82efec102ffa21ff76b045d20fddb04fb75190c34689",
+      "headers": {
+        "logits": {
+          "shape": [
+            2000,
+            10
+          ],
+          "dtype": "float64",
+          "fortran": false
+        },
+        "probabilities": {
+          "shape": [
+            2000,
+            10
+          ],
+          "dtype": "float64",
+          "fortran": false
+        },
+        "labels": {
+          "shape": [
+            2000
+          ],
+          "dtype": "int64",
+          "fortran": false
+        },
+        "rows": {
+          "shape": [
+            2000
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      },
+      "expected_packets_per_tx": 200,
+      "chrono_verified": false,
+      "checkpoint_sha256": "d6891eda9d11ceb6b8a31294992350e516fcd1ad582392cb7ed8424902ae3642",
+      "epoch": 20,
+      "cached_scores_evaluated_this_round": false
+    },
+    {
+      "receiver": "b210_1",
+      "fold": 1,
+      "method": "strict_cis",
+      "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV1_strict_cis/b210_1.npz",
+      "sha256": "709a98d3a7d14d39e799c25554209c113309ba11e6bbb07a74ca76da5fd88a21",
+      "headers": {
+        "logits": {
+          "shape": [
+            2000,
+            10
+          ],
+          "dtype": "float64",
+          "fortran": false
+        },
+        "probabilities": {
+          "shape": [
+            2000,
+            10
+          ],
+          "dtype": "float64",
+          "fortran": false
+        },
+        "labels": {
+          "shape": [
+            2000
+          ],
+          "dtype": "int64",
+          "fortran": false
+        },
+        "rows": {
+          "shape": [
+            2000
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      },
+      "expected_packets_per_tx": 200,
+      "chrono_verified": false,
+      "checkpoint_sha256": "27373731c2ef8babcdf41ddc21fbab44477555deac4f7fa10ad09df6de96532d",
+      "epoch": 20,
+      "cached_scores_evaluated_this_round": false
+    },
+    {
+      "receiver": "rtl_1",
+      "fold": 1,
+      "method": "strict_cis",
+      "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV1_strict_cis/rtl_1.npz",
+      "sha256": "c4ae5648730d3e8f279900ea192913b27404a7f67e17efe80fe9b5979f31c985",
+      "headers": {
+        "logits": {
+          "shape": [
+            2000,
+            10
+          ],
+          "dtype": "float64",
+          "fortran": false
+        },
+        "probabilities": {
+          "shape": [
+            2000,
+            10
+          ],
+          "dtype": "float64",
+          "fortran": false
+        },
+        "labels": {
+          "shape": [
+            2000
+          ],
+          "dtype": "int64",
+          "fortran": false
+        },
+        "rows": {
+          "shape": [
+            2000
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      },
+      "expected_packets_per_tx": 200,
+      "chrono_verified": false,
+      "checkpoint_sha256": "27373731c2ef8babcdf41ddc21fbab44477555deac4f7fa10ad09df6de96532d",
+      "epoch": 20,
+      "cached_scores_evaluated_this_round": false
+    },
+    {
+      "receiver": "rtl_3",
+      "fold": 1,
+      "method": "strict_cis",
+      "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV1_strict_cis/rtl_3.npz",
+      "sha256": "fb56dcc2c9122b61e900a5171e0670d077b6da49d87c75ccf242eebaed32acda",
+      "headers": {
+        "logits": {
+          "shape": [
+            2000,
+            10
+          ],
+          "dtype": "float64",
+          "fortran": false
+        },
+        "probabilities": {
+          "shape": [
+            2000,
+            10
+          ],
+          "dtype": "float64",
+          "fortran": false
+        },
+        "labels": {
+          "shape": [
+            2000
+          ],
+          "dtype": "int64",
+          "fortran": false
+        },
+        "rows": {
+          "shape": [
+            2000
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      },
+      "expected_packets_per_tx": 200,
+      "chrono_verified": false,
+      "checkpoint_sha256": "27373731c2ef8babcdf41ddc21fbab44477555deac4f7fa10ad09df6de96532d",
+      "epoch": 20,
+      "cached_scores_evaluated_this_round": false
+    },
+    {
+      "receiver": "rtl_6",
+      "fold": 1,
+      "method": "strict_cis",
+      "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV1_strict_cis/rtl_6.npz",
+      "sha256": "682aeaa0e9097f2ce52051adf3c5e4f89e7c094e81a1a9656ef7bdf70aa5d1c1",
+      "headers": {
+        "logits": {
+          "shape": [
+            2000,
+            10
+          ],
+          "dtype": "float64",
+          "fortran": false
+        },
+        "probabilities": {
+          "shape": [
+            2000,
+            10
+          ],
+          "dtype": "float64",
+          "fortran": false
+        },
+        "labels": {
+          "shape": [
+            2000
+          ],
+          "dtype": "int64",
+          "fortran": false
+        },
+        "rows": {
+          "shape": [
+            2000
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      },
+      "expected_packets_per_tx": 200,
+      "chrono_verified": false,
+      "checkpoint_sha256": "27373731c2ef8babcdf41ddc21fbab44477555deac4f7fa10ad09df6de96532d",
+      "epoch": 20,
+      "cached_scores_evaluated_this_round": false
+    },
+    {
+      "receiver": "rtl_9",
+      "fold": 1,
+      "method": "strict_cis",
+      "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV1_strict_cis/rtl_9.npz",
+      "sha256": "33b4f8657c2df0acaad1acce1b231fefe8704eb5f8e04e725767bcfa0bc4c884",
+      "headers": {
+        "logits": {
+          "shape": [
+            2000,
+            10
+          ],
+          "dtype": "float64",
+          "fortran": false
+        },
+        "probabilities": {
+          "shape": [
+            2000,
+            10
+          ],
+          "dtype": "float64",
+          "fortran": false
+        },
+        "labels": {
+          "shape": [
+            2000
+          ],
+          "dtype": "int64",
+          "fortran": false
+        },
+        "rows": {
+          "shape": [
+            2000
+          ],
+          "dtype": "int64",
+          "fortran": false
+        }
+      },
+      "expected_packets_per_tx": 200,
+      "chrono_verified": false,
+      "checkpoint_sha256": "27373731c2ef8babcdf41ddc21fbab44477555deac4f7fa10ad09df6de96532d",
+      "epoch": 20,
+      "cached_scores_evaluated_this_round": false
+    }
+  ],
+  "expected_checkpoint_and_config_sha256": {
+    "outputs/shen_p2a8/g1_shen_v2/runs/CV0_full_cis/final.pt": "2194dbc0b70c8abec636a6ddbdea757cd16338fe216482725fe18a6c0428d46a",
+    "outputs/shen_p2a8/g1_shen_v2/runs/CV0_full_cis/config.json": "8c7401380ef4d6fdf35492d4e14cf85f8f7319509a2e9b92af89be8f7582631e",
+    "outputs/shen_p2a8/g1_shen_v2/runs/CV0_strict_cis/final.pt": "391742b683250e902f2cd1a80778417db324ca590a3f7f8d4a2ccb2bc36de0d6",
+    "outputs/shen_p2a8/g1_shen_v2/runs/CV0_strict_cis/config.json": "977d2802fcf475b2e7ba0456f443909c109791776285e9ad931f687d6100e32e",
+    "outputs/shen_p2a8/g1_shen_v2/runs/CV1_full_cis/final.pt": "d6891eda9d11ceb6b8a31294992350e516fcd1ad582392cb7ed8424902ae3642",
+    "outputs/shen_p2a8/g1_shen_v2/runs/CV1_full_cis/config.json": "58429dc6b97c0017fcd6617dccac6b3a92463037604508c8af3ac51a982f5573",
+    "outputs/shen_p2a8/g1_shen_v2/runs/CV1_strict_cis/final.pt": "27373731c2ef8babcdf41ddc21fbab44477555deac4f7fa10ad09df6de96532d",
+    "outputs/shen_p2a8/g1_shen_v2/runs/CV1_strict_cis/config.json": "b13ece4d79d839792ee96a8558d714a56402a4fc03e6a041528be9a4b064f403"
+  },
+  "expected_index_sha256": {
+    "outputs/shen_p2a8/g1_cache_v1/shen_b200_mini_1_train/manifest.json": "7365e6a970bf6fcdabb2f04a00e4a7c61a681d6c776a9bd5452b00cc6f9bf248",
+    "outputs/shen_p2a8/g1_cache_v1/shen_b200_mini_1_train/rows.npy": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060",
+    "outputs/shen_p2a8/g1_cache_v1/shen_b200_mini_1_train/labels.npy": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b",
+    "outputs/shen_p2a8/g1_cache_v1/shen_b210_1_train/manifest.json": "000b318589b318ba66e938efcaf9bb0f6724bb18f364c242cefc6f30fc50fc4f",
+    "outputs/shen_p2a8/g1_cache_v1/shen_b210_1_train/rows.npy": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060",
+    "outputs/shen_p2a8/g1_cache_v1/shen_b210_1_train/labels.npy": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b",
+    "outputs/shen_p2a8/g1_cache_v1/shen_pluto_1_train/manifest.json": "ec13608c25be9e27698a74e52c49779635122f529f2c636c178d2bfca37cc936",
+    "outputs/shen_p2a8/g1_cache_v1/shen_pluto_1_train/rows.npy": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060",
+    "outputs/shen_p2a8/g1_cache_v1/shen_pluto_1_train/labels.npy": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b",
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_1_train/manifest.json": "0e78a978c74d64093c92d2a70527262e5d2726ddf4f4387e03b51a4d52c14319",
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_1_train/rows.npy": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060",
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_1_train/labels.npy": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b",
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_2_train/manifest.json": "aabcc57070575d14747d5064e8e75413fe6c454fd254686cf77a77783738c58a",
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_2_train/rows.npy": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060",
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_2_train/labels.npy": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b",
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_3_train/manifest.json": "035d524396f521d2ad96649727add43475dd5d6cd166180807b265adc0b69724",
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_3_train/rows.npy": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060",
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_3_train/labels.npy": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b",
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_5_train/manifest.json": "1280566e966ecb2b20902993c4699c48f70fa740fa17cec3a9bcdf5b41ccb9d0",
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_5_train/rows.npy": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060",
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_5_train/labels.npy": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b",
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_6_train/manifest.json": "14463694916395e0c0711b827ad61a84580696619257e20fa589dfdeeb3ff25f",
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_6_train/rows.npy": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060",
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_6_train/labels.npy": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b",
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_7_train/manifest.json": "5014d39c12ba37385c4e79be4632748af40c3bbbb18e3f49365e7f87250222a5",
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_7_train/rows.npy": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060",
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_7_train/labels.npy": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b",
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_9_train/manifest.json": "5a14206e7c52491f6c3d82f85ab689b46aacd7d8b6938c235763ba693bda0ac9",
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_9_train/rows.npy": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060",
+    "outputs/shen_p2a8/g1_cache_v1/shen_rtl_9_train/labels.npy": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b"
+  },
+  "prior_c0_prediction_asset_manifest_sha256": "ab54185b698bbd16f6104d6ffbc79ef354b69d0af2c02e745bf96cc783cf74ce",
+  "hardware_families": {
+    "b200_mini_1": "USRP B200 mini",
+    "b210_1": "USRP B210",
+    "pluto_1": "ADALM-Pluto",
+    "rtl_1": "RTL-SDR",
+    "rtl_2": "RTL-SDR",
+    "rtl_3": "RTL-SDR",
+    "rtl_5": "RTL-SDR",
+    "rtl_6": "RTL-SDR",
+    "rtl_7": "RTL-SDR",
+    "rtl_9": "RTL-SDR"
+  },
+  "metrics": {
+    "directed_pairs": 90,
+    "unordered_pairs": 45,
+    "confusion_risk": "P(argmax logits=j | label=i), i!=j; RX balanced before averaging",
+    "pair_order_violation": "P(z_i-z_j<=0 | label=i); not the same as predicting j",
+    "raw_margin": "z_i-z_j, mean/median/q05",
+    "normalized_margin": "(z_i-z_j)/RMS(z-mean(z)); positive-scale and offset invariant; no fitted temperature",
+    "worst_rx": "min mean margin and max confusion risk across RX, fold and family reported separately",
+    "treatment_direction": "strict minus full always; no winner selected after seeing data"
+  },
+  "predictability": {
+    "primary": "leave one RX out of four risk-profile references within same CNN fold; all five RX absent from that CNN fit",
+    "vector": "90 directed confusion risks",
+    "predictors": [
+      "pairwise_mean",
+      "source_class_only",
+      "source_class_and_destination_factorized",
+      "uniform"
+    ],
+    "statistics": [
+      "Spearman with average ties, null if constant",
+      "top10_error_mass_capture_fraction, tie fractional allocation",
+      "gain_over_uniform_and_class_factorized"
+    ],
+    "top_k_pairs": 10,
+    "uniform_error_capture_expected": 0.1111111111111111,
+    "different_family_reference_control": true,
+    "cross_cnn_fold_transfer": "secondary; different fitted CNNs confound comparison",
+    "no_probe_rx_labels_used_for_risk_profile": true
+  },
+  "stop_go_screen": {
+    "repeated_structure_support": "strict has positive mean accuracy gain and the same harmful directed confusion edge (delta>0) appears on at least two RX spanning both CNN folds; descriptive sign replication only",
+    "predictive_support": "same-CNN LORO pair predictor has positive median Spearman and positive median top10 error-mass gain over uniform in each method/fold cell; incremental gain over class-factorized control reported separately",
+    "mechanism_specific_support": "positive median incremental top10 error capture over class-factorized control in each method/fold cell; otherwise no demonstrated pair-specific advantage",
+    "absence_of_strong_method_scores": "unknown, not evidence of baseline sufficiency or failure",
+    "unavailable_seed_replication": "single archived seed cannot establish seed stability",
+    "no_arbitrary_accuracy_improvement_gate": true,
+    "final_decision": "If structural or predictive support absent, stop this candidate. If descriptive screen positive but seed/strong-method/literature coverage missing, report limited support and submit at most a conditional baseline-verification PoC draft, without claiming novelty."
+  },
+  "new_training_runs": 0,
+  "new_inference_runs": 0,
+  "large_downloads_gb": 0,
+  "read_osu": false,
+  "read_development_locked_receivers": false,
+  "read_raw_iq": false,
+  "read_any_day_hdf5": false,
+  "reopen_prior_stopped_experiments": false,
+  "stop_after_d0": true
+}

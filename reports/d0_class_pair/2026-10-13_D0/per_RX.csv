@@ -1,0 +1,21 @@
+receiver,fold,hardware_family,method,packets,correct,accuracy,worst_tx_recall,errors
+b200_mini_1,0,USRP B200 mini,full_cis,2000,1451,0.7255,0.19,549
+pluto_1,0,ADALM-Pluto,full_cis,2000,1399,0.6995,0.27,601
+rtl_2,0,RTL-SDR,full_cis,2000,1187,0.5935,0.3,813
+rtl_5,0,RTL-SDR,full_cis,2000,1155,0.5775,0.22,845
+rtl_7,0,RTL-SDR,full_cis,2000,1522,0.761,0.145,478
+b200_mini_1,0,USRP B200 mini,strict_cis,2000,1683,0.8415,0.55,317
+pluto_1,0,ADALM-Pluto,strict_cis,2000,1802,0.901,0.6,198
+rtl_2,0,RTL-SDR,strict_cis,2000,1627,0.8135,0.595,373
+rtl_5,0,RTL-SDR,strict_cis,2000,1596,0.798,0.58,404
+rtl_7,0,RTL-SDR,strict_cis,2000,1802,0.901,0.775,198
+b210_1,1,USRP B210,full_cis,2000,1601,0.8005,0.34,399
+rtl_1,1,RTL-SDR,full_cis,2000,1359,0.6795,0.45,641
+rtl_3,1,RTL-SDR,full_cis,2000,1249,0.6245,0.23,751
+rtl_6,1,RTL-SDR,full_cis,2000,1295,0.6475,0.11,705
+rtl_9,1,RTL-SDR,full_cis,2000,1456,0.728,0.185,544
+b210_1,1,USRP B210,strict_cis,2000,1675,0.8375,0.085,325
+rtl_1,1,RTL-SDR,strict_cis,2000,1615,0.8075,0.115,385
+rtl_3,1,RTL-SDR,strict_cis,2000,1549,0.7745,0.205,451
+rtl_6,1,RTL-SDR,strict_cis,2000,1632,0.816,0.055,368
+rtl_9,1,RTL-SDR,strict_cis,2000,1617,0.8085,0.005,383
