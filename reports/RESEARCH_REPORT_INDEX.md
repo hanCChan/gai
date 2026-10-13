@@ -1,9 +1,10 @@
 # 第二篇 LoRa 研究：报告与证据索引
 
-当前 D0.5/B0 发布分支为 `experiment/d05-b0-class-risk`；D0发布分支为 `experiment/d0-class-pair-audit`，历史报告来自 `experiment/shen-p2a8` 等独立分支。下列报告、预登记、复核代码、CSV 和图表均保留；两份 ZIP 包包含完整逐包诊断证据。原始 IQ 和 CNN 权重留在原服务器，复现需要协议记录的输入及 SHA256。
+当前B1分支为 `experiment/b1-standard-baselines`；D0.5/B0 为 `experiment/d05-b0-class-risk`；D0为 `experiment/d0-class-pair-audit`，历史报告来自 `experiment/shen-p2a8` 等独立分支。下列报告、预登记、复核代码、CSV 和图表均保留。原始 IQ、CNN 权重和B1原预测NPZ留在原服务器，复现需要协议记录的输入及 SHA256。
 
 |阶段|报告|结果|预登记与代码|
 |---|---|---|---|
+|B1标准机制基线|[完整报告](b1_baselines/2026-10-13/REPORT.md)|32作业完成，0.470496 GPUh；均未兼顾平均Accuracy与全局最低Recall；B2/新算法不启动|[冻结](../docs/b1_baselines/PREREGISTRATION.md)、[更新计划](../docs/b1_baselines/EXECUTION_PLAN.md)、[完整证据](b1_baselines/2026-10-13/EVIDENCE_INDEX.md)|
 |D0.5/B0三seed|[最终报告](d05_b0/2026-10-13/REPORT.md)|增量损害部分可预测但跨CNN检索失败；9个严重类单元跨seed重复；8次拟合完成，B1待审|[冻结](../docs/d05_b0/PREREGISTRATION.md)、[B1具体计划](../docs/d05_b0/B1_REVIEW_PLAN.md)、[完整证据ZIP](d05_b0/2026-10-13/evidence.zip)|
 |D0 类别判别审计|[报告](d0_class_pair/2026-10-13_D0/REPORT.md)|有限正证；强基线/跨seed未知；完成后停止，训练与推理0|[文献矩阵](../docs/d0_class_pair/LITERATURE_MATRIX.md)、[冻结规则](../docs/d0_class_pair/PREREGISTRATION.md)、[审计代码](../scripts/audit_d0_class_pair.py)、[全部证据ZIP](d0_class_pair/2026-10-13_D0/evidence.zip)|
 |G1 / G2-0|[联合报告](shen_p2a8/2026-10-12_g1_joint_g2_0/REPORT.md)|G2-0 频带可靠性路线停止；Shen/OSU 历史结果及证据边界保留|[G1 注册](../configs/shen_p2a8/g1_registration.json)、[G2-0 实现](../scripts/run_shen_p2a8_g2_0.py)|

@@ -1,0 +1,5 @@
+method,seed,fold,receiver,hardware_family,tx,recall,correct,packets
+ce,20261014,0,pluto_1,ADALM-Pluto,34,0.105,21,200
+group_dro_rx_tx,20261014,0,pluto_1,ADALM-Pluto,39,0.11,22,200
+grl,20261014,0,pluto_1,ADALM-Pluto,39,0.035,7,200
+supcon,20261014,0,pluto_1,ADALM-Pluto,35,0.005,1,200

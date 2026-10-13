@@ -1,0 +1,239 @@
+{
+  "frozen_utc": "2026-10-13T05:49:26.730846+00:00",
+  "choices": {
+    "CV0_ce": {
+      "lr": 0.0001,
+      "winner": "B1_search_CV0_ce_lr0.0001",
+      "macro_f1": 0.81061146008455,
+      "macro_f1_fraction": {
+        "numerator": 3349657862676593049433,
+        "denominator": 4132260679274396627400
+      },
+      "candidates": [
+        {
+          "run": "B1_search_CV0_ce_lr0.0001",
+          "lr": 0.0001,
+          "macro_f1": 0.81061146008455,
+          "macro_f1_fraction": {
+            "numerator": 3349657862676593049433,
+            "denominator": 4132260679274396627400
+          }
+        },
+        {
+          "run": "B1_search_CV0_ce_lr0.0003",
+          "lr": 0.0003,
+          "macro_f1": 0.726259898264998,
+          "macro_f1_fraction": {
+            "numerator": 27029910359847674920841,
+            "denominator": 37217957957503788137400
+          }
+        }
+      ]
+    },
+    "CV0_group_dro_rx_tx": {
+      "lr": 0.0003,
+      "winner": "B1_search_CV0_group_dro_rx_tx_lr0.0003",
+      "macro_f1": 0.8352407172059211,
+      "macro_f1_fraction": {
+        "numerator": 5755385497271156649241307,
+        "denominator": 6890690765800176374328300
+      },
+      "candidates": [
+        {
+          "run": "B1_search_CV0_group_dro_rx_tx_lr0.0001",
+          "lr": 0.0001,
+          "macro_f1": 0.6315644738144744,
+          "macro_f1_fraction": {
+            "numerator": 25343144286366929397,
+            "denominator": 40127564701829033000
+          }
+        },
+        {
+          "run": "B1_search_CV0_group_dro_rx_tx_lr0.0003",
+          "lr": 0.0003,
+          "macro_f1": 0.8352407172059211,
+          "macro_f1_fraction": {
+            "numerator": 5755385497271156649241307,
+            "denominator": 6890690765800176374328300
+          }
+        }
+      ]
+    },
+    "CV0_grl": {
+      "lr": 0.0003,
+      "winner": "B1_search_CV0_grl_lr0.0003",
+      "macro_f1": 0.7400990043199823,
+      "macro_f1_fraction": {
+        "numerator": 2082509047158895991,
+        "denominator": 2813824954503684000
+      },
+      "candidates": [
+        {
+          "run": "B1_search_CV0_grl_lr0.0001",
+          "lr": 0.0001,
+          "macro_f1": 0.5852028760703588,
+          "macro_f1_fraction": {
+            "numerator": 35983767085155473,
+            "denominator": 61489388648919000
+          }
+        },
+        {
+          "run": "B1_search_CV0_grl_lr0.0003",
+          "lr": 0.0003,
+          "macro_f1": 0.7400990043199823,
+          "macro_f1_fraction": {
+            "numerator": 2082509047158895991,
+            "denominator": 2813824954503684000
+          }
+        }
+      ]
+    },
+    "CV0_supcon": {
+      "lr": 0.0003,
+      "winner": "B1_search_CV0_supcon_lr0.0003",
+      "macro_f1": 0.8867974238848182,
+      "macro_f1_fraction": {
+        "numerator": 14305675519484563771,
+        "denominator": 16131841539204402000
+      },
+      "candidates": [
+        {
+          "run": "B1_search_CV0_supcon_lr0.0001",
+          "lr": 0.0001,
+          "macro_f1": 0.3743709706341521,
+          "macro_f1_fraction": {
+            "numerator": 147729632700163,
+            "denominator": 394607606593860
+          }
+        },
+        {
+          "run": "B1_search_CV0_supcon_lr0.0003",
+          "lr": 0.0003,
+          "macro_f1": 0.8867974238848182,
+          "macro_f1_fraction": {
+            "numerator": 14305675519484563771,
+            "denominator": 16131841539204402000
+          }
+        }
+      ]
+    },
+    "CV1_ce": {
+      "lr": 0.0003,
+      "winner": "B1_search_CV1_ce_lr0.0003",
+      "macro_f1": 0.8720816261829658,
+      "macro_f1_fraction": {
+        "numerator": 235736684441556043,
+        "denominator": 270314930809123200
+      },
+      "candidates": [
+        {
+          "run": "B1_search_CV1_ce_lr0.0001",
+          "lr": 0.0001,
+          "macro_f1": 0.5208480511828449,
+          "macro_f1_fraction": {
+            "numerator": 3552648643282805112509,
+            "denominator": 6820892648469639185670
+          }
+        },
+        {
+          "run": "B1_search_CV1_ce_lr0.0003",
+          "lr": 0.0003,
+          "macro_f1": 0.8720816261829658,
+          "macro_f1_fraction": {
+            "numerator": 235736684441556043,
+            "denominator": 270314930809123200
+          }
+        }
+      ]
+    },
+    "CV1_group_dro_rx_tx": {
+      "lr": 0.0003,
+      "winner": "B1_search_CV1_group_dro_rx_tx_lr0.0003",
+      "macro_f1": 0.8389735628128631,
+      "macro_f1_fraction": {
+        "numerator": 4841931680706166105,
+        "denominator": 5771256563165604084
+      },
+      "candidates": [
+        {
+          "run": "B1_search_CV1_group_dro_rx_tx_lr0.0001",
+          "lr": 0.0001,
+          "macro_f1": 0.6571548493130365,
+          "macro_f1_fraction": {
+            "numerator": 5750019174787300421,
+            "denominator": 8749869503052654900
+          }
+        },
+        {
+          "run": "B1_search_CV1_group_dro_rx_tx_lr0.0003",
+          "lr": 0.0003,
+          "macro_f1": 0.8389735628128631,
+          "macro_f1_fraction": {
+            "numerator": 4841931680706166105,
+            "denominator": 5771256563165604084
+          }
+        }
+      ]
+    },
+    "CV1_grl": {
+      "lr": 0.0003,
+      "winner": "B1_search_CV1_grl_lr0.0003",
+      "macro_f1": 0.8358395613444144,
+      "macro_f1_fraction": {
+        "numerator": 431380319054241691,
+        "denominator": 516104213062592700
+      },
+      "candidates": [
+        {
+          "run": "B1_search_CV1_grl_lr0.0001",
+          "lr": 0.0001,
+          "macro_f1": 0.5350794744764472,
+          "macro_f1_fraction": {
+            "numerator": 11006880776315873,
+            "denominator": 20570553163314000
+          }
+        },
+        {
+          "run": "B1_search_CV1_grl_lr0.0003",
+          "lr": 0.0003,
+          "macro_f1": 0.8358395613444144,
+          "macro_f1_fraction": {
+            "numerator": 431380319054241691,
+            "denominator": 516104213062592700
+          }
+        }
+      ]
+    },
+    "CV1_supcon": {
+      "lr": 0.0003,
+      "winner": "B1_search_CV1_supcon_lr0.0003",
+      "macro_f1": 0.7720240308610227,
+      "macro_f1_fraction": {
+        "numerator": 196734277955085587,
+        "denominator": 254829215271540000
+      },
+      "candidates": [
+        {
+          "run": "B1_search_CV1_supcon_lr0.0001",
+          "lr": 0.0001,
+          "macro_f1": 0.4665029507704685,
+          "macro_f1_fraction": {
+            "numerator": 145442512430890844,
+            "denominator": 311771902387070475
+          }
+        },
+        {
+          "run": "B1_search_CV1_supcon_lr0.0003",
+          "lr": 0.0003,
+          "macro_f1": 0.7720240308610227,
+          "macro_f1_fraction": {
+            "numerator": 196734277955085587,
+            "denominator": 254829215271540000
+          }
+        }
+      ]
+    }
+  },
+  "outer_evaluation_used": false,
+  "metric": "fixed10 source-internal macro-F1; exact tie->lower LR"
+}

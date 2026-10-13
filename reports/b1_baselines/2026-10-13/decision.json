@@ -1,0 +1,51 @@
+{
+  "status": "B1_COMPLETE_STANDARD_BASELINES_REVIEW_REQUIRED",
+  "all32_complete": true,
+  "fitting_jobs": 32,
+  "reserved_gpu_hours": 0.47049565710694374,
+  "pooled_average_and_minimum_improvement_methods": [],
+  "methods_with_joint_both_seed_accuracy_and_no_new_10pp_losses": [],
+  "comparison": [
+    {
+      "method": "group_dro_rx_tx",
+      "mean_accuracy_delta": -0.02297500000000008,
+      "mean_RX_macro_f1_delta": -0.021703280629594146,
+      "minimum_RX_TX_recall_delta": 0.0050000000000000044,
+      "mean_min_TX_recall_delta": -0.010249999999999981,
+      "severe_CE_relative_losses": 49,
+      "declining_RX_TX_cells": 124,
+      "paired_RX_TX_cells": 200,
+      "pooled_joint_improvement": false,
+      "mean_accuracy_preserved_both_seeds": false
+    },
+    {
+      "method": "grl",
+      "mean_accuracy_delta": -0.0003500000000000725,
+      "mean_RX_macro_f1_delta": -0.0005997691021499829,
+      "minimum_RX_TX_recall_delta": -0.06999999999999999,
+      "mean_min_TX_recall_delta": 0.02850000000000008,
+      "severe_CE_relative_losses": 36,
+      "declining_RX_TX_cells": 93,
+      "paired_RX_TX_cells": 200,
+      "pooled_joint_improvement": false,
+      "mean_accuracy_preserved_both_seeds": false
+    },
+    {
+      "method": "supcon",
+      "mean_accuracy_delta": -0.0068750000000000755,
+      "mean_RX_macro_f1_delta": -0.008284071172571905,
+      "minimum_RX_TX_recall_delta": -0.09999999999999999,
+      "mean_min_TX_recall_delta": -0.044499999999999984,
+      "severe_CE_relative_losses": 45,
+      "declining_RX_TX_cells": 88,
+      "paired_RX_TX_cells": 200,
+      "pooled_joint_improvement": false,
+      "mean_accuracy_preserved_both_seeds": false
+    }
+  ],
+  "B2_authorized": false,
+  "ArcFace_authorized": false,
+  "new_algorithm_necessity_proven": false,
+  "independent_dataset_validated": false,
+  "stop_after_B1": true
+}

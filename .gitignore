@@ -66,3 +66,11 @@ reports/d05_b0/**/directed_pairs.csv
 reports/d05_b0/**/confusion_counts.csv
 reports/d05_b0/**/*.svg
 reports/d05_b0/**/run_evidence/
+
+# Full B1 pair/confusion vectors and original process logs are in evidence.zip.
+reports/b1_baselines/**/directed_pairs.csv
+reports/b1_baselines/**/paired_pair_changes.csv
+reports/b1_baselines/**/confusion_counts.csv
+reports/b1_baselines/**/*.svg
+reports/b1_baselines/**/run_evidence/
+!/reports/b1_baselines/2026-10-13/evidence.zip

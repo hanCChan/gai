@@ -14,16 +14,19 @@ The user's 2026-10-13 instructions apply to future work in this repository.
 - Keep unpublished manuscripts, rejection letters, raw IQ, model weights,
   credentials, and personally identifying correspondence out of publication.
   Publish provenance hashes and factual summaries instead.
-- P0/C0/G2/VIRP/EISR remain stopped. The latest explicit user plan approves
-  D0.5 archived signed-damage analysis and B0 exactly eight new CE runs with
-  seeds 20261013/14, Full/Strict CIS, two source-only folds, fixed20 epochs.
-  This later authorization overrides the earlier D0 no-training restriction.
-- Use only ten source RX cached CIS/labels/rows/manifests and archived scores.
-  Exclude OSU, four development RX, six locked RX, Day3/4 and raw IQ.
-- Cap B0 at eight actual fitting jobs and one reserved V100 GPU-hour; preserve
-  the eight zero-step provenance-preflight failures and all fitted-run failures,
-  no seed replacement or validation-selected checkpoint/LR/augmentation.
-- Prepare a concrete B1 implementation/budget plan, but do not train B1/B2 or
-  develop new loss/network/gate/pairwise algorithm. Stop after authorized work.
+- Prior D0/D0.5/B0 and stopped G2/VIRP/EISR/P0/C0 evidence stays immutable.
+- Latest explicit user approval authorizes B1 standard CE, RXxTX Group DRO,
+  GRL and SupCon implementation and 32 fitting jobs (16 inner searches +16
+  formal fits), at most2 reserved V100 GPU-hours, only ten source RX.
+- Follow the approved matrix from commit2b89877: Strict CIS, rank16 CNN,
+  fixed10 inner/fixed20 formal, two LR candidates per method/fold, paired seeds,
+  common group-balanced batch schedule. Never select on outer evaluation RX.
+- Exclude OSU, development/locked RX, Day3/4 and raw IQ. No large downloads,
+  extra loss-weight searches, fitting retries, seed replacements, ArcFace/B2 or
+  novel loss/network/gate algorithm work. Stop after B1 publication/verification.
 - If publication fails, keep local artifacts, state what remains unpublished,
   and report the actual error. Local commits alone do not mean GitHub upload.
+
+B1 execution is complete: 32 fitting jobs, no failures/retries, reserved GPU
+hours 0.47049565710694374. Independent verification passed. Complete publication
+and remote readback, then stop; do not rerun or broaden B1 using remaining budget.

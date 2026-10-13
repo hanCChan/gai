@@ -1,0 +1,298 @@
+{
+  "state": "completed",
+  "jobs": [
+    {
+      "stage": "search",
+      "index": 0,
+      "run_id": "B1_search_CV0_ce_lr0.0001",
+      "gpu": 0,
+      "exit_code": 0,
+      "timed_out": false,
+      "reserved_seconds": 32.03687116199944
+    },
+    {
+      "stage": "search",
+      "index": 4,
+      "run_id": "B1_search_CV0_grl_lr0.0001",
+      "gpu": 0,
+      "exit_code": 0,
+      "timed_out": false,
+      "reserved_seconds": 35.12696601099924
+    },
+    {
+      "stage": "search",
+      "index": 8,
+      "run_id": "B1_search_CV1_ce_lr0.0001",
+      "gpu": 0,
+      "exit_code": 0,
+      "timed_out": false,
+      "reserved_seconds": 34.271322397000404
+    },
+    {
+      "stage": "search",
+      "index": 12,
+      "run_id": "B1_search_CV1_grl_lr0.0001",
+      "gpu": 0,
+      "exit_code": 0,
+      "timed_out": false,
+      "reserved_seconds": 35.61468042600063
+    },
+    {
+      "stage": "search",
+      "index": 1,
+      "run_id": "B1_search_CV0_ce_lr0.0003",
+      "gpu": 1,
+      "exit_code": 0,
+      "timed_out": false,
+      "reserved_seconds": 33.8217360109993
+    },
+    {
+      "stage": "search",
+      "index": 5,
+      "run_id": "B1_search_CV0_grl_lr0.0003",
+      "gpu": 1,
+      "exit_code": 0,
+      "timed_out": false,
+      "reserved_seconds": 35.58528841799853
+    },
+    {
+      "stage": "search",
+      "index": 9,
+      "run_id": "B1_search_CV1_ce_lr0.0003",
+      "gpu": 1,
+      "exit_code": 0,
+      "timed_out": false,
+      "reserved_seconds": 34.60001859499971
+    },
+    {
+      "stage": "search",
+      "index": 13,
+      "run_id": "B1_search_CV1_grl_lr0.0003",
+      "gpu": 1,
+      "exit_code": 0,
+      "timed_out": false,
+      "reserved_seconds": 35.286698943000374
+    },
+    {
+      "stage": "search",
+      "index": 2,
+      "run_id": "B1_search_CV0_group_dro_rx_tx_lr0.0001",
+      "gpu": 2,
+      "exit_code": 0,
+      "timed_out": false,
+      "reserved_seconds": 35.22490209699936
+    },
+    {
+      "stage": "search",
+      "index": 6,
+      "run_id": "B1_search_CV0_supcon_lr0.0001",
+      "gpu": 2,
+      "exit_code": 0,
+      "timed_out": false,
+      "reserved_seconds": 36.34093956800098
+    },
+    {
+      "stage": "search",
+      "index": 10,
+      "run_id": "B1_search_CV1_group_dro_rx_tx_lr0.0001",
+      "gpu": 2,
+      "exit_code": 0,
+      "timed_out": false,
+      "reserved_seconds": 35.55516234500101
+    },
+    {
+      "stage": "search",
+      "index": 14,
+      "run_id": "B1_search_CV1_supcon_lr0.0001",
+      "gpu": 2,
+      "exit_code": 0,
+      "timed_out": false,
+      "reserved_seconds": 34.8848879039997
+    },
+    {
+      "stage": "search",
+      "index": 3,
+      "run_id": "B1_search_CV0_group_dro_rx_tx_lr0.0003",
+      "gpu": 3,
+      "exit_code": 0,
+      "timed_out": false,
+      "reserved_seconds": 35.32462407899948
+    },
+    {
+      "stage": "search",
+      "index": 7,
+      "run_id": "B1_search_CV0_supcon_lr0.0003",
+      "gpu": 3,
+      "exit_code": 0,
+      "timed_out": false,
+      "reserved_seconds": 36.076605412999925
+    },
+    {
+      "stage": "search",
+      "index": 11,
+      "run_id": "B1_search_CV1_group_dro_rx_tx_lr0.0003",
+      "gpu": 3,
+      "exit_code": 0,
+      "timed_out": false,
+      "reserved_seconds": 35.378535306999765
+    },
+    {
+      "stage": "search",
+      "index": 15,
+      "run_id": "B1_search_CV1_supcon_lr0.0003",
+      "gpu": 3,
+      "exit_code": 0,
+      "timed_out": false,
+      "reserved_seconds": 35.02320646000044
+    },
+    {
+      "stage": "formal",
+      "index": 0,
+      "run_id": "B1_final_CV0_ce_seed20261013",
+      "gpu": 0,
+      "exit_code": 0,
+      "timed_out": false,
+      "reserved_seconds": 70.0648940430001
+    },
+    {
+      "stage": "formal",
+      "index": 4,
+      "run_id": "B1_final_CV0_grl_seed20261013",
+      "gpu": 0,
+      "exit_code": 0,
+      "timed_out": false,
+      "reserved_seconds": 71.05323627100006
+    },
+    {
+      "stage": "formal",
+      "index": 8,
+      "run_id": "B1_final_CV1_ce_seed20261013",
+      "gpu": 0,
+      "exit_code": 0,
+      "timed_out": false,
+      "reserved_seconds": 69.00337189700076
+    },
+    {
+      "stage": "formal",
+      "index": 12,
+      "run_id": "B1_final_CV1_grl_seed20261013",
+      "gpu": 0,
+      "exit_code": 0,
+      "timed_out": false,
+      "reserved_seconds": 71.30972024099901
+    },
+    {
+      "stage": "formal",
+      "index": 1,
+      "run_id": "B1_final_CV0_ce_seed20261014",
+      "gpu": 1,
+      "exit_code": 0,
+      "timed_out": false,
+      "reserved_seconds": 69.76844396100023
+    },
+    {
+      "stage": "formal",
+      "index": 5,
+      "run_id": "B1_final_CV0_grl_seed20261014",
+      "gpu": 1,
+      "exit_code": 0,
+      "timed_out": false,
+      "reserved_seconds": 71.39578296999935
+    },
+    {
+      "stage": "formal",
+      "index": 9,
+      "run_id": "B1_final_CV1_ce_seed20261014",
+      "gpu": 1,
+      "exit_code": 0,
+      "timed_out": false,
+      "reserved_seconds": 68.90254439599994
+    },
+    {
+      "stage": "formal",
+      "index": 13,
+      "run_id": "B1_final_CV1_grl_seed20261014",
+      "gpu": 1,
+      "exit_code": 0,
+      "timed_out": false,
+      "reserved_seconds": 70.67001381699993
+    },
+    {
+      "stage": "formal",
+      "index": 2,
+      "run_id": "B1_final_CV0_group_dro_rx_tx_seed20261013",
+      "gpu": 2,
+      "exit_code": 0,
+      "timed_out": false,
+      "reserved_seconds": 71.72228274400004
+    },
+    {
+      "stage": "formal",
+      "index": 6,
+      "run_id": "B1_final_CV0_supcon_seed20261013",
+      "gpu": 2,
+      "exit_code": 0,
+      "timed_out": false,
+      "reserved_seconds": 71.90789441900051
+    },
+    {
+      "stage": "formal",
+      "index": 10,
+      "run_id": "B1_final_CV1_group_dro_rx_tx_seed20261013",
+      "gpu": 2,
+      "exit_code": 0,
+      "timed_out": false,
+      "reserved_seconds": 70.82699546099866
+    },
+    {
+      "stage": "formal",
+      "index": 14,
+      "run_id": "B1_final_CV1_supcon_seed20261013",
+      "gpu": 2,
+      "exit_code": 0,
+      "timed_out": false,
+      "reserved_seconds": 71.18959373399957
+    },
+    {
+      "stage": "formal",
+      "index": 3,
+      "run_id": "B1_final_CV0_group_dro_rx_tx_seed20261014",
+      "gpu": 3,
+      "exit_code": 0,
+      "timed_out": false,
+      "reserved_seconds": 71.8182686550008
+    },
+    {
+      "stage": "formal",
+      "index": 7,
+      "run_id": "B1_final_CV0_supcon_seed20261014",
+      "gpu": 3,
+      "exit_code": 0,
+      "timed_out": false,
+      "reserved_seconds": 71.74261435900007
+    },
+    {
+      "stage": "formal",
+      "index": 11,
+      "run_id": "B1_final_CV1_group_dro_rx_tx_seed20261014",
+      "gpu": 3,
+      "exit_code": 0,
+      "timed_out": false,
+      "reserved_seconds": 70.88610193800014
+    },
+    {
+      "stage": "formal",
+      "index": 15,
+      "run_id": "B1_final_CV1_supcon_seed20261014",
+      "gpu": 3,
+      "exit_code": 0,
+      "timed_out": false,
+      "reserved_seconds": 71.370161543
+    }
+  ],
+  "fitting_jobs_launched": 32,
+  "reserved_gpu_hours": 0.47049565710694374,
+  "retries": 0,
+  "budget_cap_gpu_hours": 2,
+  "selection_frozen_before_formal": true
+}

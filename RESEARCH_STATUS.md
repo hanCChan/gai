@@ -1,5 +1,20 @@
 # 第二篇论文研究入口
 
+2026-10-13 UTC：用户批准的B1已完成，分支 `experiment/b1-standard-baselines`。
+32/32拟合作业（16内部LR搜索+16正式）、0失败/重试、总0.4704956571 reserved GPUh。
+全部同Strict CIS/rank16 CNN、配对初始化及共享batch；32真实权重、96预测资产独立复核通过。
+CE/DRO/GRL/SupCon平均Accuracy分别83.7525/81.4550/83.7175/83.0650%；
+全局最低RX×TX Recall分别10.5/11.0/3.5/0.5%，两seed收益不稳定。
+没有方法同时保住平均Accuracy并改善全局最低Recall；有限配方结果不足证明新算法必要。
+
+- [B1完整报告与停止决定](reports/b1_baselines/2026-10-13/REPORT.md)
+- [B1更新计划](docs/b1_baselines/EXECUTION_PLAN.md)
+- [B1完整证据/真实日志/图表](reports/b1_baselines/2026-10-13/EVIDENCE_INDEX.md)
+- [B1独立核验](reports/b1_baselines/2026-10-13/independent_verification.json)
+
+发布回读核验后停止。B2、ArcFace、额外搜索、新Loss/network/gate均未批准。
+以下是完成B1之前的历史状态；原阶段报告与科学判断不变。
+
 2026-10-13 UTC：D0.5 signed新增损害审计与B0三seed复验已完成，独立分支experiment/d05-b0-class-risk。
 8次实际拟合完成（之前8次零优化的工程启动失败保留），累计0.22810 reserved GPUh。
 三个seedStrict平均收益均正；9个RX×TX严重单元≥2seed重复，跨7RX两折，无collapse。
@@ -13,7 +28,7 @@ D0.5同CNN内增量风险有信息，但折0不如绝对混淆，跨CNN检索低
 - [作者级GRL/IB输入与复现约束](docs/d05_b0/AUTHOR_IMPLEMENTATION_AUDIT.md)
 - [全部派生结果/真实日志/初始失败证据ZIP](reports/d05_b0/2026-10-13/evidence.zip)
 
-B1申请32个训练作业（16内部搜索+16正式模型）、上限2GPUh；尚未获准、没有自动运行。
+B1当时申请32个训练作业（16内部搜索+16正式模型）、上限2GPUh；此历史快照中尚未获准。
 B2/新算法不执行；OSU、开发/锁定、Day3/4、原始IQ、新数据下载均不涉及。
 以下为原D0与更早历史入口；其报告与科学判定不变。
 

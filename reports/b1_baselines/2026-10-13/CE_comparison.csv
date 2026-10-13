@@ -1,0 +1,4 @@
+method,mean_accuracy_delta,mean_RX_macro_f1_delta,minimum_RX_TX_recall_delta,mean_min_TX_recall_delta,severe_CE_relative_losses,declining_RX_TX_cells,paired_RX_TX_cells,pooled_joint_improvement,mean_accuracy_preserved_both_seeds
+group_dro_rx_tx,-0.02297500000000008,-0.021703280629594146,0.0050000000000000044,-0.010249999999999981,49,124,200,False,False
+grl,-0.0003500000000000725,-0.0005997691021499829,-0.06999999999999999,0.02850000000000008,36,93,200,False,False
+supcon,-0.0068750000000000755,-0.008284071172571905,-0.09999999999999999,-0.044499999999999984,45,88,200,False,False

@@ -1,0 +1,346 @@
+{
+  "prepared_utc": "2026-10-13T05:45:44.182471+00:00",
+  "feature_assets_checked": [
+    {
+      "path": "outputs/shen_p2a8/g1_cache_v1/shen_b200_mini_1_train/strict_cis.npy",
+      "sha256": "61c720cd21778f3c08fbd17f553112043c39b6e11c8045e432d56b6a8adb0fb2",
+      "bytes": 52416128
+    },
+    {
+      "path": "outputs/shen_p2a8/g1_cache_v1/shen_b200_mini_1_train/labels.npy",
+      "sha256": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b",
+      "bytes": 16128
+    },
+    {
+      "path": "outputs/shen_p2a8/g1_cache_v1/shen_b200_mini_1_train/rows.npy",
+      "sha256": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060",
+      "bytes": 16128
+    },
+    {
+      "path": "outputs/shen_p2a8/g1_cache_v1/shen_b200_mini_1_train/manifest.json",
+      "sha256": "7365e6a970bf6fcdabb2f04a00e4a7c61a681d6c776a9bd5452b00cc6f9bf248",
+      "bytes": 847
+    },
+    {
+      "path": "outputs/shen_p2a8/g1_cache_v1/shen_b210_1_train/strict_cis.npy",
+      "sha256": "95c31d380111d987e259208ce4d7623f14fbc84d8e85e4e6229269a79ae33253",
+      "bytes": 52416128
+    },
+    {
+      "path": "outputs/shen_p2a8/g1_cache_v1/shen_b210_1_train/labels.npy",
+      "sha256": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b",
+      "bytes": 16128
+    },
+    {
+      "path": "outputs/shen_p2a8/g1_cache_v1/shen_b210_1_train/rows.npy",
+      "sha256": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060",
+      "bytes": 16128
+    },
+    {
+      "path": "outputs/shen_p2a8/g1_cache_v1/shen_b210_1_train/manifest.json",
+      "sha256": "000b318589b318ba66e938efcaf9bb0f6724bb18f364c242cefc6f30fc50fc4f",
+      "bytes": 829
+    },
+    {
+      "path": "outputs/shen_p2a8/g1_cache_v1/shen_pluto_1_train/strict_cis.npy",
+      "sha256": "1fc554531a06af088568f0e0f31236c8f69e8d16d41a6b63c75467e7e220aeb0",
+      "bytes": 52416128
+    },
+    {
+      "path": "outputs/shen_p2a8/g1_cache_v1/shen_pluto_1_train/labels.npy",
+      "sha256": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b",
+      "bytes": 16128
+    },
+    {
+      "path": "outputs/shen_p2a8/g1_cache_v1/shen_pluto_1_train/rows.npy",
+      "sha256": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060",
+      "bytes": 16128
+    },
+    {
+      "path": "outputs/shen_p2a8/g1_cache_v1/shen_pluto_1_train/manifest.json",
+      "sha256": "ec13608c25be9e27698a74e52c49779635122f529f2c636c178d2bfca37cc936",
+      "bytes": 832
+    },
+    {
+      "path": "outputs/shen_p2a8/g1_cache_v1/shen_rtl_1_train/strict_cis.npy",
+      "sha256": "145869235ea1ecad4601bfcfc796196a02d81091a7d3482978007306250e7cd0",
+      "bytes": 52416128
+    },
+    {
+      "path": "outputs/shen_p2a8/g1_cache_v1/shen_rtl_1_train/labels.npy",
+      "sha256": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b",
+      "bytes": 16128
+    },
+    {
+      "path": "outputs/shen_p2a8/g1_cache_v1/shen_rtl_1_train/rows.npy",
+      "sha256": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060",
+      "bytes": 16128
+    },
+    {
+      "path": "outputs/shen_p2a8/g1_cache_v1/shen_rtl_1_train/manifest.json",
+      "sha256": "0e78a978c74d64093c92d2a70527262e5d2726ddf4f4387e03b51a4d52c14319",
+      "bytes": 824
+    },
+    {
+      "path": "outputs/shen_p2a8/g1_cache_v1/shen_rtl_2_train/strict_cis.npy",
+      "sha256": "4e2c2336b848e274e22d5a6017adfdb902529ca801c4d723856ded2e37825865",
+      "bytes": 52416128
+    },
+    {
+      "path": "outputs/shen_p2a8/g1_cache_v1/shen_rtl_2_train/labels.npy",
+      "sha256": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b",
+      "bytes": 16128
+    },
+    {
+      "path": "outputs/shen_p2a8/g1_cache_v1/shen_rtl_2_train/rows.npy",
+      "sha256": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060",
+      "bytes": 16128
+    },
+    {
+      "path": "outputs/shen_p2a8/g1_cache_v1/shen_rtl_2_train/manifest.json",
+      "sha256": "aabcc57070575d14747d5064e8e75413fe6c454fd254686cf77a77783738c58a",
+      "bytes": 823
+    },
+    {
+      "path": "outputs/shen_p2a8/g1_cache_v1/shen_rtl_3_train/strict_cis.npy",
+      "sha256": "afcc21d89da0357baf4077ac6578fe72a47db266f7d8c1197ada2285c2844a31",
+      "bytes": 52416128
+    },
+    {
+      "path": "outputs/shen_p2a8/g1_cache_v1/shen_rtl_3_train/labels.npy",
+      "sha256": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b",
+      "bytes": 16128
+    },
+    {
+      "path": "outputs/shen_p2a8/g1_cache_v1/shen_rtl_3_train/rows.npy",
+      "sha256": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060",
+      "bytes": 16128
+    },
+    {
+      "path": "outputs/shen_p2a8/g1_cache_v1/shen_rtl_3_train/manifest.json",
+      "sha256": "035d524396f521d2ad96649727add43475dd5d6cd166180807b265adc0b69724",
+      "bytes": 824
+    },
+    {
+      "path": "outputs/shen_p2a8/g1_cache_v1/shen_rtl_5_train/strict_cis.npy",
+      "sha256": "bf95900bd9c144671615f6b605ab569b4b48172a33102ace00e110d26570edc4",
+      "bytes": 52416128
+    },
+    {
+      "path": "outputs/shen_p2a8/g1_cache_v1/shen_rtl_5_train/labels.npy",
+      "sha256": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b",
+      "bytes": 16128
+    },
+    {
+      "path": "outputs/shen_p2a8/g1_cache_v1/shen_rtl_5_train/rows.npy",
+      "sha256": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060",
+      "bytes": 16128
+    },
+    {
+      "path": "outputs/shen_p2a8/g1_cache_v1/shen_rtl_5_train/manifest.json",
+      "sha256": "1280566e966ecb2b20902993c4699c48f70fa740fa17cec3a9bcdf5b41ccb9d0",
+      "bytes": 823
+    },
+    {
+      "path": "outputs/shen_p2a8/g1_cache_v1/shen_rtl_6_train/strict_cis.npy",
+      "sha256": "05be3a98b1f8b7c58e98c2eed60120733516f485e4c8d79787b5469061c44fc7",
+      "bytes": 52416128
+    },
+    {
+      "path": "outputs/shen_p2a8/g1_cache_v1/shen_rtl_6_train/labels.npy",
+      "sha256": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b",
+      "bytes": 16128
+    },
+    {
+      "path": "outputs/shen_p2a8/g1_cache_v1/shen_rtl_6_train/rows.npy",
+      "sha256": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060",
+      "bytes": 16128
+    },
+    {
+      "path": "outputs/shen_p2a8/g1_cache_v1/shen_rtl_6_train/manifest.json",
+      "sha256": "14463694916395e0c0711b827ad61a84580696619257e20fa589dfdeeb3ff25f",
+      "bytes": 824
+    },
+    {
+      "path": "outputs/shen_p2a8/g1_cache_v1/shen_rtl_7_train/strict_cis.npy",
+      "sha256": "3933a1ae9be67c1ebf293bbec7b77124c867ceccc322509c1712de38ec4bba06",
+      "bytes": 52416128
+    },
+    {
+      "path": "outputs/shen_p2a8/g1_cache_v1/shen_rtl_7_train/labels.npy",
+      "sha256": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b",
+      "bytes": 16128
+    },
+    {
+      "path": "outputs/shen_p2a8/g1_cache_v1/shen_rtl_7_train/rows.npy",
+      "sha256": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060",
+      "bytes": 16128
+    },
+    {
+      "path": "outputs/shen_p2a8/g1_cache_v1/shen_rtl_7_train/manifest.json",
+      "sha256": "5014d39c12ba37385c4e79be4632748af40c3bbbb18e3f49365e7f87250222a5",
+      "bytes": 824
+    },
+    {
+      "path": "outputs/shen_p2a8/g1_cache_v1/shen_rtl_9_train/strict_cis.npy",
+      "sha256": "f8cc631c0d6476e0a4408bc2ac5f893235170934001b5dd7611fa0e3d951855e",
+      "bytes": 52416128
+    },
+    {
+      "path": "outputs/shen_p2a8/g1_cache_v1/shen_rtl_9_train/labels.npy",
+      "sha256": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b",
+      "bytes": 16128
+    },
+    {
+      "path": "outputs/shen_p2a8/g1_cache_v1/shen_rtl_9_train/rows.npy",
+      "sha256": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060",
+      "bytes": 16128
+    },
+    {
+      "path": "outputs/shen_p2a8/g1_cache_v1/shen_rtl_9_train/manifest.json",
+      "sha256": "5a14206e7c52491f6c3d82f85ab689b46aacd7d8b6938c235763ba693bda0ac9",
+      "bytes": 825
+    }
+  ],
+  "schedules": {
+    "search_CV0_seed20261015": {
+      "path": "outputs/b1_baselines/schedules/search_CV0_seed20261015.npy",
+      "sha256": "269642685412af838a42edf4ea9acca100d1b0b8f8215ea90e13d5b4ab97e0cf",
+      "shape": [
+        10,
+        100,
+        80
+      ],
+      "train_keys": [
+        "shen_b210_1_train",
+        "shen_rtl_1_train",
+        "shen_rtl_3_train",
+        "shen_rtl_9_train"
+      ],
+      "epochs": 10,
+      "seed": 20261015,
+      "groups": 40,
+      "packets": 8000,
+      "group_id_sha256": "84f52d181d449926ffe3fdf6e27f849626817513031baf026082af91acb2ae89",
+      "all_packets_once_per_epoch": true,
+      "each_group_twice_each_batch": true
+    },
+    "search_CV1_seed20261015": {
+      "path": "outputs/b1_baselines/schedules/search_CV1_seed20261015.npy",
+      "sha256": "269642685412af838a42edf4ea9acca100d1b0b8f8215ea90e13d5b4ab97e0cf",
+      "shape": [
+        10,
+        100,
+        80
+      ],
+      "train_keys": [
+        "shen_b200_mini_1_train",
+        "shen_rtl_2_train",
+        "shen_rtl_5_train",
+        "shen_rtl_7_train"
+      ],
+      "epochs": 10,
+      "seed": 20261015,
+      "groups": 40,
+      "packets": 8000,
+      "group_id_sha256": "84f52d181d449926ffe3fdf6e27f849626817513031baf026082af91acb2ae89",
+      "all_packets_once_per_epoch": true,
+      "each_group_twice_each_batch": true
+    },
+    "formal_CV0_seed20261013": {
+      "path": "outputs/b1_baselines/schedules/formal_CV0_seed20261013.npy",
+      "sha256": "db8cb97be0b2d02da6e05321a08c410079e5742d34e51bbf9c6e6245dec25e62",
+      "shape": [
+        20,
+        100,
+        100
+      ],
+      "train_keys": [
+        "shen_b210_1_train",
+        "shen_rtl_1_train",
+        "shen_rtl_3_train",
+        "shen_rtl_6_train",
+        "shen_rtl_9_train"
+      ],
+      "epochs": 20,
+      "seed": 20261013,
+      "groups": 50,
+      "packets": 10000,
+      "group_id_sha256": "e8bc1fb1564e2b673569b8f2b7c9e76738b1012fc520a017c3044df9136526b0",
+      "all_packets_once_per_epoch": true,
+      "each_group_twice_each_batch": true
+    },
+    "formal_CV0_seed20261014": {
+      "path": "outputs/b1_baselines/schedules/formal_CV0_seed20261014.npy",
+      "sha256": "5323e380a77fb1bd60eac42101b4d66193afbbedafe056bcc7976cd9bd1fb015",
+      "shape": [
+        20,
+        100,
+        100
+      ],
+      "train_keys": [
+        "shen_b210_1_train",
+        "shen_rtl_1_train",
+        "shen_rtl_3_train",
+        "shen_rtl_6_train",
+        "shen_rtl_9_train"
+      ],
+      "epochs": 20,
+      "seed": 20261014,
+      "groups": 50,
+      "packets": 10000,
+      "group_id_sha256": "e8bc1fb1564e2b673569b8f2b7c9e76738b1012fc520a017c3044df9136526b0",
+      "all_packets_once_per_epoch": true,
+      "each_group_twice_each_batch": true
+    },
+    "formal_CV1_seed20261013": {
+      "path": "outputs/b1_baselines/schedules/formal_CV1_seed20261013.npy",
+      "sha256": "db8cb97be0b2d02da6e05321a08c410079e5742d34e51bbf9c6e6245dec25e62",
+      "shape": [
+        20,
+        100,
+        100
+      ],
+      "train_keys": [
+        "shen_b200_mini_1_train",
+        "shen_pluto_1_train",
+        "shen_rtl_2_train",
+        "shen_rtl_5_train",
+        "shen_rtl_7_train"
+      ],
+      "epochs": 20,
+      "seed": 20261013,
+      "groups": 50,
+      "packets": 10000,
+      "group_id_sha256": "e8bc1fb1564e2b673569b8f2b7c9e76738b1012fc520a017c3044df9136526b0",
+      "all_packets_once_per_epoch": true,
+      "each_group_twice_each_batch": true
+    },
+    "formal_CV1_seed20261014": {
+      "path": "outputs/b1_baselines/schedules/formal_CV1_seed20261014.npy",
+      "sha256": "5323e380a77fb1bd60eac42101b4d66193afbbedafe056bcc7976cd9bd1fb015",
+      "shape": [
+        20,
+        100,
+        100
+      ],
+      "train_keys": [
+        "shen_b200_mini_1_train",
+        "shen_pluto_1_train",
+        "shen_rtl_2_train",
+        "shen_rtl_5_train",
+        "shen_rtl_7_train"
+      ],
+      "epochs": 20,
+      "seed": 20261014,
+      "groups": 50,
+      "packets": 10000,
+      "group_id_sha256": "e8bc1fb1564e2b673569b8f2b7c9e76738b1012fc520a017c3044df9136526b0",
+      "all_packets_once_per_epoch": true,
+      "each_group_twice_each_batch": true
+    }
+  },
+  "no_model_fit": true,
+  "source_receivers": 10,
+  "no_raw_IQ_access": true
+}

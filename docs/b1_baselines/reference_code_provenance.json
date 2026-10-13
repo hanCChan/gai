@@ -1,0 +1,18 @@
+[
+  {
+    "repository": "kohpangwei/group_DRO",
+    "commit": "cbbc1c5b06844e46b87e264326b56056d2a437d1",
+    "path": "loss.py",
+    "url": "https://raw.githubusercontent.com/kohpangwei/group_DRO/cbbc1c5b06844e46b87e264326b56056d2a437d1/loss.py",
+    "sha256": "ca6f012de93791118479a89ddc9c23695ddf53ae75bd8bf8076b5841e1bcbc80",
+    "bytes": 8669
+  },
+  {
+    "repository": "HobbitLong/SupContrast",
+    "commit": "66a8fe53880d6a1084b2e4e0db0a019024d6d41a",
+    "path": "losses.py",
+    "url": "https://raw.githubusercontent.com/HobbitLong/SupContrast/66a8fe53880d6a1084b2e4e0db0a019024d6d41a/losses.py",
+    "sha256": "a432e24bdff118aa0ab3013a4c85a4b099871ebef554177054d91fe6fca616db",
+    "bytes": 4137
+  }
+]

@@ -43,3 +43,10 @@ scripts/*b0_replication.py -text
 scripts/report_d05_b0.py -text
 scripts/prepare_b1_review.py -text
 reports/d05_b0/** -text -whitespace
+
+# Preserve B1 pre-optimization seals and derived evidence byte-for-byte.
+docs/b1_baselines/** -text -whitespace
+configs/b1_baselines/** -text -whitespace
+src/b1_baselines/** -text
+scripts/*b1*.py -text
+reports/b1_baselines/** -text -whitespace

@@ -1,6 +1,6 @@
 # gai：LoRa RFFI 开发实验
 
-[最新研究状态](RESEARCH_STATUS.md)：D0.5+B0已完成，8次实际训练、三seed结果齐全；局部严重损害可重复，signed损害风险跨CNN检索失败。[本轮报告](reports/d05_b0/2026-10-13/REPORT.md)、[更新计划](docs/d05_b0/EXECUTION_PLAN.md)、[B1审核材料，未训练](docs/d05_b0/B1_REVIEW_PLAN.md)。完成授权工作后停止，保留全部历史负结果。
+[最新研究状态](RESEARCH_STATUS.md)：B1标准CE、Group DRO、GRL、SupCon共32作业完成，0失败/重试，0.470496 GPUh；有限配方下没有同时保住平均Accuracy并改善全局最低Recall，收益随seed变化。[本轮报告](reports/b1_baselines/2026-10-13/REPORT.md)、[更新计划](docs/b1_baselines/EXECUTION_PLAN.md)、[完整证据](reports/b1_baselines/2026-10-13/EVIDENCE_INDEX.md)。完成发布核验后停止，B2/ArcFace/新算法未批准，全部历史负结果保留。
 
 [研究报告与完整证据索引](reports/RESEARCH_REPORT_INDEX.md)：G1/G2-0、VIRP-v1 和 EISR-v1，包含冻结规则、独立复核与证据 ZIP。
 

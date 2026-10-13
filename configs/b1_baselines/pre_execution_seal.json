@@ -1,0 +1,21 @@
+{
+  "sealed_utc": "2026-10-13T05:45:44.183296+00:00",
+  "before_first_B1_optimization": true,
+  "files_sha256": {
+    "configs/b1_baselines/registration.json": "42602163ab89b53e9ccec167e5389fb88360f6522ee97d7c35a7feb1535a5c65",
+    "docs/b1_baselines/PREREGISTRATION.md": "fa5669f11bca1d0a4cba133bf1698c2979b80172e944fcb5cbb000a7f92f40d2",
+    "scripts/prepare_b1_execution.py": "a0ed549dbe6a0097849bc22436f6049db17999414934da0264dfc274cad5b025",
+    "scripts/train_b1_baseline.py": "a89a3123f9281f09eb0783e102a2ae7e3ba7120a68aee2fb307ee1a5851e736d",
+    "scripts/launch_b1_baselines.py": "4c600a9ba741bd29a51c2d2f23a4686824c31064ddbc48b971a7047198d107ce",
+    "scripts/test_b1_baselines.py": "67274af4eb274f0d2b4ca279e2e912c4f1dfe3a8409bb0a2f0923e9ca1649f31",
+    "src/b1_baselines/__init__.py": "34e0ed059a4316341c47ee7d67e134e4a030e3f9b335f1eaaca731c62292e978",
+    "src/b1_baselines/objectives.py": "c01283cbf8789d6dff42df1f67de5e4d43ef6e55ddac7f2b16da7da4372cf701",
+    "src/b1_baselines/data.py": "c3a3f6391898ef9beeefc60b7a016af72c1a4bc2f896532a8432c4114216448b",
+    "src/b1_baselines/model.py": "209e8571eef3c6b8ddf2a40adbcbfae0e3134f76d7b0c3217105dc57d8692a61",
+    "src/shen_p2a/models.py": "acb27d5b562fd03ef3993b121c9a953897726ff19650c2896ac490432cc5900d",
+    "src/shen_evidence/models.py": "80c505443aed58fa4a7676a66613f4de13453a5db6be3f0027fe7b1caa54fa67",
+    "src/shen_evidence/runner.py": "e0e26c45b60281cb409056c9092d41d1061d7da7c550ae21d263bb7dbb738043",
+    "src/shen_p2a8/g1_data.py": "cdbd9551ce2f7c5ba298f312adb888467817c25033b0b89e4909c967ac7a9f36"
+  },
+  "preflight_sha256": "dd328ea26f86c2a85b6440c9f4520c7571c1370a5dbc8baf200bb51c371d39c7"
+}
