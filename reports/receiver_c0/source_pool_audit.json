@@ -1,0 +1,36 @@
+{
+  "checks": [
+    {
+      "dataset": "wisig",
+      "fold": 0,
+      "pools_disjoint": true,
+      "fit_packets": 22400,
+      "C1_packets": 5600,
+      "C2_packets": 5600,
+      "scaler_fit_only": true
+    },
+    {
+      "dataset": "shen",
+      "fold": 0,
+      "pools_disjoint": true,
+      "fit_packets": 6000,
+      "C1_packets": 1000,
+      "C2_packets": 1000,
+      "scaler_fit_only": true
+    },
+    {
+      "dataset": "shen",
+      "fold": 1,
+      "pools_disjoint": true,
+      "fit_packets": 6000,
+      "C1_packets": 1000,
+      "C2_packets": 1000,
+      "scaler_fit_only": true
+    }
+  ],
+  "original_positions_are_indices_not_verified_timestamps": true,
+  "independent_sessions_proven": false,
+  "original_pregradient_Dropout_RNG_saved": false,
+  "saved_clipped_gradient_and_actual_Adam_states_available": true,
+  "formal_fits": 0
+}

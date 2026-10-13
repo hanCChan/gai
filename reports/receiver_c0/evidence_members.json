@@ -1,0 +1,181 @@
+{
+  "archive_sha256": "9fa68530e8995be9a9acd700b7011adc8faa7ae15a47fea4559a64b295445fd5",
+  "members": [
+    {
+      "path": "execution/analyze.log",
+      "bytes": 6362,
+      "sha256": "fbbc4945895d420d9fff76de6cc226339f16e8117fca6acc69d5e06c4c808569"
+    },
+    {
+      "path": "execution/audit.log",
+      "bytes": 90,
+      "sha256": "2bde429fe97ada4503347756c55a00d41469dafe092c46ff2e4b74c712125526"
+    },
+    {
+      "path": "execution/extract.log",
+      "bytes": 344,
+      "sha256": "c1f6530f5bef66e0a0cbddf5ec7269fc48359f7ac4ca797163637b24983f6044"
+    },
+    {
+      "path": "execution/package.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "execution/report.log",
+      "bytes": 1495,
+      "sha256": "c2783101ba9c0afd67afb35edece576775cb84fccf6923a89cbe82437f35d577"
+    },
+    {
+      "path": "execution/timing_execution.json",
+      "bytes": 563,
+      "sha256": "3aed2b0747c6aeb24ece89748ac8c2f72283e9428f168ebd4c0decb04dc8acc3"
+    },
+    {
+      "path": "execution/timing_gpu0.json",
+      "bytes": 19545,
+      "sha256": "ac6059f0de0a0459a03006245b022aa8d687bf1d9a95767f068e1d1ced228812"
+    },
+    {
+      "path": "execution/timing_gpu0.log",
+      "bytes": 72,
+      "sha256": "ef08169c62401da4090a7f858ff63af47caac7e6528dbeb26393464cfed69585"
+    },
+    {
+      "path": "execution/timing_gpu1.json",
+      "bytes": 19562,
+      "sha256": "953afe6c0a0c94051dcc986bc17f02ecb77792dfd38dcce954189183da1ace8a"
+    },
+    {
+      "path": "execution/timing_gpu1.log",
+      "bytes": 72,
+      "sha256": "99a6080d7504cddaa7779b2042e4100107c85f1b6ec81ab60f26316bc29e83ec"
+    },
+    {
+      "path": "execution/timing_gpu2.json",
+      "bytes": 19548,
+      "sha256": "0d1327eff889d4775697c125344de550a8505631005e4402e8878373468a14d8"
+    },
+    {
+      "path": "execution/timing_gpu2.log",
+      "bytes": 72,
+      "sha256": "490ba9ec6fef77ec5944d7f5def50ded0d3b42e7a00407c243f34f455b02860b"
+    },
+    {
+      "path": "execution/timing_gpu3.json",
+      "bytes": 19562,
+      "sha256": "ef3477bc11312503981a94dcaaa8e4f1a2dec860fb38a2f89c19af15a9dd775e"
+    },
+    {
+      "path": "execution/timing_gpu3.log",
+      "bytes": 73,
+      "sha256": "023ef900db331e348a49b8778fc299cdc5f21de63a79a0126ae134c9861d1929"
+    },
+    {
+      "path": "execution/verify.log",
+      "bytes": 499,
+      "sha256": "357f8864bc78a0be8f5940d7578d1dbdab0bd6eb50d0d647bded1860fa48afbc"
+    },
+    {
+      "path": "tables/GPU_equivalence_and_sparse_diagnosis.csv",
+      "bytes": 1389,
+      "sha256": "062acff6fc76ffded6782108435c052f90881b284a45a30476e2419b40bf523b"
+    },
+    {
+      "path": "tables/clipping_summary.csv",
+      "bytes": 553,
+      "sha256": "e7072df899d8dfddb58b3a1b74e8457b2351f407a8ec6736ec49fe0915d00d17"
+    },
+    {
+      "path": "tables/conditional_18_fit_cost_forecast.csv",
+      "bytes": 1474,
+      "sha256": "35888fab3c940848254e0a6782e881a21fcfef5803abce8e9e4d9acae46b6600"
+    },
+    {
+      "path": "tables/fixed_pair_ranks.csv",
+      "bytes": 101031,
+      "sha256": "d9b1f63935affcf78674c98a5260110709ab9c9989713df948cad2bf926d2dc9"
+    },
+    {
+      "path": "tables/fixed_transfer_pair_support.csv",
+      "bytes": 93793,
+      "sha256": "b31e104d97bec119cfbf5f3f905cf971ce9b6deb57355a3000a1d0c7d099d3b1"
+    },
+    {
+      "path": "tables/guard_vs_mean_choices.csv",
+      "bytes": 125269,
+      "sha256": "6a84a8a5ccd89c855dc0ae57071f7dbcf784342fbc0669f3bd96b4b66065e6ea"
+    },
+    {
+      "path": "tables/packet_dependence_summary.csv",
+      "bytes": 145,
+      "sha256": "6f34dc1ade3a9d3a82aaf58423aa4d3bc2e40dbf121721d3edc620c47f7e7f3e"
+    },
+    {
+      "path": "tables/packet_index_feature_correlations.csv",
+      "bytes": 106612,
+      "sha256": "ffc5d9e2183202cdbe4abadf0328dcd779c3624771bfa2744dd6476eead70045"
+    },
+    {
+      "path": "tables/packet_risk_dependence.csv",
+      "bytes": 957325,
+      "sha256": "6e37c7f2d92c016ae0cd9194eccdc8696f1e252ffe7cedb498515aae46a06b5e"
+    },
+    {
+      "path": "tables/phase_behavior.csv",
+      "bytes": 18510,
+      "sha256": "be621d514449713f6bdf945096e92772fa2fdc6f491d1782dd836f507371233b"
+    },
+    {
+      "path": "tables/sampled_gradient_clipping.csv",
+      "bytes": 205784,
+      "sha256": "62398ffb8f03be35b67945fc106e9f126ebc311f42d8f0555e9a4ee04c22beb1"
+    },
+    {
+      "path": "tables/single_step_timings.csv",
+      "bytes": 15166,
+      "sha256": "582f8460d84995b8fa9bb62f5ffd3d0c8610918b58cc2bab30551a4d1e466b75"
+    },
+    {
+      "path": "tables/snapshot_RX_date_risks.csv",
+      "bytes": 837343,
+      "sha256": "348dbf9aa8585e46ae8d4bf2e4ccb0092978929076a05a56c2d34df11bd02e25"
+    },
+    {
+      "path": "tables/snapshot_weighted_behavior.csv",
+      "bytes": 176138,
+      "sha256": "591bef8dbf0fd10c77386678f7719c4b1685f9cb22824eb072d726b9ea3333b9"
+    },
+    {
+      "path": "tables/trajectory_dependence.csv",
+      "bytes": 3644,
+      "sha256": "b8f89147f3c5ef66cd22219404e2f8d4e0f2932c0d72672ea7800e4cb59a0d67"
+    },
+    {
+      "path": "tables/transfer_behavior_summary.csv",
+      "bytes": 8865,
+      "sha256": "4b78af4e04287e3488a9b1ed08efc564eb6f201d772bf3b8a1048cca24776ed5"
+    },
+    {
+      "path": "tables/transfer_choices.csv",
+      "bytes": 1635850,
+      "sha256": "dc11e941832ee226ff757d89a1500d3ebac7ddc4746104a2cb51b75e94e22b33"
+    },
+    {
+      "path": "tables/transfer_prediction_summary.csv",
+      "bytes": 2987,
+      "sha256": "5fda8873ad58f6aa0230c6827529f4d18a60e6d8b122f7b2eb6b2d0175344fc7"
+    },
+    {
+      "path": "tables/transfer_predictions.csv",
+      "bytes": 275101,
+      "sha256": "71d32da9b02df7b15ce5bec1c0aff2306662c5b0438782e8641cec7e786c5e4a"
+    },
+    {
+      "path": "tables/transfer_strata.csv",
+      "bytes": 64239,
+      "sha256": "8b016abf4aa8e127d0bea513415cd0fa4630738f32fd68e1375d1c0c54b98c21"
+    }
+  ],
+  "signals_weights_optimizer_states_or_full_features_included": false
+}

@@ -1,0 +1,11 @@
+{
+  "files": {
+    "configs/receiver_c0/registration.json": "2be5d270dfb248c564ff96b05561b12a40b8f3d661957afa364a35c4a14de485",
+    "docs/receiver_c0/EXECUTION_PLAN.md": "74eaae6f11e34efcd76820f2b3473e7adb5c73088bbfb56492213eca68c2fbe5",
+    "scripts/extract_receiver_c0.py": "c8d93b649f4d9d2d442590a9903e3002ef58276727162c2898e8cb36385b8509",
+    "scripts/analyze_receiver_c0.py": "35ef5a5608197d8e8a865e5e2ee0d3f53101cdd4fc9540f05f214f8e0efd0c71",
+    "src/receiver_c0/optimized.py": "d9dce8c2302c591bf18b5ac7face28cb0b56fc2ff7b712f1b4d11a18f719c409"
+  },
+  "before_cross_RX_outcomes": true,
+  "formal_training_authorized": false
+}

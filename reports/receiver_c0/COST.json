@@ -1,0 +1,33 @@
+{
+  "formal_fits": 0,
+  "reset_single_step_timing_cases": 120,
+  "additional_original_proposal_replays": 24,
+  "sparse_diagnostic_transaction_replays": 24,
+  "total_disposable_Adam_steps": 168,
+  "continuous_trajectory_updates": 0,
+  "engineering_reserved_GPUh": 0.07311376312111154,
+  "watchdog_seconds": 360,
+  "conditional_18_fit_forecast_GPUh": 12.20662757709882,
+  "proposed_round_cap_if_later_eligible_GPUh": 14,
+  "forecast_is_conditional_not_approval": true,
+  "cold_start_not_charged_per_opportunity": true,
+  "short_snapshot_timings_not_guaranteed_full_training_bound": true,
+  "peak_by_GPU": {
+    "0": {
+      "allocated_decision_peak_MiB": 775.306640625,
+      "reserved_peak_including_gradient_cache_MiB": 2214.0
+    },
+    "1": {
+      "allocated_decision_peak_MiB": 775.306640625,
+      "reserved_peak_including_gradient_cache_MiB": 2214.0
+    },
+    "2": {
+      "allocated_decision_peak_MiB": 775.306640625,
+      "reserved_peak_including_gradient_cache_MiB": 2214.0
+    },
+    "3": {
+      "allocated_decision_peak_MiB": 775.306640625,
+      "reserved_peak_including_gradient_cache_MiB": 2214.0
+    }
+  }
+}

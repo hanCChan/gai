@@ -1,0 +1,220 @@
+{
+  "base_remote_commit": "aaa45ea16f16672a11b695a97607d02b24b238d3",
+  "branch": "experiment/r2-c0-cross-rx-audit",
+  "user_plan_sha256": "c1d21ccf0a6cb34c2a07ed7ed910899f6f2ed5cea4fc176b6e1c42a406cfde11",
+  "historical_worktree": "/home/keyan/code-y-r2a",
+  "diagnostic_runs": [
+    {
+      "job": {
+        "dataset": "wisig",
+        "backbone": "official",
+        "fold": 0,
+        "method": "ce",
+        "alpha": 0.01,
+        "beta": 1.0,
+        "stage": "diagnostic",
+        "seed": 20261013,
+        "lr": 0.0003,
+        "epochs": 20,
+        "run_id": "wisig_official_CV0_ce_seed20261013_diag"
+      },
+      "run_path": "/home/keyan/code-y-r2a/outputs/receiver_r2/wisig_official_CV0_ce_seed20261013_diag",
+      "files": {
+        "config.json": "3c33bf29b55d386d2ba35f92d62f7862c14724fdefc9197e6734543d3f8dc515",
+        "schedule.npy": "8212415e44d785b3b473ce05eb7e80d77364ee1e2a19894d9f95d53006352396",
+        "RX_partitions.npy": "fa5eba9213cbb4c2da5ad045d489ccd16b87ad2ead5ce006743c8e14e5260542",
+        "risks.csv": "c99beb8ac6ddecf56b70d65bcddbb5649de283850db7874e1e35c87b7e14b973",
+        "updates.csv": "dd724d5201d77899f076e51c824618fd1d3dc0ad73ebefaa39d6a7a03a07382f"
+      }
+    },
+    {
+      "job": {
+        "dataset": "wisig",
+        "backbone": "official",
+        "fold": 0,
+        "method": "mldg_rx_date",
+        "alpha": 0.01,
+        "beta": 1.0,
+        "stage": "diagnostic",
+        "seed": 20261013,
+        "lr": 0.0003,
+        "epochs": 20,
+        "run_id": "wisig_official_CV0_mldg_rx_date_seed20261013_diag"
+      },
+      "run_path": "/home/keyan/code-y-r2a/outputs/receiver_r2/wisig_official_CV0_mldg_rx_date_seed20261013_diag",
+      "files": {
+        "config.json": "4e15ef428e62b282241e1a74322729d92b83f82bc219daba92edbe1b9d5247de",
+        "schedule.npy": "8212415e44d785b3b473ce05eb7e80d77364ee1e2a19894d9f95d53006352396",
+        "RX_partitions.npy": "fa5eba9213cbb4c2da5ad045d489ccd16b87ad2ead5ce006743c8e14e5260542",
+        "risks.csv": "442273b5b314cf17c9082444a5d24c1701d54fdab665bf1e61e9d293056c8626",
+        "updates.csv": "e2d7cb3ffdf28b855752e57b35aa5bc20e1d144594015e34c17193dd1184ce9b"
+      }
+    },
+    {
+      "job": {
+        "dataset": "shen",
+        "backbone": "rank16",
+        "fold": 0,
+        "method": "ce",
+        "alpha": 0.01,
+        "beta": 1.0,
+        "stage": "diagnostic",
+        "seed": 20261013,
+        "lr": 0.0003,
+        "epochs": 10,
+        "run_id": "shen_rank16_CV0_ce_seed20261013_diag"
+      },
+      "run_path": "/home/keyan/code-y-r2a/outputs/receiver_r2/shen_rank16_CV0_ce_seed20261013_diag",
+      "files": {
+        "config.json": "dfd93e83994396cef2faf2175b5c4f6a6353cdf24aafdf4c56ccf968e8638c06",
+        "schedule.npy": "9a07bef1cc95b463ca4dc22304861d7787f6b967e5938187e20d9939fb6daff6",
+        "RX_partitions.npy": "a2bc44801ec46042667d924196404fc21b320e0a0feb35011dbb921e8aac6199",
+        "risks.csv": "436b9f5d49f9db78ca13ef2734dc443fac1f06cd4316cd558f957e3914d5a281",
+        "updates.csv": "f9b700364d44a7457b9e36ef4e519fe378799229b345111c9d8745f6ea0885cd"
+      }
+    },
+    {
+      "job": {
+        "dataset": "shen",
+        "backbone": "rank16",
+        "fold": 0,
+        "method": "mldg_rx",
+        "alpha": 0.01,
+        "beta": 1.0,
+        "stage": "diagnostic",
+        "seed": 20261013,
+        "lr": 0.0003,
+        "epochs": 10,
+        "run_id": "shen_rank16_CV0_mldg_rx_seed20261013_diag"
+      },
+      "run_path": "/home/keyan/code-y-r2a/outputs/receiver_r2/shen_rank16_CV0_mldg_rx_seed20261013_diag",
+      "files": {
+        "config.json": "a78bf41846ecd7061b0e193130bfa67d3a116798d81af7dd7159ab284d05ae8d",
+        "schedule.npy": "9a07bef1cc95b463ca4dc22304861d7787f6b967e5938187e20d9939fb6daff6",
+        "RX_partitions.npy": "a2bc44801ec46042667d924196404fc21b320e0a0feb35011dbb921e8aac6199",
+        "risks.csv": "586a24b53ab1813ddee3d80d41ea930fa6edf2d4257de701c3a300eb97a2f7b0",
+        "updates.csv": "bbbf231e82baaed55e83fd26e51c9252a6b7bc00cb322607b306b3a050334ea2"
+      }
+    },
+    {
+      "job": {
+        "dataset": "shen",
+        "backbone": "rank16",
+        "fold": 1,
+        "method": "ce",
+        "alpha": 0.01,
+        "beta": 1.0,
+        "stage": "diagnostic",
+        "seed": 20261013,
+        "lr": 0.0003,
+        "epochs": 10,
+        "run_id": "shen_rank16_CV1_ce_seed20261013_diag"
+      },
+      "run_path": "/home/keyan/code-y-r2a/outputs/receiver_r2/shen_rank16_CV1_ce_seed20261013_diag",
+      "files": {
+        "config.json": "649d9788d4714c96c0c3f765a2a667119551f556789802ae7fdb304ed6ee7d96",
+        "schedule.npy": "18b94f40d328e10b1416ee7d3f217f9c8634acd38cbe3ccf2d089dd3ea868b70",
+        "RX_partitions.npy": "50782d40a707185c8bf254bb32bf9cdba66dd1bd2983f337f5dd21745daa2e3e",
+        "risks.csv": "7f6570e0fc7d26e12241cb3a9fc3cec06f6f991d81a870b990f5dcd8223735c5",
+        "updates.csv": "e8ab56e95339e59b16d6d970407e3e6cf298953eb40c866060499dc8c6ed03e1"
+      }
+    },
+    {
+      "job": {
+        "dataset": "shen",
+        "backbone": "rank16",
+        "fold": 1,
+        "method": "mldg_rx",
+        "alpha": 0.01,
+        "beta": 1.0,
+        "stage": "diagnostic",
+        "seed": 20261013,
+        "lr": 0.0003,
+        "epochs": 10,
+        "run_id": "shen_rank16_CV1_mldg_rx_seed20261013_diag"
+      },
+      "run_path": "/home/keyan/code-y-r2a/outputs/receiver_r2/shen_rank16_CV1_mldg_rx_seed20261013_diag",
+      "files": {
+        "config.json": "a54d521d270d056f5db28be59b75126a15b848c02ceadf976b71569b05bdd61a",
+        "schedule.npy": "18b94f40d328e10b1416ee7d3f217f9c8634acd38cbe3ccf2d089dd3ea868b70",
+        "RX_partitions.npy": "50782d40a707185c8bf254bb32bf9cdba66dd1bd2983f337f5dd21745daa2e3e",
+        "risks.csv": "9b9db454c5ab62f4da9f2df1b6d00268093903e902ad6759337cd585a685adf7",
+        "updates.csv": "c0039255abe9d0495a7cdf2e336a1bd471cd8edf1d67261be88e56984ec33654"
+      }
+    }
+  ],
+  "analysis": "exploratory; C2 previously used; no independent blind-test claim",
+  "primary_mode": "eval; frozen finite scales1/.5/.25/0 and original noise constant2",
+  "RX_transfer": "WiSig all6 directed2/2 partitions of4 C RX; Shen both directed1/1 partitions of2 C RX",
+  "date_transfer": "WiSig both date0->1 and1->0; sameRX and disjointRX cases; no date2/3 numerical loading",
+  "same_RX": "all original C1 RX compared with same RX C2; also perRX",
+  "policies": [
+    "always_full",
+    "fixed_half",
+    "mean_source_backtracking",
+    "multi_RX_guard"
+  ],
+  "C2_usage": "remeasure only; never selects scale/constant/proposal",
+  "errors": "raw and above-noise false accepted harm; false rejection of full step whose C2 mean is below minus noise; target worstRX delta; no harmful zero-step optimum claim",
+  "dependence": "one seed per diagnostic method; reciprocal splits/date cases share snapshots; report trajectory/phase/RX strata, lag1 and first differences; no80-independent-samples CI",
+  "conditional_C1_plan": {
+    "formal_fits": 18,
+    "methods": [
+      "mldg",
+      "mean_backtracking",
+      "multi_RX_guard"
+    ],
+    "datasets": [
+      "wisig",
+      "shen_fold0"
+    ],
+    "paired_seeds": [
+      20261013,
+      20261014,
+      20261015
+    ],
+    "fold_rule": "numeric fold0 specified before C0 outcomes; no performance selection",
+    "horizon_proposed_source_protocol": {
+      "wisig": 200,
+      "shen": 20
+    },
+    "authorized": false
+  },
+  "timing_only": {
+    "datasets": [
+      "wisig",
+      "shen_fold0"
+    ],
+    "snapshot_epochs": {
+      "wisig": [
+        1,
+        10,
+        20
+      ],
+      "shen": [
+        1,
+        5,
+        10
+      ]
+    },
+    "GPU_cards": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "mechanisms": [
+      "standard",
+      "legacy_mean",
+      "legacy_multi",
+      "optimized_mean",
+      "optimized_multi"
+    ],
+    "update_repeats": 1,
+    "continuous_trajectory_steps": 0,
+    "reset_before_every_measurement": true,
+    "engineering_GPU_reservation_watchdog_seconds": 360,
+    "formal_training_budget_reusable": false
+  },
+  "historical_54_fit_matrix_authorized": false
+}

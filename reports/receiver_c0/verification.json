@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "historical_tracked_files_unchanged": true,
+  "prior_R2_A_B_inputs_verified": 30,
+  "original_input_assets_hashed": 112,
+  "actual_snapshots": 80,
+  "independent_transfer_choices_recomputed": 4800,
+  "source_target_RX_disjoint_verified": true,
+  "source_target_dates_disjoint_verified": true,
+  "all_decisions_source_C1_only": true,
+  "four_GPU_equivalence_cases": 24,
+  "conditional_plan_inactive": true,
+  "formal_fits": 0,
+  "final_data_read": false,
+  "engineering_reserved_GPUh": 0.07311376312111154
+}

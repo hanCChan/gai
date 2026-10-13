@@ -141,3 +141,25 @@ Future fairness-plan amendment only: matched CE and matched SWAD supplement
 the four MLDG controls, yielding an inactive six-arm54-fit R2-C proposal.
 This supersedes only the initial45-fit planning count. No controller-rule
 change, new training or remaining-allocation reuse is authorized.
+
+## Latest user instruction: R2-C0 cross-RX audit
+
+The new review and 按照方案继续执行 authorize the isolated aaa45ea-based
+C0 CPU snapshot transfer audit, unchanged-rule execution optimization and
+disposable controlled-step timing. Do not alter R2-A/B source, constants,
+reports or decisions. No18/54-fit training or final data is authorized.
+Use docs/receiver_c0/EXECUTION_PLAN.md and its frozen registration. Shen fold0
+is specified before outcomes for any conditional future18-fit proposal.
+Publish this audit with complete remote SHA/report readback, then stop before
+any formal fit; a new budget is required for R2-C1.
+
+R2-C0 completed and stopped:80 existing snapshots,0 formal fits or continuous
+training trajectories; four-card disposable-step engineering reservation
+0.07311376312111154 GPUh (168 reset Adam steps, not fitted models).
+Independent verification passed for4800 C1-only decisions,112 input assets,
+30 historical evidence files and24 four-card equivalence cases.
+Decision MODIFY_CONTINUE_RESEARCH: WiSig frozen crossRX harm detection is
+chance-level; Shen has partial source signal, but1/1 multi guard equals mean.
+No18/54-fit matrix has been activated, approved or budget-requested.
+Conditional18-fit forecast12.2066 GPUh, suggested14 cap remains inactive.
+Publish/verify complete C0 audit and protocol, then stop before training.

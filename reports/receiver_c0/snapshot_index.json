@@ -1,0 +1,1126 @@
+{
+  "snapshots": [
+    {
+      "run_id": "wisig_official_CV0_ce_seed20261013_diag",
+      "dataset": "wisig",
+      "method": "ce",
+      "fold": 0,
+      "epoch": 1,
+      "sha256": "4e246b6268537eeb08a578dd44a3f7021c5b2df1483f05e1839005c5a058eda7",
+      "private_state_bytes": 1907084,
+      "C_RX": [
+        2,
+        7,
+        10,
+        30
+      ]
+    },
+    {
+      "run_id": "wisig_official_CV0_ce_seed20261013_diag",
+      "dataset": "wisig",
+      "method": "ce",
+      "fold": 0,
+      "epoch": 2,
+      "sha256": "da4214fcf6e2b6db6d0f2ec4702feca39ef6151501c5baed77359b38ded862a9",
+      "private_state_bytes": 2242908,
+      "C_RX": [
+        6,
+        13,
+        28,
+        30
+      ]
+    },
+    {
+      "run_id": "wisig_official_CV0_ce_seed20261013_diag",
+      "dataset": "wisig",
+      "method": "ce",
+      "fold": 0,
+      "epoch": 3,
+      "sha256": "1fe984873e245dc6d2b90b02ac3c6a39b19e1b813e77b0b80a847e85d247fd35",
+      "private_state_bytes": 2243484,
+      "C_RX": [
+        1,
+        7,
+        16,
+        28
+      ]
+    },
+    {
+      "run_id": "wisig_official_CV0_ce_seed20261013_diag",
+      "dataset": "wisig",
+      "method": "ce",
+      "fold": 0,
+      "epoch": 4,
+      "sha256": "3418dd5edb4ebce67bb73ca5df70e0593428d9a4ddd84848789fb38d56e29424",
+      "private_state_bytes": 2272412,
+      "C_RX": [
+        2,
+        22,
+        28,
+        30
+      ]
+    },
+    {
+      "run_id": "wisig_official_CV0_ce_seed20261013_diag",
+      "dataset": "wisig",
+      "method": "ce",
+      "fold": 0,
+      "epoch": 5,
+      "sha256": "91d967e1ba775ab11006796b1fafcf0917f6f9fef005485f9dd50b61f9017caa",
+      "private_state_bytes": 2278492,
+      "C_RX": [
+        1,
+        12,
+        26,
+        31
+      ]
+    },
+    {
+      "run_id": "wisig_official_CV0_ce_seed20261013_diag",
+      "dataset": "wisig",
+      "method": "ce",
+      "fold": 0,
+      "epoch": 6,
+      "sha256": "6005d893246b715d78cb637024e3b080319e647bf916247513706f8e1a00cb56",
+      "private_state_bytes": 2283676,
+      "C_RX": [
+        5,
+        7,
+        22,
+        26
+      ]
+    },
+    {
+      "run_id": "wisig_official_CV0_ce_seed20261013_diag",
+      "dataset": "wisig",
+      "method": "ce",
+      "fold": 0,
+      "epoch": 7,
+      "sha256": "3fb69e6e6fb5ce1fa9844755af36d1214a440b8f8929ef0f48eac7f4b58d7caf",
+      "private_state_bytes": 2285980,
+      "C_RX": [
+        16,
+        26,
+        30,
+        31
+      ]
+    },
+    {
+      "run_id": "wisig_official_CV0_ce_seed20261013_diag",
+      "dataset": "wisig",
+      "method": "ce",
+      "fold": 0,
+      "epoch": 8,
+      "sha256": "f67e44333ef257520e72c4e8b6ed0ba56614f96235bf9a08d3c37e472a3600a5",
+      "private_state_bytes": 2291292,
+      "C_RX": [
+        12,
+        13,
+        16,
+        28
+      ]
+    },
+    {
+      "run_id": "wisig_official_CV0_ce_seed20261013_diag",
+      "dataset": "wisig",
+      "method": "ce",
+      "fold": 0,
+      "epoch": 9,
+      "sha256": "bd495319d554f373169a75121c22543a2cdd7f703bf7f83a1c2fac836254569d",
+      "private_state_bytes": 2290204,
+      "C_RX": [
+        1,
+        2,
+        22,
+        30
+      ]
+    },
+    {
+      "run_id": "wisig_official_CV0_ce_seed20261013_diag",
+      "dataset": "wisig",
+      "method": "ce",
+      "fold": 0,
+      "epoch": 10,
+      "sha256": "ef7e1e96853a0a6491e260407100b5b501b735805d58b970c65090c16612d419",
+      "private_state_bytes": 2294172,
+      "C_RX": [
+        1,
+        22,
+        26,
+        28
+      ]
+    },
+    {
+      "run_id": "wisig_official_CV0_ce_seed20261013_diag",
+      "dataset": "wisig",
+      "method": "ce",
+      "fold": 0,
+      "epoch": 11,
+      "sha256": "01edad8b49131bbbd5681a70713b0ac75452866286b961a52df51fd9d2e40176",
+      "private_state_bytes": 2291548,
+      "C_RX": [
+        1,
+        6,
+        30,
+        31
+      ]
+    },
+    {
+      "run_id": "wisig_official_CV0_ce_seed20261013_diag",
+      "dataset": "wisig",
+      "method": "ce",
+      "fold": 0,
+      "epoch": 12,
+      "sha256": "6961044a5bad07d5d9d51e3a26af834933fce7e593989fce876dbe4ef557032b",
+      "private_state_bytes": 2293532,
+      "C_RX": [
+        1,
+        2,
+        16,
+        30
+      ]
+    },
+    {
+      "run_id": "wisig_official_CV0_ce_seed20261013_diag",
+      "dataset": "wisig",
+      "method": "ce",
+      "fold": 0,
+      "epoch": 13,
+      "sha256": "92e028a6b61bea8ea1ba148cc17a8f614870e9bc8a736f847db37487f25bf36e",
+      "private_state_bytes": 2293468,
+      "C_RX": [
+        7,
+        13,
+        26,
+        31
+      ]
+    },
+    {
+      "run_id": "wisig_official_CV0_ce_seed20261013_diag",
+      "dataset": "wisig",
+      "method": "ce",
+      "fold": 0,
+      "epoch": 14,
+      "sha256": "25219fe746c7a78a25326010e9de52a52a9b05b3caf8f2907b6a4210e12e535c",
+      "private_state_bytes": 2292060,
+      "C_RX": [
+        16,
+        22,
+        28,
+        30
+      ]
+    },
+    {
+      "run_id": "wisig_official_CV0_ce_seed20261013_diag",
+      "dataset": "wisig",
+      "method": "ce",
+      "fold": 0,
+      "epoch": 15,
+      "sha256": "b7eb607518b11bc67af1ed29c701518dbe5d99e710e8154d34b73b33ce391c1f",
+      "private_state_bytes": 2290716,
+      "C_RX": [
+        1,
+        5,
+        7,
+        12
+      ]
+    },
+    {
+      "run_id": "wisig_official_CV0_ce_seed20261013_diag",
+      "dataset": "wisig",
+      "method": "ce",
+      "fold": 0,
+      "epoch": 16,
+      "sha256": "26ca6129e84122b91733c809491be8331c69c7b9f1b11896153cc5fef9c389e8",
+      "private_state_bytes": 2295260,
+      "C_RX": [
+        5,
+        10,
+        26,
+        31
+      ]
+    },
+    {
+      "run_id": "wisig_official_CV0_ce_seed20261013_diag",
+      "dataset": "wisig",
+      "method": "ce",
+      "fold": 0,
+      "epoch": 17,
+      "sha256": "9017d77f907ab72d65da33fe60506523063eecbf879e13e60906feb4bfeca48e",
+      "private_state_bytes": 2298588,
+      "C_RX": [
+        2,
+        10,
+        26,
+        28
+      ]
+    },
+    {
+      "run_id": "wisig_official_CV0_ce_seed20261013_diag",
+      "dataset": "wisig",
+      "method": "ce",
+      "fold": 0,
+      "epoch": 18,
+      "sha256": "d36f90f1d6e9b014a7e98e6e06514e38bc4ed39cdf343f287cea773c4d1ed310",
+      "private_state_bytes": 2291484,
+      "C_RX": [
+        7,
+        16,
+        26,
+        30
+      ]
+    },
+    {
+      "run_id": "wisig_official_CV0_ce_seed20261013_diag",
+      "dataset": "wisig",
+      "method": "ce",
+      "fold": 0,
+      "epoch": 19,
+      "sha256": "32eebfeb253d12fac54a4e6805caebf8b3423a1c816958b44cb4a70256ea2618",
+      "private_state_bytes": 2297244,
+      "C_RX": [
+        6,
+        7,
+        28,
+        31
+      ]
+    },
+    {
+      "run_id": "wisig_official_CV0_ce_seed20261013_diag",
+      "dataset": "wisig",
+      "method": "ce",
+      "fold": 0,
+      "epoch": 20,
+      "sha256": "a2974ac4a9b2ece163fb67962f4a54da960a2b68977896c1c1d8c931598fe58f",
+      "private_state_bytes": 2293660,
+      "C_RX": [
+        1,
+        2,
+        12,
+        28
+      ]
+    },
+    {
+      "run_id": "wisig_official_CV0_mldg_rx_date_seed20261013_diag",
+      "dataset": "wisig",
+      "method": "mldg_rx_date",
+      "fold": 0,
+      "epoch": 1,
+      "sha256": "c8870f36f3a02b629433ba382ffbedd8d233791582a3c06d8d1915a7bbe2bd75",
+      "private_state_bytes": 1908812,
+      "C_RX": [
+        2,
+        7,
+        10,
+        30
+      ]
+    },
+    {
+      "run_id": "wisig_official_CV0_mldg_rx_date_seed20261013_diag",
+      "dataset": "wisig",
+      "method": "mldg_rx_date",
+      "fold": 0,
+      "epoch": 2,
+      "sha256": "923c325b7582bbcd0ae86bbe4d5de5f2c3ba240e55fd0c6671ab5846d9380b88",
+      "private_state_bytes": 2242780,
+      "C_RX": [
+        6,
+        13,
+        28,
+        30
+      ]
+    },
+    {
+      "run_id": "wisig_official_CV0_mldg_rx_date_seed20261013_diag",
+      "dataset": "wisig",
+      "method": "mldg_rx_date",
+      "fold": 0,
+      "epoch": 3,
+      "sha256": "8c7b32f03cc8ab41147d230f9c7609fd58ca3663d7b27752b86f699417accf51",
+      "private_state_bytes": 2246428,
+      "C_RX": [
+        1,
+        7,
+        16,
+        28
+      ]
+    },
+    {
+      "run_id": "wisig_official_CV0_mldg_rx_date_seed20261013_diag",
+      "dataset": "wisig",
+      "method": "mldg_rx_date",
+      "fold": 0,
+      "epoch": 4,
+      "sha256": "6c0e1509b4d8414fbdef2f940c6b55d25c60f0574a3ffa6669e0f5bd8252af2c",
+      "private_state_bytes": 2273948,
+      "C_RX": [
+        2,
+        22,
+        28,
+        30
+      ]
+    },
+    {
+      "run_id": "wisig_official_CV0_mldg_rx_date_seed20261013_diag",
+      "dataset": "wisig",
+      "method": "mldg_rx_date",
+      "fold": 0,
+      "epoch": 5,
+      "sha256": "db5a6c2be18ee89621c1bb399f9fabacc23d689c4d206c2c4aa73f50b52743b9",
+      "private_state_bytes": 2280092,
+      "C_RX": [
+        1,
+        12,
+        26,
+        31
+      ]
+    },
+    {
+      "run_id": "wisig_official_CV0_mldg_rx_date_seed20261013_diag",
+      "dataset": "wisig",
+      "method": "mldg_rx_date",
+      "fold": 0,
+      "epoch": 6,
+      "sha256": "e5ec16d203bdbdfe5b1aa655a91987dad129ee457c320f5b7ddd4a1a2d966e55",
+      "private_state_bytes": 2281820,
+      "C_RX": [
+        5,
+        7,
+        22,
+        26
+      ]
+    },
+    {
+      "run_id": "wisig_official_CV0_mldg_rx_date_seed20261013_diag",
+      "dataset": "wisig",
+      "method": "mldg_rx_date",
+      "fold": 0,
+      "epoch": 7,
+      "sha256": "c65c6b5257e11aedeb6857eacba489753b3d4335b146185c7fcdedcf4304c467",
+      "private_state_bytes": 2278300,
+      "C_RX": [
+        16,
+        26,
+        30,
+        31
+      ]
+    },
+    {
+      "run_id": "wisig_official_CV0_mldg_rx_date_seed20261013_diag",
+      "dataset": "wisig",
+      "method": "mldg_rx_date",
+      "fold": 0,
+      "epoch": 8,
+      "sha256": "ce27de8c01755c7372fd9627aa6b978aace30e50ab45adff9bb1c7317863198b",
+      "private_state_bytes": 2283036,
+      "C_RX": [
+        12,
+        13,
+        16,
+        28
+      ]
+    },
+    {
+      "run_id": "wisig_official_CV0_mldg_rx_date_seed20261013_diag",
+      "dataset": "wisig",
+      "method": "mldg_rx_date",
+      "fold": 0,
+      "epoch": 9,
+      "sha256": "aee1bc99f12f5b7d2e100c974ba214de9d99641b0cb4e1ca0779d8adf197080d",
+      "private_state_bytes": 2290716,
+      "C_RX": [
+        1,
+        2,
+        22,
+        30
+      ]
+    },
+    {
+      "run_id": "wisig_official_CV0_mldg_rx_date_seed20261013_diag",
+      "dataset": "wisig",
+      "method": "mldg_rx_date",
+      "fold": 0,
+      "epoch": 10,
+      "sha256": "6bb9503f8f6958fc9ea23268a8f590ece1731b5dbf10a24647cd79ec4f9e8016",
+      "private_state_bytes": 2292828,
+      "C_RX": [
+        1,
+        22,
+        26,
+        28
+      ]
+    },
+    {
+      "run_id": "wisig_official_CV0_mldg_rx_date_seed20261013_diag",
+      "dataset": "wisig",
+      "method": "mldg_rx_date",
+      "fold": 0,
+      "epoch": 11,
+      "sha256": "ce61026525cecff43c3aa36afcdb40ad3af3ddfd97a4ae41cc7b7992b23690cb",
+      "private_state_bytes": 2286364,
+      "C_RX": [
+        1,
+        6,
+        30,
+        31
+      ]
+    },
+    {
+      "run_id": "wisig_official_CV0_mldg_rx_date_seed20261013_diag",
+      "dataset": "wisig",
+      "method": "mldg_rx_date",
+      "fold": 0,
+      "epoch": 12,
+      "sha256": "e04fbde9b9e76284fd1b7cca58501f80f142eccc590a4f505d93f66ccd2c4249",
+      "private_state_bytes": 2291996,
+      "C_RX": [
+        1,
+        2,
+        16,
+        30
+      ]
+    },
+    {
+      "run_id": "wisig_official_CV0_mldg_rx_date_seed20261013_diag",
+      "dataset": "wisig",
+      "method": "mldg_rx_date",
+      "fold": 0,
+      "epoch": 13,
+      "sha256": "54c63311e876e6da511b6f503ecef37964781bcc8dc9b4c0b6ddafade62bc9fb",
+      "private_state_bytes": 2295132,
+      "C_RX": [
+        7,
+        13,
+        26,
+        31
+      ]
+    },
+    {
+      "run_id": "wisig_official_CV0_mldg_rx_date_seed20261013_diag",
+      "dataset": "wisig",
+      "method": "mldg_rx_date",
+      "fold": 0,
+      "epoch": 14,
+      "sha256": "89dddabb850921002e08ed3998dff12730b54948d53e5fdc25f7f523487ead0a",
+      "private_state_bytes": 2289628,
+      "C_RX": [
+        16,
+        22,
+        28,
+        30
+      ]
+    },
+    {
+      "run_id": "wisig_official_CV0_mldg_rx_date_seed20261013_diag",
+      "dataset": "wisig",
+      "method": "mldg_rx_date",
+      "fold": 0,
+      "epoch": 15,
+      "sha256": "d9e37ae4667d336d14bf4c42481ad383d5ac3103efe27003e818bc4329525956",
+      "private_state_bytes": 2290588,
+      "C_RX": [
+        1,
+        5,
+        7,
+        12
+      ]
+    },
+    {
+      "run_id": "wisig_official_CV0_mldg_rx_date_seed20261013_diag",
+      "dataset": "wisig",
+      "method": "mldg_rx_date",
+      "fold": 0,
+      "epoch": 16,
+      "sha256": "ca73d8720627626d9659cbd4a19aae5a00f2358ec6465eca25c27a0b8fd72f7d",
+      "private_state_bytes": 2295772,
+      "C_RX": [
+        5,
+        10,
+        26,
+        31
+      ]
+    },
+    {
+      "run_id": "wisig_official_CV0_mldg_rx_date_seed20261013_diag",
+      "dataset": "wisig",
+      "method": "mldg_rx_date",
+      "fold": 0,
+      "epoch": 17,
+      "sha256": "36119486970d5353ac8e8fae3fb2e380147a99abea796f9b393045351c991eb9",
+      "private_state_bytes": 2288540,
+      "C_RX": [
+        2,
+        10,
+        26,
+        28
+      ]
+    },
+    {
+      "run_id": "wisig_official_CV0_mldg_rx_date_seed20261013_diag",
+      "dataset": "wisig",
+      "method": "mldg_rx_date",
+      "fold": 0,
+      "epoch": 18,
+      "sha256": "7b804b815581188f21c1efff53c152f7a570b773b5d96189663f79620046c4f5",
+      "private_state_bytes": 2294620,
+      "C_RX": [
+        7,
+        16,
+        26,
+        30
+      ]
+    },
+    {
+      "run_id": "wisig_official_CV0_mldg_rx_date_seed20261013_diag",
+      "dataset": "wisig",
+      "method": "mldg_rx_date",
+      "fold": 0,
+      "epoch": 19,
+      "sha256": "dbf89b50d92d3b8a6ca62190e20e146e2fe4d6dcab5487f8035b8ba219ee9fca",
+      "private_state_bytes": 2291868,
+      "C_RX": [
+        6,
+        7,
+        28,
+        31
+      ]
+    },
+    {
+      "run_id": "wisig_official_CV0_mldg_rx_date_seed20261013_diag",
+      "dataset": "wisig",
+      "method": "mldg_rx_date",
+      "fold": 0,
+      "epoch": 20,
+      "sha256": "d934a43f47c3a3a28b73c9c890f3f75052cb0bc342a21c3bc8d3ef7058ad8081",
+      "private_state_bytes": 2286492,
+      "C_RX": [
+        1,
+        2,
+        12,
+        28
+      ]
+    },
+    {
+      "run_id": "shen_rank16_CV0_ce_seed20261013_diag",
+      "dataset": "shen",
+      "method": "ce",
+      "fold": 0,
+      "epoch": 1,
+      "sha256": "841ad9175862e43382112df76d8d1762f07f01adc0fd376afea3e2166aa148ce",
+      "private_state_bytes": 16131995,
+      "C_RX": [
+        1,
+        3
+      ]
+    },
+    {
+      "run_id": "shen_rank16_CV0_ce_seed20261013_diag",
+      "dataset": "shen",
+      "method": "ce",
+      "fold": 0,
+      "epoch": 2,
+      "sha256": "0e14fe3e1c90ea7f7eac6dac6e6502f01b71453830918564a964e9c85b157ee4",
+      "private_state_bytes": 21438102,
+      "C_RX": [
+        5,
+        7
+      ]
+    },
+    {
+      "run_id": "shen_rank16_CV0_ce_seed20261013_diag",
+      "dataset": "shen",
+      "method": "ce",
+      "fold": 0,
+      "epoch": 3,
+      "sha256": "ac5c6a3f29e67f9c839d49f0d462bd28214af035200e232cd33c89768a60347f",
+      "private_state_bytes": 21431382,
+      "C_RX": [
+        5,
+        9
+      ]
+    },
+    {
+      "run_id": "shen_rank16_CV0_ce_seed20261013_diag",
+      "dataset": "shen",
+      "method": "ce",
+      "fold": 0,
+      "epoch": 4,
+      "sha256": "5fea02ed61de1d44ef6f4a1d188b078524b69687f8e1636d70e3432891fa8e7c",
+      "private_state_bytes": 21429270,
+      "C_RX": [
+        7,
+        9
+      ]
+    },
+    {
+      "run_id": "shen_rank16_CV0_ce_seed20261013_diag",
+      "dataset": "shen",
+      "method": "ce",
+      "fold": 0,
+      "epoch": 5,
+      "sha256": "d2d6555cac00ec94dda75c630807f3cc3ad9b8e4e22d58fae0c453ed5c0e448c",
+      "private_state_bytes": 21429590,
+      "C_RX": [
+        1,
+        7
+      ]
+    },
+    {
+      "run_id": "shen_rank16_CV0_ce_seed20261013_diag",
+      "dataset": "shen",
+      "method": "ce",
+      "fold": 0,
+      "epoch": 6,
+      "sha256": "9ecbfa506f877f80a0dab97fbf5c75f4fe027a55a593e29215b7eba780a332fe",
+      "private_state_bytes": 21427606,
+      "C_RX": [
+        5,
+        9
+      ]
+    },
+    {
+      "run_id": "shen_rank16_CV0_ce_seed20261013_diag",
+      "dataset": "shen",
+      "method": "ce",
+      "fold": 0,
+      "epoch": 7,
+      "sha256": "490c7ab51815d207a1b2ecf81978415c5f865188e7f75c56a2aa50ec70d93c29",
+      "private_state_bytes": 21430102,
+      "C_RX": [
+        3,
+        7
+      ]
+    },
+    {
+      "run_id": "shen_rank16_CV0_ce_seed20261013_diag",
+      "dataset": "shen",
+      "method": "ce",
+      "fold": 0,
+      "epoch": 8,
+      "sha256": "ed236073c8f30adc9f748c323894c67fee1b3e476671d00d8b416629f0d696ad",
+      "private_state_bytes": 21429014,
+      "C_RX": [
+        1,
+        3
+      ]
+    },
+    {
+      "run_id": "shen_rank16_CV0_ce_seed20261013_diag",
+      "dataset": "shen",
+      "method": "ce",
+      "fold": 0,
+      "epoch": 9,
+      "sha256": "43263e175af763b2483e300ecf0eb19671b28c7d28bf4f0778ce21ec04ac2a04",
+      "private_state_bytes": 21428246,
+      "C_RX": [
+        5,
+        9
+      ]
+    },
+    {
+      "run_id": "shen_rank16_CV0_ce_seed20261013_diag",
+      "dataset": "shen",
+      "method": "ce",
+      "fold": 0,
+      "epoch": 10,
+      "sha256": "1456898ff8328cd8368c3b3576285e9f8f772f144b25263e7497710d758c1309",
+      "private_state_bytes": 21429974,
+      "C_RX": [
+        3,
+        5
+      ]
+    },
+    {
+      "run_id": "shen_rank16_CV0_mldg_rx_seed20261013_diag",
+      "dataset": "shen",
+      "method": "mldg_rx",
+      "fold": 0,
+      "epoch": 1,
+      "sha256": "bda35a48fdf7bdd2ae5693c1d8c4a5b38837b2cb9e94dd5ef59e38cc4152f472",
+      "private_state_bytes": 16133019,
+      "C_RX": [
+        1,
+        3
+      ]
+    },
+    {
+      "run_id": "shen_rank16_CV0_mldg_rx_seed20261013_diag",
+      "dataset": "shen",
+      "method": "mldg_rx",
+      "fold": 0,
+      "epoch": 2,
+      "sha256": "4852ba096e32dd9bc13cab7f39c9a7c675ef673b97a18415229d31dbc4781995",
+      "private_state_bytes": 21435286,
+      "C_RX": [
+        5,
+        7
+      ]
+    },
+    {
+      "run_id": "shen_rank16_CV0_mldg_rx_seed20261013_diag",
+      "dataset": "shen",
+      "method": "mldg_rx",
+      "fold": 0,
+      "epoch": 3,
+      "sha256": "3002ff7c2c2a267cb17693b88a6bb22093efd703cf34f795332b43ffdc6b4c9b",
+      "private_state_bytes": 21436310,
+      "C_RX": [
+        5,
+        9
+      ]
+    },
+    {
+      "run_id": "shen_rank16_CV0_mldg_rx_seed20261013_diag",
+      "dataset": "shen",
+      "method": "mldg_rx",
+      "fold": 0,
+      "epoch": 4,
+      "sha256": "dbb2956757c3c4d881b9b750aec6bde98ab73143ac4b22c63e7e87bc79933582",
+      "private_state_bytes": 21433174,
+      "C_RX": [
+        7,
+        9
+      ]
+    },
+    {
+      "run_id": "shen_rank16_CV0_mldg_rx_seed20261013_diag",
+      "dataset": "shen",
+      "method": "mldg_rx",
+      "fold": 0,
+      "epoch": 5,
+      "sha256": "0733cd5e24666168b1e41ce6827d229c0449129af20e9852fd8411db4230335d",
+      "private_state_bytes": 21432982,
+      "C_RX": [
+        1,
+        7
+      ]
+    },
+    {
+      "run_id": "shen_rank16_CV0_mldg_rx_seed20261013_diag",
+      "dataset": "shen",
+      "method": "mldg_rx",
+      "fold": 0,
+      "epoch": 6,
+      "sha256": "35400c9bee4611cfb633a8ad690f20cad596ba8d368399a73bf682b9bb900547",
+      "private_state_bytes": 21429398,
+      "C_RX": [
+        5,
+        9
+      ]
+    },
+    {
+      "run_id": "shen_rank16_CV0_mldg_rx_seed20261013_diag",
+      "dataset": "shen",
+      "method": "mldg_rx",
+      "fold": 0,
+      "epoch": 7,
+      "sha256": "f11daacdfa889d09341534564b781c93053605c0a761272eaf56c21cbcddd262",
+      "private_state_bytes": 21431638,
+      "C_RX": [
+        3,
+        7
+      ]
+    },
+    {
+      "run_id": "shen_rank16_CV0_mldg_rx_seed20261013_diag",
+      "dataset": "shen",
+      "method": "mldg_rx",
+      "fold": 0,
+      "epoch": 8,
+      "sha256": "f0a3c4229c9d983d942559f2f3bf5d90c85f987950cf679e77f2bfe9b1e75fa4",
+      "private_state_bytes": 21427478,
+      "C_RX": [
+        1,
+        3
+      ]
+    },
+    {
+      "run_id": "shen_rank16_CV0_mldg_rx_seed20261013_diag",
+      "dataset": "shen",
+      "method": "mldg_rx",
+      "fold": 0,
+      "epoch": 9,
+      "sha256": "a64fae9ff77f0062b194f320fb02b417022361fdaa56a475f4e07c9b5f23d90e",
+      "private_state_bytes": 21427734,
+      "C_RX": [
+        5,
+        9
+      ]
+    },
+    {
+      "run_id": "shen_rank16_CV0_mldg_rx_seed20261013_diag",
+      "dataset": "shen",
+      "method": "mldg_rx",
+      "fold": 0,
+      "epoch": 10,
+      "sha256": "6f226bbf4bee9c451a9a00a1ce412bcefe3f31b7dee9ee0d711b8abaff53adca",
+      "private_state_bytes": 21431126,
+      "C_RX": [
+        3,
+        5
+      ]
+    },
+    {
+      "run_id": "shen_rank16_CV1_ce_seed20261013_diag",
+      "dataset": "shen",
+      "method": "ce",
+      "fold": 1,
+      "epoch": 1,
+      "sha256": "d9af22ff1b86464ac11c78f0d9d06c1831b7156a0e51ec11a2d4e36756a94b59",
+      "private_state_bytes": 16130203,
+      "C_RX": [
+        0,
+        2
+      ]
+    },
+    {
+      "run_id": "shen_rank16_CV1_ce_seed20261013_diag",
+      "dataset": "shen",
+      "method": "ce",
+      "fold": 1,
+      "epoch": 2,
+      "sha256": "c397e76f594ba622a387c3802778abd687190fcafb15ebb06d9b5bf605e1ebfd",
+      "private_state_bytes": 21438102,
+      "C_RX": [
+        4,
+        6
+      ]
+    },
+    {
+      "run_id": "shen_rank16_CV1_ce_seed20261013_diag",
+      "dataset": "shen",
+      "method": "ce",
+      "fold": 1,
+      "epoch": 3,
+      "sha256": "9e70d5abe56770ac545cd6858a8f077d19b2d43a8ad624840e18e1bc56975277",
+      "private_state_bytes": 21433366,
+      "C_RX": [
+        4,
+        8
+      ]
+    },
+    {
+      "run_id": "shen_rank16_CV1_ce_seed20261013_diag",
+      "dataset": "shen",
+      "method": "ce",
+      "fold": 1,
+      "epoch": 4,
+      "sha256": "2a3cddc2ac4a60271aa889d407a8b4b670fe5b7809c1d9991e7117904f08337f",
+      "private_state_bytes": 21432470,
+      "C_RX": [
+        6,
+        8
+      ]
+    },
+    {
+      "run_id": "shen_rank16_CV1_ce_seed20261013_diag",
+      "dataset": "shen",
+      "method": "ce",
+      "fold": 1,
+      "epoch": 5,
+      "sha256": "72b5f8593874e258699c8dab56ee52a106bcc4606b874f48a6f677d1787b7abf",
+      "private_state_bytes": 21432406,
+      "C_RX": [
+        0,
+        6
+      ]
+    },
+    {
+      "run_id": "shen_rank16_CV1_ce_seed20261013_diag",
+      "dataset": "shen",
+      "method": "ce",
+      "fold": 1,
+      "epoch": 6,
+      "sha256": "dbff65d499118583942dc5170b465502e8a7201c10a5ec886ddaa37598133008",
+      "private_state_bytes": 21429398,
+      "C_RX": [
+        4,
+        8
+      ]
+    },
+    {
+      "run_id": "shen_rank16_CV1_ce_seed20261013_diag",
+      "dataset": "shen",
+      "method": "ce",
+      "fold": 1,
+      "epoch": 7,
+      "sha256": "07af8dafd56c06b3f034e9d3349f8de27528b78334a5a3981cdb841c2e74526a",
+      "private_state_bytes": 21427670,
+      "C_RX": [
+        2,
+        6
+      ]
+    },
+    {
+      "run_id": "shen_rank16_CV1_ce_seed20261013_diag",
+      "dataset": "shen",
+      "method": "ce",
+      "fold": 1,
+      "epoch": 8,
+      "sha256": "4c12d9f75dcb03c5969c1e0d525483c5011e830d65454c7984ff4bcbc144c1c9",
+      "private_state_bytes": 21427606,
+      "C_RX": [
+        0,
+        2
+      ]
+    },
+    {
+      "run_id": "shen_rank16_CV1_ce_seed20261013_diag",
+      "dataset": "shen",
+      "method": "ce",
+      "fold": 1,
+      "epoch": 9,
+      "sha256": "1c184fff57b4a7949dc7695f44b8033f1f4e94a391c63a2a0cd25a23983304b4",
+      "private_state_bytes": 21428566,
+      "C_RX": [
+        4,
+        8
+      ]
+    },
+    {
+      "run_id": "shen_rank16_CV1_ce_seed20261013_diag",
+      "dataset": "shen",
+      "method": "ce",
+      "fold": 1,
+      "epoch": 10,
+      "sha256": "fc1afcee0b9ecbd8c6d061e71044698fb72a8a08eb65e94f70a09c355ea93c79",
+      "private_state_bytes": 21428950,
+      "C_RX": [
+        2,
+        4
+      ]
+    },
+    {
+      "run_id": "shen_rank16_CV1_mldg_rx_seed20261013_diag",
+      "dataset": "shen",
+      "method": "mldg_rx",
+      "fold": 1,
+      "epoch": 1,
+      "sha256": "e7fe7c6d32d1f109d2b278f86dde2fcf668d0e4c9501da7cd085e6843fff32c6",
+      "private_state_bytes": 16130459,
+      "C_RX": [
+        0,
+        2
+      ]
+    },
+    {
+      "run_id": "shen_rank16_CV1_mldg_rx_seed20261013_diag",
+      "dataset": "shen",
+      "method": "mldg_rx",
+      "fold": 1,
+      "epoch": 2,
+      "sha256": "7fca915083845f062b9175d0b9678cf9ed5daedc29ad65dc0bf5cd617705351b",
+      "private_state_bytes": 21435094,
+      "C_RX": [
+        4,
+        6
+      ]
+    },
+    {
+      "run_id": "shen_rank16_CV1_mldg_rx_seed20261013_diag",
+      "dataset": "shen",
+      "method": "mldg_rx",
+      "fold": 1,
+      "epoch": 3,
+      "sha256": "88b15cd04bf0bf19dae4b7926ca464b6dcb49f478e570cc9db1721b6f8eab713",
+      "private_state_bytes": 21434518,
+      "C_RX": [
+        4,
+        8
+      ]
+    },
+    {
+      "run_id": "shen_rank16_CV1_mldg_rx_seed20261013_diag",
+      "dataset": "shen",
+      "method": "mldg_rx",
+      "fold": 1,
+      "epoch": 4,
+      "sha256": "bf7c2797ad3fc7a30449650f922939f2bf847ca7aa003023e9dd681d42368d47",
+      "private_state_bytes": 21434006,
+      "C_RX": [
+        6,
+        8
+      ]
+    },
+    {
+      "run_id": "shen_rank16_CV1_mldg_rx_seed20261013_diag",
+      "dataset": "shen",
+      "method": "mldg_rx",
+      "fold": 1,
+      "epoch": 5,
+      "sha256": "6dababaa5968fb6189dc2609527f8b2981cc3285d15a13972767199f8c086e28",
+      "private_state_bytes": 21432342,
+      "C_RX": [
+        0,
+        6
+      ]
+    },
+    {
+      "run_id": "shen_rank16_CV1_mldg_rx_seed20261013_diag",
+      "dataset": "shen",
+      "method": "mldg_rx",
+      "fold": 1,
+      "epoch": 6,
+      "sha256": "bc0e41cf652647bb72982c7a5da2f25f4f7c7ffddcdfade2658bcdeed7cbe84b",
+      "private_state_bytes": 21429718,
+      "C_RX": [
+        4,
+        8
+      ]
+    },
+    {
+      "run_id": "shen_rank16_CV1_mldg_rx_seed20261013_diag",
+      "dataset": "shen",
+      "method": "mldg_rx",
+      "fold": 1,
+      "epoch": 7,
+      "sha256": "93498d1797c9ccdf2f1e346168e60f8026d2139efb6b9219c6062a7849b238bd",
+      "private_state_bytes": 21429910,
+      "C_RX": [
+        2,
+        6
+      ]
+    },
+    {
+      "run_id": "shen_rank16_CV1_mldg_rx_seed20261013_diag",
+      "dataset": "shen",
+      "method": "mldg_rx",
+      "fold": 1,
+      "epoch": 8,
+      "sha256": "3ff2493c1720768309e1157b7150c467ff60054b0d06e5bb0b52e41486daac8e",
+      "private_state_bytes": 21430422,
+      "C_RX": [
+        0,
+        2
+      ]
+    },
+    {
+      "run_id": "shen_rank16_CV1_mldg_rx_seed20261013_diag",
+      "dataset": "shen",
+      "method": "mldg_rx",
+      "fold": 1,
+      "epoch": 9,
+      "sha256": "1705f42520322c6c61a204c6cb7579f2a6396b325836390aa9346f47a1b22674",
+      "private_state_bytes": 21428374,
+      "C_RX": [
+        4,
+        8
+      ]
+    },
+    {
+      "run_id": "shen_rank16_CV1_mldg_rx_seed20261013_diag",
+      "dataset": "shen",
+      "method": "mldg_rx",
+      "fold": 1,
+      "epoch": 10,
+      "sha256": "1c347ea0ffd81ffdb0fae6fce4a7b30e0ec47fdab306df934bdf071645c2f577",
+      "private_state_bytes": 21429910,
+      "C_RX": [
+        2,
+        4
+      ]
+    }
+  ],
+  "count": 80,
+  "no_weights_or_signals_published": true
+}

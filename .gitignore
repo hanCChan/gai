@@ -96,3 +96,5 @@ reports/receiver_r2/**/C1_C2_RX_pairs.csv
 reports/receiver_r2/**/mode_dropout_comparison.csv
 !/reports/receiver_r2/r2_a/evidence.zip
 !/reports/receiver_r2/r2_a/evidence_part*.zip
+
+!/reports/receiver_c0/evidence.zip

@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "multi_rx": false,
+      "scale": 1.0,
+      "exact_parameters_moments_rng": true,
+      "forward_calls": 4
+    },
+    {
+      "multi_rx": true,
+      "scale": 1.0,
+      "exact_parameters_moments_rng": true,
+      "forward_calls": 4
+    }
+  ],
+  "single_RX_guard_equals_mean_guard": true,
+  "original_controller_unchanged": true
+}

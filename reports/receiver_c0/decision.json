@@ -1,0 +1,12 @@
+{
+  "status": "MODIFY_CONTINUE_RESEARCH",
+  "engineering_equivalence_passed": true,
+  "cross_RX_signal": "partial and dataset/phase dependent; WiSig frozen harm decision chance-level; Shen ranking stronger",
+  "independent_multi_RX_increment": "cross_RX choices4/320; Shen1/1 degenerate",
+  "formal_R2_C1_gate_passed": false,
+  "formal_fits": 0,
+  "formal_budget_requested": false,
+  "conditional_plan_only": true,
+  "engineering_reserved_GPUh": 0.07311376312111154,
+  "no_threshold_or_model_reselection": true
+}

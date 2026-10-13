@@ -1,0 +1,10 @@
+{
+  "files": {
+    "docs/receiver_c0/R2_C1_CONDITIONAL_PROTOCOL.md": "cb242596136edae54bc9e8a3fca3aeca3ac3a1fdd35d4c76447a33541aa85869",
+    "src/receiver_c0/optimized.py": "d9dce8c2302c591bf18b5ac7face28cb0b56fc2ff7b712f1b4d11a18f719c409",
+    "scripts/benchmark_receiver_c0.py": "523ee1b71942fd0a0008fedef1d18495169224cb296c132957c7f8f39bf39cd4"
+  },
+  "formal_fits_authorized": 0,
+  "current_scientific_gate_passed": false,
+  "new_budget_required": true
+}
