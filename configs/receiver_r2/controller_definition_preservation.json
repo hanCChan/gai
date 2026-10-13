@@ -1,0 +1,21 @@
+{
+  "decision_rule_changed": false,
+  "before_C2_original_bytes_preserved": [
+    {
+      "original_path": "src/receiver_r2/controller.py",
+      "preserved_path": "configs/receiver_r2/frozen_initial_definition/controller.py",
+      "sha256": "97be211246b364471f23425cad850acd93b135bf79cfd3b21694e36eb5a0117c"
+    },
+    {
+      "original_path": "docs/receiver_r2/R2_B_DEFINITION.md",
+      "preserved_path": "configs/receiver_r2/frozen_initial_definition/R2_B_DEFINITION.md",
+      "sha256": "204cde579c4a0562dcc82964047cd7c06b7ddb9a21b425dc091d23b9ba777fd2"
+    },
+    {
+      "original_path": "scripts/test_receiver_r2_controller.py",
+      "preserved_path": "configs/receiver_r2/frozen_initial_definition/test_receiver_r2_controller.py",
+      "sha256": "166af5ddaeb10ac5d61660e949868cd363dd5da76acaab8663f1701ad13c70f3"
+    }
+  ],
+  "later_change": "Executable transaction and C2 isolation test only; controller choice rule unchanged"
+}

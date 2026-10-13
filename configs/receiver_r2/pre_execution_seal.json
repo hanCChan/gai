@@ -1,0 +1,31 @@
+{
+  "files": {
+    "src/receiver_r01/core.py": "784da1b9588bedefae4d21f39741b3040ce0461d594cc4acf857046d886f0d1b",
+    "src/receiver_r01/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/receiver_r01/data.py": "303aca2bf85c1c3c66fc8879f4644bc22d33da30aa86dd13299df5e2f26932c9",
+    "src/receiver_r01/third_party/swad.py": "f886b0a136303c26e603b792af4187271f46a4b9ae1a0a82772565845844fa0c",
+    "src/receiver_r01/third_party/swa_utils.py": "06ae4988e615e845825965164ede59e31979266680230df394e243ba3ff11691",
+    "src/receiver_r01/third_party/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "scripts/test_receiver_r01.py": "d552d56f182b653feec5c4b933c91943af6e1b8d2e09eed3286bc3980866b73c",
+    "scripts/launch_receiver_r01.py": "b99cbdc1dd1eec1abf4a9098e7cbb6a5760c0baad341b15107111b04221d598f",
+    "scripts/prepare_receiver_r01.py": "a9d23da0e50df7548606ec95522b12ab0f54bf76a56833c813b226452ed3bc85",
+    "scripts/train_receiver_r01.py": "180136c01d48da77997a31093ff3b4fe803a90dddca92a7754790faad8094639",
+    "docs/receiver_r01/EXECUTION_PLAN.md": "70d797ca7ab13d68391462bf28fca3ac9233d50a0e82012d215ac1f90c680f2b",
+    "configs/receiver_r01/registration.json": "c2423ecb30181bfa070c215473321c9e7867888c4a4728f6a47bcf6c6108990e",
+    "scripts/wisig_w01_common.py": "0a31ecb35510fdae0a85c197ff26ffd2860935f765e3170028d810d109f69036",
+    "src/b1_baselines/model.py": "209e8571eef3c6b8ddf2a40adbcbfae0e3134f76d7b0c3217105dc57d8692a61",
+    "src/shen_p2a/models.py": "acb27d5b562fd03ef3993b121c9a953897726ff19650c2896ac490432cc5900d",
+    "src/shen_evidence/models.py": "80c505443aed58fa4a7676a66613f4de13453a5db6be3f0027fe7b1caa54fa67",
+    "scripts/train_receiver_r2.py": "79c14274e21523c91b48ed1be31de1bdd8c890620f567c6b080c72067541753d",
+    "scripts/launch_receiver_r2.py": "f08e965898fa471bca22ca955e9690d2f4796bfa82b81e82e319dac23e173487",
+    "scripts/test_receiver_r2.py": "c006c6dac57569e2a2ef7c52209e6afbe6e48b7250c0e1fc79ac5c67c06a2599",
+    "src/receiver_r2/data.py": "ed2c9ace0394829adff0807c6780025f2077204e5491f72d30d1a0eb6d7ab753",
+    "src/receiver_r2/measurement.py": "74ba5b77dd6a56e488d35652643562f6c46b0f705438eedd860d354e1f6b2216",
+    "configs/receiver_r2/registration.json": "27e39440a22d521e672581635271ab3c83514a96673ffa54c15af4a8d7f604cf",
+    "docs/receiver_r2/EXECUTION_PLAN.md": "d3f7e2414a5e3f3d07b702f69473436ddbcd3725be6e07a9a8a82f150db4046e"
+  },
+  "approved_jobs": 12,
+  "cap_GPUh": 3,
+  "fit_retries": 0,
+  "historical_files_immutable": true
+}

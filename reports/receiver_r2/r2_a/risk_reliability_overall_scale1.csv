@@ -1,0 +1,5 @@
+dataset,method,observations,sign_agreement,confident_both_n,confident_agreement,C1_detected_harm_n,confirmed_harm_n,precision,near_zero_C1_rate
+shen,ce,40,0.95,22,1.0,11,8,0.7272727272727273,0.35
+shen,mldg_rx,40,0.95,17,1.0,7,5,0.7142857142857143,0.475
+wisig,ce,80,0.8875,40,1.0,23,18,0.782608695652174,0.4
+wisig,mldg_rx_date,80,0.8875,40,1.0,20,17,0.85,0.4375

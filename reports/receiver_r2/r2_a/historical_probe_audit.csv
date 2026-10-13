@@ -1,0 +1,11 @@
+stage,method,unique_probe_steps,artificial_SGD_training_side_positive_rate
+formal,ce,120,0.95
+formal,groupdro,120,0.95
+formal,mldg_rx,120,0.325
+formal,pcgrad,120,0.95
+formal,swad,120,0.95
+search,ce,40,0.9
+search,groupdro,40,0.9
+search,mldg_rx,40,0.225
+search,pcgrad,40,0.875
+search,swad,40,0.9

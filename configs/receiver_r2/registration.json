@@ -1,0 +1,285 @@
+{
+  "state": "APPROVED_R2_A_PREEXECUTION",
+  "base_remote_commit": "84a360bbae2787bb78c00a3590cdb9be2151434f",
+  "branch": "experiment/r2-a-adam-risk",
+  "user_plan_sha256": "a8a55127773218965e4fef2db5ac7b5c9c301779bab4bc6eb72b77e1ee6dde34",
+  "historical_worktree": "/home/keyan/code-y-r0r1",
+  "historical_registration_sha256": "c2423ecb30181bfa070c215473321c9e7867888c4a4728f6a47bcf6c6108990e",
+  "historical_selection_sha256": "d786f792b7fdf372dd0da96cfffdfb7c0c3a4b94bbe4323d290723d41b4bfc0e",
+  "formal_seeds": [
+    20261013,
+    20261014,
+    20261015
+  ],
+  "proposed_new_cap_reserved_V100_GPUh": 3.0,
+  "approved_new_cap_reserved_V100_GPUh": 3.0,
+  "historical_gpu_allowance_reusable": false,
+  "diagnostic_pool_per_cell": {
+    "wisig": {
+      "fit": [
+        0,
+        80
+      ],
+      "C1": [
+        80,
+        100
+      ],
+      "C2": [
+        100,
+        120
+      ],
+      "validation": [
+        120,
+        160
+      ]
+    },
+    "shen": {
+      "fit_class_ordinal": [
+        0,
+        120
+      ],
+      "C1_class_ordinal": [
+        120,
+        140
+      ],
+      "C2_class_ordinal": [
+        140,
+        160
+      ],
+      "validation_class_ordinal": [
+        160,
+        200
+      ]
+    }
+  },
+  "risk_scales": [
+    1.0,
+    0.5,
+    0.25,
+    0.0
+  ],
+  "diagnostic_modes": {
+    "eval": "primary deterministic finite-loss risks",
+    "train": "3 common-random-number paired dropout masks, isolated RNG"
+  },
+  "diagnostic_sample_steps": "first batch of every epoch; full20 packets per RX/TX/date per C pool",
+  "rx_partitions": {
+    "wisig": [
+      5,
+      5,
+      4
+    ],
+    "shen": [
+      2,
+      1,
+      2
+    ]
+  },
+  "rotation": "seeded per-step RX permutation, frozen before execution; excluded C never enters CE or MLDG proposal",
+  "C2_usage": "read-only diagnosis; never selects update scale, threshold, checkpoint, LR or horizon",
+  "diag_acceptance": "unmodified Adam candidate, scale1 every step; other scales measured only",
+  "diagnostic_limitations": "one paired seed, early training only; no formal performance or later-stage stability claims",
+  "reservation_estimate": {
+    "historical_method_timings": {
+      "wisig_ce": {
+        "epoch_mean_seconds": 1.188457834026655,
+        "epoch_max_seconds": 1.2676832504199773,
+        "setup_max_seconds": 10.030767356001888,
+        "peak_allocated_bytes": 468314112
+      },
+      "wisig_mldg_rx_date": {
+        "epoch_mean_seconds": 4.017516536193325,
+        "epoch_max_seconds": 4.02168513149998,
+        "setup_max_seconds": 4.486563708003814,
+        "peak_allocated_bytes": 2014623232
+      },
+      "shen_ce": {
+        "epoch_mean_seconds": 2.5377039162833173,
+        "epoch_max_seconds": 2.5581862639499375,
+        "setup_max_seconds": 8.733363561997976,
+        "peak_allocated_bytes": 871783424
+      },
+      "shen_mldg_rx": {
+        "epoch_mean_seconds": 8.78283532107501,
+        "epoch_max_seconds": 8.82844045135007,
+        "setup_max_seconds": 20.12077401699571,
+        "peak_allocated_bytes": 1859917312
+      }
+    },
+    "six_horizon_base_seconds": 3293.6210291519747,
+    "six_short_base_seconds": 483.5199019443993,
+    "horizon_margin_multiplier": 1.5,
+    "short_diagnostic_unmeasured_multiplier": 4.0,
+    "evaluation_and_preflight_allowance_seconds": 360,
+    "provisional_total_GPUh": 2.0095864309737665,
+    "first_jobs": "one first registered job for every dataset/method, included in matrix; no extra timing fit",
+    "reestimate": "measure horizon CE and date MLDG separately; diagnostic types separately; stop and request revision if complete matrix no longer fits cap"
+  },
+  "R2_B_status": "conditional on R2-A credibility",
+  "R2_C_authorized": false,
+  "authorization_reply": "批准 3 GPUh 和 12 项矩阵",
+  "jobs": [
+    {
+      "dataset": "wisig",
+      "backbone": "official",
+      "fold": 0,
+      "method": "ce",
+      "alpha": 0.01,
+      "beta": 1.0,
+      "stage": "horizon",
+      "seed": 20261013,
+      "lr": 0.0003,
+      "epochs": 200,
+      "run_id": "wisig_official_CV0_ce_seed20261013_h200",
+      "historical_run_id": "wisig_official_CV0_ce_seed20261013"
+    },
+    {
+      "dataset": "wisig",
+      "backbone": "official",
+      "fold": 0,
+      "method": "ce",
+      "alpha": 0.01,
+      "beta": 1.0,
+      "stage": "horizon",
+      "seed": 20261014,
+      "lr": 0.0003,
+      "epochs": 200,
+      "run_id": "wisig_official_CV0_ce_seed20261014_h200",
+      "historical_run_id": "wisig_official_CV0_ce_seed20261014"
+    },
+    {
+      "dataset": "wisig",
+      "backbone": "official",
+      "fold": 0,
+      "method": "ce",
+      "alpha": 0.01,
+      "beta": 1.0,
+      "stage": "horizon",
+      "seed": 20261015,
+      "lr": 0.0003,
+      "epochs": 200,
+      "run_id": "wisig_official_CV0_ce_seed20261015_h200",
+      "historical_run_id": "wisig_official_CV0_ce_seed20261015"
+    },
+    {
+      "dataset": "wisig",
+      "backbone": "official",
+      "fold": 0,
+      "method": "mldg_rx_date",
+      "alpha": 0.01,
+      "beta": 1.0,
+      "stage": "horizon",
+      "seed": 20261013,
+      "lr": 0.0003,
+      "epochs": 200,
+      "run_id": "wisig_official_CV0_mldg_rx_date_seed20261013_h200",
+      "historical_run_id": "wisig_official_CV0_mldg_rx_date_seed20261013"
+    },
+    {
+      "dataset": "wisig",
+      "backbone": "official",
+      "fold": 0,
+      "method": "mldg_rx_date",
+      "alpha": 0.01,
+      "beta": 1.0,
+      "stage": "horizon",
+      "seed": 20261014,
+      "lr": 0.0003,
+      "epochs": 200,
+      "run_id": "wisig_official_CV0_mldg_rx_date_seed20261014_h200",
+      "historical_run_id": "wisig_official_CV0_mldg_rx_date_seed20261014"
+    },
+    {
+      "dataset": "wisig",
+      "backbone": "official",
+      "fold": 0,
+      "method": "mldg_rx_date",
+      "alpha": 0.01,
+      "beta": 1.0,
+      "stage": "horizon",
+      "seed": 20261015,
+      "lr": 0.0003,
+      "epochs": 200,
+      "run_id": "wisig_official_CV0_mldg_rx_date_seed20261015_h200",
+      "historical_run_id": "wisig_official_CV0_mldg_rx_date_seed20261015"
+    },
+    {
+      "dataset": "wisig",
+      "backbone": "official",
+      "fold": 0,
+      "method": "ce",
+      "alpha": 0.01,
+      "beta": 1.0,
+      "stage": "diagnostic",
+      "seed": 20261013,
+      "lr": 0.0003,
+      "epochs": 20,
+      "run_id": "wisig_official_CV0_ce_seed20261013_diag"
+    },
+    {
+      "dataset": "wisig",
+      "backbone": "official",
+      "fold": 0,
+      "method": "mldg_rx_date",
+      "alpha": 0.01,
+      "beta": 1.0,
+      "stage": "diagnostic",
+      "seed": 20261013,
+      "lr": 0.0003,
+      "epochs": 20,
+      "run_id": "wisig_official_CV0_mldg_rx_date_seed20261013_diag"
+    },
+    {
+      "dataset": "shen",
+      "backbone": "rank16",
+      "fold": 0,
+      "method": "ce",
+      "alpha": 0.01,
+      "beta": 1.0,
+      "stage": "diagnostic",
+      "seed": 20261013,
+      "lr": 0.0003,
+      "epochs": 10,
+      "run_id": "shen_rank16_CV0_ce_seed20261013_diag"
+    },
+    {
+      "dataset": "shen",
+      "backbone": "rank16",
+      "fold": 0,
+      "method": "mldg_rx",
+      "alpha": 0.01,
+      "beta": 1.0,
+      "stage": "diagnostic",
+      "seed": 20261013,
+      "lr": 0.0003,
+      "epochs": 10,
+      "run_id": "shen_rank16_CV0_mldg_rx_seed20261013_diag"
+    },
+    {
+      "dataset": "shen",
+      "backbone": "rank16",
+      "fold": 1,
+      "method": "ce",
+      "alpha": 0.01,
+      "beta": 1.0,
+      "stage": "diagnostic",
+      "seed": 20261013,
+      "lr": 0.0003,
+      "epochs": 10,
+      "run_id": "shen_rank16_CV1_ce_seed20261013_diag"
+    },
+    {
+      "dataset": "shen",
+      "backbone": "rank16",
+      "fold": 1,
+      "method": "mldg_rx",
+      "alpha": 0.01,
+      "beta": 1.0,
+      "stage": "diagnostic",
+      "seed": 20261013,
+      "lr": 0.0003,
+      "epochs": 10,
+      "run_id": "shen_rank16_CV1_mldg_rx_seed20261013_diag"
+    }
+  ]
+}

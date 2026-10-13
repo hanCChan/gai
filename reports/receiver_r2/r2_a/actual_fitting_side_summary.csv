@@ -1,0 +1,9 @@
+dataset,method,mode,steps,actual_Adam_AB_mean_loss_positive_step_rate,mean_delta_CE
+shen,ce,eval,20,0.2,-0.01759686686734007
+shen,ce,train,20,0.2,-0.01759686686734007
+shen,mldg_rx,eval,20,0.25,-0.013061359756587367
+shen,mldg_rx,train,20,0.25,-0.013061359756587367
+wisig,ce,eval,20,0.15,-0.0021950160802952966
+wisig,ce,train,20,0.15,-0.002458379744584801
+wisig,mldg_rx_date,eval,20,0.2,-0.002297834420460254
+wisig,mldg_rx_date,train,20,0.2,-0.0019478735260781625

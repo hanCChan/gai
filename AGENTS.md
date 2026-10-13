@@ -112,3 +112,27 @@ The user supplied the continuous algorithm research plan and instructed understa
 R0–R1 budget amendment: user explicitly approved 提高到7GPUh，完成原矩阵. Maximum now7 reserved V100 GPUh; keep the original34 searches+51 formal fits, no extra jobs, no R2 or final tests. Original scientific preregistration/seals stay immutable.
 
 R0–R1 completed and stopped:85 fitting jobs (34 source searches+51 formal),0 fitting failures/retries/seed replacements;4.290339055144722 fitting reserved GPUh,4.328058021221111 total conservative reserved GPUh including numerical checks/evaluation/setup allowance. Independent verification passed for112 input assets,1662 receiver/date confusion matrices and515 derived-only ZIP members. Final eight WiSig RX,last date,equalized data remain sealed; R2/final-test jobs0. Publish completed evidence and remotely verify,then stop. Do not use remaining7GPUh approval for extra jobs.
+
+## Latest user instruction: R2-A/B staged revision
+
+The R2 review authorizes an isolated worktree based on84a360b. The subsequent
+reply 批准3GPUh和12项矩阵 explicitly grants a NEW3 reserved V100 GPUh cap for
+exactly six200-epoch WiSig CE/date-MLDG fits and six preregistered short Adam
+diagnostics. Preserve all old stops; do not reuse R0-R1 allocation. Follow
+docs/receiver_r2/EXECUTION_PLAN.md and registration.json. R2-B implementation
+is conditional on credible measurements; R2-C formal training requires separate
+explicit approval. No new architecture, data downloads, class-tail losses,
+fit retries, replacement seeds or final tests. Publish each completed stage
+and verify full remote bytes/report/decision/SHA.
+
+R2-A/B execution completed and stopped:12 fits (six200-epoch WiSig and six
+short source-only diagnostics),0 fitting failures/retries/seed replacements;
+1.0346291015355564 total conservative reserved V100 GPUh.
+Independent verification passed:80 full Adam snapshots,135680 risk aggregates,
+432 confusion matrices,112 input hashes, six exact source-validation/selected
+checkpoint replays. CE logging reduction difference<=7.16e-8 is disclosed.
+Decision MODIFY for research, GO for minimal-controller engineering only.
+No controlled R2-C jobs; formal45-fit proposal is inactive and needs separate
+approval. Final8/date3/equalized and developer/locked Shen remain excluded.
+Do not use remaining allocation to start more jobs. Publish and remotely verify
+this completed stage, then stop.

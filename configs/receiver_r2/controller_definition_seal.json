@@ -1,0 +1,9 @@
+{
+  "frozen_before_aggregate_C2_analysis": true,
+  "controlled_fitting_jobs": 0,
+  "files": {
+    "src/receiver_r2/controller.py": "97be211246b364471f23425cad850acd93b135bf79cfd3b21694e36eb5a0117c",
+    "docs/receiver_r2/R2_B_DEFINITION.md": "204cde579c4a0562dcc82964047cd7c06b7ddb9a21b425dc091d23b9ba777fd2",
+    "scripts/test_receiver_r2_controller.py": "166af5ddaeb10ac5d61660e949868cd363dd5da76acaab8663f1701ad13c70f3"
+  }
+}

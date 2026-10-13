@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "positive_individual_RX_change_permitted": true,
+  "noise_from_C1_only": true,
+  "no_C2_argument": true,
+  "ordinary_mean_guard_and_multi_RX_guard_differ": true,
+  "scaling_fallback": true,
+  "unsupported_rejects": true,
+  "executable_transaction": true,
+  "C2_changes_cannot_affect_commit": true
+}

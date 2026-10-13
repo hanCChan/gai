@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "optimizer_steps": 0,
+  "CPU_synthetic_only": true,
+  "explanation": "Different loss scalar reductions; identical per-logit and parameter gradients",
+  "cases": [
+    {
+      "seed": 20261013,
+      "batch": 560,
+      "logged_objective_difference": 2.384185791015625e-07,
+      "all_parameter_gradients_exact": true
+    },
+    {
+      "seed": 20261013,
+      "batch": 400,
+      "logged_objective_difference": 2.384185791015625e-07,
+      "all_parameter_gradients_exact": true
+    },
+    {
+      "seed": 20261014,
+      "batch": 560,
+      "logged_objective_difference": 2.384185791015625e-07,
+      "all_parameter_gradients_exact": true
+    },
+    {
+      "seed": 20261014,
+      "batch": 400,
+      "logged_objective_difference": 2.384185791015625e-07,
+      "all_parameter_gradients_exact": true
+    },
+    {
+      "seed": 20261015,
+      "batch": 560,
+      "logged_objective_difference": 0.0,
+      "all_parameter_gradients_exact": true
+    },
+    {
+      "seed": 20261015,
+      "batch": 400,
+      "logged_objective_difference": 0.0,
+      "all_parameter_gradients_exact": true
+    }
+  ]
+}

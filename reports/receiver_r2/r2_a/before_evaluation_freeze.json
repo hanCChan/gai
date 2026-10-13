@@ -1,0 +1,67 @@
+{
+  "jobs": [
+    {
+      "run_id": "wisig_official_CV0_ce_seed20261013_h200",
+      "checkpoint_sha256": "fee973c37d48fb5979d6f844ba669251f14ee5da158382390f3268e926c23ca1",
+      "selection_sha256": "f1f6fe4d2d8a4f00f9fe23a120cb04f7e4c6969da53cae11cc8666950fdc4782"
+    },
+    {
+      "run_id": "wisig_official_CV0_ce_seed20261014_h200",
+      "checkpoint_sha256": "aa88202d5726c01351284ef477b53f3b86a84ebea9aef8aa11b1b6e60ac6d690",
+      "selection_sha256": "cf0e7645e76f9397351a1469c9aade1747085955a7014b9b0d080585abc99a08"
+    },
+    {
+      "run_id": "wisig_official_CV0_ce_seed20261015_h200",
+      "checkpoint_sha256": "6246ecf3830afdb1bd3933d08672c47d30aeb8faef45495fc286c0e2759ddbd8",
+      "selection_sha256": "3e123bab46adff28e8e3f0e4dda9e4ba9a858275ce9465d691201e67b6083ff9"
+    },
+    {
+      "run_id": "wisig_official_CV0_mldg_rx_date_seed20261013_h200",
+      "checkpoint_sha256": "fd4c48f0c6328e72d7d3a5123b9f8624309c26eb2e473d182e2fcb20945310ae",
+      "selection_sha256": "6a305e1620735826e0a07c2ac393e4a1aa02cacec9d73042235d6e4e934c85a7"
+    },
+    {
+      "run_id": "wisig_official_CV0_mldg_rx_date_seed20261014_h200",
+      "checkpoint_sha256": "7334975b15a215ed67c4dd6cb7e6cdad29b968f2bc5a2409d011680e757d8390",
+      "selection_sha256": "4287be2e6b193d8279e9fea6a72baad5a0ecf061f0c39d65e5f61cd16e73133a"
+    },
+    {
+      "run_id": "wisig_official_CV0_mldg_rx_date_seed20261015_h200",
+      "checkpoint_sha256": "fac921d703d4891c53bec2d8c1735d8fff278c67b64585ab7851d29beabdef8a",
+      "selection_sha256": "bd4f85f9e26e7a75ff5aa5c419e10fea817b6decb7058d9722c98624d3f99e94"
+    },
+    {
+      "run_id": "wisig_official_CV0_ce_seed20261013_diag",
+      "checkpoint_sha256": "28d48afd7bfde167687f97ec64a284b5b39ae4db9278d9ed1bd9de709ec327cc",
+      "selection_sha256": "126a922b1e1fc23c0231bb06fa8cea098cfaff2e5d7e07ff47e1ff325cc38ef7"
+    },
+    {
+      "run_id": "wisig_official_CV0_mldg_rx_date_seed20261013_diag",
+      "checkpoint_sha256": "26f64911470f9607e098d53a4ed14274d55761002b31f0f21acc3229ab22e911",
+      "selection_sha256": "2d2650aafef5f6fded75b3961889a60f33cbc9d582b1076555b92148e161acde"
+    },
+    {
+      "run_id": "shen_rank16_CV0_ce_seed20261013_diag",
+      "checkpoint_sha256": "3a28b5896321a8d05a896df2920b4ef840e140e65409713d4805a419552c4ab9",
+      "selection_sha256": "a0287d33f043b1f46e89322532de9511e1eae0d87d297f7c98731c1e7ddb0807"
+    },
+    {
+      "run_id": "shen_rank16_CV0_mldg_rx_seed20261013_diag",
+      "checkpoint_sha256": "f5908aada944c979b393bf0d6b92ff6ef63f4613b326163caa6c9c078cc8562a",
+      "selection_sha256": "493c6b55841a9bb2e26dc6348a541d981be4afbb5c31fd232247cc10d5c03cd1"
+    },
+    {
+      "run_id": "shen_rank16_CV1_ce_seed20261013_diag",
+      "checkpoint_sha256": "22f1639d44617c72a189534d35d43483b7021c9af6c1c34a006598bc720563c3",
+      "selection_sha256": "832f916df4edd682d2844bf865b7c3181a7e243b29f2f3549dac23340e460a8d"
+    },
+    {
+      "run_id": "shen_rank16_CV1_mldg_rx_seed20261013_diag",
+      "checkpoint_sha256": "fe741b0a3b3c4f70bd6fb74320fe10cff8428c2a66fd8d84ac36b5b83639688c",
+      "selection_sha256": "38f98e92a61fa8e5c7f6ccf5c54f6ce919d3c942c83a26b541e18b4ea846d8f8"
+    }
+  ],
+  "all12_jobs_frozen": true,
+  "source_only_selection": true,
+  "final_RX_used": false
+}

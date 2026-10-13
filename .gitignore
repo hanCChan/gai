@@ -85,3 +85,14 @@ reports/receiver_r01/**/paired_RX_TX_changes.csv
 reports/receiver_r01/**/update_diagnostics.csv
 reports/receiver_r01/**/update_RX_risks.csv
 !/reports/receiver_r01/2026-10-13/evidence.zip
+
+# R2 complete packet-risk/count tables are preserved in its verified archive.
+outputs_receiver_r2_launcher.log
+reports/receiver_r2/**/all_finite_risks.csv
+reports/receiver_r2/**/actual_fitting_batch_risks.csv
+reports/receiver_r2/**/per_RX_TX_date.csv
+reports/receiver_r2/**/confusion_counts.csv
+reports/receiver_r2/**/C1_C2_RX_pairs.csv
+reports/receiver_r2/**/mode_dropout_comparison.csv
+!/reports/receiver_r2/r2_a/evidence.zip
+!/reports/receiver_r2/r2_a/evidence_part*.zip

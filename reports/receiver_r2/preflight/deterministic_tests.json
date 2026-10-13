@@ -1,0 +1,12 @@
+{
+  "1.0": true,
+  "0.5": true,
+  "0.25": true,
+  "0.0": true,
+  "rollback_next_update_exact": true,
+  "dropout_common_random_numbers": true,
+  "rng_and_mode_restored": true,
+  "candidate_equals_actual_scale1": true,
+  "scale0_exact_zero": true,
+  "repeated_measurement_exact": true
+}

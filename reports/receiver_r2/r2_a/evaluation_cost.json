@@ -1,0 +1,10 @@
+{
+  "seconds": 13.10459173900017,
+  "reserved_GPUh": 0.0036401643719444917,
+  "frozen_horizon_jobs": 6,
+  "frozen_total_jobs": 12,
+  "final_RX_read": false,
+  "last_date_read": false,
+  "equalized_read": false,
+  "diagnostic_outer_evaluations": 0
+}

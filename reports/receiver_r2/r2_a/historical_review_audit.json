@@ -1,0 +1,6 @@
+{
+  "official_total_models": 18,
+  "ordinary_nonSWAD_models": 15,
+  "ordinary_selected_epoch99_or100": 11,
+  "review_denominator18_includes_SWAD": true
+}

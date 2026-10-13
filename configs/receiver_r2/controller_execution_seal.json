@@ -1,0 +1,10 @@
+{
+  "decision_rule_unchanged_from_preaggregate_seal": true,
+  "added_executable_transaction_and_C2_isolation_test": true,
+  "controlled_fitting_jobs": 0,
+  "files": {
+    "src/receiver_r2/controller.py": "d33d0851364260bed820f74188df5ff727412f209cac7cd22ee89c912d1c5fd2",
+    "docs/receiver_r2/R2_B_DEFINITION.md": "102fd5b857aee0153ef57b401735319d38797289a085d259f4c836ac2fbcd4cf",
+    "scripts/test_receiver_r2_controller.py": "8a3a2733c83e309fa9aebe09b5c4ceef8d2dcf28e77769647468e2827f3d6bf8"
+  }
+}

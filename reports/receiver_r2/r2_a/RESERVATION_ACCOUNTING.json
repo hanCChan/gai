@@ -1,0 +1,11 @@
+{
+  "fitting_reserved_GPUh": 1.00461186796889,
+  "evaluation_reserved_GPUh": 0.0036401643719444917,
+  "read_only_fitting_remeasurement_reserved_GPUh": 0.01804373586138859,
+  "GPU_process_setup_teardown_allowance_seconds": 30,
+  "total_conservative_reserved_GPUh": 1.0346291015355564,
+  "cap_GPUh": 3.0,
+  "no_historical_budget_reuse": true,
+  "CPU_analysis_GPUh": 0.0,
+  "remaining_allowance_authorizes_new_jobs": false
+}
