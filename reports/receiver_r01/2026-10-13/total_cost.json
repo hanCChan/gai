@@ -1,0 +1,15 @@
+{
+  "fitting_reserved_GPUh": 4.290339055144722,
+  "numerical_and_evaluation_with_setup_allowance_GPUh": 0.037718966076388624,
+  "total_conservative_reserved_GPUh": 4.328058021221111,
+  "cap_GPUh": 7,
+  "setup_allowance_seconds": 20,
+  "fitting_jobs": 85,
+  "search_jobs": 34,
+  "formal_jobs": 51,
+  "failures": 0,
+  "retries": 0,
+  "seed_replacements": 0,
+  "r2_fitting_jobs": 0,
+  "final_testing_jobs": 0
+}

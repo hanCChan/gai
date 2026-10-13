@@ -1,0 +1,8 @@
+{
+  "kind": "budget_only_pre_dispatch_assertion",
+  "observed_full_estimate_with_fixed_cost_overcount_GPUh": 6.704034344717498,
+  "refined_epoch_vs_setup_estimate_GPUh": 6.22350941498168,
+  "research_jobs_started_by_failed_controller": 0,
+  "fitting_failures": 0,
+  "note": "Factual summary of tool-observed AssertionError before dispatch; original failed-controller log was replaced when starting the approved amended controller, not presented as archived original log."
+}

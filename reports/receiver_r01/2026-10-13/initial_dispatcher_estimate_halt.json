@@ -1,0 +1,63 @@
+{
+  "state": "halted",
+  "error": "RuntimeError('Full matrix estimate exceeds cap; request budget without truncation')",
+  "jobs": [
+    {
+      "stage": "search",
+      "index": 0,
+      "run_id": "wisig_official_CV0_ce_search_lr0.0003",
+      "gpu": 0,
+      "reserved_seconds": 44.75447109599918,
+      "exit_code": 0
+    },
+    {
+      "stage": "search",
+      "index": 2,
+      "run_id": "wisig_official_CV0_swad_search_lr0.0003",
+      "gpu": 0,
+      "reserved_seconds": 54.43437682399963,
+      "exit_code": 0
+    },
+    {
+      "stage": "search",
+      "index": 4,
+      "run_id": "wisig_official_CV0_mldg_rx_search_lr0.0003",
+      "gpu": 0,
+      "reserved_seconds": 131.7729328150017,
+      "exit_code": 0
+    },
+    {
+      "stage": "search",
+      "index": 6,
+      "run_id": "wisig_official_CV0_groupdro_search_lr0.0003",
+      "gpu": 0,
+      "reserved_seconds": 49.20821376299864,
+      "exit_code": 0
+    },
+    {
+      "stage": "search",
+      "index": 8,
+      "run_id": "wisig_official_CV0_pcgrad_search_lr0.0003",
+      "gpu": 0,
+      "reserved_seconds": 69.2736251819988,
+      "exit_code": 0
+    },
+    {
+      "stage": "search",
+      "index": 10,
+      "run_id": "wisig_official_CV0_mldg_rx_date_search_lr0.0003",
+      "gpu": 0,
+      "reserved_seconds": 178.00860159900185,
+      "exit_code": 0
+    },
+    {
+      "stage": "search",
+      "index": 12,
+      "run_id": "wisig_resnet_CV0_ce_search_lr0.0003",
+      "gpu": 0,
+      "reserved_seconds": 603.9495252200031,
+      "exit_code": 0
+    }
+  ],
+  "reserved_gpu_hours": 0.3142782629163897
+}

@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "seal_files": 16,
+  "input_assets": 112,
+  "fitting_jobs": 85,
+  "formal_seeds": [
+    20261013,
+    20261014,
+    20261015
+  ],
+  "all_epoch_membership_verified": true,
+  "all_pairing_verified": true,
+  "source_only_LR_selection_verified": true,
+  "confusion_cells_recomputed": 1662,
+  "evidence_members_verified": 515,
+  "all_missing_recall_is_NA": true,
+  "historical_files_unchanged": true,
+  "final_data_sealed": true,
+  "verification_kind": "independent count-level recomputation; no new fitting or test-data use"
+}

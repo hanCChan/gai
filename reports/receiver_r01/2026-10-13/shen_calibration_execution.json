@@ -1,0 +1,46 @@
+{
+  "state": "completed",
+  "jobs": [
+    {
+      "stage": "search",
+      "index": 14,
+      "run_id": "shen_rank16_CV0_ce_search_lr0.0001",
+      "gpu": 1,
+      "reserved_seconds": 30.44829817400023,
+      "exit_code": 0
+    },
+    {
+      "stage": "search",
+      "index": 16,
+      "run_id": "shen_rank16_CV0_swad_search_lr0.0001",
+      "gpu": 1,
+      "reserved_seconds": 33.498011000996485,
+      "exit_code": 0
+    },
+    {
+      "stage": "search",
+      "index": 18,
+      "run_id": "shen_rank16_CV0_mldg_rx_search_lr0.0001",
+      "gpu": 1,
+      "reserved_seconds": 71.87814478000291,
+      "exit_code": 0
+    },
+    {
+      "stage": "search",
+      "index": 20,
+      "run_id": "shen_rank16_CV0_groupdro_search_lr0.0001",
+      "gpu": 1,
+      "reserved_seconds": 31.071140136002214,
+      "exit_code": 0
+    },
+    {
+      "stage": "search",
+      "index": 22,
+      "run_id": "shen_rank16_CV0_pcgrad_search_lr0.0001",
+      "gpu": 1,
+      "reserved_seconds": 35.08145122499991,
+      "exit_code": 0
+    }
+  ],
+  "reserved_gpu_hours": 0.05610473481000049
+}

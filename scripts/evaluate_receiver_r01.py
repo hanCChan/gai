@@ -44,7 +44,7 @@ def main():
             inference.append(dict(**common,role=role,packets=len(data['y']),seconds=seconds,seconds_per_packet=seconds/len(data['y'])))
             pred=z.argmax(1);path=out/'evaluation'/(job['run_id']+'_'+role+'.npz')
             np.savez(path,prediction=pred,y=data['y'],rx=data['rx'],day=data['day'],position=data['position'])
-            cells=[]
+            cells=[];txcells=[]
             for rx in np.unique(data['rx']):
                 for d in np.unique(data['day'][data['rx']==rx]):
                     mask=(data['rx']==rx)&(data['day']==d);m=metrics(z[mask],data['y'][mask]);cm=np.array(m['confusion'])
@@ -52,17 +52,20 @@ def main():
                     row=dict(**common,role=role,rx=int(rx),receiver=name,date=int(d),**{k:v for k,v in m.items() if k not in ['recall','confusion']})
                     per_rx.append(row);cells.append(row)
                     for tx in range(10):
-                        per_tx.append(dict(**common,role=role,rx=int(rx),receiver=name,date=int(d),tx=tx,
-                            support=int(cm[tx].sum()),correct=int(cm[tx,tx]),recall=m['recall'][tx]))
+                        txrow=dict(**common,role=role,rx=int(rx),receiver=name,date=int(d),tx=tx,
+                            support=int(cm[tx].sum()),correct=int(cm[tx,tx]),recall=m['recall'][tx])
+                        per_tx.append(txrow);txcells.append(txrow)
                         for guessed in range(10):
                             confusions.append(dict(**common,role=role,rx=int(rx),date=int(d),tx=tx,predicted_tx=guessed,count=int(cm[tx,guessed])))
             # Average dates equally within RX, then receivers equally: no pooled weighting.
-            acc=[];f1=[];worst=[]
+            acc=[];f1=[];worst=[];datewise_worst=[]
             for rx in sorted({c['rx'] for c in cells}):
-                sub=[c for c in cells if c['rx']==rx];acc.append(np.mean([c['accuracy'] for c in sub]));f1.append(np.mean([c['macro_f1'] for c in sub]));worst.append(np.mean([c['worst_tx_recall'] for c in sub]))
+                sub=[c for c in cells if c['rx']==rx];acc.append(np.mean([c['accuracy'] for c in sub]));f1.append(np.mean([c['macro_f1'] for c in sub]));datewise_worst.append(np.mean([c['worst_tx_recall'] for c in sub]))
+                recalls=[[c['recall'] for c in txcells if c['rx']==rx and c['tx']==tx and c['recall'] is not None] for tx in range(10)]
+                worst.append(min(np.mean(a) for a in recalls if a))
             summaries.append(dict(**common,role=role,RX_count=len(acc),accuracy=float(np.mean(acc)),macro_f1=float(np.mean(f1)),
                 RX_accuracy_q10=float(np.quantile(acc,.1)),RX_accuracy_std=float(np.std(acc,ddof=1)),
-                mean_RX_worst_TX_recall=float(np.mean(worst)),RX_worst_TX_recall_q10=float(np.quantile(worst,.1)),
+                mean_RX_worst_TX_recall=float(np.mean(worst)),mean_RX_date_worst_TX_recall=float(np.mean(datewise_worst)),RX_worst_TX_recall_q10=float(np.quantile(worst,.1)),
                 minimum_RX_accuracy=float(np.min(acc)),complete_RX_date_cells=sum(c['complete_coverage'] for c in cells),RX_date_cells=len(cells)))
         del model
         print('evaluated',job['run_id'],flush=True)

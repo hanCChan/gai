@@ -11,14 +11,14 @@ def main():
     if a.inventory:
         paths=subprocess.check_output(['git','diff','--cached','--name-only','e64c5a3fe855684b082ff29183001f01b74730be'],cwd=ROOT,text=True).splitlines();items=[]
         for path in paths:
-            file=ROOT/path;assert file.is_file() and file.suffix not in ['.pt','.npy','.npz','.pkl','.h5']
+            file=ROOT/path;assert file.is_file() and file.suffix not in ['.pt','.pth','.ckpt','.npy','.npz','.pkl','.pickle','.h5','.hdf5','.dat','.pem','.key']
             assert not (file.parent==ROOT/'reports/receiver_r01/2026-10-13' and file.name in ARCHIVED)
             content=file.read_bytes();blob=hashlib.sha1(('blob '+str(len(content))+'\0').encode()+content).hexdigest()
             items.append(dict(path=path,mode='100644',type='blob',sha=blob,bytes=len(content),sha256=hashlib.sha256(content).hexdigest()))
         print(json.dumps(dict(files=items,desired_tree=subprocess.check_output(['git','write-tree'],cwd=ROOT,text=True).strip())))
     else:
         relative=Path(a.path);assert not relative.is_absolute() and '..' not in relative.parts
-        assert relative.parts[0] in ['src','scripts','docs','configs','reports'] or str(relative)=='AGENTS.md'
+        assert relative.parts[0] in ['src','scripts','docs','configs','reports'] or str(relative) in ['AGENTS.md','.gitignore']
         data=(ROOT/relative).read_bytes()[a.offset:a.offset+a.length]
         print(base64.b64encode(data).decode())
 

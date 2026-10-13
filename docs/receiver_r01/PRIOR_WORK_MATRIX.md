@@ -10,6 +10,8 @@
 | [PCGrad, NeurIPS 2020](https://papers.neurips.cc/paper_files/paper/2020/file/3fe78a8acf5fda99de95303940a2420c-Paper.pdf) / [作者代码](https://github.com/tianheyu927/PCGrad) | 负梯度内积时投影冲突梯度，以局部一阶信号处理任务冲突 | 两个随机 RX 组任务的标准对称投影对照，未新增接受规则 | 非线性有限更新后的多环境风险，应提供超过一阶梯度手术的可测增量 |
 | [Group DRO, ICLR 2020](https://arxiv.org/abs/1911.08731) / [作者代码](https://github.com/kohpangwei/group_DRO) | 预定义最差组训练损失，正则和早停对最差组泛化重要 | 继承 RX×TX 指数权重更新及共用源内模型选择；WiSig组含日期 | 不能把组损失重加权或尾部训练损失当更新可靠性原创 |
 | [DomainBed, ICLR 2021](https://openreview.net/pdf?id=lQdXeXDoWtI) / [代码](https://github.com/facebookresearch/DomainBed) | 公平划分训练、模型选择和测试协议，域泛化比较易受搜索/选择条件影响 | 有限两 LR、共同训练 horizon、三配对 seed、只源选参，报告实际额外计算 | 新机制须同数据/骨干/选择预算，不能从内部 RX 结果倒推最佳系数 |
+| [CAGrad, NeurIPS 2021](https://proceedings.neurips.cc/paper/2021/file/9d27fdf2477ffbff837d73ef7ae23db9-Paper.pdf) | 主文Eq2已定义更新前后任务损失的最差变化，并用一阶近似；Eq3在平均梯度邻域优化最差局部改进 | 只做主文数学核查，本轮未拟合，不扩大已批准矩阵 | R2的有限损失差、多个环境和邻域方向控制本身均不足证明原创，必须解释额外风险估计/控制的可测增量 |
+| [Episodic DG, ICCV 2019](https://openaccess.thecvf.com/content_ICCV_2019/html/Li_Episodic_Training_for_Domain_Generalization_ICCV_2019_paper.html) | 通过域间特征提取器/分类器搭配模拟部署域变化 | 依据作者摘要/公开页面定位，未声称完成其主文公式复核或复现 | “训练模拟换接收机”已属已有episodic DG思路，不能仅用RFFI域名作为贡献 |
 | [RIEI](https://arxiv.org/html/2411.03636v1) | 跨 RX DG、可分离条件及 TX/RX 特征分解；含联邦扩展 | 阅读建模和方法部分；其问题设定本身已存在 | 目标设定不是新贡献；本轮不声称超越 RIEI，后续发表需按适用输入复现 |
 | [DRIFT v2, 2026-05-26](https://arxiv.org/html/2510.09405v2) | 先等化，再 TX/RX 双表征、GRL、接收机一致性和特征分离 | 核查模型设计/协议；本轮未等化封存对照不偷读等化版 | 训练更新控制与解耦损失有可能不同，仍需跨方法公平实验；不得用跨 RX 名称充当新意 |
 

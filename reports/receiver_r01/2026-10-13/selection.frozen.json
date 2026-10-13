@@ -1,0 +1,368 @@
+{
+  "frozen_utc": "2026-10-13T10:07:55.101063+00:00",
+  "choices": {
+    "wisig_official_CV0_ce": {
+      "key": "wisig_official_CV0_ce",
+      "lr": 0.0003,
+      "run_id": "wisig_official_CV0_ce_search_lr0.0003",
+      "validation_CE": 1.7665894627571106,
+      "validation_macro_f1": 0.3877714567131749
+    },
+    "wisig_official_CV0_swad": {
+      "key": "wisig_official_CV0_swad",
+      "lr": 0.0003,
+      "run_id": "wisig_official_CV0_swad_search_lr0.0003",
+      "validation_CE": 1.88985013961792,
+      "validation_macro_f1": 0.36943368985447833
+    },
+    "wisig_official_CV0_mldg_rx": {
+      "key": "wisig_official_CV0_mldg_rx",
+      "lr": 0.0003,
+      "run_id": "wisig_official_CV0_mldg_rx_search_lr0.0003",
+      "validation_CE": 1.7275093793869019,
+      "validation_macro_f1": 0.387988755065995
+    },
+    "wisig_official_CV0_groupdro": {
+      "key": "wisig_official_CV0_groupdro",
+      "lr": 0.0005,
+      "run_id": "wisig_official_CV0_groupdro_search_lr0.0005",
+      "validation_CE": 1.8136105835437775,
+      "validation_macro_f1": 0.30709459331003125
+    },
+    "wisig_official_CV0_pcgrad": {
+      "key": "wisig_official_CV0_pcgrad",
+      "lr": 0.0005,
+      "run_id": "wisig_official_CV0_pcgrad_search_lr0.0005",
+      "validation_CE": 1.7374190986156464,
+      "validation_macro_f1": 0.3845067177627338
+    },
+    "wisig_official_CV0_mldg_rx_date": {
+      "key": "wisig_official_CV0_mldg_rx_date",
+      "lr": 0.0003,
+      "run_id": "wisig_official_CV0_mldg_rx_date_search_lr0.0003",
+      "validation_CE": 1.6866589188575745,
+      "validation_macro_f1": 0.40596768467671895
+    },
+    "wisig_resnet_CV0_ce": {
+      "key": "wisig_resnet_CV0_ce",
+      "lr": 0.0005,
+      "run_id": "wisig_resnet_CV0_ce_search_lr0.0005",
+      "validation_CE": 2.0650648176670074,
+      "validation_macro_f1": 0.19198410196029048
+    },
+    "shen_rank16_CV0_ce": {
+      "key": "shen_rank16_CV0_ce",
+      "lr": 0.0003,
+      "run_id": "shen_rank16_CV0_ce_search_lr0.0003",
+      "validation_CE": 0.4121078550815582,
+      "validation_macro_f1": 0.8493934113149499
+    },
+    "shen_rank16_CV0_swad": {
+      "key": "shen_rank16_CV0_swad",
+      "lr": 0.0003,
+      "run_id": "shen_rank16_CV0_swad_search_lr0.0003",
+      "validation_CE": 0.4733556807041168,
+      "validation_macro_f1": 0.8190073522863301
+    },
+    "shen_rank16_CV0_mldg_rx": {
+      "key": "shen_rank16_CV0_mldg_rx",
+      "lr": 0.0003,
+      "run_id": "shen_rank16_CV0_mldg_rx_search_lr0.0003",
+      "validation_CE": 0.5742232799530029,
+      "validation_macro_f1": 0.799938120793765
+    },
+    "shen_rank16_CV0_groupdro": {
+      "key": "shen_rank16_CV0_groupdro",
+      "lr": 0.0003,
+      "run_id": "shen_rank16_CV0_groupdro_search_lr0.0003",
+      "validation_CE": 0.5612977147102356,
+      "validation_macro_f1": 0.7965615758374238
+    },
+    "shen_rank16_CV0_pcgrad": {
+      "key": "shen_rank16_CV0_pcgrad",
+      "lr": 0.0003,
+      "run_id": "shen_rank16_CV0_pcgrad_search_lr0.0003",
+      "validation_CE": 0.3714253604412079,
+      "validation_macro_f1": 0.8892252583861776
+    },
+    "shen_rank16_CV1_ce": {
+      "key": "shen_rank16_CV1_ce",
+      "lr": 0.0003,
+      "run_id": "shen_rank16_CV1_ce_search_lr0.0003",
+      "validation_CE": 0.5243287086486816,
+      "validation_macro_f1": 0.7575926092287281
+    },
+    "shen_rank16_CV1_swad": {
+      "key": "shen_rank16_CV1_swad",
+      "lr": 0.0003,
+      "run_id": "shen_rank16_CV1_swad_search_lr0.0003",
+      "validation_CE": 0.639750599861145,
+      "validation_macro_f1": 0.6027361384249975
+    },
+    "shen_rank16_CV1_mldg_rx": {
+      "key": "shen_rank16_CV1_mldg_rx",
+      "lr": 0.0003,
+      "run_id": "shen_rank16_CV1_mldg_rx_search_lr0.0003",
+      "validation_CE": 0.6233019828796387,
+      "validation_macro_f1": 0.7293586461369478
+    },
+    "shen_rank16_CV1_groupdro": {
+      "key": "shen_rank16_CV1_groupdro",
+      "lr": 0.0003,
+      "run_id": "shen_rank16_CV1_groupdro_search_lr0.0003",
+      "validation_CE": 0.4460645914077759,
+      "validation_macro_f1": 0.8728168354460584
+    },
+    "shen_rank16_CV1_pcgrad": {
+      "key": "shen_rank16_CV1_pcgrad",
+      "lr": 0.0003,
+      "run_id": "shen_rank16_CV1_pcgrad_search_lr0.0003",
+      "validation_CE": 0.5636017918586731,
+      "validation_macro_f1": 0.7620490893968945
+    }
+  },
+  "all_candidates": [
+    {
+      "key": "wisig_official_CV0_ce",
+      "lr": 0.0003,
+      "run_id": "wisig_official_CV0_ce_search_lr0.0003",
+      "validation_CE": 1.7665894627571106,
+      "validation_macro_f1": 0.3877714567131749
+    },
+    {
+      "key": "wisig_official_CV0_ce",
+      "lr": 0.0005,
+      "run_id": "wisig_official_CV0_ce_search_lr0.0005",
+      "validation_CE": 1.77604740858078,
+      "validation_macro_f1": 0.3220272156709749
+    },
+    {
+      "key": "wisig_official_CV0_swad",
+      "lr": 0.0003,
+      "run_id": "wisig_official_CV0_swad_search_lr0.0003",
+      "validation_CE": 1.88985013961792,
+      "validation_macro_f1": 0.36943368985447833
+    },
+    {
+      "key": "wisig_official_CV0_swad",
+      "lr": 0.0005,
+      "run_id": "wisig_official_CV0_swad_search_lr0.0005",
+      "validation_CE": 1.9873320758342743,
+      "validation_macro_f1": 0.3658169811854919
+    },
+    {
+      "key": "wisig_official_CV0_mldg_rx",
+      "lr": 0.0003,
+      "run_id": "wisig_official_CV0_mldg_rx_search_lr0.0003",
+      "validation_CE": 1.7275093793869019,
+      "validation_macro_f1": 0.387988755065995
+    },
+    {
+      "key": "wisig_official_CV0_mldg_rx",
+      "lr": 0.0005,
+      "run_id": "wisig_official_CV0_mldg_rx_search_lr0.0005",
+      "validation_CE": 1.7463418245315552,
+      "validation_macro_f1": 0.3846264968252654
+    },
+    {
+      "key": "wisig_official_CV0_groupdro",
+      "lr": 0.0003,
+      "run_id": "wisig_official_CV0_groupdro_search_lr0.0003",
+      "validation_CE": 1.848020851612091,
+      "validation_macro_f1": 0.31315844318607816
+    },
+    {
+      "key": "wisig_official_CV0_groupdro",
+      "lr": 0.0005,
+      "run_id": "wisig_official_CV0_groupdro_search_lr0.0005",
+      "validation_CE": 1.8136105835437775,
+      "validation_macro_f1": 0.30709459331003125
+    },
+    {
+      "key": "wisig_official_CV0_pcgrad",
+      "lr": 0.0003,
+      "run_id": "wisig_official_CV0_pcgrad_search_lr0.0003",
+      "validation_CE": 1.751546174287796,
+      "validation_macro_f1": 0.3665292860752246
+    },
+    {
+      "key": "wisig_official_CV0_pcgrad",
+      "lr": 0.0005,
+      "run_id": "wisig_official_CV0_pcgrad_search_lr0.0005",
+      "validation_CE": 1.7374190986156464,
+      "validation_macro_f1": 0.3845067177627338
+    },
+    {
+      "key": "wisig_official_CV0_mldg_rx_date",
+      "lr": 0.0003,
+      "run_id": "wisig_official_CV0_mldg_rx_date_search_lr0.0003",
+      "validation_CE": 1.6866589188575745,
+      "validation_macro_f1": 0.40596768467671895
+    },
+    {
+      "key": "wisig_official_CV0_mldg_rx_date",
+      "lr": 0.0005,
+      "run_id": "wisig_official_CV0_mldg_rx_date_search_lr0.0005",
+      "validation_CE": 1.7493376731872559,
+      "validation_macro_f1": 0.3614370239046053
+    },
+    {
+      "key": "wisig_resnet_CV0_ce",
+      "lr": 0.0003,
+      "run_id": "wisig_resnet_CV0_ce_search_lr0.0003",
+      "validation_CE": 2.0702540576457977,
+      "validation_macro_f1": 0.15401918666913197
+    },
+    {
+      "key": "wisig_resnet_CV0_ce",
+      "lr": 0.0005,
+      "run_id": "wisig_resnet_CV0_ce_search_lr0.0005",
+      "validation_CE": 2.0650648176670074,
+      "validation_macro_f1": 0.19198410196029048
+    },
+    {
+      "key": "shen_rank16_CV0_ce",
+      "lr": 0.0001,
+      "run_id": "shen_rank16_CV0_ce_search_lr0.0001",
+      "validation_CE": 0.7943879961967468,
+      "validation_macro_f1": 0.7956336745419725
+    },
+    {
+      "key": "shen_rank16_CV0_ce",
+      "lr": 0.0003,
+      "run_id": "shen_rank16_CV0_ce_search_lr0.0003",
+      "validation_CE": 0.4121078550815582,
+      "validation_macro_f1": 0.8493934113149499
+    },
+    {
+      "key": "shen_rank16_CV0_swad",
+      "lr": 0.0001,
+      "run_id": "shen_rank16_CV0_swad_search_lr0.0001",
+      "validation_CE": 0.7667289972305298,
+      "validation_macro_f1": 0.7696405975842955
+    },
+    {
+      "key": "shen_rank16_CV0_swad",
+      "lr": 0.0003,
+      "run_id": "shen_rank16_CV0_swad_search_lr0.0003",
+      "validation_CE": 0.4733556807041168,
+      "validation_macro_f1": 0.8190073522863301
+    },
+    {
+      "key": "shen_rank16_CV0_mldg_rx",
+      "lr": 0.0001,
+      "run_id": "shen_rank16_CV0_mldg_rx_search_lr0.0001",
+      "validation_CE": 0.8897203207015991,
+      "validation_macro_f1": 0.7210590977814237
+    },
+    {
+      "key": "shen_rank16_CV0_mldg_rx",
+      "lr": 0.0003,
+      "run_id": "shen_rank16_CV0_mldg_rx_search_lr0.0003",
+      "validation_CE": 0.5742232799530029,
+      "validation_macro_f1": 0.799938120793765
+    },
+    {
+      "key": "shen_rank16_CV0_groupdro",
+      "lr": 0.0001,
+      "run_id": "shen_rank16_CV0_groupdro_search_lr0.0001",
+      "validation_CE": 0.9753987789154053,
+      "validation_macro_f1": 0.7410117166929978
+    },
+    {
+      "key": "shen_rank16_CV0_groupdro",
+      "lr": 0.0003,
+      "run_id": "shen_rank16_CV0_groupdro_search_lr0.0003",
+      "validation_CE": 0.5612977147102356,
+      "validation_macro_f1": 0.7965615758374238
+    },
+    {
+      "key": "shen_rank16_CV0_pcgrad",
+      "lr": 0.0001,
+      "run_id": "shen_rank16_CV0_pcgrad_search_lr0.0001",
+      "validation_CE": 0.7932688593864441,
+      "validation_macro_f1": 0.7759688943569706
+    },
+    {
+      "key": "shen_rank16_CV0_pcgrad",
+      "lr": 0.0003,
+      "run_id": "shen_rank16_CV0_pcgrad_search_lr0.0003",
+      "validation_CE": 0.3714253604412079,
+      "validation_macro_f1": 0.8892252583861776
+    },
+    {
+      "key": "shen_rank16_CV1_ce",
+      "lr": 0.0001,
+      "run_id": "shen_rank16_CV1_ce_search_lr0.0001",
+      "validation_CE": 0.8447915315628052,
+      "validation_macro_f1": 0.7020623489037551
+    },
+    {
+      "key": "shen_rank16_CV1_ce",
+      "lr": 0.0003,
+      "run_id": "shen_rank16_CV1_ce_search_lr0.0003",
+      "validation_CE": 0.5243287086486816,
+      "validation_macro_f1": 0.7575926092287281
+    },
+    {
+      "key": "shen_rank16_CV1_swad",
+      "lr": 0.0001,
+      "run_id": "shen_rank16_CV1_swad_search_lr0.0001",
+      "validation_CE": 1.0078859329223633,
+      "validation_macro_f1": 0.5442573017756608
+    },
+    {
+      "key": "shen_rank16_CV1_swad",
+      "lr": 0.0003,
+      "run_id": "shen_rank16_CV1_swad_search_lr0.0003",
+      "validation_CE": 0.639750599861145,
+      "validation_macro_f1": 0.6027361384249975
+    },
+    {
+      "key": "shen_rank16_CV1_mldg_rx",
+      "lr": 0.0001,
+      "run_id": "shen_rank16_CV1_mldg_rx_search_lr0.0001",
+      "validation_CE": 0.8473116159439087,
+      "validation_macro_f1": 0.7365677148032732
+    },
+    {
+      "key": "shen_rank16_CV1_mldg_rx",
+      "lr": 0.0003,
+      "run_id": "shen_rank16_CV1_mldg_rx_search_lr0.0003",
+      "validation_CE": 0.6233019828796387,
+      "validation_macro_f1": 0.7293586461369478
+    },
+    {
+      "key": "shen_rank16_CV1_groupdro",
+      "lr": 0.0001,
+      "run_id": "shen_rank16_CV1_groupdro_search_lr0.0001",
+      "validation_CE": 1.07249116897583,
+      "validation_macro_f1": 0.5907359241720552
+    },
+    {
+      "key": "shen_rank16_CV1_groupdro",
+      "lr": 0.0003,
+      "run_id": "shen_rank16_CV1_groupdro_search_lr0.0003",
+      "validation_CE": 0.4460645914077759,
+      "validation_macro_f1": 0.8728168354460584
+    },
+    {
+      "key": "shen_rank16_CV1_pcgrad",
+      "lr": 0.0001,
+      "run_id": "shen_rank16_CV1_pcgrad_search_lr0.0001",
+      "validation_CE": 0.9067572951316833,
+      "validation_macro_f1": 0.6270513536636753
+    },
+    {
+      "key": "shen_rank16_CV1_pcgrad",
+      "lr": 0.0003,
+      "run_id": "shen_rank16_CV1_pcgrad_search_lr0.0003",
+      "validation_CE": 0.5636017918586731,
+      "validation_macro_f1": 0.7620490893968945
+    }
+  ],
+  "source_only": true,
+  "internal_RX_used": false,
+  "outer_RX_used": false,
+  "formal_fits_started": false
+}

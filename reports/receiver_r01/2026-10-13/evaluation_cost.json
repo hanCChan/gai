@@ -1,0 +1,9 @@
+{
+  "seconds": 111.39553688999877,
+  "reserved_gpu_hours": 0.030943204691666323,
+  "frozen_jobs": 51,
+  "final_RX_read": false,
+  "last_date_read": false,
+  "equalized_read": false,
+  "source_pool_is_development_not_independent_blind": true
+}

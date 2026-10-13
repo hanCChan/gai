@@ -1,0 +1,40 @@
+{
+  "estimates": [
+    {
+      "calibration": "wisig_official_CV0_ce_search_lr0.0003",
+      "used_GPUh": 0.01243179752666644,
+      "remaining_estimate_with_50pct_margin_GPUh": 1.4989864365899772
+    },
+    {
+      "calibration": "wisig_official_CV0_swad_search_lr0.0003",
+      "used_GPUh": 0.027552457755555225,
+      "remaining_estimate_with_50pct_margin_GPUh": 1.7323529323266524
+    },
+    {
+      "calibration": "wisig_official_CV0_mldg_rx_search_lr0.0003",
+      "used_GPUh": 0.0641560502041668,
+      "remaining_estimate_with_50pct_margin_GPUh": 3.479930516777119
+    },
+    {
+      "calibration": "wisig_official_CV0_groupdro_search_lr0.0003",
+      "used_GPUh": 0.07782499847166643,
+      "remaining_estimate_with_50pct_margin_GPUh": 3.1821280308691926
+    },
+    {
+      "calibration": "wisig_official_CV0_pcgrad_search_lr0.0003",
+      "used_GPUh": 0.09706767213333276,
+      "remaining_estimate_with_50pct_margin_GPUh": 2.9428496616000164
+    },
+    {
+      "calibration": "wisig_official_CV0_mldg_rx_date_search_lr0.0003",
+      "used_GPUh": 0.1465145059108333,
+      "remaining_estimate_with_50pct_margin_GPUh": 3.4830716613870987
+    },
+    {
+      "calibration": "wisig_resnet_CV0_ce_search_lr0.0003",
+      "used_GPUh": 0.3142782629163897,
+      "remaining_estimate_with_50pct_margin_GPUh": 7.4887519287554545
+    }
+  ],
+  "cap_GPUh": 6.0
+}

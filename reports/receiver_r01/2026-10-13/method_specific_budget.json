@@ -1,0 +1,10 @@
+{
+  "existing_jobs": 12,
+  "remaining_jobs": 73,
+  "used_GPUh": 0.37038299772639016,
+  "remaining_estimate_with_RX_scaling_and_50pct_margin_GPUh": 5.7697930839219564,
+  "analysis_GPUh_allowance": 0.08333333333333333,
+  "cap_GPUh": 7.0,
+  "no_fitting_definition_change": true,
+  "initial_surrogate_estimate_preserved": true
+}

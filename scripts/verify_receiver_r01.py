@@ -24,7 +24,12 @@ def main():
             schedule=np.load(run/'schedule.npy',allow_pickle=False);assert sha(run/'schedule.npy')==c['schedule_sha256']
             assert schedule.shape[0]==job['epochs'] and s['steps']==job['epochs']*schedule.shape[1]
             n=c['train_packets'];expected=np.arange(n)
-            for epoch in schedule:assert np.array_equal(np.sort(epoch.ravel()),expected)
+            # Both loaders concatenate complete class cells in their canonical RX/date/TX order.
+            per_cell=120 if job['dataset']=='wisig' else 160
+            group_ids=np.repeat(np.arange(n//per_cell),per_cell)
+            for epoch in schedule:
+                assert np.array_equal(np.sort(epoch.ravel()),expected)
+                for batch in epoch:assert np.array_equal(np.bincount(group_ids[batch],minlength=n//per_cell),np.full(n//per_cell,2))
             c['stage']=stage;configs.append(c);checks.append(dict(run_id=job['run_id'],epochs=job['epochs'],steps=s['steps'],checkpoint_sha256=s['checkpoint_sha256']))
     for key in {(c['dataset'],c['backbone'],c['fold'],c['seed'],c['stage']) for c in configs}:
         cs=[c for c in configs if (c['dataset'],c['backbone'],c['fold'],c['seed'],c['stage'])==key]
@@ -66,6 +71,9 @@ def main():
         g=perrx[(perrx.dataset==row['dataset'])&(perrx.backbone==row['backbone'])&(perrx.method==row['method'])&(perrx.seed==row['seed'])&(perrx.role==row['role'])]
         rx=g.groupby('rx').accuracy.mean().to_numpy()
         assert len(rx)==row['RX_count'] and abs(rx.mean()-row['accuracy'])<1e-12 and abs(np.quantile(rx,.1)-row['RX_accuracy_q10'])<1e-12
+        t=pertx[(pertx.dataset==row['dataset'])&(pertx.backbone==row['backbone'])&(pertx.method==row['method'])&(pertx.seed==row['seed'])&(pertx.role==row['role'])]
+        tail=t.groupby(['rx','tx']).recall.mean().groupby('rx').min().to_numpy()
+        assert abs(tail.mean()-row['mean_RX_worst_TX_recall'])<1e-12 and abs(np.quantile(tail,.1)-row['RX_worst_TX_recall_q10'])<1e-12
     members=json.loads((public/'evidence_members.json').read_text());assert sha(public/'evidence.zip')==members['archive_sha256']
     with zipfile.ZipFile(public/'evidence.zip') as z:
         assert z.testzip() is None and sorted(z.namelist())==sorted(m['path'] for m in members['members'])
@@ -73,7 +81,7 @@ def main():
             assert Path(m['path']).suffix in ['.json','.csv','.log'] and hashlib.sha256(z.read(m['path'])).hexdigest()==m['sha256']
     # Historical tracked files preserved: only authorization doc + new experiment paths may differ.
     base=reg['base_remote_commit'];changed=subprocess.check_output(['git','diff','--name-only',base],cwd=ROOT,text=True).splitlines()
-    assert all(p=='AGENTS.md' or '/receiver_r01/' in p or p.endswith('_receiver_r01.py') for p in changed),changed
+    assert all(p in ['AGENTS.md','.gitignore'] or '/receiver_r01/' in p or p.endswith('_receiver_r01.py') for p in changed),changed
     result=dict(passed=True,seal_files=len(seal['files']),input_assets=len(inputs),fitting_jobs=len(checks),formal_seeds=reg['formal_seeds'],
         all_epoch_membership_verified=True,all_pairing_verified=True,source_only_LR_selection_verified=True,
         confusion_cells_recomputed=count,evidence_members_verified=len(members['members']),all_missing_recall_is_NA=True,
@@ -86,7 +94,7 @@ def main():
                   archived_complete_tables={name:dict(member='tables/'+name,sha256=sha(public/name),bytes=(public/name).stat().st_size) for name in archived},
                   source_inputs=inputs,raw_IQ_weights_features_published=False)
     dump(public/'PUBLIC_ARTIFACT_SHA256.json',manifest)
-    (public/'EVIDENCE_INDEX.md').write_text('# R0–R1 evidence index\n\nFull source/input and public file SHA256: PUBLIC_ARTIFACT_SHA256.json.\n\nDerived-only evidence.zip: '+sha(public/'evidence.zip')+'\n\n'+str(len(members['members']))+' archive members verified against their SHA256 in evidence_members.json. All 85 job config/status/selection/curves/update-probes and full process logs are included. Complete large confusion_counts, per_RX_TX_date, paired_RX_TX_changes, update_diagnostics and update_RX_risks CSVs are available under tables/ in this ZIP, indexed by archived_complete_tables. Raw IQ, feature arrays, logits and model weights are excluded. Checkpoint hashes are public; checkpoint bytes stay local.\n\nCount-level recomputation and immutable history/seal checks: verification.json. Source selection and paired sampling hashes are public CSV/JSON. Remote publication requires independent commit-tree match plus report/decision readback.\n')
+    (public/'EVIDENCE_INDEX.md').write_text('# R0–R1 evidence index\n\nFull source/input and public file SHA256: PUBLIC_ARTIFACT_SHA256.json.\n\nDerived-only evidence.zip: '+sha(public/'evidence.zip')+'\n\n'+str(len(members['members']))+' archive members verified against their SHA256 in evidence_members.json. All 85 job config/status/selection/curves/update-probes and full process logs are included. Complete large confusion_counts, per_RX_TX_date, paired_RX_TX_changes, update_diagnostics and update_RX_risks CSVs are available under tables/ in this ZIP, indexed by archived_complete_tables. Raw IQ, feature arrays, logits and model weights are excluded. Checkpoint hashes are public; checkpoint bytes stay local.\n\nZIP uses lossless LZMA compression. Extract with Python: `python -m zipfile -e evidence.zip extracted_evidence`. Original member bytes are unchanged; publication_packaging.json records the connector timeout and compression change.\n\nCount-level recomputation and immutable history/seal checks: verification.json. Source selection and paired sampling hashes are public CSV/JSON. Remote publication requires independent commit-tree match plus report/decision readback.\n')
     print(json.dumps(result))
 
 if __name__=='__main__':main()

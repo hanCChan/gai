@@ -77,3 +77,11 @@ reports/b1_baselines/**/run_evidence/
 
 # M0/M1/M2 complete derived-only evidence, no signal arrays or weights.
 !/reports/m0_signal/2026-10-13/evidence.zip
+
+# R0/R1 complete large tables live in the SHA-verified derived-only archive.
+reports/receiver_r01/**/confusion_counts.csv
+reports/receiver_r01/**/per_RX_TX_date.csv
+reports/receiver_r01/**/paired_RX_TX_changes.csv
+reports/receiver_r01/**/update_diagnostics.csv
+reports/receiver_r01/**/update_RX_risks.csv
+!/reports/receiver_r01/2026-10-13/evidence.zip
