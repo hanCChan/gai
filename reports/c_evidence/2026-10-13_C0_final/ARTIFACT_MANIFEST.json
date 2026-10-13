@@ -1,0 +1,16 @@
+{
+  "EVIDENCE_INDEX.md": "cef361fa1375f3fbd3773b4a7ffdd1b2ef91dd06d3364af421dbf844f406f250",
+  "INPUT_MANIFEST.json": "fd541ac3ad000e4462fa884a110a10ca86a5b4243d101298cac890351845ffdf",
+  "OSU_per_capture_assets.csv": "2671dde357de02e9d1a5a634c640e38ddeaa21ac809462ea5c2ea8d919595279",
+  "OSU_per_seed_assets.csv": "00aba81f7b620f5d2f32929f1119ad5273ab2042ffe60a98624dbd533c8cd96b",
+  "OSU_prediction_search.json": "d600ee06d79c406993f445b158061bec9e804ad4869267a0a6a65c138b3cf620",
+  "REPORT.md": "435dd1e4174b013026330052b3074d2e56e16657511c5079481fdb4ad1e6b49a",
+  "SOURCE_AND_ENVIRONMENT.json": "e955021f9d3235f019ab58abb6b214d6bc9eefed1b84d38321993a7821953e10",
+  "Shen_prediction_asset_headers.json": "ab54185b698bbd16f6104d6ffbc79ef354b69d0af2c02e745bf96cc783cf74ce",
+  "Shen_source_headers.json": "33ed423339b657a34568f954351adc76c79ce46a1cee41983b55fa22b522b621",
+  "Table_II_historical_reaggregation.csv": "435759c2246ad9851ca7b43e0b719711389a4cd1fa642fa2276f3433b4a4e76c",
+  "access_log.json": "e5fef417ee1c65ec976aed531329ea37292a0ca736198347bf62ec19db784af1",
+  "checkpoint_provenance.json": "2136445845541ef946067a8f5a2160824036bdc39968e4dcae3fd1c885157a3a",
+  "decision.json": "94877b272b67d605a6aa4b48a726f6b310daae414fc5814b48be4b118b27b517",
+  "independent_verification.json": "49d267874d599e0c6664bba72a21afa2e42cdacff51bf78e03abb3fe95f138e4"
+}

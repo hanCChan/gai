@@ -1,0 +1,82 @@
+[
+  {
+    "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/b200_mini_1_train.h5",
+    "receiver": "b200_mini_1",
+    "role": "source_train",
+    "mode": "read_only",
+    "operation": "HDF5_headers_and_attributes_only",
+    "iq_values_read": 0
+  },
+  {
+    "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/b210_1_train.h5",
+    "receiver": "b210_1",
+    "role": "source_train",
+    "mode": "read_only",
+    "operation": "HDF5_headers_and_attributes_only",
+    "iq_values_read": 0
+  },
+  {
+    "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/pluto_1_train.h5",
+    "receiver": "pluto_1",
+    "role": "source_train",
+    "mode": "read_only",
+    "operation": "HDF5_headers_and_attributes_only",
+    "iq_values_read": 0
+  },
+  {
+    "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/rtl_1_train.h5",
+    "receiver": "rtl_1",
+    "role": "source_train",
+    "mode": "read_only",
+    "operation": "HDF5_headers_and_attributes_only",
+    "iq_values_read": 0
+  },
+  {
+    "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/rtl_2_train.h5",
+    "receiver": "rtl_2",
+    "role": "source_train",
+    "mode": "read_only",
+    "operation": "HDF5_headers_and_attributes_only",
+    "iq_values_read": 0
+  },
+  {
+    "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/rtl_3_train.h5",
+    "receiver": "rtl_3",
+    "role": "source_train",
+    "mode": "read_only",
+    "operation": "HDF5_headers_and_attributes_only",
+    "iq_values_read": 0
+  },
+  {
+    "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/rtl_5_train.h5",
+    "receiver": "rtl_5",
+    "role": "source_train",
+    "mode": "read_only",
+    "operation": "HDF5_headers_and_attributes_only",
+    "iq_values_read": 0
+  },
+  {
+    "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/rtl_6_train.h5",
+    "receiver": "rtl_6",
+    "role": "source_train",
+    "mode": "read_only",
+    "operation": "HDF5_headers_and_attributes_only",
+    "iq_values_read": 0
+  },
+  {
+    "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/rtl_7_train.h5",
+    "receiver": "rtl_7",
+    "role": "source_train",
+    "mode": "read_only",
+    "operation": "HDF5_headers_and_attributes_only",
+    "iq_values_read": 0
+  },
+  {
+    "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/rtl_9_train.h5",
+    "receiver": "rtl_9",
+    "role": "source_train",
+    "mode": "read_only",
+    "operation": "HDF5_headers_and_attributes_only",
+    "iq_values_read": 0
+  }
+]

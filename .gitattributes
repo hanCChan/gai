@@ -17,3 +17,11 @@ scripts/verify_p0_sync.py -text
 scripts/report_p0_sync.py -text
 tests/test_p0_sync.py -text
 reports/p0_sync/** -text -whitespace
+
+# Preserve new C0 source/provenance/evidence bytes for publication checks.
+docs/c_evidence/** -text -whitespace
+configs/c_evidence/** -text
+reports/c_evidence/** -text -whitespace
+scripts/audit_c_evidence_assets.py -text
+scripts/prepare_research_publication.py -text
+AGENTS.md -text

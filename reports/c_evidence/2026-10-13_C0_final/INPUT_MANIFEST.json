@@ -1,0 +1,1340 @@
+[
+  {
+    "path": "/home/keyan/private/p0_sync_20261013/rejected_manuscript_15.pdf",
+    "role": "rejected_manuscript",
+    "exists": true,
+    "bytes": 375569,
+    "sha256": "f722ae54ec80901110e1964dd8f4701228a42a04c6bacfde4151c880a7d3f188",
+    "private_content_not_published": true
+  },
+  {
+    "path": "/home/keyan/private/p0_sync_20261013/rejection.txt",
+    "role": "rejection_letter",
+    "exists": true,
+    "bytes": 35214,
+    "sha256": "80d2148e4e29bb945027cc2c57e73ddbde33c59aae9f0ca9313838f783c880d4",
+    "private_content_not_published": true
+  },
+  {
+    "path": "/home/keyan/code-y/inventory/asset_read_audit_current.json",
+    "role": "historical_asset_inventory",
+    "exists": true,
+    "bytes": 2981494,
+    "sha256": "ea63374500557b0848c469b5ac5bf6887b63e005f1773ae0a19fc4a9be68a933",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/outputs/paper_ready_v3/step1_phase7_clean/metrics_all.csv",
+    "role": "formal_crossday_seed_summaries",
+    "exists": true,
+    "bytes": 9146,
+    "sha256": "f5bc012f62bc6d7f6c4c704f076ce16a32c1c34527819481e946ac5298411a2f",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/outputs/paper_ready_v3/step1_phase7_clean/multiseed_summary.json",
+    "role": "historical_aggregate_crosscheck",
+    "exists": true,
+    "bytes": 6680,
+    "sha256": "46d17857615af83a255d978ddb075aafb28d3c05104fb0cc111285027f1ecfa2",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/outputs/paper_ready_v3/step1_phase7_clean/runs/A_cnn_iq/seed_0/best.pt",
+    "role": "formal_crossday_checkpoint",
+    "exists": true,
+    "bytes": 205002,
+    "sha256": "f5c54bb8d569f3e0934f5918f79d6cb7ce56702e305a2149def9a7598e8c4553",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/outputs/paper_ready_v3/step1_phase7_clean/runs/A_cnn_iq/seed_1/best.pt",
+    "role": "formal_crossday_checkpoint",
+    "exists": false,
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/outputs/paper_ready_v3/step1_phase7_clean/runs/A_cnn_iq/seed_2/best.pt",
+    "role": "formal_crossday_checkpoint",
+    "exists": false,
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/outputs/paper_ready_v3/step1_phase7_clean/runs/A_cnn_iq/seed_3/best.pt",
+    "role": "formal_crossday_checkpoint",
+    "exists": false,
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/outputs/paper_ready_v3/step1_phase7_clean/runs/A_cnn_iq/seed_4/best.pt",
+    "role": "formal_crossday_checkpoint",
+    "exists": false,
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/outputs/paper_ready_v3/step1_phase7_clean/runs/B_linear_no_oob/seed_0/best.pt",
+    "role": "formal_crossday_checkpoint",
+    "exists": false,
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/outputs/paper_ready_v3/step1_phase7_clean/runs/B_linear_no_oob/seed_1/best.pt",
+    "role": "formal_crossday_checkpoint",
+    "exists": false,
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/outputs/paper_ready_v3/step1_phase7_clean/runs/B_linear_no_oob/seed_2/best.pt",
+    "role": "formal_crossday_checkpoint",
+    "exists": false,
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/outputs/paper_ready_v3/step1_phase7_clean/runs/F_cross_attn_chirp_plain/seed_0/best.pt",
+    "role": "formal_crossday_checkpoint",
+    "exists": true,
+    "bytes": 2531176,
+    "sha256": "0bb9b20ada847e31c0990af64c5c21eccdf03dca6b7f59649da78d12b67db2d2",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/outputs/paper_ready_v3/step1_phase7_clean/runs/F_cross_attn_chirp_plain/seed_1/best.pt",
+    "role": "formal_crossday_checkpoint",
+    "exists": true,
+    "bytes": 2531176,
+    "sha256": "9989c01084c95b52d35469f008d8c37479bce8ef9cfc115ac2ecb6e81ae3d857",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/outputs/paper_ready_v3/step1_phase7_clean/runs/F_cross_attn_chirp_plain/seed_2/best.pt",
+    "role": "formal_crossday_checkpoint",
+    "exists": true,
+    "bytes": 2531176,
+    "sha256": "04be79a225df671cf1af4b234649badff98fe87f0a521413d1a2900e843422ac",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/outputs/paper_ready_v3/step1_phase7_clean/runs/F_cross_attn_chirp_plain/seed_3/best.pt",
+    "role": "formal_crossday_checkpoint",
+    "exists": true,
+    "bytes": 2531176,
+    "sha256": "f1dfcae0967fcf75ea7db820dd6aea8f9a49046ff98dd8f947537b94d68aabde",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/outputs/paper_ready_v3/step1_phase7_clean/runs/F_cross_attn_chirp_plain/seed_4/best.pt",
+    "role": "formal_crossday_checkpoint",
+    "exists": true,
+    "bytes": 2531176,
+    "sha256": "376cd05f6faf90563c87b993600817e06ff7b62562826a4cf7e9544dbff8567d",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/paper/cross_day_day1to5_source_only.csv",
+    "role": "crossday_manifest",
+    "exists": true,
+    "bytes": 21574,
+    "sha256": "b4846c7b19f7cc7effad0dbcaf53a3bc310c3f4a6448420945bbd78a5f2e31e5",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day1/Device1/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4001,
+    "sha256": "b2bb52e02b038d7be765bd6141109c91625b324c1735b5c051a1e4c765dbf170",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day1/Device2/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4001,
+    "sha256": "1b3caa12315261902d0cfea3ecaebd5fe3c01f6bd58599f86885980c75099ec4",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day1/Device3/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4001,
+    "sha256": "680a048ca340abdd0dfd11d1a675cce5cf0bd79e65fac78c9b5c10d24a58a156",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day1/Device4/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4000,
+    "sha256": "145c2e4e48222753fb178d298d7f1fb9fed49c6081569bb780b721066278f166",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day1/Device5/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4000,
+    "sha256": "15e2dfbf22699b7c67656da76013c43b313e6c49bb67e33692e6f2a3903422c7",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day1/Device6/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4001,
+    "sha256": "44e8ddcfbfc4bf5abbf7ad8bbd01c29624dbdaf5f27e461b55db3f89a1d95157",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day1/Device7/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4001,
+    "sha256": "7d820be0878610925e55c6d2d8145814678b45de247cf07dfc78214828cae150",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day1/Device8/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4001,
+    "sha256": "7dccbada7119e828e89b080297441f422c7d961abff9d379bb7829f217f47e5c",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day1/Device10/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "4ce06418e94dfe6419faae6766296dddf03c17c0b3f0c200f2b469367c7aa7bd",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day1/Device11/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "ad9ab1005b85e68aa6315a57aec193fb54f7c561fabcf4a5951cbe4b8a97e78f",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day1/Device12/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "7035fe5e920366a9b9bdbf5790e94c2bc56b0791e366f4658b0a822a764cafb1",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day1/Device13/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "74d92e42eefe45a5ede4242cb3a9f8c8ca98fa6e4e3364ba924ce674ffcecac5",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day1/Device14/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "c82ad1154bd518d609225567b35b72b9c4dabacda8c0e66bb766a71998566759",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day1/Device15/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "a1a8ed9eaf4118ad256a5290ab91a368c30a41e0933a8edb832ff490b0e99603",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day1/Device16/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "009c570d4162a72ea191151bddaf6970f42b5867a98c0ec286c8cba16046530b",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day1/Device17/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "5933a2dec488071da2ab7050acbae8338e88dab5f8049a6b289fe917a4459af6",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day1/Device18/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "c7b2500cebf3147b8794beee57dc3bacb97c355e06e7891b2eaaa5c370c89085",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day1/Device19/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "7a64c43413ded7d465663f4639508b6f71fe81b03e460b5584df10fc2ec40465",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day1/Device20/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "872513a0419941c7b2ec14b0b52ff9b4670876f50eeb9d96cb92f44818600a4a",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day1/Device21/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "0d2809f6af6731d6d1fb8a181b0802283b5ad029d9910fb227ff0d78d33846f3",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day1/Device22/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "f7d85e3471ef5d65312d194772308fc95c55cafc16d6b275fefb6e46006d2734",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day1/Device23/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "472499cd7d781e0e1fe45d5e9b2a1ed90a135b035d09bcd26340ddd714d6d6ad",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day1/Device24/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "d1bbc8e6a77394a0f78ae400b54c5a942bd664376a6db3cd0a521d1d805302bc",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day1/Device25/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "43a6cfb93225fdc952b2f3b3371acadb7b58176315518632f97ef2fd240b56ff",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day2/Device1/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4001,
+    "sha256": "c2fec1cd133dc3df1398cc99df525b8a6e644d182cf38f6fd9de81beecdaa378",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day2/Device2/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4001,
+    "sha256": "cde2fd09b14cdde292aeb46b070daff26acd7856e0883991e6064c555c27d98d",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day2/Device3/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4001,
+    "sha256": "f96a7bd454be66d821773c906261c133218e337d91d2e777ebbd380fd59f309f",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day2/Device4/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4000,
+    "sha256": "942ea643be306133109828d03fb3c1507e4449fd0b426a103de45f455c5ffd93",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day2/Device5/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4000,
+    "sha256": "250a3bd3b077bb083c31a54f7539561a8ae61cb907be75a8773f8b321e887afe",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day2/Device6/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4001,
+    "sha256": "8efa28bbf60f4a829d0a490a536dcd265b90aa3a52be3bf243ef18654f959b41",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day2/Device7/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4001,
+    "sha256": "4dab50048874d2816c2943ef5250bc381f6732e061f7c872e4a8d8ee2ea57137",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day2/Device8/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4001,
+    "sha256": "82b567611a75e2e3b8c0d9ca4e3434f326277944ff3d7424ac0659fcedbc379b",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day2/Device10/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "834917ebbe11687bbefb3f8f4e325709b561b089976ffa42093e5c7ce88acf87",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day2/Device11/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "08ea158b88ce51c685a64566d0e8601376f64aa16459cf4297912cb7deae3e50",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day2/Device12/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "73cb05c54b5bd2c6fce54854be8c70999ecc88dd5cd8adae6144dc5c8e830c9c",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day2/Device13/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "ac0e1bcfc4739e19f08efcaa4c37c961e425faca3a9dd27b533f6ea6b2ca67a6",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day2/Device14/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "5cd16bf08f87638499e91b4cf55655f3baa915dfb5b5ab81497f10cd9734d589",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day2/Device15/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "1f18180a35ab67552e30f75c297b4552c848fc957548665c912065d5cda94994",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day2/Device16/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "e97ed1f428db4363a00543ecce4517385d128de5977b3dbe197550be7ddbccc2",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day2/Device17/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "bac18ae7f01630703b2854a8b63b9d2b05cec5af20278c882b90f642e4f9e03f",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day2/Device18/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "d61b4a66b62503b995f40d0c28f8c305f0066200c5f8942e3620204daf541354",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day2/Device19/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "52915e766124997b888e2d88b83bafc717168b2f881b7ca6033604cc66ae3cbe",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day2/Device20/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "4ace535da9596f11d616db4272646e6063a26b71224b90808aa32d330377d252",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day2/Device21/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "3fa61498c9df81364a0470bf9458f8f0d2ec51b969397800cb2d8f3cfadc1275",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day2/Device22/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "fc9e8e10e26a38aaa0908bd1eb69c0f945a0f0c14fa17cfdc20d107bf601e261",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day2/Device23/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "4bd59a133abbbf715ec440e1f1e7f096afcd5b51c2754e9e156bed35eccb8198",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day2/Device24/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "dd5e23fdac32c359f1a273da380b5849ec05a88daeee4009397b02aef03086f9",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day2/Device25/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "422dcd9d2e9789ed8a747a5c8ce152e0f0ef5049ccb6ad1e02b67521a90024de",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day3/Device1/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4001,
+    "sha256": "1ed6d54922176c7000cd54d2dd30d1066a354ee2b1ff59941c40beae0acb5c8d",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day3/Device2/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4001,
+    "sha256": "b20adf51df1ced5b5d7bd0f03153c292c1f6322ad6f0801ff0a0374f7f0b99f0",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day3/Device3/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4001,
+    "sha256": "a7e43cf1c69e2afb4bc2b2f68b7f92094ef68e86f6741278f83d6f5d8da08ed5",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day3/Device4/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4000,
+    "sha256": "4123173a7a955b29d6e3245ce1d0c16078c2c52ccdedf5da9878cadb4c2b0503",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day3/Device5/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4000,
+    "sha256": "a8068ebff216d06a3c3ce834fe8b8d8505a62f31933e5849d77961b049590995",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day3/Device6/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4001,
+    "sha256": "0e23529c56c73c0f7a1d463021f1030ddb6874ec55917dd62bd3e3d88f31248f",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day3/Device7/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4001,
+    "sha256": "20f355361af63a56d9ba98ab05de5995161800ef325be468a0624e5f5975f678",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day3/Device8/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4001,
+    "sha256": "c30ba3c024e06326af8ae08e9d823cb066e8db409e3f868792e2f42a3d0aa4dd",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day3/Device10/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "def0333bc1c7f0538bd26a29221f5031d93daa827705049eae95f19e5935d99a",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day3/Device11/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "8fb705ed254224fb6ff859c0f1229731a3f7f4e442e7e9cd8ce6349136c5eaa8",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day3/Device12/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "a60ffcc4afa5d6ef245870756e78b918ff41ae80f9a422e8078c48c7084ccaa5",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day3/Device13/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "0dff268b7bd5def0df1c46198bed3bc5fb9c9a482eb76780dd720f66ffebf7cf",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day3/Device14/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "530abfabf493def8453fc3a083591068c4e2cead93f9b2d56e7457dcb170b95d",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day3/Device15/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "5c8a2973b98adbd094fd495012634be4d9042da1122d1914e2b723c357b46c3a",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day3/Device16/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "c39b6c0a4c8fef71b887c61fd40635ad504d11b0e03e11e91a41b95a404050a8",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day3/Device17/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "c04b1a03bc37bb22aad5a43a8898cecc2c70682db95c490aaa88dbb38f8928a8",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day3/Device18/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "7e858772975a3022ebc6fafbf55b3c70a380f4fce35514ed984fa2cf0e7c02df",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day3/Device19/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "a5fd35e6e720c7923103839ffb0ed94b36f5071c5810cff0385b133de33bf2cf",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day3/Device20/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "ca3c5441afa6ca206f650f7d7a4a9f5ce7c067927c6ddc9e8e09bb0c48bf9532",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day3/Device21/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "02f5ed842fe5fa1115008df71d6f982a9245ffa5cf0169c65db13f8cdd41a97d",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day3/Device22/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "035b69c11b0e8285d96d61f50a8c4bc0a548cd9a805913b614ae6e55c770fe16",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day3/Device23/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "7c59f6469041fc5e601eaa92ff4b3c83bfe9ba6e0a12c771fe1e4fe9b9d414d2",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day3/Device24/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "32ae5d4a4952a915e15c32c331b62a999b54223016a8161b1052209d9b663c89",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day3/Device25/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "b65fbb704b66b808d52ad29e98d9dd037578092e9bfd9ce0d238e2076b53b21c",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day4/Device1/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4001,
+    "sha256": "a9069195dd40978783d12c792c8a017c40916c9e69bee491e2984d28e7ca24c2",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day4/Device2/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4001,
+    "sha256": "96ae2cf9c24adac242462f018391d0647787fa6702a57b3b07e8f3e099b22286",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day4/Device3/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4001,
+    "sha256": "c3419d394b7e088b3f8d77ca5631bb7f5646155a1f3ab3d628f2246798642b95",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day4/Device4/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4000,
+    "sha256": "51a1eacad46a62143a6760d48102fd08a23b84813947e6d2e95aaa9477a790f0",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day4/Device5/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4000,
+    "sha256": "2eb5ecb6e561fff6c2a2236e4223d551a2c99f8e32d3e92b4485a5f99097de5c",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day4/Device6/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4001,
+    "sha256": "b9fc1416b92086ac2b7491b4f20bc4824e15c96d574ccfe0c89fb0eb671c6b47",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day4/Device7/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4001,
+    "sha256": "3a933b1ecadfb7e87f89ef56b1978df710277438f440cf79c3dc90f46deb1deb",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day4/Device8/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4001,
+    "sha256": "7dfefbc8b3fa96b8572c1285d48593cf22517a8d8d61670154d973c22261b781",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day4/Device10/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "bee695156a974e0c790a61d9bf80c7d57acbe5d1baa94f0a73609d3c779ba2a6",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day4/Device11/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "a2d18329f9b58972d3bba3fff2f1054403f35967155582baf5b41990593f1c1d",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day4/Device12/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "c28c87ab062d7766fb7079b829afca252cd8a0b213eb5d113c7d25bd226c797b",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day4/Device13/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "055ef6c0ca51094b7e2cd43946b0c542d2172f35ac9420dca78c592f94a7a740",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day4/Device14/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "88c9ff3e7cfde00c7519697f4eee95d146bf33fd4a47aabb3f0fb322c48477f5",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day4/Device15/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "485b01a67df53ed97c6d8036850d2338698db8c19f8fa136ee982c5ae3adb2c7",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day4/Device16/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "0a3227712bdb5dde2722efa92360534cd10321f1f8873b24893f563d26b87425",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day4/Device17/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "0cb27eb03e7ae37c67d42bae49a595d016e66d0f37d271cf51bb108ccaf26017",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day4/Device18/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "0693502dae388f56272cfca17bda34c7b1a80932799109557696983245791dd2",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day4/Device19/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "3181594e81ceba2bfe602f06af41733575498a54e7307130ce4a18be07f384fc",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day4/Device20/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "690df87e5dfa6892908029361dccd4c417154fc565f72031a0ac754c97650466",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day4/Device21/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "fc938f235c0c1c80f590366d240a9de0372291a8a4179e12d564fd066dd5a6b9",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day4/Device22/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "2a3c9862e364e1912913ada869c5bd0a8ca2acd352c0899850e82151360b5d29",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day4/Device23/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "239e82b76b1469e0ffff938ec6f859c417b4e1c2e5b867e403f6af9a943a8922",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day4/Device24/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "5ff4506aa9b99174590f4f0e3d4a2ffcde7de7e4d948ff08e79bb04f3b2d6ecd",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day4/Device25/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "921d3efd4953286625c1d6cccab7ee3e9934e6b41e796ba3c0d8ba9bfcbe949b",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day5/Device1/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4001,
+    "sha256": "81782ccfaaa47f90a55973ebb114378178886e50073c771a9faaabd0c7136a9f",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day5/Device2/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4001,
+    "sha256": "7fad19e37fff1c542bde37600e76f86b7743b95f856edd782664fae7e4f73973",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day5/Device3/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4001,
+    "sha256": "6b97bd314fd2ac5c21dbcd98a1917f720926754e718be2d3b4f0edc10c6051e2",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day5/Device4/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4000,
+    "sha256": "6cf479d433d0cdc373a442427f63707a944d4e8be243b25eb858c7bc5e8b2ef4",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day5/Device5/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4000,
+    "sha256": "197269a6d533e1813fcdd72dca41424487eb2ab4cc763e848cc0cd3262353379",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day5/Device6/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4001,
+    "sha256": "6b66e6b9859e7162b197bb6b45964b2ee22bd6024447269964ec743d94afde4d",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day5/Device7/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4001,
+    "sha256": "2bb7bc1c8b1b4509fdf085adf20f6f19dbccf9b5233a2b063be12fa1f9b2127c",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day5/Device8/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4001,
+    "sha256": "ece180fbb1a089304dd3ba9694758bcaa9fb6af7f3ae3bb75a4980acc9f5e9c8",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day5/Device10/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "a44c1581c2eb431cc7a579ea279cf58892d125344d13d4394f936dd44f5cae60",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day5/Device11/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "055abdd6dc62de860abf16bcea360fb8b1b532f0b8a48740e4d398737d0251bb",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day5/Device12/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "a7c435bea09e58616ac4dbd1cb3a444b6787e6cffc58762ae157a8f25c25d4b7",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day5/Device13/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "410e4f09f6b01423441af2c1e771fb530864dfb96f9be1cd97df707e787ad63f",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day5/Device14/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "842efbb3845238dbfe574d1ce8b27da31fc8274859a0fea323691d021f2679aa",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day5/Device15/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "265592a5d7096d2539027d52321e1bff99ed2d0e863241c3b08f62a531c600d8",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day5/Device16/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "902aea1a93591bd4bb2f5e88b8019e38d462766f92ac759d2452e4fec494e9e4",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day5/Device17/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "c5b2a1fa7f41fce5fec127eb69beae81c496436bd862ed9f83f193c36fbb7262",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day5/Device18/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "14cb764c5bc94635e0a13b0024b0d1a1eae04d58b9a779d67cf3d7819641479e",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day5/Device19/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "5058a1f550abfa5b3fd155d01386c5e5c91225673a0c33f8ce945da82cf8b200",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day5/Device20/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "a8792402729ad9c556bd9b1446ae964c75f45708028cc4415d5bfe9a2a758700",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day5/Device21/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "9d335e5a84c6da84cfc1d3cd33339d940597f810857de6d7b61770c1c2278963",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day5/Device22/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "ed8e2aa1a22901c3a65f69136638ffb4d11ab2003c6bd5871817182257efae38",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day5/Device23/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "62a766c8f2ff7a9de3f851623692c3ccabedf86870133387ac176ec1c74abc79",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day5/Device24/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "085ad44660d51e5098469327ab4fedc8691b2c63f87caa66a19881d3247bcc35",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/data/raw/osu_lora/Diff_Days_Indoor_Setup/Day5/Device25/IQ_1.sigmf-meta",
+    "role": "archived_osu_metadata",
+    "exists": true,
+    "bytes": 4003,
+    "sha256": "6e1c8a6da7720067a13610b39ea98eca08773f1543d8b553643982a2ed3adc36",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y-p2a/configs/shen_p2a8/g1_registration.json",
+    "role": "frozen_g1_roles",
+    "exists": true,
+    "bytes": 8161,
+    "sha256": "b0569754382422ac6cef1aea671322d1db3c06b3a95ea057def3fa10b34ca2ac",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV0_full_cis/manifest.json",
+    "role": "historical_prediction_provenance",
+    "exists": true,
+    "bytes": 1410,
+    "sha256": "b0724477fcd19544364b0c1e38e2f5aad7026f80849fbfa8ef757d46c1b669da",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV0_full_cis/b200_mini_1.npz",
+    "role": "source_heldout_prediction_cache",
+    "exists": true,
+    "bytes": 353008,
+    "sha256": "6003c883e8043bc1e31be5681ad79f8287b4792a812774e1cc5e373dd3243a1f",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV0_full_cis/pluto_1.npz",
+    "role": "source_heldout_prediction_cache",
+    "exists": true,
+    "bytes": 353008,
+    "sha256": "dae306d542930ab6fb3c21c97bb7aa4315507152cd2494985ea989ce04c3cc38",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV0_full_cis/rtl_2.npz",
+    "role": "source_heldout_prediction_cache",
+    "exists": true,
+    "bytes": 353008,
+    "sha256": "d974197dabd0e113bd925e33c3b45c5d8ce24c6279b9ab2a29e45029de2ce91b",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV0_full_cis/rtl_5.npz",
+    "role": "source_heldout_prediction_cache",
+    "exists": true,
+    "bytes": 353008,
+    "sha256": "e3d89787110b7ece749af097c6a96aef1c632dcf67147749578083906e7378ef",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV0_full_cis/rtl_7.npz",
+    "role": "source_heldout_prediction_cache",
+    "exists": true,
+    "bytes": 353008,
+    "sha256": "3e17fae9405d761cc2923144f2f9bd58cc6c0042fdfbe2c6b26a8690423c7981",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV0_strict_cis/manifest.json",
+    "role": "historical_prediction_provenance",
+    "exists": true,
+    "bytes": 1413,
+    "sha256": "232b26608914f4bd91560d51f2834d251af390fe9f64cb944724e0c61a41489d",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV0_strict_cis/b200_mini_1.npz",
+    "role": "source_heldout_prediction_cache",
+    "exists": true,
+    "bytes": 353008,
+    "sha256": "46093b59003d0e8f803fe6280942925acf5c20302cdec9fb0ca49796ff20d8df",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV0_strict_cis/pluto_1.npz",
+    "role": "source_heldout_prediction_cache",
+    "exists": true,
+    "bytes": 353008,
+    "sha256": "298733c9f4c047085562230943adb5df2af3e85af4a3ffaae44effe5e7c78df4",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV0_strict_cis/rtl_2.npz",
+    "role": "source_heldout_prediction_cache",
+    "exists": true,
+    "bytes": 353008,
+    "sha256": "2dc4f7ff45e0ec2f5544aacf56ab3fabfa16f9694098a03c489a403c2316ae73",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV0_strict_cis/rtl_5.npz",
+    "role": "source_heldout_prediction_cache",
+    "exists": true,
+    "bytes": 353008,
+    "sha256": "2ea728aab596ed14911160625a1da3b767039d5f724614fe1d0f2d9a43bc4f3b",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV0_strict_cis/rtl_7.npz",
+    "role": "source_heldout_prediction_cache",
+    "exists": true,
+    "bytes": 353008,
+    "sha256": "e9ef51c19f0b49573095a071f5119b34b93665a6c68aed89aafcc2523037ed8c",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV1_full_cis/manifest.json",
+    "role": "historical_prediction_provenance",
+    "exists": true,
+    "bytes": 1402,
+    "sha256": "d93f82bfed4bf1c7bef66950010e7accb3403a0522279363f5d051d3a579f68e",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV1_full_cis/b210_1.npz",
+    "role": "source_heldout_prediction_cache",
+    "exists": true,
+    "bytes": 353008,
+    "sha256": "99489edcdb9acc52b33a5a22e10e75bd04a11026645460093cbecb2509c63a09",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV1_full_cis/rtl_1.npz",
+    "role": "source_heldout_prediction_cache",
+    "exists": true,
+    "bytes": 353008,
+    "sha256": "29f437e8daa0e857be485d808208abae92b98d580b998525e27fd14ba7eb3be0",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV1_full_cis/rtl_3.npz",
+    "role": "source_heldout_prediction_cache",
+    "exists": true,
+    "bytes": 353008,
+    "sha256": "490f7ddf5ec6253f47971c62d43b514e529b5993ffc3756d4f1ffb662d664f3e",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV1_full_cis/rtl_6.npz",
+    "role": "source_heldout_prediction_cache",
+    "exists": true,
+    "bytes": 353008,
+    "sha256": "966fa8e99bf91d35c0591d4feefaa15c384fca8d8bd4eac35ee52a2439b0d774",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV1_full_cis/rtl_9.npz",
+    "role": "source_heldout_prediction_cache",
+    "exists": true,
+    "bytes": 353008,
+    "sha256": "7be52ef27ae5c5fb8d0d82efec102ffa21ff76b045d20fddb04fb75190c34689",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV1_strict_cis/manifest.json",
+    "role": "historical_prediction_provenance",
+    "exists": true,
+    "bytes": 1404,
+    "sha256": "956f0041373e553807a1ab1d00b6f1b2b190a895622d291b010e35d34e2bde40",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV1_strict_cis/b210_1.npz",
+    "role": "source_heldout_prediction_cache",
+    "exists": true,
+    "bytes": 353008,
+    "sha256": "709a98d3a7d14d39e799c25554209c113309ba11e6bbb07a74ca76da5fd88a21",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV1_strict_cis/rtl_1.npz",
+    "role": "source_heldout_prediction_cache",
+    "exists": true,
+    "bytes": 353008,
+    "sha256": "c4ae5648730d3e8f279900ea192913b27404a7f67e17efe80fe9b5979f31c985",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV1_strict_cis/rtl_3.npz",
+    "role": "source_heldout_prediction_cache",
+    "exists": true,
+    "bytes": 353008,
+    "sha256": "fb56dcc2c9122b61e900a5171e0670d077b6da49d87c75ccf242eebaed32acda",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV1_strict_cis/rtl_6.npz",
+    "role": "source_heldout_prediction_cache",
+    "exists": true,
+    "bytes": 353008,
+    "sha256": "682aeaa0e9097f2ce52051adf3c5e4f89e7c094e81a1a9656ef7bdf70aa5d1c1",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y-p2a/outputs/eisr/v1_20261012/E0_predictions/CV1_strict_cis/rtl_9.npz",
+    "role": "source_heldout_prediction_cache",
+    "exists": true,
+    "bytes": 353008,
+    "sha256": "33b4f8657c2df0acaad1acce1b231fefe8704eb5f8e04e725767bcfa0bc4c884",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/src/rfhstu/data.py",
+    "role": "source_code_or_plan",
+    "exists": true,
+    "bytes": 6554,
+    "sha256": "3575dd879c64002cf42d658f3f9da557fb3cd0eb63e3cd3882f207b9e44b8095",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y/scripts/evaluate.py",
+    "role": "source_code_or_plan",
+    "exists": true,
+    "bytes": 46826,
+    "sha256": "6310d158706a228a8a5c0ed6b17775e3af3973cfd2c5dc2d5d8c30a42ea0e4da",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y-p2a/scripts/run_eisr_v1.py",
+    "role": "source_code_or_plan",
+    "exists": true,
+    "bytes": 31601,
+    "sha256": "9da430d91e192cad49a58b530eb95f06a6dfc6fdd62018d12f8e112c5ba185e5",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y-c-audit/scripts/audit_c_evidence_assets.py",
+    "role": "source_code_or_plan",
+    "exists": true,
+    "bytes": 13307,
+    "sha256": "a0c9928273039d2ccee2a43632d942566c790dde3161924d057620a5196cca57",
+    "private_content_not_published": false
+  },
+  {
+    "path": "/home/keyan/code-y-c-audit/docs/c_evidence/EXECUTION_PLAN.md",
+    "role": "source_code_or_plan",
+    "exists": true,
+    "bytes": 3820,
+    "sha256": "7f5d3002b94bd4ebc5354742fc5d5caacf395e1df649a31228a8379f366872d4",
+    "private_content_not_published": false
+  }
+]

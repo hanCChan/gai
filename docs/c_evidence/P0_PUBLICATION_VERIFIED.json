@@ -1,0 +1,15 @@
+{
+  "verified_utc": "2026-10-13T03:32:35.928774+00:00",
+  "repository": "hanCChan/gai",
+  "branch": "experiment/p0-sync-mechanism",
+  "local_snapshot_commit": "924dc21",
+  "remote_commit": "29074af08107c64d26dd7d79708faccb23dda0a0",
+  "local_tree": "f180ce18c8b0faf65ead0457b1d03c81a7063c45",
+  "remote_tree": "f180ce18c8b0faf65ead0457b1d03c81a7063c45",
+  "tree_diff": "",
+  "all_47_uploaded_git_blob_sha_match": true,
+  "decision_file_connector_readback_sha": "c047b881f9cd0d7875f5c1cd03e14dc93e2755d7",
+  "uploaded_via": "connected GitHub app; local HTTPS push lacked credentials",
+  "historical_local_commit_id_equals_remote": false,
+  "report_url": "https://github.com/hanCChan/gai/blob/experiment/p0-sync-mechanism/reports/p0_sync/2026-10-13_A0_A1_final/REPORT.md"
+}

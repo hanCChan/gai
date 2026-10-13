@@ -1,0 +1,452 @@
+[
+  {
+    "receiver": "b200_mini_1",
+    "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/b200_mini_1_train.h5",
+    "bytes": 1048770112,
+    "attrs": {},
+    "fields": {
+      "CFO": {
+        "shape": [
+          1,
+          8000
+        ],
+        "dtype": "float64",
+        "attrs": {}
+      },
+      "SNR": {
+        "shape": [
+          1,
+          8000
+        ],
+        "dtype": "float64",
+        "attrs": {}
+      },
+      "data": {
+        "shape": [
+          8000,
+          16384
+        ],
+        "dtype": "float64",
+        "attrs": {}
+      },
+      "label": {
+        "shape": [
+          1,
+          8000
+        ],
+        "dtype": "float64",
+        "attrs": {}
+      }
+    },
+    "explicit_temporal_metadata_present": false,
+    "chronology_independently_verified": false,
+    "session_independently_verified": false,
+    "expected_raw_sha256_from_g1": "fe09c8be15e5e2c780b643e4e85610d9c4b8eb6e19715baad65a7fd838c0fc67",
+    "raw_sha256_recomputed_this_round": false
+  },
+  {
+    "receiver": "b210_1",
+    "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/b210_1_train.h5",
+    "bytes": 1048770112,
+    "attrs": {},
+    "fields": {
+      "CFO": {
+        "shape": [
+          1,
+          8000
+        ],
+        "dtype": "float64",
+        "attrs": {}
+      },
+      "SNR": {
+        "shape": [
+          1,
+          8000
+        ],
+        "dtype": "float64",
+        "attrs": {}
+      },
+      "data": {
+        "shape": [
+          8000,
+          16384
+        ],
+        "dtype": "float64",
+        "attrs": {}
+      },
+      "label": {
+        "shape": [
+          1,
+          8000
+        ],
+        "dtype": "float64",
+        "attrs": {}
+      }
+    },
+    "explicit_temporal_metadata_present": false,
+    "chronology_independently_verified": false,
+    "session_independently_verified": false,
+    "expected_raw_sha256_from_g1": "df6d2740ba495b52dcecefbc0bf4c532b66ad53333a37ee8c5a6ae715425d0ed",
+    "raw_sha256_recomputed_this_round": false
+  },
+  {
+    "receiver": "pluto_1",
+    "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/pluto_1_train.h5",
+    "bytes": 1048770112,
+    "attrs": {},
+    "fields": {
+      "CFO": {
+        "shape": [
+          1,
+          8000
+        ],
+        "dtype": "float64",
+        "attrs": {}
+      },
+      "SNR": {
+        "shape": [
+          1,
+          8000
+        ],
+        "dtype": "float64",
+        "attrs": {}
+      },
+      "data": {
+        "shape": [
+          8000,
+          16384
+        ],
+        "dtype": "float64",
+        "attrs": {}
+      },
+      "label": {
+        "shape": [
+          1,
+          8000
+        ],
+        "dtype": "float64",
+        "attrs": {}
+      }
+    },
+    "explicit_temporal_metadata_present": false,
+    "chronology_independently_verified": false,
+    "session_independently_verified": false,
+    "expected_raw_sha256_from_g1": "95ed8b2b5c9328116468af9ba41e63c00efeccff446a5ec163ae4fba5b88fe45",
+    "raw_sha256_recomputed_this_round": false
+  },
+  {
+    "receiver": "rtl_1",
+    "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/rtl_1_train.h5",
+    "bytes": 1048770112,
+    "attrs": {},
+    "fields": {
+      "CFO": {
+        "shape": [
+          1,
+          8000
+        ],
+        "dtype": "float64",
+        "attrs": {}
+      },
+      "SNR": {
+        "shape": [
+          1,
+          8000
+        ],
+        "dtype": "float64",
+        "attrs": {}
+      },
+      "data": {
+        "shape": [
+          8000,
+          16384
+        ],
+        "dtype": "float64",
+        "attrs": {}
+      },
+      "label": {
+        "shape": [
+          1,
+          8000
+        ],
+        "dtype": "float64",
+        "attrs": {}
+      }
+    },
+    "explicit_temporal_metadata_present": false,
+    "chronology_independently_verified": false,
+    "session_independently_verified": false,
+    "expected_raw_sha256_from_g1": "c43ae929d0ff6758365755820e65b6a0dd7978479b730177442ea5348913a23e",
+    "raw_sha256_recomputed_this_round": false
+  },
+  {
+    "receiver": "rtl_2",
+    "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/rtl_2_train.h5",
+    "bytes": 1048770112,
+    "attrs": {},
+    "fields": {
+      "CFO": {
+        "shape": [
+          1,
+          8000
+        ],
+        "dtype": "float64",
+        "attrs": {}
+      },
+      "SNR": {
+        "shape": [
+          1,
+          8000
+        ],
+        "dtype": "float64",
+        "attrs": {}
+      },
+      "data": {
+        "shape": [
+          8000,
+          16384
+        ],
+        "dtype": "float64",
+        "attrs": {}
+      },
+      "label": {
+        "shape": [
+          1,
+          8000
+        ],
+        "dtype": "float64",
+        "attrs": {}
+      }
+    },
+    "explicit_temporal_metadata_present": false,
+    "chronology_independently_verified": false,
+    "session_independently_verified": false,
+    "expected_raw_sha256_from_g1": "ad80aacc88dd142773e9d58e6d0e57667f5a28873e3e68aeea34948a8b7d64b2",
+    "raw_sha256_recomputed_this_round": false
+  },
+  {
+    "receiver": "rtl_3",
+    "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/rtl_3_train.h5",
+    "bytes": 1048770112,
+    "attrs": {},
+    "fields": {
+      "CFO": {
+        "shape": [
+          1,
+          8000
+        ],
+        "dtype": "float64",
+        "attrs": {}
+      },
+      "SNR": {
+        "shape": [
+          1,
+          8000
+        ],
+        "dtype": "float64",
+        "attrs": {}
+      },
+      "data": {
+        "shape": [
+          8000,
+          16384
+        ],
+        "dtype": "float64",
+        "attrs": {}
+      },
+      "label": {
+        "shape": [
+          1,
+          8000
+        ],
+        "dtype": "float64",
+        "attrs": {}
+      }
+    },
+    "explicit_temporal_metadata_present": false,
+    "chronology_independently_verified": false,
+    "session_independently_verified": false,
+    "expected_raw_sha256_from_g1": "326c5f366baae2924ff7fc114dbeb091051c898933eb93175c9742a8c1440c53",
+    "raw_sha256_recomputed_this_round": false
+  },
+  {
+    "receiver": "rtl_5",
+    "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/rtl_5_train.h5",
+    "bytes": 1048770112,
+    "attrs": {},
+    "fields": {
+      "CFO": {
+        "shape": [
+          1,
+          8000
+        ],
+        "dtype": "float64",
+        "attrs": {}
+      },
+      "SNR": {
+        "shape": [
+          1,
+          8000
+        ],
+        "dtype": "float64",
+        "attrs": {}
+      },
+      "data": {
+        "shape": [
+          8000,
+          16384
+        ],
+        "dtype": "float64",
+        "attrs": {}
+      },
+      "label": {
+        "shape": [
+          1,
+          8000
+        ],
+        "dtype": "float64",
+        "attrs": {}
+      }
+    },
+    "explicit_temporal_metadata_present": false,
+    "chronology_independently_verified": false,
+    "session_independently_verified": false,
+    "expected_raw_sha256_from_g1": "bb4db309b1209df4ab46406565cd610c8344165db08686b97b4c2f9e3f8f9175",
+    "raw_sha256_recomputed_this_round": false
+  },
+  {
+    "receiver": "rtl_6",
+    "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/rtl_6_train.h5",
+    "bytes": 1048770112,
+    "attrs": {},
+    "fields": {
+      "CFO": {
+        "shape": [
+          1,
+          8000
+        ],
+        "dtype": "float64",
+        "attrs": {}
+      },
+      "SNR": {
+        "shape": [
+          1,
+          8000
+        ],
+        "dtype": "float64",
+        "attrs": {}
+      },
+      "data": {
+        "shape": [
+          8000,
+          16384
+        ],
+        "dtype": "float64",
+        "attrs": {}
+      },
+      "label": {
+        "shape": [
+          1,
+          8000
+        ],
+        "dtype": "float64",
+        "attrs": {}
+      }
+    },
+    "explicit_temporal_metadata_present": false,
+    "chronology_independently_verified": false,
+    "session_independently_verified": false,
+    "expected_raw_sha256_from_g1": "87dbec5959cf4f553ef4fbe3b803c6dfd72b5aff23b2a0ba38e33125561f67d6",
+    "raw_sha256_recomputed_this_round": false
+  },
+  {
+    "receiver": "rtl_7",
+    "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/rtl_7_train.h5",
+    "bytes": 1048770112,
+    "attrs": {},
+    "fields": {
+      "CFO": {
+        "shape": [
+          1,
+          8000
+        ],
+        "dtype": "float64",
+        "attrs": {}
+      },
+      "SNR": {
+        "shape": [
+          1,
+          8000
+        ],
+        "dtype": "float64",
+        "attrs": {}
+      },
+      "data": {
+        "shape": [
+          8000,
+          16384
+        ],
+        "dtype": "float64",
+        "attrs": {}
+      },
+      "label": {
+        "shape": [
+          1,
+          8000
+        ],
+        "dtype": "float64",
+        "attrs": {}
+      }
+    },
+    "explicit_temporal_metadata_present": false,
+    "chronology_independently_verified": false,
+    "session_independently_verified": false,
+    "expected_raw_sha256_from_g1": "4d3d2c7759431d56174ae987aabe76fe8eaf7a7fbe20143c2b9388b02ce63e33",
+    "raw_sha256_recomputed_this_round": false
+  },
+  {
+    "receiver": "rtl_9",
+    "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/rtl_9_train.h5",
+    "bytes": 1048770112,
+    "attrs": {},
+    "fields": {
+      "CFO": {
+        "shape": [
+          1,
+          8000
+        ],
+        "dtype": "float64",
+        "attrs": {}
+      },
+      "SNR": {
+        "shape": [
+          1,
+          8000
+        ],
+        "dtype": "float64",
+        "attrs": {}
+      },
+      "data": {
+        "shape": [
+          8000,
+          16384
+        ],
+        "dtype": "float64",
+        "attrs": {}
+      },
+      "label": {
+        "shape": [
+          1,
+          8000
+        ],
+        "dtype": "float64",
+        "attrs": {}
+      }
+    },
+    "explicit_temporal_metadata_present": false,
+    "chronology_independently_verified": false,
+    "session_independently_verified": false,
+    "expected_raw_sha256_from_g1": "90beeda2fed9203016b038fdd452f3c1bc12bbf71409e124f6a71d088b127351",
+    "raw_sha256_recomputed_this_round": false
+  }
+]

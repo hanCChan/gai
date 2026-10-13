@@ -1,5 +1,7 @@
 # gai：LoRa RFFI 开发实验
 
+[最新研究状态、C0计划与结果入口](RESEARCH_STATUS.md)：P0已补传GitHub；C0按真实时间分组不可核验停止，没有启动C1/C2或新推理/训练。
+
 [研究报告与完整证据索引](reports/RESEARCH_REPORT_INDEX.md)：G1/G2-0、VIRP-v1 和 EISR-v1，包含冻结规则、独立复核与证据 ZIP。
 
 最新 [EISR-v1 CPU 筛选](reports/eisr/2026-10-12_v1/REPORT.md)：E0四个真实固定20轮权重核验通过，E1 Hard oracle平均可挽救空间8.41pp通过；E2十次四RX训练/一RX评价的线性选择器相对源内选定简单融合平均ΔMacro-F1为−0.0783pp、五RX下降、最差TX Recall下降2.05pp，按规则停止。没有新增CNN训练或开发/锁定/OSU RX评价。[冻结规则](docs/eisr/V1_PREREGISTRATION.md)及[文献核对](docs/eisr/E0_LITERATURE_AUDIT.md)保留。

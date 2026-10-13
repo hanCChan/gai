@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "independent_aggregation_error_max": 1.1102230246251565e-16,
+  "historical_summary_std_definition": "population std ddof=0; both population/sample std exported explicitly",
+  "old_Table_II_per_window_reproduced": false,
+  "source_of_numeric_verification": "stdlib mean/stdev/pstdev versus audit reducer and old multiseed summary JSON",
+  "asset_checks_verified": true,
+  "chronological_mechanism_evaluated": false
+}

@@ -1,0 +1,17 @@
+{
+  "source_sha256": {
+    "scripts/audit_c_evidence_assets.py": "a0c9928273039d2ccee2a43632d942566c790dde3161924d057620a5196cca57",
+    "scripts/prepare_research_publication.py": "f1e3dd69d6a7b59ef15d767178b8227b01a6f2b2cff1c70f350b459387dd983e",
+    "docs/c_evidence/EXECUTION_PLAN.md": "7f5d3002b94bd4ebc5354742fc5d5caacf395e1df649a31228a8379f366872d4",
+    "docs/c_evidence/USER_PLAN.md": "0c46b63039661a9738a892e04e04ccd97f0ed1117c05960f477197a408591e7f",
+    "AGENTS.md": "3d45b50b919ad5c2b4c5afb272c66fcef85e2aeac99d636b3cff77371ab1ce41"
+  },
+  "environment": {
+    "python": "3.11.17",
+    "numpy": "1.26.4",
+    "h5py": "3.11.0",
+    "source_metadata_only": true
+  },
+  "new_training_runs": 0,
+  "new_inference_runs": 0
+}
