@@ -1,0 +1,13 @@
+{
+  "status": "HOLD_M3_NO_NOVEL_METHOD",
+  "training_authorized_conditionally": true,
+  "budget_cap": null,
+  "training_jobs_executed": 0,
+  "optimizer_steps": 0,
+  "A": "Local noise/low-energy mechanism supported by synthetic controls; natural residual is not independently calibrated additive noise; causal natural mechanism remains unresolved",
+  "B": "STOP_RX_CAUSAL_COMPENSATION_WITHOUT_REFERENCE: composite TX/RX mirror effects are not identifiable from these IQ observations",
+  "M2": "Fixed traditional controls evaluated; frozen-network input change does not by itself identify physical identity loss or prove a new estimator is needed",
+  "M0": "Readable primary material and mathematical screening completed; TQCD/WL/GAN full derivation comparison incomplete; no novelty claim",
+  "WiSig": "Official ManyRx download task only; signal remains sealed; no cross-standard confirmation performed",
+  "next_condition": "Obtain direct-competitor derivations and independent natural-noise/reference validity before proposing one concrete correction; do not add arbitrary modules or coefficient search"
+}

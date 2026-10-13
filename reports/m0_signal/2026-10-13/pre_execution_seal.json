@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-13T06:37:15.239328+00:00",
+  "files": {
+    "configs/m0_signal/registration.json": "7df44c29d74fd6b60c5391befe91f7cae400bed6e96ea880a6db84e787a5ac1b",
+    "docs/m0_signal/EXECUTION_PLAN.md": "7f425acba5ecb8851bb7c2149af59154eee4377c132172a56611e736ec368076",
+    "docs/m0_signal/LITERATURE_AND_HYPOTHESES.md": "965e9defbc0a65bebf7fd52ecb8804ea237977e72d1be42eb8174df75e835390",
+    "scripts/run_m0_m2_signal.py": "1488b2fe4494a0649dc1cb0fefe2c67010ef30759b3e4360811359e1300d2cb4",
+    "src/b1_baselines/model.py": "209e8571eef3c6b8ddf2a40adbcbfae0e3134f76d7b0c3217105dc57d8692a61",
+    "src/shen_p2a/models.py": "acb27d5b562fd03ef3993b121c9a953897726ff19650c2896ac490432cc5900d",
+    "src/shen_stage1/representations.py": "468a7ad9c7a497de1bc80f437ef9e4ec8d1750287e1202aa4d3cc98d2957c095"
+  },
+  "before_signal_analysis": true
+}

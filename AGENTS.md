@@ -30,3 +30,16 @@ The user's 2026-10-13 instructions apply to future work in this repository.
 B1 execution is complete: 32 fitting jobs, no failures/retries, reserved GPU
 hours 0.47049565710694374. Independent verification passed. Complete publication
 and remote readback, then stop; do not rerun or broaden B1 using remaining budget.
+
+## Latest user instruction: M0–M3 signal mechanism screening (2026-10-13)
+
+The new user-supplied plan and reply 不设预算 authorize source-only raw IQ
+mechanism screening, traditional frozen-model input controls and conditional
+minimal PoC. This overrides the old B1-only raw-IQ/download prohibition for
+this new experiment. B1 itself remains completed and stopped. Only ten source
+train RX are allowed; no development/locked RX, Shen Day3/4 or OSU.
+Official WiSig ManyRx download is authorized now; keep signals sealed until
+Shen method freeze. M3 has no resource cap, but all mechanism/identity/novelty
+gates and one finite preregistered matrix still apply. Do not mistake budget
+approval for scientific evidence. Follow docs/m0_signal/EXECUTION_PLAN.md.
+Preserve historical evidence and publish completed execution with remote readback.

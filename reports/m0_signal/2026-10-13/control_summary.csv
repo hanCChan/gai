@@ -1,0 +1,4 @@
+variant,accuracy,minimum_RX_TX_recall_two_seed_average,mean_margin,mean_feature_separability,correct_to_wrong,wrong_to_correct
+circularization_diagnostic,0.533775,0.015,-0.17550120794177054,4.764778976173342,14031,1881
+identity,0.837525,0.1675,2.5384300780475137,6.921378745969281,0,0
+repeat_proxy_regularization,0.60865,0.0025,0.6607244451791048,6.264527801375147,11668,2513

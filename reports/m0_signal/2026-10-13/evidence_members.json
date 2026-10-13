@@ -1,0 +1,87 @@
+[
+  {
+    "member": "derived/access_log.json",
+    "sha256": "58c1de0595a1b6be0a61610a5385d969a8c0b00c006b867552ca799db2e4a8da",
+    "bytes": 3130
+  },
+  {
+    "member": "derived/execution.json",
+    "sha256": "0d654c84f21fe9f0fa764f90731eb85f6e00e386a30722072ebad2c0fc66258f",
+    "bytes": 502
+  },
+  {
+    "member": "derived/frozen_RX_control_metrics.csv",
+    "sha256": "14639868811913b708279bd903b7586761429f69771ba54cbb724d7a58884601",
+    "bytes": 9899
+  },
+  {
+    "member": "derived/frozen_predictions.csv",
+    "sha256": "9982bcacfd5be6eee61ca81cc9592177affb6db1b4ab17f16f3dcb8696aa4c14",
+    "bytes": 12534371
+  },
+  {
+    "member": "derived/input_hashes.csv",
+    "sha256": "2d29b5af16112048a414c149012972f3f3bf1fc65b08bd34cdc65471bce2f1ae",
+    "bytes": 2185
+  },
+  {
+    "member": "derived/numerical_controls.csv",
+    "sha256": "c4ab87475d082a063eabf05408476f3ac2293fdd58aa2ba25905edd7bada670c",
+    "bytes": 24456
+  },
+  {
+    "member": "derived/packet_diagnostics.csv",
+    "sha256": "1772a39818bc77e69f46f6c8f5019333c30a2733e71959af39cdf7c7aa5d6361",
+    "bytes": 4439589
+  },
+  {
+    "member": "derived/pre_execution_seal.json",
+    "sha256": "c0765a6cb38d810c4b37f2c9a444be48f4a832eff10dfc6151adb693c3ee0e3a",
+    "bytes": 849
+  },
+  {
+    "member": "derived/synthetic_awgn_deltas.csv",
+    "sha256": "8b19b00c3951db798d1b1319093368cf45c97922630cb721bf86e7808ce135b4",
+    "bytes": 482118
+  },
+  {
+    "member": "derived/synthetic_controls.json",
+    "sha256": "07c440263b76db7d97737281b2dd599e792ba226bd4d3b8e9320805c79c4ab32",
+    "bytes": 687
+  },
+  {
+    "member": "source/scripts/run_m0_m2_signal.py",
+    "sha256": "1488b2fe4494a0649dc1cb0fefe2c67010ef30759b3e4360811359e1300d2cb4",
+    "bytes": 14852
+  },
+  {
+    "member": "source/scripts/analyze_m0_m2_signal.py",
+    "sha256": "572b798b83161a69effb823e9f570923e26c593190c78792cdf3f78ce7537556",
+    "bytes": 13837
+  },
+  {
+    "member": "source/scripts/download_wisig_manyrx.py",
+    "sha256": "f622d0a9ea4c52c8282a8393ffd75c41fee64355922521fc90e59c0f12958a99",
+    "bytes": 3718
+  },
+  {
+    "member": "source/configs/m0_signal/registration.json",
+    "sha256": "7df44c29d74fd6b60c5391befe91f7cae400bed6e96ea880a6db84e787a5ac1b",
+    "bytes": 5263
+  },
+  {
+    "member": "source/docs/m0_signal/EXECUTION_PLAN.md",
+    "sha256": "7f425acba5ecb8851bb7c2149af59154eee4377c132172a56611e736ec368076",
+    "bytes": 5485
+  },
+  {
+    "member": "source/docs/m0_signal/LITERATURE_AND_HYPOTHESES.md",
+    "sha256": "965e9defbc0a65bebf7fd52ecb8804ea237977e72d1be42eb8174df75e835390",
+    "bytes": 5061
+  },
+  {
+    "member": "logs/execution.log",
+    "sha256": "b37d3d27ce528a124f7ea8e3378c026719c879170fd6fe237d43830b3ee96379",
+    "bytes": 619
+  }
+]

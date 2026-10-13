@@ -1,0 +1,24 @@
+{
+  "static_multiplicative_cancellation_max_abs": 8.881784197001252e-16,
+  "independent_awgn_log_ratio_variance": [
+    {
+      "den": 1.0,
+      "predicted": 7.544467880464559e-07,
+      "measured": 7.534295608494426e-07
+    },
+    {
+      "den": 0.1,
+      "predicted": 3.8099562796346014e-05,
+      "measured": 3.8014223589604546e-05
+    }
+  ],
+  "low_denominator_variance_ratio": 50.45491385650703,
+  "constant_ratio_negative_control": 0.0,
+  "proper_awgn_mirror_positive_control": {
+    "before": 0.29112786268859003,
+    "after": 1.5617737834748225e-16
+  },
+  "tx_rx_nonidentifiability_exact": true,
+  "balanced_complex_tone_circularity": 4.163336342344337e-17,
+  "passed": true
+}

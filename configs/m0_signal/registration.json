@@ -1,0 +1,140 @@
+{
+  "schema": 1,
+  "stage": "M0-M2",
+  "date_shanghai": "2026-10-13",
+  "base_remote_commit": "1c64858b6e7d9f3d02a9f27d865cb1c1f8b5305b",
+  "user_plan_sha256": "2850643620e8c0392acb748f0b628054f9dee44e784bf124bdc75ab2076fe2dc",
+  "budget": "User explicitly replied 不设预算; applies to this new stage, never reopens B1",
+  "history_root": "/home/keyan/code-y-p2a",
+  "b1_root": "/home/keyan/code-y-b1",
+  "raw_root": "/home/keyan/code-y/data/external/shen_receiver_agnostic",
+  "source_receivers": [
+    "b200_mini_1",
+    "b210_1",
+    "pluto_1",
+    "rtl_1",
+    "rtl_2",
+    "rtl_3",
+    "rtl_5",
+    "rtl_6",
+    "rtl_7",
+    "rtl_9"
+  ],
+  "source_files": [
+    {
+      "receiver": "b200_mini_1",
+      "relative": "b200_mini_1_train.h5",
+      "role": "train",
+      "key": "shen_b200_mini_1_train",
+      "expected_sha256": "fe09c8be15e5e2c780b643e4e85610d9c4b8eb6e19715baad65a7fd838c0fc67"
+    },
+    {
+      "receiver": "b210_1",
+      "relative": "b210_1_train.h5",
+      "role": "train",
+      "key": "shen_b210_1_train",
+      "expected_sha256": "df6d2740ba495b52dcecefbc0bf4c532b66ad53333a37ee8c5a6ae715425d0ed"
+    },
+    {
+      "receiver": "pluto_1",
+      "relative": "pluto_1_train.h5",
+      "role": "train",
+      "key": "shen_pluto_1_train",
+      "expected_sha256": "95ed8b2b5c9328116468af9ba41e63c00efeccff446a5ec163ae4fba5b88fe45"
+    },
+    {
+      "receiver": "rtl_1",
+      "relative": "rtl_1_train.h5",
+      "role": "train",
+      "key": "shen_rtl_1_train",
+      "expected_sha256": "c43ae929d0ff6758365755820e65b6a0dd7978479b730177442ea5348913a23e"
+    },
+    {
+      "receiver": "rtl_2",
+      "relative": "rtl_2_train.h5",
+      "role": "train",
+      "key": "shen_rtl_2_train",
+      "expected_sha256": "ad80aacc88dd142773e9d58e6d0e57667f5a28873e3e68aeea34948a8b7d64b2"
+    },
+    {
+      "receiver": "rtl_3",
+      "relative": "rtl_3_train.h5",
+      "role": "train",
+      "key": "shen_rtl_3_train",
+      "expected_sha256": "326c5f366baae2924ff7fc114dbeb091051c898933eb93175c9742a8c1440c53"
+    },
+    {
+      "receiver": "rtl_5",
+      "relative": "rtl_5_train.h5",
+      "role": "train",
+      "key": "shen_rtl_5_train",
+      "expected_sha256": "bb4db309b1209df4ab46406565cd610c8344165db08686b97b4c2f9e3f8f9175"
+    },
+    {
+      "receiver": "rtl_6",
+      "relative": "rtl_6_train.h5",
+      "role": "train",
+      "key": "shen_rtl_6_train",
+      "expected_sha256": "87dbec5959cf4f553ef4fbe3b803c6dfd72b5aff23b2a0ba38e33125561f67d6"
+    },
+    {
+      "receiver": "rtl_7",
+      "relative": "rtl_7_train.h5",
+      "role": "train",
+      "key": "shen_rtl_7_train",
+      "expected_sha256": "4d3d2c7759431d56174ae987aabe76fe8eaf7a7fbe20143c2b9388b02ce63e33"
+    },
+    {
+      "receiver": "rtl_9",
+      "relative": "rtl_9_train.h5",
+      "role": "train",
+      "key": "shen_rtl_9_train",
+      "expected_sha256": "90beeda2fed9203016b038fdd452f3c1bc12bbf71409e124f6a71d088b127351"
+    }
+  ],
+  "packets_per_rx_tx": 200,
+  "rows": "reuse sealed G1 rows; all 20000 source packets; no resampling",
+  "low_power_relative_thresholds": [
+    0.0001,
+    0.01
+  ],
+  "repeat_lag_samples": 1024,
+  "repeat_residual_interpretation": "noise-plus-repeat-mismatch proxy, NOT calibrated thermal noise or natural SNR",
+  "awgn_db": [
+    40,
+    20
+  ],
+  "awgn_replicates": 2,
+  "perturb_packets_per_rx_tx": 20,
+  "perturb_selection": "first 20 sealed positions per class; no outcome selection",
+  "seed": 20261013,
+  "m2_controls": [
+    "historical strict CIS identity",
+    "symmetric log-power regularization using fixed repeat-residual STFT noise proxy, multiplier=1",
+    "widely-linear circularization diagnostic (no causal RX attribution)"
+  ],
+  "m2_frozen_models": "all four formal B1 CE models, fixed20; only their source-held-out RX; unchanged scaler",
+  "training_jobs_this_execution": 0,
+  "M3": {
+    "authorized_conditionally": true,
+    "budget_cap": null,
+    "gate": "needs natural repeatable identity effect, estimator validity, traditional-control insufficiency, identifiable correction and completed direct-competitor novelty review",
+    "planned_finite_jobs": 12,
+    "matrix": "2 source folds x 2 paired formal seeds x (CE, traditional control, one frozen candidate); fixed20 and source-internal LR; no loss/network change, no extra search; freeze concrete candidate before launch"
+  },
+  "gates": {
+    "A_descriptive": "low-power and repeat-residual associations to natural frozen CE error within RXxTX, across both source folds and both CE seeds; no causal noise claim without estimator validity",
+    "B": "mirror statistic repeatability is descriptive; cannot separate TX/RX contributions without reference; nonidentifiability stops RX compensation candidate",
+    "simple_control": "if traditional control is adequate, stop novel candidate; if it harms or fails, that alone does not authorize novel algorithm",
+    "M3_hold": "any missing natural mechanism, identity retention, reference identifiability or full competing-method derivation holds M3"
+  },
+  "prohibited": [
+    "B1 fitting/rerun",
+    "development/locked RX",
+    "Shen Day3/4",
+    "OSU",
+    "WiSig signal loading before Shen method freeze",
+    "new loss/network",
+    "coefficient search or failure-triggered substitution"
+  ]
+}

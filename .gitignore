@@ -74,3 +74,6 @@ reports/b1_baselines/**/confusion_counts.csv
 reports/b1_baselines/**/*.svg
 reports/b1_baselines/**/run_evidence/
 !/reports/b1_baselines/2026-10-13/evidence.zip
+
+# M0/M1/M2 complete derived-only evidence, no signal arrays or weights.
+!/reports/m0_signal/2026-10-13/evidence.zip

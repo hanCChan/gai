@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "source_cells": 100,
+  "source_packets": 20000,
+  "paired_model_packet_slots": 40000,
+  "derived_predictions": 120000,
+  "awgn_trials": 8000,
+  "archive_members": 17,
+  "archive_sha256": "f3b46f34b2da6bc70d01fa62b5b31bdad71c3e6cae9d461e0f9d71f33ab23538",
+  "sealed_inputs_code_unchanged": true,
+  "new_inference": false,
+  "new_training": false,
+  "epsilon_max_abs": 3.8478910369121877e-07,
+  "complex64_max_abs": 0.0008206978891305283
+}

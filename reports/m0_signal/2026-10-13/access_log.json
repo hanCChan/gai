@@ -1,0 +1,72 @@
+[
+  {
+    "kind": "frozen_B1_CE_checkpoint",
+    "path": "/home/keyan/code-y-b1/outputs/b1_baselines/formal/runs/B1_final_CV0_ce_seed20261013/final.pt",
+    "sha256": "e54cd0482fbbebf04f2dcca12802a512b7f35c3fab051fd0f0008bdd5f502d4d"
+  },
+  {
+    "kind": "frozen_B1_CE_checkpoint",
+    "path": "/home/keyan/code-y-b1/outputs/b1_baselines/formal/runs/B1_final_CV0_ce_seed20261014/final.pt",
+    "sha256": "b66e0aee4a16226da5379574dfed8fc8995d98d6c04f870f6b2559f3d7e6e00f"
+  },
+  {
+    "kind": "frozen_B1_CE_checkpoint",
+    "path": "/home/keyan/code-y-b1/outputs/b1_baselines/formal/runs/B1_final_CV1_ce_seed20261013/final.pt",
+    "sha256": "76083c9edd1efe59ed64bb7f01444dceae8e832b0207cadad80ca115c3b31c19"
+  },
+  {
+    "kind": "frozen_B1_CE_checkpoint",
+    "path": "/home/keyan/code-y-b1/outputs/b1_baselines/formal/runs/B1_final_CV1_ce_seed20261014/final.pt",
+    "sha256": "5f6b5ec340cf564282cc6802c67912824ee6160063a0b5b04739f1c4a6ce21f3"
+  },
+  {
+    "kind": "source_raw_hdf5_read_only",
+    "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/b200_mini_1_train.h5",
+    "sha256": "fe09c8be15e5e2c780b643e4e85610d9c4b8eb6e19715baad65a7fd838c0fc67"
+  },
+  {
+    "kind": "source_raw_hdf5_read_only",
+    "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/b210_1_train.h5",
+    "sha256": "df6d2740ba495b52dcecefbc0bf4c532b66ad53333a37ee8c5a6ae715425d0ed"
+  },
+  {
+    "kind": "source_raw_hdf5_read_only",
+    "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/pluto_1_train.h5",
+    "sha256": "95ed8b2b5c9328116468af9ba41e63c00efeccff446a5ec163ae4fba5b88fe45"
+  },
+  {
+    "kind": "source_raw_hdf5_read_only",
+    "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/rtl_1_train.h5",
+    "sha256": "c43ae929d0ff6758365755820e65b6a0dd7978479b730177442ea5348913a23e"
+  },
+  {
+    "kind": "source_raw_hdf5_read_only",
+    "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/rtl_2_train.h5",
+    "sha256": "ad80aacc88dd142773e9d58e6d0e57667f5a28873e3e68aeea34948a8b7d64b2"
+  },
+  {
+    "kind": "source_raw_hdf5_read_only",
+    "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/rtl_3_train.h5",
+    "sha256": "326c5f366baae2924ff7fc114dbeb091051c898933eb93175c9742a8c1440c53"
+  },
+  {
+    "kind": "source_raw_hdf5_read_only",
+    "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/rtl_5_train.h5",
+    "sha256": "bb4db309b1209df4ab46406565cd610c8344165db08686b97b4c2f9e3f8f9175"
+  },
+  {
+    "kind": "source_raw_hdf5_read_only",
+    "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/rtl_6_train.h5",
+    "sha256": "87dbec5959cf4f553ef4fbe3b803c6dfd72b5aff23b2a0ba38e33125561f67d6"
+  },
+  {
+    "kind": "source_raw_hdf5_read_only",
+    "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/rtl_7_train.h5",
+    "sha256": "4d3d2c7759431d56174ae987aabe76fe8eaf7a7fbe20143c2b9388b02ce63e33"
+  },
+  {
+    "kind": "source_raw_hdf5_read_only",
+    "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/rtl_9_train.h5",
+    "sha256": "90beeda2fed9203016b038fdd452f3c1bc12bbf71409e124f6a71d088b127351"
+  }
+]

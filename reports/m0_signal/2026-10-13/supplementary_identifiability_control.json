@@ -1,0 +1,17 @@
+{
+  "tx_rx_cascade_equivalence_max_abs": 9.930136612989092e-16,
+  "cascade1": {
+    "tx_beta_imag": 0.15,
+    "rx_beta": 0
+  },
+  "cascade2": {
+    "tx_beta_real": 0.04,
+    "tx_beta_imag": 0.02,
+    "rx_a_real": 0.9989979959919839,
+    "rx_a_imag": -0.0060120240480961915,
+    "rx_b_real": -0.04008016032064128,
+    "rx_b_imag": 0.13026052104208416
+  },
+  "mirror_mixing_ratio_failure_max_abs": 0.1639005845010153,
+  "interpretation": "Same observation from distinct TX/RX contributions; no unique causal RX estimate"
+}
