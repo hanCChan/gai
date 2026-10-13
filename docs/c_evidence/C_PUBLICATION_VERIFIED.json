@@ -1,0 +1,13 @@
+{
+  "verified_utc": "2026-10-13T03:47:59.602669+00:00",
+  "repository": "hanCChan/gai",
+  "branch": "experiment/c-evidence-audit",
+  "verified_snapshot_remote_commit": "7ff67bca7b8555f6f52f9e06bff3fb52f387311d",
+  "verified_snapshot_local_commit": "e84a0eb75213de90dfa12d194ae62f5b995b2a66",
+  "identical_snapshot_tree": "a0a57691239d090148e29a834eb9fb85a3588117",
+  "all_27_git_blob_sha_matched": true,
+  "git_fetch_tree_diff_empty": true,
+  "connector_decision_readback_sha": "3f486daf1f6ec86350afbbcddaba3e3f2064dc88",
+  "connector_report_readback_sha": "c9a7a813fa62b80a0ebd2d5a88c7094b47979d09",
+  "note": "This receipt describes the verified first publication snapshot. Publishing this receipt and completion wording adds a later documentation commit; scientific evidence and audit code remain unchanged."
+}

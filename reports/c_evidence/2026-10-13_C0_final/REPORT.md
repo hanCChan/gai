@@ -107,8 +107,11 @@ checkpoint SHA、源拟合scaler和RX来源。完整类别分数具备，**无�
 P0已经补传到[GitHub P0报告](https://github.com/hanCChan/gai/blob/experiment/p0-sync-mechanism/reports/p0_sync/2026-10-13_A0_A1_final/REPORT.md)，
 本地/远端文件树均为`f180ce18c8b0faf65ead0457b1d03c81a7063c45`，完整47个新增/修改blob
 SHA一致并回读了决策。P0本地924dc21与远端29074af是不同提交身份、相同文件树。
-本轮C计划、源码、结果和证据将发布至`experiment/c-evidence-audit`，上传和远端
-回读核验完成后才交付链接。后续每轮发布要求已写入AGENTS.md。
+本轮C计划、源码、结果和证据已发布至`experiment/c-evidence-audit`。首轮远端提交
+`7ff67bca7b8555f6f52f9e06bff3fb52f387311d`与本地e84a0eb文件树一致，27个blob SHA
+均核对通过，报告与决策已经连接回读。核验记录见
+[发布确认](../../../docs/c_evidence/C_PUBLICATION_VERIFIED.json)。该记录自身及本段完成状态
+作为后续文档提交发布，不改变C0科学结果。后续每轮发布要求已写入AGENTS.md。
 
 复现C0（只读元数据/历史汇总，需同样本地资产路径，输出目录必须为空）：
 
