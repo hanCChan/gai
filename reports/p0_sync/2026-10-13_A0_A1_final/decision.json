@@ -1,0 +1,31 @@
+{
+  "decision": "STOP_NO_OBSERVABLE_SYNC",
+  "completed_utc": "2026-10-13T03:08:54.042253+00:00",
+  "A0": "completed_with_explicit_source_gaps",
+  "A1": "completed; conditional chirp phase identifiable; natural synchronization uncertainty unestablished",
+  "B": "not_entered_due_to_observability_gate",
+  "C": "completed_as_stop_decision_and_problem_definition",
+  "natural_sync_uncertainty_observable": false,
+  "meaning_of_false": "Not reliably demonstrated under present data/reference/diagnostic scope; not proof of absence",
+  "effect_on_existing_model": "not_tested",
+  "standard_methods_solve_it": "not_tested",
+  "new_training_runs": 0,
+  "gpu_runs": 0,
+  "model_loads": 0,
+  "new_unique_source_packets": 2000,
+  "development_signal_reads": 0,
+  "locked_signal_reads": 0,
+  "day3_day4_signal_reads": 0,
+  "osu_signal_reads": 0,
+  "large_dataset_downloads": 0,
+  "baseline_explains_decision_supported": false,
+  "mechanism_supported_decision_supported": false,
+  "reasons": [
+    "No independent packet-start or alignment-error reference in available clipped HDF5; upstream preprocessing unknown",
+    "All 2000 packets have stable conditional chirp shapes; modulo phase 2–4 samples is not true STO",
+    "Candidate radii 3–4 samples and inter-chirp phase q95 at most 2.65; no broad uncertainty observed in this scope",
+    "No reliable downchirp structure under frozen shape diagnostic; one low-prefix-energy example alone is not an onset reference"
+  ],
+  "next_stage_authorized": false,
+  "stopped_after_P0": true
+}

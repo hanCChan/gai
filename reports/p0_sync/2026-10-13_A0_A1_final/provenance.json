@@ -1,0 +1,10 @@
+{
+  "rejection_source_sha256": "80d2148e4e29bb945027cc2c57e73ddbde33c59aae9f0ca9313838f783c880d4",
+  "rejection_original_verified": true,
+  "rejected_manuscript_pdf_local_status": "not_found; existing OOB PDF has a different title",
+  "full_additional_brief_local_status": "not_received; user pasted execution decision is operative",
+  "private_documents_in_this_report_or_bundle": false,
+  "original_worktree_head": "eab01d2c43c525f2f9afc25769e009473b3b3f65",
+  "original_worktree_status": "",
+  "same_remote_tree_at_start": true
+}

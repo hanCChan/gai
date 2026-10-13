@@ -1,0 +1,17 @@
+{
+  "recorded_utc": "2026-10-13T03:09:31.479140+00:00",
+  "python": "3.11.17",
+  "platform": "Linux-5.4.0-164-generic-x86_64-with-glibc2.31",
+  "numpy": "1.26.4",
+  "scipy": "1.13.1",
+  "h5py": "3.11.0",
+  "matplotlib": "3.9.2",
+  "python_executable": "/home/keyan/venvs/shen-stage1/bin/python",
+  "main_audit_environment": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "new_packages_installed": false,
+  "torch_imported_by_audit": false
+}

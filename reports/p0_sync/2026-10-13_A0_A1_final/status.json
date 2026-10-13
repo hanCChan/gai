@@ -1,0 +1,18 @@
+{
+  "stage": "P0-A1",
+  "status": "STOP_NO_OBSERVABLE_SYNC",
+  "raw_packets_analyzed": 2000,
+  "synthetic_positive_trials": 360,
+  "synthetic_negative_trials": 300,
+  "new_training_runs": 0,
+  "model_loads": 0,
+  "development_signal_reads": 0,
+  "locked_signal_reads": 0,
+  "day3_day4_reads": 0,
+  "osu_signal_reads": 0,
+  "elapsed_seconds": 72.72518468999988,
+  "A0": "completed_with_explicit_source_gaps",
+  "B": "not_entered_due_to_observability_gate",
+  "C": "completed_as_stop_decision_and_problem_definition",
+  "stopped_after_P0": true
+}

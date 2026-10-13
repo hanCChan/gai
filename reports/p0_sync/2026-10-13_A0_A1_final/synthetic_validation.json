@@ -1,0 +1,102 @@
+{
+  "cells": [
+    {
+      "snr_db": 20,
+      "cfo_cycles_per_sample": -0.003,
+      "n": 40,
+      "q95_error_samples": 1.0,
+      "reliable_coverage": 1.0,
+      "passed": true
+    },
+    {
+      "snr_db": 20,
+      "cfo_cycles_per_sample": 0,
+      "n": 40,
+      "q95_error_samples": 1.0,
+      "reliable_coverage": 1.0,
+      "passed": true
+    },
+    {
+      "snr_db": 20,
+      "cfo_cycles_per_sample": 0.003,
+      "n": 40,
+      "q95_error_samples": 1.0,
+      "reliable_coverage": 1.0,
+      "passed": true
+    },
+    {
+      "snr_db": 30,
+      "cfo_cycles_per_sample": -0.003,
+      "n": 40,
+      "q95_error_samples": 1.0,
+      "reliable_coverage": 1.0,
+      "passed": true
+    },
+    {
+      "snr_db": 30,
+      "cfo_cycles_per_sample": 0,
+      "n": 40,
+      "q95_error_samples": 1.0,
+      "reliable_coverage": 1.0,
+      "passed": true
+    },
+    {
+      "snr_db": 30,
+      "cfo_cycles_per_sample": 0.003,
+      "n": 40,
+      "q95_error_samples": 1.0,
+      "reliable_coverage": 1.0,
+      "passed": true
+    },
+    {
+      "snr_db": 40,
+      "cfo_cycles_per_sample": -0.003,
+      "n": 40,
+      "q95_error_samples": 1.0,
+      "reliable_coverage": 1.0,
+      "passed": true
+    },
+    {
+      "snr_db": 40,
+      "cfo_cycles_per_sample": 0,
+      "n": 40,
+      "q95_error_samples": 1.0,
+      "reliable_coverage": 1.0,
+      "passed": true
+    },
+    {
+      "snr_db": 40,
+      "cfo_cycles_per_sample": 0.003,
+      "n": 40,
+      "q95_error_samples": 1.0,
+      "reliable_coverage": 1.0,
+      "passed": true
+    }
+  ],
+  "negative_controls": [
+    {
+      "kind": "white_noise",
+      "n": 100,
+      "false_acceptances": 0,
+      "fraction": 0.0,
+      "passed": true
+    },
+    {
+      "kind": "tone",
+      "n": 100,
+      "false_acceptances": 0,
+      "fraction": 0.0,
+      "passed": true
+    },
+    {
+      "kind": "downchirp",
+      "n": 100,
+      "false_acceptances": 0,
+      "fraction": 0.0,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "scope": "integer symbol phase of long analytic upchirps under AWGN; NOT full packet detection or multipath/SFO guarantee",
+  "real_packets_read_before_validation": 0
+}

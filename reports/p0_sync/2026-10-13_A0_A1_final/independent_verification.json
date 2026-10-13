@@ -1,0 +1,926 @@
+{
+  "passed": true,
+  "sealed_files_match": true,
+  "sample_manifest_exactly_matches": true,
+  "signal_access_scope_verified": true,
+  "packets_recomputed": 100,
+  "all_100_rx_tx_cells_covered": true,
+  "new_unique_packets_outside_2000": 0,
+  "phase_difference_max_samples": 0,
+  "r2_absolute_error_max": 1.3322676295501878e-15,
+  "coherence_absolute_error_max": 8.881784197001252e-16,
+  "quiet_prefix_cases": [
+    {
+      "receiver": "b210_1",
+      "tx_raw_label": 36,
+      "row": 4358,
+      "leading_exact_zero_count": 0,
+      "first_256_energy_16_sample_blocks": [
+        1.7850822860859733e-07,
+        8.023945028225308e-08,
+        8.952216644261109e-08,
+        1.0202513604984105e-07,
+        1.1773822523304366e-07,
+        1.3336077936414253e-07,
+        1.497447463337857e-07,
+        1.6943660498192856e-07,
+        1.8684719472870022e-07,
+        2.0746020649644634e-07,
+        2.3075144438047658e-07,
+        2.538934861903917e-07,
+        2.788626748475108e-07,
+        3.0305407732926333e-07,
+        3.3251811184925116e-07,
+        3.6007566530993696e-07
+      ],
+      "prefix_energy_ratio": 0.006074986586966339,
+      "interpretation": "Low leading energy alone cannot distinguish frame onset from fading/AGC; no pre-window record or SFD reference."
+    }
+  ],
+  "method": "Dense direct ramp correlation; explicit eight-point mean; independent formulas; no detector import",
+  "per_cell": [
+    {
+      "receiver": "b200_mini_1",
+      "tx_raw_label": 31,
+      "row": 49,
+      "phase_difference_samples": 0,
+      "r2_error": 0.0,
+      "coherence_error": 0.0
+    },
+    {
+      "receiver": "b200_mini_1",
+      "tx_raw_label": 32,
+      "row": 836,
+      "phase_difference_samples": 0,
+      "r2_error": 1.1102230246251565e-16,
+      "coherence_error": 4.440892098500626e-16
+    },
+    {
+      "receiver": "b200_mini_1",
+      "tx_raw_label": 33,
+      "row": 1662,
+      "phase_difference_samples": 0,
+      "r2_error": 2.220446049250313e-16,
+      "coherence_error": 0.0
+    },
+    {
+      "receiver": "b200_mini_1",
+      "tx_raw_label": 34,
+      "row": 2453,
+      "phase_difference_samples": 0,
+      "r2_error": 4.440892098500626e-16,
+      "coherence_error": 2.220446049250313e-16
+    },
+    {
+      "receiver": "b200_mini_1",
+      "tx_raw_label": 35,
+      "row": 3255,
+      "phase_difference_samples": 0,
+      "r2_error": 8.881784197001252e-16,
+      "coherence_error": 1.1102230246251565e-16
+    },
+    {
+      "receiver": "b200_mini_1",
+      "tx_raw_label": 36,
+      "row": 4000,
+      "phase_difference_samples": 0,
+      "r2_error": 3.3306690738754696e-16,
+      "coherence_error": 2.220446049250313e-16
+    },
+    {
+      "receiver": "b200_mini_1",
+      "tx_raw_label": 37,
+      "row": 4804,
+      "phase_difference_samples": 0,
+      "r2_error": 0.0,
+      "coherence_error": 2.220446049250313e-16
+    },
+    {
+      "receiver": "b200_mini_1",
+      "tx_raw_label": 38,
+      "row": 5628,
+      "phase_difference_samples": 0,
+      "r2_error": 4.440892098500626e-16,
+      "coherence_error": 7.771561172376096e-16
+    },
+    {
+      "receiver": "b200_mini_1",
+      "tx_raw_label": 39,
+      "row": 6456,
+      "phase_difference_samples": 0,
+      "r2_error": 4.440892098500626e-16,
+      "coherence_error": 1.1102230246251565e-16
+    },
+    {
+      "receiver": "b200_mini_1",
+      "tx_raw_label": 40,
+      "row": 7252,
+      "phase_difference_samples": 0,
+      "r2_error": 0.0,
+      "coherence_error": 4.440892098500626e-16
+    },
+    {
+      "receiver": "b210_1",
+      "tx_raw_label": 31,
+      "row": 49,
+      "phase_difference_samples": 0,
+      "r2_error": 5.551115123125783e-16,
+      "coherence_error": 2.220446049250313e-16
+    },
+    {
+      "receiver": "b210_1",
+      "tx_raw_label": 32,
+      "row": 836,
+      "phase_difference_samples": 0,
+      "r2_error": 3.3306690738754696e-16,
+      "coherence_error": 0.0
+    },
+    {
+      "receiver": "b210_1",
+      "tx_raw_label": 33,
+      "row": 1662,
+      "phase_difference_samples": 0,
+      "r2_error": 1.1102230246251565e-16,
+      "coherence_error": 2.220446049250313e-16
+    },
+    {
+      "receiver": "b210_1",
+      "tx_raw_label": 34,
+      "row": 2453,
+      "phase_difference_samples": 0,
+      "r2_error": 0.0,
+      "coherence_error": 4.440892098500626e-16
+    },
+    {
+      "receiver": "b210_1",
+      "tx_raw_label": 35,
+      "row": 3255,
+      "phase_difference_samples": 0,
+      "r2_error": 8.881784197001252e-16,
+      "coherence_error": 2.220446049250313e-16
+    },
+    {
+      "receiver": "b210_1",
+      "tx_raw_label": 36,
+      "row": 4000,
+      "phase_difference_samples": 0,
+      "r2_error": 1.1102230246251565e-16,
+      "coherence_error": 2.220446049250313e-16
+    },
+    {
+      "receiver": "b210_1",
+      "tx_raw_label": 37,
+      "row": 4804,
+      "phase_difference_samples": 0,
+      "r2_error": 6.661338147750939e-16,
+      "coherence_error": 4.440892098500626e-16
+    },
+    {
+      "receiver": "b210_1",
+      "tx_raw_label": 38,
+      "row": 5628,
+      "phase_difference_samples": 0,
+      "r2_error": 4.440892098500626e-16,
+      "coherence_error": 2.220446049250313e-16
+    },
+    {
+      "receiver": "b210_1",
+      "tx_raw_label": 39,
+      "row": 6456,
+      "phase_difference_samples": 0,
+      "r2_error": 5.551115123125783e-16,
+      "coherence_error": 2.220446049250313e-16
+    },
+    {
+      "receiver": "b210_1",
+      "tx_raw_label": 40,
+      "row": 7252,
+      "phase_difference_samples": 0,
+      "r2_error": 5.551115123125783e-16,
+      "coherence_error": 5.551115123125783e-16
+    },
+    {
+      "receiver": "pluto_1",
+      "tx_raw_label": 31,
+      "row": 49,
+      "phase_difference_samples": 0,
+      "r2_error": 4.440892098500626e-16,
+      "coherence_error": 0.0
+    },
+    {
+      "receiver": "pluto_1",
+      "tx_raw_label": 32,
+      "row": 836,
+      "phase_difference_samples": 0,
+      "r2_error": 2.220446049250313e-16,
+      "coherence_error": 0.0
+    },
+    {
+      "receiver": "pluto_1",
+      "tx_raw_label": 33,
+      "row": 1662,
+      "phase_difference_samples": 0,
+      "r2_error": 4.440892098500626e-16,
+      "coherence_error": 5.551115123125783e-16
+    },
+    {
+      "receiver": "pluto_1",
+      "tx_raw_label": 34,
+      "row": 2453,
+      "phase_difference_samples": 0,
+      "r2_error": 0.0,
+      "coherence_error": 7.771561172376096e-16
+    },
+    {
+      "receiver": "pluto_1",
+      "tx_raw_label": 35,
+      "row": 3255,
+      "phase_difference_samples": 0,
+      "r2_error": 0.0,
+      "coherence_error": 4.440892098500626e-16
+    },
+    {
+      "receiver": "pluto_1",
+      "tx_raw_label": 36,
+      "row": 4000,
+      "phase_difference_samples": 0,
+      "r2_error": 0.0,
+      "coherence_error": 0.0
+    },
+    {
+      "receiver": "pluto_1",
+      "tx_raw_label": 37,
+      "row": 4804,
+      "phase_difference_samples": 0,
+      "r2_error": 0.0,
+      "coherence_error": 0.0
+    },
+    {
+      "receiver": "pluto_1",
+      "tx_raw_label": 38,
+      "row": 5628,
+      "phase_difference_samples": 0,
+      "r2_error": 1.1102230246251565e-16,
+      "coherence_error": 2.220446049250313e-16
+    },
+    {
+      "receiver": "pluto_1",
+      "tx_raw_label": 39,
+      "row": 6456,
+      "phase_difference_samples": 0,
+      "r2_error": 0.0,
+      "coherence_error": 0.0
+    },
+    {
+      "receiver": "pluto_1",
+      "tx_raw_label": 40,
+      "row": 7252,
+      "phase_difference_samples": 0,
+      "r2_error": 2.220446049250313e-16,
+      "coherence_error": 0.0
+    },
+    {
+      "receiver": "rtl_1",
+      "tx_raw_label": 31,
+      "row": 49,
+      "phase_difference_samples": 0,
+      "r2_error": 3.3306690738754696e-16,
+      "coherence_error": 3.3306690738754696e-16
+    },
+    {
+      "receiver": "rtl_1",
+      "tx_raw_label": 32,
+      "row": 836,
+      "phase_difference_samples": 0,
+      "r2_error": 2.220446049250313e-16,
+      "coherence_error": 0.0
+    },
+    {
+      "receiver": "rtl_1",
+      "tx_raw_label": 33,
+      "row": 1662,
+      "phase_difference_samples": 0,
+      "r2_error": 6.661338147750939e-16,
+      "coherence_error": 2.220446049250313e-16
+    },
+    {
+      "receiver": "rtl_1",
+      "tx_raw_label": 34,
+      "row": 2453,
+      "phase_difference_samples": 0,
+      "r2_error": 5.551115123125783e-16,
+      "coherence_error": 2.220446049250313e-16
+    },
+    {
+      "receiver": "rtl_1",
+      "tx_raw_label": 35,
+      "row": 3255,
+      "phase_difference_samples": 0,
+      "r2_error": 4.440892098500626e-16,
+      "coherence_error": 5.551115123125783e-16
+    },
+    {
+      "receiver": "rtl_1",
+      "tx_raw_label": 36,
+      "row": 4000,
+      "phase_difference_samples": 0,
+      "r2_error": 3.3306690738754696e-16,
+      "coherence_error": 5.551115123125783e-16
+    },
+    {
+      "receiver": "rtl_1",
+      "tx_raw_label": 37,
+      "row": 4804,
+      "phase_difference_samples": 0,
+      "r2_error": 1.1102230246251565e-16,
+      "coherence_error": 8.881784197001252e-16
+    },
+    {
+      "receiver": "rtl_1",
+      "tx_raw_label": 38,
+      "row": 5628,
+      "phase_difference_samples": 0,
+      "r2_error": 5.551115123125783e-16,
+      "coherence_error": 2.220446049250313e-16
+    },
+    {
+      "receiver": "rtl_1",
+      "tx_raw_label": 39,
+      "row": 6456,
+      "phase_difference_samples": 0,
+      "r2_error": 1.2212453270876722e-15,
+      "coherence_error": 2.220446049250313e-16
+    },
+    {
+      "receiver": "rtl_1",
+      "tx_raw_label": 40,
+      "row": 7252,
+      "phase_difference_samples": 0,
+      "r2_error": 3.3306690738754696e-16,
+      "coherence_error": 3.3306690738754696e-16
+    },
+    {
+      "receiver": "rtl_2",
+      "tx_raw_label": 31,
+      "row": 49,
+      "phase_difference_samples": 0,
+      "r2_error": 2.220446049250313e-16,
+      "coherence_error": 2.220446049250313e-16
+    },
+    {
+      "receiver": "rtl_2",
+      "tx_raw_label": 32,
+      "row": 836,
+      "phase_difference_samples": 0,
+      "r2_error": 8.881784197001252e-16,
+      "coherence_error": 3.3306690738754696e-16
+    },
+    {
+      "receiver": "rtl_2",
+      "tx_raw_label": 33,
+      "row": 1662,
+      "phase_difference_samples": 0,
+      "r2_error": 1.1102230246251565e-16,
+      "coherence_error": 1.1102230246251565e-16
+    },
+    {
+      "receiver": "rtl_2",
+      "tx_raw_label": 34,
+      "row": 2453,
+      "phase_difference_samples": 0,
+      "r2_error": 1.3322676295501878e-15,
+      "coherence_error": 0.0
+    },
+    {
+      "receiver": "rtl_2",
+      "tx_raw_label": 35,
+      "row": 3255,
+      "phase_difference_samples": 0,
+      "r2_error": 5.551115123125783e-16,
+      "coherence_error": 0.0
+    },
+    {
+      "receiver": "rtl_2",
+      "tx_raw_label": 36,
+      "row": 4000,
+      "phase_difference_samples": 0,
+      "r2_error": 4.440892098500626e-16,
+      "coherence_error": 3.3306690738754696e-16
+    },
+    {
+      "receiver": "rtl_2",
+      "tx_raw_label": 37,
+      "row": 4804,
+      "phase_difference_samples": 0,
+      "r2_error": 6.661338147750939e-16,
+      "coherence_error": 2.220446049250313e-16
+    },
+    {
+      "receiver": "rtl_2",
+      "tx_raw_label": 38,
+      "row": 5628,
+      "phase_difference_samples": 0,
+      "r2_error": 2.220446049250313e-16,
+      "coherence_error": 2.220446049250313e-16
+    },
+    {
+      "receiver": "rtl_2",
+      "tx_raw_label": 39,
+      "row": 6456,
+      "phase_difference_samples": 0,
+      "r2_error": 1.1102230246251565e-16,
+      "coherence_error": 2.220446049250313e-16
+    },
+    {
+      "receiver": "rtl_2",
+      "tx_raw_label": 40,
+      "row": 7252,
+      "phase_difference_samples": 0,
+      "r2_error": 3.3306690738754696e-16,
+      "coherence_error": 3.3306690738754696e-16
+    },
+    {
+      "receiver": "rtl_3",
+      "tx_raw_label": 31,
+      "row": 49,
+      "phase_difference_samples": 0,
+      "r2_error": 3.3306690738754696e-16,
+      "coherence_error": 0.0
+    },
+    {
+      "receiver": "rtl_3",
+      "tx_raw_label": 32,
+      "row": 836,
+      "phase_difference_samples": 0,
+      "r2_error": 6.661338147750939e-16,
+      "coherence_error": 1.1102230246251565e-16
+    },
+    {
+      "receiver": "rtl_3",
+      "tx_raw_label": 33,
+      "row": 1662,
+      "phase_difference_samples": 0,
+      "r2_error": 2.220446049250313e-16,
+      "coherence_error": 2.220446049250313e-16
+    },
+    {
+      "receiver": "rtl_3",
+      "tx_raw_label": 34,
+      "row": 2453,
+      "phase_difference_samples": 0,
+      "r2_error": 6.661338147750939e-16,
+      "coherence_error": 1.1102230246251565e-16
+    },
+    {
+      "receiver": "rtl_3",
+      "tx_raw_label": 35,
+      "row": 3255,
+      "phase_difference_samples": 0,
+      "r2_error": 1.1102230246251565e-15,
+      "coherence_error": 0.0
+    },
+    {
+      "receiver": "rtl_3",
+      "tx_raw_label": 36,
+      "row": 4000,
+      "phase_difference_samples": 0,
+      "r2_error": 7.771561172376096e-16,
+      "coherence_error": 3.3306690738754696e-16
+    },
+    {
+      "receiver": "rtl_3",
+      "tx_raw_label": 37,
+      "row": 4804,
+      "phase_difference_samples": 0,
+      "r2_error": 5.551115123125783e-16,
+      "coherence_error": 2.220446049250313e-16
+    },
+    {
+      "receiver": "rtl_3",
+      "tx_raw_label": 38,
+      "row": 5628,
+      "phase_difference_samples": 0,
+      "r2_error": 3.3306690738754696e-16,
+      "coherence_error": 5.551115123125783e-16
+    },
+    {
+      "receiver": "rtl_3",
+      "tx_raw_label": 39,
+      "row": 6456,
+      "phase_difference_samples": 0,
+      "r2_error": 7.771561172376096e-16,
+      "coherence_error": 2.220446049250313e-16
+    },
+    {
+      "receiver": "rtl_3",
+      "tx_raw_label": 40,
+      "row": 7252,
+      "phase_difference_samples": 0,
+      "r2_error": 9.992007221626409e-16,
+      "coherence_error": 0.0
+    },
+    {
+      "receiver": "rtl_5",
+      "tx_raw_label": 31,
+      "row": 49,
+      "phase_difference_samples": 0,
+      "r2_error": 2.220446049250313e-16,
+      "coherence_error": 0.0
+    },
+    {
+      "receiver": "rtl_5",
+      "tx_raw_label": 32,
+      "row": 836,
+      "phase_difference_samples": 0,
+      "r2_error": 1.1102230246251565e-16,
+      "coherence_error": 3.3306690738754696e-16
+    },
+    {
+      "receiver": "rtl_5",
+      "tx_raw_label": 33,
+      "row": 1662,
+      "phase_difference_samples": 0,
+      "r2_error": 2.220446049250313e-16,
+      "coherence_error": 4.440892098500626e-16
+    },
+    {
+      "receiver": "rtl_5",
+      "tx_raw_label": 34,
+      "row": 2453,
+      "phase_difference_samples": 0,
+      "r2_error": 2.220446049250313e-16,
+      "coherence_error": 3.3306690738754696e-16
+    },
+    {
+      "receiver": "rtl_5",
+      "tx_raw_label": 35,
+      "row": 3255,
+      "phase_difference_samples": 0,
+      "r2_error": 5.551115123125783e-16,
+      "coherence_error": 1.1102230246251565e-16
+    },
+    {
+      "receiver": "rtl_5",
+      "tx_raw_label": 36,
+      "row": 4000,
+      "phase_difference_samples": 0,
+      "r2_error": 9.992007221626409e-16,
+      "coherence_error": 2.220446049250313e-16
+    },
+    {
+      "receiver": "rtl_5",
+      "tx_raw_label": 37,
+      "row": 4804,
+      "phase_difference_samples": 0,
+      "r2_error": 2.220446049250313e-16,
+      "coherence_error": 3.3306690738754696e-16
+    },
+    {
+      "receiver": "rtl_5",
+      "tx_raw_label": 38,
+      "row": 5628,
+      "phase_difference_samples": 0,
+      "r2_error": 7.771561172376096e-16,
+      "coherence_error": 0.0
+    },
+    {
+      "receiver": "rtl_5",
+      "tx_raw_label": 39,
+      "row": 6456,
+      "phase_difference_samples": 0,
+      "r2_error": 8.881784197001252e-16,
+      "coherence_error": 2.220446049250313e-16
+    },
+    {
+      "receiver": "rtl_5",
+      "tx_raw_label": 40,
+      "row": 7252,
+      "phase_difference_samples": 0,
+      "r2_error": 0.0,
+      "coherence_error": 0.0
+    },
+    {
+      "receiver": "rtl_6",
+      "tx_raw_label": 31,
+      "row": 49,
+      "phase_difference_samples": 0,
+      "r2_error": 1.3322676295501878e-15,
+      "coherence_error": 0.0
+    },
+    {
+      "receiver": "rtl_6",
+      "tx_raw_label": 32,
+      "row": 836,
+      "phase_difference_samples": 0,
+      "r2_error": 3.3306690738754696e-16,
+      "coherence_error": 0.0
+    },
+    {
+      "receiver": "rtl_6",
+      "tx_raw_label": 33,
+      "row": 1662,
+      "phase_difference_samples": 0,
+      "r2_error": 1.1102230246251565e-16,
+      "coherence_error": 1.1102230246251565e-16
+    },
+    {
+      "receiver": "rtl_6",
+      "tx_raw_label": 34,
+      "row": 2453,
+      "phase_difference_samples": 0,
+      "r2_error": 6.661338147750939e-16,
+      "coherence_error": 2.220446049250313e-16
+    },
+    {
+      "receiver": "rtl_6",
+      "tx_raw_label": 35,
+      "row": 3255,
+      "phase_difference_samples": 0,
+      "r2_error": 1.3322676295501878e-15,
+      "coherence_error": 2.220446049250313e-16
+    },
+    {
+      "receiver": "rtl_6",
+      "tx_raw_label": 36,
+      "row": 4000,
+      "phase_difference_samples": 0,
+      "r2_error": 3.3306690738754696e-16,
+      "coherence_error": 0.0
+    },
+    {
+      "receiver": "rtl_6",
+      "tx_raw_label": 37,
+      "row": 4804,
+      "phase_difference_samples": 0,
+      "r2_error": 2.220446049250313e-16,
+      "coherence_error": 0.0
+    },
+    {
+      "receiver": "rtl_6",
+      "tx_raw_label": 38,
+      "row": 5628,
+      "phase_difference_samples": 0,
+      "r2_error": 5.551115123125783e-16,
+      "coherence_error": 3.3306690738754696e-16
+    },
+    {
+      "receiver": "rtl_6",
+      "tx_raw_label": 39,
+      "row": 6456,
+      "phase_difference_samples": 0,
+      "r2_error": 5.551115123125783e-16,
+      "coherence_error": 3.3306690738754696e-16
+    },
+    {
+      "receiver": "rtl_6",
+      "tx_raw_label": 40,
+      "row": 7252,
+      "phase_difference_samples": 0,
+      "r2_error": 4.440892098500626e-16,
+      "coherence_error": 2.220446049250313e-16
+    },
+    {
+      "receiver": "rtl_7",
+      "tx_raw_label": 31,
+      "row": 49,
+      "phase_difference_samples": 0,
+      "r2_error": 9.992007221626409e-16,
+      "coherence_error": 4.440892098500626e-16
+    },
+    {
+      "receiver": "rtl_7",
+      "tx_raw_label": 32,
+      "row": 836,
+      "phase_difference_samples": 0,
+      "r2_error": 2.220446049250313e-16,
+      "coherence_error": 3.3306690738754696e-16
+    },
+    {
+      "receiver": "rtl_7",
+      "tx_raw_label": 33,
+      "row": 1662,
+      "phase_difference_samples": 0,
+      "r2_error": 4.440892098500626e-16,
+      "coherence_error": 2.220446049250313e-16
+    },
+    {
+      "receiver": "rtl_7",
+      "tx_raw_label": 34,
+      "row": 2453,
+      "phase_difference_samples": 0,
+      "r2_error": 6.661338147750939e-16,
+      "coherence_error": 1.1102230246251565e-16
+    },
+    {
+      "receiver": "rtl_7",
+      "tx_raw_label": 35,
+      "row": 3255,
+      "phase_difference_samples": 0,
+      "r2_error": 5.551115123125783e-16,
+      "coherence_error": 1.1102230246251565e-16
+    },
+    {
+      "receiver": "rtl_7",
+      "tx_raw_label": 36,
+      "row": 4000,
+      "phase_difference_samples": 0,
+      "r2_error": 7.771561172376096e-16,
+      "coherence_error": 3.3306690738754696e-16
+    },
+    {
+      "receiver": "rtl_7",
+      "tx_raw_label": 37,
+      "row": 4804,
+      "phase_difference_samples": 0,
+      "r2_error": 2.220446049250313e-16,
+      "coherence_error": 7.771561172376096e-16
+    },
+    {
+      "receiver": "rtl_7",
+      "tx_raw_label": 38,
+      "row": 5628,
+      "phase_difference_samples": 0,
+      "r2_error": 6.661338147750939e-16,
+      "coherence_error": 6.661338147750939e-16
+    },
+    {
+      "receiver": "rtl_7",
+      "tx_raw_label": 39,
+      "row": 6456,
+      "phase_difference_samples": 0,
+      "r2_error": 9.992007221626409e-16,
+      "coherence_error": 5.551115123125783e-16
+    },
+    {
+      "receiver": "rtl_7",
+      "tx_raw_label": 40,
+      "row": 7252,
+      "phase_difference_samples": 0,
+      "r2_error": 1.1102230246251565e-16,
+      "coherence_error": 2.220446049250313e-16
+    },
+    {
+      "receiver": "rtl_9",
+      "tx_raw_label": 31,
+      "row": 49,
+      "phase_difference_samples": 0,
+      "r2_error": 6.661338147750939e-16,
+      "coherence_error": 0.0
+    },
+    {
+      "receiver": "rtl_9",
+      "tx_raw_label": 32,
+      "row": 836,
+      "phase_difference_samples": 0,
+      "r2_error": 0.0,
+      "coherence_error": 7.771561172376096e-16
+    },
+    {
+      "receiver": "rtl_9",
+      "tx_raw_label": 33,
+      "row": 1662,
+      "phase_difference_samples": 0,
+      "r2_error": 3.3306690738754696e-16,
+      "coherence_error": 1.1102230246251565e-16
+    },
+    {
+      "receiver": "rtl_9",
+      "tx_raw_label": 34,
+      "row": 2453,
+      "phase_difference_samples": 0,
+      "r2_error": 8.881784197001252e-16,
+      "coherence_error": 0.0
+    },
+    {
+      "receiver": "rtl_9",
+      "tx_raw_label": 35,
+      "row": 3255,
+      "phase_difference_samples": 0,
+      "r2_error": 3.3306690738754696e-16,
+      "coherence_error": 1.1102230246251565e-16
+    },
+    {
+      "receiver": "rtl_9",
+      "tx_raw_label": 36,
+      "row": 4000,
+      "phase_difference_samples": 0,
+      "r2_error": 4.440892098500626e-16,
+      "coherence_error": 5.551115123125783e-16
+    },
+    {
+      "receiver": "rtl_9",
+      "tx_raw_label": 37,
+      "row": 4804,
+      "phase_difference_samples": 0,
+      "r2_error": 5.551115123125783e-16,
+      "coherence_error": 3.3306690738754696e-16
+    },
+    {
+      "receiver": "rtl_9",
+      "tx_raw_label": 38,
+      "row": 5628,
+      "phase_difference_samples": 0,
+      "r2_error": 2.220446049250313e-16,
+      "coherence_error": 1.1102230246251565e-16
+    },
+    {
+      "receiver": "rtl_9",
+      "tx_raw_label": 39,
+      "row": 6456,
+      "phase_difference_samples": 0,
+      "r2_error": 2.220446049250313e-16,
+      "coherence_error": 2.220446049250313e-16
+    },
+    {
+      "receiver": "rtl_9",
+      "tx_raw_label": 40,
+      "row": 7252,
+      "phase_difference_samples": 0,
+      "r2_error": 4.440892098500626e-16,
+      "coherence_error": 5.551115123125783e-16
+    }
+  ],
+  "raw_row_reads": 101,
+  "raw_access_log": [
+    {
+      "receiver": "b200_mini_1",
+      "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/b200_mini_1_train.h5",
+      "mode": "read_only",
+      "stage": "independent_verification",
+      "recomputed_cells": 10,
+      "quiet_case_reads": 0
+    },
+    {
+      "receiver": "b210_1",
+      "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/b210_1_train.h5",
+      "mode": "read_only",
+      "stage": "independent_verification",
+      "recomputed_cells": 10,
+      "quiet_case_reads": 1
+    },
+    {
+      "receiver": "pluto_1",
+      "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/pluto_1_train.h5",
+      "mode": "read_only",
+      "stage": "independent_verification",
+      "recomputed_cells": 10,
+      "quiet_case_reads": 0
+    },
+    {
+      "receiver": "rtl_1",
+      "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/rtl_1_train.h5",
+      "mode": "read_only",
+      "stage": "independent_verification",
+      "recomputed_cells": 10,
+      "quiet_case_reads": 0
+    },
+    {
+      "receiver": "rtl_2",
+      "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/rtl_2_train.h5",
+      "mode": "read_only",
+      "stage": "independent_verification",
+      "recomputed_cells": 10,
+      "quiet_case_reads": 0
+    },
+    {
+      "receiver": "rtl_3",
+      "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/rtl_3_train.h5",
+      "mode": "read_only",
+      "stage": "independent_verification",
+      "recomputed_cells": 10,
+      "quiet_case_reads": 0
+    },
+    {
+      "receiver": "rtl_5",
+      "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/rtl_5_train.h5",
+      "mode": "read_only",
+      "stage": "independent_verification",
+      "recomputed_cells": 10,
+      "quiet_case_reads": 0
+    },
+    {
+      "receiver": "rtl_6",
+      "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/rtl_6_train.h5",
+      "mode": "read_only",
+      "stage": "independent_verification",
+      "recomputed_cells": 10,
+      "quiet_case_reads": 0
+    },
+    {
+      "receiver": "rtl_7",
+      "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/rtl_7_train.h5",
+      "mode": "read_only",
+      "stage": "independent_verification",
+      "recomputed_cells": 10,
+      "quiet_case_reads": 0
+    },
+    {
+      "receiver": "rtl_9",
+      "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/rtl_9_train.h5",
+      "mode": "read_only",
+      "stage": "independent_verification",
+      "recomputed_cells": 10,
+      "quiet_case_reads": 0
+    }
+  ]
+}

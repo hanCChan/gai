@@ -1,0 +1,13 @@
+{
+  "recorded_utc": "2026-10-13T02:50:00.931728+00:00",
+  "original_worktree": "/home/keyan/code-y-p2a",
+  "original_head": "eab01d2c43c525f2f9afc25769e009473b3b3f65",
+  "original_status": "",
+  "remote_url": "https://github.com/hanCChan/gai.git",
+  "observed_remote_head": "b565b76720fd1e0868c5d1dfa0eae46c4a7dc79f",
+  "left_right_commit_counts": "25\t5",
+  "tree_diff": "",
+  "new_worktree": "/home/keyan/code-y-p0-sync",
+  "branch": "experiment/p0-sync-mechanism",
+  "remote_merge_or_push": false
+}

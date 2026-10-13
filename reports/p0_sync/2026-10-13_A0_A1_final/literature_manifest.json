@@ -1,0 +1,58 @@
+[
+  {
+    "key": "shen60_readme",
+    "url": "https://raw.githubusercontent.com/gxhen/LoRa_RFFI/main/Openset_RFFI_TIFS/readme.md",
+    "resolved_url": "https://raw.githubusercontent.com/gxhen/LoRa_RFFI/main/Openset_RFFI_TIFS/readme.md",
+    "retrieved_utc": "2026-10-13T02:56:40.078613+00:00",
+    "bytes": 12971,
+    "sha256": "5e7d00161af9057de713d2bf5b29422d038d66caa8d750d65aef24f63b876364",
+    "path": "/home/keyan/code-y-p0-sync/outputs/p0_sync/20261013_a0_literature/shen60_readme.md",
+    "status": "downloaded"
+  },
+  {
+    "key": "shen20_paper",
+    "url": "https://arxiv.org/html/2207.02999",
+    "resolved_url": "https://arxiv.org/html/2207.02999",
+    "retrieved_utc": "2026-10-13T02:56:40.627275+00:00",
+    "bytes": 270950,
+    "sha256": "9a6784cc4bf0928c64ed12e743461fb23b11d9e44f154cd708d5336f328acf07",
+    "path": "/home/keyan/code-y-p0-sync/outputs/p0_sync/20261013_a0_literature/shen20_paper.html",
+    "status": "downloaded"
+  },
+  {
+    "key": "fine_sync_paper",
+    "url": "https://arxiv.org/html/2502.08485v1",
+    "resolved_url": "https://arxiv.org/html/2502.08485v1",
+    "retrieved_utc": "2026-10-13T02:56:41.364537+00:00",
+    "bytes": 320380,
+    "sha256": "13a11fde3c1441d8581f9f9405a6620a0ef1c7d3d7538a525bfd3e618ddd2ecc",
+    "path": "/home/keyan/code-y-p0-sync/outputs/p0_sync/20261013_a0_literature/fine_sync_paper.html",
+    "status": "downloaded"
+  },
+  {
+    "key": "shen60_paper",
+    "url": "https://arxiv.org/html/2107.02867",
+    "resolved_url": "https://arxiv.org/html/2107.02867",
+    "retrieved_utc": "2026-10-13T02:56:42.036812+00:00",
+    "bytes": 215095,
+    "sha256": "2705d0ac8e5dd5867473306736f5a6a455ce4ef94abf7d21186f36ffb5c97290",
+    "path": "/home/keyan/code-y-p0-sync/outputs/p0_sync/20261013_a0_literature/shen60_paper.html",
+    "status": "downloaded"
+  },
+  {
+    "key": "shen_cfo_paper",
+    "url": "https://arxiv.org/html/2101.01668",
+    "resolved_url": "https://arxiv.org/html/2101.01668",
+    "retrieved_utc": "2026-10-13T02:56:42.696290+00:00",
+    "bytes": 215570,
+    "sha256": "8dc72df363d1506438ed225e24f36e0f220c600885d3b4a2a063a8049b84bec7",
+    "path": "/home/keyan/code-y-p0-sync/outputs/p0_sync/20261013_a0_literature/shen_cfo_paper.html",
+    "status": "downloaded"
+  },
+  {
+    "key": "pir_landing",
+    "url": "https://www.sciltp.com/journals/pc/articles/2607004785",
+    "status": "unavailable",
+    "error": "The read operation timed out"
+  }
+]

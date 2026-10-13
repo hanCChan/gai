@@ -1,0 +1,8 @@
+[
+  {
+    "key": "survey",
+    "url": "https://orbi.umons.ac.be/bitstream/20.500.12907/49474/1/sensors-24-04411.pdf",
+    "error": "<urlopen error _ssl.c:999: The handshake operation timed out>",
+    "status": "unavailable"
+  }
+]

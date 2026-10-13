@@ -1,0 +1,13 @@
+{
+  "sealed_utc": "2026-10-13T02:55:54.005326+00:00",
+  "real_signal_packets_read_before_seal": 0,
+  "files": {
+    "configs/p0_sync/registration.json": "ad12480578eed46b8df6e26350a9660e29bdec0911a0ca1b6a538f62ed9be9c2",
+    "configs/p0_sync/sample_manifest.json": "b5eed2309f26721bcbef1e8ed95ada04ef66e1bf13d80f3e04337df729340fbc",
+    "src/p0_sync/detector.py": "63acb264df5d99f4e2b86699633a3058c81b79c3e4a1828c727ebfaad768267d",
+    "scripts/audit_p0_sync.py": "a2e16d9911002188da13865f502ffad23070a3efb0d6d03c74ff9b246a750534",
+    "tests/test_p0_sync.py": "dc9ca71b14f239273958f1a6347b1377afefc3f03c9ffe9a8cc2459814b59c9b",
+    "docs/p0_sync/PREREGISTRATION.md": "85bccb7f97f0bb7c2baa71ce36733bda2b4c00c93bd2c266d8f5828891192a1c",
+    "docs/p0_sync/USER_PLAN.md": "b8f3ab732892db9f5e9ce6fb14fa9f1919fad51c240d94be8a23de6870c87d14"
+  }
+}

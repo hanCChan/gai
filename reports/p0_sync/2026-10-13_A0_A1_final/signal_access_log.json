@@ -1,0 +1,82 @@
+[
+  {
+    "receiver": "b200_mini_1",
+    "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/b200_mini_1_train.h5",
+    "role": "source_train_raw",
+    "mode": "read_only",
+    "operation": "provenance_hash_and_200_selected_rows",
+    "utc": "2026-10-13T02:55:57.864585+00:00"
+  },
+  {
+    "receiver": "b210_1",
+    "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/b210_1_train.h5",
+    "role": "source_train_raw",
+    "mode": "read_only",
+    "operation": "provenance_hash_and_200_selected_rows",
+    "utc": "2026-10-13T02:56:04.688512+00:00"
+  },
+  {
+    "receiver": "pluto_1",
+    "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/pluto_1_train.h5",
+    "role": "source_train_raw",
+    "mode": "read_only",
+    "operation": "provenance_hash_and_200_selected_rows",
+    "utc": "2026-10-13T02:56:11.320043+00:00"
+  },
+  {
+    "receiver": "rtl_1",
+    "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/rtl_1_train.h5",
+    "role": "source_train_raw",
+    "mode": "read_only",
+    "operation": "provenance_hash_and_200_selected_rows",
+    "utc": "2026-10-13T02:56:18.053147+00:00"
+  },
+  {
+    "receiver": "rtl_2",
+    "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/rtl_2_train.h5",
+    "role": "source_train_raw",
+    "mode": "read_only",
+    "operation": "provenance_hash_and_200_selected_rows",
+    "utc": "2026-10-13T02:56:24.843283+00:00"
+  },
+  {
+    "receiver": "rtl_3",
+    "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/rtl_3_train.h5",
+    "role": "source_train_raw",
+    "mode": "read_only",
+    "operation": "provenance_hash_and_200_selected_rows",
+    "utc": "2026-10-13T02:56:31.345231+00:00"
+  },
+  {
+    "receiver": "rtl_5",
+    "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/rtl_5_train.h5",
+    "role": "source_train_raw",
+    "mode": "read_only",
+    "operation": "provenance_hash_and_200_selected_rows",
+    "utc": "2026-10-13T02:56:37.983558+00:00"
+  },
+  {
+    "receiver": "rtl_6",
+    "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/rtl_6_train.h5",
+    "role": "source_train_raw",
+    "mode": "read_only",
+    "operation": "provenance_hash_and_200_selected_rows",
+    "utc": "2026-10-13T02:56:44.644196+00:00"
+  },
+  {
+    "receiver": "rtl_7",
+    "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/rtl_7_train.h5",
+    "role": "source_train_raw",
+    "mode": "read_only",
+    "operation": "provenance_hash_and_200_selected_rows",
+    "utc": "2026-10-13T02:56:51.212129+00:00"
+  },
+  {
+    "receiver": "rtl_9",
+    "path": "/home/keyan/code-y/data/external/shen_receiver_agnostic/rtl_9_train.h5",
+    "role": "source_train_raw",
+    "mode": "read_only",
+    "operation": "provenance_hash_and_200_selected_rows",
+    "utc": "2026-10-13T02:56:57.860086+00:00"
+  }
+]

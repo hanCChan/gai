@@ -1,0 +1,16 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/gxhen/LoRa_RFFI/main/Openset_RFFI_TIFS/dataset_preparation.py",
+    "file": "shen60_loader.py",
+    "bytes": 5761,
+    "sha256": "921943747a3a0042326cad35d9b9553f288b34c677779845d22405df6afc4e47",
+    "status": "downloaded"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/gxhen/LoRa_RFFI/main/Openset_RFFI_TIFS/readme_images/HDF5.jpg",
+    "file": "shen60_hdf5.jpg",
+    "bytes": 42116,
+    "sha256": "31deeb79c60a43e80729c0832d35cbb187399cb4484274ba9cc57e4f17dbc99c",
+    "status": "downloaded"
+  }
+]

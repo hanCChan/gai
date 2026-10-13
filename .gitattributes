@@ -7,3 +7,13 @@ docs/virp/USER_*.txt -text -whitespace
 
 # Generated SVG path whitespace is preserved as an original research artifact.
 reports/**/figures/*.svg -whitespace
+
+# Preserve P0 seals and numeric evidence exactly; no historical rules changed.
+configs/p0_sync/** -text
+docs/p0_sync/** -text -whitespace
+src/p0_sync/** -text
+scripts/audit_p0_sync.py -text
+scripts/verify_p0_sync.py -text
+scripts/report_p0_sync.py -text
+tests/test_p0_sync.py -text
+reports/p0_sync/** -text -whitespace
