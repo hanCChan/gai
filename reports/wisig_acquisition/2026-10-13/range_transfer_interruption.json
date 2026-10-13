@@ -1,0 +1,9 @@
+{
+  "previous_phase": "32MiB range transfer",
+  "completed_ranges_preserved": 28,
+  "incomplete_ranges": 4,
+  "remaining_bytes": 119472947,
+  "reason": "A range failed after three finite transport attempts; all completed parts preserved",
+  "completion_strategy": "Only four incomplete ranges; persistent sessions and validated headers before body;8MiB subrequests;four workers;at most three attempts per subrequest",
+  "quota_errors_on_kaggle": false
+}

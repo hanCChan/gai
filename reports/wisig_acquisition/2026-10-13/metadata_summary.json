@@ -1,0 +1,40 @@
+{
+  "state": "STRUCTURE_CONSISTENT_WITH_OFFICIAL_MANYRX",
+  "source_kind": "third_party_kaggle",
+  "official_byte_equivalence_proven": false,
+  "fields": [
+    "capture_date_list",
+    "data",
+    "equalized_list",
+    "max_sig",
+    "rx_list",
+    "tx_list"
+  ],
+  "tx_count": 10,
+  "rx_count": 32,
+  "date_count": 4,
+  "dates": [
+    "2021_03_01",
+    "2021_03_08",
+    "2021_03_15",
+    "2021_03_23"
+  ],
+  "equalized_list": [
+    0,
+    1
+  ],
+  "max_sig": 200,
+  "array_count": 2560,
+  "packets_per_version": {
+    "0": 249666,
+    "1": 247684
+  },
+  "empty_arrays": 52,
+  "fewer_than_200_arrays": 87,
+  "payload_bytes": 2037145600,
+  "numerical_arrays_constructed": false,
+  "signal_statistics_computed": false,
+  "arbitrary_pickle_globals_executed": false,
+  "signal_payload_bytes_consumed_for_structure": true,
+  "sealed_for_research": true
+}

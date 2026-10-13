@@ -1,0 +1,46 @@
+{"start": 285212672, "end": 318767103, "bytes": 33554432, "attempts": 1}
+{"start": 385875968, "end": 419430399, "bytes": 33554432, "attempts": 2}
+{"start": 419430400, "end": 452984831, "bytes": 33554432, "attempts": 1}
+{"start": 352321536, "end": 385875967, "bytes": 33554432, "attempts": 2}
+{"start": 318767104, "end": 352321535, "bytes": 33554432, "attempts": 1}
+{"start": 251658240, "end": 285212671, "bytes": 33554432, "attempts": 2}
+{"start": 452984832, "end": 486539263, "bytes": 33554432, "attempts": 1}
+{"start": 587202560, "end": 620756991, "bytes": 33554432, "attempts": 1}
+{"start": 486539264, "end": 520093695, "bytes": 33554432, "attempts": 1}
+{"start": 620756992, "end": 654311423, "bytes": 33554432, "attempts": 1}
+{"start": 654311424, "end": 687865855, "bytes": 33554432, "attempts": 1}
+{"start": 687865856, "end": 721420287, "bytes": 33554432, "attempts": 1}
+{"start": 754974720, "end": 788529151, "bytes": 33554432, "attempts": 1}
+{"start": 788529152, "end": 822083583, "bytes": 33554432, "attempts": 2}
+{"start": 520093696, "end": 553648127, "bytes": 33554432, "attempts": 2}
+{"start": 855638016, "end": 889192447, "bytes": 33554432, "attempts": 1}
+{"start": 889192448, "end": 922746879, "bytes": 33554432, "attempts": 1}
+{"start": 922746880, "end": 956301311, "bytes": 33554432, "attempts": 1}
+{"start": 822083584, "end": 855638015, "bytes": 33554432, "attempts": 1}
+{"start": 956301312, "end": 989855743, "bytes": 33554432, "attempts": 1}
+{"start": 1023410176, "end": 1056964607, "bytes": 33554432, "attempts": 2}
+{"start": 1056964608, "end": 1090519039, "bytes": 33554432, "attempts": 1}
+{"start": 1124073472, "end": 1157627903, "bytes": 33554432, "attempts": 1}
+{"start": 553648128, "end": 587202559, "bytes": 33554432, "attempts": 1}
+{"start": 989855744, "end": 1023410175, "bytes": 33554432, "attempts": 1}
+{"start": 1191182336, "end": 1224736767, "bytes": 33554432, "attempts": 3}
+{"start": 1157627904, "end": 1191182335, "bytes": 33554432, "attempts": 1}
+{"start": 1090519040, "end": 1124073471, "bytes": 33554432, "attempts": 2}
+Traceback (most recent call last):
+  File "/home/keyan/code-y-wisig/scripts/resume_wisig_manyrx.py", line 89, in <module>
+    if __name__=='__main__':main()
+  File "/home/keyan/code-y-wisig/scripts/resume_wisig_manyrx.py", line 63, in main
+    records=list(pool.map(work,intervals))
+  File "/home/vipuser/anaconda3/lib/python3.9/concurrent/futures/_base.py", line 608, in result_iterator
+    yield fs.pop().result()
+  File "/home/vipuser/anaconda3/lib/python3.9/concurrent/futures/_base.py", line 438, in result
+    return self.__get_result()
+  File "/home/vipuser/anaconda3/lib/python3.9/concurrent/futures/_base.py", line 390, in __get_result
+    raise self._exception
+  File "/home/vipuser/anaconda3/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/keyan/code-y-wisig/scripts/resume_wisig_manyrx.py", line 58, in work
+    start,end=interval;data,attempts=fetch(start,end)
+  File "/home/keyan/code-y-wisig/scripts/resume_wisig_manyrx.py", line 46, in fetch
+    if attempt==3:raise RuntimeError('Range transfer failed after three finite attempts') from None
+RuntimeError: Range transfer failed after three finite attempts

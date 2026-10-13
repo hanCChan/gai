@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-13T07:42:19.924346+00:00",
+  "official_page": "https://cores.ee.ucla.edu/wisig/downloads/",
+  "file_id": "1TtdydJCuhkvDQ1RWb3PkxakkWo2-X5Uv",
+  "requested_connections": 16,
+  "signal_loaded": false,
+  "state": "STOPPED_QUOTA_POLLER_ALTERNATE_ROUTE",
+  "attempt": 3,
+  "next_attempt_seconds": null,
+  "gdown_single_attempt": "OFFICIAL_SHARED_QUOTA_EXCEEDED",
+  "replacement_status_path": "/home/keyan/data/wisig-manyrx-kaggle/download_status.json"
+}

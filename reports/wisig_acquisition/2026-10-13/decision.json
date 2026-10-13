@@ -1,9 +1,24 @@
 {
-  "status": "DOWNLOADING_KAGGLE_MANYRX_NOT_YET_VERIFIED",
-  "download_complete": false,
+  "status": "DOWNLOAD_COMPLETE_CRC_SHA256_STRUCTURE_VERIFIED_SEALED",
+  "download_complete": true,
+  "zip_crc_passed": true,
+  "archive_bytes": 1310655283,
+  "archive_sha256": "b0eca705816b03a47290286fd23ca1a10e02c6f9bd29b5461cfd92c13a86fbdd",
+  "archive_path": "/home/keyan/data/wisig-manyrx-kaggle/ManyRx.kaggle.v1.zip",
+  "structure_matches_official_description": true,
+  "tx": 10,
+  "rx": 32,
+  "dates": 4,
+  "equalized_list": [
+    0,
+    1
+  ],
+  "signal_samples": 256,
+  "third_party_source": "Kaggle v1 jeffhei1206/wisig-rf-fingerprinting-dataset",
+  "official_byte_equivalence_proven": false,
   "signals_used_for_research": false,
   "official_quota_poller_stopped": true,
   "gdown_attempts": 1,
   "full_wisig_downloaded": false,
-  "official_byte_equivalence_proven": false
+  "requires_packet_alignment_evidence_for_paired_equalization_analysis": true
 }

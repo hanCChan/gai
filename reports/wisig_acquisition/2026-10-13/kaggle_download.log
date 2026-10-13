@@ -1,0 +1,6 @@
+{"received_bytes": 4194304, "expected_bytes": 1310655283}
+{"received_bytes": 75497472, "expected_bytes": 1310655283}
+{"received_bytes": 150994944, "expected_bytes": 1310655283}
+{"received_bytes": 226492416, "expected_bytes": 1310655283}
+{"received_bytes": 247463936, "expected_bytes": 1310655283}
+{"started_utc": "2026-10-13T07:10:23.177231+00:00", "source_url": "https://www.kaggle.com/api/v1/datasets/download/jeffhei1206/wisig-rf-fingerprinting-dataset/ManyRx.pkl%2FManyRx.pkl?datasetVersionNumber=1", "source_kind": "third_party_public_kaggle", "official_equivalence": "NOT_PROVEN_NO_OFFICIAL_CHECKSUM", "kaggle_license": "Unknown", "original_dataset_license": "CC BY-NC-SA 4.0", "signals_loaded": false, "training_used": false, "attempts": 1, "http_status": 200, "content_type": "application/zip", "final_host": "storage.googleapis.com", "state": "STOPPED_SINGLE_ATTEMPT_FAILED", "received_bytes": 247463936, "expected_bytes": 1310655283, "error_type": "ChunkedEncodingError", "partial_bytes": 251658240, "seconds": 137.38494799800173}

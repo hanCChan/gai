@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/keyan/code-y-wisig/scripts/resume_wisig_manyrx.py", line 102, in <module>
+    if __name__=='__main__':main()
+  File "/home/keyan/code-y-wisig/scripts/resume_wisig_manyrx.py", line 55, in main
+    remote,_=fetch(start,start+len(local)-1)
+  File "/home/keyan/code-y-wisig/scripts/resume_wisig_manyrx.py", line 38, in fetch
+    if not hasattr(local,'session'):local.session=requests.Session()
+AttributeError: 'bytes' object has no attribute 'session'

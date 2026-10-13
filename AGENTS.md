@@ -64,3 +64,12 @@ metadata-only inert inspection may verify structure and payload lengths.
 Kaggle is a third-party source with Unknown listed license; record original
 CC BY-NC-SA 4.0 requirements and do not claim byte-equivalence without an
 official checksum. Never publish the dataset, numeric features or weights.
+
+WiSig ManyRx acquisition completed and sealed on 2026-10-13 via Kaggle v1:
+archive1310655283bytes, SHA256
+b0eca705816b03a47290286fd23ca1a10e02c6f9bd29b5461cfd92c13a86fbdd.
+ZIP CRC and inert metadata inspection passed:10TX,32RX,4dates,256 samples,
+equalized[0,1],2560 structures. Non-equalized249666 and equalized247684 packets;
+never assume packet-level pairing. Official byte equivalence remains unproven.
+See reports/wisig_acquisition/2026-10-13; no additional research jobs authorized
+by successful acquisition after the rank2 sharedness stop.

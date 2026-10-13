@@ -5,6 +5,7 @@ import datetime
 import hashlib
 import json
 import shutil
+import threading
 import time
 import zipfile
 from pathlib import Path
@@ -32,10 +33,12 @@ def main():
             time.sleep(3)
     prefix=original.stat().st_size
     assert prefix<total<3*1024**3
+    thread_context=threading.local()
     def fetch(start,end):
+        if not hasattr(thread_context,'session'):thread_context.session=requests.Session()
         for attempt in range(1,4):
             try:
-                with requests.get(signed_url,headers={'Range':f'bytes={start}-{end}'},timeout=(20,75)) as response:
+                with thread_context.session.get(signed_url,headers={'Range':f'bytes={start}-{end}'},stream=True,timeout=(20,45)) as response:
                     assert response.status_code==206
                     assert response.headers['Content-Range']==f'bytes {start}-{end}/{total}'
                     assert not etag or response.headers.get('ETag')==etag
@@ -51,12 +54,21 @@ def main():
             stream.seek(start);local=stream.read(65536)
             remote,_=fetch(start,start+len(local)-1)
             assert remote==local
-    ranges=dest/'ranges';ranges.mkdir(exist_ok=False)
+    ranges=dest/'ranges';ranges.mkdir(exist_ok=True)
     chunk=32*1024**2
     intervals=[(start,min(start+chunk,total)-1) for start in range(prefix,total,chunk)]
     def work(interval):
-        start,end=interval;data,attempts=fetch(start,end)
-        path=ranges/f'{start}-{end}.part';path.write_bytes(data)
+        start,end=interval;path=ranges/f'{start}-{end}.part'
+        if path.exists():
+            data=path.read_bytes();assert len(data)==end-start+1
+            return dict(start=start,end=end,bytes=len(data),attempts=0,preserved_from_previous_completion=True,sha256=hashlib.sha256(data).hexdigest())
+        blocks=[];attempts=0
+        # Only incomplete ranges get smaller subrequests; completed ranges stay untouched.
+        for substart in range(start,end+1,8*1024**2):
+            data,trials=fetch(substart,min(substart+8*1024**2,end+1)-1)
+            blocks.append(data);attempts+=trials
+        data=b''.join(blocks);assert len(data)==end-start+1
+        path.write_bytes(data)
         print(json.dumps(dict(start=start,end=end,bytes=len(data),attempts=attempts)),flush=True)
         return dict(start=start,end=end,bytes=len(data),attempts=attempts,sha256=hashlib.sha256(data).hexdigest())
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
@@ -82,7 +94,8 @@ def main():
         utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),archive=str(target),
         bytes=total,sha256=digest.hexdigest(),entries=inventory,seconds=time.monotonic()-begin,
         original_partial_preserved=str(original),ranges=records,max_connections=4,
-        max_attempts_per_range=3,signals_loaded=False,training_used=False)
+        max_attempts_per_subrequest=3,incomplete_range_subrequest_bytes=8*1024**2,
+        signals_loaded=False,training_used=False)
     dump(dest/'download_status.json',record)
     print(json.dumps({k:v for k,v in record.items() if k!='ranges'}),flush=True)
 
