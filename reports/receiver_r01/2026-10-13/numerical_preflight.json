@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "checks": {
+    "MLDG_full_second_order_finite_difference": {
+      "analytic": -0.4849177490904262,
+      "finite_difference": -0.48491774907732926
+    },
+    "PCGrad_opposing_tasks_cancel": true,
+    "SWAD_official_valley": {
+      "converged": true,
+      "dead": true,
+      "threshold": 0.9316666666666668,
+      "end_step": 6
+    },
+    "Balanced_sampler_all_packets_once_and_two_per_cell": true,
+    "Architectures_cuda_second_order_and_PCGrad": [
+      {
+        "dataset": "wisig",
+        "backbone": "official",
+        "parameters": 40102,
+        "synthetic_steps": 2
+      },
+      {
+        "dataset": "wisig",
+        "backbone": "resnet",
+        "parameters": 195130,
+        "synthetic_steps": 2
+      },
+      {
+        "dataset": "shen",
+        "backbone": "rank16",
+        "parameters": 658314,
+        "synthetic_steps": 2
+      }
+    ]
+  },
+  "seconds": 4.392740985000273,
+  "reserved_gpu_seconds": 4.278418314999726,
+  "no_research_fitting": true,
+  "no_dataset_loaded": true
+}

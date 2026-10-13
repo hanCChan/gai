@@ -1,0 +1,12 @@
+{
+  "assets_checked": 112,
+  "wisig_source_cells": 420,
+  "all_source_ten_classes_valid": true,
+  "no_new_raw_iq_access": true,
+  "final_rx_read": false,
+  "final_date_read": false,
+  "equalized_read": false,
+  "shen_development_locked_read": false,
+  "archive_provenance": "b0eca705816b03a47290286fd23ca1a10e02c6f9bd29b5461cfd92c13a86fbdd",
+  "official_byte_equivalence_proven": false
+}

@@ -104,3 +104,7 @@ W2/W3 jobs0. Do not treat repeatability as cross-identity predictability or revi
 rank2. Final8 RX,last date,equalized numerical values remain reserved. Publish
 and remotely verify this completed window,then stop. Later instructions needed
 for any additional fitting or new mechanism. See reports/wisig_w01/2026-10-13.
+
+## Latest user instruction: Receiver-held-out R0–R1 (2026-10-13)
+
+The user supplied the continuous algorithm research plan and instructed understanding, updating the plan and strict execution unless blocking questions arise. This authorizes an independent R0–R1 worktree, closed-set ten-TX unequalized WiSig development caches and the ten Shen source RX Strict CIS caches, up to 6 reserved V100 GPU hours. Preserve all historical stops and reports. Freeze finite source-only hyperparameter selection and three paired seeds. Final WiSig eight RX, last date and equalized data stay sealed. No extra downloads, seed replacement, failed-fit retry, architecture search, R2 training or final test. Publish full code, plan, reports and derived evidence on its own GitHub branch, remotely read back and stop at R1. R2 is design only. The new instruction supersedes old B1/W0 fitting prohibitions only for this experiment.
