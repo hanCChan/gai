@@ -31,8 +31,8 @@
       "delivery": "direct"
     },
     "reports/receiver_r2/r2_a/REPORT.md": {
-      "sha256": "cc93809ef35617ca4dc111d637d5aef80ca762033e8c55fabff522c1ad31ebc7",
-      "bytes": 8104,
+      "sha256": "fec8ba48cefdd0eb15c04c3f6f176a99ae2889619138ffb39688bcf0d0280acc",
+      "bytes": 8243,
       "delivery": "direct"
     },
     "reports/receiver_r2/r2_a/convergence_curves.png": {
@@ -66,8 +66,8 @@
       "delivery": "direct"
     },
     "reports/receiver_r2/r2_a/DECISION.md": {
-      "sha256": "d193a0058fdbd12b1254adfdea5ecc247f8b3f46605c81d8c4f04ca48ff1a10c",
-      "bytes": 1833,
+      "sha256": "a9216a3789d7da2217b115188159d3e0b6cd72faa0e5ebf5afa6b4e4ffa878f5",
+      "bytes": 1959,
       "delivery": "direct"
     },
     "reports/receiver_r2/r2_a/update_behavior_by_phase.csv": {
@@ -346,8 +346,28 @@
       "delivery": "direct"
     },
     "scripts/conclude_receiver_r2.py": {
-      "sha256": "6b363caf8d36152627a583f0810275c483f94a7b58fc18d481dbe5d467c7dfda",
-      "bytes": 15946,
+      "sha256": "d01095755ff14b2a7771995f94e5a3c3a9b12d90f7ed7f37739eb02876407926",
+      "bytes": 16366,
+      "delivery": "direct"
+    },
+    "docs/receiver_r2/R2_C_FAIR_MATRIX.md": {
+      "sha256": "24b0dfc6964e35b21b2897e8e555b46b0719da14320ca7bd1d1046eebf254978",
+      "bytes": 3796,
+      "delivery": "direct"
+    },
+    "reports/receiver_r2/r2_b/REPORT.md": {
+      "sha256": "eea6f4d5d13cd442c847c92cf567af81e36030871789bbd713aa5da1a0cf1572",
+      "bytes": 1022,
+      "delivery": "direct"
+    },
+    "reports/receiver_r2/r2_b/DECISION.md": {
+      "sha256": "98b21cc415f76369cb1130fbc658fc9af7ccbdf8ecd5cf24f3649800ce460315",
+      "bytes": 388,
+      "delivery": "direct"
+    },
+    "AGENTS.md": {
+      "sha256": "6ffa6b198729cba628feb75a855d3a7cf325fead2be0d2d97f8fda5daaf62cd5",
+      "bytes": 10492,
       "delivery": "direct"
     }
   },

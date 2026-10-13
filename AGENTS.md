@@ -136,3 +136,8 @@ No controlled R2-C jobs; formal45-fit proposal is inactive and needs separate
 approval. Final8/date3/equalized and developer/locked Shen remain excluded.
 Do not use remaining allocation to start more jobs. Publish and remotely verify
 this completed stage, then stop.
+
+Future fairness-plan amendment only: matched CE and matched SWAD supplement
+the four MLDG controls, yielding an inactive six-arm54-fit R2-C proposal.
+This supersedes only the initial45-fit planning count. No controller-rule
+change, new training or remaining-allocation reuse is authorized.
