@@ -1,6 +1,6 @@
 """CPU tests for physics.py on synthetic 25 Msps L-STF-like packets with known impairments."""
 import numpy as np
-from physics import (FS, PERIOD, TONE_BINS, to_complex, to_cache, stf_descriptors, shift_cfo,
+from physics import (FS, PERIOD, TONE_BINS, to_complex, to_cache, stf_descriptors, shift_cfo, measured_change,
                      reshape_tones, add_noise_to_snr, grid_distance)
 
 
@@ -47,6 +47,21 @@ def test_interventions():
     d2 = stf_descriptors(add_noise_to_snr(z, d0['snr_db'], 15.0, rng))
     assert abs(np.median(d2['snr_db']) - 15.0) < 1.0
     assert np.allclose(add_noise_to_snr(z, d0['snr_db'], 70.0, rng), z)  # never raises SNR
+
+
+def test_measured_change_reports_cfo_leakage_and_requested_effects():
+    rng = np.random.default_rng(3)
+    z = stf(200, rng, gains_db=rng.normal(scale=2.0, size=12), cfo=5e3, snr_db=30)
+    m = measured_change(z, shift_cfo(z, 30e3))
+    assert abs(np.median(m['d_cfo_hz']) - 30e3) < 300 and m['finite'].all()
+    leak = np.sqrt(np.mean(np.median(m['d_tone'], 0) ** 2))
+    print('    tone-shape change under a 30 kHz CFO shift (rms log-power):', round(float(leak), 4))
+    # measured ~0.064 rms (~0.28 dB) for 30 kHz: real leakage, reported on server data, not assumed zero
+    assert 0.0 < leak < 0.15
+    delta = np.tile(np.linspace(-1, 1, 12), (200, 1))
+    m2 = measured_change(z, reshape_tones(z, delta))
+    assert np.abs(np.median(m2['d_tone'], 0) - (delta[0] - delta[0].mean())).max() < 0.15
+    assert abs(np.median(m2['d_cfo_hz'])) < 300 and m2['input_rel_change'].mean() > 0.01
 
 
 def test_grid_distance():

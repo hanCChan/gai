@@ -22,7 +22,13 @@ def main():
     pools = dict(source=pool(range(14), (0, 1), tx_cfo, rx_cfo, tx_tone, rx_tone, link, rng),
                  internal=pool(range(14, 20), (2,), tx_cfo, rx_cfo, tx_tone, rx_tone, link, rng))
     phys = run_l0.wisig_physics(pools)
-    print('sigma_b_hz', round(phys['sigma_b_hz']), 'snr_changed', round(phys['snr_changed_fraction'], 2))
+    print('sigma_b_hz', round(phys['sigma_b_hz']))
+    import pandas as pd
+    V = pd.DataFrame(phys['validation']); E = run_l0.ENGINEERING
+    print(V[['intervention', 'requested', 'error_median_abs', 'error_rms', 'tone_leakage_rms', 'input_rel_change_mean']].round(4).to_string(index=False))
+    assert (V[V.requested == 'cfo_hz'].error_median_abs < E['cfo_error_hz_max']).all()
+    assert (V[V.requested == 'tone_log_power'].error_rms < E['tone_error_rms_max']).all()
+    assert (V[V.requested == 'snr_db'].error_median_abs.fillna(0) < E['snr_error_db_max']).all() and (V.nonfinite == 0).all()
     assert 1.5e3 < phys['sigma_b_hz'] < 6e3
     R = phys['ref'][1]
     cfo_model = lambda x: R['txs'][np.abs(stf_descriptors(to_complex(x))['cfo_hz'][:, None] - R['cfo'][None]).argmin(1)]

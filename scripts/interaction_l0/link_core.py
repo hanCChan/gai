@@ -8,12 +8,24 @@ all receivers nor a receiver offset shared by all transmitters.
 """
 import numpy as np
 
-def complete_grid(tx, rx, mask, min_count=2):
+def complete_grid(tx, rx, mask, min_count=2, restrict=None):
     """TX and RX lists of a complete grid under mask: keep TX with >= min_count packets at
-    every RX (two are needed for the split-half cross-fit)."""
+    every RX (two are needed for the split-half cross-fit). `restrict` limits TX to a given
+    set (e.g. the TX shared with another pool). Dropped TX are reported by coverage()."""
     rxs = np.unique(rx[mask])
-    txs = [t for t in np.unique(tx[mask]) if all(((tx == t) & (rx == r) & mask).sum() >= min_count for r in rxs)]
-    return np.array(txs), rxs
+    cand = np.unique(tx[mask]) if restrict is None else [t for t in np.unique(tx[mask]) if t in set(restrict)]
+    txs = [t for t in cand if all(((tx == t) & (rx == r) & mask).sum() >= min_count for r in rxs)]
+    return np.array(txs, dtype=int), rxs
+
+
+def coverage(tx, rx, mask, min_count=2, n_tx=10):
+    """Explicit coverage audit: packets per (TX,RX), complete TX set and what is dropped."""
+    rxs = np.unique(rx[mask])
+    counts = np.array([[int(((tx == t) & (rx == r) & mask).sum()) for r in rxs] for t in range(n_tx)])
+    complete = [t for t in range(n_tx) if (counts[t] >= min_count).all()]
+    return dict(rxs=rxs.tolist(), counts=counts, complete_tx=complete,
+                dropped_tx=[t for t in range(n_tx) if t not in complete],
+                insufficient_cells=int((counts < min_count).sum()))
 
 
 def cell_means(z, tx, rx, mask, txs, rxs, half=None, order=None):
@@ -74,7 +86,7 @@ def within_cell_covariance(z, tx, rx, mask, txs, rxs):
     return W / dof, len(ns) / np.sum(1 / np.array(ns))
 
 
-def effect_directions(z, tx, rx, mask, txs, rxs, k, kind='link', q=24, ridge=1e-6):
+def effect_directions(z, tx, rx, mask, txs, rxs, k, kind='link', q=24, ridge=1e-6, info=None):
     """Readout/pattern pairs for the k directions maximising noise-corrected `kind` energy
     over all between-cell energy (kind in link | rx | cond | tx).
 
@@ -85,6 +97,7 @@ def effect_directions(z, tx, rx, mask, txs, rxs, k, kind='link', q=24, ridge=1e-
     Wishart-dispersed, so the problem is solved inside the top-q principal subspace of B
     (PCA-then-discriminant); q is fixed in advance, never tuned on target receivers.
     Returns readout V [d,k], pattern G V [d,k] with V'GV = I, and the k energy shares.
+    If `info` is a dict it receives numerical diagnostics (condition number, sizes).
     """
     M = cell_means(z, tx, rx, mask, txs, rxs)
     T, R, d = M.shape
@@ -99,6 +112,8 @@ def effect_directions(z, tx, rx, mask, txs, rxs, k, kind='link', q=24, ridge=1e-
     P = np.linalg.eigh(B)[1][:, ::-1][:, :min(q, d)]
     Sq, Bq = P.T @ S @ P, P.T @ B @ P
     Bq = Bq + ridge * np.trace(Bq) / len(Bq) * np.eye(len(Bq))
+    if info is not None:
+        info.update(cond_Bq=float(np.linalg.cond(Bq)), q=int(len(Bq)), cells=int(T * R), packets_per_cell=float(n))
     Li = np.linalg.inv(np.linalg.cholesky(Bq))
     w, U = np.linalg.eigh(Li @ Sq @ Li.T)
     Vq = Li.T @ U[:, ::-1][:, :k]
@@ -144,8 +159,22 @@ def rx_equal_accuracy(pred, y, rx, day):
     return float(np.mean(per_rx))
 
 
+def average_ranks(v):
+    """Ranks with ties given their average rank (as scipy.stats.rankdata 'average')."""
+    v = np.asarray(v, dtype=float)
+    order = np.argsort(v, kind='stable'); r = np.empty(len(v)); r[order] = np.arange(1, len(v) + 1)
+    for val in np.unique(v[np.isfinite(v)]):
+        idx = v == val
+        if idx.sum() > 1:
+            r[idx] = r[idx].mean()
+    return r
+
+
 def spearman(x, y):
-    rx_, ry_ = (np.argsort(np.argsort(v)).astype(float) for v in (np.asarray(x), np.asarray(y)))
+    """Tie-aware Spearman correlation; NaN if either side is constant."""
+    rx_, ry_ = average_ranks(x), average_ranks(y)
+    if rx_.std() == 0 or ry_.std() == 0:
+        return float('nan')
     return float(np.corrcoef(rx_, ry_)[0, 1])
 
 

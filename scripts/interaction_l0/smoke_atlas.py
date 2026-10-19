@@ -48,6 +48,8 @@ def main(hardware_structured=False):
         for d in (0, 1, 2):
             xs, ys, ps = [], [], []
             for t in range(10):
+                if r == roles['internal_rx'][0] and d < 2 and t not in (1, 4, 5, 7):
+                    continue  # mimic the real internal coverage gap
                 z = packet_batch(40, tx_tone[t] + rx_tone[r] + link_tone[t, r], tx_cfo[t] + rx_cfo[r], rx_snr[r], rng)
                 xs.append(to_cache(z)); ys += [t] * 40; ps += list(range(0, 200, 5))
             np.savez(cache / f'rx{r:02d}_day{d}.npz', x=np.concatenate(xs), y=np.array(ys), position=np.array(ps))
@@ -55,12 +57,15 @@ def main(hardware_structured=False):
     subprocess.run([sys.executable, str(Path(__file__).with_name('atlas_l0.py')), '--root', str(root), '--out', str(out)],
                    check=True, capture_output=True)
     import pandas as pd
-    a1 = pd.read_csv(out / 'A1_additivity.csv'); src = a1[a1.pool == 'source'].set_index('descriptor')
+    a1 = pd.read_csv(out / 'A1_additivity.csv'); src = a1[a1.comparison == 'source_all'].set_index('descriptor')
     print(src[['tx_share', 'rx_share', 'link_share']].round(3).to_string())
     assert src.loc['cfo_khz', 'link_share'] < 0.02, 'planted CFO is additive'
     assert src.loc['tone_shape', 'link_share'] > 0.15, 'planted tone shape has a link component'
     assert src.loc['snr_db', 'rx_share'] > 0.5, 'planted SNR is an RX property'
     res = json.loads((out / 'atlas.json').read_text())
+    assert res['A1_matched_tx'] == {'0': [1, 4, 5, 7], '1': [1, 4, 5, 7]}, res['A1_matched_tx']
+    assert set(a1[a1.comparison != 'source_all'].n_tx) == {4} and set(a1[a1.comparison == 'source_all'].n_tx) == {10}
+    assert res['A0_internal_date0']['dropped_tx'] == [0, 2, 3, 6, 8, 9] and 'A2_confounds' in res
     assert res['source_low_periodicity_fraction'] < 0.01
     if hardware_structured:
         assert res['A2']['p_hardware_one_sided'] < 0.05, res['A2']

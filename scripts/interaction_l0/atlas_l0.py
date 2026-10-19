@@ -2,8 +2,12 @@
 """L0-A: model-free physical atlas of WiSig ManyRx (CPU, numpy only, no model, no fitting).
 
 Questions, all answered from IQ descriptors (physics.py), not from CNN features:
+  A0 coverage: which TX have >=2 packets at every RX, per pool and date (internal RX share only
+     TX {1,4,5,7} on dates 0/1); nothing is dropped silently.
   A1 additivity: how much of CFO / SNR / STF tone-shape variation is TX main, RX main, or TX x RX
-     interaction (split-half cross-fitted energies; dates 0/1 separately, then averaged)?
+     interaction (split-half cross-fitted energies; dates 0/1 separately, then averaged)? Source and
+     internal pools are compared only on the same matched TX set; the 10-TX source value is kept
+     separately and is not compared with the internal one.
   A2 attribution of the tone-shape interaction: does i_{t,r} resemble i_{t,r'} more when RX r, r'
      are spatially close or share a hardware model (permutation null over RX labels)? does its
      size grow with TX-RX distance?
@@ -21,7 +25,7 @@ import numpy as np
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
-from link_core import complete_grid, cell_means, crossfit_energies, effects, spearman
+from link_core import complete_grid, coverage, cell_means, crossfit_energies, effects, spearman
 from physics import to_complex, stf_descriptors, grid_distance
 
 PERMUTATIONS = 2000
@@ -34,17 +38,20 @@ def descriptors(data):
     return feats, d['periodicity']
 
 
-def shares(f, data, keep):
+def shares(f, data, keep, restrict=None):
+    """restrict: optional {date: TX list}; the TX set actually used is returned per date."""
     tx, rx, day, pos = data['y'], data['rx'], data['day'], data['position']
-    rows = []
+    rows, used = [], {}
     for d in np.unique(day[keep]):
         m = keep & (day == d)
-        txs, rxs = complete_grid(tx, rx, m)
+        txs, rxs = complete_grid(tx, rx, m, restrict=None if restrict is None else restrict[int(d)])
+        used[int(d)] = txs.tolist()
         A, B = (cell_means(f, tx, rx, m, txs, rxs, h, pos) for h in (0, 1))
         rows.append(crossfit_energies(A, B))
     e = {k: float(np.mean([r[k] for r in rows])) for k in ('tx', 'rx', 'link')}
     tot = sum(max(v, 0) for v in e.values())
-    return {**e, **{f'{k}_share': max(e[k], 0) / tot for k in ('tx', 'rx', 'link')}}
+    return {**e, **{f'{k}_share': max(e[k], 0) / tot for k in ('tx', 'rx', 'link')},
+            'tx_sets': json.dumps(used), 'n_tx': int(np.mean([len(v) for v in used.values()]))}
 
 
 def main():
@@ -64,12 +71,30 @@ def main():
     for k, (f, per) in desc.items():
         result[f'{k}_packets'] = int(len(per)); result[f'{k}_low_periodicity_fraction'] = float((per < MIN_PERIODICITY).mean())
 
-    # A1 additivity on source RX (dates 0/1) and, descriptively, on internal RX (dates 0/1)
+    # A0 explicit coverage audit (>=2 packets per TX x RX cell, valid periodicity)
+    a0, complete = [], {}
+    for pool, data in pools.items():
+        per = desc[pool][1]
+        for d in np.unique(data['day']):
+            m = (data['day'] == d) & (per >= MIN_PERIODICITY); c = coverage(data['y'], data['rx'], m)
+            complete[(pool, int(d))] = c['complete_tx']
+            result[f'A0_{pool}_date{int(d)}'] = dict(complete_tx=c['complete_tx'], dropped_tx=c['dropped_tx'],
+                                                      insufficient_cells=c['insufficient_cells'], rx=len(c['rxs']))
+            for ti in range(10):
+                for j, r in enumerate(c['rxs']):
+                    a0.append(dict(pool=pool, date=int(d), rx=int(r), receiver=names[r], tx=ti, packets=int(c['counts'][ti, j]),
+                                   sufficient=bool(c['counts'][ti, j] >= 2)))
+    pd.DataFrame(a0).to_csv(out / 'A0_coverage.csv', index=False)
+
+    # A1 additivity. source_all: full source grid (not compared with internal). matched: both pools on
+    # the same TX set = intersection of complete TX per date (internal dates 0/1 only here).
+    matched = {d: sorted(set(complete[('source', d)]) & set(complete[('internal', d)])) for d in (0, 1)}
+    result['A1_matched_tx'] = matched
     a1 = []
-    for pool in ('source', 'internal'):
+    for pool, label, restrict in (('source', 'source_all', None), ('source', 'source_matched', matched), ('internal', 'internal_matched', matched)):
         data = pools[pool]; f, per = desc[pool]; keep = (per >= MIN_PERIODICITY) & (data['day'] < 2)
         for name, v in f.items():
-            a1.append(dict(pool=pool, descriptor=name, **shares(v, data, keep)))
+            a1.append(dict(pool=pool, comparison=label, descriptor=name, **shares(v, data, keep, restrict)))
     pd.DataFrame(a1).to_csv(out / 'A1_additivity.csv', index=False)
 
     # A2 tone-shape interaction attribution on source RX: pairwise RX similarity per TX
@@ -105,6 +130,15 @@ def main():
     for _ in range(PERMUTATIONS):
         perm = lookup.copy(); perm[rxs_all] = rng.permutation(rxs_all); null.append(stat(cross, perm))
     null = np.array(null)
+    # confounding between hardware model and position must be reported next to any A2 p-value
+    pr = cross[['rx_a', 'rx_b', 'rx_distance_m', 'same_hardware']].drop_duplicates(['rx_a', 'rx_b']).copy()
+    pr['same_hardware'] = pr.same_hardware.astype(bool)  # object dtype (self rows had NaN) would break ~
+    src_hw = pd.Series([hw[names[r]] for r in rxs_all]).value_counts().to_dict()
+    result['A2_confounds'] = dict(source_rx_hardware_counts=src_hw,
+                                  mean_rx_distance_same_hw=float(pr[pr.same_hardware].rx_distance_m.mean()),
+                                  mean_rx_distance_diff_hw=float(pr[~pr.same_hardware].rx_distance_m.mean()),
+                                  rho_same_hw_vs_distance=spearman(pr.same_hardware.astype(float), pr.rx_distance_m),
+                                  note='hardware model and grid position are not randomly assigned; one source X310 only')
     result['A2'] = dict(rho_similarity_vs_rx_distance=obs[0], p_distance_one_sided=float((null[:, 0] <= obs[0]).mean()),
                         same_hardware_similarity_gap=obs[1], p_hardware_one_sided=float((null[:, 1] >= obs[1]).mean()),
                         mean_cross_rx_similarity=float(cross.similarity.mean()), mean_self_energy=float(self_.similarity.mean()),
@@ -123,6 +157,7 @@ def main():
                     tx_mean = {t: v[m & (data['y'] == t)].mean(0) for t in np.unique(data['y'][m])}
                     ref = {t: ref_tx[name][d if d < 2 else 1][t] for t in tx_mean if t in ref_tx[name][d if d < 2 else 1]}
                     off = np.mean([tx_mean[t] - ref[t] for t in ref], axis=0)
+                    row['n_tx_used'] = len(ref)
                     row[f'{name}_offset'] = float(off[0]) if off.size == 1 else float(np.linalg.norm(off))
                     if name == 'snr_db': row['snr_db_median'] = float(np.median(v[m, 0]))
                 rows.append(row)

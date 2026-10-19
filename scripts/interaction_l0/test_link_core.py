@@ -103,6 +103,22 @@ def test_erasing_link_helps_new_receivers():
     assert erased > base + 0.05 and erased > rnd + 0.05, (base, erased, rnd)
 
 
+def test_ties_coverage_and_diagnostics():
+    from link_core import average_ranks, coverage
+    assert list(average_ranks([3, 1, 3, 2])) == [3.5, 1.0, 3.5, 2.0]
+    # with ties, double-argsort ranks would give 0.8 here; the average-rank value is 0.9487
+    assert abs(spearman([1, 2, 2, 3], [1, 2, 3, 4]) - 0.9486832980505138) < 1e-12
+    assert np.isnan(spearman([1, 1, 1], [1, 2, 3]))
+    tx = np.array([0, 0, 1, 1, 0, 0, 1]); rx = np.array([0, 0, 0, 0, 1, 1, 1])
+    c = coverage(tx, rx, np.ones(7, bool), n_tx=3)
+    assert c['complete_tx'] == [0] and c['dropped_tx'] == [1, 2] and c['insufficient_cells'] == 3
+    txs, _ = complete_grid(tx, rx, np.ones(7, bool), min_count=1, restrict=[1])
+    assert list(txs) == [1]
+    z, tx2, rx2, pos = grid(5, link_scale=1.0); m = np.ones(len(tx2), bool); a, b = complete_grid(tx2, rx2, m)
+    info = {}; effect_directions(z, tx2, rx2, m, a, b, 4, info=info)
+    assert info['q'] == 24 and np.isfinite(info['cond_Bq']) and info['cells'] == 140
+
+
 def test_small_helpers():
     pred = np.array([0, 1, 1, 0]); y = np.array([0, 1, 0, 0]); rx = np.array([0, 0, 1, 1]); day = np.zeros(4, int)
     assert rx_equal_accuracy(pred, y, rx, day) == 0.75

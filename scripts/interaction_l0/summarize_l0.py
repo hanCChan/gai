@@ -9,8 +9,11 @@ experiment, never a final claim. Thresholds below are fixed before any server ou
 """
 import argparse, json
 from pathlib import Path
+import sys
 import numpy as np
 import pandas as pd
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from link_core import spearman
 
 PRIMARY = 'wisig/official/r01'
 TARGET = 'acc_internal_unseen_date'
@@ -50,7 +53,7 @@ def statistical(R):
     if len(P) < 6:
         return out, False
     seed_mean = P.groupby('seed')[[TARGET, 'feat_link_ratio']].mean()
-    out['between_seed_rho_n3'] = float(np.corrcoef(ranks(seed_mean.feat_link_ratio), ranks(seed_mean[TARGET]))[0, 1])
+    out['between_seed_rho_n3'] = spearman(seed_mean.feat_link_ratio, seed_mean[TARGET])
     out['seed_means'] = seed_mean.round(4).to_dict()
     g = P.seed.to_numpy()
     for name, ctrl in (('none', []), ('acc_source', [P.acc_source]), ('acc_source+separability', [P.acc_source, P.feat_separability])):
@@ -58,9 +61,9 @@ def statistical(R):
     for alt in ('acc_source', 'feat_separability', 'feat_loro_proto', 'feat_rx_share'):
         out[f'within_seed_rho_{alt}'] = partial_rank_corr(P[alt], P[TARGET], [], g)
     # consistency: the method-level association must hold inside most seeds, not one seed
-    per_seed = {int(k): float(np.corrcoef(ranks(v.feat_link_ratio), ranks(v[TARGET]))[0, 1]) for k, v in P.groupby('seed')}
+    per_seed = {int(k): spearman(v.feat_link_ratio, v[TARGET]) for k, v in P.groupby('seed')}
     out['per_seed_rho_over_methods'] = per_seed
-    neg = sum(r < 0 for r in per_seed.values())
+    neg = sum(bool(r < 0) for r in per_seed.values())  # NaN (constant input) counts as not negative
     rho = out['within_seed_partial_rho_link_ratio|acc_source+separability']
     # between-seed (n=3) is descriptive only: the seed-level effect needs the many-seed factorial (P1)
     ok = bool(np.isfinite(rho) and rho <= RULES['S_within_seed_partial_rho_max'] and neg >= RULES['S_seeds_negative_min_fraction'] * len(per_seed))
@@ -88,6 +91,10 @@ def intervention(E, R):
         out[f'{head}_median_link_specific_pp'] = float(spec.median())
         out[f'{head}_link_specific_positive_fraction'] = float((spec > 0).mean())
         out[f'{head}_cond_minus_link_median_pp'] = float((g['cond'] - g['link']).median())
+    # intervention strength and identity retention per arm (descriptive; same rank != same strength)
+    for col in ('feature_change_DT', 'tx_energy_retained', 'link_energy_retained', 'rx_energy_retained'):
+        if col in P.columns:
+            out[f'median_{col}_k{K}'] = {kind: float(P[(P.kind == kind) & (P.k == K)][col].median()) for kind in ('link', 'rx', 'cond', 'random')}
     link = P[(P.kind == 'link') & (P.k == K)].set_index('run_id')
     flags['source_drop_pp'] = float(100 * (base.loc[link.index, 'frozen_acc_source'] - link.frozen_acc_source).median())
     ratio = (link.frozen_mean_logit_norm / base.loc[link.index, 'frozen_mean_logit_norm']).median()

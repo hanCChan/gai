@@ -2,10 +2,13 @@
 
 At 25 Msps the 802.11 L-STF repeats every 20 samples (0.8 us) and its 12 occupied tones sit at
 +-1.25 ... +-7.5 MHz, i.e. exactly bins +-1..+-6 of a 20-point FFT. Per packet we read:
-  cfo_hz      carrier frequency offset (TX LO - RX LO, plus drift) from the lag-20 autocorrelation
-  snr_db      periodicity SNR proxy |R| / (P - |R|)
-  tone_shape  12 STF tone log-powers, mean-removed (linear TX/RX/channel response shape;
-              invariant to circular start offset, CFO rotation and packet gain)
+  cfo_hz      observed relative carrier frequency offset (TX LO - RX LO, plus drift), lag-20
+  snr_db      periodicity-based noise proxy |R| / (P - |R|); not a calibrated SNR
+  tone_shape  12 STF tone log-powers, mean-removed: relative response shape of the received
+              preamble (TX, RX and propagation combined; not a channel estimate). Invariant to
+              circular start offset and packet gain; only approximately invariant to CFO, since a
+              non-integer frequency offset changes leakage in the finite FFT window. The size of
+              that leakage is measured on real packets by measured_change(), not assumed.
   periodicity |R|/P in [0,1]; low values flag windows that are not inside the L-STF
 The packet start is only energy-detected upstream (WiSig paper Sec. IV), so the window skips the
 first period. These are physical descriptors, not ground-truth channel measurements.
@@ -75,3 +78,18 @@ def grid_distance(a, b):
     """ORBIT node names 'x-y' (1 m grid) -> Euclidean distance in metres."""
     (xa, ya), (xb, yb) = (tuple(map(int, s.split('-'))) for s in (a, b))
     return float(np.hypot(xa - xb, ya - yb))
+
+
+def measured_change(z0, z1):
+    """Re-extract descriptors after an intervention: what actually changed, packet by packet.
+
+    Returns arrays: d_cfo_hz, d_tone (n,12), d_snr_db, periodicity_after, input_rel_change
+    (squared difference of unit-power packets over unit power) and a finite mask.
+    """
+    d0, d1 = stf_descriptors(z0), stf_descriptors(z1)
+    u0 = z0 / np.sqrt(np.mean(np.abs(z0) ** 2, axis=1, keepdims=True))
+    u1 = z1 / np.sqrt(np.mean(np.abs(z1) ** 2, axis=1, keepdims=True))
+    finite = np.isfinite(z1).all(1) & np.isfinite(d1['cfo_hz']) & np.isfinite(d1['tone_shape']).all(1)
+    return dict(d_cfo_hz=d1['cfo_hz'] - d0['cfo_hz'], d_tone=d1['tone_shape'] - d0['tone_shape'],
+                d_snr_db=d1['snr_db'] - d0['snr_db'], periodicity_after=d1['periodicity'],
+                input_rel_change=np.mean(np.abs(u1 - u0) ** 2, axis=1), finite=finite)

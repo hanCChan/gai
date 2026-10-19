@@ -67,8 +67,8 @@ H-CFO 是本版新增的最重要对立假说，有两个依据：
 - **总判定**：S 和 I 都通过且无伪影 → `SUPPORTED`；只过一项，或有伪影 → `INCONCLUSIVE`；都不过 → `UNSUPPORTED_FOR_CURRENT_REPRESENTATION`。这是对**当前冻结表征的线性探查**下的结论，不否定训练期方法。
 - **物理假说单独判定**：H-CFO（三项条件：换 CFO 后预测跟随 ≥0.3、±1σ_b 平移的翻转率 ≥0.1、错误一致率超出零分布 ≥0.15）、H-tone-link（翻转率 ≥0.1 且 ≥1.5 倍于 RX 谱形互换）、SNR 敏感性。
 
-**成本**：A 部分只用 CPU。B 部分是约 57 个模型的推理，外加每个模型 10 个 500 步的小头重拟合，估计 < 0.2 GPUh；冒烟后用 `timing.json` 实测。
-运行方式：`bash scripts/interaction_l0/phase_l0.sh <R0/R1 worktree> <out> [<R2-A worktree>]`。
+**成本**：A 部分只用 CPU。B 部分是约 57 个模型冻结主干的推理，外加**每个模型 9 次 500 步的小头重拟合**（不是零优化步骤）。成本以 preflight 实测为准，工程上限为 2.0 GPUh（含 1.5 倍余量）。
+运行方式（r1）：先运行 `phase_l0_preflight.sh`（到 `preflight.json` 为止），人工核查后再运行 `phase_l0_full.sh`（4 张 GPU 并行分片）。修订细节见 [REVISION_r1.md](REVISION_r1.md)。
 
 ---
 
