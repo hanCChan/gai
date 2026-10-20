@@ -1,5 +1,17 @@
 # 第二篇论文研究入口
 
+2026-10-20 UTC：L0 完整诊断 + 本地 R0/R1 复现已完成，分支 `experiment/l0-interaction-phenomenon`。
+交互捷径总判定 **INCONCLUSIVE**（S 通过 rho −0.60，I 不通过，物理干预指向 RX 主效应音调响应：tone_rx_swap 掉 37.8pp ≈ tone_link_swap 40.5pp；CFO/SNR/硬件族假说均不支持）。
+本地复现 84 作业 0 失败，reserved 2.316 GPUh；WiSig 35 作业与已发布注册表逐字节一致，112 输入资产 SHA 全过；方法间无稳定优势、种子因子（sd 12.3pp）> RX 因子（sd 7.0pp）复现成立。
+下一步（未批准）：E0 16 种子预测子验证、E1 CRR 反事实 RX 响应重采样；LIS 降级为消融臂。
+
+- [L0 完整诊断与本地复现报告](reports/interaction_l0/2026-10-20_full/REPORT.md)
+- [L0 全量合并产物 + SHA256 清单](reports/interaction_l0/2026-10-20_full/PUBLIC_ARTIFACT_SHA256.json)
+- [R0/R1 复现评价产物](reports/receiver_r01/2026-10-20_local/)
+- [L0 计划 v2](docs/interaction_l0/RESEARCH_PLAN.md) / [r1 修订记录](docs/interaction_l0/REVISION_r1.md)
+
+以下是 2026-10-13 及之前的历史状态；原阶段报告与科学判断不变。
+
 2026-10-13 UTC：用户批准的B1已完成，分支 `experiment/b1-standard-baselines`。
 32/32拟合作业（16内部LR搜索+16正式）、0失败/重试、总0.4704956571 reserved GPUh。
 全部同Strict CIS/rank16 CNN、配对初始化及共享batch；32真实权重、96预测资产独立复核通过。

@@ -34,7 +34,7 @@ def select(reg):
     dest=ROOT/'outputs/receiver_r01/selection.frozen.json';assert not dest.exists()
     result=dict(frozen_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),choices=choices,all_candidates=all_results,
                 source_only=True,internal_RX_used=False,outer_RX_used=False,formal_fits_started=False)
-    dump(dest,result);dump(ROOT/'reports/receiver_r01/2026-10-13/selection.frozen.json',result)
+    dump(dest,result);dump(ROOT/'reports/receiver_r01/2026-10-20_local/selection.frozen.json',result)
 
 
 def main():

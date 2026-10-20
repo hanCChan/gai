@@ -1,0 +1,9 @@
+{
+  "wisig_source_cells": 420,
+  "all_source_ten_classes_valid": true,
+  "final_rx_read": false,
+  "final_date_read": false,
+  "equalized_read": false,
+  "archive_provenance": "b0eca705816b03a47290286fd23ca1a10e02c6f9bd29b5461cfd92c13a86fbdd",
+  "note": "WiSig-only re-run registration; jobs copied verbatim from the frozen matrix"
+}

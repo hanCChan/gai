@@ -1,0 +1,7 @@
+{
+  "shards": 4,
+  "jobs": 21,
+  "reserved_gpuh_sum": 0.08086319144527807,
+  "wall_seconds_max": 81.54424033800024,
+  "peak_allocated_MiB_max": 122.505859375
+}

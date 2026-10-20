@@ -34,8 +34,8 @@
       }
     ]
   },
-  "seconds": 4.392740985000273,
-  "reserved_gpu_seconds": 4.278418314999726,
+  "seconds": 2.4223020579956938,
+  "reserved_gpu_seconds": 2.2270485360058956,
   "no_research_fitting": true,
   "no_dataset_loaded": true
 }

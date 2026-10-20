@@ -10,10 +10,10 @@ def table(path,rows):
   w=csv.DictWriter(f,fieldnames=list(rows[0]),lineterminator='\n');w.writeheader();w.writerows(rows)
 def main():
  out=ROOT/'outputs/wisig_w01';out.mkdir(parents=True,exist_ok=False);(out/'cache').mkdir()
- public=ROOT/'reports/wisig_w01/2026-10-13';public.mkdir(parents=True,exist_ok=False)
- archive=Path('/home/keyan/data/wisig-manyrx-kaggle/ManyRx.kaggle.v1.zip')
+ public=ROOT/'reports/wisig_w01'/datetime.date.today().isoformat();public.mkdir(parents=True,exist_ok=False)
+ archive=Path('/workspace/rl1/l0_local/data/wisig-manyrx-kaggle/ManyRx.kaggle.v1.zip')
  assert sha(archive)=='b0eca705816b03a47290286fd23ca1a10e02c6f9bd29b5461cfd92c13a86fbdd'
- hardware=Path('/home/keyan/data/wisig-w0-w1-evidence/orbit_hardware.pkl')
+ hardware=Path('/workspace/rl1/l0_local/wisig-evidence/orbit_hardware.pkl')
  with hardware.open('rb') as f:txhw,rxhw=PlainReader(f).load()
  data=load_archive(archive);rxs=data['rx_list'];txs=data['tx_list'];dates=data['capture_date_list']
  assert len(rxs)==32 and len(txs)==10 and len(dates)==4 and data['equalized_list']==[0,1]
@@ -33,7 +33,7 @@ def main():
  reg=dict(utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),date_shanghai='2026-10-13',
   archive=str(archive),archive_sha256=sha(archive),hardware_sha256=sha(hardware),
   official_model_source='https://github.com/WiSig-dataset/wisig-examples/blob/master/py/d003_ManyRx_nrx.py',
-  official_model_source_sha256=sha('/home/keyan/data/wisig-w0-w1-evidence/py_d003_ManyRx_nrx.py'),
+  official_model_source_sha256=sha('/workspace/rl1/l0_local/wisig-evidence/py_d003_ManyRx_nrx.py'),
   rx_names=rxs,tx_names=txs,tx_hardware=[txhw.get(t,'UNKNOWN') for t in txs],dates=dates,roles=roles,hardware_and_coverage=ordered,
   split_rule='hardware/metadata coverage then repeating source/source/internal/final freezes final8; remaining24 with minimum cell>=160 become source14, remaining10 internal',
   train_dates=[0,1],w1_hold_date=2,final_date=3,encoder_tx=list(range(8)),strict_held_tx=[8,9],

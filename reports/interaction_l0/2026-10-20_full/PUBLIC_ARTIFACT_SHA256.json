@@ -1,0 +1,53 @@
+{
+  "byte_identical_to_source": true,
+  "files": {
+    "attribution.csv": {
+      "bytes": 17043,
+      "sha256": "12d56d0c77be567c23de1a110c3048594fba1d786ff031fa42f9db0559f407d4"
+    },
+    "checks.csv": {
+      "bytes": 6371,
+      "sha256": "bf263f82b981e12c044b779d44298ef380da177f45e01e40ebac87cf482befe3"
+    },
+    "ensemble.csv": {
+      "bytes": 2139,
+      "sha256": "541e279d7c382cecb64019c1815e6b4cb8d14aa81f9a6d2852a15b6fd78223e3"
+    },
+    "erasure.csv": {
+      "bytes": 175472,
+      "sha256": "c40f418f0ca3e66df885f870ab36ea8e995ab0833b903d2831cb64736ce147ac"
+    },
+    "error_overlap.csv": {
+      "bytes": 7725,
+      "sha256": "c7769cd55a5e9996821e2a2a7983c6136030b01dc0549c6d0c2aaedd5cb51edd"
+    },
+    "intervention_validation.csv": {
+      "bytes": 1836,
+      "sha256": "81c55a11dd26f40dc3fd4a8be69ce416306a7c4b235f78a848e844394f5ef4b9"
+    },
+    "manifest.json": {
+      "bytes": 2319,
+      "sha256": "648b615854ba47a4f3e972719f87edf73514d2e44a7b0b6216a43ca327edcdbb"
+    },
+    "run_metrics.csv": {
+      "bytes": 7891,
+      "sha256": "1df1949f3f0b9675b214042c644024438bbd99f5a722cc3f7c72abb0caaec286"
+    },
+    "sensitivity.csv": {
+      "bytes": 33969,
+      "sha256": "1a9474801a541d9171729397136ad8f4309544503864f5d73b1f3b4d6c4bc5d8"
+    },
+    "summary.json": {
+      "bytes": 10052,
+      "sha256": "ed5130f4e9423a7bfde4885771b0f4a4c168a40fa95b682ae0dea401660719b8"
+    },
+    "timing.json": {
+      "bytes": 159,
+      "sha256": "ef741f8255746b80a4775eddb902340d04b8192a4093a2d67bd62e258476a78b"
+    }
+  },
+  "produced_by": "phase_l0_full.sh + merge_l0.py; code_sha256 in manifest.json matches scripts/interaction_l0/ at commit time",
+  "source_dir": "/workspace/rl1/l0_local/l0_out/full/merged",
+  "utc": "2026-10-20",
+  "what": "L0 full merged outputs (4-shard full run on this machine, 21 jobs: 18 wisig official + 3 wisig resnet)"
+}

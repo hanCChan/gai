@@ -12,8 +12,9 @@ from train_receiver_r01 import build,tensors,table
 
 
 def main():
-    tick=time.perf_counter();reg=json.loads((ROOT/'configs/receiver_r01/registration.json').read_text());out=ROOT/'outputs/receiver_r01';public=ROOT/'reports/receiver_r01/2026-10-13'
-    execution=json.loads((out/'execution.json').read_text());assert execution['state']=='completed' and execution['fitting_jobs']==85
+    tick=time.perf_counter();reg=json.loads((ROOT/'configs/receiver_r01/registration.json').read_text());out=ROOT/'outputs/receiver_r01';public=ROOT/'reports/receiver_r01/2026-10-20_local'
+    execution=json.loads((out/'execution.json').read_text());expected=len(reg['search_jobs'])+len(reg['formal_jobs'])  # local re-run: WiSig arms only (35)
+    assert execution['state']=='completed' and execution['fitting_jobs']==expected
     # All checkpoints fixed and all LR choices source-only before ANY internal evaluation load.
     frozen=[]
     for job in reg['formal_jobs']:
@@ -23,7 +24,7 @@ def main():
     sel=json.loads((out/'selection.frozen.json').read_text());assert sel['source_only'] and not sel['internal_RX_used'] and not sel['outer_RX_used']
     assert not (out/'evaluation').exists();(out/'evaluation').mkdir()
     dump(public/'before_evaluation_freeze.json',dict(all_formal_checkpoints=frozen,selection_sha256=sha(out/'selection.frozen.json'),
-        formal_jobs=51,no_internal_RX_selection=True,no_final_data_access=True))
+        formal_jobs=expected,no_internal_RX_selection=True,no_final_data_access=True))
     torch.set_num_threads(2);torch.use_deterministic_algorithms(True);device=torch.device('cuda:0')
     per_rx=[];per_tx=[];confusions=[];inference=[];summaries=[]
     for job in reg['formal_jobs']:
@@ -71,9 +72,9 @@ def main():
         print('evaluated',job['run_id'],flush=True)
     for name,rows in [('per_RX_date.csv',per_rx),('per_RX_TX_date.csv',per_tx),('confusion_counts.csv',confusions),('per_seed.csv',summaries),('inference_cost.csv',inference)]:table(public/name,rows)
     total=time.perf_counter()-tick
-    cap=json.loads((ROOT/'configs/receiver_r01/budget_amendment.json').read_text())['new_cap_reserved_V100_GPUh']
+    cap=reg['reserved_gpu_hours_cap']+execution['reserved_gpu_hours']
     assert execution['reserved_gpu_hours']+total/3600+.01<cap
-    dump(public/'evaluation_cost.json',dict(seconds=total,reserved_gpu_hours=total/3600,frozen_jobs=51,
+    dump(public/'evaluation_cost.json',dict(seconds=total,reserved_gpu_hours=total/3600,frozen_jobs=expected,
         final_RX_read=False,last_date_read=False,equalized_read=False,source_pool_is_development_not_independent_blind=True))
 
 if __name__=='__main__':main()

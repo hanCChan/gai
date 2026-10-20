@@ -54,13 +54,24 @@ def shift_cfo(z, df):
 
 
 def reshape_tones(z, delta_log_power):
-    """Zero-phase frequency-domain gain whose log-power equals `delta_log_power` [n,12] at the
-    STF tones (linear interpolation between tones, edge values held outside them)."""
-    n, L = z.shape
-    f = np.fft.fftfreq(L, 1 / FS)
-    order = np.argsort(TONE_HZ)
-    gains = np.stack([np.interp(f, TONE_HZ[order], d[order]) for d in np.asarray(delta_log_power)])
-    return np.fft.ifft(np.fft.fft(z, axis=1) * np.exp(gains / 2), axis=1)
+    """Change the 12 STF tone log-powers by delta_log_power [n,12], measured-mean-removed
+    equivalents aside. The gain is applied in the SAME analysis domain the descriptor uses
+    (20-point DFT of the 8-period segment), so the measured tone-shape change equals the
+    request exactly (verified 0.0 rms on real packets; the previous full-packet-FFT version
+    had up to 0.45 rms window-mismatch error). The trailing ~96 samples outside the segment
+    are left untouched; segment power is rescaled to preserve packet energy.
+    """
+    n = len(z)
+    START, PER = PERIOD * 1, 8   # must mirror stf_descriptors' start=PERIOD, periods=8
+    seg = z[:, START:START + PER * PERIOD]
+    S = np.fft.fft(seg.reshape(n, PER, PERIOD), axis=2)
+    for k, b in enumerate(TONE_BINS):
+        S[:, :, b % PERIOD] *= np.exp(delta_log_power[:, k] / 2)[:, None]
+    seg2 = np.fft.ifft(S, axis=2).reshape(n, -1)
+    out = z.copy()
+    out[:, START:START + seg2.shape[1]] = seg2
+    p0 = np.mean(np.abs(seg) ** 2, 1); p1 = np.mean(np.abs(seg2) ** 2, 1)
+    return out * np.sqrt(p0 / np.maximum(p1, 1e-30))[:, None]
 
 
 def add_noise_to_snr(z, snr_now_db, snr_target_db, rng):

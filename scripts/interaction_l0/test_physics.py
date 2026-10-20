@@ -43,7 +43,9 @@ def test_interventions():
     delta = rng.normal(scale=1.0, size=(100, 12))
     d1 = stf_descriptors(reshape_tones(z, delta))
     got = d1['tone_shape'] - d0['tone_shape']
-    assert np.abs(np.median(got - (delta - delta.mean(1, keepdims=True)), 0)).max() < 0.15
+    # segment-DFT construction is exact on the mean-removed tone shape
+    assert np.abs(np.median(got - (delta - delta.mean(1, keepdims=True)), 0)).max() < 0.01
+    assert abs(np.median(d1['cfo_hz'] - d0['cfo_hz'])) < 300  # periodicity basis unchanged
     d2 = stf_descriptors(add_noise_to_snr(z, d0['snr_db'], 15.0, rng))
     assert abs(np.median(d2['snr_db']) - 15.0) < 1.0
     assert np.allclose(add_noise_to_snr(z, d0['snr_db'], 70.0, rng), z)  # never raises SNR

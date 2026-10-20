@@ -1,0 +1,158 @@
+{
+  "frozen_utc": "2026-10-19T16:32:56.720056+00:00",
+  "choices": {
+    "wisig_official_CV0_ce": {
+      "key": "wisig_official_CV0_ce",
+      "lr": 0.0005,
+      "run_id": "wisig_official_CV0_ce_search_lr0.0005",
+      "validation_CE": 1.7470907270908356,
+      "validation_macro_f1": 0.3920049124812545
+    },
+    "wisig_official_CV0_swad": {
+      "key": "wisig_official_CV0_swad",
+      "lr": 0.0003,
+      "run_id": "wisig_official_CV0_swad_search_lr0.0003",
+      "validation_CE": 1.8620474338531494,
+      "validation_macro_f1": 0.37641758279713655
+    },
+    "wisig_official_CV0_mldg_rx": {
+      "key": "wisig_official_CV0_mldg_rx",
+      "lr": 0.0003,
+      "run_id": "wisig_official_CV0_mldg_rx_search_lr0.0003",
+      "validation_CE": 1.7294940650463104,
+      "validation_macro_f1": 0.3951935542004704
+    },
+    "wisig_official_CV0_groupdro": {
+      "key": "wisig_official_CV0_groupdro",
+      "lr": 0.0005,
+      "run_id": "wisig_official_CV0_groupdro_search_lr0.0005",
+      "validation_CE": 1.8154572546482086,
+      "validation_macro_f1": 0.3088787176657475
+    },
+    "wisig_official_CV0_pcgrad": {
+      "key": "wisig_official_CV0_pcgrad",
+      "lr": 0.0005,
+      "run_id": "wisig_official_CV0_pcgrad_search_lr0.0005",
+      "validation_CE": 1.7147018611431122,
+      "validation_macro_f1": 0.38701304538849945
+    },
+    "wisig_official_CV0_mldg_rx_date": {
+      "key": "wisig_official_CV0_mldg_rx_date",
+      "lr": 0.0003,
+      "run_id": "wisig_official_CV0_mldg_rx_date_search_lr0.0003",
+      "validation_CE": 1.7150537371635437,
+      "validation_macro_f1": 0.4125193674860357
+    },
+    "wisig_resnet_CV0_ce": {
+      "key": "wisig_resnet_CV0_ce",
+      "lr": 0.0003,
+      "run_id": "wisig_resnet_CV0_ce_search_lr0.0003",
+      "validation_CE": 2.02416068315506,
+      "validation_macro_f1": 0.1913385017362516
+    }
+  },
+  "all_candidates": [
+    {
+      "key": "wisig_official_CV0_ce",
+      "lr": 0.0003,
+      "run_id": "wisig_official_CV0_ce_search_lr0.0003",
+      "validation_CE": 1.7560023069381714,
+      "validation_macro_f1": 0.3854265446070029
+    },
+    {
+      "key": "wisig_official_CV0_ce",
+      "lr": 0.0005,
+      "run_id": "wisig_official_CV0_ce_search_lr0.0005",
+      "validation_CE": 1.7470907270908356,
+      "validation_macro_f1": 0.3920049124812545
+    },
+    {
+      "key": "wisig_official_CV0_swad",
+      "lr": 0.0003,
+      "run_id": "wisig_official_CV0_swad_search_lr0.0003",
+      "validation_CE": 1.8620474338531494,
+      "validation_macro_f1": 0.37641758279713655
+    },
+    {
+      "key": "wisig_official_CV0_swad",
+      "lr": 0.0005,
+      "run_id": "wisig_official_CV0_swad_search_lr0.0005",
+      "validation_CE": 1.8717544376850128,
+      "validation_macro_f1": 0.3957026059851789
+    },
+    {
+      "key": "wisig_official_CV0_mldg_rx",
+      "lr": 0.0003,
+      "run_id": "wisig_official_CV0_mldg_rx_search_lr0.0003",
+      "validation_CE": 1.7294940650463104,
+      "validation_macro_f1": 0.3951935542004704
+    },
+    {
+      "key": "wisig_official_CV0_mldg_rx",
+      "lr": 0.0005,
+      "run_id": "wisig_official_CV0_mldg_rx_search_lr0.0005",
+      "validation_CE": 1.7330341339111328,
+      "validation_macro_f1": 0.40127245025136865
+    },
+    {
+      "key": "wisig_official_CV0_groupdro",
+      "lr": 0.0003,
+      "run_id": "wisig_official_CV0_groupdro_search_lr0.0003",
+      "validation_CE": 1.8200801312923431,
+      "validation_macro_f1": 0.39471399107089317
+    },
+    {
+      "key": "wisig_official_CV0_groupdro",
+      "lr": 0.0005,
+      "run_id": "wisig_official_CV0_groupdro_search_lr0.0005",
+      "validation_CE": 1.8154572546482086,
+      "validation_macro_f1": 0.3088787176657475
+    },
+    {
+      "key": "wisig_official_CV0_pcgrad",
+      "lr": 0.0003,
+      "run_id": "wisig_official_CV0_pcgrad_search_lr0.0003",
+      "validation_CE": 1.7736999094486237,
+      "validation_macro_f1": 0.3741557003654745
+    },
+    {
+      "key": "wisig_official_CV0_pcgrad",
+      "lr": 0.0005,
+      "run_id": "wisig_official_CV0_pcgrad_search_lr0.0005",
+      "validation_CE": 1.7147018611431122,
+      "validation_macro_f1": 0.38701304538849945
+    },
+    {
+      "key": "wisig_official_CV0_mldg_rx_date",
+      "lr": 0.0003,
+      "run_id": "wisig_official_CV0_mldg_rx_date_search_lr0.0003",
+      "validation_CE": 1.7150537371635437,
+      "validation_macro_f1": 0.4125193674860357
+    },
+    {
+      "key": "wisig_official_CV0_mldg_rx_date",
+      "lr": 0.0005,
+      "run_id": "wisig_official_CV0_mldg_rx_date_search_lr0.0005",
+      "validation_CE": 1.7552859485149384,
+      "validation_macro_f1": 0.3573101799746447
+    },
+    {
+      "key": "wisig_resnet_CV0_ce",
+      "lr": 0.0003,
+      "run_id": "wisig_resnet_CV0_ce_search_lr0.0003",
+      "validation_CE": 2.02416068315506,
+      "validation_macro_f1": 0.1913385017362516
+    },
+    {
+      "key": "wisig_resnet_CV0_ce",
+      "lr": 0.0005,
+      "run_id": "wisig_resnet_CV0_ce_search_lr0.0005",
+      "validation_CE": 2.0620424449443817,
+      "validation_macro_f1": 0.15688433091183185
+    }
+  ],
+  "source_only": true,
+  "internal_RX_used": false,
+  "outer_RX_used": false,
+  "formal_fits_started": false
+}

@@ -1,8 +1,15 @@
 {
-  "registered_utc": "2026-10-13T09:33:47.025115+00:00",
+  "registered_utc": "2026-10-19T16:16:07.989439+00:00",
+  "provenance": {
+    "original_registration": "/workspace/rl1/gai/configs/receiver_r01/registration.json",
+    "original_commit": "84a360b (R0/R1 completed)",
+    "rerun_reason": "original server released; frozen WiSig arms re-fit on this machine",
+    "wisig_arms_copied_verbatim": true,
+    "shen_arms_deferred_until_dataset_download": true,
+    "shen_cache_rebuilt_local": "2026-10-20 from user-uploaded h5 zips (SHA-verified vs g1_registration.json); build_shen re-run in env numpy1.26.4/scipy1.13.1"
+  },
   "base_remote_commit": "e64c5a3fe855684b082ff29183001f01b74730be",
-  "branch": "experiment/r0-r1-receiver-held-out",
-  "authorization_sha256": "c260e2a8b80a6b3ab6562837dddb7baf98cdb1ef24d0297721e72748d990bd03",
+  "branch": "experiment/l0-retrain-wisig",
   "reserved_gpu_hours_cap": 6.0,
   "formal_seeds": [
     20261013,
@@ -449,7 +456,7 @@
     "final_rx_and_date_reserved": true,
     "coverage_revision_before_any_fitting": true
   },
-  "wisig_cache": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache",
+  "wisig_cache": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache",
   "wisig_inner_train": [
     2,
     5,
@@ -468,7 +475,7 @@
     16,
     30
   ],
-  "shen_cache": "/home/keyan/code-y-p2a/outputs/shen_p2a8/g1_cache_v1",
+  "shen_cache": "/workspace/rl1/gai_retrain/outputs/shen_p2a8/g1_cache_v1",
   "shen_allowed": [
     "shen_b200_mini_1_train",
     "shen_b210_1_train",
@@ -1677,596 +1684,492 @@
   ],
   "input_assets": [
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx06_day0.npz",
-      "sha256": "ac0458b843d240cb2e0f14999c9e98407143514d0dcdcbb5d6e1bba0101336e5",
-      "rx_index": 6,
-      "date_index": 0
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx06_day0.npz",
+      "sha256": "ac0458b843d240cb2e0f14999c9e98407143514d0dcdcbb5d6e1bba0101336e5"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx06_day1.npz",
-      "sha256": "1be2cdf978b33dcb43abe841609e0d5d7c3a0b47ac0d8b1c32b362f16af984ae",
-      "rx_index": 6,
-      "date_index": 1
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx06_day1.npz",
+      "sha256": "1be2cdf978b33dcb43abe841609e0d5d7c3a0b47ac0d8b1c32b362f16af984ae"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx06_day2.npz",
-      "sha256": "1bcdeb17e8321950632f664f3097913e6680fd8f13d3fe1c17fd75e4afceac46",
-      "rx_index": 6,
-      "date_index": 2
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx06_day2.npz",
+      "sha256": "1bcdeb17e8321950632f664f3097913e6680fd8f13d3fe1c17fd75e4afceac46"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx07_day0.npz",
-      "sha256": "ad384b7d537bec83d03f9d62e19114582de010cdced41b2e707c69a72340d66c",
-      "rx_index": 7,
-      "date_index": 0
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx07_day0.npz",
+      "sha256": "ad384b7d537bec83d03f9d62e19114582de010cdced41b2e707c69a72340d66c"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx07_day1.npz",
-      "sha256": "78487f67631c8bba4683725ae726208dca4e7b9e0628064af8d883a5edc8c2a6",
-      "rx_index": 7,
-      "date_index": 1
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx07_day1.npz",
+      "sha256": "78487f67631c8bba4683725ae726208dca4e7b9e0628064af8d883a5edc8c2a6"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx07_day2.npz",
-      "sha256": "17f433e8b708bec9dd0288faf5b938b64a1ac9099fe3244370150e9f468e11c3",
-      "rx_index": 7,
-      "date_index": 2
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx07_day2.npz",
+      "sha256": "17f433e8b708bec9dd0288faf5b938b64a1ac9099fe3244370150e9f468e11c3"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx26_day0.npz",
-      "sha256": "8b52ef4acc973e16c9c21e3108534043ff646f326e7f38bb5c910403c69d7aad",
-      "rx_index": 26,
-      "date_index": 0
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx26_day0.npz",
+      "sha256": "8b52ef4acc973e16c9c21e3108534043ff646f326e7f38bb5c910403c69d7aad"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx26_day1.npz",
-      "sha256": "2ff671a90ef4ddec1cfbb9d347e338f598ef835be2851e68989d1bafb5b0a626",
-      "rx_index": 26,
-      "date_index": 1
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx26_day1.npz",
+      "sha256": "2ff671a90ef4ddec1cfbb9d347e338f598ef835be2851e68989d1bafb5b0a626"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx26_day2.npz",
-      "sha256": "3730fe1965ec571acd6c422581389d4483b53e87225826b9c3da1bd9156dbed9",
-      "rx_index": 26,
-      "date_index": 2
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx26_day2.npz",
+      "sha256": "3730fe1965ec571acd6c422581389d4483b53e87225826b9c3da1bd9156dbed9"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx30_day0.npz",
-      "sha256": "7fe2498750acd50a206c98457119a4c77213a8b8fa9520c1a0a8692144b1b79a",
-      "rx_index": 30,
-      "date_index": 0
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx30_day0.npz",
+      "sha256": "7fe2498750acd50a206c98457119a4c77213a8b8fa9520c1a0a8692144b1b79a"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx30_day1.npz",
-      "sha256": "be25e73ef1361f3dcc1ff938540c92c3023768c5449ac0bf4bae0f1b8828a128",
-      "rx_index": 30,
-      "date_index": 1
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx30_day1.npz",
+      "sha256": "be25e73ef1361f3dcc1ff938540c92c3023768c5449ac0bf4bae0f1b8828a128"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx30_day2.npz",
-      "sha256": "f39214309b22d8f70d2fe872cb0f66c9d7421d77ad604692c0d14f51c28843ec",
-      "rx_index": 30,
-      "date_index": 2
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx30_day2.npz",
+      "sha256": "f39214309b22d8f70d2fe872cb0f66c9d7421d77ad604692c0d14f51c28843ec"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx01_day0.npz",
-      "sha256": "96adf2d6eb4d62aaeeac5240ea4dd0736dddc9c1b7dacc885268f8940f5eb90f",
-      "rx_index": 1,
-      "date_index": 0
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx01_day0.npz",
+      "sha256": "96adf2d6eb4d62aaeeac5240ea4dd0736dddc9c1b7dacc885268f8940f5eb90f"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx01_day1.npz",
-      "sha256": "58066d5af0b0167059f9973973d845dfd128808fcc2712565ff46b575519d42e",
-      "rx_index": 1,
-      "date_index": 1
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx01_day1.npz",
+      "sha256": "58066d5af0b0167059f9973973d845dfd128808fcc2712565ff46b575519d42e"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx01_day2.npz",
-      "sha256": "a084f5cabfaedfa31d373a465cd18184b3c447573a8f9f157d52ab023ffd91a9",
-      "rx_index": 1,
-      "date_index": 2
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx01_day2.npz",
+      "sha256": "a084f5cabfaedfa31d373a465cd18184b3c447573a8f9f157d52ab023ffd91a9"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx02_day0.npz",
-      "sha256": "5c4066e2fd9274d0040447219a236df3a16ab4e95ab2b338af4c8416ac346c11",
-      "rx_index": 2,
-      "date_index": 0
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx02_day0.npz",
+      "sha256": "5c4066e2fd9274d0040447219a236df3a16ab4e95ab2b338af4c8416ac346c11"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx02_day1.npz",
-      "sha256": "5135d22aa531537defbe45dc8b85aa4dfa8f81cb157662cfc85aa10f770f5d36",
-      "rx_index": 2,
-      "date_index": 1
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx02_day1.npz",
+      "sha256": "5135d22aa531537defbe45dc8b85aa4dfa8f81cb157662cfc85aa10f770f5d36"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx02_day2.npz",
-      "sha256": "c0e6e03d8ceeaa62457a9e46773f228f4afb3a891b582a189a9eac52b7db14f4",
-      "rx_index": 2,
-      "date_index": 2
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx02_day2.npz",
+      "sha256": "c0e6e03d8ceeaa62457a9e46773f228f4afb3a891b582a189a9eac52b7db14f4"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx05_day0.npz",
-      "sha256": "7c802be1aebb4288fdc68e29733e92185e99b92346511aae1838e76b8288fcf1",
-      "rx_index": 5,
-      "date_index": 0
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx05_day0.npz",
+      "sha256": "7c802be1aebb4288fdc68e29733e92185e99b92346511aae1838e76b8288fcf1"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx05_day1.npz",
-      "sha256": "51060d5740f92be1ab0ba19d1c55dfee94e5b20eb3d0fbaf3edb9a1b4882837c",
-      "rx_index": 5,
-      "date_index": 1
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx05_day1.npz",
+      "sha256": "51060d5740f92be1ab0ba19d1c55dfee94e5b20eb3d0fbaf3edb9a1b4882837c"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx05_day2.npz",
-      "sha256": "c56a85b06a459ba070d593611e1c4b5c860d484b754589ea7650124079410596",
-      "rx_index": 5,
-      "date_index": 2
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx05_day2.npz",
+      "sha256": "c56a85b06a459ba070d593611e1c4b5c860d484b754589ea7650124079410596"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx10_day0.npz",
-      "sha256": "a78367a8689e990d7ecc9ee0fdadadb14eaa871524a194b73a41cdabad69be13",
-      "rx_index": 10,
-      "date_index": 0
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx10_day0.npz",
+      "sha256": "a78367a8689e990d7ecc9ee0fdadadb14eaa871524a194b73a41cdabad69be13"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx10_day1.npz",
-      "sha256": "7dec4ba43bab172872f49c28a1dbcdc4b5082fa5389fa615043d71cea9078cce",
-      "rx_index": 10,
-      "date_index": 1
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx10_day1.npz",
+      "sha256": "7dec4ba43bab172872f49c28a1dbcdc4b5082fa5389fa615043d71cea9078cce"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx10_day2.npz",
-      "sha256": "732f8bc9163c6726f7a96f4f5e751e22d8b5bb7a43341d6ea77cfe49b4923389",
-      "rx_index": 10,
-      "date_index": 2
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx10_day2.npz",
+      "sha256": "732f8bc9163c6726f7a96f4f5e751e22d8b5bb7a43341d6ea77cfe49b4923389"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx12_day0.npz",
-      "sha256": "55c2f4e3c59d236aa0459cddd4754eeabbfb077b8545093e1a2ac4736310c04c",
-      "rx_index": 12,
-      "date_index": 0
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx12_day0.npz",
+      "sha256": "55c2f4e3c59d236aa0459cddd4754eeabbfb077b8545093e1a2ac4736310c04c"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx12_day1.npz",
-      "sha256": "bb612fec7bc04209e6aff2652f8f58542b896faf37fb1a2354ccbe71a3852908",
-      "rx_index": 12,
-      "date_index": 1
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx12_day1.npz",
+      "sha256": "bb612fec7bc04209e6aff2652f8f58542b896faf37fb1a2354ccbe71a3852908"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx12_day2.npz",
-      "sha256": "7b90cd03e76e176a57b4c11087d1f09d7a58a000097f133ec976e67fed4809f6",
-      "rx_index": 12,
-      "date_index": 2
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx12_day2.npz",
+      "sha256": "7b90cd03e76e176a57b4c11087d1f09d7a58a000097f133ec976e67fed4809f6"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx13_day0.npz",
-      "sha256": "9608cc3fb4394957ef43066f643e3373f3b5a293ccd082a264cfd8a73503b020",
-      "rx_index": 13,
-      "date_index": 0
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx13_day0.npz",
+      "sha256": "9608cc3fb4394957ef43066f643e3373f3b5a293ccd082a264cfd8a73503b020"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx13_day1.npz",
-      "sha256": "d327309180b6f4117063b32dffafcc2bb649016dfc7a4d488011eb9ceff4d093",
-      "rx_index": 13,
-      "date_index": 1
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx13_day1.npz",
+      "sha256": "d327309180b6f4117063b32dffafcc2bb649016dfc7a4d488011eb9ceff4d093"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx13_day2.npz",
-      "sha256": "dd37f586a7cd4dbac15a328138986d4e48e95dc9c94a67bd27250ddd6a1d1dac",
-      "rx_index": 13,
-      "date_index": 2
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx13_day2.npz",
+      "sha256": "dd37f586a7cd4dbac15a328138986d4e48e95dc9c94a67bd27250ddd6a1d1dac"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx16_day0.npz",
-      "sha256": "47df91c906ba0e9ae51adda083e2579dac7699e4d4b22cb9f62168d55ab6aa48",
-      "rx_index": 16,
-      "date_index": 0
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx16_day0.npz",
+      "sha256": "47df91c906ba0e9ae51adda083e2579dac7699e4d4b22cb9f62168d55ab6aa48"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx16_day1.npz",
-      "sha256": "af93e3bdef82e17737d0cc5373207689a37c0cb7f8d7bb905192e2c9d599db9b",
-      "rx_index": 16,
-      "date_index": 1
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx16_day1.npz",
+      "sha256": "af93e3bdef82e17737d0cc5373207689a37c0cb7f8d7bb905192e2c9d599db9b"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx16_day2.npz",
-      "sha256": "1a24f68b588434875f5c46a22846eeccf545d44e3c44f251f5acae11fecc5ee6",
-      "rx_index": 16,
-      "date_index": 2
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx16_day2.npz",
+      "sha256": "1a24f68b588434875f5c46a22846eeccf545d44e3c44f251f5acae11fecc5ee6"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx28_day0.npz",
-      "sha256": "c6bbbf300816ab0df1211e5a940acb0945b3918e06ff1c73799fa59673e80208",
-      "rx_index": 28,
-      "date_index": 0
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx28_day0.npz",
+      "sha256": "c6bbbf300816ab0df1211e5a940acb0945b3918e06ff1c73799fa59673e80208"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx28_day1.npz",
-      "sha256": "3d52cdec31a0eb1b979cce874569e857c132604c5c4204d9b1a871e489ce8394",
-      "rx_index": 28,
-      "date_index": 1
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx28_day1.npz",
+      "sha256": "3d52cdec31a0eb1b979cce874569e857c132604c5c4204d9b1a871e489ce8394"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx28_day2.npz",
-      "sha256": "09744e52edec33547aef0aa7b9d84672f5988353b6805a619ffc00bdd1e45cc1",
-      "rx_index": 28,
-      "date_index": 2
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx28_day2.npz",
+      "sha256": "09744e52edec33547aef0aa7b9d84672f5988353b6805a619ffc00bdd1e45cc1"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx31_day0.npz",
-      "sha256": "d3e01a170334dcc8718c683f255bb92f0df37d80b8d23d2451fc17796e6fc594",
-      "rx_index": 31,
-      "date_index": 0
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx31_day0.npz",
+      "sha256": "d3e01a170334dcc8718c683f255bb92f0df37d80b8d23d2451fc17796e6fc594"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx31_day1.npz",
-      "sha256": "b8112310ab0f2ff6ded3248a403bf50eafb71b7bac29c7957836f451521bc738",
-      "rx_index": 31,
-      "date_index": 1
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx31_day1.npz",
+      "sha256": "b8112310ab0f2ff6ded3248a403bf50eafb71b7bac29c7957836f451521bc738"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx31_day2.npz",
-      "sha256": "276522e44e6e28fc0d06232529aab32027452f2e557a3a84592b84ca65e14bf9",
-      "rx_index": 31,
-      "date_index": 2
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx31_day2.npz",
+      "sha256": "276522e44e6e28fc0d06232529aab32027452f2e557a3a84592b84ca65e14bf9"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx22_day0.npz",
-      "sha256": "d5bc85f92d080c6ec9056d003d32c0d53bac0520bcb3574613df64976fc590f4",
-      "rx_index": 22,
-      "date_index": 0
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx22_day0.npz",
+      "sha256": "d5bc85f92d080c6ec9056d003d32c0d53bac0520bcb3574613df64976fc590f4"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx22_day1.npz",
-      "sha256": "c8cac25ad9e9d7e179c134c453c654ce7cdb0e3705e753c4acc1c6d1ef327ed4",
-      "rx_index": 22,
-      "date_index": 1
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx22_day1.npz",
+      "sha256": "c8cac25ad9e9d7e179c134c453c654ce7cdb0e3705e753c4acc1c6d1ef327ed4"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx22_day2.npz",
-      "sha256": "450d7955a27d993139b17aafba026b4c52993309e29e1a6c55a6bffe8777939c",
-      "rx_index": 22,
-      "date_index": 2
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx22_day2.npz",
+      "sha256": "450d7955a27d993139b17aafba026b4c52993309e29e1a6c55a6bffe8777939c"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx03_day0.npz",
-      "sha256": "54222f662523c083cc259bc920d95feb7504b7f7ebeefee990360e92cd6b2261",
-      "rx_index": 3,
-      "date_index": 0
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx03_day0.npz",
+      "sha256": "54222f662523c083cc259bc920d95feb7504b7f7ebeefee990360e92cd6b2261"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx03_day1.npz",
-      "sha256": "e830411f9a7218f2c1659a98b4b0c4c5971d4daa1fe1cbe5a91781dd1cfd7c6e",
-      "rx_index": 3,
-      "date_index": 1
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx03_day1.npz",
+      "sha256": "e830411f9a7218f2c1659a98b4b0c4c5971d4daa1fe1cbe5a91781dd1cfd7c6e"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx03_day2.npz",
-      "sha256": "f714ebe93785ed66ad8770b526788a35be7d858f37a690ece7355c7dd5dda6d5",
-      "rx_index": 3,
-      "date_index": 2
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx03_day2.npz",
+      "sha256": "f714ebe93785ed66ad8770b526788a35be7d858f37a690ece7355c7dd5dda6d5"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx04_day0.npz",
-      "sha256": "f1bbf080f8b6da109b25493cef6b5c32e40ebcb915eb58af62d8fd3b1615ba4a",
-      "rx_index": 4,
-      "date_index": 0
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx04_day0.npz",
+      "sha256": "f1bbf080f8b6da109b25493cef6b5c32e40ebcb915eb58af62d8fd3b1615ba4a"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx04_day1.npz",
-      "sha256": "c024325c3a72e672df74acad82af34105bfe6e15784da5efd3fcc26a8299b42d",
-      "rx_index": 4,
-      "date_index": 1
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx04_day1.npz",
+      "sha256": "c024325c3a72e672df74acad82af34105bfe6e15784da5efd3fcc26a8299b42d"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx04_day2.npz",
-      "sha256": "b293e133d293a70c3f1d6a5259aeb607ba9a6bbff8f1bdbbb51e2a6887414f49",
-      "rx_index": 4,
-      "date_index": 2
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx04_day2.npz",
+      "sha256": "b293e133d293a70c3f1d6a5259aeb607ba9a6bbff8f1bdbbb51e2a6887414f49"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx11_day0.npz",
-      "sha256": "54b2f661905a64301a7d5c71ff509d67c6449bc38bcc188c023a39c55291c53e",
-      "rx_index": 11,
-      "date_index": 0
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx11_day0.npz",
+      "sha256": "54b2f661905a64301a7d5c71ff509d67c6449bc38bcc188c023a39c55291c53e"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx11_day1.npz",
-      "sha256": "005de3deed9c27f6e3c53c6b5b9896ed6b564aa67e19ae17a0a14389b7a6b642",
-      "rx_index": 11,
-      "date_index": 1
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx11_day1.npz",
+      "sha256": "005de3deed9c27f6e3c53c6b5b9896ed6b564aa67e19ae17a0a14389b7a6b642"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx11_day2.npz",
-      "sha256": "0042f10c9cfeba63885b53805f858aeae4403a296c17374aefab06e4dd0d5eaf",
-      "rx_index": 11,
-      "date_index": 2
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx11_day2.npz",
+      "sha256": "0042f10c9cfeba63885b53805f858aeae4403a296c17374aefab06e4dd0d5eaf"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx09_day0.npz",
-      "sha256": "b6cc6548c1d13d2be85dd64171e8a7b9a5d3b2666bcaa419b105afb9fa125f7d",
-      "rx_index": 9,
-      "date_index": 0
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx09_day0.npz",
+      "sha256": "b6cc6548c1d13d2be85dd64171e8a7b9a5d3b2666bcaa419b105afb9fa125f7d"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx09_day1.npz",
-      "sha256": "d942d8425d713359357e68fb2748c8441f8c1af5a6cc525f51050c4f04b309cf",
-      "rx_index": 9,
-      "date_index": 1
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx09_day1.npz",
+      "sha256": "d942d8425d713359357e68fb2748c8441f8c1af5a6cc525f51050c4f04b309cf"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx09_day2.npz",
-      "sha256": "58627843d8553a774ce5edce87acfe37b0768f45fcb5fd64f5f95405ac7b2afe",
-      "rx_index": 9,
-      "date_index": 2
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx09_day2.npz",
+      "sha256": "58627843d8553a774ce5edce87acfe37b0768f45fcb5fd64f5f95405ac7b2afe"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx27_day0.npz",
-      "sha256": "ccb1d0c8dfc6cbbeab98a1c5532a021a1dc2193945b672506c16783c418fdefb",
-      "rx_index": 27,
-      "date_index": 0
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx27_day0.npz",
+      "sha256": "ccb1d0c8dfc6cbbeab98a1c5532a021a1dc2193945b672506c16783c418fdefb"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx27_day1.npz",
-      "sha256": "fbaa083d30142e6e82decde5d90c9b69a0db534933218d42b964af28d8affa78",
-      "rx_index": 27,
-      "date_index": 1
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx27_day1.npz",
+      "sha256": "fbaa083d30142e6e82decde5d90c9b69a0db534933218d42b964af28d8affa78"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx27_day2.npz",
-      "sha256": "fd16d9bab6b446b1c8bb3006029683055287a256355b90616d558dbf1c04c812",
-      "rx_index": 27,
-      "date_index": 2
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx27_day2.npz",
+      "sha256": "fd16d9bab6b446b1c8bb3006029683055287a256355b90616d558dbf1c04c812"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx18_day0.npz",
-      "sha256": "0bf613239cb7f1ffe3003da6b57042c356aa596ec2bed2631526b8f14d3adcb4",
-      "rx_index": 18,
-      "date_index": 0
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx18_day0.npz",
+      "sha256": "0bf613239cb7f1ffe3003da6b57042c356aa596ec2bed2631526b8f14d3adcb4"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx18_day1.npz",
-      "sha256": "1256b0f8caeca5a9be3e00753f80ead39cf77dcd96372f2ec894a5906260539a",
-      "rx_index": 18,
-      "date_index": 1
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx18_day1.npz",
+      "sha256": "1256b0f8caeca5a9be3e00753f80ead39cf77dcd96372f2ec894a5906260539a"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx18_day2.npz",
-      "sha256": "ffcdc057afd0722fe1a03bb62ea66d20610a60884753d3b955d48f80243fb10f",
-      "rx_index": 18,
-      "date_index": 2
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx18_day2.npz",
+      "sha256": "ffcdc057afd0722fe1a03bb62ea66d20610a60884753d3b955d48f80243fb10f"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx21_day0.npz",
-      "sha256": "99accca590207dbaf917dcdcf5822fc43d4526ddbf8c283004082628571f6b09",
-      "rx_index": 21,
-      "date_index": 0
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx21_day0.npz",
+      "sha256": "99accca590207dbaf917dcdcf5822fc43d4526ddbf8c283004082628571f6b09"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx21_day1.npz",
-      "sha256": "a4b238dbb770b92a5466e0fd1811441ed0e4a8d1d6c870561eded51741d53ed8",
-      "rx_index": 21,
-      "date_index": 1
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx21_day1.npz",
+      "sha256": "a4b238dbb770b92a5466e0fd1811441ed0e4a8d1d6c870561eded51741d53ed8"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx21_day2.npz",
-      "sha256": "14a22cb1c985153d8cd19be96efbaea99032b64edb4bb270bdb3dc9dfc321a44",
-      "rx_index": 21,
-      "date_index": 2
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx21_day2.npz",
+      "sha256": "14a22cb1c985153d8cd19be96efbaea99032b64edb4bb270bdb3dc9dfc321a44"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx20_day0.npz",
-      "sha256": "6f20e873a90de778353ab0fa2ce23f552772692bf07e94d8d20924c7740155b7",
-      "rx_index": 20,
-      "date_index": 0
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx20_day0.npz",
+      "sha256": "6f20e873a90de778353ab0fa2ce23f552772692bf07e94d8d20924c7740155b7"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx20_day1.npz",
-      "sha256": "64eea19b8b7e31d36e4c185258b97464a2e17128b03513a7bf8271fbd8c30ddc",
-      "rx_index": 20,
-      "date_index": 1
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx20_day1.npz",
+      "sha256": "64eea19b8b7e31d36e4c185258b97464a2e17128b03513a7bf8271fbd8c30ddc"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx20_day2.npz",
-      "sha256": "edabe9e7f574a9daa9713c95bf651b983fd0db198f759257803c98e3757ad491",
-      "rx_index": 20,
-      "date_index": 2
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx20_day2.npz",
+      "sha256": "edabe9e7f574a9daa9713c95bf651b983fd0db198f759257803c98e3757ad491"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx25_day0.npz",
-      "sha256": "ea785dc37b8febdc2960aee2bca7c42271c18c1327a94d04c65534a441a7eb53",
-      "rx_index": 25,
-      "date_index": 0
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx25_day0.npz",
+      "sha256": "ea785dc37b8febdc2960aee2bca7c42271c18c1327a94d04c65534a441a7eb53"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx25_day1.npz",
-      "sha256": "79832004e95ae5e3a6b35c18846b7f5461d351db46d361b1da63eeb3e94556be",
-      "rx_index": 25,
-      "date_index": 1
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx25_day1.npz",
+      "sha256": "79832004e95ae5e3a6b35c18846b7f5461d351db46d361b1da63eeb3e94556be"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx25_day2.npz",
-      "sha256": "00fa48638befde8f5fa6688883ca6e25c765a85a1a2a64904c1387f3139f4803",
-      "rx_index": 25,
-      "date_index": 2
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx25_day2.npz",
+      "sha256": "00fa48638befde8f5fa6688883ca6e25c765a85a1a2a64904c1387f3139f4803"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx19_day0.npz",
-      "sha256": "7721034a2234e3737fb15c5b0212a02bb5cbe60fb8bcdf516c02e3cc6484fa0a",
-      "rx_index": 19,
-      "date_index": 0
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx19_day0.npz",
+      "sha256": "7721034a2234e3737fb15c5b0212a02bb5cbe60fb8bcdf516c02e3cc6484fa0a"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx19_day1.npz",
-      "sha256": "045c1159826ff4864176df0e0d99566639ec40cf56376ef63fe148366204d086",
-      "rx_index": 19,
-      "date_index": 1
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx19_day1.npz",
+      "sha256": "045c1159826ff4864176df0e0d99566639ec40cf56376ef63fe148366204d086"
     },
     {
-      "path": "/home/keyan/code-y-w0w1/outputs/wisig_w01/cache/rx19_day2.npz",
-      "sha256": "d500c9ace44da2ddbb102a0fbf5f58d7e6e09bacd034463ba57b466376ad353c",
-      "rx_index": 19,
-      "date_index": 2
+      "path": "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx19_day2.npz",
+      "sha256": "d500c9ace44da2ddbb102a0fbf5f58d7e6e09bacd034463ba57b466376ad353c"
     },
     {
-      "path": "/home/keyan/code-y-p2a/outputs/shen_p2a8/g1_cache_v1/shen_b200_mini_1_train/strict_cis.npy",
-      "sha256": "61c720cd21778f3c08fbd17f553112043c39b6e11c8045e432d56b6a8adb0fb2"
+      "path": "/workspace/rl1/gai_retrain/outputs/shen_p2a8/g1_cache_v1/shen_b200_mini_1_train/strict_cis.npy",
+      "sha256": "61c720cd21778f3c08fbd17f553112043c39b6e11c8045e432d56b6a8adb0fb2",
+      "key": "shen_b200_mini_1_train"
     },
     {
-      "path": "/home/keyan/code-y-p2a/outputs/shen_p2a8/g1_cache_v1/shen_b200_mini_1_train/labels.npy",
-      "sha256": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b"
+      "path": "/workspace/rl1/gai_retrain/outputs/shen_p2a8/g1_cache_v1/shen_b200_mini_1_train/labels.npy",
+      "sha256": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b",
+      "key": "shen_b200_mini_1_train"
     },
     {
-      "path": "/home/keyan/code-y-p2a/outputs/shen_p2a8/g1_cache_v1/shen_b200_mini_1_train/rows.npy",
-      "sha256": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060"
+      "path": "/workspace/rl1/gai_retrain/outputs/shen_p2a8/g1_cache_v1/shen_b200_mini_1_train/rows.npy",
+      "sha256": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060",
+      "key": "shen_b200_mini_1_train"
     },
     {
-      "path": "/home/keyan/code-y-p2a/outputs/shen_p2a8/g1_cache_v1/shen_b200_mini_1_train/manifest.json",
-      "sha256": "7365e6a970bf6fcdabb2f04a00e4a7c61a681d6c776a9bd5452b00cc6f9bf248"
+      "path": "/workspace/rl1/gai_retrain/outputs/shen_p2a8/g1_cache_v1/shen_b200_mini_1_train/manifest.json",
+      "sha256": "7365e6a970bf6fcdabb2f04a00e4a7c61a681d6c776a9bd5452b00cc6f9bf248",
+      "key": "shen_b200_mini_1_train"
     },
     {
-      "path": "/home/keyan/code-y-p2a/outputs/shen_p2a8/g1_cache_v1/shen_b210_1_train/strict_cis.npy",
-      "sha256": "95c31d380111d987e259208ce4d7623f14fbc84d8e85e4e6229269a79ae33253"
+      "path": "/workspace/rl1/gai_retrain/outputs/shen_p2a8/g1_cache_v1/shen_b210_1_train/strict_cis.npy",
+      "sha256": "95c31d380111d987e259208ce4d7623f14fbc84d8e85e4e6229269a79ae33253",
+      "key": "shen_b210_1_train"
     },
     {
-      "path": "/home/keyan/code-y-p2a/outputs/shen_p2a8/g1_cache_v1/shen_b210_1_train/labels.npy",
-      "sha256": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b"
+      "path": "/workspace/rl1/gai_retrain/outputs/shen_p2a8/g1_cache_v1/shen_b210_1_train/labels.npy",
+      "sha256": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b",
+      "key": "shen_b210_1_train"
     },
     {
-      "path": "/home/keyan/code-y-p2a/outputs/shen_p2a8/g1_cache_v1/shen_b210_1_train/rows.npy",
-      "sha256": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060"
+      "path": "/workspace/rl1/gai_retrain/outputs/shen_p2a8/g1_cache_v1/shen_b210_1_train/rows.npy",
+      "sha256": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060",
+      "key": "shen_b210_1_train"
     },
     {
-      "path": "/home/keyan/code-y-p2a/outputs/shen_p2a8/g1_cache_v1/shen_b210_1_train/manifest.json",
-      "sha256": "000b318589b318ba66e938efcaf9bb0f6724bb18f364c242cefc6f30fc50fc4f"
+      "path": "/workspace/rl1/gai_retrain/outputs/shen_p2a8/g1_cache_v1/shen_b210_1_train/manifest.json",
+      "sha256": "000b318589b318ba66e938efcaf9bb0f6724bb18f364c242cefc6f30fc50fc4f",
+      "key": "shen_b210_1_train"
     },
     {
-      "path": "/home/keyan/code-y-p2a/outputs/shen_p2a8/g1_cache_v1/shen_pluto_1_train/strict_cis.npy",
-      "sha256": "1fc554531a06af088568f0e0f31236c8f69e8d16d41a6b63c75467e7e220aeb0"
+      "path": "/workspace/rl1/gai_retrain/outputs/shen_p2a8/g1_cache_v1/shen_pluto_1_train/strict_cis.npy",
+      "sha256": "1fc554531a06af088568f0e0f31236c8f69e8d16d41a6b63c75467e7e220aeb0",
+      "key": "shen_pluto_1_train"
     },
     {
-      "path": "/home/keyan/code-y-p2a/outputs/shen_p2a8/g1_cache_v1/shen_pluto_1_train/labels.npy",
-      "sha256": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b"
+      "path": "/workspace/rl1/gai_retrain/outputs/shen_p2a8/g1_cache_v1/shen_pluto_1_train/labels.npy",
+      "sha256": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b",
+      "key": "shen_pluto_1_train"
     },
     {
-      "path": "/home/keyan/code-y-p2a/outputs/shen_p2a8/g1_cache_v1/shen_pluto_1_train/rows.npy",
-      "sha256": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060"
+      "path": "/workspace/rl1/gai_retrain/outputs/shen_p2a8/g1_cache_v1/shen_pluto_1_train/rows.npy",
+      "sha256": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060",
+      "key": "shen_pluto_1_train"
     },
     {
-      "path": "/home/keyan/code-y-p2a/outputs/shen_p2a8/g1_cache_v1/shen_pluto_1_train/manifest.json",
-      "sha256": "ec13608c25be9e27698a74e52c49779635122f529f2c636c178d2bfca37cc936"
+      "path": "/workspace/rl1/gai_retrain/outputs/shen_p2a8/g1_cache_v1/shen_pluto_1_train/manifest.json",
+      "sha256": "ec13608c25be9e27698a74e52c49779635122f529f2c636c178d2bfca37cc936",
+      "key": "shen_pluto_1_train"
     },
     {
-      "path": "/home/keyan/code-y-p2a/outputs/shen_p2a8/g1_cache_v1/shen_rtl_1_train/strict_cis.npy",
-      "sha256": "145869235ea1ecad4601bfcfc796196a02d81091a7d3482978007306250e7cd0"
+      "path": "/workspace/rl1/gai_retrain/outputs/shen_p2a8/g1_cache_v1/shen_rtl_1_train/strict_cis.npy",
+      "sha256": "145869235ea1ecad4601bfcfc796196a02d81091a7d3482978007306250e7cd0",
+      "key": "shen_rtl_1_train"
     },
     {
-      "path": "/home/keyan/code-y-p2a/outputs/shen_p2a8/g1_cache_v1/shen_rtl_1_train/labels.npy",
-      "sha256": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b"
+      "path": "/workspace/rl1/gai_retrain/outputs/shen_p2a8/g1_cache_v1/shen_rtl_1_train/labels.npy",
+      "sha256": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b",
+      "key": "shen_rtl_1_train"
     },
     {
-      "path": "/home/keyan/code-y-p2a/outputs/shen_p2a8/g1_cache_v1/shen_rtl_1_train/rows.npy",
-      "sha256": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060"
+      "path": "/workspace/rl1/gai_retrain/outputs/shen_p2a8/g1_cache_v1/shen_rtl_1_train/rows.npy",
+      "sha256": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060",
+      "key": "shen_rtl_1_train"
     },
     {
-      "path": "/home/keyan/code-y-p2a/outputs/shen_p2a8/g1_cache_v1/shen_rtl_1_train/manifest.json",
-      "sha256": "0e78a978c74d64093c92d2a70527262e5d2726ddf4f4387e03b51a4d52c14319"
+      "path": "/workspace/rl1/gai_retrain/outputs/shen_p2a8/g1_cache_v1/shen_rtl_1_train/manifest.json",
+      "sha256": "0e78a978c74d64093c92d2a70527262e5d2726ddf4f4387e03b51a4d52c14319",
+      "key": "shen_rtl_1_train"
     },
     {
-      "path": "/home/keyan/code-y-p2a/outputs/shen_p2a8/g1_cache_v1/shen_rtl_2_train/strict_cis.npy",
-      "sha256": "4e2c2336b848e274e22d5a6017adfdb902529ca801c4d723856ded2e37825865"
+      "path": "/workspace/rl1/gai_retrain/outputs/shen_p2a8/g1_cache_v1/shen_rtl_2_train/strict_cis.npy",
+      "sha256": "4e2c2336b848e274e22d5a6017adfdb902529ca801c4d723856ded2e37825865",
+      "key": "shen_rtl_2_train"
     },
     {
-      "path": "/home/keyan/code-y-p2a/outputs/shen_p2a8/g1_cache_v1/shen_rtl_2_train/labels.npy",
-      "sha256": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b"
+      "path": "/workspace/rl1/gai_retrain/outputs/shen_p2a8/g1_cache_v1/shen_rtl_2_train/labels.npy",
+      "sha256": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b",
+      "key": "shen_rtl_2_train"
     },
     {
-      "path": "/home/keyan/code-y-p2a/outputs/shen_p2a8/g1_cache_v1/shen_rtl_2_train/rows.npy",
-      "sha256": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060"
+      "path": "/workspace/rl1/gai_retrain/outputs/shen_p2a8/g1_cache_v1/shen_rtl_2_train/rows.npy",
+      "sha256": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060",
+      "key": "shen_rtl_2_train"
     },
     {
-      "path": "/home/keyan/code-y-p2a/outputs/shen_p2a8/g1_cache_v1/shen_rtl_2_train/manifest.json",
-      "sha256": "aabcc57070575d14747d5064e8e75413fe6c454fd254686cf77a77783738c58a"
+      "path": "/workspace/rl1/gai_retrain/outputs/shen_p2a8/g1_cache_v1/shen_rtl_2_train/manifest.json",
+      "sha256": "aabcc57070575d14747d5064e8e75413fe6c454fd254686cf77a77783738c58a",
+      "key": "shen_rtl_2_train"
     },
     {
-      "path": "/home/keyan/code-y-p2a/outputs/shen_p2a8/g1_cache_v1/shen_rtl_3_train/strict_cis.npy",
-      "sha256": "afcc21d89da0357baf4077ac6578fe72a47db266f7d8c1197ada2285c2844a31"
+      "path": "/workspace/rl1/gai_retrain/outputs/shen_p2a8/g1_cache_v1/shen_rtl_3_train/strict_cis.npy",
+      "sha256": "afcc21d89da0357baf4077ac6578fe72a47db266f7d8c1197ada2285c2844a31",
+      "key": "shen_rtl_3_train"
     },
     {
-      "path": "/home/keyan/code-y-p2a/outputs/shen_p2a8/g1_cache_v1/shen_rtl_3_train/labels.npy",
-      "sha256": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b"
+      "path": "/workspace/rl1/gai_retrain/outputs/shen_p2a8/g1_cache_v1/shen_rtl_3_train/labels.npy",
+      "sha256": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b",
+      "key": "shen_rtl_3_train"
     },
     {
-      "path": "/home/keyan/code-y-p2a/outputs/shen_p2a8/g1_cache_v1/shen_rtl_3_train/rows.npy",
-      "sha256": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060"
+      "path": "/workspace/rl1/gai_retrain/outputs/shen_p2a8/g1_cache_v1/shen_rtl_3_train/rows.npy",
+      "sha256": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060",
+      "key": "shen_rtl_3_train"
     },
     {
-      "path": "/home/keyan/code-y-p2a/outputs/shen_p2a8/g1_cache_v1/shen_rtl_3_train/manifest.json",
-      "sha256": "035d524396f521d2ad96649727add43475dd5d6cd166180807b265adc0b69724"
+      "path": "/workspace/rl1/gai_retrain/outputs/shen_p2a8/g1_cache_v1/shen_rtl_3_train/manifest.json",
+      "sha256": "035d524396f521d2ad96649727add43475dd5d6cd166180807b265adc0b69724",
+      "key": "shen_rtl_3_train"
     },
     {
-      "path": "/home/keyan/code-y-p2a/outputs/shen_p2a8/g1_cache_v1/shen_rtl_5_train/strict_cis.npy",
-      "sha256": "bf95900bd9c144671615f6b605ab569b4b48172a33102ace00e110d26570edc4"
+      "path": "/workspace/rl1/gai_retrain/outputs/shen_p2a8/g1_cache_v1/shen_rtl_5_train/strict_cis.npy",
+      "sha256": "bf95900bd9c144671615f6b605ab569b4b48172a33102ace00e110d26570edc4",
+      "key": "shen_rtl_5_train"
     },
     {
-      "path": "/home/keyan/code-y-p2a/outputs/shen_p2a8/g1_cache_v1/shen_rtl_5_train/labels.npy",
-      "sha256": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b"
+      "path": "/workspace/rl1/gai_retrain/outputs/shen_p2a8/g1_cache_v1/shen_rtl_5_train/labels.npy",
+      "sha256": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b",
+      "key": "shen_rtl_5_train"
     },
     {
-      "path": "/home/keyan/code-y-p2a/outputs/shen_p2a8/g1_cache_v1/shen_rtl_5_train/rows.npy",
-      "sha256": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060"
+      "path": "/workspace/rl1/gai_retrain/outputs/shen_p2a8/g1_cache_v1/shen_rtl_5_train/rows.npy",
+      "sha256": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060",
+      "key": "shen_rtl_5_train"
     },
     {
-      "path": "/home/keyan/code-y-p2a/outputs/shen_p2a8/g1_cache_v1/shen_rtl_5_train/manifest.json",
-      "sha256": "1280566e966ecb2b20902993c4699c48f70fa740fa17cec3a9bcdf5b41ccb9d0"
+      "path": "/workspace/rl1/gai_retrain/outputs/shen_p2a8/g1_cache_v1/shen_rtl_5_train/manifest.json",
+      "sha256": "1280566e966ecb2b20902993c4699c48f70fa740fa17cec3a9bcdf5b41ccb9d0",
+      "key": "shen_rtl_5_train"
     },
     {
-      "path": "/home/keyan/code-y-p2a/outputs/shen_p2a8/g1_cache_v1/shen_rtl_6_train/strict_cis.npy",
-      "sha256": "05be3a98b1f8b7c58e98c2eed60120733516f485e4c8d79787b5469061c44fc7"
+      "path": "/workspace/rl1/gai_retrain/outputs/shen_p2a8/g1_cache_v1/shen_rtl_6_train/strict_cis.npy",
+      "sha256": "05be3a98b1f8b7c58e98c2eed60120733516f485e4c8d79787b5469061c44fc7",
+      "key": "shen_rtl_6_train"
     },
     {
-      "path": "/home/keyan/code-y-p2a/outputs/shen_p2a8/g1_cache_v1/shen_rtl_6_train/labels.npy",
-      "sha256": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b"
+      "path": "/workspace/rl1/gai_retrain/outputs/shen_p2a8/g1_cache_v1/shen_rtl_6_train/labels.npy",
+      "sha256": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b",
+      "key": "shen_rtl_6_train"
     },
     {
-      "path": "/home/keyan/code-y-p2a/outputs/shen_p2a8/g1_cache_v1/shen_rtl_6_train/rows.npy",
-      "sha256": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060"
+      "path": "/workspace/rl1/gai_retrain/outputs/shen_p2a8/g1_cache_v1/shen_rtl_6_train/rows.npy",
+      "sha256": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060",
+      "key": "shen_rtl_6_train"
     },
     {
-      "path": "/home/keyan/code-y-p2a/outputs/shen_p2a8/g1_cache_v1/shen_rtl_6_train/manifest.json",
-      "sha256": "14463694916395e0c0711b827ad61a84580696619257e20fa589dfdeeb3ff25f"
+      "path": "/workspace/rl1/gai_retrain/outputs/shen_p2a8/g1_cache_v1/shen_rtl_6_train/manifest.json",
+      "sha256": "14463694916395e0c0711b827ad61a84580696619257e20fa589dfdeeb3ff25f",
+      "key": "shen_rtl_6_train"
     },
     {
-      "path": "/home/keyan/code-y-p2a/outputs/shen_p2a8/g1_cache_v1/shen_rtl_7_train/strict_cis.npy",
-      "sha256": "3933a1ae9be67c1ebf293bbec7b77124c867ceccc322509c1712de38ec4bba06"
+      "path": "/workspace/rl1/gai_retrain/outputs/shen_p2a8/g1_cache_v1/shen_rtl_7_train/strict_cis.npy",
+      "sha256": "3933a1ae9be67c1ebf293bbec7b77124c867ceccc322509c1712de38ec4bba06",
+      "key": "shen_rtl_7_train"
     },
     {
-      "path": "/home/keyan/code-y-p2a/outputs/shen_p2a8/g1_cache_v1/shen_rtl_7_train/labels.npy",
-      "sha256": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b"
+      "path": "/workspace/rl1/gai_retrain/outputs/shen_p2a8/g1_cache_v1/shen_rtl_7_train/labels.npy",
+      "sha256": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b",
+      "key": "shen_rtl_7_train"
     },
     {
-      "path": "/home/keyan/code-y-p2a/outputs/shen_p2a8/g1_cache_v1/shen_rtl_7_train/rows.npy",
-      "sha256": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060"
+      "path": "/workspace/rl1/gai_retrain/outputs/shen_p2a8/g1_cache_v1/shen_rtl_7_train/rows.npy",
+      "sha256": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060",
+      "key": "shen_rtl_7_train"
     },
     {
-      "path": "/home/keyan/code-y-p2a/outputs/shen_p2a8/g1_cache_v1/shen_rtl_7_train/manifest.json",
-      "sha256": "5014d39c12ba37385c4e79be4632748af40c3bbbb18e3f49365e7f87250222a5"
+      "path": "/workspace/rl1/gai_retrain/outputs/shen_p2a8/g1_cache_v1/shen_rtl_7_train/manifest.json",
+      "sha256": "5014d39c12ba37385c4e79be4632748af40c3bbbb18e3f49365e7f87250222a5",
+      "key": "shen_rtl_7_train"
     },
     {
-      "path": "/home/keyan/code-y-p2a/outputs/shen_p2a8/g1_cache_v1/shen_rtl_9_train/strict_cis.npy",
-      "sha256": "f8cc631c0d6476e0a4408bc2ac5f893235170934001b5dd7611fa0e3d951855e"
+      "path": "/workspace/rl1/gai_retrain/outputs/shen_p2a8/g1_cache_v1/shen_rtl_9_train/strict_cis.npy",
+      "sha256": "f8cc631c0d6476e0a4408bc2ac5f893235170934001b5dd7611fa0e3d951855e",
+      "key": "shen_rtl_9_train"
     },
     {
-      "path": "/home/keyan/code-y-p2a/outputs/shen_p2a8/g1_cache_v1/shen_rtl_9_train/labels.npy",
-      "sha256": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b"
+      "path": "/workspace/rl1/gai_retrain/outputs/shen_p2a8/g1_cache_v1/shen_rtl_9_train/labels.npy",
+      "sha256": "3ed441e994fc31ebc6698b584e0c339185f346ac6c14028bef7733bfa1c9751b",
+      "key": "shen_rtl_9_train"
     },
     {
-      "path": "/home/keyan/code-y-p2a/outputs/shen_p2a8/g1_cache_v1/shen_rtl_9_train/rows.npy",
-      "sha256": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060"
+      "path": "/workspace/rl1/gai_retrain/outputs/shen_p2a8/g1_cache_v1/shen_rtl_9_train/rows.npy",
+      "sha256": "3d28e2211db8a37903b3fb06bfb9ee1d2b9d79a506141611327cbdbabe5ab060",
+      "key": "shen_rtl_9_train"
     },
     {
-      "path": "/home/keyan/code-y-p2a/outputs/shen_p2a8/g1_cache_v1/shen_rtl_9_train/manifest.json",
-      "sha256": "5a14206e7c52491f6c3d82f85ab689b46aacd7d8b6938c235763ba693bda0ac9"
+      "path": "/workspace/rl1/gai_retrain/outputs/shen_p2a8/g1_cache_v1/shen_rtl_9_train/manifest.json",
+      "sha256": "5a14206e7c52491f6c3d82f85ab689b46aacd7d8b6938c235763ba693bda0ac9",
+      "key": "shen_rtl_9_train"
     }
   ]
 }

@@ -1,0 +1,46 @@
+{
+  "mode": "merged",
+  "shards": [
+    "/workspace/rl1/l0_local/l0_out/full/shard0",
+    "/workspace/rl1/l0_local/l0_out/full/shard1",
+    "/workspace/rl1/l0_local/l0_out/full/shard2",
+    "/workspace/rl1/l0_local/l0_out/full/shard3"
+  ],
+  "code_sha256": {
+    "atlas_l0.py": "cc8fd4ad627c920eb6c14b7a831abf66e38b0eff5a2835651786fdbd4b464dc8",
+    "link_core.py": "3308b8222b427603357f3fc97ca63dca2bc387fcae7752de9e437f5f8b34baee",
+    "merge_l0.py": "b5bec2419ab16210f2344e40ab2023d4070b1d7b5ac9c2482a5644e0888de81e",
+    "physics.py": "5c42d2d15e0cea5fb436acfbf77d4c1604913d28eef53df562e61e5a219856ed",
+    "run_l0.py": "9b4f8823bf8a7bccae3e7b03aaa8bc1b589704687d38324ffc045464c513f8c8",
+    "smoke_atlas.py": "683e5c9a26ed7ec10bfa840dd26d895413d45ee3e69b0cac8a41820a4a606de5",
+    "smoke_physics_run.py": "b6f622678bc69d9a498dc2a90d56a8d1d957cec1f901c2b9406b3d0310196326",
+    "smoke_run_l0_e2e.py": "a5fac07565b6c7bcda09355b56d378bbb3be7800491c170aea351f342f9b237a",
+    "smoke_summarize.py": "a29387290f28286df7e8f34174d5ce2a00b36e627c08e9a3d403965129cf2789",
+    "summarize_l0.py": "abdbc24a8b0610bde2b0b82994db588a1000f432e701c20374079392ad49baa9",
+    "test_link_core.py": "bb769bdb0dbb75f6f1ac891f8d724a75f88f11be1b79441f5429a578b69beae6",
+    "test_physics.py": "405019eb3473615e12a8e66b878ed368c0d0dac117b0de7171476babc9cb3c93"
+  },
+  "jobs": [
+    "wisig_official_CV0_ce_seed20261013",
+    "wisig_official_CV0_swad_seed20261014",
+    "wisig_official_CV0_mldg_rx_seed20261015",
+    "wisig_official_CV0_pcgrad_seed20261013",
+    "wisig_official_CV0_mldg_rx_date_seed20261014",
+    "wisig_resnet_CV0_ce_seed20261015",
+    "wisig_official_CV0_ce_seed20261014",
+    "wisig_official_CV0_swad_seed20261015",
+    "wisig_official_CV0_groupdro_seed20261013",
+    "wisig_official_CV0_pcgrad_seed20261014",
+    "wisig_official_CV0_mldg_rx_date_seed20261015",
+    "wisig_official_CV0_ce_seed20261015",
+    "wisig_official_CV0_mldg_rx_seed20261013",
+    "wisig_official_CV0_groupdro_seed20261014",
+    "wisig_official_CV0_pcgrad_seed20261015",
+    "wisig_resnet_CV0_ce_seed20261013",
+    "wisig_official_CV0_swad_seed20261013",
+    "wisig_official_CV0_mldg_rx_seed20261014",
+    "wisig_official_CV0_groupdro_seed20261015",
+    "wisig_official_CV0_mldg_rx_date_seed20261013",
+    "wisig_resnet_CV0_ce_seed20261014"
+  ]
+}

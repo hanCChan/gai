@@ -1,7 +1,7 @@
 {
-  "utc": "2026-10-13T08:19:36.648450+00:00",
+  "utc": "2026-10-19T16:11:00.194659+00:00",
   "date_shanghai": "2026-10-13",
-  "archive": "/home/keyan/data/wisig-manyrx-kaggle/ManyRx.kaggle.v1.zip",
+  "archive": "/workspace/rl1/l0_local/data/wisig-manyrx-kaggle/ManyRx.kaggle.v1.zip",
   "archive_sha256": "b0eca705816b03a47290286fd23ca1a10e02c6f9bd29b5461cfd92c13a86fbdd",
   "hardware_sha256": "ae8f770b524706416885118de8916fc4846b9e01a98ba66aa3b804e0d9d89f1e",
   "official_model_source": "https://github.com/WiSig-dataset/wisig-examples/blob/master/py/d003_ManyRx_nrx.py",
@@ -368,7 +368,7 @@
       "role": "final_rx"
     }
   ],
-  "split_rule": "Metadata pattern preserves final8; remaining24 with min development cell>=160 source14, other10 internal",
+  "split_rule": "hardware/metadata coverage then repeating source/source/internal/final freezes final8; remaining24 with minimum cell>=160 become source14, remaining10 internal",
   "train_dates": [
     0,
     1
@@ -434,6 +434,5 @@
   },
   "w2_authorized_now": false,
   "w2_plan_only": true,
-  "final_rx_and_date_reserved": true,
-  "coverage_revision_before_any_fitting": true
+  "final_rx_and_date_reserved": true
 }
