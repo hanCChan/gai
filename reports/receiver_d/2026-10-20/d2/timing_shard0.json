@@ -1,0 +1,7 @@
+{
+ "seconds": 270.8253344960103,
+ "jobs": 10,
+ "refits": 90,
+ "device": "cuda:0",
+ "peak_allocated_MiB": 5588.2724609375
+}

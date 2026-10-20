@@ -1,0 +1,11 @@
+{"run_id": "shen_rank16_CV0_ce_seed20261014", "acc_source": 0.8865, "acc_outer": 0.8284, "rx_share": 0.003, "link_share": 0.014} 32s
+{"run_id": "shen_rank16_CV0_swad_seed20261014", "acc_source": 0.9025, "acc_outer": 0.8355, "rx_share": 0.003, "link_share": 0.015} 59s
+{"run_id": "shen_rank16_CV0_mldg_rx_seed20261014", "acc_source": 0.8475, "acc_outer": 0.8197, "rx_share": 0.006, "link_share": 0.011} 86s
+{"run_id": "shen_rank16_CV0_groupdro_seed20261014", "acc_source": 0.859, "acc_outer": 0.8186, "rx_share": 0.003, "link_share": 0.014} 112s
+{"run_id": "shen_rank16_CV0_pcgrad_seed20261014", "acc_source": 0.8905, "acc_outer": 0.8204, "rx_share": 0.004, "link_share": 0.016} 138s
+{"run_id": "shen_rank16_CV1_ce_seed20261014", "acc_source": 0.8775, "acc_outer": 0.8376, "rx_share": 0.004, "link_share": 0.025} 168s
+{"run_id": "shen_rank16_CV1_swad_seed20261014", "acc_source": 0.892, "acc_outer": 0.8885, "rx_share": 0.004, "link_share": 0.018} 195s
+{"run_id": "shen_rank16_CV1_mldg_rx_seed20261014", "acc_source": 0.8405, "acc_outer": 0.8351, "rx_share": 0.004, "link_share": 0.021} 221s
+{"run_id": "shen_rank16_CV1_groupdro_seed20261014", "acc_source": 0.8655, "acc_outer": 0.8604, "rx_share": 0.004, "link_share": 0.027} 247s
+{"run_id": "shen_rank16_CV1_pcgrad_seed20261014", "acc_source": 0.8565, "acc_outer": 0.8698, "rx_share": 0.003, "link_share": 0.019} 274s
+done {"seconds": 274.48940259599476, "jobs": 10, "refits": 90, "device": "cuda:0", "peak_allocated_MiB": 5588.2724609375}

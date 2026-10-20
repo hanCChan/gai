@@ -1,0 +1,62 @@
+{
+ "files": {
+  "d_common.py": "e7d14b8e7e00780a78577bdda73245b71a212e45e6516bed7a9d3bc69a345989",
+  "run_d1.py": "a6886362b4be2128e1c35a1aea4c1bb26941b9c8e7f65042b624cb36f57154a2",
+  "run_d2.py": "83738ef2a351c30534a899da57d76d592f706f2a8927135d0907e7230ca9efe3",
+  "rxphys.py": "e056f4c970b147e8e306b9ef95f960e7bc389d990b3214926537b7f6ceaa15f0",
+  "summarize_d1.py": "c7fdb044c72dde5b99bcc40e1dd2a9b471d66ec173193c1f37b0a34a3b5331c9",
+  "test_rxphys.py": "42c26155de77987a9234260ee36ddb0b140e61f54f0d840c1c0e6d1fca213ae4"
+ },
+ "code_sha256_l0": {
+  "atlas_l0.py": "cc8fd4ad627c920eb6c14b7a831abf66e38b0eff5a2835651786fdbd4b464dc8",
+  "link_core.py": "3308b8222b427603357f3fc97ca63dca2bc387fcae7752de9e437f5f8b34baee",
+  "merge_l0.py": "b5bec2419ab16210f2344e40ab2023d4070b1d7b5ac9c2482a5644e0888de81e",
+  "physics.py": "5c42d2d15e0cea5fb436acfbf77d4c1604913d28eef53df562e61e5a219856ed",
+  "run_l0.py": "9b4f8823bf8a7bccae3e7b03aaa8bc1b589704687d38324ffc045464c513f8c8",
+  "smoke_atlas.py": "683e5c9a26ed7ec10bfa840dd26d895413d45ee3e69b0cac8a41820a4a606de5",
+  "smoke_physics_run.py": "b6f622678bc69d9a498dc2a90d56a8d1d957cec1f901c2b9406b3d0310196326",
+  "smoke_run_l0_e2e.py": "a5fac07565b6c7bcda09355b56d378bbb3be7800491c170aea351f342f9b237a",
+  "smoke_summarize.py": "a29387290f28286df7e8f34174d5ce2a00b36e627c08e9a3d403965129cf2789",
+  "summarize_l0.py": "abdbc24a8b0610bde2b0b82994db588a1000f432e701c20374079392ad49baa9",
+  "test_link_core.py": "bb769bdb0dbb75f6f1ac891f8d724a75f88f11be1b79441f5429a578b69beae6",
+  "test_physics.py": "405019eb3473615e12a8e66b878ed368c0d0dac117b0de7171476babc9cb3c93"
+ },
+ "jobs": [
+  "shen_rank16_CV0_ce_seed20261013",
+  "shen_rank16_CV0_swad_seed20261013",
+  "shen_rank16_CV0_mldg_rx_seed20261013",
+  "shen_rank16_CV0_groupdro_seed20261013",
+  "shen_rank16_CV0_pcgrad_seed20261013",
+  "shen_rank16_CV1_ce_seed20261013",
+  "shen_rank16_CV1_swad_seed20261013",
+  "shen_rank16_CV1_mldg_rx_seed20261013",
+  "shen_rank16_CV1_groupdro_seed20261013",
+  "shen_rank16_CV1_pcgrad_seed20261013"
+ ],
+ "shard": "0/3",
+ "root": "/workspace/rl1/gai_retrain",
+ "shen_input_assets_verified": 40,
+ "erase_k": [
+  4,
+  8,
+  16
+ ],
+ "kinds": [
+  "link",
+  "rx",
+  "cond"
+ ],
+ "pca_q": 24,
+ "random_draws": 5,
+ "refit": {
+  "steps": 500,
+  "lr": 0.003,
+  "l2": 0.0001,
+  "seed": 20261019
+ },
+ "refit_k": 8,
+ "network_parameters_changed": false,
+ "head_refits": true,
+ "raw_iq_read": false,
+ "started_unix": 1792489586.9754515
+}

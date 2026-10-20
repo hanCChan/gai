@@ -1,0 +1,22 @@
+{"run_id": "wisig_official_CV0_ce_seed20261013", "null": 0.9302, "L0": 0.5032, "r1": 0.5176, "fir": 0.5494, "minph": 0.5486, "rand": 0.5516, "tilt": 0.4692, "unseen": 0.3441} 3s
+{"run_id": "wisig_official_CV0_ce_seed20261014", "null": 0.9401, "L0": 0.6444, "r1": 0.6523, "fir": 0.746, "minph": 0.7524, "rand": 0.7002, "tilt": 0.6599, "unseen": 0.7185} 5s
+{"run_id": "wisig_official_CV0_ce_seed20261015", "null": 0.9187, "L0": 0.5416, "r1": 0.5585, "fir": 0.6283, "minph": 0.6724, "rand": 0.615, "tilt": 0.5832, "unseen": 0.4947} 8s
+{"run_id": "wisig_official_CV0_swad_seed20261013", "null": 0.8838, "L0": 0.4491, "r1": 0.4588, "fir": 0.5654, "minph": 0.5602, "rand": 0.5524, "tilt": 0.4867, "unseen": 0.3715} 10s
+{"run_id": "wisig_official_CV0_swad_seed20261014", "null": 0.9002, "L0": 0.5517, "r1": 0.5572, "fir": 0.6679, "minph": 0.6756, "rand": 0.6354, "tilt": 0.5921, "unseen": 0.5978} 12s
+{"run_id": "wisig_official_CV0_swad_seed20261015", "null": 0.8724, "L0": 0.494, "r1": 0.5073, "fir": 0.6045, "minph": 0.6429, "rand": 0.5869, "tilt": 0.5543, "unseen": 0.437} 15s
+{"run_id": "wisig_official_CV0_mldg_rx_seed20261013", "null": 0.9257, "L0": 0.4804, "r1": 0.4963, "fir": 0.5454, "minph": 0.556, "rand": 0.5488, "tilt": 0.4582, "unseen": 0.332} 17s
+{"run_id": "wisig_official_CV0_mldg_rx_seed20261014", "null": 0.9348, "L0": 0.5988, "r1": 0.6054, "fir": 0.7198, "minph": 0.7329, "rand": 0.6807, "tilt": 0.6272, "unseen": 0.6418} 20s
+{"run_id": "wisig_official_CV0_mldg_rx_seed20261015", "null": 0.9305, "L0": 0.5456, "r1": 0.5632, "fir": 0.609, "minph": 0.6503, "rand": 0.5963, "tilt": 0.5454, "unseen": 0.4689} 23s
+{"run_id": "wisig_official_CV0_groupdro_seed20261013", "null": 0.9055, "L0": 0.4706, "r1": 0.4841, "fir": 0.5331, "minph": 0.5294, "rand": 0.5308, "tilt": 0.4189, "unseen": 0.331} 25s
+{"run_id": "wisig_official_CV0_groupdro_seed20261014", "null": 0.9032, "L0": 0.604, "r1": 0.6082, "fir": 0.68, "minph": 0.6989, "rand": 0.6413, "tilt": 0.6129, "unseen": 0.6457} 28s
+{"run_id": "wisig_official_CV0_groupdro_seed20261015", "null": 0.8869, "L0": 0.526, "r1": 0.5376, "fir": 0.5725, "minph": 0.6021, "rand": 0.5559, "tilt": 0.5046, "unseen": 0.4425} 30s
+{"run_id": "wisig_official_CV0_pcgrad_seed20261013", "null": 0.9242, "L0": 0.4513, "r1": 0.4656, "fir": 0.5395, "minph": 0.5458, "rand": 0.5424, "tilt": 0.4533, "unseen": 0.3618} 33s
+{"run_id": "wisig_official_CV0_pcgrad_seed20261014", "null": 0.9284, "L0": 0.5902, "r1": 0.5963, "fir": 0.6949, "minph": 0.7136, "rand": 0.6554, "tilt": 0.5963, "unseen": 0.6373} 36s
+{"run_id": "wisig_official_CV0_pcgrad_seed20261015", "null": 0.9188, "L0": 0.5289, "r1": 0.548, "fir": 0.6092, "minph": 0.6586, "rand": 0.5967, "tilt": 0.5356, "unseen": 0.484} 39s
+{"run_id": "wisig_official_CV0_mldg_rx_date_seed20261013", "null": 0.9311, "L0": 0.4904, "r1": 0.4994, "fir": 0.5611, "minph": 0.5644, "rand": 0.5676, "tilt": 0.4838, "unseen": 0.3904} 41s
+{"run_id": "wisig_official_CV0_mldg_rx_date_seed20261014", "null": 0.9374, "L0": 0.6291, "r1": 0.6363, "fir": 0.75, "minph": 0.7506, "rand": 0.6952, "tilt": 0.6423, "unseen": 0.6763} 44s
+{"run_id": "wisig_official_CV0_mldg_rx_date_seed20261015", "null": 0.9283, "L0": 0.5556, "r1": 0.571, "fir": 0.6312, "minph": 0.662, "rand": 0.6015, "tilt": 0.5567, "unseen": 0.4734} 47s
+{"run_id": "wisig_resnet_CV0_ce_seed20261013", "null": 0.9446, "L0": 0.4813, "r1": 0.4902, "fir": 0.5694, "minph": 0.591, "rand": 0.5392, "tilt": 0.4592, "unseen": 0.368} 67s
+{"run_id": "wisig_resnet_CV0_ce_seed20261014", "null": 0.9498, "L0": 0.4826, "r1": 0.4941, "fir": 0.5387, "minph": 0.5538, "rand": 0.5095, "tilt": 0.4729, "unseen": 0.3591} 87s
+{"run_id": "wisig_resnet_CV0_ce_seed20261015", "null": 0.9385, "L0": 0.4732, "r1": 0.4834, "fir": 0.5232, "minph": 0.5446, "rand": 0.4943, "tilt": 0.4879, "unseen": 0.3529} 107s
+done {"seconds": 111.71026849900954, "jobs": 21, "device": "cuda:0", "peak_allocated_MiB": 261.34912109375}
