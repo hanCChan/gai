@@ -1,0 +1,16 @@
+{
+ "ce_only": {
+  "n_rx": 10,
+  "median_rho_R_q": 0.6160646348137253,
+  "median_rho_R_conf": 0.703054316096161,
+  "n_rx_R_q_better": 2,
+  "sign_test_p": 0.109375
+ },
+ "all5": {
+  "n_rx": 10,
+  "median_rho_R_q": 0.6559105561832471,
+  "median_rho_R_conf": 0.7421698310062258,
+  "n_rx_R_q_better": 1,
+  "sign_test_p": 0.021484375
+ }
+}
