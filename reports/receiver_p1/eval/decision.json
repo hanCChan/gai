@@ -1,0 +1,29 @@
+{
+ "decision": "MODIFY",
+ "go_candidates": [],
+ "beat_ce": [
+  "drift"
+ ],
+ "beat_ce_and_ls": [
+  "drift"
+ ],
+ "drift_equiv_var": false,
+ "drift_minus_var_pp": {
+  "0": 0.97,
+  "1": 0.4
+ },
+ "pconf_down": {
+  "drift": true,
+  "var": true,
+  "margin": true,
+  "tail": true,
+  "tail_drift": true
+ },
+ "nonP_ok": {
+  "drift": true,
+  "var": true,
+  "margin": true,
+  "tail": true,
+  "tail_drift": true
+ }
+}

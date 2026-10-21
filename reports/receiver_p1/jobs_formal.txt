@@ -1,0 +1,48 @@
+--stage formal --fold 0 --method drift --lam 1 --seed 20261013
+--stage formal --fold 0 --method tail_drift --lam 0.3 --lam2 1 --seed 20261013
+--stage formal --fold 0 --method drift --lam 1 --seed 20261013 --set rand
+--stage formal --fold 0 --method drift --lam 1 --seed 20261014
+--stage formal --fold 0 --method tail_drift --lam 0.3 --lam2 1 --seed 20261014
+--stage formal --fold 0 --method drift --lam 1 --seed 20261014 --set rand
+--stage formal --fold 0 --method drift --lam 1 --seed 20261015
+--stage formal --fold 0 --method tail_drift --lam 0.3 --lam2 1 --seed 20261015
+--stage formal --fold 0 --method drift --lam 1 --seed 20261015 --set rand
+--stage formal --fold 1 --method drift --lam 1 --seed 20261013
+--stage formal --fold 1 --method tail_drift --lam 0.1 --lam2 1 --seed 20261013
+--stage formal --fold 1 --method drift --lam 1 --seed 20261013 --set rand
+--stage formal --fold 1 --method drift --lam 1 --seed 20261014
+--stage formal --fold 1 --method tail_drift --lam 0.1 --lam2 1 --seed 20261014
+--stage formal --fold 1 --method drift --lam 1 --seed 20261014 --set rand
+--stage formal --fold 1 --method drift --lam 1 --seed 20261015
+--stage formal --fold 1 --method tail_drift --lam 0.1 --lam2 1 --seed 20261015
+--stage formal --fold 1 --method drift --lam 1 --seed 20261015 --set rand
+--stage formal --fold 0 --method ls --seed 20261013
+--stage formal --fold 0 --method var --lam 1 --seed 20261013
+--stage formal --fold 0 --method margin --lam 0.3 --seed 20261013
+--stage formal --fold 0 --method tail --lam 0.3 --seed 20261013
+--stage formal --fold 0 --method tail --lam 0.3 --seed 20261013 --set rand
+--stage formal --fold 0 --method ls --seed 20261014
+--stage formal --fold 0 --method var --lam 1 --seed 20261014
+--stage formal --fold 0 --method margin --lam 0.3 --seed 20261014
+--stage formal --fold 0 --method tail --lam 0.3 --seed 20261014
+--stage formal --fold 0 --method tail --lam 0.3 --seed 20261014 --set rand
+--stage formal --fold 0 --method ls --seed 20261015
+--stage formal --fold 0 --method var --lam 1 --seed 20261015
+--stage formal --fold 0 --method margin --lam 0.3 --seed 20261015
+--stage formal --fold 0 --method tail --lam 0.3 --seed 20261015
+--stage formal --fold 0 --method tail --lam 0.3 --seed 20261015 --set rand
+--stage formal --fold 1 --method ls --seed 20261013
+--stage formal --fold 1 --method var --lam 0.3 --seed 20261013
+--stage formal --fold 1 --method margin --lam 0.3 --seed 20261013
+--stage formal --fold 1 --method tail --lam 0.1 --seed 20261013
+--stage formal --fold 1 --method tail --lam 0.1 --seed 20261013 --set rand
+--stage formal --fold 1 --method ls --seed 20261014
+--stage formal --fold 1 --method var --lam 0.3 --seed 20261014
+--stage formal --fold 1 --method margin --lam 0.3 --seed 20261014
+--stage formal --fold 1 --method tail --lam 0.1 --seed 20261014
+--stage formal --fold 1 --method tail --lam 0.1 --seed 20261014 --set rand
+--stage formal --fold 1 --method ls --seed 20261015
+--stage formal --fold 1 --method var --lam 0.3 --seed 20261015
+--stage formal --fold 1 --method margin --lam 0.3 --seed 20261015
+--stage formal --fold 1 --method tail --lam 0.1 --seed 20261015
+--stage formal --fold 1 --method tail --lam 0.1 --seed 20261015 --set rand

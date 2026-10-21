@@ -1,0 +1,58 @@
+{
+ "0_drift": {
+  "lam": 1.0,
+  "val_CE": 0.2982865273952484,
+  "val_acc": 0.9125,
+  "beats_ce_on_heldRX_CE": false,
+  "ce_val_CE": 0.2968253195285797
+ },
+ "0_var": {
+  "lam": 1.0,
+  "val_CE": 0.29047784209251404,
+  "val_acc": 0.9065,
+  "beats_ce_on_heldRX_CE": true,
+  "ce_val_CE": 0.2968253195285797
+ },
+ "0_margin": {
+  "lam": 0.3,
+  "val_CE": 0.3893534541130066,
+  "val_acc": 0.8665,
+  "beats_ce_on_heldRX_CE": false,
+  "ce_val_CE": 0.2968253195285797
+ },
+ "0_tail": {
+  "lam": 0.3,
+  "val_CE": 0.31938642263412476,
+  "val_acc": 0.884,
+  "beats_ce_on_heldRX_CE": false,
+  "ce_val_CE": 0.2968253195285797
+ },
+ "1_drift": {
+  "lam": 1.0,
+  "val_CE": 0.22635605931282043,
+  "val_acc": 0.9315,
+  "beats_ce_on_heldRX_CE": true,
+  "ce_val_CE": 0.2846914529800415
+ },
+ "1_var": {
+  "lam": 0.3,
+  "val_CE": 0.2809634506702423,
+  "val_acc": 0.8925,
+  "beats_ce_on_heldRX_CE": true,
+  "ce_val_CE": 0.2846914529800415
+ },
+ "1_margin": {
+  "lam": 0.3,
+  "val_CE": 0.2268141359090805,
+  "val_acc": 0.9245,
+  "beats_ce_on_heldRX_CE": true,
+  "ce_val_CE": 0.2846914529800415
+ },
+ "1_tail": {
+  "lam": 0.1,
+  "val_CE": 0.3147374391555786,
+  "val_acc": 0.88,
+  "beats_ce_on_heldRX_CE": false,
+  "ce_val_CE": 0.2846914529800415
+ }
+}
