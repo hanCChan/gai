@@ -1,0 +1,45 @@
+{
+ "decision": "GO",
+ "go_candidates": [
+  "rxnull"
+ ],
+ "beat_ce": [
+  "rxnull",
+  "cmean",
+  "drift_ls",
+  "rxnull_rand"
+ ],
+ "beat_ce_and_ls": [
+  "rxnull",
+  "rxnull_rand"
+ ],
+ "boundary_limited_lam": [
+  "0_drift_ls"
+ ],
+ "rho_row_end_by_arm": {
+  "ce": 0.6190795600414276,
+  "cmean": 0.3235340217749278,
+  "drift_ls": 0.3905184765656789,
+  "ls": 0.3906649500131607,
+  "rxnull": 0.07358082973708704,
+  "rxnull_ls": 0.06652663492908076,
+  "rxnull_rand": 0.5998647809028625,
+  "rxsel": 0.5050750821828842
+ },
+ "pconf_down": {
+  "rxnull": true,
+  "cmean": true,
+  "rxsel": true,
+  "rxnull_ls": true,
+  "drift_ls": true,
+  "rxnull_rand": true
+ },
+ "nonP_ok": {
+  "rxnull": true,
+  "cmean": true,
+  "rxsel": true,
+  "rxnull_ls": true,
+  "drift_ls": true,
+  "rxnull_rand": true
+ }
+}

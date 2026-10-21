@@ -118,7 +118,7 @@ def rxnull_rand(pre, W, y, rb, seed, eps=1e-4):
     g.manual_seed(int(seed))
     fake = []
     for t, d in ds:
-        u = torch.randn(d.numel(), generator=g).to(d.dtype)
+        u = torch.randn(d.numel(), generator=g).to(d.dtype).to(d.device)
         u = u / u.norm().clamp_min(1e-12)
         fake.append((t, u * d.norm()))
     rho = _rho(W, fake, eps)

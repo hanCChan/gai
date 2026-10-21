@@ -97,14 +97,14 @@ def main():
         for r in np.unique(rx):
             m = rx == r
             k = reg['shen_allowed'][int(r)]
-            mm = metrics(torch.as_tensor(logits[m]).float(), torch.as_tensor(y[m]))
+            mm = metrics(logits[m], torch.as_tensor(y[m]))
             ms[k] = mm
             RX.append(dict(fold=fold, method=ru['method'], lam=ru['lam'], seed=ru['seed'], rx=k, **mm))
         accs = [v['accuracy'] for v in ms.values()]
         row.update(acc=float(np.mean(accs)),
                    macro_f1=float(np.mean([v['macro_f1'] for v in ms.values()])),
                    worst_rx_acc=float(np.min(accs)),
-                   pluto_acc=float(ms['shen_pluto_1_train']['accuracy']))
+                   pluto_acc=float(ms['shen_pluto_1_train']['accuracy']) if 'shen_pluto_1_train' in ms else np.nan)
 
         # per RX x TX recall
         pred = logits.argmax(1)
