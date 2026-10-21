@@ -20,9 +20,10 @@ def rows_of(search_dir):
     rows = []
     for st in sorted(Path(search_dir).glob('*/status.json')):
         s = json.loads(st.read_text())
-        n = s['run_id'].split('_')   # shen rank16 CV{f} {method}{lam} Rq {stage} seed
-        rows.append(dict(run_id=s['run_id'], fold=int(n[2][2:]), arm=n[3], stage=n[5],
-                         val_CE=s['best_val_CE'], val_acc=s['best_val_acc'], epoch=s['best_epoch']))
+        n = s['run_id'].split('_')   # shen rank16 CV{f} {method_with_underscores}{lam} Rq {stage} seed
+        rows.append(dict(run_id=s['run_id'], fold=int(n[2][2:]), arm='_'.join(n[3:-3]),
+                         stage=n[-2], val_CE=s['best_val_CE'], val_acc=s['best_val_acc'],
+                         epoch=s['best_epoch']))
     return pd.DataFrame(rows)
 
 
@@ -34,10 +35,21 @@ def main():
     a = ap.parse_args()
     df = rows_of(a.search)
     p1 = rows_of(a.p1search)
-    p1ce = p1[(p1.stage == 'search') & (p1.arm == 'ce0')]
-    df = pd.concat([df, p1[["run_id", "fold", "arm", "stage", "val_CE", "val_acc", "epoch"]]], ignore_index=True)
-    df['method'] = df.arm.str.extract(r'^([a-z_]+?)\d')[0]
-    df['lam'] = df.arm.str.extract(r'(\d+(?:\.\d+)?)$')[0].astype(float)
+    df = pd.concat([df, p1], ignore_index=True)
+    # arm tag = method + lam with :g formatting; match the method prefix explicitly (methods
+    # contain underscores and can end in 's', so regex letters-only extraction is ambiguous)
+    mtab = ('rxnull_ls', 'drift_ls', 'rxnull', 'cmean', 'rxsel', 'ce', 'ls')
+    def parse(arm):
+        for m in mtab:
+            if arm.startswith(m):
+                rest = arm[len(m):]
+                try:
+                    return m, float(rest)
+                except ValueError:
+                    return m, None
+        return None, None
+    df[['method', 'lam']] = df.arm.apply(lambda a: pd.Series(parse(a)))
+    df = df.dropna(subset=['lam'])
     df = df.sort_values(['fold', 'method', 'lam'])
     sel = {}
     for fold in (0, 1):
