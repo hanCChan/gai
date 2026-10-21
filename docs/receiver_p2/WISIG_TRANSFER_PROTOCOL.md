@@ -76,8 +76,14 @@ function-level analogue of the Shen audit), plus P-ISR post-hoc on frozen `ce` a
 
 ## 5. Budget
 
-Single-job cost measurement first (`scripts/receiver_p2/wisig_cost_probe.py`, 3 epochs, timing only,
-labelled a probe, not a fit). Estimate at the registered 100-epoch formal / 50-epoch search:
-30 search + 36 formal fits. Upper bound to be stated after the probe; the running P2 total is
-4.19 (P2) + 1.3 (P2B) job-h. **Nothing starts until the user approves this document and the measured
-budget.**
+Estimates. The registration records a 12-fit planning figure of **0.2700 reserved GPUh for 12
+same-scale standard models** ("62.3167 s for the first job, 1.3 margin"), i.e. ≈ 62 s of GPU time per
+short fit is the only measured datum on this machine; the W0 100-epoch formal at the registered lr is
+larger than that planning job and must be measured, not extrapolated. A 3-epoch timing probe
+(`scripts/receiver_p2/wisig_cost_probe.py`, CE and rxlogit, no checkpoint kept, no held/internal RX
+evaluated) produces the s/epoch number; **it still has to be run** (blocked in the authoring session).
+
+Planning bound until measured, stated explicitly as an extrapolation: at the P1-style device accounting
+the 30 search (50 ep) + 36 formal (100 ep) fits are estimated at **6–12 GPUh**; the running P2-family
+total is 4.19 (P2) + 1.3 (P2B) job-h. **Nothing starts until the user approves this document and the
+measured budget**, and the W0 CE convergence run for the horizon rule (§2) is included in the request.

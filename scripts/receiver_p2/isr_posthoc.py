@@ -56,23 +56,22 @@ def isr_basis(f, y, rx, norm_frac=None):
     bass = []
     for t in range(10):
         mus = np.stack([f[(y == t) & (rx == r)].mean(0) for r in rxs])   # (E, d)
-        D = mus - mus.mean(0, keepdims=True)
-        U, S, _ = np.linalg.svd(D, full_matrices=False)
+        D = mus - mus.mean(0, keepdims=True)                 # (E, d)
+        _, S, Vt = np.linalg.svd(D, full_matrices=False)     # Vt: rows are feature-space directions
         keep = S > 1e-6 * (S.max() + 1e-30)
-        U, S = U[keep], S[keep]
+        Vt, S = Vt[keep], S[keep]
         if norm_frac is not None:
             class_norm = np.linalg.norm(mus.mean(0) - np.stack([f[y == q].mean(0) for q in range(10)]).mean(0))
-            scale = max(np.linalg.norm(D, axis=1).max(), 1e-12)
             mk = S / np.sqrt(len(rxs)) > norm_frac * (class_norm / np.sqrt(d) + 1e-12)
-            U, S = U[mk], S[mk]
+            Vt, S = Vt[mk], S[mk]
         if len(S):
-            bass.append(U @ np.diag(S))
+            bass.append(Vt * S[:, None])                     # (r, d): direction scaled by its strength
     if not bass:
         return np.eye(d), 0
-    M = np.concatenate(bass, axis=1)
-    U, S, _ = np.linalg.svd(M, full_matrices=False)
+    M = np.concatenate(bass, axis=0)                         # (sum r, d)
+    _, S, Vt = np.linalg.svd(M, full_matrices=False)
     keep = S > 1e-3 * (S.max() + 1e-30)
-    Q = U[:, keep]
+    Q = Vt[keep].T                                           # (d, k) orthonormal basis of P'
     return np.eye(d) - Q @ Q.T, int(keep.sum())
 
 
