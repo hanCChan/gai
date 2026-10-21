@@ -20,7 +20,7 @@ from pathlib import Path
 import numpy as np
 
 HERE = Path(__file__).resolve().parent
-sys.path[:0] = [str(HERE)]
+sys.path[:0] = [str(HERE), str(HERE.parent / 'receiver_p0')]
 import p0_common as C   # noqa: E402
 import p2_losses as L  # noqa: E402
 
@@ -116,7 +116,7 @@ def main():
         rows = []
         for arm in [ar for ar in arms if ar['fold'] == fold]:
             if arm['tag'] == 'ce':
-                obj, _ = C.load_model(Path(arm['path']) / 'selected.pt')
+                obj, _ = C.load_model(arm['path'])
                 model, _ = C.build_model(dict(dataset='shen'), obj)
             else:
                 obj = torch.load(Path(arm['path']) / 'selected.pt', map_location='cpu', weights_only=False)

@@ -47,7 +47,7 @@ as in P1). P_marg = BᵀB never materialised; ‖P_marg D‖² = ‖B D‖².
 | B6 ls | CE + label smoothing 0.1 (P1 checkpoints reused, no refit) | generic control |
 | B1 rxnull | λ · mean_{t,r} ‖B D_{t,r}‖² / (‖D_{t,r}‖² + eps), eps=1e-4 | main arm: null the decision-subspace exposure of every RX displacement |
 | B2 cmean | λ · mean_{t,r} ‖B D_{t,r}‖² (unnormalized) | is the ‖D‖-normalization (anti-collapse) needed |
-| B3 rxnull9 | λ · mean_{(t,u)∈Rq} mean_r (ŵ_tuᵀ D_{t,r})² with ŵ = (w_t−w_u)/‖w_t−w_u‖, each term / (‖D_{t,r}‖² + eps) | is all-pairs coverage needed (else the P1 capacity reallocation returns) |
+| B3 rxsel | λ · mean_{(t,u)∈Rq} mean_r (ŵ_tuᵀ D_{t,r})² with ŵ = (w_t−w_u)/‖w_t−w_u‖, each term / (‖D_{t,r}‖² + eps). CLI name `rxsel`; the loss is `rxnull9` in p2_losses.py (run_id parsing requires the arm tag to end in the λ value) | is all-pairs coverage needed (else the P1 capacity reallocation returns) |
 | B4 rxnull_ls | CE(LS 0.1) + λ · rxnull term | additivity with the generic control |
 | B5 drift_ls | CE(LS 0.1) + λ · drift_v0(P0 code, Rq set, γ=0.5) | is the P1 survivor additive with LS |
 | ctrl rxnull_rand | λ · rxnull term with D_{t,r} ← same-norm random direction (fold-seeded rng, redrawn per batch) | is the actual displacement geometry needed, or does any isotropic push do |
@@ -83,7 +83,7 @@ any fit. Nothing in this section reads outer-RX data.
 
 Search stage = P1 search splits verbatim: train inner_train RX (first160), validate on the
 inner_validation RX (all packets), seed 20261016, 20 epochs, same schedule/optimizer/clip.
-λ ∈ {0.3, 1.0, 3.0} for rxnull / cmean / rxnull9 / rxnull_ls / drift_ls (2 folds × 5 methods ×
+λ ∈ {0.3, 1.0, 3.0} for rxnull / cmean / rxsel / rxnull_ls / drift_ls (2 folds × 5 methods ×
 3 λ = 30 search fits; ce/ls reused from P1 search). Rule: per method, λ with minimum held-RX CE
 (tie → smaller λ); formal uses that λ even if it does not beat ce (reported). Outer RX never read
 in search. If the selected λ sits at the grid boundary 3.0 for an arm entering the decision,
@@ -92,7 +92,7 @@ report boundary-limited; no post-hoc λ extension (pre-registered).
 ## 4. Formal, metrics, decision (pre-registered)
 
 Formal = all 5 source RX (first160), 2 folds × seeds {20261013, 20261014, 20261015}, checkpoint
-by last-40 receiver-equal val CE, same recipe as P1. Arms: rxnull, cmean, rxnull9, rxnull_ls,
+by last-40 receiver-equal val CE, same recipe as P1. Arms: rxnull, cmean, rxsel, rxnull_ls,
 drift_ls at λ*; rxnull_rand at λ*(rxnull); ce/ls reused from frozen R0/R1 and P1 formal.
 36 new formal fits.
 
@@ -102,9 +102,9 @@ margin mean/q10, per-RX×TX recall, worst outer RX, Pluto, all 90 ordered-pair c
 per-arm ρ_row at the end of training (diagnostic), seconds per fit.
 
 Decision:
-- **GO (method line)**: rxnull beats ce AND ls AND rxnull_rand AND rxnull9 in the pre-registered
+- **GO (method line)**: rxnull beats ce AND ls AND rxnull_rand AND rxsel in the pre-registered
   rule, P-set confusion not above ce in either fold, and non-P confusion ≤ ce + 0.005.
-- **MODIFY**: rxnull beats ce and ls but fails against rxnull9 or rxnull_rand → keep the simplest
+- **MODIFY**: rxnull beats ce and ls but fails against rxsel or rxnull_rand → keep the simplest
   effective form; no module claim for the redundant part (all-pairs coverage or displacement
   geometry), novelty reassessed.
 - **STOP (method line)**: no P2 arm beats both ce and ls → the sensitivity family is exhausted;

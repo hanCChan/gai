@@ -1,0 +1,306 @@
+{
+ "g1_gate": 0.15,
+ "folds": {
+  "0": {
+   "rows": [
+    {
+     "tag": "ce",
+     "seed": 20261013,
+     "rho_mean": 0.6347615718841553,
+     "rho_per_rx": null,
+     "g2_spearman": -0.21666666666666667,
+     "n_cells": 50
+    },
+    {
+     "tag": "ce",
+     "seed": 20261014,
+     "rho_mean": 0.6118773818016052,
+     "rho_per_rx": null,
+     "g2_spearman": -0.33333333333333337,
+     "n_cells": 50
+    },
+    {
+     "tag": "ce",
+     "seed": 20261015,
+     "rho_mean": 0.6180882453918457,
+     "rho_per_rx": null,
+     "g2_spearman": 0.15,
+     "n_cells": 50
+    },
+    {
+     "tag": "drift",
+     "seed": 20261013,
+     "rho_mean": 0.5880069136619568,
+     "rho_per_rx": null,
+     "g2_spearman": null,
+     "n_cells": 50
+    },
+    {
+     "tag": "drift",
+     "seed": 20261014,
+     "rho_mean": 0.5614982843399048,
+     "rho_per_rx": null,
+     "g2_spearman": null,
+     "n_cells": 50
+    },
+    {
+     "tag": "drift",
+     "seed": 20261015,
+     "rho_mean": 0.5465017557144165,
+     "rho_per_rx": null,
+     "g2_spearman": null,
+     "n_cells": 50
+    },
+    {
+     "tag": "ls",
+     "seed": 20261013,
+     "rho_mean": 0.4013027846813202,
+     "rho_per_rx": null,
+     "g2_spearman": null,
+     "n_cells": 50
+    },
+    {
+     "tag": "ls",
+     "seed": 20261014,
+     "rho_mean": 0.38688424229621887,
+     "rho_per_rx": null,
+     "g2_spearman": null,
+     "n_cells": 50
+    },
+    {
+     "tag": "ls",
+     "seed": 20261015,
+     "rho_mean": 0.3878462314605713,
+     "rho_per_rx": null,
+     "g2_spearman": null,
+     "n_cells": 50
+    },
+    {
+     "tag": "margin",
+     "seed": 20261013,
+     "rho_mean": 0.6706039905548096,
+     "rho_per_rx": null,
+     "g2_spearman": null,
+     "n_cells": 50
+    },
+    {
+     "tag": "margin",
+     "seed": 20261014,
+     "rho_mean": 0.657731294631958,
+     "rho_per_rx": null,
+     "g2_spearman": null,
+     "n_cells": 50
+    },
+    {
+     "tag": "margin",
+     "seed": 20261015,
+     "rho_mean": 0.6708570122718811,
+     "rho_per_rx": null,
+     "g2_spearman": null,
+     "n_cells": 50
+    },
+    {
+     "tag": "tail",
+     "seed": 20261013,
+     "rho_mean": 0.6475304961204529,
+     "rho_per_rx": null,
+     "g2_spearman": null,
+     "n_cells": 50
+    },
+    {
+     "tag": "tail",
+     "seed": 20261014,
+     "rho_mean": 0.6568556427955627,
+     "rho_per_rx": null,
+     "g2_spearman": null,
+     "n_cells": 50
+    },
+    {
+     "tag": "tail",
+     "seed": 20261015,
+     "rho_mean": 0.6652715802192688,
+     "rho_per_rx": null,
+     "g2_spearman": null,
+     "n_cells": 50
+    },
+    {
+     "tag": "var",
+     "seed": 20261013,
+     "rho_mean": 0.5494235157966614,
+     "rho_per_rx": null,
+     "g2_spearman": null,
+     "n_cells": 50
+    },
+    {
+     "tag": "var",
+     "seed": 20261014,
+     "rho_mean": 0.5755970478057861,
+     "rho_per_rx": null,
+     "g2_spearman": null,
+     "n_cells": 50
+    },
+    {
+     "tag": "var",
+     "seed": 20261015,
+     "rho_mean": 0.5396978259086609,
+     "rho_per_rx": null,
+     "g2_spearman": null,
+     "n_cells": 50
+    }
+   ],
+   "g3_isotropic_expectation": 0.0703125,
+   "g1_pass": true
+  },
+  "1": {
+   "rows": [
+    {
+     "tag": "ce",
+     "seed": 20261013,
+     "rho_mean": 0.6121860146522522,
+     "rho_per_rx": null,
+     "g2_spearman": -0.049999999999999996,
+     "n_cells": 50
+    },
+    {
+     "tag": "ce",
+     "seed": 20261014,
+     "rho_mean": 0.6185555458068848,
+     "rho_per_rx": null,
+     "g2_spearman": -0.08333333333333334,
+     "n_cells": 50
+    },
+    {
+     "tag": "ce",
+     "seed": 20261015,
+     "rho_mean": 0.6190086007118225,
+     "rho_per_rx": null,
+     "g2_spearman": -0.09999999999999999,
+     "n_cells": 50
+    },
+    {
+     "tag": "drift",
+     "seed": 20261013,
+     "rho_mean": 0.5643681883811951,
+     "rho_per_rx": null,
+     "g2_spearman": null,
+     "n_cells": 50
+    },
+    {
+     "tag": "drift",
+     "seed": 20261014,
+     "rho_mean": 0.5460863709449768,
+     "rho_per_rx": null,
+     "g2_spearman": null,
+     "n_cells": 50
+    },
+    {
+     "tag": "drift",
+     "seed": 20261015,
+     "rho_mean": 0.5827853679656982,
+     "rho_per_rx": null,
+     "g2_spearman": null,
+     "n_cells": 50
+    },
+    {
+     "tag": "ls",
+     "seed": 20261013,
+     "rho_mean": 0.37440475821495056,
+     "rho_per_rx": null,
+     "g2_spearman": null,
+     "n_cells": 50
+    },
+    {
+     "tag": "ls",
+     "seed": 20261014,
+     "rho_mean": 0.39812591671943665,
+     "rho_per_rx": null,
+     "g2_spearman": null,
+     "n_cells": 50
+    },
+    {
+     "tag": "ls",
+     "seed": 20261015,
+     "rho_mean": 0.3954257667064667,
+     "rho_per_rx": null,
+     "g2_spearman": null,
+     "n_cells": 50
+    },
+    {
+     "tag": "margin",
+     "seed": 20261013,
+     "rho_mean": 0.6446293592453003,
+     "rho_per_rx": null,
+     "g2_spearman": null,
+     "n_cells": 50
+    },
+    {
+     "tag": "margin",
+     "seed": 20261014,
+     "rho_mean": 0.6773878335952759,
+     "rho_per_rx": null,
+     "g2_spearman": null,
+     "n_cells": 50
+    },
+    {
+     "tag": "margin",
+     "seed": 20261015,
+     "rho_mean": 0.6450567841529846,
+     "rho_per_rx": null,
+     "g2_spearman": null,
+     "n_cells": 50
+    },
+    {
+     "tag": "tail",
+     "seed": 20261013,
+     "rho_mean": 0.6123496890068054,
+     "rho_per_rx": null,
+     "g2_spearman": null,
+     "n_cells": 50
+    },
+    {
+     "tag": "tail",
+     "seed": 20261014,
+     "rho_mean": 0.623407244682312,
+     "rho_per_rx": null,
+     "g2_spearman": null,
+     "n_cells": 50
+    },
+    {
+     "tag": "tail",
+     "seed": 20261015,
+     "rho_mean": 0.6305843591690063,
+     "rho_per_rx": null,
+     "g2_spearman": null,
+     "n_cells": 50
+    },
+    {
+     "tag": "var",
+     "seed": 20261013,
+     "rho_mean": 0.583260715007782,
+     "rho_per_rx": null,
+     "g2_spearman": null,
+     "n_cells": 50
+    },
+    {
+     "tag": "var",
+     "seed": 20261014,
+     "rho_mean": 0.543608546257019,
+     "rho_per_rx": null,
+     "g2_spearman": null,
+     "n_cells": 50
+    },
+    {
+     "tag": "var",
+     "seed": 20261015,
+     "rho_mean": 0.5801443457603455,
+     "rho_per_rx": null,
+     "g2_spearman": null,
+     "n_cells": 50
+    }
+   ],
+   "g3_isotropic_expectation": 0.0703125,
+   "g1_pass": true
+  }
+ },
+ "g1_pass_both": true
+}
