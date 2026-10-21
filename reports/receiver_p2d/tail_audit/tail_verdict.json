@@ -1,0 +1,25 @@
+{
+ "n_checkpoints": 102,
+ "fold0": {
+  "n": 51,
+  "spear_kappa_acc": -0.5669487312922519,
+  "spear_pflip_acc": -0.9042242688469686,
+  "spear_q10_acc": 0.29073713772469617,
+  "spear_cantelli_acc": -0.5976288525961186,
+  "partial_q10_given_kappa": 0.11110282858111681,
+  "partial_kappa_given_q10": -0.5176158983036656,
+  "spear_cantelli_pflip_cells": 0.7423674808962459,
+  "cell_cantelli_pflip_spear": 0.7455545097251308
+ },
+ "fold1": {
+  "n": 51,
+  "spear_kappa_acc": -0.4643543972771555,
+  "spear_pflip_acc": -0.932576134666727,
+  "spear_q10_acc": 0.4733138760006867,
+  "spear_cantelli_acc": -0.6544944457432058,
+  "partial_q10_given_kappa": 0.35969231548160413,
+  "partial_kappa_given_q10": -0.3463420994190289,
+  "spear_cantelli_pflip_cells": 0.7248601374629655,
+  "cell_cantelli_pflip_spear": 0.7294625990224816
+ }
+}

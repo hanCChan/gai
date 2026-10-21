@@ -1,0 +1,11 @@
+{
+ "outcome": "STOP_TAIL",
+ "main_arm": null,
+ "winners": [],
+ "arms": [
+  "rxccp",
+  "rxccp_ls",
+  "rxgeo"
+ ],
+ "summary_path": "../../reports/receiver_p2d/eval_r1/summary_by_fold_arm.csv"
+}

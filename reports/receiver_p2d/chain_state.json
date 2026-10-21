@@ -1,0 +1,15 @@
+{
+ "rounds": [
+  {
+   "family": "r3",
+   "outcome": "STOP_TAIL",
+   "main_arm": null,
+   "arms": [
+    "rxcant",
+    "rxcant_ls"
+   ]
+  }
+ ],
+ "started": "2026-10-22T00:09:46",
+ "stop_reason": "STOP_TAIL on r3 and no further candidate registered (last=r3)"
+}

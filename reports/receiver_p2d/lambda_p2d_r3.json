@@ -1,0 +1,30 @@
+{
+ "0_rxcant": {
+  "lam": 1.0,
+  "val_CE": 0.28374120593070984,
+  "val_acc": 0.902,
+  "beats_ce_on_heldRX_CE": true,
+  "ce_val_CE": 0.2968253195285797
+ },
+ "0_rxcant_ls": {
+  "lam": 3.0,
+  "val_CE": 0.34712788462638855,
+  "val_acc": 0.906,
+  "beats_ce_on_heldRX_CE": false,
+  "ce_val_CE": 0.2968253195285797
+ },
+ "1_rxcant": {
+  "lam": 0.3,
+  "val_CE": 0.2446984052658081,
+  "val_acc": 0.908,
+  "beats_ce_on_heldRX_CE": true,
+  "ce_val_CE": 0.2846914529800415
+ },
+ "1_rxcant_ls": {
+  "lam": 1.0,
+  "val_CE": 0.3476113975048065,
+  "val_acc": 0.9155,
+  "beats_ce_on_heldRX_CE": false,
+  "ce_val_CE": 0.2846914529800415
+ }
+}

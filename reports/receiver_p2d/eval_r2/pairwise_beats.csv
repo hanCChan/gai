@@ -1,0 +1,17 @@
+x,y,beats,delta_pp,n_pos
+rxccp_soft,ce,True,"{'fold0': 0.99, 'fold1': 2.48}",5
+rxccp_soft,ls,True,"{'fold0': 0.71, 'fold1': 0.73}",5
+rxccp_soft,ccalign,False,"{'fold0': -1.24, 'fold1': -1.07}",1
+rxccp_soft,rxnull,False,"{'fold0': -1.54, 'fold1': -1.53}",0
+rxccp_soft,rxlogit,False,"{'fold0': -0.72, 'fold1': -1.28}",1
+rxccp_soft_ls,ce,False,"{'fold0': -0.74, 'fold1': 1.6}",3
+rxccp_soft_ls,ls,False,"{'fold0': -1.02, 'fold1': -0.15}",2
+rxccp_soft_ls,ccalign,False,"{'fold0': -2.98, 'fold1': -1.95}",0
+rxccp_soft_ls,rxnull,False,"{'fold0': -3.28, 'fold1': -2.41}",0
+rxccp_soft_ls,rxlogit,False,"{'fold0': -2.46, 'fold1': -2.16}",0
+rxnull,ce,True,"{'fold0': 2.53, 'fold1': 4.01}",6
+rxnull,ls,True,"{'fold0': 2.25, 'fold1': 2.26}",6
+rxlogit,ce,True,"{'fold0': 1.71, 'fold1': 3.76}",5
+rxlogit,ls,True,"{'fold0': 1.43, 'fold1': 2.01}",5
+ccalign,ce,True,"{'fold0': 2.24, 'fold1': 3.55}",6
+ccalign,ls,True,"{'fold0': 1.96, 'fold1': 1.8}",6

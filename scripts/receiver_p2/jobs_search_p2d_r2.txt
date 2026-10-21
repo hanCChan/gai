@@ -1,0 +1,12 @@
+--stage search --fold 0 --method rxccp_soft --lam 0.3 --seed 20261016
+--stage search --fold 0 --method rxccp_soft --lam 1 --seed 20261016
+--stage search --fold 0 --method rxccp_soft --lam 3 --seed 20261016
+--stage search --fold 0 --method rxccp_soft_ls --lam 0.3 --seed 20261016
+--stage search --fold 0 --method rxccp_soft_ls --lam 1 --seed 20261016
+--stage search --fold 0 --method rxccp_soft_ls --lam 3 --seed 20261016
+--stage search --fold 1 --method rxccp_soft --lam 0.3 --seed 20261016
+--stage search --fold 1 --method rxccp_soft --lam 1 --seed 20261016
+--stage search --fold 1 --method rxccp_soft --lam 3 --seed 20261016
+--stage search --fold 1 --method rxccp_soft_ls --lam 0.3 --seed 20261016
+--stage search --fold 1 --method rxccp_soft_ls --lam 1 --seed 20261016
+--stage search --fold 1 --method rxccp_soft_ls --lam 3 --seed 20261016

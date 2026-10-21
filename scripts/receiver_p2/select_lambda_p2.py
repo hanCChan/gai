@@ -42,7 +42,9 @@ def main():
     df = pd.concat([df, p1], ignore_index=True)
     # arm tag = method + lam with :g formatting; match the method prefix explicitly (methods
     # contain underscores and can end in 's', so regex letters-only extraction is ambiguous)
-    mtab = ('rxnull_ls', 'drift_ls', 'rxnull_rand', 'rxnull', 'rxlogit', 'ccalign', 'cmean', 'rxsel', 'ce', 'ls')
+    mtab = ('rxnull_rand', 'rxnull_ls', 'drift_ls', 'rxccp_soft_ls', 'rxccp_ls', 'rxcant_ls',
+            'rxgeo_ls', 'rxccp_soft', 'rxccp', 'rxcant', 'rxgeo',
+            'rxnull', 'rxlogit', 'ccalign', 'cmean', 'rxsel', 'ce', 'ls')
     def parse(arm):
         for m in mtab:
             if arm.startswith(m):

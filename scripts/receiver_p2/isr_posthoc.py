@@ -108,7 +108,9 @@ def main():
         Pn_isr, k_isr = isr_basis(hsrc, src['y'], src['rx'])
         Pn_nf, k_nf = isr_basis(hsrc, src['y'], src['rx'], norm_frac=0.10)
         frozen = model.classifier(torch.as_tensor(hout).float().to(device)).detach().cpu().numpy()
-        for tag, Pn, cut in (('frozen_head', np.eye(hsrc.shape[1]), 0), ('isr', Pn_isr, k_isr),
+        for tag, Pn, cut in (('frozen_head', np.eye(hsrc.shape[1]), 0),
+                             ('refit', np.eye(hsrc.shape[1]), 0),
+                             ('isr', Pn_isr, k_isr),
                              ('isr_normfilt', Pn_nf, k_nf)):
             hs = torch.as_tensor(hsrc @ Pn).float().to(device)
             ho = torch.as_tensor(hout @ Pn).float().to(device)
@@ -116,12 +118,16 @@ def main():
             if tag == 'frozen_head':
                 head = model.classifier
             else:
+                # P2D fix: refit arms (refit/isr/isr_normfilt) all use the SAME refit recipe
+                # (fresh head, fixed seed BEFORE instantiation, CE + L2=1e-4 per REFIT),
+                # so the ISR projection is the only difference between them.
+                torch.manual_seed(C.REFIT['seed'])
                 head = torch.nn.Linear(hsrc.shape[1], 10).to(device)
                 opt = torch.optim.Adam(head.parameters(), lr=C.REFIT['lr'])
-                torch.manual_seed(C.REFIT['seed'])
                 for _ in range(C.REFIT['steps']):
                     opt.zero_grad()
                     loss = F.cross_entropy(head(hs), y)
+                    loss = loss + C.REFIT['l2'] * sum((p ** 2).sum() for n, p in head.named_parameters() if 'weight' in n)
                     loss.backward()
                     opt.step()
                 head.eval()

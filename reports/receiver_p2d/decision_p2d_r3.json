@@ -1,0 +1,10 @@
+{
+ "outcome": "STOP_TAIL",
+ "main_arm": null,
+ "winners": [],
+ "arms": [
+  "rxcant",
+  "rxcant_ls"
+ ],
+ "summary_path": "/workspace/rl1/gai/reports/receiver_p2d/eval_r3/summary_by_fold_arm.csv"
+}

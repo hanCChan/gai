@@ -1,0 +1,17 @@
+run_id,fold,arm,stage,val_CE,val_acc,epoch,method,lam
+shen_rank16_CV0_ce0_Rq_search_seed20261016,0,ce0,search,0.2968253195285797,0.8935,17,ce,0.0
+shen_rank16_CV0_ls0_Rq_search_seed20261016,0,ls0,search,0.3720695674419403,0.885,16,ls,0.0
+shen_rank16_CV0_rxccp_soft0.3_Rq_search_seed20261016,0,rxccp_soft0.3,search,0.32377636432647705,0.8895,14,rxccp_soft,0.3
+shen_rank16_CV0_rxccp_soft1_Rq_search_seed20261016,0,rxccp_soft1,search,0.35022228956222534,0.8775,15,rxccp_soft,1.0
+shen_rank16_CV0_rxccp_soft3_Rq_search_seed20261016,0,rxccp_soft3,search,0.31557372212409973,0.8965,18,rxccp_soft,3.0
+shen_rank16_CV0_rxccp_soft_ls0.3_Rq_search_seed20261016,0,rxccp_soft_ls0.3,search,0.3449040651321411,0.8915,19,rxccp_soft_ls,0.3
+shen_rank16_CV0_rxccp_soft_ls1_Rq_search_seed20261016,0,rxccp_soft_ls1,search,0.34604358673095703,0.891,16,rxccp_soft_ls,1.0
+shen_rank16_CV0_rxccp_soft_ls3_Rq_search_seed20261016,0,rxccp_soft_ls3,search,0.3663581609725952,0.866,19,rxccp_soft_ls,3.0
+shen_rank16_CV1_ce0_Rq_search_seed20261016,1,ce0,search,0.2846914529800415,0.912,13,ce,0.0
+shen_rank16_CV1_ls0_Rq_search_seed20261016,1,ls0,search,0.3342532813549042,0.9155,18,ls,0.0
+shen_rank16_CV1_rxccp_soft0.3_Rq_search_seed20261016,1,rxccp_soft0.3,search,0.4327230751514435,0.8075,11,rxccp_soft,0.3
+shen_rank16_CV1_rxccp_soft1_Rq_search_seed20261016,1,rxccp_soft1,search,0.32293832302093506,0.867,18,rxccp_soft,1.0
+shen_rank16_CV1_rxccp_soft3_Rq_search_seed20261016,1,rxccp_soft3,search,0.2569577693939209,0.905,20,rxccp_soft,3.0
+shen_rank16_CV1_rxccp_soft_ls0.3_Rq_search_seed20261016,1,rxccp_soft_ls0.3,search,0.35325926542282104,0.8925,14,rxccp_soft_ls,0.3
+shen_rank16_CV1_rxccp_soft_ls1_Rq_search_seed20261016,1,rxccp_soft_ls1,search,0.4022195339202881,0.8385,16,rxccp_soft_ls,1.0
+shen_rank16_CV1_rxccp_soft_ls3_Rq_search_seed20261016,1,rxccp_soft_ls3,search,0.47714513540267944,0.768,12,rxccp_soft_ls,3.0

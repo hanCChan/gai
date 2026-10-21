@@ -3,6 +3,7 @@
 
 methods: rxnull (B1) | cmean (B2) | rxsel (B3, Rq set) | rxnull_ls (B4) | drift_ls (B5)
          | rxnull_rand (control, lambda from rxnull's search) | rxlogit, ccalign (P2B amendment)
+         | rxccp, rxccp_ls, rxgeo, rxgeo_ls (P2D: worst-source-shift margin robustness)
 stages:  search  train inner_train RX (first160), select on inner_validation RX, set Rq_inner
          formal  train all 5 source RX (first160), checkpoint by last-40 receiver-equal val CE,
                  set --set (Rq)
@@ -28,6 +29,7 @@ HERE = Path(__file__).resolve().parent
 sys.path[:0] = [str(HERE), str(HERE.parent / 'receiver_p0')]
 import p0_common as C   # noqa: E402
 import p2_losses as L   # noqa: E402
+import p2d_losses as PD   # noqa: E402
 
 C.add_root()
 
@@ -42,7 +44,9 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--stage', choices=['search', 'formal'], required=True)
     ap.add_argument('--fold', type=int, required=True)
-    ap.add_argument('--method', choices=['rxnull', 'cmean', 'rxsel', 'rxnull_ls', 'drift_ls', 'rxnull_rand', 'rxlogit', 'ccalign'], required=True)
+    ap.add_argument('--method', choices=['rxnull', 'cmean', 'rxsel', 'rxnull_ls', 'drift_ls', 'rxnull_rand', 'rxlogit', 'ccalign',
+                                          'rxccp', 'rxccp_ls', 'rxgeo', 'rxgeo_ls', 'rxccp_soft', 'rxccp_soft_ls',
+                                          'rxcant', 'rxcant_ls'], required=True)
     ap.add_argument('--lam', type=float, default=0.)
     ap.add_argument('--seed', type=int, required=True)
     ap.add_argument('--set', default='Rq', choices=['Rq'])
@@ -97,9 +101,9 @@ def main():
     def pre_head(xb):
         return F.relu(model.tx_input(feat512(xb)))
 
-    is_ls = a.method in ('rxnull_ls', 'drift_ls')
+    is_ls = a.method in ('rxnull_ls', 'drift_ls', 'rxccp_ls', 'rxgeo_ls', 'rxccp_soft_ls', 'rxcant_ls')
 
-    def aux_term(pre, W, yb, rb, bi):
+    def aux_term(pre, W, yb, rb, bi, logits):
         if a.method in ('rxnull', 'rxnull_ls'):
             return L.rxnull(pre, W, yb, rb)
         if a.method == 'cmean':
@@ -112,6 +116,14 @@ def main():
             return L.ccalign(pre, yb, rb)
         if a.method == 'rxnull_rand':
             return L.rxnull_rand(pre, W, yb, rb, seed=(a.seed * 100003 + bi))
+        if a.method in ('rxccp', 'rxccp_ls'):
+            return PD.rxccp(logits, pre, W, yb, rb)
+        if a.method in ('rxgeo', 'rxgeo_ls'):
+            return PD.rxgeo(logits, pre, W, yb, rb)
+        if a.method in ('rxccp_soft', 'rxccp_soft_ls'):
+            return PD.rxccp_soft(logits, pre, W, yb, rb)
+        if a.method in ('rxcant', 'rxcant_ls'):
+            return PD.rxcant(logits, pre, W, yb, rb)
         return L.drift_v0(pre, W, yb, rb, P, a.gamma_drift)   # drift_ls
 
     params = list(model.parameters())
@@ -133,14 +145,16 @@ def main():
             pre = pre_head(xb)
             logits = model.classifier(pre)
             ce = F.cross_entropy(logits, yb, label_smoothing=0.1) if is_ls else F.cross_entropy(logits, yb)
-            aux = a.lam * aux_term(pre, W, yb, rb, bi)
+            aux = a.lam * aux_term(pre, W, yb, rb, bi, logits)
             loss = ce + aux
             assert torch.isfinite(loss)
             if bi == 0:
                 Wd = W.detach()
+                tr = PD.tailrisk(logits.detach(), yb, rb)
                 diag = dict(epoch=epoch + 1, ce=float(ce), aux=float(aux),
                             g_ce=gnorm(ce), g_aux=gnorm(aux),
-                            rho_row=float(L.rxnull(pre.detach(), Wd, yb, rb)))
+                            rho_row=float(L.rxnull(pre.detach(), Wd, yb, rb)),
+                            tailrisk=float(tr) if tr is not None else float('nan'))
             loss.backward()
             torch.nn.utils.clip_grad_norm_(model.parameters(), 5., error_if_nonfinite=True)
             opt.step()

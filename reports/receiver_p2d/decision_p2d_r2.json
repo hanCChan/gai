@@ -1,0 +1,17 @@
+{
+ "outcome": "ITERATE",
+ "main_arm": "rxccp_soft",
+ "winners": [
+  {
+   "arm": "rxccp_soft",
+   "beats_ce": true,
+   "beats_ls": true,
+   "beats_ccalign": false
+  }
+ ],
+ "arms": [
+  "rxccp_soft",
+  "rxccp_soft_ls"
+ ],
+ "summary_path": "/workspace/rl1/gai/reports/receiver_p2d/eval_r2/summary_by_fold_arm.csv"
+}

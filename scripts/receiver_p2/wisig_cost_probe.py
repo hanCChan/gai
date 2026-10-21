@@ -7,11 +7,14 @@ the formal budget can be stated before requesting approval.
 """
 import argparse
 import json
+import os
 import sys
 import time
 from pathlib import Path
 
 import numpy as np
+
+os.environ.setdefault('CUBLAS_WORKSPACE_CONFIG', ':4096:8')
 
 HERE = Path(__file__).resolve().parent
 sys.path[:0] = [str(HERE), str(HERE.parent / 'receiver_p0')]
@@ -34,8 +37,15 @@ def main():
     a = ap.parse_args()
     reg = C.registration()
     device = torch.device('cuda:0')
-    train = load_wisig(reg, reg['wisig_inner_train'], [0, 1], [0, 120])
-    val = load_wisig(reg, reg['wisig_inner_train'], [0, 1], [120, 160])
+    # P2D fix 3: the shared wisig() loader does NOT filter encoder TX; W0 convention (and
+    # the protocol) trains on TX 0-7 only. Filter here so the 8-class head matches labels.
+    train_all = load_wisig(reg, reg['wisig_inner_train'], [0, 1], [0, 120])
+    keep = train_all['y'] < 8
+    train = {k: v[keep] for k, v in train_all.items() if k != 'stats'}
+    val_all = load_wisig(reg, reg['wisig_inner_train'], [0, 1], [120, 160])
+    keepv = val_all['y'] < 8
+    val = {k: v[keepv] for k, v in val_all.items() if k != 'stats'}
+    assert not np.any(train['y'] >= 8) and not np.any(val['y'] >= 8)
     schedule = balanced_schedule(groups(train), a.epochs, reg['search_seed'])
     x = torch.as_tensor(train['x'], device=device)
     y = torch.as_tensor(train['y'], device=device)
@@ -49,7 +59,9 @@ def main():
         torch.manual_seed(reg['search_seed'])
         torch.cuda.manual_seed_all(reg['search_seed'])
         torch.use_deterministic_algorithms(True)
-        model = OfficialCNN(10).to(device)
+        # P2D fix 1: 8-class head to match the W0 convention (OfficialCNN() default) and the
+        # protocol's TX0-7 training task - the 10-class head added two never-trained rows.
+        model = OfficialCNN().to(device)
         res['params'] = int(sum(p.numel() for p in model.parameters()))
         opt = torch.optim.Adam(model.parameters(), lr=5e-4, eps=1e-7)
         ep = []
@@ -64,7 +76,8 @@ def main():
                 ce = F.cross_entropy(logits, y[ix])
                 if method == 'rxlogit':
                     W = model.head.weight
-                    loss = ce + L.rxlogit(h, W, y[ix], rx[ix])
+                    # P2D fix 2: same base regularizer as the CE arm in BOTH branches
+                    loss = ce + model.regularization() + L.rxlogit(h, W, y[ix], rx[ix])
                 else:
                     loss = ce + model.regularization()
                 loss.backward()
@@ -76,10 +89,13 @@ def main():
             with torch.no_grad():
                 for r in torch.unique(vrx):
                     m = vrx == r
-                    vce.append(metrics(predict(model, vx[m]), vy[m])['CE'])
+                    lg = predict(model, vx[m]).cpu()
+                    # receiver-equal CE; direct cross_entropy (metrics() assumes 10 classes)
+                    vce.append(float(F.cross_entropy(lg, vy[m].cpu())))
             ep.append(time.perf_counter() - t0)
             print(method, 'epoch', epoch + 1, 'sec=%.1f' % ep[-1], 'val_CE=%.4f' % float(np.mean(vce)), flush=True)
-        res['runs'][method] = dict(sec_per_epoch=ep, mean_sec_per_epoch=float(np.mean(ep[1:])))
+        res['runs'][method] = dict(sec_per_epoch=ep,
+                                    mean_sec_per_epoch=float(np.mean(ep[1:])) if len(ep) > 1 else float(ep[0]))
     out = Path(a.out)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(res, indent=1))
