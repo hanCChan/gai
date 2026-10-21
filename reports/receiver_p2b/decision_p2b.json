@@ -1,0 +1,11 @@
+{
+ "rule": "R1",
+ "main_objective": "rxlogit",
+ "beats_ccalign": {
+  "rxlogit": false
+ },
+ "boundary_limited_lam": [
+  "0_rxlogit",
+  "0_ccalign"
+ ]
+}

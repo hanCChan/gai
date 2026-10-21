@@ -1,0 +1,11 @@
+x,y,beats,delta_pp,n_pos
+rxlogit,ce,True,"{'fold0': 1.71, 'fold1': 3.76}",5
+rxlogit,ls,True,"{'fold0': 1.43, 'fold1': 2.01}",5
+rxnull,rxlogit,False,"{'fold0': 0.82, 'fold1': 0.25}",4
+rxlogit,rxnull,False,"{'fold0': -0.82, 'fold1': -0.25}",2
+rxlogit,ccalign,False,"{'fold0': -0.52, 'fold1': 0.21}",3
+rxnull,ccalign,False,"{'fold0': 0.3, 'fold1': 0.46}",3
+ccalign,ce,True,"{'fold0': 2.24, 'fold1': 3.55}",6
+ccalign,ls,True,"{'fold0': 1.96, 'fold1': 1.8}",6
+rxnull,ce,True,"{'fold0': 2.53, 'fold1': 4.01}",6
+rxnull,ls,True,"{'fold0': 2.25, 'fold1': 2.26}",6

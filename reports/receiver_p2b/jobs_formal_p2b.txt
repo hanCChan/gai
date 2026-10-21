@@ -1,0 +1,12 @@
+--stage formal --fold 0 --method rxlogit --lam 3 --seed 20261013
+--stage formal --fold 0 --method ccalign --lam 3 --seed 20261013
+--stage formal --fold 0 --method rxlogit --lam 3 --seed 20261014
+--stage formal --fold 0 --method ccalign --lam 3 --seed 20261014
+--stage formal --fold 0 --method rxlogit --lam 3 --seed 20261015
+--stage formal --fold 0 --method ccalign --lam 3 --seed 20261015
+--stage formal --fold 1 --method rxlogit --lam 1 --seed 20261013
+--stage formal --fold 1 --method ccalign --lam 1 --seed 20261013
+--stage formal --fold 1 --method rxlogit --lam 1 --seed 20261014
+--stage formal --fold 1 --method ccalign --lam 1 --seed 20261014
+--stage formal --fold 1 --method rxlogit --lam 1 --seed 20261015
+--stage formal --fold 1 --method ccalign --lam 1 --seed 20261015

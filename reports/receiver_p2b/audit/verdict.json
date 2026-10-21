@@ -1,0 +1,13 @@
+{
+ "G1_kappa_down": true,
+ "G2_nrow_down": true,
+ "G3_share_row": {
+  "0": 0.462850148488429,
+  "1": 0.3175727851760403
+ },
+ "G3": false,
+ "G4_rank_identity": true,
+ "G5_reparam_correct": true,
+ "kappa_xcheck_max": 2.765787320067461e-07,
+ "decision": "MODIFY_OBJECTIVE"
+}
