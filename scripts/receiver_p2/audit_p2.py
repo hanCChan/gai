@@ -33,7 +33,7 @@ def model_list():
         if j['method'] == 'ce':
             C.load_model(j['ckpt'])   # hash guard
             runs.append(dict(arm='ce', fold=j['fold'], seed=j['seed'], path=Path(j['ckpt']) / 'selected.pt', src='R0R1'))
-    for phase in ('receiver_p1', 'receiver_p2'):
+    for phase in ('receiver_p1', 'receiver_p2', 'receiver_p2b'):
         for d in sorted((GAI / 'outputs' / phase / 'formal').glob('shen_rank16_CV*_formal_seed*')):
             if not (d / 'status.json').exists():
                 continue

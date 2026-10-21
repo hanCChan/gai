@@ -36,6 +36,8 @@ def main():
     ap.add_argument('--jobs', required=True)
     ap.add_argument('--sets', required=True)
     ap.add_argument('--out', required=True)
+    ap.add_argument('--extra-formal', nargs='*', default=[])   # earlier-phase checkpoint dirs
+    ap.add_argument('--extra-methods', default='')             # methods to take from them
     a = ap.parse_args()
     out = Path(a.out)
     out.mkdir(parents=True, exist_ok=True)
@@ -53,6 +55,13 @@ def main():
         n_jobs += 1
     expected = sum(1 for l in Path(a.jobs).read_text().splitlines() if l.strip() and not l.startswith('#'))
     assert n_jobs == expected, (n_jobs, expected)
+    keep = set(filter(None, a.extra_methods.split(',')))
+    for ed in a.extra_formal:   # no count assertion: already-evaluated phases, filtered by method
+        for d in sorted(Path(ed).glob('shen_rank16_CV*_formal_seed*')):
+            j = torch.load(d / 'selected.pt', map_location='cpu', weights_only=False)['job']
+            if j['method'] in keep:
+                runs.append(dict(path=d / 'selected.pt', fold=j['fold'], method=j['method'], lam=j['lam'],
+                                 seed=j['seed']))
     for j in C.jobs('shen'):   # frozen R0/R1 ce anchors (hash-guarded)
         if j['method'] == 'ce':
             C.load_model(j['ckpt'])

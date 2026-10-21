@@ -2,7 +2,7 @@
 """P2 trainer: R0/R1 Shen recipe verbatim + RX-exposure auxiliary loss (PROTOCOL_P2 §1).
 
 methods: rxnull (B1) | cmean (B2) | rxsel (B3, Rq set) | rxnull_ls (B4) | drift_ls (B5)
-         | rxnull_rand (control, lambda from rxnull's search)
+         | rxnull_rand (control, lambda from rxnull's search) | rxlogit, ccalign (P2B amendment)
 stages:  search  train inner_train RX (first160), select on inner_validation RX, set Rq_inner
          formal  train all 5 source RX (first160), checkpoint by last-40 receiver-equal val CE,
                  set --set (Rq)
@@ -42,7 +42,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--stage', choices=['search', 'formal'], required=True)
     ap.add_argument('--fold', type=int, required=True)
-    ap.add_argument('--method', choices=['rxnull', 'cmean', 'rxsel', 'rxnull_ls', 'drift_ls', 'rxnull_rand'], required=True)
+    ap.add_argument('--method', choices=['rxnull', 'cmean', 'rxsel', 'rxnull_ls', 'drift_ls', 'rxnull_rand', 'rxlogit', 'ccalign'], required=True)
     ap.add_argument('--lam', type=float, default=0.)
     ap.add_argument('--seed', type=int, required=True)
     ap.add_argument('--set', default='Rq', choices=['Rq'])
@@ -106,6 +106,10 @@ def main():
             return L.cmean(pre, W, yb, rb)
         if a.method == 'rxsel':
             return L.rxnull9(pre, W, yb, rb, P)
+        if a.method == 'rxlogit':
+            return L.rxlogit(pre, W, yb, rb)
+        if a.method == 'ccalign':
+            return L.ccalign(pre, yb, rb)
         if a.method == 'rxnull_rand':
             return L.rxnull_rand(pre, W, yb, rb, seed=(a.seed * 100003 + bi))
         return L.drift_v0(pre, W, yb, rb, P, a.gamma_drift)   # drift_ls

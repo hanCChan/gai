@@ -32,13 +32,17 @@ def main():
     ap.add_argument('--search', required=True)
     ap.add_argument('--p1search', required=True)
     ap.add_argument('--out', required=True)
+    ap.add_argument('--methods', default=','.join(METHODS))
+    ap.add_argument('--tag', default='p2')          # p2 keeps the original file names
+    ap.add_argument('--rand', type=int, default=1)  # add the rxnull_rand control jobs
     a = ap.parse_args()
+    methods = tuple(a.methods.split(','))
     df = rows_of(a.search)
     p1 = rows_of(a.p1search)
     df = pd.concat([df, p1], ignore_index=True)
     # arm tag = method + lam with :g formatting; match the method prefix explicitly (methods
     # contain underscores and can end in 's', so regex letters-only extraction is ambiguous)
-    mtab = ('rxnull_ls', 'drift_ls', 'rxnull', 'cmean', 'rxsel', 'ce', 'ls')
+    mtab = ('rxnull_ls', 'drift_ls', 'rxnull_rand', 'rxnull', 'rxlogit', 'ccalign', 'cmean', 'rxsel', 'ce', 'ls')
     def parse(arm):
         for m in mtab:
             if arm.startswith(m):
@@ -54,7 +58,7 @@ def main():
     sel = {}
     for fold in (0, 1):
         ce = df[(df.fold == fold) & (df.method == 'ce')].val_CE.iloc[0]
-        for m in METHODS:
+        for m in methods:
             d = df[(df.fold == fold) & (df.method == m)].sort_values(['val_CE', 'lam'])
             best = d.iloc[0]
             sel[f'{fold}_{m}'] = dict(lam=float(best.lam), val_CE=float(best.val_CE),
@@ -63,13 +67,15 @@ def main():
     jobs = []
     for fold in (0, 1):
         for s in SEEDS:
-            for m in METHODS:
+            for m in methods:
                 jobs.append(f'--stage formal --fold {fold} --method {m} --lam {sel[f"{fold}_{m}"]["lam"]:g} --seed {s}')
-            jobs.append(f'--stage formal --fold {fold} --method rxnull_rand --lam {sel[f"{fold}_rxnull"]["lam"]:g} --seed {s}')
+            if a.rand:
+                jobs.append(f'--stage formal --fold {fold} --method rxnull_rand --lam {sel[f"{fold}_rxnull"]["lam"]:g} --seed {s}')
     out = Path(a.out)
-    (out / 'lambda_p2.json').write_text(json.dumps(sel, indent=1))
-    (out / 'jobs_formal.txt').write_text('\n'.join(jobs) + '\n')
-    df.to_csv(out / 'search_table.csv', index=False)
+    sfx = '' if a.tag == 'p2' else f'_{a.tag}'
+    (out / f'lambda_{a.tag}.json').write_text(json.dumps(sel, indent=1))
+    (out / f'jobs_formal{sfx}.txt').write_text('\n'.join(jobs) + '\n')
+    df.to_csv(out / f'search_table{sfx}.csv', index=False)
     print(df[['fold', 'method', 'lam', 'val_CE', 'val_acc', 'epoch']].to_string(index=False))
     print(json.dumps(sel, indent=1))
     print(len(jobs), 'formal jobs')

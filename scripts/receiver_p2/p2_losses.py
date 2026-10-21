@@ -125,6 +125,47 @@ def rxnull_rand(pre, W, y, rb, seed, eps=1e-4):
     return rho.mean()
 
 
+def cell_grid(pre, y, rb):
+    """mu (T, R, d) over classes present on every RX of the batch (balanced batches: all 10)."""
+    rxs = torch.unique(rb)
+    rows = []
+    for t in torch.unique(y):
+        cells = []
+        for r in rxs:
+            m = (y == t) & (rb == r)
+            if not bool(m.any()):
+                break
+            cells.append(pre[m].mean(0))
+        if len(cells) == len(rxs):
+            rows.append(torch.stack(cells))
+    return torch.stack(rows) if rows else None
+
+
+def rxlogit(pre, W, y, rb, eps=1e-6):
+    """P2B (fix fixed in P2A): batch kappa = mean_{t,r}||A D_{t,r}||^2 / (mean_t ||A C_t||^2 + eps).
+    Function level: invariant to h -> P_row h + s P_null h and to scaling W or h."""
+    mu = cell_grid(pre, y, rb)
+    if mu is None or mu.shape[1] < 2:
+        return pre.sum() * 0.
+    A = centered_rows(W)
+    mu_t = mu.mean(1)
+    AD = (mu - mu_t[:, None]) @ A.T
+    AC = (mu_t - mu_t.mean(0, keepdim=True)) @ A.T
+    return AD.pow(2).sum(-1).mean() / (AC.pow(2).sum(-1).mean() + eps)
+
+
+def ccalign(pre, y, rb, eps=1e-6):
+    """P2B control (CIDG-style first-moment class-conditional alignment, scale-normalized):
+    mean_{t,r}||D_{t,r}||^2 / (mean_t ||C_t||^2 + eps) in the full feature space (no classifier)."""
+    mu = cell_grid(pre, y, rb)
+    if mu is None or mu.shape[1] < 2:
+        return pre.sum() * 0.
+    mu_t = mu.mean(1)
+    D = mu - mu_t[:, None]
+    Cc = mu_t - mu_t.mean(0, keepdim=True)
+    return D.pow(2).sum(-1).mean() / (Cc.pow(2).sum(-1).mean() + eps)
+
+
 def drift_v0(pre, W, y, rb, P, gamma):
     """P0 drift verbatim (imported here to keep the P2 trainer single-tree; bitwise same as p1)."""
     base = {}
