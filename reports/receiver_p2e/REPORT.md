@@ -1,161 +1,183 @@
-# P2E: where unseen-receiver errors come from, and a receiver-calibrated test of the answer — 2026-10-22
+# P2E: why cross-receiver methods keep plateauing — a two-dataset, label-free analysis — 2026-10-22
 
-Base: `experiment/p2-rx-null` @ 23dbc03. Shen Strict CIS, the 10 registered RX only (no sealed data).
-Errata for P2D: `ERRATA_P2D.md`. All P2E fits use `train_p2e.py`, which reproduces the registered
-R0/R1 CE checkpoints **bitwise (6/6)**, so every P2E arm differs from CE only by its own term.
+Base: `experiment/p2-rx-null` @ c68798b. Datasets: Shen (10 registered RX) and WiSig (14 source RX,
+10 internal RX for diagnosis only; final 8 RX, date 2/3 and the equalised variant never read).
+`train_p2e.py` reproduces the registered R0/R1 CE checkpoints bitwise (6/6).
+**Read with**: `ERRATA_P2E.md` (independent code audit; it corrects several statements of the first
+version of this report, most importantly A1) and `ERRATA_P2D.md`.
 
 ## 0. Summary
 
-1. **Two failure types, not one (257 checkpoints, inference only).** On unseen RX, every method's error
-   splits into (a) *noisy RTL receivers* (rtl_1/2/3/5): features are degraded. A linear head refit on the
-   target RX's own labels gains only 1.3–2.3 pp for every arm, so neither alignment nor a better head can
-   help. (b) *USRP/Pluto*: features stay separable (oracle head 94–96) but class means shift. For
-   ccalign 9.6 pp is recoverable, and 91% of that is recoverable using only the source-RX shift span.
-   Mean-alignment methods (ccalign, rxnull, rxlogit) act only on (b).
-2. **The input explains the split.** Between-class CIS variance is identical on all 10 RX (0.0022–0.0024);
-   within-class variance varies 3.3× (USRP/Pluto 0.0064 → rtl_5 0.0213), concentrated in the in-band rows.
-   Unseen-RX TX-independent input offsets lie largely in the ≤4-dim span of source offsets
-   (coverage 0.49–0.98 vs ~0.001 for random subspaces of equal dimension).
-3. **Counterfactual fidelity (no training).** Transplanting the source-estimated noise profile onto clean
-   source packets reproduces the noisy receivers' accuracy drops (source-only corr 0.82). Transplanting
-   the TX-independent signature does not (it over-damages clean RX by 6–14 pp). Only the noise model is
-   valid as a training counterfactual.
-4. **Pre-registered chain E1–E4 → STOP.** Receiver-calibrated noise beats CE on the noisy RX in 10/10 paired
-   runs (+3.1/+4.2 pp), beats the isotropic-noise control (9/10 noisy, 8/10 overall), and raises the
-   noisy-RX oracle ceiling 83.6 → 87.6, i.e. the encoder extracts more information. It costs 1.6–3.9 pp
-   on clean RX, so overall it does not beat ccalign. Signature extrapolation does nothing beyond its
-   random-direction control.
-5. **Source-only evidence is weak in this setting.** Single-held-RX selection (used in P2–P2D) is
-   anti-correlated with outer accuracy in fold 1 (ρ = −0.17). Nested LORO over all 5 source RX ranks the
-   8 arms at ρ = 0.43 / −0.10 against outer. Pluto as a held source RX is not predicted by any source
-   statistic.
-6. **E6 (registered after E4)** tests one hypothesis from (4): the clean-RX cost comes from training CE on
-   noisy inputs, not from noise invariance. See §5.
+1. **Method search on Shen: STOP (E1–E4 and E6, 400 fits).** No arm beats class-conditional alignment
+   (ccalign) under the pre-registered rule (5 seeds, 8/10 paired, both folds).
+   - Calibrated input noise improves the noisy RTL receivers (+3.1/+4.2 pp vs ce, 10/10) and nothing
+     else.
+   - E6 tested whether its clean-RX cost came from training CE on noisy inputs. Making it a
+     consistency term instead (CE on clean packets) kept the noisy-RX gain and made the clean-RX cost
+     larger, so the hypothesis is refuted.
+2. **Corrected error decomposition (label never used at test).** On both datasets, the part of
+   unseen-receiver error that can be removed without changing the features is a class-conditional
+   mean shift. It is removed by re-estimating class means in a Gaussian (LDA) head:
+   - WiSig: LDA with source means 53.1% → LDA with target class means 88.4% (oracle head 94.2%).
+   - Shen USRP/Pluto: 86.6 → 94.7 for ccalign.
+   - Shen noisy RTL: +0.4 pp only. That error is information loss (oracle head 85.8), not shift.
+3. **What generalises and what does not.**
+   - General (both datasets): the shift direction lies mostly in the per-class span of source-RX shifts
+     (share of the recoverable gain: WiSig 0.66–0.80 vs 0.18–0.41 for random spans of equal dimension;
+     Shen USRP/Pluto 0.80–0.98 vs 0.16–0.53).
+   - General: the coefficients inside that span are class-specific. A single receiver vector shared by
+     all classes (eigen-receiver) recovers little (WiSig 53 → 56–58).
+   - **Shen-only**: the noise floor. WiSig raw-IQ within-class variance is identical across receivers
+     (CV 0.00). The calibrated-noise mechanism is therefore dataset-specific and is not a general method.
+4. **Why target-free methods keep plateauing.** The unseen receiver moves each class mean by an amount
+   that is class-specific, unknown, and not predictable from 4–14 source receivers.
+   - Without target labels the shift is not identifiable: unlabeled EM, eigen-receiver EM and centring
+     all fail on WiSig (≤ +1.4 pp, often negative), and help only ~2 pp on Shen.
+   - The only target-free lever left is invariance (shrinking the shift span), and that span overlaps
+     the identity directions. ccalign sits at that trade-off; every further invariance term (noise,
+     consistency, null-space, margins) paid for itself with identity (§4).
+5. **What works on both datasets: a few labelled packets per transmitter at the new receiver.**
+   - WiSig official CNN: 1 / 5 / 10 shots → 67.8 / 82.0 / 85.1 % (raw 53.5).
+   - Shen ccalign: 87.0 → 88.6 / 89.8 / 90.1.
+   - Done with source covariance + target class prototypes. Source-span priors add ≤ 1.3 pp at 1 shot
+     and nothing beyond. Head fine-tuning is worse than prototypes.
 
-## 1. Error composition (`audit/`, `audit_p2e/`; `p2e_audit.py`)
+## 1. Method search (Shen)
 
-For each checkpoint × unseen RX, accuracy with the frozen head after successive corrections of the target
-features (statistics from the target RX, accuracy on the odd half of each class):
-`ca` label-free RX centering; `cc` oracle class-mean fix; `ccproj` the same restricted to the source
-shift span; `ccrand` random span of equal dimension; `oracle` linear head refit on the target's even half.
-`cc` uses labels per class and also re-expands noise-compressed class means, so it can exceed `oracle`;
-read it as "first moment removed", not as an attainable bound.
+Chain `run_p2e_chain.py`, rules fixed in its docstring before any fit; nested leave-one-source-RX-out
+(LORO) selection with epochs chosen on fitting-RX val packets; 5 seeds; 280 (E1–E4) + 120 (E6) fits.
 
-Formal checkpoints, outer RX, grouped by input noise (acc ×100):
+Outer RX, acc ×100 (fold 0 / fold 1); noisy = rtl_1/2/3/5:
 
-| group | arm | raw | ca | cc | ccproj share of cc gain | oracle | oracle − raw |
-|---|---|---:|---:|---:|---:|---:|---:|
-| noisy RTL | ce | 81.1 | 81.3 | 89.1 | 0.71 | 83.4 | 2.3 |
-| | ccalign | 84.0 | 84.1 | 90.2 | 0.79 | 85.6 | **1.5** |
-| | rxnull | 83.9 | 84.0 | 90.7 | 0.41 | 85.3 | 1.4 |
-| USRP/Pluto | ce | 84.0 | 88.1 | 95.7 | 0.84 | 94.4 | 10.4 |
-| | ccalign | 86.1 | 90.3 | 95.7 | **0.91** | 95.7 | **9.6** |
-| | rxnull | 86.4 | 89.6 | 97.3 | 0.74 | 96.1 | 9.7 |
-| clean RTL | ccalign | 91.4 | 91.7 | 95.0 | 0.96 | 94.4 | 3.1 |
-
-Random-span control recovers 0.17–0.56 of the cc gain, versus 0.41–0.96 for the source span.
-Truly held source RX (search checkpoints, 4 fitting RX): rtl_6 raw 86.8 / oracle 90.7;
-Pluto raw 85.0 / oracle 90.5. For held Pluto, `ccproj` *lowers* accuracy (83.1): with one USRP-type
-fitting receiver the source span does not cover it.
-
-## 2. Input physics (`rx_physics.py`)
-
-- Strict CIS = log10 |S(f,n+1)/S(f,n)|² over adjacent STFT frames. A receiver's LTI response cancels,
-  so what is left is additive packet-level fluctuation and non-LTI log-domain patterns. The torch port
-  reproduces the cache to 5e-6.
-- Per RX: between-class variance 0.0022–0.0024 everywhere; within-class variance b200mini .0064,
-  b210 .0066, pluto .0064, rtl_9 .0073, rtl_6/7 .0077, rtl_1 .0110, rtl_2 .0160, rtl_3 .0180, rtl_5 .0213.
-  Noisy group fixed from these numbers before any P2E fit: rtl_1/2/3/5 (> 0.010).
-- Estimated in-band SNR is 41–44 dB on all RX and does not order like the within-class variance, so the
-  RTL excess is not thermal noise. A per-packet CFO estimator was tried and rejected as unreliable.
-- Pluto's input offset is 88% TX-independent and the largest of all RX (2× source RMS).
-
-## 3. Source-only predictors (`audit/source_predictors.csv`)
-
-Spearman within fold; "within" = family-demeaned with a within-family permutation p (2000 perms).
-
-| stage / target | src val acc | src q10 | κ | src CE variance (REx) | held acc → outer |
-|---|---|---|---|---|---|
-| search f0, outer | .55 (within .67, p<.001) | .69 (partial .50) | −.37 (ns) | −.41 (ns) | **.66** |
-| search f1, outer | .91 | .58 (partial .10) | −.14 | −.09 | **−.17** |
-| search f1, held = Pluto | −.14 | −.01 | .22 | .41 (p=.08) | — |
-| formal f0 / f1, outer | .63 / .51 | .59 / .45 (partial .22/.25) | −.59/−.44 (within −.43/−.42, p<.001) | ns | — |
-
-In-domain accuracy and the closest-competitor q10 margin are the useful source signals; κ adds
-within-family information only for formal checkpoints; the REx quantity adds nothing.
-
-## 4. Chain E1–E4 (`run_p2e_chain.py`, decision rules in its docstring, fixed before any fit)
-
-E1: 200 LORO fits (5 held source RX × 2 folds × 8 arms × grid), epoch chosen on fitting-RX val packets,
-held RX evaluated only at that epoch. E2: 80 formal fits, 5 seeds. 280 fits, 10.8 job-h in total.
-Noise profile = pixel-wise max over fitting RX of (within-class variance − cleanest fitting RX), scale λ.
-
-LORO held accuracy at λ* (source only, single seed):
-
-| held | ce | ccalign | noise | noiseiso | ccanoise | sig | sigrand |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| rtl_3 (noisy) | 74.8 | 81.6 | **82.0** | 80.4 | 80.6 | 79.4 | 79.0 |
-| rtl_1 (noisy) | 83.9 | 86.4 | 85.6 | 83.9 | **87.4** | 82.0 | 85.0 |
-| rtl_2 (noisy) | 80.4 | 79.6 | **83.6** | 81.2 | 83.5 | 79.3 | 80.8 |
-| rtl_5 (noisy) | 77.5 | 78.8 | **82.4** | 74.9 | 82.2 | 74.5 | 78.1 |
-| b210 | **80.8** | 80.6 | 76.4 | 74.9 | 78.2 | 73.4 | 78.3 |
-| pluto | **80.2** | 71.2 | 71.4 | 75.6 | 62.4 | 66.2 | 76.0 |
-| rtl_7 | **88.4** | 85.7 | 81.4 | 82.6 | 87.6 | 84.9 | 84.6 |
-
-G1 (beat ccalign's LORO mean in both folds): no arm. ccalign itself is below ce in fold 1 LORO (79.4 vs 80.7).
-
-Outer RX, 5 seeds (acc ×100, fold 0 / fold 1):
-
-| arm | acc | noisy RX | clean RX | worst RX |
+| arm | acc | noisy RX | clean RX | vs ccalign acc (n/10) |
 |---|---|---|---|---|
-| ce | 82.70 / 86.02 | 81.08 / 81.96 | 83.78 / 88.73 | 73.3 / 79.4 |
-| ls | 83.31 / 87.21 | 80.42 / 82.50 | 85.24 / 90.34 | 77.1 / 79.8 |
-| ccalign | **85.24 / 88.71** | 83.41 / 85.23 | **86.45 / 91.03** | 78.4 / 83.6 |
-| noise | 83.23 / 88.10 | 84.18 / **86.17** | 82.59 / 89.39 | 73.3 / **84.8** |
-| noiseiso | 82.72 / 86.05 | 81.62 / 83.61 | 83.46 / 87.67 | 73.6 / 82.7 |
-| ccanoise | **85.27** / 86.63 | **84.95** / 85.18 | 85.48 / 87.59 | 78.5 / 83.7 |
-| sig | 81.55 / 86.68 | 79.87 / 82.16 | 82.67 / 89.69 | 70.7 / 79.8 |
-| sigrand | 82.38 / 86.42 | 81.34 / 82.98 | 83.07 / 88.72 | 72.9 / 81.2 |
+| ce | 82.70 / 86.02 | 81.08 / 81.96 | 83.78 / 88.73 | 1 |
+| ls | 83.31 / 87.21 | 80.42 / 82.50 | 85.24 / 90.34 | 1 |
+| **ccalign** | **85.24 / 88.71** | 83.41 / 85.23 | **86.45 / 91.03** | — |
+| noise | 83.23 / 88.10 | 84.18 / **86.17** | 82.59 / 89.39 | 3 |
+| noiseiso | 82.72 / 86.05 | 81.62 / 83.61 | 83.46 / 87.67 | 0 |
+| ccanoise | **85.27** / 86.63 | **84.95** / 85.18 | 85.48 / 87.59 | 4 |
+| sig / sigrand | 81.55 / 86.68 · 82.38 / 86.42 | | | 1 · 0 |
+| ncons (E6) | 82.56 / 87.01 | 83.86 / 86.00 | 81.69 / 87.67 | 1 |
+| ccancons (E6) | 82.60 / 85.23 | 84.09 / 84.37 | 81.61 / 85.80 | 1 |
+| nconsiso (E6) | 82.25 / 86.03 | 80.53 / 82.72 | 83.40 / 88.24 | 1 |
 
-Pairwise (8/10 rule, `eval/pairwise.csv`): noise > ce on noisy 10/10, on acc 8/10; noise > noiseiso on
-acc 8/10 and on noisy 9/10; ccanoise > ce on noisy 10/10. Neither noise nor ccanoise beats ccalign
-(acc 3/10, 4/10); against ccalign their clean-RX deltas are −3.86/−1.64 and −0.97/−3.44 pp.
-sig vs sigrand: 5/10. **Decision: STOP** (`decision_e4.json`).
+- noise vs ce on noisy RX: 10/10, +3.11/+4.21. ncons vs ce on noisy RX: 9/10, +2.78/+4.05.
+- Clean RX vs ce: noise −1.19/+0.66 (5/10); ncons −2.09/−1.05 (3/10). Against ccalign the clean-RX
+  deltas are larger because ccalign itself gains on clean RX (audit A6).
+- E6 verdict: STOP_NOISE_LINE.
+- Caveats from the audit:
+  - Controls were not energy-matched (A5).
+  - Fold-1 combined arms used ccalign λ = 1 instead of 3 (A4).
+  - The noise idea came from outer-RX diagnostics (A8), so outer RX are development data here.
+- LORO (source only) ranks the arms against outer at ρ = 0.43 / −0.10. With the Pluto-held fold, ce
+  beats ccalign on LORO (80.7 vs 79.4) while ccalign wins on outer by 2.7 pp.
 
-Oracle ceiling on the noisy RX (`audit_p2e/`): ce 83.6, ccalign 85.8, noiseiso 84.9, ccanoise 87.0,
-**noise 87.6**. The noise arm's noisy-RX gain is in the features, not in the head.
+## 2. Error decomposition, corrected (`generality/`, `p2e_generality.py`)
 
-**Label-free calibration** (`tta/`, a deployment setting, not DG): centring pre-head features with N
-unlabeled target packets gives ccalign +2.1 / 0.0 pp at N = 50 (balanced). With a Dirichlet(1) class prior
-it gives +0.1 / −1.8 pp, so it is not robust to class imbalance in the calibration packets.
+For each checkpoint × unseen RX, using features h and the frozen head, accuracy on the odd half of
+each class, with statistics from the even half:
+- `raw`
+- `ca`: label-free RX centring.
+- `lda_src`: Gaussian head with source class means and pooled within-(class,RX) covariance.
+- `lda_cc`: the same with target class means.
+- `lda_ccproj`, `lda_ccrand`: the target shift kept only inside the per-class source span, or inside
+  a random span of equal dimension.
+- `lda_eig`: one receiver coefficient vector shared across classes.
+- `oracle`: linear head refit on the target's even half.
 
-## 5. E6: consistency instead of replacement (registered before any E6 fit)
+The label never enters test-time decoding (regression test `--dataset selftest`). The leaky first-version
+`cc` is kept only as `acc_cc_leak` for comparison.
 
-Hypothesis: training CE on noisy inputs replaces the training distribution, and that, not noise
-invariance, costs clean-RX accuracy. Arms: `ncons` = CE on clean packets + λ·KL(p_clean.detach() ‖
-p_noisy), noisy view = calibrated noise at fixed scale 2 on every packet; `ccancons` = the same plus the
-ccalign term; control `nconsiso` (flat profile). λ ∈ {0.3, 1, 3} by LORO; 5 seeds. GO_METHOD iff ncons or
-ccancons beats ccalign and nconsiso (8/10) with clean-RX seed-mean Δ vs ccalign ≥ −0.5 pp in both folds;
-otherwise STOP_NOISE_LINE. Results: `decision_e6.json` (pending at the time of writing).
+| dataset / group / model | raw | ca | lda_src | lda_cc | proj share | rand share | lda_eig | oracle | (leaky cc) |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| WiSig internal RX / official ce | 54.9 | 56.4 | 53.1 | **88.4** | 0.74 | 0.35 | 57.7 | 94.2 | 94.5 |
+| WiSig internal RX / swad | 51.3 | 52.5 | 51.2 | 86.8 | 0.80 | 0.39 | 55.6 | 93.4 | 90.6 |
+| WiSig selection RX / official ce | 39.8 | 40.4 | 35.1 | 84.0 | 0.75 | 0.19 | 37.0 | 89.4 | 86.8 |
+| Shen USRP/Pluto / ccalign | 85.8 | 89.7 | 86.6 | **94.7** | 0.98 | 0.47 | 90.9 | 95.6 | 95.3 |
+| Shen USRP/Pluto / ce | 83.7 | 87.9 | 84.2 | 93.5 | 0.85 | 0.23 | 87.7 | 94.4 | 96.1 |
+| Shen noisy RTL / ccalign | 84.0 | 84.1 | 84.5 | 84.8 | — | — | 84.7 | 85.8 | 89.4 |
+| Shen noisy RTL / noise | 85.4 | 85.5 | 86.4 | 86.5 | — | — | 86.6 | 87.6 | 88.9 |
+| Shen clean RTL / ccalign | 91.6 | 91.8 | 92.9 | 94.2 | 0.98 | 0.37 | 93.8 | 94.8 | 94.1 |
 
-## 6. WiSig protocol revision (no fit run)
+- WiSig DG baselines (GroupDRO, MLDG, MLDG-date, PCGrad, SWAD) do not beat CE on unseen RX
+  (48.6–52.8 vs 54.9) although the information is in the features (oracle 93.4–94.5).
+- A bias-only label-free correction (`acc_cclf`) is worse than raw on WiSig (45.1). When class means
+  move, the decision directions must move too; that is why the LDA form is the correct measure.
 
-- Head: 8 classes (TX0–7), done in `wisig_cost_probe.py`; CE and every aux arm carry
-  `model.regularization()`.
-- Selection: nested leave-one-source-RX-out inside the 14 source RX (grouped 7 folds of 2 RX), epoch on
-  fitting-RX validation positions [120,160); internal 10 RX for confirmation only; final 8 RX, date 3 and
-  the equalised variant stay sealed.
-- λ: before any search, report ‖∇(λ·L_aux)‖/‖∇L_CE‖ separately for encoder and head on 20 source batches
-  and extend the grid down by a decade if the ratio exceeds 1 at λ = 0.3 (the 3-epoch probe at λ = 1 left
-  rxlogit's val CE flat at 2.09 while CE reached 1.57).
-- The noise mechanism must be re-derived for WiSig's raw-IQ input (no CIS); the Shen profile does not transfer.
-- Budget from the measured probe: CE 0.43 s/epoch, rxlogit 2.22 s/epoch. Nested LORO for 4 arms × 3 λ ×
-  7 folds × 100 epochs at ≤2.22 s/epoch ≈ 5.2 job-h, plus formal 4 arms × 5 seeds × 100 epochs ≈ 1.2
-  job-h, ≈ 6.4 job-h (≈1.6 device-h on 4 GPUs at 2 jobs/GPU). Hard stop at 2× (13 job-h).
+## 3. Input level
+
+- Shen Strict CIS (`input/shen_input.csv`, `p2e_analyses.py input`): between-class variance
+  0.0022–0.0024 on every RX; within-class variance 0.0064 (USRP/Pluto) to 0.0213 (rtl_5). Band SNR is
+  41–44 dB on all RX and does not order like the within-class variance.
+- Outer-RX TX-independent offsets lie in the source offset span: coverage 0.49–0.99, against
+  0.07–0.11 for a random subspace inside the source packet PCA span (`input/shen_offset_coverage.csv`).
+- WiSig raw IQ (`generality/wisig_input_rawiq.csv`): within-class variance identical over RX (CV 0.00)
+  and between-class variance varying 4.3×. In log power spectrum: within 4.8×, between 2.5×. **There
+  is no Shen-like noise floor heterogeneity.**
+
+## 4. Why P0–P2E kept failing (cross-phase synthesis)
+
+| cause | evidence |
+|---|---|
+| **Identifiability.** An unseen receiver applies class-specific shifts; their coefficients are not predictable from the source RX and not estimable without labels | lda_cc ≫ lda_src on both datasets, but lda_eig ≈ lda_src on WiSig; unlabeled EM ≤ raw on WiSig (`eigenrx/`); no source statistic predicts held-Pluto accuracy (`audit/source_predictors.csv`) |
+| **Invariance pays with identity.** The only target-free lever is to shrink the shift span, and the receiver and transmitter directions overlap | D phase: dominant RX axis carries 34.6% of TX energy (WiSig); E1/E6: noise invariance costs clean-RX accuracy, more so as a consistency term; P2A: rxnull lowered exposure by inflating the null space |
+| **Each loss targeted one proxy of one component.** κ, ρ, margins, worst shift and tail ratios are all functions of the first moment that ccalign already constrains | P2B/P2D: rxlogit, rxnull, rxccp ≈ ccalign; P2D tail audit was outer-side |
+| **Selection could not see the target failure.** λ selection on one held RX, which was anti-correlated with outer in fold 1 | ρ(held, outer) = −0.17 in fold 1; LORO arm ranking vs outer 0.43 / −0.10 |
+| **Resolution and multiplicity.** Arm gaps ~1 pp with seed SD 0.8 pp; ~40 arms on the same 10 outer RX; 20-epoch horizon | ERRATA_P2D E5; 66/138 fits at epoch ≥ 18 |
+| **Specification and implementation errors** (wasted rounds, not the root cause) | rxnull null inflation, rxgeo amin, rxccp double shift, rxcant pooled surrogate, P2E label-leaky cc (ERRATA_P2D, ERRATA_P2E) |
+
+The first row is decisive. It explains why every target-free loss converges to the same level and
+why the gap is ~8 pp on Shen USRP/Pluto but ~35 pp on WiSig: same mechanism, different shift size.
+It also predicts what does work (§5).
+
+## 5. What does work, on both datasets (`fewshot/`, `p2e_fewshot.py`, `eigenrx/`)
+
+Unlabeled calibration (N target packets, no labels; `p2e_eigenrx.py`), all-packet transductive:
+
+| | raw | ca | EM free | eigen-RX EM | eigen-RX EM + prior |
+|---|---:|---:|---:|---:|---:|
+| WiSig (formal, internal RX) | 50.3 | 50.9 | 53.0 | 47.4 | 46.9 |
+| Shen ccalign | 85.2 | 87.5 | 89.5 | 87.2 | 87.0 |
+
+Shen with N = 200 under a Dirichlet(1) class prior: ca 86.1, eigen-RX 87.0 (the most prior-robust).
+
+Few-shot labelled re-enrolment (m packets per TX on the new receiver, 5 draws; test on the remaining
+packets; WiSig: the 6 internal RX that have ≥ 14 packets for every TX):
+
+| model | m | raw | proto | span prior | eig+res | head fine-tune |
+|---|---|---:|---:|---:|---:|---:|
+| WiSig official ce | 1 / 5 / 10 | 53.5 | 67.8 / 82.0 / 85.1 | 68.4 / 80.3 / 83.9 | 68.9 / 82.2 / 85.1 | 57.0 / 67.4 / – |
+| WiSig resnet ce | 1 / 5 / 10 | 35.1 | 63.0 / 83.6 / 86.2 | 65.5 / 81.6 / 85.4 | 66.0 / 83.7 / 86.3 | 45.2 / 67.4 / – |
+| Shen ccalign | 1 / 5 / 10 | 87.0 | 88.6 / 89.8 / 90.1 | 87.8 / 89.7 / 90.1 | 89.0 / 90.0 / 90.2 | 87.8 / 88.6 / – |
+| Shen ce | 1 / 5 / 10 | 83.9 | 86.4 / 88.0 / 88.5 | 85.6 / 87.9 / 88.5 | 86.9 / 88.1 / 88.6 | 85.5 / 86.5 / – |
+
+Re-estimating class prototypes in a Gaussian head is the effective, dataset-agnostic mechanism.
+Source-receiver priors (span, eigen-receiver) add at most ~1 pp at 1 shot. That is consistent with §4
+row 1: the span is learnable, the class-specific coefficients are not.
+
+Novelty, stated plainly: prototype / LDA re-estimation and eigenvoice-style subspace adaptation are
+known techniques. What P2E adds is (i) a label-free decomposition that separates recoverable shift from
+information loss, (ii) two-dataset evidence that cross-receiver RFFI error is mostly class-specific
+shift that target-free DG cannot identify, and (iii) the cost curve of re-enrolment. Whether that
+supports a methods paper or a diagnosis-plus-protocol paper is a decision for the authors; no target-free
+method has been found that beats ccalign.
+
+## 6. WiSig protocol note (unchanged plan, no WiSig training run)
+
+8-class head, nested LORO inside the 14 source RX, a gradient-ratio check before the λ grid, budget
+≈ 6.4 job-h with a hard stop at 13 job-h (first version of this report, §6). New in this round:
+- ccalign has not been run on WiSig.
+- §2 predicts it can move at most the in-span part of a class-specific shift. The DG baselines already
+  run there (GroupDRO / MLDG / SWAD / PCGrad) sit at or below CE.
 
 ## 7. Files
 
-`scripts/receiver_p2/`: `p2e_audit.py`, `p2e_fidelity.py`, `p2e_tta.py`, `rx_physics.py`, `train_p2e.py`,
-`run_p2e_chain.py`, `eval_p2e.py`, `run_sharded.py`. Reports here: `audit/` (257 ckpts),
-`audit_p2e/` (80 P2E ckpts), `fidelity/`, `tta/`, `eval/`, `loro_runs.csv`, `loro_grid.csv`,
-`lambda_p2e.json`, `decision_e4.json`. Checkpoints in `outputs/receiver_p2e/` (not in git).
+- Scripts (`scripts/receiver_p2/`): `train_p2e.py`, `run_p2e_chain.py`, `eval_p2e.py`,
+  `p2e_audit.py` (its cc columns are leaky, A1), `p2e_generality.py` (label-free decomposition, both
+  datasets, selftest), `p2e_eigenrx.py`, `p2e_fewshot.py`, `p2e_fidelity.py` (A2), `p2e_tta.py`,
+  `p2e_analyses.py`, `rx_physics.py`, `run_sharded.py`.
+- Reports here: `generality/`, `eigenrx/`, `fewshot/`, `input/`, `audit/` (+ `source_predictors.csv`),
+  `audit_p2e/`, `fidelity/`, `tta/`, `eval/` (`pairwise.csv`, `pairwise_e6.csv`), `loro_*.csv`,
+  `lambda_p2e*.json`, `decision_e4.json`, `decision_e6.json`.
+- Checkpoints: `outputs/receiver_p2e/` (not in git).

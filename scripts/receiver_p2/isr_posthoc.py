@@ -62,7 +62,9 @@ def isr_basis(f, y, rx, norm_frac=None):
         Vt, S = Vt[keep], S[keep]
         if norm_frac is not None:
             class_norm = np.linalg.norm(mus.mean(0) - np.stack([f[y == q].mean(0) for q in range(10)]).mean(0))
-            mk = S / np.sqrt(len(rxs)) > norm_frac * (class_norm / np.sqrt(d) + 1e-12)
+            # audit B5: the threshold used class_norm / sqrt(d), i.e. ~0.9% of the class separation for
+            # d=128, not the documented 10%. Fixed; the committed isr_normfilt rows used the old threshold.
+            mk = S / np.sqrt(len(rxs)) > norm_frac * (class_norm + 1e-12)
             Vt, S = Vt[mk], S[mk]
         if len(S):
             bass.append(Vt * S[:, None])                     # (r, d): direction scaled by its strength
@@ -140,7 +142,7 @@ def main():
                       for r in np.unique(src['rx'])]
             pl = reg['shen_allowed'].index('shen_pluto_1_train')
             rows.append(dict(base=base, fold=fold, seed=seed, arm=tag, removed_dirs=cut,
-                             src_val_acc=float(np.mean(accs_s)), acc=float(np.mean(accs)),
+                             src_fit_acc=float(np.mean(accs_s)), acc=float(np.mean(accs)),   # audit B5: refit packets, not val
                              worst_rx=float(np.min(accs)),
                              pluto=float(accs[list(np.unique(rxo)).index(pl)]) if pl in np.unique(rxo) else np.nan))
             print(rows[-1], flush=True)

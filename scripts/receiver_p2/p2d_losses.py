@@ -119,7 +119,9 @@ def rxccp_soft(logits, pre, W, y, rb, min_rx=2, beta=1.0):
         if beta <= 0:
             soft = ces.mean()
         else:
-            soft = torch.logsumexp(beta * ces, 0) / beta - torch.log(torch.as_tensor(float(len(ces)), dtype=ces.dtype, device=ces.device))
+            # (logsumexp(beta*ces) - log n) / beta; the earlier form subtracted log n outside the 1/beta
+            # (audit B3) and was correct only at beta = 1, the only value used in r2
+            soft = (torch.logsumexp(beta * ces, 0) - torch.log(torch.as_tensor(float(len(ces)), dtype=ces.dtype, device=ces.device))) / beta
         total = total + soft
         n_c += 1
     if n_c == 0:
@@ -227,7 +229,7 @@ def margin_stats(logits, y, rb):
 
 def tailrisk(logits, y, rb, eps=1e-6):
     """Mean over (t, pair u, r) of the tilded-Cantelli ratio
-        s2 / (s2 + softplus(mu))
+        s2 / (s2 + softplus(mu)^2)
     computed on batch margins (diagnostic; lower = safer tails). Means over R per pair first,
     then over pairs and classes. Returns None if no class has >= 2 RX."""
     stats = margin_stats(logits, y, rb)
@@ -237,5 +239,5 @@ def tailrisk(logits, y, rb, eps=1e-6):
     for t, d in stats.items():
         mu = d['mu'].mean(0)           # (K-1,) mean margin per competitor over RX
         s2 = d['s2'].mean(0)
-        vals.append(s2 / (s2 + F.softplus(mu) + eps))
+        vals.append(s2 / (s2 + F.softplus(mu).pow(2) + eps))   # squared, as in tail_audit (audit B4)
     return torch.stack(vals).mean()

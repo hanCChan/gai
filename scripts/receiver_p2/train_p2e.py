@@ -46,7 +46,10 @@ import p2_losses as L   # noqa: E402
 
 C.add_root()
 ARMS = ('ce', 'ls', 'ccalign', 'noise', 'noiseiso', 'ccanoise', 'sig', 'sigrand', 'ncons', 'nconsiso', 'ccancons')
-CCA_LAM = {0: 3.0, 1: 1.0}   # P2B lambda* (receiver_p2b/lambda_p2b.json), used by ccanoise / ccancons
+# ccanoise / ccancons ccalign weight. E1/E6 used the P2B values {0: 3, 1: 1} (selected on one held RX),
+# while the P2E ccalign anchor was selected by LORO at 3.0 in both folds -> fold-1 comparisons of the
+# combined arms carried a 3x weaker alignment term (audit A4). New runs pass --cca-lam explicitly.
+CCA_LAM = {0: 3.0, 1: 1.0}
 NCONS_SCALE = 2.0            # E6: fixed before any E6 fit (middle of the E1 noise grid)
 CONS = ('ncons', 'nconsiso', 'ccancons')
 
@@ -63,7 +66,7 @@ def receiver_stats(x, y, rx):
     v = np.stack([np.mean([x[(y == t) & (rx == r)].var(0) for t in np.unique(y)], 0) for r in rs])
     prof = np.clip(v - v.min(0, keepdims=True), 0, None).max(0)          # (1, 52, 126)
     c = np.stack([np.mean([x[(y == t) & (rx == r)].mean(0) for t in np.unique(y)], 0) for r in rs])
-    flat = c.reshape(len(rs), -1)
+    flat = c.reshape(len(rs), -1).astype(np.float64)   # float64: float32 SVD kept the null direction (audit B2)
     m = flat.mean(0)
     _, S, Vt = np.linalg.svd(flat - m, full_matrices=False)
     k = S > 1e-6 * S.max()
@@ -88,6 +91,7 @@ def main():
     ap.add_argument('--seed', type=int, required=True)
     ap.add_argument('--epochs', type=int, default=20)
     ap.add_argument('--p-aug', type=float, default=0.5)
+    ap.add_argument('--cca-lam', type=float, default=-1., help='ccalign weight for ccanoise/ccancons; -1 = legacy CCA_LAM')
     ap.add_argument('--out', required=True)
     a = ap.parse_args()
     assert (a.stage == 'loro') == (a.held >= 0)
@@ -155,7 +159,8 @@ def main():
         h = model.blocks(h).permute(0, 2, 3, 1).reshape(xb.shape[0], -1)
         return F.relu(model.tx_input(F.normalize(model.feature(h), p=2, dim=1, eps=1e-12)))
 
-    cca_lam = a.lam if a.arm == 'ccalign' else CCA_LAM[a.fold] if a.arm in ('ccanoise', 'ccancons') else 0.
+    combo = a.cca_lam if a.cca_lam >= 0 else CCA_LAM[a.fold]
+    cca_lam = a.lam if a.arm == 'ccalign' else combo if a.arm in ('ccanoise', 'ccancons') else 0.
 
     def noisy_view(xb):
         p = prof_iso if a.arm == 'nconsiso' else prof

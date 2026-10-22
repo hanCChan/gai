@@ -1,0 +1,13 @@
+{
+ "outcome": "STOP_NOISE_LINE",
+ "go_arms": [],
+ "clean_ok": {
+  "ncons": false,
+  "ccancons": false
+ },
+ "G1": {
+  "ncons": false,
+  "nconsiso": false,
+  "ccancons": false
+ }
+}

@@ -1,0 +1,149 @@
+{
+ "sel": {
+  "0_ccalign": {
+   "lam": 3.0,
+   "held_CE": 0.3775620460510254,
+   "held_acc": 0.8499000000000001,
+   "beats_ccalign_loro": false
+  },
+  "0_ccancons": {
+   "lam": 1.0,
+   "held_CE": 0.38001508712768556,
+   "held_acc": 0.8321999999999999,
+   "beats_ccalign_loro": false
+  },
+  "0_ccanoise": {
+   "lam": 1.0,
+   "held_CE": 0.3777549356222153,
+   "held_acc": 0.8474999999999999,
+   "beats_ccalign_loro": false
+  },
+  "0_ce": {
+   "lam": 0.0,
+   "held_CE": 0.4280221462249756,
+   "held_acc": 0.8382,
+   "beats_ccalign_loro": false
+  },
+  "0_ls": {
+   "lam": 0.0,
+   "held_CE": 0.53999063372612,
+   "held_acc": 0.8207000000000001,
+   "beats_ccalign_loro": false
+  },
+  "0_ncons": {
+   "lam": 3.0,
+   "held_CE": 0.39717729687690734,
+   "held_acc": 0.8435,
+   "beats_ccalign_loro": false
+  },
+  "0_nconsiso": {
+   "lam": 0.3,
+   "held_CE": 0.44572520852088926,
+   "held_acc": 0.8267,
+   "beats_ccalign_loro": false
+  },
+  "0_noise": {
+   "lam": 2.0,
+   "held_CE": 0.41269952058792114,
+   "held_acc": 0.8276999999999999,
+   "beats_ccalign_loro": false
+  },
+  "0_noiseiso": {
+   "lam": 1.0,
+   "held_CE": 0.44890249967575074,
+   "held_acc": 0.8240999999999999,
+   "beats_ccalign_loro": false
+  },
+  "0_sig": {
+   "lam": 1.0,
+   "held_CE": 0.46016486287117003,
+   "held_acc": 0.8220000000000001,
+   "beats_ccalign_loro": false
+  },
+  "0_sigrand": {
+   "lam": 4.0,
+   "held_CE": 0.42962257862091063,
+   "held_acc": 0.8316000000000001,
+   "beats_ccalign_loro": false
+  },
+  "1_ccalign": {
+   "lam": 3.0,
+   "held_CE": 0.5095432758331299,
+   "held_acc": 0.7944,
+   "beats_ccalign_loro": false
+  },
+  "1_ccancons": {
+   "lam": 3.0,
+   "held_CE": 0.5669549942016602,
+   "held_acc": 0.7457,
+   "beats_ccalign_loro": false
+  },
+  "1_ccanoise": {
+   "lam": 4.0,
+   "held_CE": 0.4958338141441345,
+   "held_acc": 0.7936,
+   "beats_ccalign_loro": false
+  },
+  "1_ce": {
+   "lam": 0.0,
+   "held_CE": 0.5193899154663086,
+   "held_acc": 0.8067,
+   "beats_ccalign_loro": true
+  },
+  "1_ls": {
+   "lam": 0.0,
+   "held_CE": 0.6727980494499206,
+   "held_acc": 0.7567999999999999,
+   "beats_ccalign_loro": false
+  },
+  "1_ncons": {
+   "lam": 3.0,
+   "held_CE": 0.47752889394760134,
+   "held_acc": 0.7931,
+   "beats_ccalign_loro": false
+  },
+  "1_nconsiso": {
+   "lam": 0.3,
+   "held_CE": 0.605409586429596,
+   "held_acc": 0.7529,
+   "beats_ccalign_loro": false
+  },
+  "1_noise": {
+   "lam": 4.0,
+   "held_CE": 0.47894856333732605,
+   "held_acc": 0.7871,
+   "beats_ccalign_loro": false
+  },
+  "1_noiseiso": {
+   "lam": 2.0,
+   "held_CE": 0.5342618942260742,
+   "held_acc": 0.7734,
+   "beats_ccalign_loro": false
+  },
+  "1_sig": {
+   "lam": 4.0,
+   "held_CE": 0.5865838825702667,
+   "held_acc": 0.7711,
+   "beats_ccalign_loro": false
+  },
+  "1_sigrand": {
+   "lam": 4.0,
+   "held_CE": 0.5519179463386535,
+   "held_acc": 0.7673,
+   "beats_ccalign_loro": false
+  }
+ },
+ "G1": {
+  "ce": false,
+  "ls": false,
+  "ccalign": false,
+  "noise": false,
+  "noiseiso": false,
+  "ccanoise": false,
+  "sig": false,
+  "sigrand": false,
+  "ncons": false,
+  "nconsiso": false,
+  "ccancons": false
+ }
+}

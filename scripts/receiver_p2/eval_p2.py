@@ -131,7 +131,7 @@ def main():
         for r in np.unique(rx):
             key = reg['shen_allowed'][int(r)]
             for t in range(10):
-                mt = y == t
+                mt = (y == t) & (rx == r)   # audit B1: was pooled over all outer RX
                 if not mt.any():
                     continue
                 for u in range(10):

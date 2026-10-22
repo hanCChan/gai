@@ -11,7 +11,7 @@ E3  eval     eval_p2e.py (outer RX: dev data, read only here)
 E4  decide   "X beats Y" = seed-mean d(acc) > 0 in both folds AND >= 8/10 paired (fold, seed) d > 0
              GO_METHOD   some new arm beats ccalign, passes G1, and beats its own control
                          (noise, ccanoise -> noiseiso; sig -> sigrand)
-             GENERIC     some new arm beats ccalign but not its control (=> generic augmentation)
+             GENERIC     some new arm beats ccalign but is not GO (fails G1 or its control; audit B7)
              STOP        no new arm beats ccalign
 E5  horizon  (after GO_METHOD or GENERIC) best new arm, ccalign, ce at 40 epochs, 5 seeds, same rule
 Then the chain stops: WiSig transfer needs its own trainer and is not part of this chain.
@@ -105,6 +105,7 @@ def status_table(out):
 
 
 def select(T, grid=GRID):
+    T = T[[a in grid and any(abs(l - g) < 1e-9 for g in grid[a]) for a, l in zip(T.arm, T.lam)]]
     G = T.groupby(['fold', 'arm', 'lam'])[['held_CE', 'held_acc']].mean().reset_index()
     sel = {}
     for (fold, arm), d in G.groupby(['fold', 'arm']):
@@ -119,6 +120,7 @@ def select(T, grid=GRID):
 
 
 def beats(R, x, y, metric='acc'):
+    assert not R.duplicated(['fold', 'seed', 'arm']).any(), 'duplicate (fold, seed, arm) rows'
     P = R.pivot_table(index=['fold', 'seed'], columns='arm', values=metric)
     if x not in P or y not in P:
         return dict(x=x, y=y, beats=False, missing=True)
