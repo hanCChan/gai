@@ -1,0 +1,14 @@
+{
+ "outcome": "STOP",
+ "best_arm": null,
+ "G1": {
+  "ce": false,
+  "ls": false,
+  "ccalign": false,
+  "noise": false,
+  "noiseiso": false,
+  "ccanoise": false,
+  "sig": false,
+  "sigrand": false
+ }
+}
