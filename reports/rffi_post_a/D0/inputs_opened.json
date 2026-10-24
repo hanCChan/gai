@@ -1,0 +1,87 @@
+[
+ {
+  "path": "/workspace/gai/branches/rffi-post-stage-a-diagnostics-v1/reports/rffi_calibration/stage_A/wisig_rows.csv",
+  "sha256": "ccf968b08e675ece55d6ea5affdca42abd928cefc2b4bcff353f3d2711cddcc9",
+  "bytes": 3002900
+ },
+ {
+  "path": "/workspace/gai/branches/rffi-post-stage-a-diagnostics-v1/reports/rffi_calibration/stage_A/wisig_aggregate.csv",
+  "sha256": "277c4a8ff15cc427c081fde858e37615ba8ee0ca9b892f6c6db56a7da3f7cfa1",
+  "bytes": 9327
+ },
+ {
+  "path": "/workspace/gai/branches/rffi-post-stage-a-diagnostics-v1/reports/rffi_calibration/stage_A/shen_rows.csv",
+  "sha256": "b3c3a715dd53a01606892c7aa9f4fbbf1eff997ec33a53c0eb4fc5b6a3f9e0fc",
+  "bytes": 1488678
+ },
+ {
+  "path": "/workspace/gai/branches/rffi-post-stage-a-diagnostics-v1/reports/rffi_calibration/stage_A/shen_aggregate.csv",
+  "sha256": "a15d8db1551f378d035af59e7235b1d60868df80a3526be08232fd16b9407f75",
+  "bytes": 8151
+ },
+ {
+  "path": "/workspace/gai/branches/rffi-budget-calibration-v1/outputs/rffi_calibration/A_shen_A1_T0_s20261013/curve.json",
+  "sha256": "be8094f8c4155f6297f093777b35acb9913bfbbf99fc5e38627b7effc43242e3",
+  "bytes": 1687
+ },
+ {
+  "path": "/workspace/gai/branches/rffi-budget-calibration-v1/outputs/rffi_calibration/A_shen_A1_T0_s20261013/status.json",
+  "sha256": "274b69cbf73feb457eebb1e09291ceb86c71cb63cd311add6b70f5453151b80a",
+  "bytes": 1679
+ },
+ {
+  "path": "/workspace/gai/branches/rffi-budget-calibration-v1/outputs/rffi_calibration/A_shen_A2_T0_s20261013/curve.json",
+  "sha256": "1fcbdc83c9f8b6045dafc81a2575e42391231102a03b350de0f4d866cd075d67",
+  "bytes": 1683
+ },
+ {
+  "path": "/workspace/gai/branches/rffi-budget-calibration-v1/outputs/rffi_calibration/A_shen_A2_T0_s20261013/status.json",
+  "sha256": "e8da9efda5b335e1c2b6e1c28e58af16d4a7020af35640f5ce6d80c4c82318f1",
+  "bytes": 1677
+ },
+ {
+  "path": "/workspace/gai/branches/rffi-budget-calibration-v1/outputs/rffi_calibration/A_shen_B1_T0_s20261013/curve.json",
+  "sha256": "a86e5a6875c014be03a7b61e7402116f305859ae69929cbf4822d1b239784005",
+  "bytes": 1678
+ },
+ {
+  "path": "/workspace/gai/branches/rffi-budget-calibration-v1/outputs/rffi_calibration/A_shen_B1_T0_s20261013/status.json",
+  "sha256": "da260dfd9b59418783e67e7485a7f7e99dd479f7742825c6b39e7191869e07dd",
+  "bytes": 1690
+ },
+ {
+  "path": "/workspace/gai/branches/rffi-budget-calibration-v1/outputs/rffi_calibration/A_shen_B2_T0_s20261013/curve.json",
+  "sha256": "49b6ccaa84b7a832f2da412bfca613255df53c916edd2d0eda24607e974f9eb3",
+  "bytes": 1684
+ },
+ {
+  "path": "/workspace/gai/branches/rffi-budget-calibration-v1/outputs/rffi_calibration/A_shen_B2_T0_s20261013/status.json",
+  "sha256": "d54d40af9d2521c4658e0df06f3fc7ad588486934098d0f42d7f3c7da8a90c96",
+  "bytes": 1682
+ },
+ {
+  "path": "/workspace/gai/branches/rffi-budget-calibration-v1/outputs/rffi_calibration/A_wisig_w0_T0_s20261013/curve.json",
+  "sha256": "8e1f4f88ab003c35ebbd744e623ec2432069b189367c5b79fd0c62e5388da395",
+  "bytes": 12858
+ },
+ {
+  "path": "/workspace/gai/branches/rffi-budget-calibration-v1/outputs/rffi_calibration/A_wisig_w0_T0_s20261013/status.json",
+  "sha256": "aedefeb3c110d577ce11b0efacfd88c451734f6a4e9b726f16aa5343d1d59768",
+  "bytes": 1473
+ },
+ {
+  "path": "/workspace/gai/branches/rffi-budget-calibration-v1/outputs/rffi_calibration/A_wisig_w1_T0_s20261013/curve.json",
+  "sha256": "0752f19d85fdfe65d9a89707a197300b7a7883b76bf20db04caa836e7dd439a5",
+  "bytes": 12861
+ },
+ {
+  "path": "/workspace/gai/branches/rffi-budget-calibration-v1/outputs/rffi_calibration/A_wisig_w1_T0_s20261013/status.json",
+  "sha256": "4d7444bc69c34041ba6c940c38ba44616364bd352f9955a2ae4060d4c80e4e55",
+  "bytes": 1475
+ },
+ {
+  "path": "/workspace/gai/branches/rffi-post-stage-a-diagnostics-v1/reports/rffi_calibration/stage_A/decision.json",
+  "sha256": "1a572bd61705151ff824bb0c4c1509a445b7fec74a9911929ec3ac217ac1efe3",
+  "bytes": 2052
+ }
+]

@@ -1,0 +1,104 @@
+[
+ {
+  "job": "A_shen_A1_T0_s20261013",
+  "horizon": 220,
+  "eval_every": 11,
+  "best_step": 209,
+  "best_val_ce": 0.8586481064558029,
+  "final_val_ce": 0.9664491564035416,
+  "best_is_final": false,
+  "tail_steps": [
+   176,
+   220
+  ],
+  "tail_slope_per_100_steps": -0.1790056445381858,
+  "tail_drop": 0.02889999747276306,
+  "tail_drop_share_of_total": 0.020168456589466765,
+  "n_points": 20
+ },
+ {
+  "job": "A_shen_A2_T0_s20261013",
+  "horizon": 220,
+  "eval_every": 11,
+  "best_step": 198,
+  "best_val_ce": 0.9306926131248474,
+  "final_val_ce": 0.9487287849187851,
+  "best_is_final": false,
+  "tail_steps": [
+   176,
+   220
+  ],
+  "tail_slope_per_100_steps": 0.17125156792727383,
+  "tail_drop": 0.03202401101589203,
+  "tail_drop_share_of_total": 0.023500631919257803,
+  "n_points": 20
+ },
+ {
+  "job": "A_shen_B1_T0_s20261013",
+  "horizon": 220,
+  "eval_every": 11,
+  "best_step": 220,
+  "best_val_ce": 0.8369337022304535,
+  "final_val_ce": 0.8369337022304535,
+  "best_is_final": true,
+  "tail_steps": [
+   176,
+   220
+  ],
+  "tail_slope_per_100_steps": -0.264533825896003,
+  "tail_drop": 0.134424090385437,
+  "tail_drop_share_of_total": 0.09303950045696477,
+  "n_points": 20
+ },
+ {
+  "job": "A_shen_B2_T0_s20261013",
+  "horizon": 220,
+  "eval_every": 11,
+  "best_step": 220,
+  "best_val_ce": 0.8970506340265274,
+  "final_val_ce": 0.8970506340265274,
+  "best_is_final": true,
+  "tail_steps": [
+   176,
+   220
+  ],
+  "tail_slope_per_100_steps": -0.5413595112887296,
+  "tail_drop": 0.2068886011838913,
+  "tail_drop_share_of_total": 0.14915439090816965,
+  "n_points": 20
+ },
+ {
+  "job": "A_wisig_w0_T0_s20261013",
+  "horizon": 2400,
+  "eval_every": 16,
+  "best_step": 2400,
+  "best_val_ce": 0.249044331535697,
+  "final_val_ce": 0.249044331535697,
+  "best_is_final": true,
+  "tail_steps": [
+   2336,
+   2400
+  ],
+  "tail_slope_per_100_steps": -0.01850729412399235,
+  "tail_drop": 0.009962176904082298,
+  "tail_drop_share_of_total": 0.004870810583619372,
+  "n_points": 150
+ },
+ {
+  "job": "A_wisig_w1_T0_s20261013",
+  "horizon": 2400,
+  "eval_every": 16,
+  "best_step": 2400,
+  "best_val_ce": 0.24964706748723983,
+  "final_val_ce": 0.24964706748723983,
+  "best_is_final": true,
+  "tail_steps": [
+   2336,
+   2400
+  ],
+  "tail_slope_per_100_steps": -0.013738374225795297,
+  "tail_drop": 0.007126922160387045,
+  "tail_drop_share_of_total": 0.0034836895793240526,
+  "n_points": 150
+ }
+]

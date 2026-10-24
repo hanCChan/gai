@@ -1,0 +1,11 @@
+{
+ "signal_arrays": "not_opened",
+ "features": "not_opened",
+ "weights": "not_opened",
+ "per_query_score_files": "not_opened (score replay awaits approval)",
+ "opened_file_types": [
+  ".csv",
+  ".json"
+ ],
+ "n_files": 17
+}

@@ -1,0 +1,18 @@
+{
+  "stage": "D0",
+  "decision": "D0_COMPLETE_SUMMARY_LEVEL",
+  "stage_a_decision_unchanged": "STOP_DECOMPOSITION",
+  "graded_explanations_existing_evidence_only": {
+    "finite_center_U_main_cause": "NOT_SUPPORTED",
+    "pooled_rule_beats_class_specific_H4": "SUPPORTED_ON_CURRENT_FEATURES (component not identified)",
+    "posterior_centre_shrinkage_only": "PARTIAL_EVIDENCE",
+    "class_specific_variance_or_density": "PARTIAL_EVIDENCE",
+    "coordinates_or_shared_metric": "INCONCLUSIVE",
+    "h5b_one_shot_proves_class_covariance": "NOT_SUPPORTED (mathematical: shared metric at m=1)",
+    "undertraining": "PARTIAL_EVIDENCE (Shen B1/B2 only)",
+    "wisig_sigma_date_drift": "INCONCLUSIVE (no existing evidence)",
+    "predicted_class_imbalance": "INCONCLUSIVE (needs approved score replay)"
+  },
+  "not_run": ["per-query score replay", "feature extraction", "fits", "GPU jobs"],
+  "next": "request D1 and/or R0 separately (docs/rffi_post_a/STAGE_REQUESTS.md); nothing starts automatically"
+}

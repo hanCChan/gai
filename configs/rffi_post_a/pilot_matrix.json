@@ -1,0 +1,40 @@
+{
+  "version": "rffi_post_a/pilot_matrix v1 (2026-10-24), frozen before any R0 numeric output",
+  "status": "inactive",
+  "dataset": "wisig",
+  "num_classes": 10,
+  "recipe": {
+    "encoder": "OfficialCNN(10), 80-D encode() (pre-dropout); native logits = head(drop(z))",
+    "optimizer": "Adam", "lr": 5e-4, "eps": 1e-7, "clip_norm": 5.0, "regularizer": "OfficialCNN.regularization()",
+    "budgets_train": [1, 5], "n_ref_per_date": 8, "n_query": 8, "episode_weight": 1.0, "temperature": 1.0,
+    "steps": 4800, "eval_every": 32, "grad_probe_every": 160,
+    "fit_dates": [0, 1], "fit_positions": [0, 120], "val_positions": [120, 160],
+    "primary_checkpoint": "last.pt (step 4800)", "secondary_checkpoint": "native_best.pt (min receiver-equal native CE on fit-RX positions 120:160)",
+    "seed_rule": "torch init seed = job seed; episode schedule seed = job seed + 1 (numpy only); identical for the three arms of a fold"
+  },
+  "evaluation": {
+    "manifests": "Stage A held-RX manifests (same sample IDs, 20 draws, budgets 0/1/2/5/10)",
+    "primary_head": "H1e", "secondary_heads": ["H1", "H2L", "H5a", "H5b", "H5c[k0=1]", "H0"],
+    "checkpoints": ["last", "native_best"]
+  },
+  "decision_rule": {
+    "lowshot_mean": "(acc_m1 + acc_m5)/2, draws averaged per RX, then RX-equal",
+    "representation_gain": "P_RX/H1e - C_MATCH/H1e >= +2 pp lowshot_mean in both folds",
+    "per_budget": "1-shot and 5-shot deltas each >= 0 in both folds",
+    "rx_structure": "P_RX/H1e - P_MIX/H1e >= +1 pp lowshot_mean in both folds",
+    "rx_consistency": ">= 6 of 8 held RX with positive P_RX - C_MATCH lowshot_mean",
+    "risk": "per fold worst-RX lowshot drop vs C_MATCH <= 3 pp; H0 0-shot mean drop <= 5 pp",
+    "competitiveness": "per fold P_RX/H1e lowshot_mean >= best fixed secondary head of C_MATCH (fold mean)",
+    "outcomes": ["GO_DESIGN_SHEN", "EPISODIC_GAIN_RX_UNPROVEN", "GAIN_NOT_COMPETITIVE", "NO_GAIN_IN_FIXED_PILOT", "INCONCLUSIVE_OPTIMIZATION"]
+  },
+  "jobs": [
+    {"job_id": "R0_wisig_w0_C_MATCH_s20261024", "split": "w0", "arm": "C_MATCH", "seed": 20261024, "predicted_gpu_seconds": 300},
+    {"job_id": "R0_wisig_w0_P_MIX_s20261024", "split": "w0", "arm": "P_MIX", "seed": 20261024, "predicted_gpu_seconds": 300},
+    {"job_id": "R0_wisig_w0_P_RX_s20261024", "split": "w0", "arm": "P_RX", "seed": 20261024, "predicted_gpu_seconds": 300},
+    {"job_id": "R0_wisig_w1_C_MATCH_s20261024", "split": "w1", "arm": "C_MATCH", "seed": 20261024, "predicted_gpu_seconds": 300},
+    {"job_id": "R0_wisig_w1_P_MIX_s20261024", "split": "w1", "arm": "P_MIX", "seed": 20261024, "predicted_gpu_seconds": 300},
+    {"job_id": "R0_wisig_w1_P_RX_s20261024", "split": "w1", "arm": "P_RX", "seed": 20261024, "predicted_gpu_seconds": 300}
+  ],
+  "evaluation_jobs_predicted_gpu_seconds": 1440,
+  "prediction_basis": "Stage A WiSig T0 2400 steps: 30.6-31.6 s loop, 36.1-38.7 s reserved; A3 WiSig evaluation 23.6-51.6 s reserved (reports/rffi_calibration/stage_A_execution). R0: 2x steps, same batch size, extra ProtoNet loss and probes -> predicted <= 300 s/fit incl. setup; 12 evaluations (6 fits x 2 checkpoints) <= 120 s each."
+}

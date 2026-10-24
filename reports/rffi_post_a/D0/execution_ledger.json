@@ -1,0 +1,13 @@
+{
+ "stage": "D0",
+ "fits": "not_run",
+ "feature_extraction": "not_run",
+ "signal_access": "not_run",
+ "per_query_score_replay": "not_run (awaiting explicit approval)",
+ "gpu_reserved_hours": 0.0,
+ "cpu_steps": [
+  "scripts/rffi_post_a/audit_existing.py on existing Stage A CSV/JSON + six curve/status JSON"
+ ],
+ "base_commit": "dc805ff2a906e0951e0bfcf371f1b004433567db",
+ "uncommitted_worktree": true
+}

@@ -1,0 +1,7 @@
+{
+ "command": "scripts/rffi_post_a/audit_existing.py --out reports/rffi_post_a/D0",
+ "python": "3.12.8 | packaged by conda-forge | (main, Dec  5 2024, 14:24:40) [GCC 13.3.0]",
+ "platform": "Linux-5.4.241-1-tlinux4-0017.4-x86_64-with-glibc2.38",
+ "seconds": 0.37817931175231934,
+ "stage_a_decision": "STOP_DECOMPOSITION"
+}

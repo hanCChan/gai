@@ -1,0 +1,10 @@
+{
+ "command": "/data/miniforge/envs/env-3.12/bin/python -m pytest tests/rffi_post_a tests/rffi_calibration -q",
+ "result": "102 passed in 17.50s",
+ "new_suite": "tests/rffi_post_a: 41 passed in 11.48s",
+ "stage_a_suite": "tests/rffi_calibration: 61 passed (includes test_stage_a_runner GPU inference regression on random tensors; it ran because a GPU is visible)",
+ "not_executed": [
+  "scripts/rffi_post_a/diagnose.py --synthetic as a CLI (its function path is covered by test_synthetic_d1_end_to_end_with_anchor_and_score_replay)"
+ ],
+ "date": "2026-10-24"
+}

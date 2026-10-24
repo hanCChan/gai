@@ -205,3 +205,20 @@ and file tree, then read back the report and decision. No force-push, main merge
 other-branch changes, credentials, signals, numeric features, model weights,
 or per-query class scores. This overrides the earlier no-push instruction only;
 the closed reservation and STOP_DECOMPOSITION remain in effect.
+
+## Latest user instruction: post-Stage-A C0 (2026-10-24)
+
+Branch experiment/rffi-post-stage-a-diagnostics-v1 from dc805ff, following
+/workspace/research/CLAUDE_RFFI_POST_STAGE_A_PLAN_20261024.md section 12. This round authorises
+C0 coding, synthetic tests, metadata audit and D0 reading of existing summaries/CSV/curve/status
+ONLY. No feature extraction, signal reads, checkpoint deserialisation, training, held-RX
+re-evaluation, development/sealed access, large downloads or push. Per-query score replay, D1 and
+R0 each need a separate explicit approval (docs/rffi_post_a/STAGE_REQUESTS.md). The publication
+authorisation above belonged to the completed Stage A round and does not extend to this branch.
+Stage A STOP_DECOMPOSITION and its closed reservation are unchanged; no Stage B/T3.
+
+Publication amendment (2026-10-24): the user then said 先推到github, authorising publication of
+this C0/D0 round on experiment/rffi-post-stage-a-diagnostics-v1 in hanCChan/gai (code, configs,
+tests, docs, D0 derived summaries). No force-push, main merge or other-branch change; no
+credentials, signals, features, weights or per-query scores. This does not approve score replay,
+D1 or R0; all reservations stay inactive.
