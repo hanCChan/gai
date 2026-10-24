@@ -37,8 +37,8 @@ def state_sha(model):
     return h.hexdigest()
 
 
-def load_job(job_id):
-    matrix = json.loads((CONFIG / 'pilot_matrix.json').read_text())
+def load_job(job_id, config=None):
+    matrix = json.loads(((config or CONFIG) / 'pilot_matrix.json').read_text())
     found = [j for j in matrix['jobs'] if j['job_id'] == job_id]
     if len(found) != 1:
         sys.exit(f'{job_id} is not registered in pilot_matrix.json; nothing was read')
@@ -58,11 +58,12 @@ def smoke_data(rng, T=10, R=10, n=24):
     return (tx, rx, date, np.array([f'smoke|{i}' for i in range(len(tx))]), x), (tx[::6], rx[::6], x[::6])
 
 
-def real_data(reg, job):
+def real_data(reg, job, report_root=None):
     from rffi_calibration.access import AccessGuard
     from rffi_calibration.datasets import wisig
     res = reg.reservation()
-    guard = AccessGuard(reg, res, log_path=ROOT / 'reports/rffi_post_a/R0/access_log.jsonl', stage='R0')
+    guard = AccessGuard(reg, res, log_path=(report_root or ROOT / 'reports/rffi_post_a/R0') / 'access_log.jsonl',
+                        stage=res['stage'])
     fold = reg.roles['wisig']['folds'][job['split']]
     fit = fold['fit']
     if set(fit) & set(fold['source_selection']):
@@ -90,8 +91,13 @@ def main():
     ap.add_argument('--smoke', action='store_true')
     ap.add_argument('--arm', default='P_RX', choices=ARMS)
     ap.add_argument('--steps', type=int, default=6)
+    ap.add_argument('--stage', choices=('R0', 'RV1'), default='R0')
     a = ap.parse_args()
-    reg = Registry(CONFIG)
+    config, report_root, fit_root = CONFIG, ROOT / 'reports/rffi_post_a/R0', ROOT / 'outputs/rffi_post_a'
+    if a.stage == 'RV1':
+        from rffi_post_a.variance import CONFIG as variance_config, OUT, FITS, check_reservation
+        config, report_root, fit_root = variance_config, OUT, FITS
+    reg = Registry(config)
     if a.smoke:
         job = dict(job_id=f'smoke_{a.arm}', split='smoke', arm=a.arm, seed=0, lr=5e-4, eps=1e-7, clip_norm=5.,
                    budgets_train=[1, 5], n_ref_per_date=8, n_query=8, episode_weight=1., temperature=1.,
@@ -101,19 +107,23 @@ def main():
         out = Path('/tmp/rffi_post_a_smoke') / job['job_id']
         out.mkdir(parents=True, exist_ok=True)
     else:
-        job = load_job(a.job)
+        job = load_job(a.job, config)
         res = reg.reservation()
-        if not (res.get('active') and res.get('stage') == 'R0' and job['job_id'] in res.get('allowed_job_ids', [])):
-            sys.exit(f'{job["job_id"]} is not in an active R0 reservation; nothing was read')
+        if a.stage == 'RV1':
+            check_reservation(res, json.loads((config / 'pilot_matrix.json').read_text()))
+        if not (res.get('active') and res.get('stage') == a.stage and job['job_id'] in res.get('allowed_job_ids', [])):
+            sys.exit(f'{job["job_id"]} is not in an active {a.stage} reservation; nothing was read')
         if 'RFFI_POST_QUEUE' not in os.environ:
             sys.exit('R0 fits must be claimed by run_pilot.py; nothing was read')
         from rffi_calibration.queue import JobQueue
         claim = JobQueue(os.environ['RFFI_POST_QUEUE']).get(job['job_id'])
-        if not claim or claim['status'] != 'running':
+        if not claim or claim['status'] != 'running' or claim['stage'] != a.stage:
             sys.exit('no running queue claim; nothing was read')
-        (tx, rx, date, ids, x), (vy, vrx, xv) = real_data(reg, job)
+        if a.stage == 'RV1' and not torch.cuda.is_available():
+            sys.exit('RV1 requires the registered A100 device; nothing was read')
+        (tx, rx, date, ids, x), (vy, vrx, xv) = real_data(reg, job, report_root)
         device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
-        out = ROOT / 'outputs/rffi_post_a' / job['job_id']
+        out = fit_root / job['job_id']
         out.mkdir(parents=True, exist_ok=False)
     T = job['num_classes']
     torch.manual_seed(job['seed'])

@@ -70,7 +70,7 @@ def cross_arm_checks(statuses, matrix):
     return out
 
 
-def evaluate_fit(reg, res, job, ckpt_name, device, matrix):
+def evaluate_fit(reg, res, job, ckpt_name, device, matrix, *, config_dir=None, fit_root=None, report_root=None):
     """Fixed heads on the frozen encoder; Stage A manifests rebuilt from metadata and matched."""
     import torch
     from rffi_calibration.access import AccessGuard
@@ -80,12 +80,13 @@ def evaluate_fit(reg, res, job, ckpt_name, device, matrix):
     from rffi_calibration.heads import (LegacyP2EProto, NativeHead, NIWPredictive, SimpleCNAPSFrozen, SimpleShotCL2N,
                                         TargetPrototype)
     from rffi_calibration.sampling import RecordTable, build_manifest, manifest_sha
-    diag = json.loads((CONFIG / 'diagnostic_matrix.json').read_text())
+    config_dir, fit_root, report_root = config_dir or CONFIG, fit_root or FITS, report_root or OUT
+    diag = json.loads((config_dir / 'diagnostic_matrix.json').read_text())
     prefixes = next(t for t in diag['tasks'] if t['dataset'] == 'wisig' and
                     t['task'].startswith(f'A_wisig_{job["split"]}'))['manifest_sha256_prefix']
-    guard = AccessGuard(reg, res, log_path=OUT / 'access_log.jsonl', stage='R0-eval')
+    guard = AccessGuard(reg, res, log_path=report_root / 'access_log.jsonl', stage=res['stage'] + '-eval')
     fold = reg.roles['wisig']['folds'][job['split']]
-    obj = torch.load(FITS / job['job_id'] / ckpt_name, map_location='cpu', weights_only=False)
+    obj = torch.load(fit_root / job['job_id'] / ckpt_name, map_location='cpu', weights_only=False)
     w = build_wisig_official(obj['model'], classes=10)
     st, xs = wisig.load(reg, guard, fold['fit'], [0, 1], (0, 120), numeric=True, purpose='R0 eval source')
     tt, xt = wisig.load(reg, guard, fold['source_selection'], [0, 1], (0, 200), numeric=True, purpose='R0 eval target')
@@ -104,11 +105,12 @@ def evaluate_fit(reg, res, job, ckpt_name, device, matrix):
             raise ValueError(f'RX {rx}: manifest differs from Stage A')
         mans[str(rx)] = sha
         r, lg = evaluate_target(fitted, FeatureSet(zt[m], sub, {}), man, 10, keep_logits=True)
-        rows += [dict(x, job_id=job['job_id'], arm=job['arm'], split=job['split'], checkpoint=ckpt_name) for x in r]
+        rows += [dict(x, job_id=job['job_id'], arm=job['arm'], split=job['split'], checkpoint=ckpt_name,
+                      seed=job['seed']) for x in r]
         q = sub.index_of(man['query_ids'])
         logits.update({f'{rx}|{h}|{mm}|{k}': v for (h, mm, k), v in lg.items()})
         logits[f'{rx}|y_query'] = sub.tx[q]
-    return rows, logits, dict(skipped=skipped, manifests=mans, checkpoint_sha256=file_sha(FITS / job['job_id'] / ckpt_name))
+    return rows, logits, dict(skipped=skipped, manifests=mans, checkpoint_sha256=file_sha(fit_root / job['job_id'] / ckpt_name))
 
 
 def main():

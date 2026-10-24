@@ -1,0 +1,41 @@
+{
+  "version": "rffi_post_a/registration v1 (2026-10-24); copied datasets.json/roles.json are byte-identical to configs/rffi_calibration (Stage A, dc805ff)",
+  "base_commit": "dc805ff2a906e0951e0bfcf371f1b004433567db",
+  "stage_a_decision": "STOP_DECOMPOSITION (unchanged; reports/rffi_calibration/stage_A/decision.json)",
+  "budgets": [
+    0,
+    1,
+    2,
+    5,
+    10
+  ],
+  "n_draws": 20,
+  "support_query": "identical to configs/rffi_calibration/registration.json support_query; Stage A manifests are reused unchanged",
+  "reservation": {
+    "stage": "RV1",
+    "active": true,
+    "authorized_by": "user 2026-10-24: \u7ee7\u7eed\u505a\u6267\u884c\u5427; previous response selects twelve paired C_MATCH/P_RX fits",
+    "allowed_job_ids": [
+      "RV1_wisig_w0_C_MATCH_s20261025",
+      "RV1_wisig_w0_P_RX_s20261025",
+      "RV1_wisig_w0_C_MATCH_s20261026",
+      "RV1_wisig_w0_P_RX_s20261026",
+      "RV1_wisig_w0_C_MATCH_s20261027",
+      "RV1_wisig_w0_P_RX_s20261027",
+      "RV1_wisig_w1_C_MATCH_s20261025",
+      "RV1_wisig_w1_P_RX_s20261025",
+      "RV1_wisig_w1_C_MATCH_s20261026",
+      "RV1_wisig_w1_P_RX_s20261026",
+      "RV1_wisig_w1_C_MATCH_s20261027",
+      "RV1_wisig_w1_P_RX_s20261027"
+    ],
+    "max_fits": 12,
+    "max_reserved_gpu_hours": 0.6,
+    "allow_feature_extraction": true,
+    "allow_final_numeric_access": false,
+    "allow_development_numeric_access": false,
+    "allow_failed_fit_retry": false,
+    "closed_after": "RV1"
+  },
+  "requests_not_active": {}
+}

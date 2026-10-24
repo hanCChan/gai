@@ -1,0 +1,157 @@
+{
+  "version": "RV1 paired-seed variance v1, frozen 2026-10-24",
+  "status": "frozen",
+  "dataset": "wisig",
+  "num_classes": 10,
+  "recipe": {
+    "encoder": "OfficialCNN(10), 80-D encode() (pre-dropout); native logits = head(drop(z))",
+    "optimizer": "Adam",
+    "lr": 0.0005,
+    "eps": 1e-07,
+    "clip_norm": 5.0,
+    "regularizer": "OfficialCNN.regularization()",
+    "budgets_train": [
+      1,
+      5
+    ],
+    "n_ref_per_date": 8,
+    "n_query": 8,
+    "episode_weight": 1.0,
+    "temperature": 1.0,
+    "steps": 4800,
+    "eval_every": 32,
+    "grad_probe_every": 160,
+    "fit_dates": [
+      0,
+      1
+    ],
+    "fit_positions": [
+      0,
+      120
+    ],
+    "val_positions": [
+      120,
+      160
+    ],
+    "primary_checkpoint": "last.pt (step 4800)",
+    "secondary_checkpoint": "native_best.pt (min receiver-equal native CE on fit-RX positions 120:160)",
+    "seed_rule": "torch init seed = job seed; episode schedule seed = job seed + 1 (numpy only); identical for the three arms of a fold"
+  },
+  "evaluation": {
+    "manifests": "Stage A held-RX manifests (same sample IDs, 20 draws, budgets 0/1/2/5/10)",
+    "primary_head": "H1e",
+    "secondary_heads": [
+      "H1",
+      "H2L",
+      "H5a",
+      "H5b",
+      "H5c[k0=1]",
+      "H0"
+    ],
+    "checkpoints": [
+      "last",
+      "native_best"
+    ]
+  },
+  "decision_rule": {
+    "scope": "two-arm stability measurement, not the original three-arm GO rule",
+    "primary": "new three seeds, last.pt, H1e lowshot; paired P_RX minus C_MATCH",
+    "thresholds": "both folds mean >=2 pp; both budgets >=0; >=6/8 RX positive; worst RX <=3 pp; H0 <=5 pp; competitive",
+    "stability": "stable only if the two-arm thresholds pass for each of the three new seeds",
+    "not_go": "rx_structure is NOT_MEASURED; never issue GO_DESIGN_SHEN",
+    "outcomes": [
+      "TWO_ARM_GAIN_STABLE",
+      "NO_STABLE_TWO_ARM_GAIN",
+      "INCOMPLETE_EXECUTION"
+    ]
+  },
+  "jobs": [
+    {
+      "job_id": "RV1_wisig_w0_C_MATCH_s20261025",
+      "split": "w0",
+      "arm": "C_MATCH",
+      "seed": 20261025,
+      "predicted_gpu_seconds": 120
+    },
+    {
+      "job_id": "RV1_wisig_w0_P_RX_s20261025",
+      "split": "w0",
+      "arm": "P_RX",
+      "seed": 20261025,
+      "predicted_gpu_seconds": 120
+    },
+    {
+      "job_id": "RV1_wisig_w0_C_MATCH_s20261026",
+      "split": "w0",
+      "arm": "C_MATCH",
+      "seed": 20261026,
+      "predicted_gpu_seconds": 120
+    },
+    {
+      "job_id": "RV1_wisig_w0_P_RX_s20261026",
+      "split": "w0",
+      "arm": "P_RX",
+      "seed": 20261026,
+      "predicted_gpu_seconds": 120
+    },
+    {
+      "job_id": "RV1_wisig_w0_C_MATCH_s20261027",
+      "split": "w0",
+      "arm": "C_MATCH",
+      "seed": 20261027,
+      "predicted_gpu_seconds": 120
+    },
+    {
+      "job_id": "RV1_wisig_w0_P_RX_s20261027",
+      "split": "w0",
+      "arm": "P_RX",
+      "seed": 20261027,
+      "predicted_gpu_seconds": 120
+    },
+    {
+      "job_id": "RV1_wisig_w1_C_MATCH_s20261025",
+      "split": "w1",
+      "arm": "C_MATCH",
+      "seed": 20261025,
+      "predicted_gpu_seconds": 120
+    },
+    {
+      "job_id": "RV1_wisig_w1_P_RX_s20261025",
+      "split": "w1",
+      "arm": "P_RX",
+      "seed": 20261025,
+      "predicted_gpu_seconds": 120
+    },
+    {
+      "job_id": "RV1_wisig_w1_C_MATCH_s20261026",
+      "split": "w1",
+      "arm": "C_MATCH",
+      "seed": 20261026,
+      "predicted_gpu_seconds": 120
+    },
+    {
+      "job_id": "RV1_wisig_w1_P_RX_s20261026",
+      "split": "w1",
+      "arm": "P_RX",
+      "seed": 20261026,
+      "predicted_gpu_seconds": 120
+    },
+    {
+      "job_id": "RV1_wisig_w1_C_MATCH_s20261027",
+      "split": "w1",
+      "arm": "C_MATCH",
+      "seed": 20261027,
+      "predicted_gpu_seconds": 120
+    },
+    {
+      "job_id": "RV1_wisig_w1_P_RX_s20261027",
+      "split": "w1",
+      "arm": "P_RX",
+      "seed": 20261027,
+      "predicted_gpu_seconds": 120
+    }
+  ],
+  "evaluation_jobs_predicted_gpu_seconds": 600,
+  "prediction_basis": "R0 measured fits 85-104s, evaluations 10-12s; RV1 forecast ~0.4h, conservative launch forecast 12*120+24*25=2040s <2160s cap",
+  "stage": "RV1"
+}

@@ -222,3 +222,15 @@ this C0/D0 round on experiment/rffi-post-stage-a-diagnostics-v1 in hanCChan/gai 
 tests, docs, D0 derived summaries). No force-push, main merge or other-branch change; no
 credentials, signals, features, weights or per-query scores. This does not approve score replay,
 D1 or R0; all reservations stay inactive.
+
+## Latest User Instruction: RV1 Paired-Seed Measurement (2026-10-24)
+
+The user's "继续做执行吧" approves the preceding selection: exactly twelve new
+WiSig C_MATCH/P_RX fits (two folds, three paired seeds), unchanged R0 recipe
+and fixed evaluations. RV1 has a new independent 0.6 A100 GPUh hard cap, based
+on the approximately 0.4 GPUh measured forecast. Follow
+docs/rffi_post_a/RV1_EXECUTION_PLAN.md and the write-once variance_v1 snapshots.
+Keep R0 NO_GAIN_IN_FIXED_PILOT, its closed reservation and all historical stops
+unchanged. No D1, P_MIX, Shen, encoder replacement, retries, seed replacement,
+extra fits, sealed access or automatic continuation. Local commits/reports are
+allowed; this instruction does not extend C0/D0 publication approval to RV1.

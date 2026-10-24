@@ -104,3 +104,7 @@ reports/receiver_r2/**/mode_dropout_comparison.csv
 /reports/rffi_calibration/**/confusions.json
 /reports/rffi_calibration/**/manifest_rx*.json
 /reports/rffi_calibration/**/*.sqlite
+
+# Post-Stage-A queues and score arrays remain local.
+/reports/rffi_post_a/**/*.sqlite
+/reports/rffi_post_a/**/scores.npz
