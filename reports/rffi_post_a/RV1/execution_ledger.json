@@ -1,0 +1,286 @@
+{
+ "fits": [
+  {
+   "job_id": "RV1_wisig_w0_C_MATCH_s20261026",
+   "state": "completed",
+   "exit_code": 0,
+   "error": "",
+   "gpu": 1,
+   "seconds": 87.04159238189459
+  },
+  {
+   "job_id": "RV1_wisig_w0_C_MATCH_s20261027",
+   "state": "completed",
+   "exit_code": 0,
+   "error": "",
+   "gpu": 2,
+   "seconds": 89.05615685135126
+  },
+  {
+   "job_id": "RV1_wisig_w0_C_MATCH_s20261025",
+   "state": "completed",
+   "exit_code": 0,
+   "error": "",
+   "gpu": 0,
+   "seconds": 95.57443429529667
+  },
+  {
+   "job_id": "RV1_wisig_w0_P_RX_s20261025",
+   "state": "completed",
+   "exit_code": 0,
+   "error": "",
+   "gpu": 3,
+   "seconds": 104.08438431471586
+  },
+  {
+   "job_id": "RV1_wisig_w1_C_MATCH_s20261025",
+   "state": "completed",
+   "exit_code": 0,
+   "error": "",
+   "gpu": 0,
+   "seconds": 92.06025340408087
+  },
+  {
+   "job_id": "RV1_wisig_w0_P_RX_s20261026",
+   "state": "completed",
+   "exit_code": 0,
+   "error": "",
+   "gpu": 1,
+   "seconds": 101.10313092917204
+  },
+  {
+   "job_id": "RV1_wisig_w0_P_RX_s20261027",
+   "state": "completed",
+   "exit_code": 0,
+   "error": "",
+   "gpu": 2,
+   "seconds": 99.60749238729477
+  },
+  {
+   "job_id": "RV1_wisig_w1_C_MATCH_s20261026",
+   "state": "completed",
+   "exit_code": 0,
+   "error": "",
+   "gpu": 3,
+   "seconds": 92.59077125042677
+  },
+  {
+   "job_id": "RV1_wisig_w1_C_MATCH_s20261027",
+   "state": "completed",
+   "exit_code": 0,
+   "error": "",
+   "gpu": 0,
+   "seconds": 86.08354360610247
+  },
+  {
+   "job_id": "RV1_wisig_w1_P_RX_s20261025",
+   "state": "completed",
+   "exit_code": 0,
+   "error": "",
+   "gpu": 1,
+   "seconds": 93.08918504416943
+  },
+  {
+   "job_id": "RV1_wisig_w1_P_RX_s20261026",
+   "state": "completed",
+   "exit_code": 0,
+   "error": "",
+   "gpu": 2,
+   "seconds": 95.08503597974777
+  },
+  {
+   "job_id": "RV1_wisig_w1_P_RX_s20261027",
+   "state": "completed",
+   "exit_code": 0,
+   "error": "",
+   "gpu": 3,
+   "seconds": 91.0863681063056
+  }
+ ],
+ "evaluations": [
+  {
+   "job_id": "RV1_wisig_w0_C_MATCH_s20261025",
+   "checkpoint": "last.pt",
+   "seconds": 11.613981582224369,
+   "exit_code": 0
+  },
+  {
+   "job_id": "RV1_wisig_w0_C_MATCH_s20261025",
+   "checkpoint": "native_best.pt",
+   "seconds": 11.610584512352943,
+   "exit_code": 0
+  },
+  {
+   "job_id": "RV1_wisig_w0_P_RX_s20261025",
+   "checkpoint": "last.pt",
+   "seconds": 11.209924519062042,
+   "exit_code": 0
+  },
+  {
+   "job_id": "RV1_wisig_w0_P_RX_s20261025",
+   "checkpoint": "native_best.pt",
+   "seconds": 12.011265255510807,
+   "exit_code": 0
+  },
+  {
+   "job_id": "RV1_wisig_w0_C_MATCH_s20261026",
+   "checkpoint": "last.pt",
+   "seconds": 11.610858790576458,
+   "exit_code": 0
+  },
+  {
+   "job_id": "RV1_wisig_w0_C_MATCH_s20261026",
+   "checkpoint": "native_best.pt",
+   "seconds": 11.412359684705734,
+   "exit_code": 0
+  },
+  {
+   "job_id": "RV1_wisig_w0_P_RX_s20261026",
+   "checkpoint": "last.pt",
+   "seconds": 11.410771638154984,
+   "exit_code": 0
+  },
+  {
+   "job_id": "RV1_wisig_w0_P_RX_s20261026",
+   "checkpoint": "native_best.pt",
+   "seconds": 11.610592067241669,
+   "exit_code": 0
+  },
+  {
+   "job_id": "RV1_wisig_w0_C_MATCH_s20261027",
+   "checkpoint": "last.pt",
+   "seconds": 11.611606061458588,
+   "exit_code": 0
+  },
+  {
+   "job_id": "RV1_wisig_w0_C_MATCH_s20261027",
+   "checkpoint": "native_best.pt",
+   "seconds": 10.811242558062077,
+   "exit_code": 0
+  },
+  {
+   "job_id": "RV1_wisig_w0_P_RX_s20261027",
+   "checkpoint": "last.pt",
+   "seconds": 11.812090203166008,
+   "exit_code": 0
+  },
+  {
+   "job_id": "RV1_wisig_w0_P_RX_s20261027",
+   "checkpoint": "native_best.pt",
+   "seconds": 12.010897293686867,
+   "exit_code": 0
+  },
+  {
+   "job_id": "RV1_wisig_w1_C_MATCH_s20261025",
+   "checkpoint": "last.pt",
+   "seconds": 11.410096533596516,
+   "exit_code": 0
+  },
+  {
+   "job_id": "RV1_wisig_w1_C_MATCH_s20261025",
+   "checkpoint": "native_best.pt",
+   "seconds": 11.210502281785011,
+   "exit_code": 0
+  },
+  {
+   "job_id": "RV1_wisig_w1_P_RX_s20261025",
+   "checkpoint": "last.pt",
+   "seconds": 11.010362811386585,
+   "exit_code": 0
+  },
+  {
+   "job_id": "RV1_wisig_w1_P_RX_s20261025",
+   "checkpoint": "native_best.pt",
+   "seconds": 11.611920431256294,
+   "exit_code": 0
+  },
+  {
+   "job_id": "RV1_wisig_w1_C_MATCH_s20261026",
+   "checkpoint": "last.pt",
+   "seconds": 11.811523884534836,
+   "exit_code": 0
+  },
+  {
+   "job_id": "RV1_wisig_w1_C_MATCH_s20261026",
+   "checkpoint": "native_best.pt",
+   "seconds": 12.811221055686474,
+   "exit_code": 0
+  },
+  {
+   "job_id": "RV1_wisig_w1_P_RX_s20261026",
+   "checkpoint": "last.pt",
+   "seconds": 12.051901876926422,
+   "exit_code": 0
+  },
+  {
+   "job_id": "RV1_wisig_w1_P_RX_s20261026",
+   "checkpoint": "native_best.pt",
+   "seconds": 11.611614294350147,
+   "exit_code": 0
+  },
+  {
+   "job_id": "RV1_wisig_w1_C_MATCH_s20261027",
+   "checkpoint": "last.pt",
+   "seconds": 11.811385497450829,
+   "exit_code": 0
+  },
+  {
+   "job_id": "RV1_wisig_w1_C_MATCH_s20261027",
+   "checkpoint": "native_best.pt",
+   "seconds": 13.022633850574493,
+   "exit_code": 0
+  },
+  {
+   "job_id": "RV1_wisig_w1_P_RX_s20261027",
+   "checkpoint": "last.pt",
+   "seconds": 11.81143193691969,
+   "exit_code": 0
+  },
+  {
+   "job_id": "RV1_wisig_w1_P_RX_s20261027",
+   "checkpoint": "native_best.pt",
+   "seconds": 12.212584495544434,
+   "exit_code": 0
+  }
+ ],
+ "cross_pair": {
+  "w0|20261025": {
+   "n": 2,
+   "same_init": true,
+   "same_all_ids": true
+  },
+  "w0|20261026": {
+   "n": 2,
+   "same_init": true,
+   "same_all_ids": true
+  },
+  "w0|20261027": {
+   "n": 2,
+   "same_init": true,
+   "same_all_ids": true
+  },
+  "w1|20261025": {
+   "n": 2,
+   "same_init": true,
+   "same_all_ids": true
+  },
+  "w1|20261026": {
+   "n": 2,
+   "same_init": true,
+   "same_all_ids": true
+  },
+  "w1|20261027": {
+   "n": 2,
+   "same_init": true,
+   "same_all_ids": true
+  }
+ },
+ "reserved_gpu_hours": 0.3909960282407701,
+ "cap_gpu_hours": 0.6,
+ "stopped": false,
+ "error": null,
+ "reservation_closed": true,
+ "commit": "38cbc4613bd3e27d50ae4f4b5d05d2ce9fbdfc4c",
+ "gpu_info": "0, NVIDIA A100-SXM4-40GB, 0, 0\n1, NVIDIA A100-SXM4-40GB, 0, 0\n2, NVIDIA A100-SXM4-40GB, 0, 0\n3, NVIDIA A100-SXM4-40GB, 0, 0\n",
+ "wall_seconds": 571.0859670341015
+}

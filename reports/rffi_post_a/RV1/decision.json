@@ -1,0 +1,66 @@
+{
+ "stage": "RV1",
+ "decision": "NO_STABLE_TWO_ARM_GAIN",
+ "rule": "docs/rffi_post_a/RV1_EXECUTION_PLAN.md, Frozen Measurement Decision",
+ "fits": 12,
+ "fit_failures": 0,
+ "retries": 0,
+ "evaluations": 24,
+ "reserved_gpu_hours": 0.3909960282407701,
+ "cap_gpu_hours": 0.6,
+ "reservation_closed": true,
+ "full_three_arm_go": false,
+ "rx_structure": "NOT_MEASURED",
+ "historical_r0_decision": "NO_GAIN_IN_FIXED_PILOT",
+ "new_seed_checks": {
+  "20261025": {
+   "checks": {
+    "gain": false,
+    "per_budget": false,
+    "risk": false,
+    "competitive": false,
+    "rx_consistency": false
+   },
+   "two_arm_pass": false,
+   "combined_gain_pp": -7.420312500000001
+  },
+  "20261026": {
+   "checks": {
+    "gain": true,
+    "per_budget": true,
+    "risk": false,
+    "competitive": true,
+    "rx_consistency": true
+   },
+   "two_arm_pass": false,
+   "combined_gain_pp": 4.785937500000003
+  },
+  "20261027": {
+   "checks": {
+    "gain": false,
+    "per_budget": false,
+    "risk": false,
+    "competitive": false,
+    "rx_consistency": false
+   },
+   "two_arm_pass": false,
+   "combined_gain_pp": 1.3312499999999936
+  }
+ },
+ "mean_checks": {
+  "gain": false,
+  "per_budget": false,
+  "risk": false,
+  "competitive": false,
+  "rx_consistency": false
+ },
+ "not_run": [
+  "D1",
+  "P_MIX",
+  "Stage A per-query replay",
+  "Shen",
+  "new encoder",
+  "additional fits"
+ ],
+ "next_stage_active": false
+}

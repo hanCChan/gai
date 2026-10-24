@@ -234,3 +234,15 @@ Keep R0 NO_GAIN_IN_FIXED_PILOT, its closed reservation and all historical stops
 unchanged. No D1, P_MIX, Shen, encoder replacement, retries, seed replacement,
 extra fits, sealed access or automatic continuation. Local commits/reports are
 allowed; this instruction does not extend C0/D0 publication approval to RV1.
+
+RV1 completed and stopped on 2026-10-24: 12/12 fits, 24/24 fixed evaluations,
+zero fit/evaluation failures, retries or replacement seeds; 0.3909960282407701
+A100 GPUh under the new 0.6 cap. The RV1 reservation is closed. Independent
+verification checked all 53952 accuracy rows, six paired initialization/sample
+chains/exposure profiles, eight fixed manifests and 28 input hashes; original
+R0 evidence and registration hashes remain unchanged. 109 regression tests
+passed before freezing and after execution. Decision NO_STABLE_TWO_ARM_GAIN:
+new-seed mean/paired SD w0 +2.753125/4.691437 pp, w1 -3.621875/7.892364 pp.
+No new stage, remaining-cap reuse, extra seed, D1, P_MIX, Shen or encoder
+replacement is authorized. Code/protocol and derived results are recorded
+locally; no RV1 GitHub publication has been performed.

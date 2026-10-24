@@ -1,0 +1,55 @@
+{
+ "ok": true,
+ "folds": {
+  "w0": {
+   "source_records": 24000,
+   "held_records": 16000,
+   "manifests": {
+    "1": "1ae9ded74808885906d0915bb67cca0d6ab1d1337314ad15357ec578ac5d049c",
+    "7": "b1cfa802287b93d4def12b3a04286226d520af98edbacaaad8ae4c3c04ef03b8",
+    "16": "ab89b6ecaac1f6bedd3afabf59fbd488caf003fd64043b922237f4f36da3cb12",
+    "30": "f17cb1c5b208233a34961d191328edb7770006c358dd2f7805b89c936471b6ba"
+   }
+  },
+  "w1": {
+   "source_records": 24000,
+   "held_records": 16000,
+   "manifests": {
+    "6": "b97269a26437d852482e4d59daf37c57efeed97d247f17d007e9a1b68b931265",
+    "26": "2e0f2aee53386450e5df6a5c2267d8033b00e8ac7e27acbba9c977c392084809",
+    "2": "34b98b41ded81a3adff848740f98d585dbfad0ac16bd1b3d19d4f9b97d21be70",
+    "5": "c8c315c3a4a26c3ba5b8ecd22d38939139fc9ea3d0e11a6c4a2c9d504262f4ab"
+   }
+  }
+ },
+ "asset_sha256": {
+  "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx06_day0.npz": "ac0458b843d240cb2e0f14999c9e98407143514d0dcdcbb5d6e1bba0101336e5",
+  "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx06_day1.npz": "1be2cdf978b33dcb43abe841609e0d5d7c3a0b47ac0d8b1c32b362f16af984ae",
+  "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx07_day0.npz": "ad384b7d537bec83d03f9d62e19114582de010cdced41b2e707c69a72340d66c",
+  "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx07_day1.npz": "78487f67631c8bba4683725ae726208dca4e7b9e0628064af8d883a5edc8c2a6",
+  "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx26_day0.npz": "8b52ef4acc973e16c9c21e3108534043ff646f326e7f38bb5c910403c69d7aad",
+  "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx26_day1.npz": "2ff671a90ef4ddec1cfbb9d347e338f598ef835be2851e68989d1bafb5b0a626",
+  "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx30_day0.npz": "7fe2498750acd50a206c98457119a4c77213a8b8fa9520c1a0a8692144b1b79a",
+  "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx30_day1.npz": "be25e73ef1361f3dcc1ff938540c92c3023768c5449ac0bf4bae0f1b8828a128",
+  "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx01_day0.npz": "96adf2d6eb4d62aaeeac5240ea4dd0736dddc9c1b7dacc885268f8940f5eb90f",
+  "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx01_day1.npz": "58066d5af0b0167059f9973973d845dfd128808fcc2712565ff46b575519d42e",
+  "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx02_day0.npz": "5c4066e2fd9274d0040447219a236df3a16ab4e95ab2b338af4c8416ac346c11",
+  "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx02_day1.npz": "5135d22aa531537defbe45dc8b85aa4dfa8f81cb157662cfc85aa10f770f5d36",
+  "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx05_day0.npz": "7c802be1aebb4288fdc68e29733e92185e99b92346511aae1838e76b8288fcf1",
+  "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx05_day1.npz": "51060d5740f92be1ab0ba19d1c55dfee94e5b20eb3d0fbaf3edb9a1b4882837c",
+  "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx10_day0.npz": "a78367a8689e990d7ecc9ee0fdadadb14eaa871524a194b73a41cdabad69be13",
+  "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx10_day1.npz": "7dec4ba43bab172872f49c28a1dbcdc4b5082fa5389fa615043d71cea9078cce",
+  "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx12_day0.npz": "55c2f4e3c59d236aa0459cddd4754eeabbfb077b8545093e1a2ac4736310c04c",
+  "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx12_day1.npz": "bb612fec7bc04209e6aff2652f8f58542b896faf37fb1a2354ccbe71a3852908",
+  "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx13_day0.npz": "9608cc3fb4394957ef43066f643e3373f3b5a293ccd082a264cfd8a73503b020",
+  "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx13_day1.npz": "d327309180b6f4117063b32dffafcc2bb649016dfc7a4d488011eb9ceff4d093",
+  "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx16_day0.npz": "47df91c906ba0e9ae51adda083e2579dac7699e4d4b22cb9f62168d55ab6aa48",
+  "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx16_day1.npz": "af93e3bdef82e17737d0cc5373207689a37c0cb7f8d7bb905192e2c9d599db9b",
+  "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx28_day0.npz": "c6bbbf300816ab0df1211e5a940acb0945b3918e06ff1c73799fa59673e80208",
+  "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx28_day1.npz": "3d52cdec31a0eb1b979cce874569e857c132604c5c4204d9b1a871e489ce8394",
+  "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx31_day0.npz": "d3e01a170334dcc8718c683f255bb92f0df37d80b8d23d2451fc17796e6fc594",
+  "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx31_day1.npz": "b8112310ab0f2ff6ded3248a403bf50eafb71b7bac29c7957836f451521bc738",
+  "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx22_day0.npz": "d5bc85f92d080c6ec9056d003d32c0d53bac0520bcb3574613df64976fc590f4",
+  "/workspace/rl1/gai_retrain/outputs/wisig_w01/cache/rx22_day1.npz": "c8cac25ad9e9d7e179c134c453c654ce7cdb0e3705e753c4acc1c6d1ef327ed4"
+ }
+}
