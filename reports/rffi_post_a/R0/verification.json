@@ -1,0 +1,117 @@
+{
+ "R0": {
+  "score_replay": {
+   "R0_wisig_w0_C_MATCH_s20261024_last": {
+    "checked": 2248,
+    "max_abs": 0.0,
+    "ok": true
+   },
+   "R0_wisig_w0_C_MATCH_s20261024_native_best": {
+    "checked": 2248,
+    "max_abs": 0.0,
+    "ok": true
+   },
+   "R0_wisig_w0_P_MIX_s20261024_last": {
+    "checked": 2248,
+    "max_abs": 0.0,
+    "ok": true
+   },
+   "R0_wisig_w0_P_MIX_s20261024_native_best": {
+    "checked": 2248,
+    "max_abs": 0.0,
+    "ok": true
+   },
+   "R0_wisig_w0_P_RX_s20261024_last": {
+    "checked": 2248,
+    "max_abs": 0.0,
+    "ok": true
+   },
+   "R0_wisig_w0_P_RX_s20261024_native_best": {
+    "checked": 2248,
+    "max_abs": 0.0,
+    "ok": true
+   },
+   "R0_wisig_w1_C_MATCH_s20261024_last": {
+    "checked": 2248,
+    "max_abs": 0.0,
+    "ok": true
+   },
+   "R0_wisig_w1_C_MATCH_s20261024_native_best": {
+    "checked": 2248,
+    "max_abs": 0.0,
+    "ok": true
+   },
+   "R0_wisig_w1_P_MIX_s20261024_last": {
+    "checked": 2248,
+    "max_abs": 0.0,
+    "ok": true
+   },
+   "R0_wisig_w1_P_MIX_s20261024_native_best": {
+    "checked": 2248,
+    "max_abs": 0.0,
+    "ok": true
+   },
+   "R0_wisig_w1_P_RX_s20261024_last": {
+    "checked": 2248,
+    "max_abs": 0.0,
+    "ok": true
+   },
+   "R0_wisig_w1_P_RX_s20261024_native_best": {
+    "checked": 2248,
+    "max_abs": 0.0,
+    "ok": true
+   }
+  },
+  "all_ok": true,
+  "decision": {
+   "decision": "NO_GAIN_IN_FIXED_PILOT",
+   "checks": {
+    "gain": false,
+    "per_budget": false,
+    "rx": true,
+    "risk": false,
+    "competitive": false,
+    "rx_consistency": false
+   },
+   "folds": {
+    "w0": {
+     "gain_pp": 4.075000000000006,
+     "d1_pp": 4.199999999999992,
+     "d5_pp": 3.949999999999998,
+     "rx_structure_pp": 11.631250000000005,
+     "worst_rx_drop_pp": 10.249999999999993,
+     "h0_drop_pp": 2.7500000000000027,
+     "p_rx_h1e": 63.31250000000001,
+     "best_c_match_secondary": 62.471875,
+     "per_rx_pp": [
+      -10.249999999999993,
+      19.137499999999992,
+      2.925000000000005,
+      4.4875
+     ]
+    },
+    "w1": {
+     "gain_pp": -3.93437499999999,
+     "d1_pp": -2.8000000000000025,
+     "d5_pp": -5.06875,
+     "rx_structure_pp": 1.9125000000000059,
+     "worst_rx_drop_pp": 16.237499999999994,
+     "h0_drop_pp": 5.375000000000002,
+     "p_rx_h1e": 55.54687500000001,
+     "best_c_match_secondary": 60.46874999999999,
+     "per_rx_pp": [
+      14.200000000000001,
+      -16.237499999999994,
+      -8.099999999999996,
+      -5.6
+     ]
+    }
+   },
+   "episodic_gain_pp": {
+    "w0": 4.075000000000006,
+    "w1": -3.93437499999999
+   },
+   "note": "INCONCLUSIVE_OPTIMIZATION must be set by a human reviewer from the training logs; not automatic"
+  }
+ }
+}

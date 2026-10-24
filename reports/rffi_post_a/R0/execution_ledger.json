@@ -1,0 +1,131 @@
+{
+ "fits": [
+  {
+   "job_id": "R0_wisig_w1_C_MATCH_s20261024",
+   "state": "completed",
+   "exit_code": 0,
+   "error": "",
+   "gpu": 3,
+   "seconds": 85.01883178204298
+  },
+  {
+   "job_id": "R0_wisig_w0_C_MATCH_s20261024",
+   "state": "completed",
+   "exit_code": 0,
+   "error": "",
+   "gpu": 0,
+   "seconds": 91.64825371652842
+  },
+  {
+   "job_id": "R0_wisig_w0_P_MIX_s20261024",
+   "state": "completed",
+   "exit_code": 0,
+   "error": "",
+   "gpu": 1,
+   "seconds": 99.65800305455923
+  },
+  {
+   "job_id": "R0_wisig_w0_P_RX_s20261024",
+   "state": "completed",
+   "exit_code": 0,
+   "error": "",
+   "gpu": 2,
+   "seconds": 99.6668643578887
+  },
+  {
+   "job_id": "R0_wisig_w1_P_MIX_s20261024",
+   "state": "completed",
+   "exit_code": 0,
+   "error": "",
+   "gpu": 3,
+   "seconds": 103.12126438319683
+  },
+  {
+   "job_id": "R0_wisig_w1_P_RX_s20261024",
+   "state": "completed",
+   "exit_code": 0,
+   "error": "",
+   "gpu": 0,
+   "seconds": 98.11972617357969
+  }
+ ],
+ "evaluations": [
+  {
+   "job_id": "R0_wisig_w0_C_MATCH_s20261024",
+   "checkpoint": "last.pt",
+   "seconds": 11.645297415554523
+  },
+  {
+   "job_id": "R0_wisig_w0_C_MATCH_s20261024",
+   "checkpoint": "native_best.pt",
+   "seconds": 10.854088202118874
+  },
+  {
+   "job_id": "R0_wisig_w0_P_MIX_s20261024",
+   "checkpoint": "last.pt",
+   "seconds": 11.573389008641243
+  },
+  {
+   "job_id": "R0_wisig_w0_P_MIX_s20261024",
+   "checkpoint": "native_best.pt",
+   "seconds": 11.315374590456486
+  },
+  {
+   "job_id": "R0_wisig_w0_P_RX_s20261024",
+   "checkpoint": "last.pt",
+   "seconds": 10.943998880684376
+  },
+  {
+   "job_id": "R0_wisig_w0_P_RX_s20261024",
+   "checkpoint": "native_best.pt",
+   "seconds": 10.71350134909153
+  },
+  {
+   "job_id": "R0_wisig_w1_C_MATCH_s20261024",
+   "checkpoint": "last.pt",
+   "seconds": 10.714263446629047
+  },
+  {
+   "job_id": "R0_wisig_w1_C_MATCH_s20261024",
+   "checkpoint": "native_best.pt",
+   "seconds": 10.7555161267519
+  },
+  {
+   "job_id": "R0_wisig_w1_P_MIX_s20261024",
+   "checkpoint": "last.pt",
+   "seconds": 10.276021547615528
+  },
+  {
+   "job_id": "R0_wisig_w1_P_MIX_s20261024",
+   "checkpoint": "native_best.pt",
+   "seconds": 11.452042266726494
+  },
+  {
+   "job_id": "R0_wisig_w1_P_RX_s20261024",
+   "checkpoint": "last.pt",
+   "seconds": 9.864439718425274
+  },
+  {
+   "job_id": "R0_wisig_w1_P_RX_s20261024",
+   "checkpoint": "native_best.pt",
+   "seconds": 10.04332735389471
+  }
+ ],
+ "cross_arm": {
+  "w0": {
+   "n": 3,
+   "same_init": true,
+   "same_all_ids": true
+  },
+  "w1": {
+   "n": 3,
+   "same_init": true,
+   "same_all_ids": true
+  }
+ },
+ "reserved_gpu_hours": 0.19649561204844052,
+ "cap_gpu_hours": 1.5,
+ "stopped": false,
+ "reservation_closed": true,
+ "commit": "75e396411e9f4e801f1c804116dbe0498c49ae65"
+}

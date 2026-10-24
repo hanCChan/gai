@@ -246,3 +246,15 @@ new-seed mean/paired SD w0 +2.753125/4.691437 pp, w1 -3.621875/7.892364 pp.
 No new stage, remaining-cap reuse, extra seed, D1, P_MIX, Shen or encoder
 replacement is authorized. Code/protocol and derived results are recorded
 locally; no RV1 GitHub publication has been performed.
+
+## Latest User Instruction: Publish Completed Post-Stage-A Work (2026-10-24)
+
+The user's "推送到github先" authorizes GitHub publication of this completed
+C0/D0, R0 and RV1 branch to hanCChan/gai on
+experiment/rffi-post-stage-a-diagnostics-v1. Include code, tests, frozen plans,
+closed registrations, reports, decisions and derived summary evidence.
+Exclude credentials, signals, numeric features, weights, full manifests,
+per-query scores and queue databases. Do not force-push, merge into main or
+change another branch. Verify the remote commit/tree and read back the reports
+and decisions before claiming publication complete. This is publication only:
+all scientific decisions, closed reservations and execution stops remain.

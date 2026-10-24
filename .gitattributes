@@ -50,3 +50,8 @@ configs/b1_baselines/** -text -whitespace
 src/b1_baselines/** -text
 scripts/*b1*.py -text
 reports/b1_baselines/** -text -whitespace
+
+# Preserve post-Stage-A result CSV bytes to match preregistered evidence hashes.
+reports/rffi_post_a/R0/**/*.csv -text -whitespace
+reports/rffi_post_a/RV1/**/*.csv -text -whitespace
+reports/rffi_post_a/RV1/*.csv -text -whitespace

@@ -1,0 +1,17 @@
+{
+ "stage": "R0",
+ "decision": "NO_GAIN_IN_FIXED_PILOT",
+ "rule": "configs/rffi_post_a/pilot_matrix.json decision_rule, evaluated independently by scripts/rffi_post_a/verify_results.py (see verification.json)",
+ "checks": {"gain": false, "per_budget": false, "rx": true, "risk": false, "competitive": false, "rx_consistency": false},
+ "folds": {
+  "w0": {"gain_pp": 4.08, "d1_pp": 4.20, "d5_pp": 3.95, "rx_structure_pp": 11.63, "worst_rx_drop_pp": 10.25, "h0_drop_pp": 2.75, "p_rx_h1e": 63.31, "best_c_match_secondary": 62.47},
+  "w1": {"gain_pp": -3.93, "d1_pp": -2.80, "d5_pp": -5.07, "rx_structure_pp": 1.91, "worst_rx_drop_pp": 16.24, "h0_drop_pp": 5.38, "p_rx_h1e": 55.55, "best_c_match_secondary": 60.47}
+ },
+ "fits": 6, "fit_failures": 0, "retries": 0, "evaluations": 12,
+ "reserved_gpu_hours": 0.19649561204844052, "cap_gpu_hours": 1.5, "reservation_closed": true,
+ "score_replay_all_ok": true,
+ "consistent_observation": "P_MIX < C_MATCH in both folds for every fixed head",
+ "resolution_limit": "single-seed per-RX differences up to 16-24 pp between arms; fold means +-4 pp",
+ "not_run": ["D1", "per-query score replay", "additional seeds", "Shen R1"],
+ "next": "no automatic stage; options listed for user decision"
+}
