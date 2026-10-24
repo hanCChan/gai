@@ -194,3 +194,14 @@ H2L on all four Shen RX at m=1/5. Shen tuned-family gates unavailable.
 Third multi-RX dataset and RF paper full text remain unresolved. Reservation
 is closed; no further fitting, numeric evaluation, optional T1, Stage B,
 final/dev access, or push from unused allocation. Local record/commit only.
+
+## Latest user instruction: publish completed Stage A (2026-10-24)
+
+The user explicitly authorized GitHub publication of this completed round and
+provided a local token file for authentication. Publish code, protocol, reports,
+decisions, source checks, local research memory, and derived summary evidence
+on experiment/rffi-budget-calibration-v1 in hanCChan/gai. Verify the remote commit
+and file tree, then read back the report and decision. No force-push, main merge,
+other-branch changes, credentials, signals, numeric features, model weights,
+or per-query class scores. This overrides the earlier no-push instruction only;
+the closed reservation and STOP_DECOMPOSITION remain in effect.
