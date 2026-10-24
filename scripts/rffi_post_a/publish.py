@@ -60,7 +60,7 @@ def audit(token):
     # Inspect every outgoing historical blob, not only final HEAD.
     commits = git('rev-list', '--reverse', f'{BASE}..{head}').decode().splitlines()
     for commit in commits:
-        paths = git('diff-tree', '--no-commit-id', '--name-only', '-rz', commit).split(b'\0')
+        paths = git('diff-tree', '--no-commit-id', '--name-only', '-r', '-z', commit).split(b'\0')
         for raw_path in paths:
             if not raw_path:
                 continue
