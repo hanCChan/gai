@@ -258,3 +258,11 @@ per-query scores and queue databases. Do not force-push, merge into main or
 change another branch. Verify the remote commit/tree and read back the reports
 and decisions before claiming publication complete. This is publication only:
 all scientific decisions, closed reservations and execution stops remain.
+
+Completed post-Stage-A results were pushed and remotely verified on 2026-10-24
+at d1d4e527feccf12f0855280104a9df5f72e873e6. Full remote/local tree equality
+passed for 3364 file entries; the 212-path/245-historical-blob publication
+audit passed. D0/R0/RV1 reports and decisions read back byte-identically.
+Both numerical reservations remain closed; no excluded artifacts were
+published. The subsequent documentation-only verification commit must also
+be pushed and remotely verified. No new scientific execution is authorized.

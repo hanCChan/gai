@@ -49,3 +49,23 @@ bytes. Check both published numerical registrations remain inactive.
 The verified publication commit, complete-tree comparison, outgoing-file
 checks and report/decision SHA256 hashes are recorded subsequently in
 `reports/rffi_post_a/publication_verification.json`.
+
+## Verified Upload
+
+Published and remotely verified result commit:
+`d1d4e527feccf12f0855280104a9df5f72e873e6`.
+
+- Normal fast-forward push from `7b83a74`; no force-push or other branch update.
+- Complete local/remote tree: 3,364 file entries with identical paths, modes
+  and Git blob hashes.
+- Publication audit checked 212 changed paths and 245 historical blobs across
+  six commits; credential and excluded-artifact scans passed.
+- All 63 RV1 frozen input hashes, and the committed R0/RV1 evidence hashes,
+  matched their recorded values.
+- D0, R0 and RV1 reports and decisions were read back byte-identically.
+- Decisions remain `D0_COMPLETE_SUMMARY_LEVEL`, `NO_GAIN_IN_FIXED_PILOT` and
+  `NO_STABLE_TWO_ARM_GAIN`; numerical reservations remain inactive.
+
+The detailed remote readback hashes are in the verification JSON. This
+documentation and verification record are a subsequent publication-only commit
+on the same branch. No new scientific execution or historical-result changes.

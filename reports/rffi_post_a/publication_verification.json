@@ -1,0 +1,56 @@
+{
+  "verified": true,
+  "observed_at": "2026-10-24T20:33:24.261438+08:00",
+  "repository": "hanCChan/gai",
+  "branch": "experiment/rffi-post-stage-a-diagnostics-v1",
+  "commit": "d1d4e527feccf12f0855280104a9df5f72e873e6",
+  "observed_remote_before": "7b83a74646da15924f03770d931fd4a7a49cc0e5",
+  "complete_tree_blobs_verified": 3364,
+  "checks": {
+    "outgoing_commits": 6,
+    "changed_paths": 212,
+    "historical_blobs_scanned": 245,
+    "credential_scan": "passed",
+    "excluded_artifact_scan": "passed",
+    "frozen_inputs_checked": 63
+  },
+  "readbacks": {
+    "reports/rffi_post_a/D0/REPORT.md": {
+      "bytes": 5423,
+      "sha256": "331c930c7a191da0c4ab3f7877365dc091bbce9b388f732eedd759a5e08ac46e",
+      "git_blob_sha": "ec9f4d5025980a5b860c976cef4975e86de049f9"
+    },
+    "reports/rffi_post_a/D0/decision.json": {
+      "bytes": 998,
+      "sha256": "c9ef171966bab9e231c16bb1e620cb53255f34a232c8656b19995fa648a864e6",
+      "git_blob_sha": "ec450b587b42b74a5919228fba192a8a3d681a08"
+    },
+    "reports/rffi_post_a/R0/REPORT.md": {
+      "bytes": 4572,
+      "sha256": "ef0bd502130a807497746c097b75563cb951eced5465913ff4ded720febcfbbe",
+      "git_blob_sha": "127a8d684b7445f5606c871105065b2fff5152b1"
+    },
+    "reports/rffi_post_a/R0/decision.json": {
+      "bytes": 1229,
+      "sha256": "600076cca7dd8fc4a2aa73e346d26c274083dcd223190c22338b97e4bdb44e48",
+      "git_blob_sha": "a30b184671f585830e7d811485e9a13a204356c4"
+    },
+    "reports/rffi_post_a/RV1/REPORT.md": {
+      "bytes": 3280,
+      "sha256": "1541cc7791323abb789c49bf114a5453b4a6895196a61ef087a233d18e352f1a",
+      "git_blob_sha": "c0f0ae957d76ef5e44efdef49e124241af450cc3"
+    },
+    "reports/rffi_post_a/RV1/decision.json": {
+      "bytes": 1389,
+      "sha256": "2bdafb2d8a87703b884de73ceb78dfd5cd0484c64869c9af4b870d596d414b51",
+      "git_blob_sha": "1a1ef09581ce096d2fd68827300a4821e9b6d5b2"
+    }
+  },
+  "decisions": {
+    "D0": "D0_COMPLETE_SUMMARY_LEVEL",
+    "R0": "NO_GAIN_IN_FIXED_PILOT",
+    "RV1": "NO_STABLE_TWO_ARM_GAIN"
+  },
+  "numerical_reservations_active": false,
+  "scope": "complete committed tree and reports/decisions at this publication commit; record committed subsequently"
+}
