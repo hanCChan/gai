@@ -1,0 +1,64 @@
+{
+  "version": "rffi_calibration/datasets v1 (2026-10-24)",
+  "path_variables": {
+    "GAI_DATA": "/workspace/gai/data",
+    "RETRAIN_ROOT": "/workspace/rl1/gai_retrain"
+  },
+  "note": "Paths are resolved by src/rffi_calibration/registry.py (environment variables of the same name override). Nothing here authorises numeric access: see roles.json + registration.json reservation.",
+  "datasets": {
+    "wisig": {
+      "description": "WiSig ManyRx (Kaggle v1 repack of the official release), WiFi, unequalised 256-sample IQ",
+      "archive": "${GAI_DATA}/wisig-manyrx-kaggle/ManyRx.kaggle.v1.zip",
+      "archive_sha256": "b0eca705816b03a47290286fd23ca1a10e02c6f9bd29b5461cfd92c13a86fbdd",
+      "archive_sha_status": "local SHA matches the 2026-10-13 acquisition record; official byte equivalence unproven",
+      "license": "original CC BY-NC-SA 4.0 (Kaggle listing: Unknown)",
+      "cache": "${RETRAIN_ROOT}/outputs/wisig_w01/cache",
+      "cache_file_pattern": "rx{rx:02d}_day{date}.npz",
+      "cache_members": ["x", "y", "rx", "position"],
+      "cache_note": "72 files = 24 non-final RX x dates {0,1,2}; final-8 RX and date 3 were never cached",
+      "registration": "${RETRAIN_ROOT}/configs/receiver_r01/registration.json",
+      "folds": "${RETRAIN_ROOT}/configs/receiver_p2/wisig_folds.json",
+      "num_classes": 10,
+      "label_map": "task label = cache y (TX index 0..9 in registration wisig.tx_names order)",
+      "historical_8_class_note": "train_wisig_p2.py / W0 used TX 0-7 only; 8-class results are historical-compatibility only",
+      "dates": ["2021_03_01", "2021_03_08", "2021_03_15", "2021_03_23"],
+      "input_shape": [1, 256, 2],
+      "input_dtype": "float32",
+      "sample_unit": "cache_position",
+      "sample_unit_note": "position = index inside the (RX, date) cell of the cache, not a timestamp; packets are separately detected by WiSig but their capture time is not in the cache",
+      "encoder": {"class": "wisig_w01_common.OfficialCNN", "feature": "encode() = 80-D post-ReLU fc2, pre-dropout", "native_head": "head (80 -> classes)"}
+    },
+    "shen": {
+      "description": "Shen et al. receiver-agnostic LoRa dataset, Strict CIS front end (G1)",
+      "root": "${GAI_DATA}/external/shen_receiver_agnostic",
+      "cache": "${RETRAIN_ROOT}/outputs/shen_p2a8/g1_cache_v1",
+      "cache_dirs": "shen_<rx>_train/{strict_cis.npy,labels.npy,rows.npy,manifest.json}",
+      "cache_note": "only the 10 source RX are cached (2000 rows = 200 per TX); development / reserved RX are not",
+      "registration": "${RETRAIN_ROOT}/configs/receiver_r01/registration.json",
+      "g1_registration": "/workspace/gai/branches/p2-rx-null/configs/shen_p2a8/g1_registration.json",
+      "num_classes": 10,
+      "label_map": "raw labels 31..40 -> task labels 0..9 (cache labels.npy already mapped)",
+      "input_shape": [1, 52, 126],
+      "input_dtype": "float32",
+      "scaler": "global mean/std over fitting packets only (receiver_r01.data.shen, stored with each checkpoint)",
+      "sample_unit": "packet",
+      "sample_unit_note": "rows.npy = original HDF5 row; row order is NOT verified to be time order and the root files carry no verified session/date",
+      "encoder": {"class": "b1_baselines.model.FeatureCNN (rank-16 FactorizedAuthorCNN)", "feature": "128-D relu(tx_input(normalize(feature))) = preclassifier", "historical_feature": "512-D L2-normalised forward_with_features()[1] (diagnostic only)", "native_head": "classifier (128 -> 10)"}
+    },
+    "osu": {
+      "description": "OSU LoRa Diff_Receivers_Setup_Indoor_SameTx: 25 LoPy4 TX, 2 USRP B210 RX, one continuous capture per (TX, RX)",
+      "root": "${GAI_DATA}/raw/osu_lora/Diff_Receivers_Setup/Diff_Receivers_Setup_Indoor_SameTx",
+      "file_pattern": "RX{rx}/Device{tx}_IQ.dat (+ .sigmf-meta)",
+      "file_bytes": 160000000,
+      "sha_status": "all 50 .dat SHA256 verified 2026-10-23 against OSU_download_independent_verification.json",
+      "metadata": {"datatype": "cf32", "sample_rate": "1 MS/s", "sample_count": 20000000, "date": "2022-03-08", "frequency": "915 MHz"},
+      "num_classes": 25,
+      "label_map": "Device{k} -> task label k-1; OSU labels are NOT Shen labels",
+      "physical_rx": ["RX1", "RX2"],
+      "sample_unit": "window",
+      "sample_unit_note": "8192-sample analysis windows on a fixed grid, selected by periodic-phase coherence (G1 build_osu); no packet detector, windows are not packets",
+      "front_end": "G1 Strict CIS (src/shen_p2a8/g1_data.py build_osu + save_features); compatibility with Shen front end asserted only for window length 8192 at 1 MS/s",
+      "role_decision": "TRANSFER_STRESS_ONLY (docs/rffi_calibration/DECISION_LOG.md)"
+    }
+  }
+}

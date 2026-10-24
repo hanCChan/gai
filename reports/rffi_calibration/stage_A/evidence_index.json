@@ -1,0 +1,250 @@
+{
+  "main_sources": [
+    {
+      "job": {
+        "job_id": "A_wisig_w0_T0_s20261013",
+        "stage": "A",
+        "dataset": "wisig",
+        "split": "w0",
+        "arm": "T0",
+        "seed": 20261013,
+        "lr": 0.0005,
+        "steps": 2400,
+        "eval_every": 16,
+        "n_ref": 16,
+        "n_query": 8,
+        "predicted_gpu_seconds": 900
+      },
+      "result": "reports/rffi_calibration/E4_frozen_heads/A_wisig_w0_T0_s20261013/gpu_head_fix_v2",
+      "verification": {
+        "verified": true,
+        "raw_rows_checked": 6432,
+        "total_rows": 7076,
+        "score_files": {
+          "predictions_rx1.npz": "7d2f51d79ec036b3aab038045cee38be7a619967c74abadaef81e8c9ca3c310b",
+          "predictions_rx7.npz": "ae52771878baf181818c9d7cdedc01d4266b2145fa0063e4a4d983bd8a42c34e",
+          "predictions_rx16.npz": "63981927665163dec8a02247db88147c9266a0a844849b70d71da4b55432239d",
+          "predictions_rx30.npz": "4ed28cffc0c17c01285688ebbda62fba5ea6af01bdc2705942f575c3f1d98388"
+        },
+        "rows_sha256": "984e4dcd8d75ed47fdb3389a463da5fb1e05865f636bf8f5ea90b95b93d4e9df",
+        "summary_sha256": "f3b688c987886770354658eb55b54f328577f4b67e3d3ce46f3dbb1c0e5b0ea4"
+      }
+    },
+    {
+      "job": {
+        "job_id": "A_wisig_w1_T0_s20261013",
+        "stage": "A",
+        "dataset": "wisig",
+        "split": "w1",
+        "arm": "T0",
+        "seed": 20261013,
+        "lr": 0.0005,
+        "steps": 2400,
+        "eval_every": 16,
+        "n_ref": 16,
+        "n_query": 8,
+        "predicted_gpu_seconds": 900
+      },
+      "result": "reports/rffi_calibration/E4_frozen_heads/A_wisig_w1_T0_s20261013/gpu_head_fix_v2",
+      "verification": {
+        "verified": true,
+        "raw_rows_checked": 6432,
+        "total_rows": 7076,
+        "score_files": {
+          "predictions_rx2.npz": "46f21f6e167983c34b203d63887545d80df8ea87fcad67bdfab556faa3735cd7",
+          "predictions_rx5.npz": "ea73d3f65ddcf34a61f495d2d860d617ae80184309fe29aee0bcb7f1556e9a26",
+          "predictions_rx6.npz": "d505dd286992624b5e4be3aba1565f2585aab0b5d7e4d116496292a8a8128741",
+          "predictions_rx26.npz": "8baad2044d2d18eb42f8bc2a6a100edcbf245ca344bc87313ce112757edbe5b4"
+        },
+        "rows_sha256": "ab44ef4cff04003e6647456e6022dc8b2b9e2dfeab4ae3422d3f0b30e51d05b9",
+        "summary_sha256": "094cd3647178e1e59d1664e11570e181b24e02d112d227e246d5cd079bdf9caf"
+      }
+    },
+    {
+      "job": {
+        "job_id": "A_shen_A1_T0_s20261013",
+        "stage": "A",
+        "dataset": "shen",
+        "split": "A/b210_1",
+        "arm": "T0",
+        "seed": 20261013,
+        "lr": 0.0003,
+        "steps": 220,
+        "eval_every": 11,
+        "n_ref": 16,
+        "n_query": 8,
+        "fit_rx": [
+          "rtl_1",
+          "rtl_3",
+          "rtl_6",
+          "rtl_9"
+        ],
+        "eval_rx": [
+          "b210_1"
+        ],
+        "excluded_rx": [
+          "b210_1",
+          "b200_mini_1",
+          "pluto_1",
+          "rtl_2",
+          "rtl_5",
+          "rtl_7"
+        ],
+        "predicted_gpu_seconds": 400
+      },
+      "result": "reports/rffi_calibration/E4_frozen_heads/A_shen_A1_T0_s20261013/gpu_head_fix_v2",
+      "verification": {
+        "verified": true,
+        "raw_rows_checked": 1608,
+        "total_rows": 1608,
+        "score_files": {
+          "predictions_rxb210_1.npz": "7fc5d3862391ccb085df030c8a05d40249e2a05906f89e330a24564c3dc76a3e"
+        },
+        "rows_sha256": "9af095481afa85efcdbc43ee780c6fa1611dc45e64edf52c9a878d79001e29ec",
+        "summary_sha256": "6c3fe667ca9f452bf8e0b6462cf4c8126cefb33f9420af2bb11693fd0cec110b"
+      }
+    },
+    {
+      "job": {
+        "job_id": "A_shen_A2_T0_s20261013",
+        "stage": "A",
+        "dataset": "shen",
+        "split": "A/rtl_1",
+        "arm": "T0",
+        "seed": 20261013,
+        "lr": 0.0003,
+        "steps": 220,
+        "eval_every": 11,
+        "n_ref": 16,
+        "n_query": 8,
+        "fit_rx": [
+          "b210_1",
+          "rtl_3",
+          "rtl_6",
+          "rtl_9"
+        ],
+        "eval_rx": [
+          "rtl_1"
+        ],
+        "excluded_rx": [
+          "rtl_1",
+          "b200_mini_1",
+          "pluto_1",
+          "rtl_2",
+          "rtl_5",
+          "rtl_7"
+        ],
+        "predicted_gpu_seconds": 400
+      },
+      "result": "reports/rffi_calibration/E4_frozen_heads/A_shen_A2_T0_s20261013/gpu_head_fix_v2",
+      "verification": {
+        "verified": true,
+        "raw_rows_checked": 1608,
+        "total_rows": 1608,
+        "score_files": {
+          "predictions_rxrtl_1.npz": "dcf343c9584597460e943a302b375d14c55709618ef86348879fbc1fe888252e"
+        },
+        "rows_sha256": "91b70d5722338b0bf0d0b4bb21316b4498d98126f00cb1302ae5edc73a2fbef9",
+        "summary_sha256": "3ba06c0139232ded14de34aaad22e9529cc6192e9a63730b5e5f7dac20e274d8"
+      }
+    },
+    {
+      "job": {
+        "job_id": "A_shen_B1_T0_s20261013",
+        "stage": "A",
+        "dataset": "shen",
+        "split": "B/b200_mini_1",
+        "arm": "T0",
+        "seed": 20261013,
+        "lr": 0.0003,
+        "steps": 220,
+        "eval_every": 11,
+        "n_ref": 16,
+        "n_query": 8,
+        "fit_rx": [
+          "pluto_1",
+          "rtl_2",
+          "rtl_5",
+          "rtl_7"
+        ],
+        "eval_rx": [
+          "b200_mini_1"
+        ],
+        "excluded_rx": [
+          "b200_mini_1",
+          "b210_1",
+          "rtl_1",
+          "rtl_3",
+          "rtl_6",
+          "rtl_9"
+        ],
+        "predicted_gpu_seconds": 400
+      },
+      "result": "reports/rffi_calibration/E4_frozen_heads/A_shen_B1_T0_s20261013/gpu_head_fix_v2",
+      "verification": {
+        "verified": true,
+        "raw_rows_checked": 1608,
+        "total_rows": 1608,
+        "score_files": {
+          "predictions_rxb200_mini_1.npz": "cbb3790d15d7c60f26b987c758309bf2d9881348a81fb3efa4cab831e71bd425"
+        },
+        "rows_sha256": "168945086336bba2fa7a922a356793e9f9d3ee84dac0d6f7d72e9bb32599fbe8",
+        "summary_sha256": "dade959dbbdf3e5c749790005cd5819d4131987e736e71cbbaabf5efba9821c1"
+      }
+    },
+    {
+      "job": {
+        "job_id": "A_shen_B2_T0_s20261013",
+        "stage": "A",
+        "dataset": "shen",
+        "split": "B/pluto_1",
+        "arm": "T0",
+        "seed": 20261013,
+        "lr": 0.0003,
+        "steps": 220,
+        "eval_every": 11,
+        "n_ref": 16,
+        "n_query": 8,
+        "fit_rx": [
+          "b200_mini_1",
+          "rtl_2",
+          "rtl_5",
+          "rtl_7"
+        ],
+        "eval_rx": [
+          "pluto_1"
+        ],
+        "excluded_rx": [
+          "pluto_1",
+          "b210_1",
+          "rtl_1",
+          "rtl_3",
+          "rtl_6",
+          "rtl_9"
+        ],
+        "predicted_gpu_seconds": 400
+      },
+      "result": "reports/rffi_calibration/E4_frozen_heads/A_shen_B2_T0_s20261013/gpu_head_fix_v2",
+      "verification": {
+        "verified": true,
+        "raw_rows_checked": 1608,
+        "total_rows": 1608,
+        "score_files": {
+          "predictions_rxpluto_1.npz": "156d3d76f009e3125f8108b7f6ba931237a2fd958eb695d255881016d5d2ce6b"
+        },
+        "rows_sha256": "1676f5c16f669c37dd6ac1f5a2f34b48ac1812211d3604272d18a70fb9fe7db9",
+        "summary_sha256": "46e3793248bb0d37fbd43145deebf4f8d017fd27a4262d5430e34565b0c04650"
+      }
+    }
+  ],
+  "a0_directories": [
+    "reports/rffi_calibration/E4_A0/w0_ccalign_lam0.3/gpu_head_fix_v2",
+    "reports/rffi_calibration/E4_A0/w0_ccalign_lam1/gpu_head_fix_v2",
+    "reports/rffi_calibration/E4_A0/w0_ccalign_lam3/gpu_head_fix_v2",
+    "reports/rffi_calibration/E4_A0/w1_ccalign_lam0.3/gpu_head_fix_v2",
+    "reports/rffi_calibration/E4_A0/w1_ccalign_lam1/gpu_head_fix_v2",
+    "reports/rffi_calibration/E4_A0/w1_ccalign_lam3/gpu_head_fix_v2"
+  ],
+  "historical_base": "b6ce3c25648b958424cd4818067f65e800985f1d",
+  "input_integrity": "reports/rffi_calibration/stage_A_execution/input_integrity.json"
+}

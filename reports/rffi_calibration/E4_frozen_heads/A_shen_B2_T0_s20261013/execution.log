@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/workspace/gai/branches/rffi-budget-calibration-v1/scripts/rffi_calibration/frozen_heads.py", line 207, in <module>
+    main()
+  File "/workspace/gai/branches/rffi-budget-calibration-v1/scripts/rffi_calibration/frozen_heads.py", line 197, in main
+    rows, summary = run(source, targets, T, sq['rule'], sq['q_per_class'], out, a.draws or proto['n_draws'],
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/gai/branches/rffi-budget-calibration-v1/scripts/rffi_calibration/frozen_heads.py", line 76, in run
+    r, logits = evaluate_target(fitted, fs, man, T, keep_logits=True)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/gai/branches/rffi-budget-calibration-v1/src/rffi_calibration/evaluator.py", line 107, in evaluate_target
+    lg = cal.log_scores(zq).detach()
+         ^^^^^^^^^^^^^^^^^^
+  File "/workspace/gai/branches/rffi-budget-calibration-v1/src/rffi_calibration/heads.py", line 68, in log_scores
+    return _as64(z) @ self.W.T + self.b
+           ~~~~~~~~~^~~~~~~~~~
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cpu and cuda:0! (when checking argument for argument mat2 in method wrapper_CUDA_mm)

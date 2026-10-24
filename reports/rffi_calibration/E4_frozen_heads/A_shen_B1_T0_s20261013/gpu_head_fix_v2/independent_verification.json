@@ -1,0 +1,10 @@
+{
+  "verified": true,
+  "raw_rows_checked": 1608,
+  "total_rows": 1608,
+  "score_files": {
+    "predictions_rxb200_mini_1.npz": "cbb3790d15d7c60f26b987c758309bf2d9881348a81fb3efa4cab831e71bd425"
+  },
+  "rows_sha256": "168945086336bba2fa7a922a356793e9f9d3ee84dac0d6f7d72e9bb32599fbe8",
+  "summary_sha256": "dade959dbbdf3e5c749790005cd5819d4131987e736e71cbbaabf5efba9821c1"
+}

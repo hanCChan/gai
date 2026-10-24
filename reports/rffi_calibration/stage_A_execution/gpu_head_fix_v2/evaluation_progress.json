@@ -1,0 +1,103 @@
+{
+  "records": [
+    {
+      "task": "A_shen_A2_T0_s20261013",
+      "exit_code": 0,
+      "verified": true,
+      "error": "",
+      "reserved_gpu_seconds": 14.010127410292625,
+      "gpu": 3
+    },
+    {
+      "task": "A_shen_A1_T0_s20261013",
+      "exit_code": 0,
+      "verified": true,
+      "error": "",
+      "reserved_gpu_seconds": 18.99771536141634,
+      "gpu": 2
+    },
+    {
+      "task": "A_wisig_w0_T0_s20261013",
+      "exit_code": 0,
+      "verified": true,
+      "error": "",
+      "reserved_gpu_seconds": 23.594901517033577,
+      "gpu": 0
+    },
+    {
+      "task": "A_wisig_w1_T0_s20261013",
+      "exit_code": 0,
+      "verified": true,
+      "error": "",
+      "reserved_gpu_seconds": 51.56812960654497,
+      "gpu": 1
+    },
+    {
+      "task": "A_shen_B1_T0_s20261013",
+      "exit_code": 0,
+      "verified": true,
+      "error": "",
+      "reserved_gpu_seconds": 61.51981649547815,
+      "gpu": 3
+    },
+    {
+      "task": "A_shen_B2_T0_s20261013",
+      "exit_code": 0,
+      "verified": true,
+      "error": "",
+      "reserved_gpu_seconds": 61.061931617558,
+      "gpu": 2
+    },
+    {
+      "task": "w0_ccalign_lam3",
+      "exit_code": 0,
+      "verified": true,
+      "error": "",
+      "reserved_gpu_seconds": 20.016412742435932,
+      "gpu": 2
+    },
+    {
+      "task": "w1_ccalign_lam0.3",
+      "exit_code": 0,
+      "verified": true,
+      "error": "",
+      "reserved_gpu_seconds": 44.29308243840933,
+      "gpu": 3
+    },
+    {
+      "task": "w0_ccalign_lam0.3",
+      "exit_code": 0,
+      "verified": true,
+      "error": "",
+      "reserved_gpu_seconds": 70.56363465636969,
+      "gpu": 0
+    },
+    {
+      "task": "w0_ccalign_lam1",
+      "exit_code": 0,
+      "verified": true,
+      "error": "",
+      "reserved_gpu_seconds": 96.3662957251072,
+      "gpu": 1
+    },
+    {
+      "task": "w1_ccalign_lam1",
+      "exit_code": 0,
+      "verified": true,
+      "error": "",
+      "reserved_gpu_seconds": 52.163306549191475,
+      "gpu": 2
+    },
+    {
+      "task": "w1_ccalign_lam3",
+      "exit_code": 0,
+      "verified": true,
+      "error": "",
+      "reserved_gpu_seconds": 77.45945337414742,
+      "gpu": 3
+    }
+  ],
+  "pending": [],
+  "running": [],
+  "reserved_gpu_seconds": 884.3285707384348
+}

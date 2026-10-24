@@ -1,0 +1,72 @@
+{
+  "decision": "STOP_DECOMPOSITION",
+  "scope": "this fixed T0 frozen-head Stage A only",
+  "stage_B_active": false,
+  "optional_T1_fits": 0,
+  "fits": 6,
+  "fit_failures": 0,
+  "fit_retries": 0,
+  "initial_evaluation_failures": 12,
+  "corrected_evaluations_verified": 12,
+  "max_gpu_hours": 1.5,
+  "total_conservative_gpu_hours": 0.2539801585384541,
+  "additional_gpu_regression_allowance_seconds": 30,
+  "gates": [
+    {
+      "split": "w0",
+      "head": "H1",
+      "h4_acc": 50.6375,
+      "simple_acc": 55.83125,
+      "delta_pp": -5.193749999999997,
+      "passed": false,
+      "paired": {
+        "a": "H4",
+        "b": "H1",
+        "m": 1,
+        "n_rx": 4,
+        "mean_pp": -5.193750000000001,
+        "lo_pp": -18.14758253031745,
+        "hi_pp": 7.760082530317451,
+        "n_improved": 2,
+        "per_rx_pp": {
+          "1": -15.149999999999997,
+          "7": -8.500000000000007,
+          "16": 0.8000000000000063,
+          "30": 2.0749999999999935
+        }
+      }
+    },
+    {
+      "split": "w1",
+      "head": "H2*",
+      "h4_acc": 46.1375,
+      "simple_acc": 57.06249999999999,
+      "delta_pp": -10.92499999999999,
+      "passed": false,
+      "paired": {
+        "a": "H4",
+        "b": "H2*",
+        "m": 1,
+        "n_rx": 4,
+        "mean_pp": -10.924999999999999,
+        "lo_pp": -28.324566184729242,
+        "hi_pp": 6.474566184729246,
+        "n_improved": 1,
+        "per_rx_pp": {
+          "2": -6.250000000000005,
+          "5": -20.44999999999999,
+          "6": 2.3249999999999993,
+          "26": -19.325
+        }
+      }
+    }
+  ],
+  "shen_tuned_family_gate": "unavailable: only one encoder-held RX per checkpoint",
+  "shen_fixed_head_h4_vs_h2l_improved_rx": 0,
+  "crossfit_rows_independently_checked": 5152,
+  "third_multirx_validation": "not satisfied",
+  "sealed_numeric_access": false,
+  "temperature_fitting": "not run; probability metrics are unscaled",
+  "fitting_registry_fingerprint": "751c0ff63bdee346385a7d8dff92b27dd68477d88d28ce9d379d93fd5951904c",
+  "evaluation_ledger_recovery": true
+}

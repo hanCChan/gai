@@ -1,0 +1,158 @@
+{
+  "version": "rffi_calibration/registration v1 (2026-10-24), frozen before any calibration score on real data",
+  "task": "closed-set known-TX cross-receiver re-calibration; m trusted labelled packets per TX on the target RX; inductive query scoring",
+  "budgets": [
+    0,
+    1,
+    2,
+    5,
+    10
+  ],
+  "n_draws": 20,
+  "pool_max": 10,
+  "support_query": {
+    "wisig": {
+      "rule": {
+        "type": "by_date",
+        "support_dates": [
+          0
+        ],
+        "query_dates": [
+          1
+        ]
+      },
+      "q_per_class": 20,
+      "note": "support and query from different capture dates; positions 0..199 of each date"
+    },
+    "shen": {
+      "rule": {
+        "type": "by_order",
+        "support_frac": [
+          0.0,
+          0.5
+        ],
+        "query_frac": [
+          0.5,
+          1.0
+        ],
+        "guard": 2
+      },
+      "q_per_class": 40,
+      "note": "split by original HDF5 row order inside each (RX, TX); row order is not verified time order: dependence limitation disclosed"
+    },
+    "osu": {
+      "rule": {
+        "type": "by_role",
+        "support_role": "support",
+        "query_role": "query"
+      },
+      "q_per_class": 20,
+      "note": "records tagged by fixed raw-sample blocks (roles.json osu.blocks) before windowing"
+    }
+  },
+  "coverage_threshold": {
+    "support_pool_min": 10,
+    "query_min": "q_per_class",
+    "rule": "count-only; RX without full coverage go to the partial-coverage table, missing classes are never scored as zero"
+  },
+  "statistics": {
+    "kappa_K": 8.0,
+    "floor_abs": 1e-08,
+    "floor_rel": 1e-05,
+    "min_cell": 2,
+    "dtype": "float64",
+    "covariance": "diagonal (V1)",
+    "finite_center": "A = K + U primary; A = K ablation"
+  },
+  "heads": {
+    "H0": "native linear classifier (N/A for new identities)",
+    "H0S": "source-mean diag LDA, 0-shot information-matched reference",
+    "H1": "target mean + pooled diag variance; H1e Euclidean",
+    "H2": {
+      "alpha_grid": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "selection": "per budget m, receiver-equal mean accuracy on source_selection RX; reported gate uses leave-one-selection-RX-out cross-fitting"
+    },
+    "H2fix": "alpha = m/(m+2) with pooled diag variance",
+    "H2L": "exact P2E proto rule (PCA .995 cap 32, pooled full covariance shrink .1, m/(m+2))",
+    "H3": {
+      "kappa_b": 8.0
+    },
+    "H4": [
+      "H4 (class-shrunk, A=K+U)",
+      "H4-AK (A=K)",
+      "H4-pooled (K_pool, Sigma_pool)"
+    ],
+    "H5a": "SimpleShot CL2N",
+    "H5b": {
+      "beta": 1.0,
+      "note": "frozen-head port of the Simple CNAPS classifier; no FiLM adaptation"
+    },
+    "H5c": {
+      "kappa0_grid": [
+        1.0,
+        4.0,
+        16.0
+      ],
+      "selection": "as H2"
+    }
+  },
+  "temperature": {
+    "method": "1-D NLL temperature scaling per head and m on source_selection query scores (cross-fitted for the gate); affects NLL/Brier/ECE only"
+  },
+  "primary_comparisons": [
+    [
+      "H4",
+      "H2*"
+    ],
+    [
+      "H4",
+      "H3"
+    ],
+    [
+      "H4",
+      "H2L"
+    ],
+    [
+      "H4",
+      "H1"
+    ],
+    [
+      "H4",
+      "H4-AK"
+    ],
+    [
+      "H4",
+      "H4-pooled"
+    ]
+  ],
+  "gate": {
+    "where": "source_selection RX of each WiSig fold / Shen group (encoder-held), cross-fitted selection",
+    "wisig": "H4 - max(H1, H2*, H2L, H3) >= +2.0 pp receiver-equal accuracy at m=1, with 5-shot, worst-RX and n_improved reported",
+    "shen": "relative reduction of the remaining error of the strongest simple head at m=1 and m=5, worst-RX reported",
+    "status": "engineering threshold, not a definition of novelty; fixed before any real-data score",
+    "if_fail": "stop claiming that the between/within decomposition is necessary; keep the simple RF calibration result"
+  },
+  "reservation": {
+    "stage": "A",
+    "active": false,
+    "allowed_job_ids": [
+      "A_wisig_w0_T0_s20261013",
+      "A_wisig_w1_T0_s20261013",
+      "A_shen_A1_T0_s20261013",
+      "A_shen_A2_T0_s20261013",
+      "A_shen_B1_T0_s20261013",
+      "A_shen_B2_T0_s20261013"
+    ],
+    "max_fits": 6,
+    "max_reserved_gpu_hours": 1.5,
+    "allow_feature_extraction": false,
+    "allow_final_numeric_access": false,
+    "allow_failed_fit_retry": false
+  }
+}

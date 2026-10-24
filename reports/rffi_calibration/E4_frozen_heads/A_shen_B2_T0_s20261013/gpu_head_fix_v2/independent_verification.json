@@ -1,0 +1,10 @@
+{
+  "verified": true,
+  "raw_rows_checked": 1608,
+  "total_rows": 1608,
+  "score_files": {
+    "predictions_rxpluto_1.npz": "156d3d76f009e3125f8108b7f6ba931237a2fd958eb695d255881016d5d2ce6b"
+  },
+  "rows_sha256": "1676f5c16f669c37dd6ac1f5a2f34b48ac1812211d3604272d18a70fb9fe7db9",
+  "summary_sha256": "46e3793248bb0d37fbd43145deebf4f8d017fd27a4262d5430e34565b0c04650"
+}

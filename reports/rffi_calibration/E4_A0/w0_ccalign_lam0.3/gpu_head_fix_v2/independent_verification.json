@@ -1,0 +1,13 @@
+{
+  "verified": true,
+  "raw_rows_checked": 6432,
+  "total_rows": 7076,
+  "score_files": {
+    "predictions_rx1.npz": "92162dc634370d65283e271ee760afd14f9ec7ca0d79ddfd0d884e91af165a41",
+    "predictions_rx7.npz": "c7b47f49b083a48dd8664652dffbd8fcc0badb7622442893690911ec9145cef3",
+    "predictions_rx16.npz": "07fe77c4734bf07ccdc4966e1102fd650cbb4f212e247830ab5c762951a2f223",
+    "predictions_rx30.npz": "4337d90476747bfddf68a6c6a010436d96e170869dbe59fda3ee322a0e3ce621"
+  },
+  "rows_sha256": "df969122b789f6ed2f5eb302e51a8d32b50cb2227ab806ab0e6795cbc8368a0b",
+  "summary_sha256": "f071acdcfddcab60c16b39cce3acc23f5fb13dcaff70fe61c607ffcdebe254f9"
+}

@@ -1,0 +1,57 @@
+{
+  "tasks": [
+    {
+      "job_id": "A_wisig_w1_T0_s20261013",
+      "state": "completed",
+      "exit_code": 0,
+      "verifier_error": "",
+      "gpu": 1,
+      "gpu_reserved_seconds": 36.06018449366093
+    },
+    {
+      "job_id": "A_wisig_w0_T0_s20261013",
+      "state": "completed",
+      "exit_code": 0,
+      "verifier_error": "",
+      "gpu": 0,
+      "gpu_reserved_seconds": 38.718996465206146
+    },
+    {
+      "job_id": "A_shen_A2_T0_s20261013",
+      "state": "completed",
+      "exit_code": 0,
+      "verifier_error": "",
+      "gpu": 3,
+      "gpu_reserved_seconds": 40.74470987915993
+    },
+    {
+      "job_id": "A_shen_A1_T0_s20261013",
+      "state": "completed",
+      "exit_code": 0,
+      "verifier_error": "",
+      "gpu": 2,
+      "gpu_reserved_seconds": 50.78732369840145
+    },
+    {
+      "job_id": "A_shen_B1_T0_s20261013",
+      "state": "completed",
+      "exit_code": 0,
+      "verifier_error": "",
+      "gpu": 1,
+      "gpu_reserved_seconds": 23.11443369835615
+    },
+    {
+      "job_id": "A_shen_B2_T0_s20261013",
+      "state": "completed",
+      "exit_code": 0,
+      "verifier_error": "",
+      "gpu": 0,
+      "gpu_reserved_seconds": 35.167986921966076
+    }
+  ],
+  "reserved_gpu_hours": 0.06238712087687519,
+  "max_gpu_hours": 1.5,
+  "stopped": false,
+  "registry_fingerprint": "751c0ff63bdee346385a7d8dff92b27dd68477d88d28ce9d379d93fd5951904c",
+  "data_manifest_sha": "5abf2ed43dfa203c9aaa2211034467bd1d15ec367be67c0b853f5e62db3d2c6d"
+}

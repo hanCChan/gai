@@ -1,0 +1,28 @@
+{
+  "version": "rffi_calibration/formal_matrix v1 (2026-10-24)",
+  "status": "inactive — no job may run until registration.json reservation is activated by the user",
+  "horizon_rule": "steps chosen to match the historical packet exposure (WiSig 150 epochs x 24,000 fit packets ~= 2,400 steps of ~1,540 records; Shen 20 epochs x 6,400 ~= 220 steps of ~590 records); checkpoint = min receiver-equal CE on fit-RX held positions, evaluated every eval_every steps",
+  "stage_A0": {
+    "fits": 0,
+    "inputs": "6 historical 8-class WiSig search checkpoints RETRAIN_ROOT/outputs/receiver_p2_wisig/search/{w0,w1}_ccalign_lam{0.3,1,3}",
+    "note": "encoder-held for the fold's source_selection RX (gradients and epoch choice on fit RX only); 8-class historical-compatibility diagnostic only"
+  },
+  "jobs": [
+    {"job_id": "A_wisig_w0_T0_s20261013", "stage": "A", "dataset": "wisig", "split": "w0", "arm": "T0", "seed": 20261013, "lr": 5e-4, "steps": 2400, "eval_every": 16, "n_ref": 16, "n_query": 8, "predicted_gpu_seconds": 900},
+    {"job_id": "A_wisig_w1_T0_s20261013", "stage": "A", "dataset": "wisig", "split": "w1", "arm": "T0", "seed": 20261013, "lr": 5e-4, "steps": 2400, "eval_every": 16, "n_ref": 16, "n_query": 8, "predicted_gpu_seconds": 900},
+    {"job_id": "A_shen_A1_T0_s20261013", "stage": "A", "dataset": "shen", "split": "A/b210_1", "arm": "T0", "seed": 20261013, "lr": 3e-4, "steps": 220, "eval_every": 11, "n_ref": 16, "n_query": 8,
+     "fit_rx": ["rtl_1", "rtl_3", "rtl_6", "rtl_9"], "eval_rx": ["b210_1"],
+     "excluded_rx": ["b210_1", "b200_mini_1", "pluto_1", "rtl_2", "rtl_5", "rtl_7"], "predicted_gpu_seconds": 400},
+    {"job_id": "A_shen_A2_T0_s20261013", "stage": "A", "dataset": "shen", "split": "A/rtl_1", "arm": "T0", "seed": 20261013, "lr": 3e-4, "steps": 220, "eval_every": 11, "n_ref": 16, "n_query": 8,
+     "fit_rx": ["b210_1", "rtl_3", "rtl_6", "rtl_9"], "eval_rx": ["rtl_1"],
+     "excluded_rx": ["rtl_1", "b200_mini_1", "pluto_1", "rtl_2", "rtl_5", "rtl_7"], "predicted_gpu_seconds": 400},
+    {"job_id": "A_shen_B1_T0_s20261013", "stage": "A", "dataset": "shen", "split": "B/b200_mini_1", "arm": "T0", "seed": 20261013, "lr": 3e-4, "steps": 220, "eval_every": 11, "n_ref": 16, "n_query": 8,
+     "fit_rx": ["pluto_1", "rtl_2", "rtl_5", "rtl_7"], "eval_rx": ["b200_mini_1"],
+     "excluded_rx": ["b200_mini_1", "b210_1", "rtl_1", "rtl_3", "rtl_6", "rtl_9"], "predicted_gpu_seconds": 400},
+    {"job_id": "A_shen_B2_T0_s20261013", "stage": "A", "dataset": "shen", "split": "B/pluto_1", "arm": "T0", "seed": 20261013, "lr": 3e-4, "steps": 220, "eval_every": 11, "n_ref": 16, "n_query": 8,
+     "fit_rx": ["b200_mini_1", "rtl_2", "rtl_5", "rtl_7"], "eval_rx": ["pluto_1"],
+     "excluded_rx": ["pluto_1", "b210_1", "rtl_1", "rtl_3", "rtl_6", "rtl_9"], "predicted_gpu_seconds": 400}
+  ],
+  "optional_jobs_note": "T1 (ccalign, Shen lambda 3 = P2E LORO choice) for the 4 Shen tasks would add 4 fits; WiSig ccalign lambda is not selected on 10 classes yet. Not in the minimal Stage A request.",
+  "stage_B": "inactive: 4 arms x 2 splits x 3 seeds per dataset (WiSig 24 + Shen 24); OSU 0 encoder fits (frozen Shen trunk transfer)"
+}

@@ -98,3 +98,9 @@ reports/receiver_r2/**/mode_dropout_comparison.csv
 !/reports/receiver_r2/r2_a/evidence_part*.zip
 
 !/reports/receiver_c0/evidence.zip
+
+# RFFI calibration local-only prediction evidence and queue state.
+/reports/rffi_calibration/**/predictions_rx*.npz
+/reports/rffi_calibration/**/confusions.json
+/reports/rffi_calibration/**/manifest_rx*.json
+/reports/rffi_calibration/**/*.sqlite

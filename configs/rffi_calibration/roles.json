@@ -1,0 +1,59 @@
+{
+  "version": "rffi_calibration/roles v1 (2026-10-24)",
+  "rule": "final_reserved entries are numerically sealed: access.py refuses to open them unless the active reservation sets allow_final_numeric_access (it is false). source_selection RX must be excluded from every encoder gradient, scaler, statistic and epoch choice of the encoder evaluated on them.",
+  "wisig": {
+    "source": [6, 7, 26, 30, 1, 2, 5, 10, 12, 13, 16, 28, 31, 22],
+    "folds": {
+      "w0": {"fit": [2, 5, 6, 10, 12, 13, 22, 26, 28, 31], "source_selection": [1, 7, 16, 30]},
+      "w1": {"fit": [7, 30, 1, 10, 12, 13, 16, 28, 31, 22], "source_selection": [6, 26, 2, 5]}
+    },
+    "fold_provenance": "RETRAIN_ROOT/configs/receiver_p2/wisig_folds.json (registered 2026-10-23, before any calibration result); not two independent captures, not hardware-family-held-out (14 source RX = 6 B210, 7 N210, 1 X310)",
+    "development": [3, 4, 11, 9, 27, 18, 21, 20, 25, 19],
+    "final_reserved": [29, 0, 8, 14, 15, 17, 23, 24],
+    "fit_dates": [0, 1],
+    "fit_positions": [0, 120],
+    "epoch_selection_positions": [120, 160],
+    "development_dates": [0, 1, 2],
+    "development_date_note": "date index 2 has been read in earlier development pipelines; it is NOT a blind test",
+    "reserved_dates": [3],
+    "equalized": "reserved (never paired with unequalised packets)"
+  },
+  "shen": {
+    "source": ["b200_mini_1", "b210_1", "pluto_1", "rtl_1", "rtl_2", "rtl_3", "rtl_5", "rtl_6", "rtl_7", "rtl_9"],
+    "outer_groups": {
+      "A": ["b210_1", "rtl_1", "rtl_3", "rtl_6", "rtl_9"],
+      "B": ["b200_mini_1", "pluto_1", "rtl_2", "rtl_5", "rtl_7"]
+    },
+    "outer_group_note": "both groups were used repeatedly in P0-P2E development: paired mechanism evidence, never a first blind test",
+    "source_selection_tasks": {
+      "A": ["b210_1", "rtl_1"],
+      "B": ["b200_mini_1", "pluto_1"]
+    },
+    "source_selection_rule": "first two RX of each group in registered order; each task holds ONE of them out and fits the other four; fixed before any calibration score",
+    "fit_partition": "first 160 rows per TX (receiver_r01.data.shen 'train')",
+    "epoch_selection_partition": "last 40 rows per TX of the FIT RX only",
+    "development": ["b200_1", "n210_1", "rtl_4", "rtl_8"],
+    "development_note": "not cached locally; access history must be audited before they are built (DATASET_READINESS.md)",
+    "final_reserved": ["b200_2", "b200_mini_2", "b210_2", "n210_2", "n210_3", "pluto_2"],
+    "stress_unregistered": "dated/location files under Test/ and the drift set: not registered; access history unaudited"
+  },
+  "osu": {
+    "mode": "TRANSFER_STRESS_ONLY",
+    "directions": [["RX1", "RX2"], ["RX2", "RX1"]],
+    "blocks": {
+      "unit": "fraction of the 20,000,000-sample capture",
+      "fit": [0.0, 0.40],
+      "support": [0.45, 0.60],
+      "query": [0.65, 1.0],
+      "guard_samples": 8192,
+      "rule": "blocks are fixed raw sample ranges chosen before any window is extracted; windows never cross a block edge; the 5% gaps are discarded"
+    },
+    "use": {
+      "source_rx": "fit block -> registration statistics of the 25 new identities (n_src per class recorded)",
+      "target_rx": "support block -> m-shot support draws; query block -> fixed query; target fit block unused"
+    },
+    "final_reserved": [],
+    "front_end": {"coherence_min": 0.8, "min_windows_per_class": 20, "provenance": "configs/shen_p2a8/g1_registration.json osu_periodic_coherence_min / osu_minimum_windows_per_class; applied inside each block, never tuned on targets"},
+    "note": "single physical RX per direction: K is not identifiable inside OSU; only the TRANSFER_POOLED_PRIOR variant (Shen-fitted K_pool, Sigma_pool in a frozen Shen trunk) is defined"
+  }
+}

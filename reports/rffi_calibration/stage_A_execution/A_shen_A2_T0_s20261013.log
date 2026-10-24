@@ -1,0 +1,21 @@
+{"job": "A_shen_A2_T0_s20261013", "step": 11, "val_ce": 2.293379843235016, "seconds": 1.3}
+{"job": "A_shen_A2_T0_s20261013", "step": 22, "val_ce": 2.1641761660575867, "seconds": 2.0}
+{"job": "A_shen_A2_T0_s20261013", "step": 33, "val_ce": 2.027141809463501, "seconds": 2.8}
+{"job": "A_shen_A2_T0_s20261013", "step": 44, "val_ce": 1.8976991474628448, "seconds": 3.5}
+{"job": "A_shen_A2_T0_s20261013", "step": 55, "val_ce": 1.7991351783275604, "seconds": 4.3}
+{"job": "A_shen_A2_T0_s20261013", "step": 66, "val_ce": 1.6878133118152618, "seconds": 5.0}
+{"job": "A_shen_A2_T0_s20261013", "step": 77, "val_ce": 1.5573435127735138, "seconds": 5.7}
+{"job": "A_shen_A2_T0_s20261013", "step": 88, "val_ce": 1.456557959318161, "seconds": 6.5}
+{"job": "A_shen_A2_T0_s20261013", "step": 99, "val_ce": 1.4002760648727417, "seconds": 7.2}
+{"job": "A_shen_A2_T0_s20261013", "step": 110, "val_ce": 1.3166244328022003, "seconds": 7.9}
+{"job": "A_shen_A2_T0_s20261013", "step": 121, "val_ce": 1.2326855063438416, "seconds": 8.7}
+{"job": "A_shen_A2_T0_s20261013", "step": 132, "val_ce": 1.3290663063526154, "seconds": 9.4}
+{"job": "A_shen_A2_T0_s20261013", "step": 143, "val_ce": 1.1513766646385193, "seconds": 10.2}
+{"job": "A_shen_A2_T0_s20261013", "step": 154, "val_ce": 1.1181205809116364, "seconds": 10.9}
+{"job": "A_shen_A2_T0_s20261013", "step": 165, "val_ce": 1.0253761410713196, "seconds": 11.6}
+{"job": "A_shen_A2_T0_s20261013", "step": 176, "val_ce": 0.9807527959346771, "seconds": 12.4}
+{"job": "A_shen_A2_T0_s20261013", "step": 187, "val_ce": 0.9745899438858032, "seconds": 13.1}
+{"job": "A_shen_A2_T0_s20261013", "step": 198, "val_ce": 0.9306926131248474, "seconds": 13.8}
+{"job": "A_shen_A2_T0_s20261013", "step": 209, "val_ce": 1.2270146906375885, "seconds": 14.6}
+{"job": "A_shen_A2_T0_s20261013", "step": 220, "val_ce": 0.9487287849187851, "seconds": 15.3}
+{"job": "A_shen_A2_T0_s20261013", "best": {"ce": 0.9306926131248474, "step": 198}, "seconds": 15.3}

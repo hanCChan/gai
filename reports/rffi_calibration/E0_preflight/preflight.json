@@ -1,0 +1,311 @@
+{
+ "registry_fingerprint": "8e4ae6ebaf9366da208fd895994f226f8a411ec3c74970ea04202e143f7c347e",
+ "reservation": {
+  "stage": "A",
+  "active": false,
+  "allowed_job_ids": [],
+  "max_fits": 0,
+  "max_reserved_gpu_hours": 0,
+  "allow_feature_extraction": false,
+  "allow_final_numeric_access": false,
+  "allow_failed_fit_retry": false
+ },
+ "problems": [],
+ "wisig_cache_files": 72,
+ "wisig_source_min_cell": 200,
+ "wisig_source_cells_lt_200": [],
+ "wisig_archive_bytes": 1310655283,
+ "shen_cache": {
+  "b200_mini_1": {
+   "present": true,
+   "per_tx": [
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200
+   ]
+  },
+  "b210_1": {
+   "present": true,
+   "per_tx": [
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200
+   ]
+  },
+  "pluto_1": {
+   "present": true,
+   "per_tx": [
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200
+   ]
+  },
+  "rtl_1": {
+   "present": true,
+   "per_tx": [
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200
+   ]
+  },
+  "rtl_2": {
+   "present": true,
+   "per_tx": [
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200
+   ]
+  },
+  "rtl_3": {
+   "present": true,
+   "per_tx": [
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200
+   ]
+  },
+  "rtl_5": {
+   "present": true,
+   "per_tx": [
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200
+   ]
+  },
+  "rtl_6": {
+   "present": true,
+   "per_tx": [
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200
+   ]
+  },
+  "rtl_7": {
+   "present": true,
+   "per_tx": [
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200
+   ]
+  },
+  "rtl_9": {
+   "present": true,
+   "per_tx": [
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200
+   ]
+  }
+ },
+ "shen_root_h5": [
+  "Location_A_n210_1_test.h5",
+  "Location_A_n210_2_test.h5",
+  "Location_A_n210_3_test.h5",
+  "Location_B_n210_1_test.h5",
+  "Location_B_n210_2_test.h5",
+  "Location_B_n210_3_test.h5",
+  "Location_C_n210_1_test.h5",
+  "Location_C_n210_2_test.h5",
+  "Location_C_n210_3_test.h5",
+  "Location_D_n210_1_test.h5",
+  "Location_D_n210_2_test.h5",
+  "Location_D_n210_3_test.h5",
+  "Location_E_n210_1_test.h5",
+  "Location_E_n210_2_test.h5",
+  "Location_E_n210_3_test.h5",
+  "Location_F_n210_1_test.h5",
+  "Location_F_n210_2_test.h5",
+  "Location_F_n210_3_test.h5",
+  "b200_1_test.h5",
+  "b200_1_train.h5",
+  "b200_2_test.h5",
+  "b200_mini_1_test.h5",
+  "b200_mini_1_train.h5",
+  "b200_mini_2_test.h5",
+  "b210_1_test.h5",
+  "b210_1_train.h5",
+  "b210_2_test.h5",
+  "n210_1_test.h5",
+  "n210_1_train.h5",
+  "n210_2_test.h5",
+  "n210_3_test.h5",
+  "pluto_1_test.h5",
+  "pluto_1_train.h5",
+  "pluto_2_test.h5",
+  "rtl_1_test.h5",
+  "rtl_1_train.h5",
+  "rtl_2_test.h5",
+  "rtl_2_train.h5",
+  "rtl_3_test.h5",
+  "rtl_3_train.h5",
+  "rtl_4_test.h5",
+  "rtl_4_train.h5",
+  "rtl_5_test.h5",
+  "rtl_5_train.h5",
+  "rtl_6_test.h5",
+  "rtl_6_train.h5",
+  "rtl_7_test.h5",
+  "rtl_7_train.h5",
+  "rtl_8_test.h5",
+  "rtl_8_train.h5",
+  "rtl_9_test.h5",
+  "rtl_9_train.h5"
+ ],
+ "shen_uncached_present_h5": {
+  "b200_1": [
+   "b200_1_test.h5",
+   "b200_1_train.h5"
+  ],
+  "n210_1": [
+   "n210_1_test.h5",
+   "n210_1_train.h5"
+  ],
+  "rtl_4": [
+   "rtl_4_test.h5",
+   "rtl_4_train.h5"
+  ],
+  "rtl_8": [
+   "rtl_8_test.h5",
+   "rtl_8_train.h5"
+  ],
+  "b200_2": [
+   "b200_2_test.h5"
+  ],
+  "b200_mini_2": [
+   "b200_mini_2_test.h5"
+  ],
+  "b210_2": [
+   "b210_2_test.h5"
+  ],
+  "n210_2": [
+   "n210_2_test.h5"
+  ],
+  "n210_3": [
+   "n210_3_test.h5"
+  ],
+  "pluto_2": [
+   "pluto_2_test.h5"
+  ]
+ },
+ "osu": {
+  "RX1": {
+   "fit": 24350,
+   "support": 9075,
+   "query": 21300,
+   "per_tx_windows": 2189
+  },
+  "RX2": {
+   "fit": 24350,
+   "support": 9075,
+   "query": 21300,
+   "per_tx_windows": 2189
+  }
+ },
+ "legacy_wisig8_checkpoints": [
+  "w0_ccalign_lam0.3",
+  "w0_ccalign_lam1",
+  "w0_ccalign_lam3",
+  "w0_rxlogit_lam0.3",
+  "w0_rxlogit_lam1",
+  "w0_rxlogit_lam3",
+  "w0_rxnull_lam0.3",
+  "w0_rxnull_lam1",
+  "w0_rxnull_lam3",
+  "w0_rxnull_rand_lam0.3",
+  "w0_rxnull_rand_lam1",
+  "w0_rxnull_rand_lam3",
+  "w1_ccalign_lam0.3",
+  "w1_ccalign_lam1",
+  "w1_ccalign_lam3",
+  "w1_rxlogit_lam0.3",
+  "w1_rxlogit_lam1",
+  "w1_rxlogit_lam3",
+  "w1_rxnull_lam0.3",
+  "w1_rxnull_lam1",
+  "w1_rxnull_lam3",
+  "w1_rxnull_rand_lam0.3",
+  "w1_rxnull_rand_lam1",
+  "w1_rxnull_rand_lam3"
+ ],
+ "new_checkpoints": [],
+ "shen_checkpoints_found": [],
+ "stage_A_jobs_registered": [
+  "A_wisig_w0_T0_s20261013",
+  "A_wisig_w1_T0_s20261013",
+  "A_shen_A1_T0_s20261013",
+  "A_shen_A2_T0_s20261013",
+  "A_shen_B1_T0_s20261013",
+  "A_shen_B2_T0_s20261013"
+ ],
+ "stage_A_predicted_gpu_hours": 0.944
+}

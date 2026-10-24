@@ -163,3 +163,34 @@ chance-level; Shen has partial source signal, but1/1 multi guard equals mean.
 No18/54-fit matrix has been activated, approved or budget-requested.
 Conditional18-fit forecast12.2066 GPUh, suggested14 cap remains inactive.
 Publish/verify complete C0 audit and protocol, then stop before training.
+
+## Latest user instruction: low-budget receiver calibration v1 (2026-10-24)
+
+New task on branch experiment/rffi-budget-calibration-v1 (base b6ce3c2), defined by
+/workspace/research/CLAUDE_RFFI_EXECUTION_20261024.md and the user's 2026-10-24 message.
+Cross-domain method transfer (ProtoNet, SimpleShot, MetaQDA, Simple CNAPS, Bayesian shrinkage)
+is an accepted form of contribution when attributed and compared with same-task RFFI work.
+WiSig, Shen and a third dataset (OSU first; TRANSFER_STRESS_ONLY, see
+docs/rffi_calibration/DECISION_LOG.md) are all part of the final validation plan.
+This round authorises code, synthetic tests and metadata-only dry runs ONLY: no Stage A real-data
+evaluation, no fitting, no sealed data, no GitHub push. The reservation in
+configs/rffi_calibration/registration.json stays inactive until the user approves
+docs/rffi_calibration/STAGE_A_EXECUTION_PLAN.md. All earlier STOP decisions remain immutable.
+
+## Latest user instruction: execute delegated Stage A (2026-10-24)
+
+The user's "全交给你去运行" authorizes the minimal Stage A: exactly six T0
+fits, maximum 1.5 A100 GPU hours including inference, A0 historical eight-class
+diagnostics, and source-selection frozen-head evaluation. No optional T1,
+Stage B, failed-fit retry, sealed data or push. External candidate metadata,
+legal open-access paper retrieval, and a local execution record are allowed;
+no paid access or large signal downloads. Preserve all historical evidence.
+
+Stage A completed and stopped on 2026-10-24: six T0 fits, zero failed fits or
+fit retries; 12 initial evaluation device failures retained, 12 corrected
+A0/A3 evaluations independently verified. Conservative total 0.2539801585
+A100 GPUh. Decision STOP_DECOMPOSITION: both WiSig gates failed; H4 below
+H2L on all four Shen RX at m=1/5. Shen tuned-family gates unavailable.
+Third multi-RX dataset and RF paper full text remain unresolved. Reservation
+is closed; no further fitting, numeric evaluation, optional T1, Stage B,
+final/dev access, or push from unused allocation. Local record/commit only.
