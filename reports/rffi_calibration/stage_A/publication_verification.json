@@ -1,0 +1,23 @@
+{
+  "verified": true,
+  "observed_date": "2026-10-24",
+  "commit": "c6cd4de2439dfd8b9d9aaaeb7d15ff9576a4efb3",
+  "branch": "experiment/rffi-budget-calibration-v1",
+  "repository": "hanCChan/gai",
+  "complete_tree_blobs_verified": 3154,
+  "changed_files_verified": 134,
+  "credential_scan": "passed",
+  "readbacks": {
+    "reports/rffi_calibration/stage_A/REPORT.md": {
+      "bytes": 4134,
+      "sha256": "53ebd448343bba53e62b029fff1ecf6268449b3bc76e0b77b3f8fcc5b1a5d4e3"
+    },
+    "reports/rffi_calibration/stage_A/decision.json": {
+      "bytes": 2052,
+      "sha256": "1a572bd61705151ff824bb0c4c1509a445b7fec74a9911929ec3ac217ac1efe3"
+    }
+  },
+  "decision": "STOP_DECOMPOSITION",
+  "numerical_reservation_active": false,
+  "scope": "complete tree and report/decision at the recorded publication commit; this record is committed subsequently"
+}

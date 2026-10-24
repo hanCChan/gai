@@ -24,3 +24,14 @@ Updated 2026-10-24. Branch `experiment/rffi-budget-calibration-v1`, base `b6ce3c
 - Full local results: `reports/rffi_calibration/stage_A/REPORT.md`,
   `decision.json`, `evidence_index.json`, and execution verification.
   Raw scores/manifests/weights remain local and outside Git. No push.
+
+## Publication Update (2026-10-24)
+
+The later explicit user instruction authorized GitHub publication. Completed
+code, protocol, reports, decisions, source checks and derived evidence were
+pushed to hanCChan/gai on experiment/rffi-budget-calibration-v1. Publication
+commit c6cd4de2439dfd8b9d9aaaeb7d15ff9576a4efb3 remotely verified: complete tree
+3,154 blobs, all 134 changed paths, report/decision byte-identical readback.
+The preceding "No push" line describes execution closure before authorization.
+Credentials, signals, features, weights and per-query class scores remain local.
+See PUBLICATION.md. Stage A stays stopped; no new training or evaluation.
